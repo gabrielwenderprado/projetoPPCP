@@ -1,0 +1,18 @@
+{
+  "sourceFile": "Cópia de EXPLOSAO_26.08.xlsm",
+  "sourceSheet": "cilindros",
+  "generatedAt": "2026-08-26",
+  "models": [
+    "18LDDI",
+    "13",
+    "13AT",
+    "10S"
+  ],
+  "items": [],
+  "meta": {
+    "headerRow": 2,
+    "modelRow": 1,
+    "firstDataRow": 3,
+    "codeBlocks": 4
+  }
+}
