@@ -195,12 +195,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 65,
+        "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 65,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -217,13 +217,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 3,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 3,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -241,12 +241,12 @@
       "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 45,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 45,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -263,13 +263,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 10,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 10,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -286,13 +286,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 08/2026": 11,
+        "PED 09/2026": 50,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 61,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -309,13 +309,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 11,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 11,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -470,13 +470,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 30,
+        "PED 08/2026": 0,
         "PED 09/2026": 30,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 60,
+      "orderTotal": 30,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -539,13 +539,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 21,
+        "PED 08/2026": 0,
         "PED 09/2026": 50,
         "PED 10/2026": 25,
         "PED 11/2026": 50,
         "PED 12/2026": 25
       },
-      "orderTotal": 171,
+      "orderTotal": 150,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -585,13 +585,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 10,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 10,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -816,12 +816,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 09/2026": 350,
+        "PED 10/2026": 350,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 700,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1091,13 +1091,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 11,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 11,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1184,12 +1184,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 2600,
-        "PED 10/2026": 1300,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 1300,
         "PED 12/2026": 0
       },
-      "orderTotal": 5200,
+      "orderTotal": 1300,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1207,12 +1207,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 5200,
-        "PED 10/2026": 2600,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 2600,
         "PED 12/2026": 0
       },
-      "orderTotal": 10400,
+      "orderTotal": 2600,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1229,13 +1229,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 700,
-        "PED 09/2026": 1400,
-        "PED 10/2026": 700,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 700,
         "PED 12/2026": 0
       },
-      "orderTotal": 3500,
+      "orderTotal": 700,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1252,13 +1252,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 900,
-        "PED 09/2026": 2400,
-        "PED 10/2026": 1200,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 1200,
         "PED 12/2026": 0
       },
-      "orderTotal": 5700,
+      "orderTotal": 1200,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1275,13 +1275,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 300,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 300,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1298,13 +1298,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 700,
-        "PED 09/2026": 3600,
-        "PED 10/2026": 1800,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 1800,
         "PED 12/2026": 0
       },
-      "orderTotal": 7900,
+      "orderTotal": 1800,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1321,13 +1321,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 500,
-        "PED 09/2026": 2000,
-        "PED 10/2026": 1000,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 1000,
         "PED 12/2026": 0
       },
-      "orderTotal": 4500,
+      "orderTotal": 1000,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1344,13 +1344,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 700,
-        "PED 09/2026": 2000,
-        "PED 10/2026": 1000,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 1000,
         "PED 12/2026": 0
       },
-      "orderTotal": 4700,
+      "orderTotal": 1000,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1367,13 +1367,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 700,
-        "PED 09/2026": 3800,
-        "PED 10/2026": 1900,
-        "PED 11/2026": 1900,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 8300,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1390,13 +1390,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 400,
-        "PED 09/2026": 1500,
-        "PED 10/2026": 500,
+        "PED 08/2026": 0,
+        "PED 09/2026": 1000,
+        "PED 10/2026": 0,
         "PED 11/2026": 500,
         "PED 12/2026": 0
       },
-      "orderTotal": 2900,
+      "orderTotal": 1500,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1413,13 +1413,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 700,
-        "PED 09/2026": 1000,
-        "PED 10/2026": 500,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 500,
         "PED 12/2026": 0
       },
-      "orderTotal": 2700,
+      "orderTotal": 500,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1436,13 +1436,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 1600,
-        "PED 09/2026": 2000,
-        "PED 10/2026": 1000,
+        "PED 08/2026": 700,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
         "PED 11/2026": 1000,
         "PED 12/2026": 0
       },
-      "orderTotal": 5600,
+      "orderTotal": 1700,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1459,13 +1459,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 400,
+        "PED 08/2026": 0,
         "PED 09/2026": 2600,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 3000,
+      "orderTotal": 2600,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1689,13 +1689,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 5,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 5,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1920,12 +1920,12 @@
       "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 200,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 200,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2081,12 +2081,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 1890,
+        "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 1890,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2104,12 +2104,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 1925,
+        "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 1925,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2127,12 +2127,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 1900,
+        "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 1900,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2311,12 +2311,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 50,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 50,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2334,12 +2334,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 50,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 50,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2357,12 +2357,12 @@
       "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 150,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 150,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2379,13 +2379,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 08/2026": 50,
+        "PED 09/2026": 50,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 100,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2403,12 +2403,12 @@
       "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 150,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 150,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2426,12 +2426,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 150,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 150,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2449,12 +2449,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
+        "PED 09/2026": 80,
+        "PED 10/2026": 40,
+        "PED 11/2026": 40,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 160,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2471,13 +2471,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 08/2026": 80,
+        "PED 09/2026": 80,
+        "PED 10/2026": 160,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 320,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2518,12 +2518,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 09/2026": 430,
+        "PED 10/2026": 430,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 860,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2540,13 +2540,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 11,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 11,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2564,12 +2564,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 50,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 50,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2724,13 +2724,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 97,
+        "PED 08/2026": 20,
         "PED 09/2026": 60,
         "PED 10/2026": 30,
         "PED 11/2026": 60,
         "PED 12/2026": 30
       },
-      "orderTotal": 277,
+      "orderTotal": 200,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2771,12 +2771,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 4,
+        "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 4,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2793,13 +2793,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
+        "PED 08/2026": 10,
+        "PED 09/2026": 10,
+        "PED 10/2026": 10,
+        "PED 11/2026": 10,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 40,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2862,13 +2862,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 1,
+        "PED 08/2026": 2,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 1,
+      "orderTotal": 2,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2886,12 +2886,12 @@
       "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 6000,
+        "PED 09/2026": 3000,
         "PED 10/2026": 3000,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 9000,
+      "orderTotal": 6000,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2931,13 +2931,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 25,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 25,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2977,13 +2977,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 60,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 60,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3000,13 +3000,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 08/2026": 10,
+        "PED 09/2026": 6,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 16,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3023,13 +3023,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 20,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 20,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3046,13 +3046,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 13,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 13,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3069,13 +3069,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 35,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 35,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3115,13 +3115,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 25,
+        "PED 08/2026": 40,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 25,
+      "orderTotal": 40,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3138,13 +3138,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 25,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 25,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3161,13 +3161,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 25,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 25,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3207,13 +3207,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 56,
+        "PED 08/2026": 31,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 56,
+      "orderTotal": 31,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3276,13 +3276,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 25,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 25,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3368,13 +3368,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 33,
+        "PED 08/2026": 43,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 33,
+      "orderTotal": 43,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3391,13 +3391,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 9,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 9,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3415,12 +3415,12 @@
       "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 09/2026": 12,
+        "PED 10/2026": 6,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 18,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3437,13 +3437,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 35,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 35,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3506,13 +3506,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 20,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 20,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3736,13 +3736,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 18,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 18,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3759,13 +3759,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 36,
+        "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 36,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3851,13 +3851,13 @@
       "nextPurchaseDate": "2026-08-28T00:00:00",
       "reviewStatus": "REVISAR HOJE",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 35,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 35,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3875,12 +3875,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 150,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 150,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3898,12 +3898,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 150,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 150,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3944,12 +3944,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 30,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 30,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3966,13 +3966,13 @@
       "nextPurchaseDate": "2026-09-03T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
-        "PED 08/2026": 0,
+        "PED 08/2026": 800,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 800,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3990,12 +3990,12 @@
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 0,
+        "PED 09/2026": 450,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 450,
       "buyStatus": "",
       "averageCost": 0
     }
