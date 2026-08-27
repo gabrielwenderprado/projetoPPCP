@@ -212,13 +212,13 @@ const LOGIN_USERS = [
     analyst: ''
   },
     {
-    username: 'edicleia@nextt',
+    username: 'edicleia@next',
     password: 'edi2026',
     name: 'Edicleia',
     analyst: ''
   },
     {
-    username: 'compras@nextt',
+    username: 'compras@next',
     password: 'Next2026',
     name: 'Time Compras',
     analyst: ''
