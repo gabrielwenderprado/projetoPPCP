@@ -510,7 +510,7 @@ function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel 
   const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel);
   const more = items.length > initialLimit ? `<div class="table-load-more"><span>Mostrando ${fmt(initialLimit)} de ${fmt(items.length)} itens</span><button class="secondary-btn table-more-btn" data-table-id="${id}">Carregar mais</button></div>` : `<div class="table-load-more"><span>${fmt(items.length)} itens carregados</span></div>`;
   return `<div class="progressive-table" data-progressive-table="${id}"><div class="table-wrap"><table class="data-table"><thead><tr>
-    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th><th>Família</th><th>Tipo de obtenção</th><th>Última movimentação</th>
+    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th><th></th><th>Tipo de obtenção</th><th>Última movimentação</th>
     ${showDemand ? '<th>Demanda</th><th>Saldo</th>' : ''}<th>Pedidos</th><th>Situação</th><th>Processo de compra</th>
   </tr></thead><tbody>${rows || `<tr><td colspan="${columns}" class="empty">Nenhum item encontrado.</td></tr>`}</tbody></table></div>${more}</div>`;
 }
