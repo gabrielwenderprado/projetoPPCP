@@ -494,7 +494,6 @@ function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabe
       <td>${fmt(item.stock)} ${esc(item.unit)}</td>
       <td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td>
       <td>${fmt(item.safety)}</td>
-      <td>${esc(item.family || '—')}</td>
       <td>${esc(item.obtentionType || '—')}</td>
       <td class="movement-date">${esc(movementDate(item.lastMovement))}</td>
       ${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : undefined, showDemand ? demandLabel : '')}</td>
