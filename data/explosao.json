@@ -194281,6 +194281,4646 @@
         "DEM 11/2026": 0,
         "DEM 12/2026": 0
       }
+    },
+    {
+      "code": "03.06.01.0000000063",
+      "description": "CESTA AEREA SKYCITY 13,5 AT 4 ESTABILIZADORES SEM FERRAMENTA",
+      "analyst": "0",
+      "family": "SUB CONJUNTOS",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085406",
+      "description": "INDICADOR POSIÇÃO TORRE",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 50,
+      "stockMax": 0,
+      "stockValue": 220.0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 50,
+        "DEM 09/2026": 48,
+        "DEM 10/2026": 47,
+        "DEM 11/2026": 50,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085407",
+      "description": "INDICADOR POSIÇÃO TORRE",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 50,
+      "stockMax": 0,
+      "stockValue": 580,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 50,
+        "DEM 09/2026": 48,
+        "DEM 10/2026": 47,
+        "DEM 11/2026": 50,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085206",
+      "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYCITY 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 5,
+      "stockMax": 0,
+      "stockValue": 16073.8,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 3,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 5,
+        "DEM 09/2026": 6,
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 5,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087400",
+      "description": "SUPORTE COMANDO 13AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087601",
+      "description": "FIXAÇAO VALVULA EMERGENCIA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 6,
+      "stockMax": 0,
+      "stockValue": 419.652,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 10,
+        "PED 07/2026": 10,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 6,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 6,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000093027",
+      "description": "FIXACAO COMANDO 1 VIA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-30",
+      "unit": "UN",
+      "stock": 13,
+      "stockMax": 0,
+      "stockValue": 3691.194,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 13,
+        "DEM 09/2026": 11,
+        "DEM 10/2026": 10,
+        "DEM 11/2026": 13,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000085115",
+      "description": "PINO ARTICULACAO ALAVANCAS COMANDO",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-08",
+      "unit": "UN",
+      "stock": 29,
+      "stockMax": 0,
+      "stockValue": 1218,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 29,
+        "DEM 09/2026": 27,
+        "DEM 10/2026": 26,
+        "DEM 11/2026": 29,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000078117",
+      "description": "ARTICULAÇÃO BRAÇOS - AS",
+      "analyst": "PEDRO",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 5,
+      "stockMax": 0,
+      "stockValue": 33056,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 5,
+        "DEM 09/2026": 3,
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 5,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000379",
+      "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - BRANCO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000767",
+      "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - 2 BRANCO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000768",
+      "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - AZUL",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000769",
+      "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - 2 AZUL",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000772",
+      "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - AMARELO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -4,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000372",
+      "description": "MANGUEIRA R7 3/8\" X 8.300 MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000739",
+      "description": "MANGUEIRA R7 1/2\" X 700 MM - TRF X TRF (12S M20 X 1,5) - 2 ROXO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000740",
+      "description": "MANGUEIRA R7 3/8\" X 850 MM - TRF X TRF (12S M20 X 1,5) - 2 PRETO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -4,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000741",
+      "description": "MANGUEIRA R7 1/4\" X 1.300 MM - TRF X TRF (10L M16 X 1,5) - MARROM",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 8,
+        "DEM 10/2026": 12,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -8,
+        "DEM 10/2026": -12,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000742",
+      "description": "MANGUEIRA R7 1/4\" X 700 MM - TRF X TC 90 (10L M16 X 1,5) - 2 AZUL",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 8,
+        "DEM 10/2026": 12,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -8,
+        "DEM 10/2026": -12,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000724",
+      "description": "MANGUEIRA R7 1/2\" X 7.130 MM - TRF X TRF (12S M20 X 1,5) - VERMELHO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000352",
+      "description": "MANGUEIRA R7 1/4\" X 7.330 MM - TRF X TRF (10L M16 X 1,5) - AMARELO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -4,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000738",
+      "description": "MANGUEIRA R7 1/2\" X 4.300 MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO + 2 AMARELO",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.03.0000000774",
+      "description": "MANGUEIRA R7 1/4\" X 7.330 MM - TRF X TRF (10L M16 X 1,5) - 2 AZUL",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -4,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.02.0000086088",
+      "description": "BRAÇO INFERIOR 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 5,
+      "stockMax": 0,
+      "stockValue": 24179.6,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 5,
+        "DEM 09/2026": 3,
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 5,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.02.0000078118",
+      "description": "BASTÃO TENSOR INFERIOR - AS",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 17943.448,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 4,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.02.0000086070",
+      "description": "BRAÇO SUPERIOR 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.02.0000086021",
+      "description": "BRAÇO EXTENSIVO 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000088017",
+      "description": "SUPORTE BASCULAMENTO CAÇAMBA - AS",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087329",
+      "description": "FIXACAO SUPORTE COMANDO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 6,
+      "stockMax": 0,
+      "stockValue": 8635.836,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 6,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 6,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085243",
+      "description": "CAÇAMBA DE FIBRA (BOJO) - COM CANELETA FIXACAO COMANDO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 18,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 10,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 18,
+        "DEM 09/2026": 26,
+        "DEM 10/2026": 15,
+        "DEM 11/2026": 18,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000092890",
+      "description": "FIXAÇAO CINTO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-30",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 325.08,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 3,
+        "DEM 09/2026": 1,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087682",
+      "description": "FIXAÇAO HASTE CILINDRO EXTENSIVO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 640.936,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 2,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": -1,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000094556",
+      "description": "FIXAÇAO ESTEIRA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 5,
+      "stockMax": 0,
+      "stockValue": 954.8071,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 7,
+        "PED 07/2026": 7,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 5,
+        "DEM 09/2026": 3,
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 5,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000078177",
+      "description": "PLACA DESLIZE TRASEIRA BRAÇO INTERNO 13AT",
+      "analyst": "PEDRO",
+      "family": "PEÇA",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-02-25",
+      "unit": "UN",
+      "stock": 142,
+      "stockMax": 0,
+      "stockValue": 4353.72,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 10,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 152,
+        "DEM 09/2026": 140,
+        "DEM 10/2026": 139,
+        "DEM 11/2026": 142,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085207",
+      "description": "PLACA DESLIZE SUPERIOR TRASEIRA BRAÇO INTERNO 13AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-08",
+      "unit": "UN",
+      "stock": 16,
+      "stockMax": 0,
+      "stockValue": 381.056,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 20,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 36,
+        "DEM 09/2026": 12,
+        "DEM 10/2026": 10,
+        "DEM 11/2026": 16,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085357",
+      "description": "DESLIZE APOIO CILINDRO EXTENSIVO 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 11,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 11,
+        "DEM 09/2026": 9,
+        "DEM 10/2026": 8,
+        "DEM 11/2026": 11,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085356",
+      "description": "DESLIZE APOIO CILINDRO EXTENSIVO 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 10,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 10,
+        "DEM 09/2026": 8,
+        "DEM 10/2026": 7,
+        "DEM 11/2026": 10,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085363",
+      "description": "PLACA DESLIZE INFERIOR",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-08",
+      "unit": "UN",
+      "stock": 9,
+      "stockMax": 0,
+      "stockValue": 7560,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 9,
+        "DEM 09/2026": 7,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 9,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000085106",
+      "description": "PINO ROSCADO DO DESLIZE",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-30",
+      "unit": "UN",
+      "stock": 77,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 10,
+        "DEM 10/2026": 15,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 77,
+        "DEM 09/2026": 67,
+        "DEM 10/2026": 62,
+        "DEM 11/2026": 77,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085364",
+      "description": "BUCHA DO DESLIZE",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-08",
+      "unit": "UN",
+      "stock": 143,
+      "stockMax": 0,
+      "stockValue": 1007.578,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 50,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 10,
+        "DEM 10/2026": 15,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 193,
+        "DEM 09/2026": 133,
+        "DEM 10/2026": 128,
+        "DEM 11/2026": 143,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000085142",
+      "description": "EIXO DA HASTE CILINDRO EXTENSAO",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 5,
+      "stockMax": 0,
+      "stockValue": 635,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 5,
+        "DEM 09/2026": 3,
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 5,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000094022",
+      "description": "ARRUELA CALÇO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 15,
+        "PED 07/2026": 15,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -4,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085257",
+      "description": "TRAVA PINO Ø16",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000091910",
+      "description": "TRAVA DO PINO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000082255",
+      "description": "TRAVA PINO Ø40",
+      "analyst": "PEDRO",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087738",
+      "description": "APOIO CILINDRO NIVELAMENTO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 58,
+      "stockMax": 0,
+      "stockValue": 5988.5,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 58,
+        "DEM 09/2026": 56,
+        "DEM 10/2026": 55,
+        "DEM 11/2026": 58,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000078582",
+      "description": "EIXO DO CILINDRO BRACO SUP",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085255",
+      "description": "TRAVA DO PINO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000100",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – AVISO DE UTILIZAÇAO DA BOMBA MANUAL",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -101,
+        "DEM 09/2026": -149,
+        "DEM 10/2026": -17,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000064",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 150 X 100MM ESP. 0,25MM - ISOLAMENTO PARA 46 KV",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 724,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 343,
+        "DEM 09/2026": 468,
+        "DEM 10/2026": 48,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 381,
+        "DEM 09/2026": 256,
+        "DEM 10/2026": 676,
+        "DEM 11/2026": 724,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000094",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – CUIDADO NAO FORÇAR EQUIPAMENTO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 201,
+        "DEM 09/2026": 301,
+        "DEM 10/2026": 38,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -199,
+        "DEM 09/2026": -299,
+        "DEM 10/2026": -36,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000096",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – ATENÇAO AO DESCER",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 18,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 210,
+        "DEM 09/2026": 306,
+        "DEM 10/2026": 42,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -192,
+        "DEM 09/2026": -288,
+        "DEM 10/2026": -24,
+        "DEM 11/2026": 18,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000085",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 35 X 60MM ESP. 0,25MM - FERRAMENTA (DESLIGA E LIGA)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 128,
+        "DEM 09/2026": 94,
+        "DEM 10/2026": 32,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -125,
+        "DEM 09/2026": -91,
+        "DEM 10/2026": -29,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000089",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 70 X 60MM ESP. 0,25MM - ESTABILIZADOR SOBE E DESCE",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 192,
+        "DEM 09/2026": 296,
+        "DEM 10/2026": 34,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -188,
+        "DEM 09/2026": -292,
+        "DEM 10/2026": -30,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000069",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 216 X 126MM ESP. 0,25MM - CAÇAMBA NAO ISOLANTE",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 218,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 33,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 114,
+        "DEM 09/2026": 158,
+        "DEM 10/2026": 25,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 104,
+        "DEM 09/2026": 60,
+        "DEM 10/2026": 193,
+        "DEM 11/2026": 218,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000073",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 250 X 106MM ESP. 0,25MM - RISCO DE CHOQUE",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -64,
+        "DEM 09/2026": -47,
+        "DEM 10/2026": -16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000097",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – ATENÇAO PROTEÇAO FRAGIL",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -102,
+        "DEM 09/2026": -150,
+        "DEM 10/2026": -18,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000070",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 169 X 110MM ESP. 0,25MM - PERIGO(SAPATA ESTABILIZADORA)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 14,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 228,
+        "DEM 09/2026": 316,
+        "DEM 10/2026": 50,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -214,
+        "DEM 09/2026": -302,
+        "DEM 10/2026": -36,
+        "DEM 11/2026": 14,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000076",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 165 X 100MM ESP. 0,25MM - NOTA IMPORTANTE",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 50,
+        "DEM 09/2026": 125,
+        "DEM 10/2026": 12,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -47,
+        "DEM 09/2026": -122,
+        "DEM 10/2026": -9,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000078",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 140 X 136MM ESP. 0,25MM - INFORMAÇOES SOBRE OLEO HIDRAULICO - MANUTENÇAO P",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -105,
+        "DEM 09/2026": -153,
+        "DEM 10/2026": -21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000021",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-06-17",
+      "unit": "UN",
+      "stock": 339,
+      "stockMax": 0,
+      "stockValue": 1169.55,
+      "safety": 400,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 123,
+        "DEM 09/2026": 356,
+        "DEM 10/2026": 33,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 216,
+        "DEM 09/2026": -17,
+        "DEM 10/2026": 306,
+        "DEM 11/2026": 339,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000092",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 147 X 40MM ESP. 0,25MM – ENGRENAGENS DE ROTAÇAO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -105,
+        "DEM 09/2026": -153,
+        "DEM 10/2026": -21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000063",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 250 X 180MM ESP. 0,25MM - CAPACIDADE DE CARGA 136KG",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 14,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 114,
+        "DEM 09/2026": 158,
+        "DEM 10/2026": 25,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -114,
+        "DEM 09/2026": -158,
+        "DEM 10/2026": -25,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000099",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – SEGURANÇA NAO VIAJAR DENTRO DA CESTA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -103,
+        "DEM 09/2026": -151,
+        "DEM 10/2026": -19,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000111",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 70 X 35MM ESP. 0,18MM - PARTIDA / DESLIGA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 146,
+        "DEM 09/2026": 259,
+        "DEM 10/2026": 26,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -144,
+        "DEM 09/2026": -257,
+        "DEM 10/2026": -24,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000102",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 40MM ESP. 0,25MM – EMERGENCIA DESABILITAR COMANDO HIDRAULICO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -105,
+        "DEM 09/2026": -153,
+        "DEM 10/2026": -21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000107",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 25 X 0,18MM – RPM + / -",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -64,
+        "DEM 09/2026": -47,
+        "DEM 10/2026": -16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000075",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 145 X 126MM ESP. 0,25MM - PERIGO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -103,
+        "DEM 09/2026": -151,
+        "DEM 10/2026": -19,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000098",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – ATENÇAO NA CONEXAO DE FERRAMENTA A TOMADA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -61,
+        "DEM 09/2026": -44,
+        "DEM 10/2026": -13,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000068",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 212 X 100MM ESP. 0,25MM - RISCO DE INCENDIO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 49,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -15,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 33,
+        "DEM 11/2026": 49,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000081",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 145 X 126MM ESP. 0,25MM - CUIDADO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -101,
+        "DEM 09/2026": -149,
+        "DEM 10/2026": -17,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000077",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 190 X 100MM ESP. 0,25MM - INSTRUÇOES DE OPERAÇAO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -103,
+        "DEM 09/2026": -151,
+        "DEM 10/2026": -19,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000065",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 80MM ESP. 0,25MM - BRAÇO NAO ISOLADO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 456,
+        "DEM 09/2026": 680,
+        "DEM 10/2026": 100,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -456,
+        "DEM 09/2026": -680,
+        "DEM 10/2026": -100,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000066",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 216 X 126MM ESP. 0,25MM - RISCO DE CHOQUE",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -60,
+        "DEM 09/2026": -43,
+        "DEM 10/2026": -12,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000080",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 145 X 126MM ESP. 0,25MM - CUIDADO (COM SEÇAO ISOLADA)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -60,
+        "DEM 09/2026": -43,
+        "DEM 10/2026": -12,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000086",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 25MM ESP. 0,25MM - GRAXA ESQUERDA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 28,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 128,
+        "DEM 09/2026": 238,
+        "DEM 10/2026": 66,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -100,
+        "DEM 09/2026": -210,
+        "DEM 10/2026": -38,
+        "DEM 11/2026": 28,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000087",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 25MM ESP. 0,25MM - GRAXA DIREITA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 26,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 128,
+        "DEM 09/2026": 238,
+        "DEM 10/2026": 66,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -102,
+        "DEM 09/2026": -212,
+        "DEM 10/2026": -40,
+        "DEM 11/2026": 26,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000079",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 160 X 125MM ESP. 0,25MM - CUIDADO (NAO-ISOLADO)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 169,
+        "DEM 09/2026": 200,
+        "DEM 10/2026": 37,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -169,
+        "DEM 09/2026": -200,
+        "DEM 10/2026": -37,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000103",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 40 X 50MM ESP. 0,25MM – ATERRAMENTO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 146,
+        "DEM 09/2026": 259,
+        "DEM 10/2026": 26,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -146,
+        "DEM 09/2026": -259,
+        "DEM 10/2026": -26,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000004",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 545 X 130MM ESP. 0,5MM - NEXT IMPLEMENTOS CI-3437-010-00 YR-9767",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 44,
+      "stockMax": 0,
+      "stockValue": 963.6,
+      "safety": 200,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 55,
+        "DEM 09/2026": 42,
+        "DEM 10/2026": 12,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -11,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 32,
+        "DEM 11/2026": 44,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000067",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 135 X 65MM ESP. 0,25MM - QUEDA DA CAÇAMBA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -64,
+        "DEM 09/2026": -47,
+        "DEM 10/2026": -16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000104",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 40 X 50MM ESP. 0,25MM – ATERRAMENTO PARA ENSAIO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 253,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 148,
+        "DEM 09/2026": 100,
+        "DEM 10/2026": 232,
+        "DEM 11/2026": 253,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000082",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 160 X 80MM ESP. 0,25MM - PERIGO (RISCO DE CHOQUE ELETRICO)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 14,
+      "stockMax": 0,
+      "stockValue": 89.6,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -50,
+        "DEM 09/2026": -33,
+        "DEM 10/2026": -2,
+        "DEM 11/2026": 14,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000119",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 180MM ESP. 0,25MM – INSTRUÇOES DE OPERAÇAO DA TOMADA DE FORÇA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -62,
+        "DEM 09/2026": -45,
+        "DEM 10/2026": -14,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000117",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - FAROL AREA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 402,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 146,
+        "DEM 09/2026": 259,
+        "DEM 10/2026": 26,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 256,
+        "DEM 09/2026": 143,
+        "DEM 10/2026": 376,
+        "DEM 11/2026": 402,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000115",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - SISTEMA ELETRICO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 352,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 247,
+        "DEM 09/2026": 199,
+        "DEM 10/2026": 331,
+        "DEM 11/2026": 352,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000116",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - TOMADA DE FORÇA",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -105,
+        "DEM 09/2026": -153,
+        "DEM 10/2026": -21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000112",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - FAROL DE MANEJO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 352,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 247,
+        "DEM 09/2026": 199,
+        "DEM 10/2026": 331,
+        "DEM 11/2026": 352,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000118",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - TOMADA 12V",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 301,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 237,
+        "DEM 09/2026": 254,
+        "DEM 10/2026": 285,
+        "DEM 11/2026": 301,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000113",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - GIROLED",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -105,
+        "DEM 09/2026": -153,
+        "DEM 10/2026": -21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000114",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - ILUMINAÇAO ARMARIO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 552,
+      "stockMax": 0,
+      "stockValue": 264.96,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 64,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 16,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 488,
+        "DEM 09/2026": 505,
+        "DEM 10/2026": 536,
+        "DEM 11/2026": 552,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000120",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 655 X 25MM ESP. 0,25MM – SETA ISOLAMENTO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 228,
+        "DEM 09/2026": 324,
+        "DEM 10/2026": 62,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -228,
+        "DEM 09/2026": -324,
+        "DEM 10/2026": -62,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000131",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 160 X 100MM ESP. 0,25MM - DIAGRAMA DE ALCANCE SKYRITZ 13 AT",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000133",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 530 X 94MM ESP. 0,25MM - FUNDO PRETO ADESIVO SKYCITY 13 AT",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 6,
+        "DEM 10/2026": 9,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -6,
+        "DEM 10/2026": -9,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000134",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 360 X 38MM ESP. 0,25MM - (DIREÇOES BRAÇOS E GIRO)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000135",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 165 X 60MM ESP. 0,25MM - (DIREÇOES BRAÇOS GIRO E NIVELAMENTO)",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 12,
+      "stockMax": 0,
+      "stockValue": 60,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 12,
+        "DEM 09/2026": 10,
+        "DEM 10/2026": 9,
+        "DEM 11/2026": 12,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000147",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 57 X 30MM ESP. 0,25MM - BOTAO ACIONAR ALAVANCAS",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 88,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 155,
+        "DEM 09/2026": 264,
+        "DEM 10/2026": 30,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -67,
+        "DEM 09/2026": -176,
+        "DEM 10/2026": 58,
+        "DEM 11/2026": 88,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000267",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 755MM - ATENÇAO EIXO DE BASCULAMENTO",
+      "analyst": "BRUNO",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 105,
+        "DEM 09/2026": 153,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -105,
+        "DEM 09/2026": -153,
+        "DEM 10/2026": -21,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000291",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 62 X 35MM ESP. 0,25MM - (NIVELAMENTO CAÇAMBA)",
+      "analyst": "0",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 16,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 4,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000287",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 113 X 100MM ESP. 0,25MM - SOMENTE OPERAR COM BOJO NA POSIÇAO FRONTAL",
+      "analyst": "0",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 12,
+      "stockMax": 0,
+      "stockValue": 34.8,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 12,
+        "DEM 09/2026": 10,
+        "DEM 10/2026": 9,
+        "DEM 11/2026": 12,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.09.02.0000000301",
+      "description": "ETIQUETA POLICARBONADO CRISTAL COM ADESIVO DE 60 X 51MM - ACIONAMENTO DA BOMBA DE EMERGENCIA",
+      "analyst": "0",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -4,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085239",
+      "description": "PROTECAO COMANDO SUPERIOR 13 AT",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 1,
+      "stockMax": 0,
+      "stockValue": 469.736,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 1,
+        "DEM 09/2026": -1,
+        "DEM 10/2026": -2,
+        "DEM 11/2026": 1,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085241",
+      "description": "PROTECAO ENGATE RAPIDO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 12,
+      "stockMax": 0,
+      "stockValue": 1172.208,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 5,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 12,
+        "DEM 09/2026": 15,
+        "DEM 10/2026": 9,
+        "DEM 11/2026": 12,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085242",
+      "description": "PROTECAO VALVULA SELETORA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 16,
+      "stockMax": 0,
+      "stockValue": 1660.416,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 5,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 16,
+        "DEM 09/2026": 19,
+        "DEM 10/2026": 13,
+        "DEM 11/2026": 16,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085359",
+      "description": "PROTECAO VALVULA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 167.64,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 5,
+        "PED 07/2026": 5,
+        "PED 08/2026": 0,
+        "PED 09/2026": 5,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 4,
+        "DEM 09/2026": 7,
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085365",
+      "description": "FECHAMENTO TRASEIRO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 162,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 3,
+        "DEM 09/2026": 1,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085366",
+      "description": "PROTECAO VALV. CILINDRO NIVELAMENTO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 111.096,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 4,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085367",
+      "description": "CALHA SUPORTE MANGUEIRAS",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 4,
+      "stockMax": 0,
+      "stockValue": 633.752,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 4,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 4,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085368",
+      "description": "TAMPA FECHAMENTO BRACO INTERNO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085369",
+      "description": "CALHA SUPORTE MANGUEIRAS",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 8,
+      "stockMax": 0,
+      "stockValue": 500.304,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 8,
+        "DEM 09/2026": 6,
+        "DEM 10/2026": 5,
+        "DEM 11/2026": 8,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085370",
+      "description": "PROTECAO ATUADOR ROTATIVO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-04-23",
+      "unit": "UN",
+      "stock": 3,
+      "stockMax": 0,
+      "stockValue": 131.832,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 3,
+        "DEM 09/2026": 1,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 3,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085381",
+      "description": "PROTECAO BATOQUE REGULADOR",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 17,
+      "stockMax": 0,
+      "stockValue": 851.649,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 4,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 17,
+        "DEM 09/2026": 13,
+        "DEM 10/2026": 11,
+        "DEM 11/2026": 17,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.03.0000000020",
+      "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 13 AT - 2 ESTABILIZADORES 46KV",
+      "analyst": "BRUNO",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -2,
+        "DEM 10/2026": -3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.05.0000000014",
+      "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 10L / 10HDOC / 13L / 13LD / 13LDI / 13LDDI - 4 ESTABILIZADORES",
+      "analyst": "PEDRO",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 6,
+        "PED 07/2026": 6,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 3,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": -3,
+        "DEM 10/2026": -6,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.05.0000000078",
+      "description": "KIT INFERIOR DE MANGUEIRAS (LANÇAS) SKYCITY 13.5 AT",
+      "analyst": "PEDRO",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 24,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 6,
+        "PED 07/2026": 6,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 24,
+        "DEM 09/2026": 22,
+        "DEM 10/2026": 21,
+        "DEM 11/2026": 24,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.05.0000000077",
+      "description": "KIT DE MANGUEIRAS DA LANÇA TELESCÓPICA SKYCITY 13.5 AT",
+      "analyst": "PEDRO",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-03-27",
+      "unit": "UN",
+      "stock": 5,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 6,
+        "PED 07/2026": 6,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 2,
+        "DEM 10/2026": 3,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 5,
+        "DEM 09/2026": 3,
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 5,
+        "DEM 12/2026": 0
+      }
     }
   ],
   "models": {
