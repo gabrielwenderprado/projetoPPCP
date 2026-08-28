@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_26.08 (2).xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.08 (2).xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-08-27",
+  "generatedAt": "2026-08-28",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 15410,
+      "stock": 14410,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 57266,
+      "stock": 55266,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,

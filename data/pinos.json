@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_26.08 (2).xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.08 (2).xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-08-27",
+  "generatedAt": "2026-08-28",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -84,7 +84,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 287,
+      "stock": 440,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -373,7 +373,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 20,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -390,7 +390,7 @@
       "code": "02.03.01.0000084356",
       "description": "PINO BASTAO TENSOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 38,
+      "stock": 18,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -526,7 +526,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 357,
+      "stock": 354,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1410,7 +1410,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 540,
+      "stock": 482,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
