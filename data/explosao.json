@@ -242444,6 +242444,2133 @@
         "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
         "quantity": 6
       }
+    ],
+    "neoEnergia": [
+      {
+        "code": "02.02.08.0000085268",
+        "description": "CJ GERAL ELETRICITARIA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000002880",
+        "description": "CONJUNTO PARA-CHOQUE MÓVEL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002360",
+        "description": "COLUNA TUBULAR INTERNA",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.04.0000000029",
+        "description": "TUBO RETANGULAR 100 X 80 X 6,30 X 6000MM - NBR 6591",
+        "quantity": 6.3262
+      },
+      {
+        "code": "02.01.01.0000002519",
+        "description": "LÂMINA DO PARA-CHOQUE",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000033",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
+        "quantity": 37.789
+      },
+      {
+        "code": "02.01.01.0000002862",
+        "description": "MÃO FRANCESA PARA CHOQUE",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000036",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
+        "quantity": 2.4886
+      },
+      {
+        "code": "02.01.01.0000002361",
+        "description": "COLUNA EXTERNA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000061846",
+        "description": "SUPORTE PARA CALÇO DE RODAS 10 kg",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.05.0000000001",
+        "description": "REBITE DE AÇO 1/2\" X 1\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000062331",
+        "description": "CHAPA SUPORTE PARA CALÇO DE SAPATA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000029",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
+        "quantity": 0.2116
+      },
+      {
+        "code": "02.01.01.0000067021",
+        "description": "CHAPA UNIÃO PARA CALÇO DE RODAS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091888",
+        "description": "PERFIL DIREITO SUPORTE PARA CALÇO DE RODAS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091889",
+        "description": "PERFIL ESQUERDO SUPORTE PARA CALÇO DE RODAS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091890",
+        "description": "BASE DO SUPORTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001450",
+        "description": "PINO TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000040",
+        "description": "BARRA REDONDA 1/2\"(12,70MM) - SAE 1020",
+        "quantity": 0.0529
+      },
+      {
+        "code": "02.01.01.0000067761",
+        "description": "PINO TRAVA MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.03.0000000061",
+        "description": "BARRA REDONDA LAMINADA 1.1/4\"(31,75MM) X 6000MM - SAE 4340",
+        "quantity": 0.9821
+      },
+      {
+        "code": "02.01.01.0000067763",
+        "description": "BATENTE (PINO TRAVA MALHAL)",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000086880",
+        "description": "CJ MONTAGEM DO MALHAL FRONTAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086884",
+        "description": "CJ MALHAL FRONTAL 1650 DE ALTURA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000078522",
+        "description": "TUBO COLUNA DO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.04.0000000025",
+        "description": "TUBO QUADRADO 100 X 100 X 4,75 X 6000MM - NBR 6591",
+        "quantity": 26.3534
+      },
+      {
+        "code": "02.01.01.0000001762",
+        "description": "TUBO 4,75 X 100 X 100 X 675mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.13.02.0000000002",
+        "description": "CATRACA CANAVIEIRO COM EIXO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091113",
+        "description": "\"BERÇO TUBO PVC 8\"\" - DIREITO\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091116",
+        "description": "\"BERÇO TUBO PVC 8\"\" - ESQUERDO\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090940",
+        "description": "REFORÇO MALHAL",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000001769",
+        "description": "TUBO 4,75 X 80 X 80 X 470mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.04.0000000024",
+        "description": "TUBO QUADRADO 80 X 80 X 4,75 X 6000MM - NBR 6591",
+        "quantity": 4.8622
+      },
+      {
+        "code": "02.01.01.0000000438",
+        "description": "TUBO 4,75 X 80 X 80 X 750mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.13.05.0000000008",
+        "description": "GANCHO SUPORTE DO TRAFO",
+        "quantity": 12
+      },
+      {
+        "code": "02.01.01.0000069537",
+        "description": "CHAPA PÉ DO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000051",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 9,52 X 1200 X 3000MM - ASTM A36",
+        "quantity": 4.5713
+      },
+      {
+        "code": "02.01.01.0000001766",
+        "description": "CHAPA REFORÇO DO PÉ",
+        "quantity": 8
+      },
+      {
+        "code": "01.04.01.0000000037",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 1.3133
+      },
+      {
+        "code": "02.01.01.0000001774",
+        "description": "PERFIL FIXAÇÃO DA CATRACA",
+        "quantity": 2
+      },
+      {
+        "code": "01.13.05.0000000030",
+        "description": "ARGOLA DO GANCHO DO TRAFO Ø105 EXT. X Ø80 INT.",
+        "quantity": 12
+      },
+      {
+        "code": "02.01.01.0000000436",
+        "description": "GUIA VERTICAL DO MALHAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000000437",
+        "description": "GUIA VERTICAL DO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.03.0000067438",
+        "description": "MADEIRA DE APOIO DOS POSTES 350 X 116 X 175",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.03.0000067439",
+        "description": "MADEIRA DE APOIO DOS POSTES 1565 X 116 X 120",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.03.0000067440",
+        "description": "MADEIRA DE APOIO DOS POSTES 565 X 116 X 120",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085569",
+        "description": "CJ PARAF. MONTAGEM DO MALHAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086875",
+        "description": "CJ MALHAL CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067729",
+        "description": "SAPATA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000067433",
+        "description": "TUBO 4,75 X 80 X 80 X 750mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.13.05.0000001057",
+        "description": "SUPORTE DE TRAFO",
+        "quantity": 12
+      },
+      {
+        "code": "02.01.01.0000091067",
+        "description": "TUBO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091973",
+        "description": "TAMPA DO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067369",
+        "description": "TUBO MALHAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001748",
+        "description": "TUBO DO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000067264",
+        "description": "CJ GERAL ARMARIO AÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067265",
+        "description": "CJ ESTRUTURA DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061708",
+        "description": "PERFIL INFERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000111",
+        "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
+        "quantity": 3.956
+      },
+      {
+        "code": "02.01.01.0000061709",
+        "description": "PERFIL SUPERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061710",
+        "description": "FECHAMENTO SUPERIOR ARMARIO",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000019",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
+        "quantity": 16.5071
+      },
+      {
+        "code": "02.01.01.0000061711",
+        "description": "PERFIL TRASEIRO DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061766",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090977",
+        "description": "FECHAMENTO LATERAL DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000088063",
+        "description": "FECHAMENTO LATERAL DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000060345",
+        "description": "TRAVESSA LATERAL APOIO PRATELEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000067420",
+        "description": "CJ GERAL DA PORTA DE AÇO",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.06.0000000003",
+        "description": "FECHADURA EXTERNA COM CHAVE EM INOX",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067421",
+        "description": "CHAPA EXTERNA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000072796",
+        "description": "FUNDO DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.04.0000001756",
+        "description": "DOBRADICA BORBOLETA EB FQ",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.05.0000000002",
+        "description": "REBITE HERMETICO 4,80 X 18MM ALUMINIO DIN7337",
+        "quantity": 4
+      },
+      {
+        "code": "02.02.02.0000085232",
+        "description": "CJ PARAFUSADO TRAVA DA PORTA FECHADURA INOX",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000088843",
+        "description": "CHAPA TRAVA ARMARIO 370 x 50 x 2,65 mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000067208",
+        "description": "CJ GERAL ARMARIO AÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067209",
+        "description": "CJ ESTRUTURA DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067214",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067215",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090998",
+        "description": "PERFIL COLUNA CENTRAL - TRAVA DE INOX - PORTA LAT.",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067210",
+        "description": "PERFIL INFERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067211",
+        "description": "PERFIL TRASEIRO DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067212",
+        "description": "PERFIL SUPERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067213",
+        "description": "FECHAMENTO SUPERIOR ARMARIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000060343",
+        "description": "TRAVESSA APOIO PRATELEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000060344",
+        "description": "PERFIL COLUNA REFORÇO TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067216",
+        "description": "CJ GERAL DA PORTA DE AÇO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067217",
+        "description": "CHAPA EXTERNA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000072795",
+        "description": "FUNDO DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000073907",
+        "description": "CJ GERAL ARMARIO AÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000073908",
+        "description": "CJ ESTRUTURA DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067273",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073909",
+        "description": "PERFIL TRASEIRO DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073910",
+        "description": "FECHAMENTO SUPERIOR ARMARIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073911",
+        "description": "PERFIL SUPERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073913",
+        "description": "PERFIL INFERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000073914",
+        "description": "CJ GERAL DA PORTA DE AÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073915",
+        "description": "CHAPA EXTERNA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073916",
+        "description": "FUNDO DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000096",
+        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000084401",
+        "description": "TRAVA DA FECHADURA INOX",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.02.0000000014",
+        "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.03.0000000050",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000067298",
+        "description": "CJ GERAL ARMARIO AÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067299",
+        "description": "CJ ESTRUTURA DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000060341",
+        "description": "FECHAMENTO LATERAL DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067304",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067305",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067356",
+        "description": "PRATELEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067355",
+        "description": "DIVISORIA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067354",
+        "description": "CHAPA DE FECHAMENTO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067300",
+        "description": "FECHAMENTO SUPERIOR ARMARIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067301",
+        "description": "PERFIL SUPERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067302",
+        "description": "PERFIL INFERIOR ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067303",
+        "description": "PERFIL TRASEIRO DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067347",
+        "description": "CJ GERAL DA PORTA DE AÇO",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000067348",
+        "description": "CHAPA EXTERNA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000072794",
+        "description": "FUNDO DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085566",
+        "description": "CJ PARAF. MALEIRO FRONTAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091032",
+        "description": "TAMPA DA PORTA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091035",
+        "description": "PRATELEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000027",
+        "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 9.7405
+      },
+      {
+        "code": "02.01.01.0000091033",
+        "description": "CHAPA EXTERNA DA PORTA",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.06.0000000005",
+        "description": "MAÇANETA EXTERNA PORTA COM MIOLO PRETO FUSCA/KOMBI ATE 1996",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000086857",
+        "description": "CJ MALÃO DIANTEIRO 600x650x2600",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073934",
+        "description": "TAMPA LATERAL ESQUERDA DO MALÃO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077812",
+        "description": "CHAPA REFORÇO",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000091030",
+        "description": "DIVISÓRIA DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086859",
+        "description": "CJ QUADRO DO ARMARIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091024",
+        "description": "TAMPA FECHAMENTO LATERAL SUPERIOR",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000077808",
+        "description": "TAMPA LATERAL ESQUERDA DO MALÃO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091039",
+        "description": "TAMPA LATERAL ESQUERDA DO MALÃO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091023",
+        "description": "FUNDO DO  MALÃO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073936",
+        "description": "TAMPA LATERAL ESQUERDA DO MALÃO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091022",
+        "description": "TAMPA FECHAMENTO LATERAL SUPERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086860",
+        "description": "CJ QUADRO DO ARMARIO ESQ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091028",
+        "description": "TAMPA FECHAMENTO LATERAL SUPERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091029",
+        "description": "CHAPA REFORÇO",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000091201",
+        "description": "PERFIL SUPERIOR DE FCIAÇÃO CRUZETA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000075178",
+        "description": "CHAPA REFORÇO",
+        "quantity": 6
+      },
+      {
+        "code": "02.02.02.0000085266",
+        "description": "CJ PARAFUSADO DOBRADICA BORBOLETA EB FQ",
+        "quantity": 8
+      },
+      {
+        "code": "01.02.01.0000000086",
+        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 16MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.04.0000000001",
+        "description": "DOBRADICA BORBOLETA EB FQ",
+        "quantity": 1
+      },
+      {
+        "code": "01.15.02.0000000066",
+        "description": "ALÇA PEGA MAO",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.06.0000000006",
+        "description": "TRAVA CARRETINHA",
+        "quantity": 8
+      },
+      {
+        "code": "02.01.01.0000091042",
+        "description": "LINGUETA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091547",
+        "description": "PERFIL TIRANTE DO PARA-LAMA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000067752",
+        "description": "CJ TUBO DE PVC 4'' x 3200",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.08.0000000028",
+        "description": "TAMPA DA FRENTE 4\"",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.08.0000000029",
+        "description": "TAMPA DO FUNDO 4\"",
+        "quantity": 1
+      },
+      {
+        "code": "01.12.06.0000000001",
+        "description": "TUBO DE PVC 4\" (100MM) X 6M",
+        "quantity": 0.5
+      },
+      {
+        "code": "02.01.01.0000076535",
+        "description": "CHAPA FECHAMENTO",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000076930",
+        "description": "CJ SUPORTE DE FIXAÇÃO ENGATE MILITAR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067897",
+        "description": "SUPORTE DO GANCHO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067898",
+        "description": "CHAPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085242",
+        "description": "CJ PARAF. PEGA MAO DE PLASTICO",
+        "quantity": 1
+      },
+      {
+        "code": "01.12.07.0000000005",
+        "description": "PEGA MAO - PLASTICO",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000085",
+        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 35MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.02.0000000012",
+        "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.03.0000000074",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 985",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000085571",
+        "description": "CJ SUPORTE DE ESTEPE E CONE",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086881",
+        "description": "CJ SUPORTE DE STEP - SUPERIOR CARROCERIA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000074245",
+        "description": "TUBO RETANGULAR #2,5 X 40 X 60 X 860mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.04.0000000035",
+        "description": "TUBO RETANGULAR 60 X 40 X 2,25 X 6000MM - NBR 6591",
+        "quantity": 3.6294
+      },
+      {
+        "code": "02.01.01.0000061734",
+        "description": "TUBO RETANGULAR #2,5 X 40 X 60 X 450mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067602",
+        "description": "TUBO RETANGULAR #2,5 X 40 X 60 X 350mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067603",
+        "description": "TUBO RETANGULAR #2,5 X 40 X 60 X 200mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067604",
+        "description": "SUPORTE  PARA RODA A DISCO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000074246",
+        "description": "CHAPA DE FIXAÇÃO",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000074247",
+        "description": "CHAPA DE FIXAÇÃO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000061738",
+        "description": "FECHAMENTO DAS COLUNAS",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.03.0000000015",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M24 X 3,00MM CLASSE 8 ZINCADO BRANCO DIN 982",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000000363",
+        "description": "REGULADOR DO PORTA ESTEPE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01..000003159",
+        "description": "REGULADOR DO ESTEPE",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000133",
+        "description": "BARRA ROSCADA SAE 1020 M24 X 3,0 X 1000MM",
+        "quantity": 1.1213
+      },
+      {
+        "code": "02.01.01.0000000360",
+        "description": "PEGADOR DO REGULADOR DO ESTEPE",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000082",
+        "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - SAE 1020",
+        "quantity": 0.3657
+      },
+      {
+        "code": "01.02.02.0000000027",
+        "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000000364",
+        "description": "SUPORTE  PARA RODA A DISCO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085578",
+        "description": "CJ PARF. ESCADA - DIREITO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086888",
+        "description": "CJ QUADRO DIREITO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000083530",
+        "description": "PERFIL LATERAL ESCADA TUBULAR - DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000089911",
+        "description": "MÃO FRANCESA ESQ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000089913",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000089915",
+        "description": "REFORCO TRAVESSA DO MANCAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002480",
+        "description": "CANTONEIRA DE ACABAMENTO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091085",
+        "description": "CORRIMÃO DA BALAUSTRADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091094",
+        "description": "REFORÇO DO CORRIMÃO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000083153",
+        "description": "PERFIL LATERAL ESCADA TUBULAR - DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.06.0000000028",
+        "description": "TRAVA DO RACK",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000086209",
+        "description": "LIMITADOR DA ESCADA TUBULAR",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000089912",
+        "description": "MÃO FRANCESA DIR",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000083528",
+        "description": "MONTAGEM ESCADA TUBULAR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002486",
+        "description": "TUBO - 01",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000008",
+        "description": "TUBO REDONDO 1\"(33,70MM) X 3,25 X 6000MM - DIN 2440/NBR 5580",
+        "quantity": 1.1362
+      },
+      {
+        "code": "02.01.01.0000002487",
+        "description": "TUBO - 03",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000083529",
+        "description": "TUBO - 02",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000083531",
+        "description": "TUBO - 01",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001601",
+        "description": "PERFIL TIRANTE DO PARA-LAMA",
+        "quantity": 3
+      },
+      {
+        "code": "01.12.06.0000000002",
+        "description": "TUBO DE PVC 6\" (150MM) X 6M",
+        "quantity": 0.4
+      },
+      {
+        "code": "02.02.02.0000085576",
+        "description": "CJ PARF. ESCADA - ESQUEDO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086885",
+        "description": "CJ QUADRO ESQUERDO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000009",
+        "description": "TUBO REDONDO 3/4\"(26,90MM) X 2,65 X 6000MM - DIN 2440/NBR 5580",
+        "quantity": 3.8215
+      },
+      {
+        "code": "02.01.02.0000085534",
+        "description": "\"TAMPA FRONTAL 6\"\"\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086896",
+        "description": "CJ. DO SUPORTE DE ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091137",
+        "description": "PERFIL U TRAVESSA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091141",
+        "description": "PERFIL U TRAVESSA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091138",
+        "description": "SAPATA SUPORTE DA ESCADA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000085579",
+        "description": "CJ. PARAF. SUPORTE ESCADA HORIZONTAL COM ROLETE",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000086895",
+        "description": "CJ SUPORTE PARA 2 ESCADAS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091123",
+        "description": "PERFIL SUPORTE DE ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091132",
+        "description": "REFORÇO DE FIXAÇAO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000072317",
+        "description": "MANCAL CENTRAL DO SUPORTE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000081750",
+        "description": "MAO FRANCESA",
+        "quantity": 2
+      },
+      {
+        "code": "01.12.06.0000000013",
+        "description": "TUBO CPVC AQUATHERM DN22 7002 - D.E. 22MM X D.I. 18MM X 3M",
+        "quantity": 0.149
+      },
+      {
+        "code": "02.02.01.0000086894",
+        "description": "CJ. SOLD. PINO DO ROLETE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000088624",
+        "description": "ARRUELA LISA 32 x 13 x 2,65 mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091127",
+        "description": "BARRA REDONDA Ø12,7 x 480 mm",
+        "quantity": 1
+      },
+      {
+        "code": "01.06.03.0000000011",
+        "description": "BATENTE PROTETOR DE ATRITO ANTE VIBRAÇAO Ø40 X Ø8 X 8MM",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000085581",
+        "description": "CJ. PARAF. GUIA PARA O SUPORTE DE ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091140",
+        "description": "PERFIL SUPORTE DE ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086898",
+        "description": "CJ LIXEIRA 2240,0000mm x 440mm x 400mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091146",
+        "description": "CANTONEIRA LATERAL LIXEIRA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000091142",
+        "description": "CANTONEIRA SUPERIOR LIXEIRA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000091144",
+        "description": "CANTONEIRA SUPERIOR LIXEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091145",
+        "description": "CANTONEIRA INFERIOR LIXEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000086901",
+        "description": "CJ LIXEIRA 2240,0000mm x 440mm x 400mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091152",
+        "description": "CANTONEIRA SUPERIOR LIXEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091153",
+        "description": "CANTONEIRA INFERIOR LIXEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091158",
+        "description": "CANTONEIRA SUPERIOR LIXEIRA",
+        "quantity": 4
+      },
+      {
+        "code": "01.05.06.0000000076",
+        "description": "TELA SOLDADA SERRALHEIRO FIO 2.76MM - MALHA 5 X 5 - ALT 1.52M - COMP 25M",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091157",
+        "description": "CANTONEIRA LATERAL LIXEIRA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000067361",
+        "description": "PARA-LAMA TRASEIRO",
+        "quantity": 4
+      },
+      {
+        "code": "02.02.02.0000086222",
+        "description": "CJ MONTAGEM MALEIRO ESQUERDO INFERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000001271",
+        "description": "PORTA MALEIRO INFERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001258",
+        "description": "TAMPA DA CAIXA DE FERRAMENTA MAIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001270",
+        "description": "FOLHA INTERNA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088398",
+        "description": "CJ. SOLDADO DE AÇO - 800 X 410 X 600",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001711",
+        "description": "CHAPA FUNDO DO ARMARIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001784",
+        "description": "CHAPA DO MALEIRO DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001786",
+        "description": "CANTONEIRA DA PRATELEIRAS",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000001787",
+        "description": "DIVISORIA DO MALEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001790",
+        "description": "DIVISORIA DO MALEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000088300",
+        "description": "PERFIL FIXAÇÃO CAIXA FERRAMENTA AÇO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000090238",
+        "description": "REFORÇO DO SUPORTE DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001712",
+        "description": "CHAPA DO MALEIRO ESQUERDA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.02.0000000010",
+        "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 12
+      },
+      {
+        "code": "01.02.03.0000000029",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
+        "quantity": 6
+      },
+      {
+        "code": "01.02.01.0000000219",
+        "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 35MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 6
+      },
+      {
+        "code": "02.02.02.0000085584",
+        "description": "CJ. SUPORTE PARA 4  CRUZETAS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001846",
+        "description": "BARRA CHATA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000064341",
+        "description": "SUPORTE CRUZETA",
+        "quantity": 6
+      },
+      {
+        "code": "02.01.01.0000091217",
+        "description": "FECHAMENTO DA CRUZETA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091220",
+        "description": "\"BARRA REDONDA 1/2\"\" \"",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000070",
+        "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - ASTM A36",
+        "quantity": 0.912
+      },
+      {
+        "code": "02.01.01.0000091200",
+        "description": "SUPORTE DA CRUZETA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000091219",
+        "description": "BARRA CHATA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.03.0000000034",
+        "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
+        "quantity": 17
+      },
+      {
+        "code": "02.02.03.0000085013",
+        "description": "\"CJ. TUBO DE PVC 4\"\"x2000mm\"",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.08.0000000030",
+        "description": "ARCO DE 4\"",
+        "quantity": 4
+      },
+      {
+        "code": "01.15.02.0000000065",
+        "description": "GRADE DE PROTEÇAO DO GIROLED",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091251",
+        "description": "SUPORTE GIROLED",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000083667",
+        "description": "CJ COLUNA ANTI CICLISTA 900MM",
+        "quantity": 5
+      },
+      {
+        "code": "02.01.01.0000071941",
+        "description": "PERFIL FIX. COLUNA ANTI CICLISTA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000031",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.3162
+      },
+      {
+        "code": "02.01.01.0000083668",
+        "description": "COLUNA LATERAL 900MM",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000064458",
+        "description": "CJ COMPARTIMENTO PARA ROTOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001715",
+        "description": "CHAPA BASE DO ROTOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000064459",
+        "description": "CHAPA CALANDRADA DO ROTOR",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000064460",
+        "description": "PERFIL APOIO DA CALANDRA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000064463",
+        "description": "TUBO COLUNA DO MALHAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086938",
+        "description": "CJ SUPORTE PARA CALÇO DE SAPATA Ø400X80mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000062217",
+        "description": "CHAPA SUPORTE PARA CALÇO DE SAPATA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091290",
+        "description": "PERFIL MAIOR SUPORTE CALSO DE PATOLA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091292",
+        "description": "PERFIL MENOR SUPORTE CALSO DE PATOLA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000085828",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI - NBR 7008 Z COMP: 1700,000 mm",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.06.0000000006",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI 1,55 X 220 X 6000MM - NBR 7008 Z",
+        "quantity": 0.7809
+      },
+      {
+        "code": "02.01.01.0000082803",
+        "description": "PERFIL DE FIXAÇÃO PARA-BARRO MAIOR",
+        "quantity": 2
+      },
+      {
+        "code": "01.12.07.0000000011",
+        "description": "TAMPA PERFIL ANTICICLISTA RETA 120 X 30MM",
+        "quantity": 6
+      },
+      {
+        "code": "01.12.07.0000000010",
+        "description": "TAMPA PERFIL ANTICICLISTA CURVA 120 X 30MM",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000085886",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI - NBR 7008 Z COMP: 900,000 mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.12.07.0000000014",
+        "description": "SUPORTE DE FIXAÇAO DO PERFIL ANTI CICLISTA",
+        "quantity": 10
+      },
+      {
+        "code": "02.02.01.0000076915",
+        "description": "CJ CANTONEIRA AMARRA POSTE",
+        "quantity": 12
+      },
+      {
+        "code": "02.01.01.0000075431",
+        "description": "CANTONEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000076916",
+        "description": "VERGALHÃO 16MM",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.03.0000000023",
+        "description": "BARRA REDONDA LAMINADA 5/16\"(7,94MM) X 6000MM - SAE 1020",
+        "quantity": 0.0621
+      },
+      {
+        "code": "02.01.01.0000091593",
+        "description": "REFORÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091600",
+        "description": "FECHAMENTO TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067423",
+        "description": "CJ GUARDA LATERA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061406",
+        "description": "TRAVA DA GRADE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067424",
+        "description": "PERFIL GUARDA LATERAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067425",
+        "description": "FECHAMENTO GUARDA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.04.0000000005",
+        "description": "DOBRADIÇA TAMPA MODERNA 174MM (SP350)",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000061394",
+        "description": "PERFIL ACABAMENTO DA GUARDA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091602",
+        "description": "CHAPA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091686",
+        "description": "CHAPA PÉ DO MALHAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.02.0000091712",
+        "description": "PORTINHOLA",
+        "quantity": 1
+      },
+      {
+        "code": "01.05.01.0000000003",
+        "description": "CHAPA DE ALUMINIO 2,00 X 1250 X 3000MM - LIGA 1100/1200 H14",
+        "quantity": 3.0452
+      },
+      {
+        "code": "02.02.01.0000067654",
+        "description": "CJ GUIA PORTINHOLA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067642",
+        "description": "\"\"\"U\"\" GUIA\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067643",
+        "description": "CANTONEIRA DE FIXACÃO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091824",
+        "description": "COMPLEMENTO LONGARINA VW 27.260 - ALMA 280MM",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000086476",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI - NBR 7008 Z COMP: 700,000 mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000087475",
+        "description": "CJ COLUNA ANTI CICLISTA - CORRIMAO DIANTEIRO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000093247",
+        "description": "COLUNA LATERAL 900MM",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000093261",
+        "description": "REFORÇO COLUNA ANTI-CILISTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067426",
+        "description": "CJ GUARDA TRASEIRA ALT.450 MM",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067427",
+        "description": "PERFIL GUARDA LATERAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067428",
+        "description": "FECHAMENTO GUARDA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000113",
+        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 9
+      },
+      {
+        "code": "01.02.01.0000000104",
+        "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.03.0000000040",
+        "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000086836",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI - NBR 7008 Z COMP: 1300,000 mm",
+        "quantity": 1
+      },
+      {
+        "code": "01.12.05.0000000010",
+        "description": "CONE NBR 15071 KTL TIPO II",
+        "quantity": 7
+      },
+      {
+        "code": "02.02.01.0000067429",
+        "description": "CJ GUARDA LATERA ALT.450 MM",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067430",
+        "description": "PERFIL GUARDA LATERAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067431",
+        "description": "FECHAMENTO GUARDA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088647",
+        "description": "SUPORTE REGULAVEL DE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096791",
+        "description": "CHAPA ACABAMENTO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096799",
+        "description": "CHAPA REFORÇO SUPORTE DE CONE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096801",
+        "description": "CHAPA ENCAIXE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096807",
+        "description": "CHAPA DE REGULAGEM",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088650",
+        "description": "CJ SUPORTE DE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096796",
+        "description": "PERFIL SUPORTE DE CONE DIREITO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096819",
+        "description": "PERFIL SUPORTE DE CONE ESQUERDO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096820",
+        "description": "CHAPA DE FIXAÇÃO DO SUPORTE DE CONE",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086839",
+        "description": "CJ BASE CARGA SECA 6000X2600",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077384",
+        "description": "PERFIL U 75 mm REFORÇO DO RODADO",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000001661",
+        "description": "PERFIL U TRAVESSA CURTA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091721",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000021",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 4,25 X 1200 X 3000MM - ASTM A36",
+        "quantity": 21.0438
+      },
+      {
+        "code": "02.02.01.0000001673",
+        "description": "CJ MONTAGEM ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000000371",
+        "description": "LATERAL ESQUERDA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000000372",
+        "description": "LATERAL DIREITA DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001674",
+        "description": "DEGRAUS DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001706",
+        "description": "PERFIL U TRAVESSA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000000052",
+        "description": "SUPORTE FIXO DO PARA LAMA",
+        "quantity": 4
+      },
+      {
+        "code": "02.02.01.0000086927",
+        "description": "CJ SUPORTE DE FUEIRO (DIREITO)",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061665",
+        "description": "TUBO QUADRADO #2,5 X 40 X 40",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000027",
+        "description": "TUBO QUADRADO 40 X 40 X 2,65 X 6000MM - NBR 6591",
+        "quantity": 1.5778
+      },
+      {
+        "code": "02.01.01.0000061778",
+        "description": "CHAPA FECHAMENTO TRAS FUEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.08.0000000025",
+        "description": "PRESILHA FIXAÇAO DO FUEIRO (COD SP034)",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061716",
+        "description": "FECHAMENTO DAS COLUNAS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091305",
+        "description": "PERFIL U REFORÇO CORRIMÃO DIANT",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000086484",
+        "description": "SUPORTE TIRANTE DO PARA-LAMA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091338",
+        "description": "PERFIL FIXAÇÃO COLUNA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000090991",
+        "description": "\" PERFIL ''J'' 3000 mm X 85 mm X 100 mm X 2,65 mm\t\t\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000062661",
+        "description": "CJ COLUNA DO FUEIRO TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000062627",
+        "description": "CHAPA FECHAMENTO TRAS FUEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000067206",
+        "description": "CJ COLUNA DO FUEIRO TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000062662",
+        "description": "CJ SUPORTE DE FUEIRO (40X40) ESQUERDO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000087885",
+        "description": "CHAPA FECHAMENTO TRAS FUEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067254",
+        "description": "PERFIL U CORRIMÃO FRONTAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000076533",
+        "description": "CORRIMÃO DA BALAUSTRADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001961",
+        "description": "CORRIMAO DA ESCADA PERFIL \"U\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067359",
+        "description": "PERFIL U LONGARINA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000067360",
+        "description": "\"PERFIL \"\"U\"\"\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090953",
+        "description": "\"PERFIL \"\"U\"\"\"",
+        "quantity": 6
+      },
+      {
+        "code": "02.01.01.0000000368",
+        "description": "PERFIL U TRAVESSA",
+        "quantity": 8
+      },
+      {
+        "code": "02.01.01.0000090964",
+        "description": "\"BARRA REDONDA Ø1/2\"\" \"",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000067368",
+        "description": "\"BARRA REDONDA Ø1/2\"\" \"",
+        "quantity": 4
+      },
+      {
+        "code": "02.02.01.0000067413",
+        "description": "MONTAGEM GUIA DA BROCA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061861",
+        "description": "CANTONEIRA DA BROCA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000061862",
+        "description": "BASE DA BROCA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061863",
+        "description": "BASE INFERIOR DA BROCA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000084054",
+        "description": "TUBO QUADRADO 100 X 100 X 4,75",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067412",
+        "description": "CANTONEIRA DA BROCA",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.17.0000000002",
+        "description": "ENGATE RAPIDO DOBRADIÇA (SP048)",
+        "quantity": 8
+      },
+      {
+        "code": "02.01.01.0000076537",
+        "description": "CHAPA U",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067436",
+        "description": "CHAPA XADREZ",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000090958",
+        "description": "CANTONEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000067442",
+        "description": "CJ SUPORTE DE TRAVAMENTO DO MALHAL MOVEL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000067422",
+        "description": "SUPORTE DE FIXAÇAO DO MALHAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000067441",
+        "description": "REFORÇO",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000067475",
+        "description": "TRAVESSA DO CORRIMÃO",
+        "quantity": 5
+      },
+      {
+        "code": "02.01.01.0000000369",
+        "description": "PERFIL U CORRIMÃO FRONTAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001220",
+        "description": "SUPORTE DE CONE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000069963",
+        "description": "PERFIL U TRAVESSA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073917",
+        "description": "PERFIL U CORRIMÃO LATERAL DIANT",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091049",
+        "description": "PERFIL U CORRIMÃO LATERAL DIANT",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091050",
+        "description": "PERFIL ''J'' 3000 mm X 100 mm X 85 mm X 2,65 mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091064",
+        "description": "\"PERFIL \"\"U\"\"\"",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000073941",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091052",
+        "description": "PERFIL U REFORÇO CORRIMÃO DIANT",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000090965",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090967",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001249",
+        "description": "PERFIL U TRAVESSA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000073945",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085557",
+        "description": "CJ PARAF. MONTAGEM DO MALHAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000086843",
+        "description": "CJ MALHAL TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091131",
+        "description": "TUBO 4,75 X 80 X 80 X 750mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000090943",
+        "description": "TUBO MALHAL 100 x 100 x 1280 mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.03.0000077374",
+        "description": "MADEIRA DE APOIO DOS POSTES 350 X 116 X 175 COM CAVA",
+        "quantity": 1
+      },
+      {
+        "code": "01.13.05.0000000005",
+        "description": "SUPORTE ASSOALHO FIXAÇAO DA CARGA MOVEL",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000074386",
+        "description": "CHAPA XADREZ",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000000059",
+        "description": "SUPORTE TIRANTE DO PARA-LAMA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091162",
+        "description": "PERFIL ''U'' 2540 mm X 70 mm X 40 mm X 3,75 mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000090985",
+        "description": "CHAPA APOIO ASSOALHO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000000366",
+        "description": "PERFIL U CORRIMÃO LATERAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000074389",
+        "description": "CANTONEIRA DO ASSOALHO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090956",
+        "description": "\"PERFIL \"\"U\"\"\"",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000087032",
+        "description": "CJ CANALETA VAZÃO OLEO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001250",
+        "description": "PERFIL CANALETA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001251",
+        "description": "PERFIL U REFORÇO DO RODADO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000087596",
+        "description": "TUBO PARA OLEO DO COROTE",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000010",
+        "description": "TUBO REDONDO 3/8\"(17,20MM) X 2,00 X 6000MM - DIN 2440/NBR 5580",
+        "quantity": 0.0425
+      },
+      {
+        "code": "02.01.01.0000091696",
+        "description": "PERFIL CANALETA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000001803",
+        "description": "ESTRIBO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000001791",
+        "description": "TUBO #2,00X40X60X500 mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.04.0000000033",
+        "description": "TUBO RETANGULAR 60 X 40 X 2,00 X 6000MM - NBR 6591",
+        "quantity": 1.3777
+      },
+      {
+        "code": "02.01.01.0000001793",
+        "description": "PERFIL L DEGRAU DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000076534",
+        "description": "FECHAMENTO DA CARROCERIA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090966",
+        "description": "\"BARRA REDONDA Ø1/2\"\" \"",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000077805",
+        "description": "\"PERFIL \"\"U\"\"\"",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077553",
+        "description": "CHAPA FIXAÇÃO COROTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090983",
+        "description": "CHAPA APOIO ASSOALHO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091180",
+        "description": "PERFIL L FIXAÇÃO SUPORTE CONE",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000092137",
+        "description": "CANTONEIRA DA BROCA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091202",
+        "description": "PERFIL INFERIOR DE FIXAÇÃO SPT CRUZETA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091214",
+        "description": "\"PERFIL  FIX. TUBOS PVC 4\"\"\"",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000092133",
+        "description": "CANTONEIRA DA BROCA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096822",
+        "description": "CHAPA SUPORTE DE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000001265",
+        "description": "MÃO FRANCESA ESQ",
+        "quantity": 10
+      },
+      {
+        "code": "02.01.01.0000001266",
+        "description": "MÃO FRANCESA DIR",
+        "quantity": 9
+      },
+      {
+        "code": "02.01.01.0000001752",
+        "description": "CANTONEIRA DO MALHAL",
+        "quantity": 16
+      }
     ]
   },
   "analysts": [
@@ -242537,6 +244664,7 @@
       "8paletes",
       "10L",
       "basculante",
+      "neoEnergia",
       "10HDOC",
       "21T",
       "7T",
