@@ -201841,6 +201841,46 @@
         "DEM 11/2026": 0,
         "DEM 12/2026": 0
       }
+    },
+    {
+      "code": "02.03.01.0000069418",
+      "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
+      "analyst": "BRUNO",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 11,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 35,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 12,
+        "DEM 10/2026": 27,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 46,
+        "DEM 09/2026": -1,
+        "DEM 10/2026": -16,
+        "DEM 11/2026": 11,
+        "DEM 12/2026": 0
+      }
     }
   ],
   "models": {
@@ -241052,6 +241092,1358 @@
         "description": "KIT SEPARAÇAO MANGUEIRAS - NX7.5T TRAVE 2H 2M (VALVULA SELETORA)",
         "quantity": 1
       }
+    ],
+    "basculante": [
+      {
+        "code": "03.01.03.0000000012.001",
+        "description": "CARROCERIA BASCULANTE TRASEIRO (12 A 16M³) - SERIE PESADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.08.0000085429",
+        "description": "CJ GERAL DA CAIXA 16M3 COM FECHAMENTO SUPERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.01.0000085185",
+        "description": "EIXO DE ARTICULAÇÃO DA CAIXA",
+        "quantity": 2
+      },
+      {
+        "code": "02.03.01.0000085188",
+        "description": "EIXO DE FIXACAO DO CILINDRO",
+        "quantity": 4
+      },
+      {
+        "code": "02.02.01.0000088406",
+        "description": "CJ. PREPARAÇÃO VW 11.180 4x2 (PADRÃO)",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000085847",
+        "description": "FECHAMENTO TRASEIRO VW SERIE PESADA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000029",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
+        "quantity": 4.6184
+      },
+      {
+        "code": "02.02.01.0000088407",
+        "description": "CJ PARA-CHOQUE SERIE LEVE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002818",
+        "description": "COLUNA DO PARA CHOQUE",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.04.0000000024",
+        "description": "TUBO QUADRADO 80 X 80 X 4,75 X 6000MM - NBR 6591",
+        "quantity": 3.412
+      },
+      {
+        "code": "02.01.01.0000060592",
+        "description": "LÂMINA DO PARA-CHOQUE SERIE LEVE",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000033",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
+        "quantity": 26.1061
+      },
+      {
+        "code": "02.01.01.0000095980",
+        "description": "SUPORTE  PARA-CHOQUE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096158",
+        "description": "TALA DE FIXACAO",
+        "quantity": 8
+      },
+      {
+        "code": "01.04.01.0000000051",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 9,52 X 1200 X 3000MM - ASTM A36",
+        "quantity": 3.0452
+      },
+      {
+        "code": "02.01.01.0000096157",
+        "description": "TALA FIX TRASEIRO BASCULANTE - VW 9180",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000037",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 3.787
+      },
+      {
+        "code": "02.01.01.0000096213",
+        "description": "TALA DE FIXACAO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096216",
+        "description": "TALA DE FIXACAO",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000036",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.4117
+      },
+      {
+        "code": "02.01.01.0000096217",
+        "description": "TALA DE FIXACAO",
+        "quantity": 8
+      },
+      {
+        "code": "02.01.01.0000096218",
+        "description": "TALA DE FIXACAO",
+        "quantity": 4
+      },
+      {
+        "code": "02.02.01.0000087406",
+        "description": "CJ TRAVA PINO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000093062",
+        "description": "PINO TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000040",
+        "description": "BARRA REDONDA 1/2\"(12,70MM) - SAE 1020",
+        "quantity": 0.1035
+      },
+      {
+        "code": "01.02.06.0000000025",
+        "description": "CORRENTE SEM FIM N°7 1,2 X 6,5 X 23MM ZIN ( PEQUENA)",
+        "quantity": 8
+      },
+      {
+        "code": "02.02.01.0000086180",
+        "description": "CJ COLUNA ANTI-CICLISTA",
+        "quantity": 6
+      },
+      {
+        "code": "02.01.01.0000088218",
+        "description": "MÃO FRANCESA ANTI-CICLISTA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000031",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
+        "quantity": 1.3731
+      },
+      {
+        "code": "02.01.01.0000088523",
+        "description": "COLUNA LATERAL INFERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000088525",
+        "description": "CHAPA DE FIXACAO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000088526",
+        "description": "MÃO FRANCESA DIREITA ANTI-CICLISTA",
+        "quantity": 1
+      },
+      {
+        "code": "01.12.07.0000000014",
+        "description": "SUPORTE DE FIXAÇAO DO PERFIL ANTI CICLISTA",
+        "quantity": 10
+      },
+      {
+        "code": "02.02.01.0000088456",
+        "description": "CJ BASCULANTE + TAMPA + TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088386",
+        "description": "CJ CAIXA 16M3",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088387",
+        "description": "CJ CHAPAS DO PISO DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095938",
+        "description": "CHAPA INTERMEDIARIA DA CAIXA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000095939",
+        "description": "CHAPA INTERMEDIARIA DA CAIXA",
+        "quantity": 6
+      },
+      {
+        "code": "02.01.01.0000095944",
+        "description": "FECHAMENTO FRONTAL DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095960",
+        "description": "FECHAMENTO FRONTAL DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095974",
+        "description": "CHAPA INTERMEDIARIA DA CAIXA",
+        "quantity": 3
+      },
+      {
+        "code": "01.04.01.0000000111",
+        "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
+        "quantity": 38.5515
+      },
+      {
+        "code": "02.01.01.0000095982",
+        "description": "CHAPA LATERAL DO CHAPEU",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095983",
+        "description": "PERFIL REFORÇO",
+        "quantity": 3
+      },
+      {
+        "code": "01.04.01.0000000027",
+        "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.3094
+      },
+      {
+        "code": "02.01.01.0000095986",
+        "description": "PERFIL REFORÇO",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000095989",
+        "description": "LONGARINA DIREITA DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095991",
+        "description": "ALMA DA LONGARINA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095992",
+        "description": "LONGARINA ESQUERDA DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096000",
+        "description": "CALÇO DO SUPORTE DA ARTICULAÇÃO",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096001",
+        "description": "CALÇO DO SUPORTE DA ARTICULAÇÃO",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088388",
+        "description": "CJ QUADRO TRASEIRO COM FOMINHA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095942",
+        "description": "TRAVESSA DO QUADRO TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095954",
+        "description": "COLUNA DO QUADRO TRASEIRO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096211",
+        "description": "REFORÇO DA JUNÇÃO DA COSTELA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096002",
+        "description": "TRAVESSA INFERIOR DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096003",
+        "description": "TRAVESSA DA LONGARINA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096006",
+        "description": "TRAVESSA MENOR DA LONGARINA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096007",
+        "description": "TRAVESSA INFERIOR DA CAIXA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096013",
+        "description": "SUPORTE TRASEIRO EXTERNO DO FOMINHA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096014",
+        "description": "PERFIL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096045",
+        "description": "CORRIMÃO LATERAL SUPERIOR",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096054",
+        "description": "ALMA MENOR DA LONGARINA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096068",
+        "description": "SUPORTE ESQUERDO ARTICULAÇÃO DA CAIXA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096070",
+        "description": "SUPORTE DIREITO ARTICULAÇÃO DA CAIXA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088389",
+        "description": "CJ COSTELA LATERAL",
+        "quantity": 10
+      },
+      {
+        "code": "02.01.01.0000095943",
+        "description": "TRAVESSA INFERIOR DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095946",
+        "description": "COLUNA LATERAL MENOR DA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095988",
+        "description": "REFORÇO DA JUNÇÃO DA COSTELA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096154",
+        "description": "FECHAMENTO TRASEIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000083155",
+        "description": "CJ PARAF ESCADA TUBULAR",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000083154",
+        "description": "CJ QUADRO DA ESCADA TUBULAR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002480",
+        "description": "CANTONEIRA DE ACABAMENTO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002482",
+        "description": "REFORCO TRAVESSA DO MANCAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000083153",
+        "description": "PERFIL LATERAL ESCADA TUBULAR - DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000083530",
+        "description": "PERFIL LATERAL ESCADA TUBULAR - DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.06.0000000028",
+        "description": "TRAVA DO RACK",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000086209",
+        "description": "LIMITADOR DA ESCADA TUBULAR",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000083528",
+        "description": "MONTAGEM ESCADA TUBULAR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002486",
+        "description": "TUBO - 01",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000008",
+        "description": "TUBO REDONDO 1\"(33,70MM) X 3,25 X 6000MM - DIN 2440/NBR 5580",
+        "quantity": 1.1362
+      },
+      {
+        "code": "02.01.01.0000002487",
+        "description": "TUBO - 03",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000083529",
+        "description": "TUBO - 02",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000083531",
+        "description": "TUBO - 01",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000092416",
+        "description": "MÃO FRANCESA ESQ 150mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000092415",
+        "description": "MÃO FRANCESA DIR 150mm",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000060480",
+        "description": "REFORCO EXTERNO TUDO MANCAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.03.01.0000085187",
+        "description": "ARRUELA DO PINO DE ARTICULAÇÃO",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096169",
+        "description": "MÃO FRANCESA ESQ",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096171",
+        "description": "MÃO FRANCESA DIR",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096192",
+        "description": "MANCAL EXTERNO DO EIXO DA TAMPA",
+        "quantity": 4
+      },
+      {
+        "code": "01.04.01.0000000026",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 15,87 X 1200 X 3000MM - ASTM A36",
+        "quantity": 2.4644
+      },
+      {
+        "code": "02.01.01.0000096194",
+        "description": "FECHAMENTO DA COLUNA TRASEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095947",
+        "description": "PERFIL DE REFORÇO FRONTAL",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096199",
+        "description": "FECHAMENTO DO SUPORTE TRASEIRO DO FOMINHA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096200",
+        "description": "SUPORTE DA PÁ",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096203",
+        "description": "SUPORTE TRASEIRO EXTERNO DO FOMINHA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096204",
+        "description": "SUPORTE TRASEIRO DO FOMINHA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095948",
+        "description": "CHAPA DO CHAPEU",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095949",
+        "description": "CORRIMÃO FRONTAL SUPERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095955",
+        "description": "CORRIMÃO LATERAL SUPERIOR",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095956",
+        "description": "LONGARINA DA CAIXA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095958",
+        "description": "ALMA MENOR DA LONGARINA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095999",
+        "description": "FECHAMENTO LONGARINA",
+        "quantity": 9
+      },
+      {
+        "code": "02.02.01.0000088460",
+        "description": "SUPORTE FIXAÇÃO DO CILINDRO NA CAIXA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088399",
+        "description": "CJ TAMPA TRASEIRA ABERTURA LATERAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088400",
+        "description": "ESTRUTURA BASCULAMENTO DA TAMPA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095967",
+        "description": "TUBO INFERIOR DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095969",
+        "description": "TUBO LATERAL DA TAMPA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096026",
+        "description": "DOBRADICA DA TAMPA",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000076",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 19,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 4.8243
+      },
+      {
+        "code": "02.01.01.0000096028",
+        "description": "REFORÇO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096037",
+        "description": "FECHAMENTO DO TUBO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096038",
+        "description": "FECHAMENTO",
+        "quantity": 2
+      },
+      {
+        "code": "02.03.02.0000085278",
+        "description": "BUCHA DO EIXO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096190",
+        "description": "PERFIL TRAVA DA TAMPA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096032",
+        "description": "VARÃO DA TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000205",
+        "description": "BARRA REDONDA TREFILADO 7/8\"(22,22MM) X 6000MM - SAE 1020",
+        "quantity": 3.4477
+      },
+      {
+        "code": "02.01.01.0000096033",
+        "description": "TRAVA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096034",
+        "description": "ALAVANCA DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000085",
+        "description": "BARRA REDONDA LAMINADA 7/8\"(22,22MM) X 6000MM - SAE 1020",
+        "quantity": 1.5755
+      },
+      {
+        "code": "02.01.01.0000096206",
+        "description": "ARRUELA",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.01.0000000133",
+        "description": "BARRA ROSCADA SAE 1020 M24 X 3,0 X 1000MM",
+        "quantity": 0.0609
+      },
+      {
+        "code": "02.01.01.0000096152",
+        "description": "PERFIL PISANTE",
+        "quantity": 4
+      },
+      {
+        "code": "01.04.03.0000000082",
+        "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - SAE 1020",
+        "quantity": 0.3599
+      },
+      {
+        "code": "02.01.01.0000096149",
+        "description": "PERFIL PISANTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088401",
+        "description": "CJ TAMPA TRASEIRA ESQUERDA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095963",
+        "description": "CHAPA DA TAMPA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095964",
+        "description": "REFORÇO DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095965",
+        "description": "PERFIL INFERIOR DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096017",
+        "description": "PERFIL LATERAL DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096022",
+        "description": "FECHAMENTO DO PERFIL DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096023",
+        "description": "FECHAMENTO DO PERFIL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095962",
+        "description": "PERFIL SUPERIOR DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096018",
+        "description": "PERFIL INFERIOR DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096183",
+        "description": "PERFIL FECHAMENTO DA COLUNA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088402",
+        "description": "TAMPA TRASEIRA DIREITA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096036",
+        "description": "PERFIL U DA TRAVA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096040",
+        "description": "CANTONEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096041",
+        "description": "CANTONEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096208",
+        "description": "CANTONEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095966",
+        "description": "CHAPA DA TAMPA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096035",
+        "description": "SUPORTE DA TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088403",
+        "description": "SUPORTE DA TRAVA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096029",
+        "description": "SUPORTE DA TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096030",
+        "description": "CHAPA DA TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096039",
+        "description": "FECHAMENTO",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.02.0000085275",
+        "description": "MANCAL LATERAL DA TAMPA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096020",
+        "description": "SUPORTE DA DOBRADIÇA",
+        "quantity": 4
+      },
+      {
+        "code": "02.03.01.0000085183",
+        "description": "EIXO DA DOBRADICA LATERAL DA TAMPA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096025",
+        "description": "CHAPA DA DOBRADIÇA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096031",
+        "description": "EIXO DA TRAVA DA TAMPA",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.04.0000000020",
+        "description": "DOBRADIÇA CARRETA BASCULANTE 300MM (SP732)",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.14.0000000006",
+        "description": "TRAVA TAMPA CAÇAMBA LEVE 9,50MM - SP567D",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.14.0000000007",
+        "description": "TRAVA TAMPA CAÇAMBA LEVE 9,50MM - SP567E",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096186",
+        "description": "CHAPA TRAVA DO EIXO",
+        "quantity": 2
+      },
+      {
+        "code": "02.03.01.0000085190",
+        "description": "EIXO DA TAMPA TRASEIRA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.02.0000086255",
+        "description": "CJ PARAF. ARMARIO INFERIOR AÇO 600 X 500 X 500mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096236",
+        "description": "CHAPA INTERNA SUPORTE CAIXA FERRAMENTA",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000062334",
+        "description": "CJ ESTRUTURA DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000062335",
+        "description": "PERFIL INFERIOR ARMÁRIO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000062336",
+        "description": "PERFIL TRASEIRO DO ARMÁRIO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000061759",
+        "description": "FECHAMENTO LATERAL DO ARMÁRIO",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.04.0000000001",
+        "description": "DOBRADICA BORBOLETA EB FQ",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000062338",
+        "description": "CHAPA EXTERNA DA PORTA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000086",
+        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 16MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 8
+      },
+      {
+        "code": "01.02.03.0000000032",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
+        "quantity": 8
+      },
+      {
+        "code": "01.02.01.0000000072",
+        "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 3
+      },
+      {
+        "code": "01.02.02.0000000017",
+        "description": "ARRUELA LISA MEDIA M5 X 10 X 1,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 6
+      },
+      {
+        "code": "01.02.02.0000000014",
+        "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 16
+      },
+      {
+        "code": "02.02.01.0000087642",
+        "description": "CJ SUPORTE CONE BEBIDAS 06 PLT",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000062910",
+        "description": "BASE DO CONE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000062912",
+        "description": "FECHAMENTO MAIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000062992",
+        "description": "FECHAMENTO MENOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000091928",
+        "description": "PE MAIOR DO SUPORTE DE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091929",
+        "description": "PE DIREITO MAIOR DO SUPORTE DE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000091933",
+        "description": "PERFIL DE LIGAÇÃO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000093750",
+        "description": "PERFIL FIX. SUPORTE CONE",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088468",
+        "description": "CJ SUPORTE DA CAIXA DE COZINHA DIREITO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096234",
+        "description": "SUPORTE DA CAIXA DE COZINHA (DIREITO)",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096235",
+        "description": "REFORCO DO SUPORTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088470",
+        "description": "CJ SUPORTE DA CAIXA DE COZINHA ESQUERDO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096238",
+        "description": "SUPORTE DA CAIXA DE COZINHA (ESQUERDO)",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085616",
+        "description": "CJ. PARAF. PROTETOR ANTI-CICLISTA 800mm",
+        "quantity": 2
+      },
+      {
+        "code": "01.12.07.0000000010",
+        "description": "TAMPA PERFIL ANTICICLISTA CURVA 120 X 30MM",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000086738",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO 800,000 mm",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.06.0000000006",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI 1,55 X 220 X 6000MM - NBR 7008 Z",
+        "quantity": 0.2806
+      },
+      {
+        "code": "01.12.07.0000000011",
+        "description": "TAMPA PERFIL ANTICICLISTA RETA 120 X 30MM",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000085619",
+        "description": "CJ. PARAF. PROTETOR ANTI-CICLISTA 1100mm",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000085919",
+        "description": "PERFIL ANTI-CICLISTA AÇO GALVANIZADO FGI - NBR 7008 Z COMP: 800,000 mm",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000002548",
+        "description": "PARA-LAMA TRASEIRO ESQUERDO",
+        "quantity": 2
+      },
+      {
+        "code": "01.12.04.0000000001",
+        "description": "PARA BARRO LISO 400 X 500 EQUIP NEXT",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000082802",
+        "description": "PERFIL DE FIXAÇÃO PARA-BARRO MENOR",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088405",
+        "description": "CJ CHASSI DO BASCULANTE 6M³",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095971",
+        "description": "LONGARINA ESQUERDA DA BASE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096121",
+        "description": "REFORCO INTERNO DA TRAVESSA DIANT CAIXA",
+        "quantity": 4
+      },
+      {
+        "code": "01.04.01.0000000024",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 12,70 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.6337
+      },
+      {
+        "code": "02.02.01.0000088441",
+        "description": "CJ TRAVA BASCULANTE - MANUTENÇÃO DIR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096109",
+        "description": "PERFIL BASE DA TRAVA BASCULANTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096110",
+        "description": "CHAPA TRAVA BASCULANTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096124",
+        "description": "CHAPA ALMA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096125",
+        "description": "CHAPA TRAVA BASCULANTE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096117",
+        "description": "REFORÇO SUPERIOR",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096123",
+        "description": "VARÃO DA TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088443",
+        "description": "CJ TRAVA BASCULANTE - MANUTENÇÃO ESQ",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088445",
+        "description": "CJ TRAVA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096133",
+        "description": "APOIO DA TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096143",
+        "description": "SUPORTE BASE TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000090247",
+        "description": "REFORÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.01.0000085186",
+        "description": "BUCHA INFERIOR DE ARTICULACAO DA CAIXA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096166",
+        "description": "PERFIL GUIA DA CAIXA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096201",
+        "description": "ARCO DE FIXAÇÃO DAS MANGUEIRAS",
+        "quantity": 3
+      },
+      {
+        "code": "01.04.03.0000000063",
+        "description": "BARRA REDONDA LAMINADA 1/4\"(6,35MM) X 6000MM - SAE 1020",
+        "quantity": 0.046
+      },
+      {
+        "code": "02.01.01.0000096202",
+        "description": "SUPORTE DO RESERVATORIO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095972",
+        "description": "LONGARINA DIREITA DA BASE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096205",
+        "description": "FECHAMENTO LONGARINA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000088524",
+        "description": "PERFIL U DE FIXAÇÃO DO ANTI CICLISTA",
+        "quantity": 8
+      },
+      {
+        "code": "02.02.01.0000035064",
+        "description": "CJ COROTE COM SUPORTE PARAFUSADO",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000035063",
+        "description": "CJ SUPORTE DO COROTE PARAFUSADO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000035062",
+        "description": "CHAPA DE FIXACAO DO SUPORTE DO COROTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000035061",
+        "description": "PERFIL DO SUPORTE DO COROTE PARAFUSADO",
+        "quantity": 1
+      },
+      {
+        "code": "01.12.02.0000000003",
+        "description": "COROTE PRETO COM ABA E SABONETEIRA 25 LITROS",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000096239",
+        "description": "MÃO FRANCESA DIREITA ANTI-CICLISTA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000088173",
+        "description": "SUPORTE DO PARALAMA DIREITO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000088180",
+        "description": "SUPORTE DO PARALAMA ESQUERDO",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000095993",
+        "description": "LONGARINA DIREITA DA BASE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095994",
+        "description": "LONGARINA ESQUERDA DA BASE",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095998",
+        "description": "FECHAMENTO TRASEIRA DA LONGARINA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096012",
+        "description": "TRAVESSA DA LONGARINA",
+        "quantity": 3
+      },
+      {
+        "code": "02.01.01.0000096056",
+        "description": "ALMA DA LONGARINA DA BASE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096057",
+        "description": "ALMA DA LONGARINA DA BASE",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000096209",
+        "description": "REFORCO INTERNO DA TRAVESSA DIANT CAIXA",
+        "quantity": 6
+      },
+      {
+        "code": "02.01.01.0000096212",
+        "description": "REFORCO INTERNO DA TRAVESSA DIANT CAIXA",
+        "quantity": 4
+      },
+      {
+        "code": "02.01.01.0000096246",
+        "description": "PERFIL DA CAIXA DO CILINDRO",
+        "quantity": 2
+      },
+      {
+        "code": "01.01.10.0000000148",
+        "description": "KIT HIDRAULICO BASCULANTE - BAIXA PRESSAO CILINDRO DUPLO - 909764",
+        "quantity": 1
+      },
+      {
+        "code": "01.11.04.0000000089",
+        "description": "LUZ DE PLACA COM FIO 1,50 MTS PC048000560150",
+        "quantity": 1
+      },
+      {
+        "code": "01.11.05.0000000045",
+        "description": "DERIVADOR PARA CABO RETANGULAR 2 X 0,75MM² (DOUBLE CLICK)",
+        "quantity": 1
+      },
+      {
+        "code": "01.11.05.0000000035",
+        "description": "SIRENE SINALIZADORA RE DNI 4127 BIVOLT",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.10.0000000014",
+        "description": "FITA ISOLANTE PVC PRETA 18 MM X 20M",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.06.0000000001",
+        "description": "FITA ADESIVA DE TECIDO PRETA 19 MM X 10 METROS",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.11.0000000038",
+        "description": "ABRAÇADEIRA NYLON K22 200MM X 4,8MM - PRETO",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.01.0000000150",
+        "description": "PARAFUSO SEXTAVADO M22 X 2,50 X 140MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.02.0000000051",
+        "description": "ARRUELA LISA MEDIA M22 X 39 X 3,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.03.0000000068",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M22 X 2,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.05.0000000015",
+        "description": "REBITE REPUXO 4,80 X 14MM ALUMINIO",
+        "quantity": 24
+      },
+      {
+        "code": "01.01.10.0000000149",
+        "description": "CILINDRO BASCULANTE 7POL X CURSO 850MM X CARGA 36T (TK 9015.01)",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.01.0000000219",
+        "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 35MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 10
+      },
+      {
+        "code": "01.02.02.0000000010",
+        "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 20
+      },
+      {
+        "code": "01.02.03.0000000029",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
+        "quantity": 10
+      },
+      {
+        "code": "01.12.04.0000000002",
+        "description": "PARA BARRO LISO 500 X 600 EQUIP NEXT",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.01.0000000096",
+        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 8
+      },
+      {
+        "code": "01.02.03.0000000050",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
+        "quantity": 8
+      },
+      {
+        "code": "01.09.01.0000000015",
+        "description": "FAIXA REFLETIVA PARA CAMINHAO 5 X 30CM DIREITA",
+        "quantity": 12
+      },
+      {
+        "code": "01.09.01.0000000016",
+        "description": "FAIXA REFLETIVA PARA CAMINHAO 5 X 30CM ESQUERDA",
+        "quantity": 12
+      },
+      {
+        "code": "01.09.01.0000000014",
+        "description": "FAIXA REFLETIVA PARA PARA-CHOQUE",
+        "quantity": 1
+      },
+      {
+        "code": "01.15.04.0000000068",
+        "description": "KIT SINALIZADOR CAÇAMBA BASCULANTE CAIXA ALTA CONTRAN 859",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.03.0000000037",
+        "description": "ETIQUETA VINIL COM ADESIVO DE 255 X 60MM ESP. 0,10MM - \"QUADRO BRANCO QUALIDADE\"",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.03.0000000038",
+        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" MONTAGEM FINAL - AZUL",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.03.0000000039",
+        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" ELETRICA - AMARELO",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.03.0000000040",
+        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" PINTURA - VERMELHO",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.03.0000000041",
+        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" MECANICA DE TESTE - VERDE",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.03.0000000042",
+        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" INSPEÇAO FINAL - ROXO",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.02.0000000003",
+        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 90 X 375MM ESP. 0,25MM - NEXT IMPLEMENTOS CI-3437-014-00 YR-9767",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.02.0000000021",
+        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
+        "quantity": 2
+      },
+      {
+        "code": "01.09.04.0000000010",
+        "description": "PLACA DE ALUMINIO GRAVADO N. NIEV 150X74X0,5MM",
+        "quantity": 1
+      },
+      {
+        "code": "01.09.04.0000000002",
+        "description": "PLACA DE ALUMINIO GRAVADO GMYR-9767 30 X 80 X 0,8MM",
+        "quantity": 1
+      },
+      {
+        "code": "01.11.04.0000000044",
+        "description": "LANTERNA AMBAR 1 LED E HASTE E CABO CHATO 30 CM",
+        "quantity": 6
+      },
+      {
+        "code": "01.09.04.0000000003",
+        "description": "PLACA DE ALUMINO ID (PBT 10 A 23,5 TON) 75 X 60 X 0,5MM",
+        "quantity": 1
+      },
+      {
+        "code": "01.11.01.0000000074",
+        "description": "CABO RETANGULAR 2 X 0,50MM² X 100M",
+        "quantity": 14
+      },
+      {
+        "code": "01.02.01.0000000115",
+        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 6
+      }
     ]
   },
   "analysts": [
@@ -241144,6 +242536,7 @@
       "30-T",
       "8paletes",
       "10L",
+      "basculante",
       "10HDOC",
       "21T",
       "7T",
