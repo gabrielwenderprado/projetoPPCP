@@ -205,7 +205,7 @@ const LOGIN_USERS = [
     name: 'Administrador',
     analyst: ''
   },
-   {
+  {
     username: 'gabriel',
     password: 'Next2026',
     name: 'Administrador',
