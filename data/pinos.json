@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_31.08 Atual.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_01.09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-08-31",
+  "generatedAt": "2026-09-01",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -135,7 +135,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 133,
+      "stock": 115,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -271,7 +271,7 @@
       "code": "02.03.01.0000085106",
       "description": "PINO ROSCADO DO DESLIZE",
       "unit": "UN",
-      "stock": 77,
+      "stock": 72,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -288,7 +288,7 @@
       "code": "02.03.03.0000083484",
       "description": "ENGRENAGEM APOIO",
       "unit": "UN",
-      "stock": 1680,
+      "stock": 1630,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -305,7 +305,7 @@
       "code": "02.02.01.0000083441",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
       "unit": "UN",
-      "stock": 127,
+      "stock": 27,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -509,7 +509,7 @@
       "code": "02.02.01.0000080813",
       "description": "PINO BASCULAMENTO - AS",
       "unit": "UN",
-      "stock": 174,
+      "stock": 168,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -526,7 +526,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 348,
+      "stock": 292,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -543,7 +543,7 @@
       "code": "02.02.01.0000085283",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 702,
+      "stock": 652,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -611,7 +611,7 @@
       "code": "01.02.07.0000000014",
       "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
       "unit": "UN",
-      "stock": 1255,
+      "stock": 1249,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -747,7 +747,7 @@
       "code": "02.02.01.0000083444",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 337,
+      "stock": 331,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -781,7 +781,7 @@
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
       "unit": "UN",
-      "stock": 161,
+      "stock": 111,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -798,7 +798,7 @@
       "code": "02.02.01.0000086369",
       "description": "PINO ARTICULAÇAO LANÇAS - AS",
       "unit": "UN",
-      "stock": 314,
+      "stock": 264,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -849,7 +849,7 @@
       "code": "02.03.01.0000083452",
       "description": "PINO FIXAÇAO CESTO",
       "unit": "UN",
-      "stock": 131,
+      "stock": 125,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1053,7 +1053,7 @@
       "code": "01.13.01.0000000031",
       "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1800 MM - 2 TON",
       "unit": "UN",
-      "stock": 180,
+      "stock": 144,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1223,7 +1223,7 @@
       "code": "02.02.01.0000082249",
       "description": "ENGRENAGEM ARTIC. LANÇA/BASE - AS",
       "unit": "UN",
-      "stock": 0,
+      "stock": 40,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,
@@ -1274,7 +1274,7 @@
       "code": "02.02.01.0000083457",
       "description": "ENGRENAGEM ARTIC. BASE/LANÇA - AS",
       "unit": "UN",
-      "stock": 85,
+      "stock": 159,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1325,7 +1325,7 @@
       "code": "02.02.01.0000086611",
       "description": "ENGRENAGEM ARTIC. LANÇA/BASE - AS",
       "unit": "UN",
-      "stock": 0,
+      "stock": 10,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1410,7 +1410,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 482,
+      "stock": 476,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1512,7 +1512,7 @@
       "code": "02.03.02.0000083460",
       "description": "ENGRENAGEM ARTICULAÇAO LANÇAS",
       "unit": "UN",
-      "stock": 181,
+      "stock": 131,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1529,7 +1529,7 @@
       "code": "02.03.02.0000083461",
       "description": "ENGRENAGEM CESTO",
       "unit": "UN",
-      "stock": 259,
+      "stock": 253,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1546,7 +1546,7 @@
       "code": "02.03.02.0000085089",
       "description": "ESPAÇADOR ENGRENAGEM CESTO",
       "unit": "UN",
-      "stock": 83,
+      "stock": 77,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,

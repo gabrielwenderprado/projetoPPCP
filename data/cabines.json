@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_31.08 Atual.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_01.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-08-31",
+  "generatedAt": "2026-09-01",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 0,
+      "stock": 11000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 14410,
+      "stock": 14160,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -283,7 +283,7 @@
       "code": "01.02.03.0000000040",
       "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 2000,
+      "stock": 2600,
       "modelNeeds": {
         "4 LUGAR": 12,
         "6 LUGAR": 16,
@@ -388,7 +388,7 @@
       "code": "01.15.02.0000000120",
       "description": "CONJUNTO FECHO COM CADARÇO 480MM",
       "unit": "UN",
-      "stock": 156,
+      "stock": 138,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -403,7 +403,7 @@
       "code": "01.15.04.0000000072",
       "description": "CINTO DE SEGURANÇA RETRATIL DE 3P X 3430MM",
       "unit": "UN",
-      "stock": 156,
+      "stock": 138,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -778,7 +778,7 @@
       "code": "01.12.07.0000000005",
       "description": "PEGA MAO - PLASTICO",
       "unit": "UN",
-      "stock": 430,
+      "stock": 530,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 233,
+      "stock": 232,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -913,7 +913,7 @@
       "code": "01.02.10.0000000020",
       "description": "ADESIVO PU 55 PARA-BRISAS SACHE 600ML",
       "unit": "UN",
-      "stock": 2037,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 44,
+      "stock": 38,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 25,
+      "stock": 19,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1243,7 +1243,7 @@
       "code": "01.04.04.0000000094",
       "description": "TUBO REDONDO INDUSTRIAL 1\"(25,40MM) X 2,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 415.5,
+      "stock": 1234.5,
       "modelNeeds": {
         "4 LUGAR": 1.296,
         "6 LUGAR": 1.296,
@@ -1618,7 +1618,7 @@
       "code": "01.15.02.0000000113",
       "description": "CLIMATIZADOR DE CABINE 24V",
       "unit": "UN",
-      "stock": 37,
+      "stock": 34,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 20,
+      "stock": 17,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1663,7 +1663,7 @@
       "code": "01.15.04.0000000071",
       "description": "EXTINTOR DE INCENDIO 1KG CLASSE ABC",
       "unit": "UN",
-      "stock": 42,
+      "stock": 39,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1678,7 +1678,7 @@
       "code": "01.15.04.0000000076",
       "description": "SUPORTE EXTINTOR DE 3\"",
       "unit": "UN",
-      "stock": 31,
+      "stock": 28,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 33,
+      "stock": 30,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -4723,7 +4723,7 @@
       "code": "01.03.01.0000000117",
       "description": "DETERSOLV A/C 60",
       "unit": "UN",
-      "stock": 45,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0.1,
         "6 LUGAR": 0,

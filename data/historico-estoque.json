@@ -7,6 +7,13 @@
       "stockValue": 26706286.79,
       "itemCount": 5046,
       "sourceFile": "Cópia de EXPLOSAO_31.08 Atual.xlsm"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "Setembro 2026",
+      "stockValue": 0,
+      "itemCount": 0,
+      "sourceFile": "Cópia de EXPLOSAO_01.09.xlsm"
     }
   ]
 }
