@@ -1,0 +1,1568 @@
+{
+  "sourceFile": "Cópia de EXPLOSAO_03.09.02 (33).xlsm",
+  "sourceSheet": "Pinos",
+  "generatedAt": "2026-09-03",
+  "models": [
+    "18LDDI",
+    "15LDDI",
+    "13LDDI",
+    "10S",
+    "13AT",
+    "10L",
+    "13LDI"
+  ],
+  "items": [
+    {
+      "code": "01.02.08.0000000046",
+      "description": "CONTRAPINO 1/8\" X 1.1/4\" ZINCADO BRANCO DIN 94",
+      "unit": "UN",
+      "stock": 7460,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 8,
+        "13LDDI": 12,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 12
+      },
+      "totalNeed": 32,
+      "modelCount": 3
+    },
+    {
+      "code": "02.03.01.0000079054",
+      "description": "PINO INFERIOR DA SAPATA",
+      "unit": "UN",
+      "stock": 281,
+      "modelNeeds": {
+        "18LDDI": 8,
+        "15LDDI": 8,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 8,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 24,
+      "modelCount": 3
+    },
+    {
+      "code": "01.02.07.0000000005",
+      "description": "PINO QUEBRA DEDO 1/4\" X 2\" COM CABO DE AÇO",
+      "unit": "UN",
+      "stock": 2115,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 20,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 20,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000085281",
+      "description": "PINO ENGRENAGEM APOIO - AS",
+      "unit": "UN",
+      "stock": 7,
+      "modelNeeds": {
+        "18LDDI": 14,
+        "15LDDI": 2,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 16,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000069578",
+      "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
+      "unit": "UN",
+      "stock": 858,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 13,
+        "13LDI": 0
+      },
+      "totalNeed": 13,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000067336",
+      "description": "PINO INFERIOR DA SAPATA SKYRITZ",
+      "unit": "UN",
+      "stock": 1076,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 4,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 4,
+        "13LDI": 4
+      },
+      "totalNeed": 12,
+      "modelCount": 3
+    },
+    {
+      "code": "05.02.13.0000000025",
+      "description": "TERMINAL DE COMPRESSAO 50MM TM5 (PINO)",
+      "unit": "UN",
+      "stock": 970,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 10,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 10,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000085285",
+      "description": "PINO ENGRENAGEM DE APOIO - AS",
+      "unit": "UN",
+      "stock": 305,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 3,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 6
+      },
+      "totalNeed": 9,
+      "modelCount": 2
+    },
+    {
+      "code": "02.01.01.0000001450",
+      "description": "PINO TRAVA",
+      "unit": "UN",
+      "stock": 549,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 7,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 8,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000086617",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 5,
+      "modelNeeds": {
+        "18LDDI": 6,
+        "15LDDI": 2,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 8,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000079053",
+      "description": "PINO SUPERIOR DA SAPATA",
+      "unit": "UN",
+      "stock": 130,
+      "modelNeeds": {
+        "18LDDI": 4,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 4,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 8,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000086615",
+      "description": "PINO FIXAÇAO CILINDROS - AS",
+      "unit": "UN",
+      "stock": 6,
+      "modelNeeds": {
+        "18LDDI": 5,
+        "15LDDI": 2,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 7,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000086614",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 72,
+      "modelNeeds": {
+        "18LDDI": 5,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 6,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000067337",
+      "description": "PINO SUPERIOR DA SAPATA SKYRITZ",
+      "unit": "UN",
+      "stock": 649,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 2,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 2
+      },
+      "totalNeed": 6,
+      "modelCount": 3
+    },
+    {
+      "code": "02.03.01.0000085007",
+      "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
+      "unit": "UN",
+      "stock": 185,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 1,
+        "13LDDI": 1,
+        "10S": 1,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 1
+      },
+      "totalNeed": 6,
+      "modelCount": 6
+    },
+    {
+      "code": "02.03.01.0000085106",
+      "description": "PINO ROSCADO DO DESLIZE",
+      "unit": "UN",
+      "stock": 67,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 5,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 5,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.03.0000083484",
+      "description": "ENGRENAGEM APOIO",
+      "unit": "UN",
+      "stock": 1630,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 5
+      },
+      "totalNeed": 5,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000083441",
+      "description": "PINO FIX. CRUZETA EXTERNA - AS",
+      "unit": "UN",
+      "stock": 27,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 2,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 2
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000084348",
+      "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000084349",
+      "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+      "unit": "UN",
+      "stock": 31,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000084350",
+      "description": "PINO CILINDRO BRACO SUPERIOR",
+      "unit": "UN",
+      "stock": 27,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000084355",
+      "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000084356",
+      "description": "PINO BASTAO TENSOR E ARTICULACAO",
+      "unit": "UN",
+      "stock": 18,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000085017",
+      "description": "PINO INFERIOR DO ESTABILIZADOR",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 4,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000085066",
+      "description": "PINO SUPERIOR DO ESTABILIZADOR",
+      "unit": "UN",
+      "stock": 84,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 4,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.02.0000080646",
+      "description": "ENGRENAGEM APOIO",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 2,
+        "15LDDI": 2,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 4,
+      "modelCount": 2
+    },
+    {
+      "code": "01.02.08.0000000020",
+      "description": "CONTRAPINO 1/8\" X 1\" ZINCADO BRANCO DIN 94",
+      "unit": "UN",
+      "stock": 4503,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 3,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 3,
+      "modelCount": 1
+    },
+    {
+      "code": "01.09.02.0000000092",
+      "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 147 X 40MM ESP. 0,25MM – ENGRENAGENS DE ROTAÇAO",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 2
+      },
+      "totalNeed": 3,
+      "modelCount": 2
+    },
+    {
+      "code": "02.01.01.0000002157",
+      "description": "MANCAL BASE DO PINO",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 2,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 3,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000080813",
+      "description": "PINO BASCULAMENTO - AS",
+      "unit": "UN",
+      "stock": 168,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 3,
+      "modelCount": 3
+    },
+    {
+      "code": "02.02.01.0000083442",
+      "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
+      "unit": "UN",
+      "stock": 292,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 2
+      },
+      "totalNeed": 3,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000085283",
+      "description": "PINO ENGRENAGEM DE APOIO - AS",
+      "unit": "UN",
+      "stock": 652,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 2
+      },
+      "totalNeed": 3,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000086616",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 22,
+      "modelNeeds": {
+        "18LDDI": 2,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 3,
+      "modelCount": 2
+    },
+    {
+      "code": "01.01.10.0000071234",
+      "description": "CILINDRO HIDRAULICO SAPATA SKYCITY",
+      "unit": "UN",
+      "stock": 263,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 2,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "01.02.01.0000000240",
+      "description": "PINO DE CENTRO 3/8\"(9,52MM) X 1,50 X 3\"(76,20MM) CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO",
+      "unit": "UN",
+      "stock": 399,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "01.02.07.0000000014",
+      "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
+      "unit": "UN",
+      "stock": 1249,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "01.12.05.0000000003",
+      "description": "PROTEÇAO PVC PARA ENGATE RAPIDO MACHO 3/8\" NPT (PINO)  PVC - COR LARANJA",
+      "unit": "UN",
+      "stock": 492,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 2
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078132",
+      "description": "PINO FRONTAL ARTICULAÇÃO - AS",
+      "unit": "UN",
+      "stock": 13,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 2,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078136",
+      "description": "PINO ARTICULAÇÃO CAÇAMBA - AS",
+      "unit": "UN",
+      "stock": 33,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 2,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078138",
+      "description": "PINO ARTICULAÇÃO TORRE - AS",
+      "unit": "UN",
+      "stock": 24,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 2,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000082257",
+      "description": "PINO FIX. CRUZETA EXTERNA - AS",
+      "unit": "UN",
+      "stock": 24,
+      "modelNeeds": {
+        "18LDDI": 2,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000082263",
+      "description": "PINO FIXAÇAO CILINDROS - AS",
+      "unit": "UN",
+      "stock": 58,
+      "modelNeeds": {
+        "18LDDI": 2,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000083443",
+      "description": "PINO FIX. CILINDRO BASE - AS",
+      "unit": "UN",
+      "stock": 356,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000083444",
+      "description": "PINO ARTICULAÇAO BASE - AS",
+      "unit": "UN",
+      "stock": 331,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000085339",
+      "description": "CONJUNTO PINO TOMBAMENTO CESTO",
+      "unit": "UN",
+      "stock": 25,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 1,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000086368",
+      "description": "PINO FIX. CRUZETA INTERNA - AS",
+      "unit": "UN",
+      "stock": 111,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.02.01.0000086369",
+      "description": "PINO ARTICULAÇAO LANÇAS - AS",
+      "unit": "UN",
+      "stock": 264,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000071336",
+      "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
+      "unit": "UN",
+      "stock": 68,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 1,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000080793",
+      "description": "PINO FIXAÇÃO CESTO",
+      "unit": "UN",
+      "stock": 7,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000083452",
+      "description": "PINO FIXAÇAO CESTO",
+      "unit": "UN",
+      "stock": 125,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000084354",
+      "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
+      "unit": "UN",
+      "stock": 23,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 1,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000085011",
+      "description": "PINO ARTICULAÇAO CAÇAMBA",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 1,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000085012",
+      "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+      "unit": "UN",
+      "stock": 80,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 1,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "02.03.01.0000085016",
+      "description": "PINO SUPERIOR ESTABILIZADOR",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 2,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.02.0000082244",
+      "description": "ENGRENAGEM CESTO",
+      "unit": "UN",
+      "stock": 30,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 2,
+      "modelCount": 2
+    },
+    {
+      "code": "01.01.01.0000000155",
+      "description": "ENGATE RAPIDO MACHO FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
+      "unit": "UN",
+      "stock": 374,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.01.0000000156",
+      "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
+      "unit": "UN",
+      "stock": 427,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000083466",
+      "description": "CILINDRO SUPERIOR - SKYCITY 10",
+      "unit": "UN",
+      "stock": 24,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000083467",
+      "description": "CILINDRO INFERIOR - SKYCITY 10",
+      "unit": "UN",
+      "stock": 73,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000084041",
+      "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
+      "unit": "UN",
+      "stock": 49,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 1,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.02.07.0000000001",
+      "description": "PINO QUEBRA DEDO 1/4\" X 2\"",
+      "unit": "UN",
+      "stock": 1030,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.13.01.0000000031",
+      "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1800 MM - 2 TON",
+      "unit": "UN",
+      "stock": 144,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.13.01.0000000032",
+      "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1400 MM - 2 TON",
+      "unit": "UN",
+      "stock": 170,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078129",
+      "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
+      "unit": "UN",
+      "stock": 46,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078131",
+      "description": "PINO BRAÇO INFERIOR - AS",
+      "unit": "UN",
+      "stock": 42,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078133",
+      "description": "PINO BRAÇO SUPERIOR / LINK - AS",
+      "unit": "UN",
+      "stock": 26,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078134",
+      "description": "PINO TRASEIRO ARTICULAÇÃO - AS",
+      "unit": "UN",
+      "stock": 31,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078135",
+      "description": "PINO BASE EXTENSÃO - AS",
+      "unit": "UN",
+      "stock": 19,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078137",
+      "description": "PINO SUPERIOR ARTICULAÇÃO CAÇAMBA - AS",
+      "unit": "UN",
+      "stock": 11,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000078583",
+      "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
+      "unit": "UN",
+      "stock": 55,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000082248",
+      "description": "ENGRENAGEM ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 7,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000082249",
+      "description": "ENGRENAGEM ARTIC. LANÇA/BASE - AS",
+      "unit": "UN",
+      "stock": 40,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000082265",
+      "description": "PINO FIX. CILINDRO BASE - AS",
+      "unit": "UN",
+      "stock": 10,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000082267",
+      "description": "PINO ARTICULAÇAO BASE - AS",
+      "unit": "UN",
+      "stock": 5,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000083457",
+      "description": "ENGRENAGEM ARTIC. BASE/LANÇA - AS",
+      "unit": "UN",
+      "stock": 159,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000086198",
+      "description": "CJ. SOLD. PINO DO ROLETE",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000086610",
+      "description": "ENGRENAGEM ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000086611",
+      "description": "ENGRENAGEM ARTIC. LANÇA/BASE - AS",
+      "unit": "UN",
+      "stock": 10,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000086618",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 24,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000086624",
+      "description": "PINO FIXAÇAO CILINDROS - AS",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000087867",
+      "description": "PINO FIX. CRUZETA INTERNA - AS",
+      "unit": "UN",
+      "stock": 7,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.02.01.0000087868",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "unit": "UN",
+      "stock": 8,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000001729",
+      "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
+      "unit": "UN",
+      "stock": 476,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000085021",
+      "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000085022",
+      "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
+      "unit": "UN",
+      "stock": 17,
+      "modelNeeds": {
+        "18LDDI": 1,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000085110",
+      "description": "PINO SUPERIOR NIVELAMENTO",
+      "unit": "UN",
+      "stock": 38,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000085111",
+      "description": "PINO INFERIOR NIVELAMENTO",
+      "unit": "UN",
+      "stock": 12,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 1,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.01.0000085115",
+      "description": "PINO ARTICULACAO ALAVANCAS COMANDO",
+      "unit": "UN",
+      "stock": 1,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 1,
+        "10L": 0,
+        "13LDI": 0
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.02.0000083460",
+      "description": "ENGRENAGEM ARTICULAÇAO LANÇAS",
+      "unit": "UN",
+      "stock": 131,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.02.0000083461",
+      "description": "ENGRENAGEM CESTO",
+      "unit": "UN",
+      "stock": 253,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.03.02.0000085089",
+      "description": "ESPAÇADOR ENGRENAGEM CESTO",
+      "unit": "UN",
+      "stock": 77,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 0,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    }
+  ],
+  "meta": {
+    "headerRow": 3,
+    "firstDataRow": 4,
+    "codeBlocks": 7
+  }
+}
