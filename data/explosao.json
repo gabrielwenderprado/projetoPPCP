@@ -201881,6 +201881,2486 @@
         "DEM 11/2026": 11,
         "DEM 12/2026": 0
       }
+    },
+    {
+      "code": "03.07.01.0000000006",
+      "description": "ESCADA CENTRAL METROPOLITANA -  ELETRO HIDRAULICA 500KV",
+      "analyst": "0",
+      "family": "FERRAMENTAS",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.08.0000085415",
+      "description": "CJ GERAL ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000094633",
+      "description": "MANIPULO DA TRAVA GIRATORIA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-07-06",
+      "unit": "UN",
+      "stock": 23,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 23,
+        "DEM 09/2026": 23,
+        "DEM 10/2026": 23,
+        "DEM 11/2026": 23,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.04.03.0000000079",
+      "description": "BARRA REDONDA LAMINADA 1\"(25,40MM) X 6000MM - SAE 4340",
+      "analyst": "BRUNO",
+      "family": "AÇO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "KG",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 1.8389,
+        "DEM 09/2026": 5.2923,
+        "DEM 10/2026": 2.7807,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": -1.8389,
+        "DEM 09/2026": -5.2923,
+        "DEM 10/2026": -2.7807,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078529",
+      "description": "SETA DE NIVEL",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 68,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 68,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.02.0000086141",
+      "description": "CJ SUPERIOR COM ESCADA DE FIBRA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000085219",
+      "description": "BASE INFERIOR DA ESCADA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085582",
+      "description": "PERFIL MENOR LATERAL ESQ DE APOIO DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085581",
+      "description": "PERFIL MENOR LATERAL ESQ DE APOIO DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077824",
+      "description": "SUPORTE DEGRAUS ESQUERDO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077823",
+      "description": "SUPORTE DEGRAUS DIREITO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077822",
+      "description": "FECHAMENTO INFERIOR ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000088200",
+      "description": "SUPORTE ESCADA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000088436",
+      "description": "CHAPA FIXAÇÃO CILINDRO ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078325",
+      "description": "TRAVESSA MOLA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078324",
+      "description": "CHAPA FIXAÇAO DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000095341",
+      "description": "SUPORTE DE ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078322",
+      "description": "CHAPA FIXAÇAO DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000095340",
+      "description": "GARRA DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078320",
+      "description": "TRAVESSA MOLA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.05.0000085007",
+      "description": "KIT HIDRAULICO ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.10.0000086204",
+      "description": "CILINDRO HIDRAULICO ESCADA METROPOLITANA",
+      "analyst": "BRUNO",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-07-16",
+      "unit": "UN",
+      "stock": 80,
+      "stockMax": 0,
+      "stockValue": 70400,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 80,
+        "DEM 09/2026": 80,
+        "DEM 10/2026": 80,
+        "DEM 11/2026": 80,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000084609",
+      "description": "HASTE DA TRAVA GIRATORIA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 68,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 68,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.01.14.0000000014",
+      "description": "GRAXEIRA RETA 1/4\" NPT",
+      "analyst": "0",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-06-17",
+      "unit": "UN",
+      "stock": 111,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 111,
+        "DEM 09/2026": 111,
+        "DEM 10/2026": 111,
+        "DEM 11/2026": 111,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085214",
+      "description": "FIBRA FECHAMENTO PROTEÇAO DO MOTOR - ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-07-17",
+      "unit": "UN",
+      "stock": 47,
+      "stockMax": 0,
+      "stockValue": 1028.783,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 47,
+        "DEM 09/2026": 47,
+        "DEM 10/2026": 47,
+        "DEM 11/2026": 47,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.05.0000002288",
+      "description": "EIXO TRAVA",
+      "analyst": "PEDRO",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-03-02",
+      "unit": "UN",
+      "stock": 117,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 60,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 177,
+        "DEM 09/2026": 117,
+        "DEM 10/2026": 117,
+        "DEM 11/2026": 117,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.03.0000085213",
+      "description": "FIBRA CAIXA DE PROTEÇAO DO MOTOR - ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-07-17",
+      "unit": "UN",
+      "stock": 244,
+      "stockMax": 0,
+      "stockValue": 11785.293,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 244,
+        "DEM 09/2026": 244,
+        "DEM 10/2026": 244,
+        "DEM 11/2026": 244,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "01.14.02.0000000006",
+      "description": "MOLA DO EIXO DA TRAVA TRASEIRA",
+      "analyst": "PEDRO",
+      "family": "RODAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-03-02",
+      "unit": "UN",
+      "stock": 48,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 30,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 50,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 98,
+        "DEM 09/2026": 48,
+        "DEM 10/2026": 48,
+        "DEM 11/2026": 48,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000088188",
+      "description": "CJ COLUNA EXTERNA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085580",
+      "description": "TUBO EXTERNO DA COLUNA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000065115",
+      "description": "REFORÇO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000095309",
+      "description": "MANCAL CILINDRO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077831",
+      "description": "CHAPA SUPERIOR DA COLUNA EXTERNA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077830",
+      "description": "REFORÇO LATERAL DA COLUNA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077829",
+      "description": "TUBO ELEVAÇAO DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000077828",
+      "description": "MANCAL DA COLUNA DA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078319",
+      "description": "REFORÇO LATERAL DA COLUNA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000064961",
+      "description": "SUPORTE",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087797",
+      "description": "MANCAL INFERIOR GIRO ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.03.0000085075",
+      "description": "MANCAL INFERIOR COLUNA ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 34,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 34,
+        "DEM 09/2026": 34,
+        "DEM 10/2026": 34,
+        "DEM 11/2026": 34,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.03.0000085074",
+      "description": "REGULADOR INFERIOR ESCADA",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 107,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 107,
+        "DEM 09/2026": 107,
+        "DEM 10/2026": 107,
+        "DEM 11/2026": 107,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.02.0000002267",
+      "description": "MANCAL INTERNO DO ROLAMENTO",
+      "analyst": "KELEN",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-03-02",
+      "unit": "UN",
+      "stock": 51,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 51,
+        "DEM 09/2026": 51,
+        "DEM 10/2026": 51,
+        "DEM 11/2026": 51,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000087792",
+      "description": "CAIXA TRAVA ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000094263",
+      "description": "MANCAL TRAVA ESCADA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000094264",
+      "description": "GUIA TRAVA ESCADA CENTRAL",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.02.0000002285",
+      "description": "CAMISA DA TRAVA DO GIRO (DES 002285)",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-06-22",
+      "unit": "UN",
+      "stock": 53,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 53,
+        "DEM 09/2026": 53,
+        "DEM 10/2026": 53,
+        "DEM 11/2026": 53,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000095308",
+      "description": "MANCAL CILINDRO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000095312",
+      "description": "CHAPA DE FIXAÇAO DO COMANDO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000065114",
+      "description": "BARRA RED-TRAVA",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.05.0000078318",
+      "description": "EIXO DE INCLINAÇÃO DA ESCADA",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000088184",
+      "description": "CJ TUBO INTERNO DA COLUNA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.04.0000085011",
+      "description": "CHAPA TRAVA GIRO",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-06-22",
+      "unit": "UN",
+      "stock": 48,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 48,
+        "DEM 09/2026": 48,
+        "DEM 10/2026": 48,
+        "DEM 11/2026": 48,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.02.0000002262",
+      "description": "FECHAMENTO DO TUBO INTERNO",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Fabricado",
+      "lastMovement": "2026-06-22",
+      "unit": "UN",
+      "stock": 33,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 33,
+        "DEM 09/2026": 33,
+        "DEM 10/2026": 33,
+        "DEM 11/2026": 33,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000094629",
+      "description": "REFORCO INFERIR DA COLUNA INTERNA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000065116",
+      "description": "PINO",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.03.01.0000066814",
+      "description": "EIXO DO GIRO",
+      "analyst": "0",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-06-22",
+      "unit": "UN",
+      "stock": 73,
+      "stockMax": 0,
+      "stockValue": 1095,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 73,
+        "DEM 09/2026": 73,
+        "DEM 10/2026": 73,
+        "DEM 11/2026": 73,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000078378",
+      "description": "CHAPA BASE ESCADA MARGIRUS",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000085220",
+      "description": "TUBO ESCADA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085578",
+      "description": "TUBO INTERNO DA COLUNA",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.01.0000085221",
+      "description": "REFORÇO INTERNO TUBO",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.01.01.0000085579",
+      "description": "REFORÇO INTERNO",
+      "analyst": "0",
+      "family": "PEÇA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
+    },
+    {
+      "code": "02.02.03.0000000044",
+      "description": "KIT DE ADESIVOS POLICARBONATO ESCADA HIDRAULICA 500 KVA",
+      "analyst": "0",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 08/2026": 0,
+        "DEM 09/2026": 0,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0
+      }
     }
   ],
   "models": {
@@ -244571,9 +247051,557 @@
         "description": "CANTONEIRA DO MALHAL",
         "quantity": 16
       }
+    ],
+    "escada-hidraulica": [
+      {
+        "code": "03.07.01.0000000006",
+        "description": "ESCADA CENTRAL METROPOLITANA -  ELETRO HIDRAULICA 500KV",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.08.0000085415",
+        "description": "CJ GERAL ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000094633",
+        "description": "MANIPULO DA TRAVA GIRATORIA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000051",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 9,52 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.2427
+      },
+      {
+        "code": "01.02.02.0000000010",
+        "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 2
+      },
+      {
+        "code": "02.03.01.0000069578",
+        "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.03.0000000079",
+        "description": "BARRA REDONDA LAMINADA 1\"(25,40MM) X 6000MM - SAE 4340",
+        "quantity": 0.0449
+      },
+      {
+        "code": "01.02.02.0000000022",
+        "description": "ARRUELA DE PRESSAO M10 X 18,10 X 2,05MM ZINCADO BRANCO DIN 127",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000078529",
+        "description": "SETA DE NIVEL",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000029",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
+        "quantity": 0.0173
+      },
+      {
+        "code": "01.02.03.0000000042",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M24 X 2,0MM CLASSE 8 ZINCADO BRANCO DIN 982",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.02.0000000027",
+        "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.02.0000086141",
+        "description": "CJ SUPERIOR COM ESCADA DE FIBRA",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000085219",
+        "description": "BASE INFERIOR DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000085582",
+        "description": "PERFIL MENOR LATERAL ESQ DE APOIO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000036",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
+        "quantity": 19.757
+      },
+      {
+        "code": "02.01.01.0000085581",
+        "description": "PERFIL MENOR LATERAL ESQ DE APOIO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077824",
+        "description": "SUPORTE DEGRAUS ESQUERDO",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000031",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
+        "quantity": 3.0878
+      },
+      {
+        "code": "02.01.01.0000077823",
+        "description": "SUPORTE DEGRAUS DIREITO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077822",
+        "description": "FECHAMENTO INFERIOR ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000033",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
+        "quantity": 5.9662
+      },
+      {
+        "code": "02.02.01.0000088200",
+        "description": "SUPORTE ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000088436",
+        "description": "CHAPA FIXAÇÃO CILINDRO ESCADA",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.01.0000000037",
+        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.3255
+      },
+      {
+        "code": "02.01.01.0000078325",
+        "description": "TRAVESSA MOLA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000078324",
+        "description": "CHAPA FIXAÇAO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095341",
+        "description": "SUPORTE DE ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000078322",
+        "description": "CHAPA FIXAÇAO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095340",
+        "description": "GARRA DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000078320",
+        "description": "TRAVESSA MOLA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.01.0000000027",
+        "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
+        "quantity": 0.7705
+      },
+      {
+        "code": "01.02.01.0000000198",
+        "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 20MM CLASSE 10.9 ROSCA PARCIAL ENEGRECIDO TEMPERA DIN 933",
+        "quantity": 2
+      },
+      {
+        "code": "02.03.01.0000085020",
+        "description": "PINO CILINDRO ESCADA",
+        "quantity": 2
+      },
+      {
+        "code": "01.04.03.0000000060",
+        "description": "BARRA REDONDA LAMINADA 7/8\"(22,22MM) X 6000MM - SAE 4340",
+        "quantity": 0.3255
+      },
+      {
+        "code": "02.02.05.0000085007",
+        "description": "KIT HIDRAULICO ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "01.01.10.0000086204",
+        "description": "CILINDRO HIDRAULICO ESCADA METROPOLITANA",
+        "quantity": 1
+      },
+      {
+        "code": "01.01.02.0000000082",
+        "description": "VALVULA CONTRABALANCO DUPLA FLANGEADA  (SKYCITY)",
+        "quantity": 1
+      },
+      {
+        "code": "01.01.14.0000000046",
+        "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.01.0000000189",
+        "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M6 X 1,00 X 55MM CLASSE 8.8 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN 9",
+        "quantity": 4
+      },
+      {
+        "code": "01.01.01.0000000082",
+        "description": "CONEXAO MACHO RETO 3/8\" NPT TUBO 8 - UMA 8 X 3/8\" NPT - S",
+        "quantity": 2
+      },
+      {
+        "code": "01.01.01.0000000302",
+        "description": "CONEXAO MACHO RETO 1/4\" BSP TUBO 10 - UMA 10 X 1/4\" BSP - L",
+        "quantity": 2
+      },
+      {
+        "code": "01.01.03.0000000078",
+        "description": "MANGUEIRA R1 3/8 \" X 870 MM TRF X TRF (10L M16 X 1,5)",
+        "quantity": 2
+      },
+      {
+        "code": "01.01.06.0000000010",
+        "description": "UNIDADE HIDRAULICA VERTICAL COM MOTOR E BOTOEIRA 12V 1.6 KW",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000084609",
+        "description": "HASTE DA TRAVA GIRATORIA",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000183",
+        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 40MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.02.0000000012",
+        "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 101
+      },
+      {
+        "code": "01.02.01.0000000113",
+        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.03.0000000036",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 982",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.03.0000000040",
+        "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
+        "quantity": 3
+      },
+      {
+        "code": "01.02.01.0000000199",
+        "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 20MM CLASSE 10.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN",
+        "quantity": 3
+      },
+      {
+        "code": "01.02.01.0000000210",
+        "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 45MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
+        "quantity": 4
+      },
+      {
+        "code": "01.02.02.0000000053",
+        "description": "ARRUELA DE PRESSAO M8 X 14,80 X 1,90 ZINCADO BRANCO DIN 127",
+        "quantity": 4
+      },
+      {
+        "code": "01.01.14.0000000014",
+        "description": "GRAXEIRA RETA 1/4\" NPT",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.03.0000085214",
+        "description": "FIBRA FECHAMENTO PROTEÇAO DO MOTOR - ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.05.0000002288",
+        "description": "EIXO TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.03.0000085213",
+        "description": "FIBRA CAIXA DE PROTEÇAO DO MOTOR - ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.02.0000000015",
+        "description": "ARRUELA LISA MEDIA M16 X 30 X 3,00MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 14
+      },
+      {
+        "code": "01.02.01.0000003211",
+        "description": "PARAF. CAB. SEXT. ROSCA TOTAL 8.8 DIN 933 M16 X 2,0 X 40 MM - ZINCADO BRANCO",
+        "quantity": 2
+      },
+      {
+        "code": "01.02.01.0000000091",
+        "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 130 MM - ZINCADO BRANCO",
+        "quantity": 6
+      },
+      {
+        "code": "01.02.03.0000003250",
+        "description": "PORCA SEXTAVADA COMUM M16 X 2,00MM CLASSE 8 DIN 934",
+        "quantity": 6
+      },
+      {
+        "code": "01.02.01.0000000147",
+        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 80MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
+        "quantity": 46
+      },
+      {
+        "code": "01.02.03.0000000034",
+        "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
+        "quantity": 46
+      },
+      {
+        "code": "01.14.02.0000000006",
+        "description": "MOLA DO EIXO DA TRAVA TRASEIRA",
+        "quantity": 1
+      },
+      {
+        "code": "01.01.15.0000000022",
+        "description": "ROLAMENTO DE ROLOS CONICOS 4T 33208(ESCADA CENTRAL)",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000088188",
+        "description": "CJ COLUNA EXTERNA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000085580",
+        "description": "TUBO EXTERNO DA COLUNA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000093",
+        "description": "TUBO REDONDO INDUSTRIAL 5.1/2\"(139,70MM) X 6,30 X 6000MM - NBR 6591",
+        "quantity": 17.1614
+      },
+      {
+        "code": "02.01.01.0000065115",
+        "description": "REFORÇO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095309",
+        "description": "MANCAL CILINDRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077831",
+        "description": "CHAPA SUPERIOR DA COLUNA EXTERNA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000077830",
+        "description": "REFORÇO LATERAL DA COLUNA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000077829",
+        "description": "TUBO ELEVAÇAO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000096",
+        "description": "TUBO REDONDO INDUSTRIAL 1.1/2\"(38,10MM) X 3,18 X 6000MM - NBR 6591",
+        "quantity": 1.6077
+      },
+      {
+        "code": "02.01.01.0000077828",
+        "description": "MANCAL DA COLUNA DA ESCADA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000078319",
+        "description": "REFORÇO LATERAL DA COLUNA",
+        "quantity": 2
+      },
+      {
+        "code": "02.01.01.0000064961",
+        "description": "SUPORTE",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000087797",
+        "description": "MANCAL INFERIOR GIRO ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.03.0000085075",
+        "description": "MANCAL INFERIOR COLUNA ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.03.0000085074",
+        "description": "REGULADOR INFERIOR ESCADA",
+        "quantity": 3
+      },
+      {
+        "code": "01.04.03.0000000149",
+        "description": "BARRA REDONDA TREFILADA 1\"(25,40MM) X 6000MM - SAE 1045",
+        "quantity": 0.0391
+      },
+      {
+        "code": "02.03.02.0000002267",
+        "description": "MANCAL INTERNO DO ROLAMENTO",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000130",
+        "description": "BARRA REDONDA LAMINADA 4.1/2\"(114,30MM) X 6000MM - SAE 1020",
+        "quantity": 1.4295
+      },
+      {
+        "code": "02.02.01.0000087792",
+        "description": "CAIXA TRAVA ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000094263",
+        "description": "MANCAL TRAVA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000094264",
+        "description": "GUIA TRAVA ESCADA CENTRAL",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.02.0000002285",
+        "description": "CAMISA DA TRAVA DO GIRO (DES 002285)",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000043",
+        "description": "BARRA REDONDA LAMINADA 1.1/2\"(38,10MM) X 6000MM - SAE 1020",
+        "quantity": 0.9108
+      },
+      {
+        "code": "02.01.01.0000095308",
+        "description": "MANCAL CILINDRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000095312",
+        "description": "CHAPA DE FIXAÇAO DO COMANDO",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.01.0000065114",
+        "description": "BARRA RED-TRAVA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000062",
+        "description": "BARRA REDONDA LAMINADA 3/4\"(19,05MM) X 6000MM - SAE 4340",
+        "quantity": 0.1541
+      },
+      {
+        "code": "02.03.05.0000078318",
+        "description": "EIXO DE INCLINAÇÃO DA ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.03.0000000004",
+        "description": "BARRA REDONDA LAMINADA 1.1/4\"(31,75MM) X 6000MM - SAE 1045",
+        "quantity": 3.4834
+      },
+      {
+        "code": "02.03.02.0000065002",
+        "description": "ARRUELA ANTI CONTATO MAIOR",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.01.0000088184",
+        "description": "CJ TUBO INTERNO DA COLUNA",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.04.0000085011",
+        "description": "CHAPA TRAVA GIRO",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.02.0000002262",
+        "description": "FECHAMENTO DO TUBO INTERNO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000094629",
+        "description": "REFORCO INFERIR DA COLUNA INTERNA",
+        "quantity": 4
+      },
+      {
+        "code": "02.03.01.0000065116",
+        "description": "PINO",
+        "quantity": 1
+      },
+      {
+        "code": "02.03.01.0000066814",
+        "description": "EIXO DO GIRO",
+        "quantity": 1
+      },
+      {
+        "code": "01.02.01.0000000133",
+        "description": "BARRA ROSCADA SAE 1020 M24 X 3,0 X 1000MM",
+        "quantity": 0.4059
+      },
+      {
+        "code": "02.01.01.0000078378",
+        "description": "CHAPA BASE ESCADA MARGIRUS",
+        "quantity": 1
+      },
+      {
+        "code": "02.02.01.0000085220",
+        "description": "TUBO ESCADA",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000085578",
+        "description": "TUBO INTERNO DA COLUNA",
+        "quantity": 1
+      },
+      {
+        "code": "01.04.04.0000000092",
+        "description": "TUBO SCHEDULE 40 4\"(114,30MM) X 6,02 X 6000MM - NBR 5590",
+        "quantity": 15.4376
+      },
+      {
+        "code": "02.02.01.0000085221",
+        "description": "REFORÇO INTERNO TUBO",
+        "quantity": 1
+      },
+      {
+        "code": "02.01.01.0000085579",
+        "description": "REFORÇO INTERNO",
+        "quantity": 2
+      },
+      {
+        "code": "02.02.03.0000000044",
+        "description": "KIT DE ADESIVOS POLICARBONATO ESCADA HIDRAULICA 500 KVA",
+        "quantity": 1
+      }
     ]
   },
   "analysts": [
+    "0",
     "BRUNO",
     "CALFER",
     "KELEN",
@@ -244603,6 +247631,7 @@
     "PLASTICO",
     "PNEUMATICA",
     "PREDIAL",
+    "RODAGEM",
     "SEMIRREBOQUE",
     "SOLDA",
     "USINAGEM"
@@ -244666,6 +247695,7 @@
       "basculante",
       "neoEnergia",
       "10HDOC",
+      "escada-hidraulica",
       "21T",
       "7T",
       "12-T"

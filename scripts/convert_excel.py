@@ -26,7 +26,7 @@ CABINES_OUTPUT = PROJECT_ROOT / 'data' / 'cabines.json'
 HISTORY_OUTPUT = PROJECT_ROOT / 'data' / 'historico-estoque.json'
 MODEL_SHEETS = [
     '10S', '13ldi-46kv', '13-69kv', '13AT', '15LDDI', '18lddi',
-    'guin-16T', 'guin-25T', 'guin-45', 'replica-helio-base', '10L', '10HDOC', '8paletes', '30-T','21T','12-T','7T','basculante','neoEnergia'
+    'guin-16T', 'guin-25T', 'guin-45', 'replica-helio-base', '10L', '10HDOC', '8paletes', '30-T','21T','12-T','7T','basculante','neoEnergia','escada-hidraulica'
 ]
 
 
