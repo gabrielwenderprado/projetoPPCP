@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_01.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_03_09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-01",
+  "generatedAt": "2026-09-03",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -50,7 +50,7 @@
       "code": "01.02.07.0000000005",
       "description": "PINO QUEBRA DEDO 1/4\" X 2\" COM CABO DE AÇO",
       "unit": "UN",
-      "stock": 2127,
+      "stock": 2115,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 20,
@@ -84,7 +84,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 440,
+      "stock": 858,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -135,7 +135,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 115,
+      "stock": 305,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -254,7 +254,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 188,
+      "stock": 185,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -271,7 +271,7 @@
       "code": "02.03.01.0000085106",
       "description": "PINO ROSCADO DO DESLIZE",
       "unit": "UN",
-      "stock": 72,
+      "stock": 67,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -339,7 +339,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 31,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -356,7 +356,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 27,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -713,7 +713,7 @@
       "code": "02.02.01.0000082263",
       "description": "PINO FIXAÇAO CILINDROS - AS",
       "unit": "UN",
-      "stock": 26,
+      "stock": 58,
       "modelNeeds": {
         "18LDDI": 2,
         "15LDDI": 0,
@@ -764,7 +764,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 40,
+      "stock": 25,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -815,7 +815,7 @@
       "code": "02.03.01.0000071336",
       "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 68,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -951,7 +951,7 @@
       "code": "01.01.01.0000000155",
       "description": "ENGATE RAPIDO MACHO FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
       "unit": "UN",
-      "stock": 378,
+      "stock": 374,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -968,7 +968,7 @@
       "code": "01.01.01.0000000156",
       "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
       "unit": "UN",
-      "stock": 431,
+      "stock": 427,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1070,7 +1070,7 @@
       "code": "01.13.01.0000000032",
       "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1400 MM - 2 TON",
       "unit": "UN",
-      "stock": 174,
+      "stock": 170,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1121,7 +1121,7 @@
       "code": "02.02.01.0000078133",
       "description": "PINO BRAÇO SUPERIOR / LINK - AS",
       "unit": "UN",
-      "stock": 25,
+      "stock": 26,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1461,7 +1461,7 @@
       "code": "02.03.01.0000085110",
       "description": "PINO SUPERIOR NIVELAMENTO",
       "unit": "UN",
-      "stock": 18,
+      "stock": 38,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,
