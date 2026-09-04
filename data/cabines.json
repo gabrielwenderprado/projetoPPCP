@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_03.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_04.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-03",
+  "generatedAt": "2026-09-04",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 3000,
+      "stock": 2000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 11400,
+      "stock": 11050,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 139688,
+      "stock": 133688,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 18,
+      "stock": 28,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 0,
+      "stock": 10,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -4693,7 +4693,7 @@
       "code": "01.06.01.0000000004",
       "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
       "unit": "UN",
-      "stock": 1345,
+      "stock": 545,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0.3,
