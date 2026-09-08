@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_04.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_08.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-04",
+  "generatedAt": "2026-09-08",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 2000,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -73,7 +73,7 @@
       "code": "01.02.01.0000000059",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 7405,
+      "stock": 7305,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 10160,
+      "stock": 9160,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -118,7 +118,7 @@
       "code": "01.02.01.0000000024",
       "description": "PARAFUSO SEXTAVADO AUTO PERFURANTE 1/4 X 1\" (6,35X1,75X25MM) ROSCA INTEIRA ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 8600,
+      "stock": 8200,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 45,
@@ -148,7 +148,7 @@
       "code": "01.04.04.0000000044",
       "description": "TUBO QUADRADO 30 X 30 X 2,65 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 5352.76,
+      "stock": 4178.43,
       "modelNeeds": {
         "4 LUGAR": 14.7798,
         "6 LUGAR": 17.6583,
@@ -178,7 +178,7 @@
       "code": "01.02.01.0000000300",
       "description": "PARAFUSO PHILLIPS FLANGEADO AUTO BROCANTE PONTA BROCA 4,2 X 16MM ROSCA INTEIRA ZINCADO PRETO DIN 6921",
       "unit": "UN",
-      "stock": 4500,
+      "stock": 4000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -328,7 +328,7 @@
       "code": "01.02.02.0000000017",
       "description": "ARRUELA LISA MEDIA M5 X 10 X 1,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 34496,
+      "stock": 33996,
       "modelNeeds": {
         "4 LUGAR": 8,
         "6 LUGAR": 10,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 54266,
+      "stock": 53266,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -763,7 +763,7 @@
       "code": "01.11.04.0000000111",
       "description": "LANTERNA LED BV PARA ILUMINAÇAO (IL5024)",
       "unit": "UN",
-      "stock": 115,
+      "stock": 110,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 212,
+      "stock": 222,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -853,7 +853,7 @@
       "code": "02.01.03.0000085221",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LATERAL",
       "unit": "UN",
-      "stock": 14,
+      "stock": 24,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -868,7 +868,7 @@
       "code": "01.04.04.0000000149",
       "description": "TUBO QUADRADO 40 X 40 X 2,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 3321.764,
+      "stock": 4123.57,
       "modelNeeds": {
         "4 LUGAR": 1.9343,
         "6 LUGAR": 1.9343,
@@ -1153,7 +1153,7 @@
       "code": "02.03.02.0000085107",
       "description": "BUCHA DE ABERTURA DA PORTA DA CABINE",
       "unit": "UN",
-      "stock": 0,
+      "stock": 106,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 17,
+      "stock": 47,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2053,7 +2053,7 @@
       "code": "02.01.03.0000085192",
       "description": "FORRO PORTA DIREITA",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2068,7 +2068,7 @@
       "code": "02.01.03.0000085195",
       "description": "FORRO PORTA ESQUERDA",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2293,7 +2293,7 @@
       "code": "02.01.03.0000085199",
       "description": "PISO DE BORRACHA PADRAO MOEDA CENTRAL",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2323,7 +2323,7 @@
       "code": "02.01.03.0000085222",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LE FR",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2953,7 +2953,7 @@
       "code": "02.01.03.0000085315",
       "description": "FORRO TETO CABINE 6L WC",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2968,7 +2968,7 @@
       "code": "02.01.03.0000085316",
       "description": "FORRO TETO 2 CABINE 6L WC",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2983,7 +2983,7 @@
       "code": "02.01.03.0000085317",
       "description": "FORRO TETO BANHEIRO CABINE 6L WC",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -3118,7 +3118,7 @@
       "code": "01.04.04.0000000049",
       "description": "TUBO QUADRADO 50 X 50 X 3,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 4914.336,
+      "stock": 8420.788,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -3163,7 +3163,7 @@
       "code": "01.15.02.0000000140",
       "description": "PIA LAVATORIO PORTATIL CAMPING COM RESERVATORIO",
       "unit": "UN",
-      "stock": 49,
+      "stock": 77,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4093,7 +4093,7 @@
       "code": "02.01.03.0000085229",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL",
       "unit": "UN",
-      "stock": 7,
+      "stock": 12,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -4738,7 +4738,7 @@
       "code": "01.04.03.0000000070",
       "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - ASTM A36",
       "unit": "UN",
-      "stock": 1010.068,
+      "stock": 2010.068,
       "modelNeeds": {
         "4 LUGAR": 0.0471,
         "6 LUGAR": 0.0471,
