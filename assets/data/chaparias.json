@@ -1,0 +1,1253 @@
+{
+  "sourceFile": "CópiadeEXPLOSAO_09.09(1).xlsm",
+  "sourceSheet": "chaparias",
+  "generatedAt": "2026-09-09",
+  "models": [
+    "CHAPARIAS"
+  ],
+  "items": [
+    {
+      "code": "104010000000026",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 15,87 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000149",
+      "description": "CHAPA DE AÇO ESTRUTURAL DE ALTA RESISTENCIA - 8,00 X 1200 X 3000MM - STRENX 700 MC",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000150",
+      "description": "CHAPA DE AÇO ESTRUTURAL DE ALTA RESISTENCIA - 6,35 X 1200 X 3000MM - STRENX 700 MC",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000151",
+      "description": "CHAPA DE AÇO ESTRUTURAL DE ALTA RESISTENCIA - 4,75 X 1200 X 3000MM - STRENX 700 MC",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000161",
+      "description": "CHAPA DE AÇO ESTRUTURAL DE ALTA RESISTENCIA - 9,52 X 1200 X 3000MM - STRENX 700 MC",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090281",
+      "description": "CHAPA APOIO SUPORTE MANUAL",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090325",
+      "description": "CHAPA LIMITADORA PARAFUSADA INTERNAMENTE L3",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090328",
+      "description": "CHAPA LIMITADORA PARAFUSADA L5",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090677",
+      "description": "CHAPA INFERIOR BRAÇO PARA SUPORTE GANCHO - 16.40.016",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090900",
+      "description": "CHAPA DE APOIO E TRAVAMENTO MANGUEIRAS",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090904",
+      "description": "REFORÇO MAO FRANCESA CHAPA DE APOIO MANGUEIRAS",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091499",
+      "description": "CHAPA DO GRAMPO INFERIOR 16T-17C-21T",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091708",
+      "description": "CHAPA DO LADO DIREITO - 02.01.01.0000097254",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091710",
+      "description": "CHAPA ESQUERDA DA BASE GUINDASTE - 02.01.01.0000097253",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091713",
+      "description": "CHAPA CENTRAL DO CJ PRINCIPAL DA BASE - 02.01.01.0000097258",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091718",
+      "description": "CHAPA FRONTAL DO SUPORTE DOS GRAMPOS - 02.01.01.0000097252",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091719",
+      "description": "CHAPA INF. SUP. DOS GRAMPOS - 02.01.01.0000097251",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091720",
+      "description": "CHAPA INF. DA BASE DO GUIN. - 02.01.01.0000097256",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091724",
+      "description": "CHAPA DE REFORÇO SUP. GUIN. - 02.01.01.0000097255",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091728",
+      "description": "CHAPA DE REFORÇO DO SUPORTE DA LANÇA - 02.01.01.0000097269",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091730",
+      "description": "CHAPA LATERAL DO SUPORTE DAS LANÇAS - 02.01.01.0000097268",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091732",
+      "description": "CHAPA LATERAL DA BASE - 02.01.01.0000097276",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091733",
+      "description": "CHAPA DO SUPORTE DO MANCAL - 02.01.01.0000097259",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091736",
+      "description": "CHAPA INF. DO SUP.DO MANCAL - 02.01.01.0000097260",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091739",
+      "description": "CHAPA INF. DA BASE - 02.01.01.0000097274",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091740",
+      "description": "CHAPA INF. DA BASE DO GUIN. - 02.01.01.0000097267",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091741",
+      "description": "CHAPA INT. DO SUP. DO MANCAL - 02.01.01.0000097265",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091744",
+      "description": "CHAPA INTERNA DO MANCAL - 02.01.01.0000097264",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091750",
+      "description": "CHAPA DE SUPORTE DOS GRAMPOS MENOR - 02.01.01.0000097248",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091752",
+      "description": "CHAPA DE SUP. DOS GRAMPOS - 02.01.01.0000097249",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091768",
+      "description": "CHAPA INTERNA BRAÇO - 02.01.01.0000097352",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091779",
+      "description": "CHAPA INTERNA ESQUERDA BRAÇO - 02.01.01.0000097350",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091793",
+      "description": "CHAPA INTERIOR DO BRAÇO - 02.01.01.0000097355",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091795",
+      "description": "chapa de extensão da sapata - 02.01.01.0000097278",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091803",
+      "description": "CHAPA DE EXTENSÃO DA SAPATA - 02.01.01.0000097277",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091814",
+      "description": "CHAPA DE FECHAMENTO TRASEIRO - 02.01.01.0000097281",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091816",
+      "description": "CHAPA GUIA LATERAL - 02.01.01.0000097282",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091817",
+      "description": "CHAPA DE FIXAÇÃO DO CILINDRO - 02.01.01.0000097280",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091870",
+      "description": "CHAPA DE REFORÇO INF. - 02.01.01.0000097304",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091874",
+      "description": "CHAPA INTERNA DIREITA BRAÇO - 02.01.01.0000097351",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091878",
+      "description": "CHAPA LATERAL EXTERNA DO BRAÇO - 02.01.01.0000097358",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091880",
+      "description": "CHAPA PRINCIPAL DA TORRE -- 02.01.01.0000097300",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091897",
+      "description": "CHAPA TRASEIRA DA TORRE - 02.01.01.0000097307",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091960",
+      "description": "CHAPA ANTERIOR A TORRE - 02.01.01.0000097310",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000091966",
+      "description": "CHAPA SUPORTE DA ABRAÇADEIRA STANDER",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092004",
+      "description": "CHAPA SOLDADA SUPORTE SENSOR NR-12",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092022",
+      "description": "CHAPA DOBRADA DO CORPO DA LANÇA 1 - 16.40.001",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092023",
+      "description": "CHAPA VERTICAL DAS LANÇAS - 16.40.002",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092024",
+      "description": "CHAPA DE REFORÇO INF. - 16.40.008",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092031",
+      "description": "CHAPA DE FECHAMENTO ANTERIOR SUP. - 16.40.004",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092053",
+      "description": "REFORÇO DA CHAPA DE FIXAÇÃO DO CILINDRO",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092079",
+      "description": "CHAPA PRINCIPAL DA LANÇA 1 - 16.41.001",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092080",
+      "description": "CHAPA FRONTAL DA LANÇA - 16.41.002",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092082",
+      "description": "CHAPA DE APOIO DO SUPORTE DO CILINDRO - 16.41.005",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092083",
+      "description": "CHAPA DE SUPORTE DO CILINDRO - 16.41.004",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092084",
+      "description": "CHAPA DE REFORÇO LATERAL DO CILINDRO - 16.41.006",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092085",
+      "description": "CHAPA DE FECHAMENTO TRASEIRO - 16.41.003",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092089",
+      "description": "CHAPA DA LANÇA 3 - 16.42.001",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092090",
+      "description": "CHAPA FRONTAL DA LANÇA 3 - 16.42.002",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092091",
+      "description": "REFORÇO DA CHAPA DE SUPORTE DO CILINDRO - 16.42.005",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092092",
+      "description": "CHAPA DE REFORÇO DA CHAPA DO CILINDRO - 16.42.006",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092094",
+      "description": "CHAPA DE FECHAMENTO ANTERIOR DA LANÇA 3 - 16.42.003",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092095",
+      "description": "CHAPA DE FIXAÇÃO DO CILINDRO - 16.42.004",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092098",
+      "description": "CHAPA DOBRADA DA LANÇA 4 - 16.43..04.001",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092099",
+      "description": "CHAPA EM V DA PONTA DA LANÇA - 16.43.03.002",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092100",
+      "description": "CHAPA DE APOIO AO SUPORTE DO CILINDRO - 16.43.03.008",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092101",
+      "description": "CHAPA DE REFORÇO DO SUPORTE DO CILINDRO - 16.43.03.006",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092102",
+      "description": "CHAPA SUP. DO SUPORTE DO CILINDRO - 16.43.03.004",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092103",
+      "description": "CHAPA DE FECHAMENTO ANTERIOR - 16.43.03.003",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092104",
+      "description": "CHAPA DO CORPO DA LANÇA - 16.44.03.002",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092105",
+      "description": "CHAPA PRINCIPAL DA LANÇA 5 - 16.44.03.005",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092106",
+      "description": "CHAPA DA PONTA DA LANÇA - 16.44.03.004",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092109",
+      "description": "CHAPA DE REFORÇO LATERAL - 16.44.03.014",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092110",
+      "description": "CHAPA SUP. LANÇA 5 - 16.44.03.017",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092115",
+      "description": "CHAPA PRINCIPAL DA LANÇA 6 - 16.45.003.03",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092118",
+      "description": "CHAPA DO SUPORTE DA ARGOLA - 16.45.008.03",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092119",
+      "description": "CHAPA CENTRAL DO SUPORTE DA ARGOLA - 16.45.007.03",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092121",
+      "description": "CHAPA DE FECHAMENTO ANTERIOR - 16.45.002.03",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092122",
+      "description": "CHAPA PRINCIPAL DA LANÇA 6 - 16.45.003.03",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000092124",
+      "description": "CHAPA DISTANCEADORA TRASEIRA - 16.45.013.03",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "202010000087005",
+      "description": "CJ. SOLDADO CHAPA DO GRAMPO INFERIOR",
+      "unit": "UN",
+      "stock": 0,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090327",
+      "description": "CHAPA DOBRADA DISTANCIADORA - 16.44.03.010",
+      "unit": "UN",
+      "stock": 20,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090439",
+      "description": "CHAPA DO GRAMPO INF.16T/17C/21T",
+      "unit": "UN",
+      "stock": 64,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090243",
+      "description": "CHAPA APOIO SUPORTE MANUAL",
+      "unit": "UN",
+      "stock": 74,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090446",
+      "description": "CHAPA DO GRAMPO SUPERIOR - 12T/16T",
+      "unit": "UN",
+      "stock": 174,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "201010000090143",
+      "description": "CHAPA DE APOIO DO BRAÇO DA PATOLA",
+      "unit": "UN",
+      "stock": 260,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000024",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 12,70 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 4671.826,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000156",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 6000MM - ASTM A36 / CIVIL 300",
+      "unit": "UN",
+      "stock": 5392.008,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000037",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 11015.64,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000033",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 31462,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000027",
+      "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 34148.66,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000031",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 36031.48,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000036",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 36968.26,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000029",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
+      "unit": "UN",
+      "stock": 38640.18,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    },
+    {
+      "code": "104010000000019",
+      "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
+      "unit": "UN",
+      "stock": 39429.6,
+      "minimum": 0,
+      "modelNeeds": {
+        "CHAPARIAS": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 0,
+      "modelCount": 1
+    }
+  ],
+  "meta": {
+    "headerRow": 2,
+    "firstDataRow": 3,
+    "codeColumn": 1,
+    "descriptionColumn": 2,
+    "stockColumn": 4,
+    "minimumColumn": 5
+  }
+}
