@@ -485,13 +485,15 @@ function filterBar() {
   </div>`;
 }
 
-function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabel = '') {
+function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabel = '', includeDemand = false) {
   return items.slice(offset, offset + limit).map(item => {
     const [label, color] = risk(item, showDemand ? item.need : undefined);
     const orders = Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
+    const totalDemand = Object.values(item.demands || {}).reduce((sum, value) => sum + n(value), 0);
     const demand = showDemand
       ? `<td>${fmt(item.need || 0)} ${esc(item.unit)}</td><td class="${n(item.balance) < 0 ? 'danger' : ''}">${fmt(item.balance || 0)}</td>`
       : '';
+    const stockDemand = includeDemand ? `<td>${fmt(totalDemand)} ${esc(item.unit)}</td>` : '';
     return `<tr>
       <td><button class="material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td>
       <td>${esc(item.analyst || '—')}</td>
@@ -500,20 +502,20 @@ function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabe
       <td>${fmt(item.safety)}</td>
       <td>${esc(item.obtentionType || '—')}</td>
       <td class="movement-date">${esc(movementDate(item.lastMovement))}</td>
-      ${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : undefined, showDemand ? demandLabel : '')}</td>
+      ${stockDemand}${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : undefined, showDemand ? demandLabel : '')}</td>
     </tr>`;
   }).join('');
 }
 
-function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel = '') {
-  const columns = showDemand ? 13 : 11;
+function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel = '', includeDemand = false) {
+  const columns = (showDemand ? 13 : 11) + (includeDemand ? 1 : 0);
   const id = `progressive-table-${++TABLE_SEQUENCE}`;
   const initialLimit = Math.min(Math.max(Number(limit) || TABLE_CHUNK_SIZE, 50), TABLE_CHUNK_SIZE);
-  TABLE_DATASETS.set(id, { items, showDemand, demandLabel, cursor: initialLimit });
-  const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel);
+  TABLE_DATASETS.set(id, { items, showDemand, demandLabel, includeDemand, cursor: initialLimit });
+  const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel, includeDemand);
   const more = items.length > initialLimit ? `<div class="table-load-more"><span>Mostrando ${fmt(initialLimit)} de ${fmt(items.length)} itens</span><button class="secondary-btn table-more-btn" data-table-id="${id}">Carregar mais</button></div>` : `<div class="table-load-more"><span>${fmt(items.length)} itens carregados</span></div>`;
   return `<div class="progressive-table" data-progressive-table="${id}"><div class="table-wrap"><table class="data-table"><thead><tr>
-    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th><th>Tipo de obtenção</th><th>Última movimentação</th>
+    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th>${includeDemand ? '<th>Demanda</th>' : ''}<th>Tipo de obtenção</th><th>Última movimentação</th>
     ${showDemand ? '<th>Demanda</th><th>Saldo</th>' : ''}<th>Pedidos</th><th>Situação</th><th>Processo de compra</th>
   </tr></thead><tbody>${rows || `<tr><td colspan="${columns}" class="empty">Nenhum item encontrado.</td></tr>`}</tbody></table></div>${more}</div>`;
 }
@@ -531,7 +533,7 @@ function bindProgressiveTables() {
       const start = dataset.cursor;
       const end = Math.min(start + TABLE_CHUNK_SIZE, dataset.items.length);
       window.setTimeout(() => {
-        tbody.insertAdjacentHTML('beforeend', itemRows(dataset.items, end - start, dataset.showDemand, start, dataset.demandLabel));
+        tbody.insertAdjacentHTML('beforeend', itemRows(dataset.items, end - start, dataset.showDemand, start, dataset.demandLabel, dataset.includeDemand));
         dataset.cursor = end;
         const label = container.querySelector('.table-load-more span');
         if (label) label.textContent = end < dataset.items.length ? `Mostrando ${fmt(end)} de ${fmt(dataset.items.length)} itens` : `${fmt(end)} itens carregados`;
@@ -703,11 +705,12 @@ function stockHistoryView() {
 }
 
 function plannedModelKey(name) {
-  const target = String(name || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
-  return Object.keys(DATA?.models || {}).find(key => {
-    const candidate = String(key).toUpperCase().replace(/[^A-Z0-9]/g, '');
-    return candidate && (target.includes(candidate) || candidate.includes(target));
-  }) || '';
+  const raw = String(name || '').toUpperCase();
+  const aliases = [['10S','10S'],['10HDOC','10HDOC'],['15LDDI','15LDDI'],['13,5 AT','13AT'],['13.5 AT','13AT'],['13 69','13-69kv'],['13 LDI','13ldi-46kv'],['16.5T','guin-16T'],['25T','guin-25T'],['45T','guin-45'],['21T','21T'],['30T','30-T'],['12T','12-T'],['7T','7T']];
+  const alias = aliases.find(([needle]) => raw.includes(needle.replace('.', ',')) || raw.includes(needle));
+  if (alias && DATA?.models?.[alias[1]]) return alias[1];
+  const target = raw.replace(/[^A-Z0-9]/g, '');
+  return Object.keys(DATA?.models || {}).find(key => { const candidate = String(key).toUpperCase().replace(/[^A-Z0-9]/g, ''); return candidate && (target.includes(candidate) || candidate.includes(target)); }) || '';
 }
 function plannedGeneralItems() {
   const releases = DATA?.planMonth?.liberacoes || [];
@@ -716,8 +719,10 @@ function plannedGeneralItems() {
     const key = plannedModelKey(release.modelo);
     if (!key) return;
     (DATA.models[key] || []).forEach(component => {
-      const row = needs.get(String(component.code)) || { need: 0, models: [] };
+      const row = needs.get(String(component.code)) || { need: 0, demand: 0, models: [], stocks: [] };
       row.need += n(component.quantity);
+      row.demand += n(component.demand);
+      if (component.stock !== undefined) row.stocks.push(n(component.stock));
       if (!row.models.includes(key)) row.models.push(key);
       needs.set(String(component.code), row);
     });
@@ -725,7 +730,7 @@ function plannedGeneralItems() {
   return [...needs.entries()].map(([code, plan]) => {
     const item = itemByCode(code) || { code, description: '', stock: 0, orders: {}, unit: 'UN' };
     const [status] = risk(item, plan.need);
-    return { ...item, plannedNeed: plan.need, plannedModels: plan.models, plannedStatus: status };
+    return { ...item, stock: plan.stocks.length ? Math.min(...plan.stocks) : n(item.stock), plannedNeed: plan.need, structureDemand: plan.demand, plannedModels: plan.models, plannedStatus: status };
   }).filter(item => item.plannedStatus !== 'Regular');
 }
 function plannedSignalItems(kind) {
@@ -741,7 +746,7 @@ function programacaoAlertPanel() {
   const signal = (label, items, cls) => `<button class="risk-signal ${cls}" data-export-alert="${cls}"><span>${label}</span><b>${fmt(items.length)}</b><small>exportar itens</small></button>`;
   const allPlanned = plannedGeneralItems();
   const modelCards = models.map(model => { const key = plannedModelKey(model.modelo); const items = allPlanned.filter(item => item.plannedModels?.includes(key)); const crit = items.filter(item => item.plannedStatus === 'Crítico').length; const att = items.filter(item => item.plannedStatus === 'Em atenção').length; const cls = crit ? 'critical' : att ? 'attention' : 'regular'; const label = crit ? 'Crítico' : att ? 'Atenção' : 'Regular'; return `<div class="model-signal-card"><div><strong>${esc(model.modelo || 'Sem modelo')}</strong><small>${fmt(model.total)} carro${model.total === 1 ? '' : 's'} · ${fmt(crit + att)} itens em risco</small></div><span class="status ${cls === 'critical' ? 'red' : cls === 'attention' ? 'amber' : 'green'}">${label}</span></div>`; }).join('');
-  return `<div class="panel programacao-alert-panel"><div class="panel-header"><div><span class="eyebrow">Liberação programada</span><h3>Visão geral · carros a liberar</h3><span>Fonte: PLANO MES · AA:AF</span></div><span class="date-pill">${fmt(releases.length)} carros</span></div><div class="panel-body"><div class="model-signal-grid">${modelCards || '<div class="empty">Nenhum modelo programado.</div>'}</div><div class="release-table-wrap"><table class="data-table release-table"><thead><tr><th>EN</th><th>Cliente</th><th>Modelo</th><th>PL</th><th>Nome</th><th>Data</th></tr></thead><tbody>${releases.slice(0, 20).map(item => `<tr><td>${esc(item.en || '—')}</td><td>${esc(item.cliente || '—')}</td><td>${esc(item.modelo || '—')}</td><td>${esc(item.pl || '—')}</td><td>${esc(item.nome || '—')}</td><td>${esc(item.data ? new Date(item.data).toLocaleDateString('pt-BR') : '—')}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhuma liberação encontrada.</td></tr>'}</tbody></table></div><div class="alert-export-row">${signal('Críticos', critical, 'critical')}${signal('Atenção', attention, 'attention')}</div></div></div>`;
+  return `<div class="panel programacao-alert-panel"><div class="panel-header"><div><span class="eyebrow">Liberação programada</span><h3>Visão geral · carros a liberar</h3><span>Fonte: PLANO MES · AA:AF</span></div><span class="date-pill">${fmt(releases.length)} carros</span></div><div class="panel-body"><div class="model-signal-grid">${modelCards || '<div class="empty">Nenhum modelo programado.</div>'}</div><div class="release-table-wrap"><table class="data-table release-table"><thead><tr><th>EN</th><th>Cliente</th><th>Modelo</th><th>PL</th><th>Nome</th><th>Data</th></tr></thead><tbody>${releases.map(item => `<tr><td>${esc(item.en || '—')}</td><td>${esc(item.cliente || '—')}</td><td>${esc(item.modelo || '—')}</td><td>${esc(item.pl || '—')}</td><td>${esc(item.nome || '—')}</td><td>${esc(item.data ? new Date(item.data).toLocaleDateString('pt-BR') : '—')}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhuma liberação encontrada.</td></tr>'}</tbody></table></div><div class="alert-export-row">${signal('Críticos', critical, 'critical')}${signal('Atenção', attention, 'attention')}</div></div></div>`;
 }
 function overview() {
   const base = scopedItems();
@@ -752,7 +757,7 @@ function overview() {
 }
 
 function stockView() {
-  return `${filterBar()}<div class="view-title"><h2>Estoque</h2><p></p></div><div class="panel"><div class="panel-body"><div class="toolbar"><input class="input" id="stock-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="stock-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div id="stock-table">${table(scopedItems(), 250)}</div></div></div>`;
+  return `${filterBar()}<div class="view-title"><h2>Estoque</h2><p>Demanda consolidada das colunas DEM da Programacao.</p></div><div class="panel"><div class="panel-body"><div class="toolbar"><input class="input" id="stock-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="stock-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div id="stock-table">${table(scopedItems(), 250, false, '', true)}</div></div></div>`;
 }
 
 function demandTotals(month, base) {
@@ -1204,8 +1209,8 @@ function sheetMetalStatus(item, cars = 1) {
   return hasOpenOrder(itemByCode(item.code) || item) ? ['Em atenção', 'amber'] : ['Crítico', 'red'];
 }
 function exportCriticalItems(items, filename = 'itens-criticos.xls') {
-  const rows = items.map(item => { const base = itemByCode(item.code) || item; const orders = Object.values(base.orders || {}).reduce((sum, v) => sum + n(v), 0); const dates = Object.entries(base.orders || {}).filter(([,v]) => n(v) > 0).map(([m]) => m).join(', '); return `<tr><td>${esc(item.code)}</td><td>${esc(item.description)}</td><td>${fmt(item.stock)}</td><td>${fmt(item.plannedNeed || 0)}</td><td>${orders > 0 ? 'Sim' : 'Não'}</td><td>${esc(dates || '—')}</td></tr>`; }).join('');
-  const html = `<!doctype html><html><head><meta charset="utf-8"></head><body><table><thead><tr><th>Código do item</th><th>Descrição</th><th>Estoque</th><th>Necessidade programada</th><th>Tem pedido</th><th>Data prevista de chegada</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
+  const rows = items.map(item => { const base = itemByCode(item.code) || item; const orders = Object.values(base.orders || {}).reduce((sum, v) => sum + n(v), 0); const dates = Object.entries(base.orders || {}).filter(([,v]) => n(v) > 0).map(([m]) => m).join(', '); return `<tr><td>${esc(item.code)}</td><td>${esc(item.description || base.description || '—')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.plannedNeed || 0)}</td><td>${fmt(item.structureDemand || 0)}</td><td>${orders > 0 ? 'Sim' : 'Não'}</td><td>${esc(dates || '—')}</td></tr>`; }).join('');
+  const html = `<!doctype html><html><head><meta charset="utf-8"></head><body><table><thead><tr><th>Código do item</th><th>Descrição</th><th>Estoque</th><th>Necessidade programada</th><th>Demanda da estrutura</th><th>Tem pedido</th><th>Data prevista de chegada</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
   const url = URL.createObjectURL(new Blob([`\ufeff${html}`], { type: 'application/vnd.ms-excel;charset=utf-8' })); const a = document.createElement('a'); a.href=url; a.download=filename; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
 }
 function sheetMetalRows(items, model, cars, query='', statusFilter='all', stockFilter='all') {
@@ -1472,7 +1477,7 @@ function bindView() {
       const query = ($('#stock-search').value || '').toLowerCase();
       const selectedRisk = $('#stock-risk').value;
       const items = scopedItems().filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item)[0] === selectedRisk));
-      $('#stock-table').innerHTML = table(items, 250);
+      $('#stock-table').innerHTML = table(items, 250, false, '', true);
       bindMaterialButtons();
       bindPurchaseButtons();
     };
@@ -1700,3 +1705,12 @@ void loadProductionAlerts();
 if (alertsSyncTimer) clearInterval(alertsSyncTimer);
 alertsSyncTimer = setInterval(() => { if (document.visibilityState !== 'hidden') void syncProductionAlerts(); }, 20000);
 startAuthentication();
+
+// Habilita a instalação como PWA quando o dashboard estiver publicado em HTTPS.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js')
+      .then(() => console.info('PWA ativado'))
+      .catch(error => console.warn('Não foi possível ativar o PWA.', error));
+  });
+}

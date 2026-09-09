@@ -197,6 +197,8 @@ for name in MODEL_SHEETS:
     code_index = next((index for index, value in enumerate(model_header) if value in {'codigo', 'codigo item'}), 1)
     description_index = next((index for index, value in enumerate(model_header) if value.startswith('descricao')), code_index + 1)
     quantity_index = next((index for index, value in enumerate(model_header) if value.startswith('quantidade')), code_index + 2)
+    stock_index = next((index for index, value in enumerate(model_header) if 'estoque' in value), None)
+    demand_indexes = [index for index, value in enumerate(model_header) if ('mês' in value or 'mes ' in value or value.startswith('demanda') or value.startswith('pedido mês')) and index != quantity_index]
     model_items = []
     seen_model_codes = set()
     for row in sheet_rows[1:]:
@@ -209,6 +211,8 @@ for name in MODEL_SHEETS:
             'code': code,
             'description': text(row[description_index]) if description_index < len(row) else '',
             'quantity': compact_number(num(row[quantity_index])) if quantity_index < len(row) else 0,
+            'stock': compact_number(num(row[stock_index])) if stock_index is not None and stock_index < len(row) else 0,
+            'demand': compact_number(sum(num(row[index]) for index in demand_indexes if index < len(row))),
         })
         seen_model_codes.add(code)
     if model_items:
