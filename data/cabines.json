@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_08.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_09.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-08",
+  "generatedAt": "2026-09-09",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -28,7 +28,7 @@
       "code": "01.04.01.0000000147",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,00 X 1500 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 0,
+      "stock": 21760,
       "modelNeeds": {
         "4 LUGAR": 109.5973,
         "6 LUGAR": 109.5973,
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 7300,
+      "stock": 6600,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -73,7 +73,7 @@
       "code": "01.02.01.0000000059",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 7305,
+      "stock": 7005,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 9160,
+      "stock": 7900,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -103,7 +103,7 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 26100.1831,
+      "stock": 38640.1831,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
@@ -148,7 +148,7 @@
       "code": "01.04.04.0000000044",
       "description": "TUBO QUADRADO 30 X 30 X 2,65 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 4178.43,
+      "stock": 3495.68,
       "modelNeeds": {
         "4 LUGAR": 14.7798,
         "6 LUGAR": 17.6583,
@@ -163,7 +163,7 @@
       "code": "01.04.04.0000000038",
       "description": "TUBO RETANGULAR 30 X 20 X 2,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 6326.18,
+      "stock": 5667.564,
       "modelNeeds": {
         "4 LUGAR": 16.2494,
         "6 LUGAR": 16.2494,
@@ -253,7 +253,7 @@
       "code": "01.02.02.0000000060",
       "description": "ARRUELA M8 X 24 X 8,40MM DIN 9021",
       "unit": "UN",
-      "stock": 2700,
+      "stock": 1700,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 24,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 133688,
+      "stock": 132688,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 53266,
+      "stock": 52766,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -613,7 +613,7 @@
       "code": "01.09.02.0000000021",
       "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
       "unit": "UN",
-      "stock": 292,
+      "stock": 242,
       "modelNeeds": {
         "4 LUGAR": 3,
         "6 LUGAR": 3,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 36455.38,
+      "stock": 36031.48,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 47,
+      "stock": 44,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
