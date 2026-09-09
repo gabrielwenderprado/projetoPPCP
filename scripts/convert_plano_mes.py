@@ -48,11 +48,27 @@ def extrair(origem: Path, destino: Path) -> None:
             quantidades[mes] = valor(ws.cell(linha, col).value) or 0
         modelos.append({"modelo": str(modelo).strip(), "quantidades": quantidades})
 
+    liberacoes = []
+    for linha in range(3, ws.max_row + 1):
+        valores = [valor(ws.cell(linha, col).value) for col in range(27, 33)]
+        if not any(value not in (None, "") for value in valores):
+            continue
+        liberacoes.append({
+            "en": valores[0],
+            "cliente": valores[1],
+            "modelo": valores[2],
+            "pl": valores[3],
+            "nome": valores[4],
+            "data": valores[5].isoformat() if hasattr(valores[5], "isoformat") else valores[5],
+        })
+
     payload = {
         "sourceSheet": "PLANO MES",
         "sourceRange": "A15:Y30",
         "months": meses,
         "models": modelos,
+        "liberacoes": liberacoes,
+        "liberacoesRange": "AA2:AF" + str(ws.max_row),
     }
     destino.parent.mkdir(parents=True, exist_ok=True)
     destino.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

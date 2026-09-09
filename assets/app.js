@@ -45,6 +45,10 @@ let cylinderCars = 1;
 // Dados consolidados da aba Cabines, tratados com a mesma lógica de Pinos e Cilindros.
 let CABINS = { items: [], models: [] };
 let selectedCabinModel = '';
+// Dados consolidados da aba Chaparias, com o mesmo fluxo de seleção para compra.
+let SHEET_METAL = { items: [], models: [] };
+let selectedSheetMetalModel = '';
+let sheetMetalCars = 1;
 let cabinCars = 1;
 // Lista local dos itens selecionados para o Processo de compra.
 let PURCHASE_PROCESS = [];
@@ -53,7 +57,7 @@ const TABLE_DATASETS = new Map();
 let TABLE_SEQUENCE = 0;
 const TABLE_CHUNK_SIZE = 250;
 const SPECIALIZED_PAGE_SIZE = 100;
-const specializedLimits = { pins: SPECIALIZED_PAGE_SIZE, cylinders: SPECIALIZED_PAGE_SIZE, cabins: SPECIALIZED_PAGE_SIZE };
+const specializedLimits = { pins: SPECIALIZED_PAGE_SIZE, cylinders: SPECIALIZED_PAGE_SIZE, cabins: SPECIALIZED_PAGE_SIZE, sheetMetal: SPECIALIZED_PAGE_SIZE };
 const specializedCounts = { pins: 0, cylinders: 0, cabins: 0 };
 const PURCHASE_STORAGE_KEY = 'pcm-processo-compra';
 // Lista local dos avisos enviados pela produção. Cada navegador mantém o seu histórico offline.
@@ -698,12 +702,53 @@ function stockHistoryView() {
   return `${filterBar()}<div class="view-title"><div><h2>Evolução do estoque</h2><p>em faze de teste, logo teremos a evoluçao do estoque.</p></div><div class="date-pill">A partir de ${esc(STOCK_HISTORY.records?.[0]?.label || 'este mês')}</div></div><div class="panel"><div class="panel-header"><h3>Histórico do estoque</h3><span>Atualização mensal</span></div><div class="panel-body">${stockHistoryChart()}</div></div><div class="panel history-help-panel"><div class="panel-header"><h3>Como o histórico cresce</h3></div><div class="panel-body"><p>Cada atualização da planilha acrescenta um novo registo com a data, o valor total do estoque e a quantidade de materiais. O primeiro ponto representa a base atual.</p><p class="history-note">Se dois registos forem feitos no mesmo mês, será mantido o registo mais recente desse mês.</p></div></div>`;
 }
 
+function plannedModelKey(name) {
+  const target = String(name || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  return Object.keys(DATA?.models || {}).find(key => {
+    const candidate = String(key).toUpperCase().replace(/[^A-Z0-9]/g, '');
+    return candidate && (target.includes(candidate) || candidate.includes(target));
+  }) || '';
+}
+function plannedGeneralItems() {
+  const releases = DATA?.planMonth?.liberacoes || [];
+  const needs = new Map();
+  releases.forEach(release => {
+    const key = plannedModelKey(release.modelo);
+    if (!key) return;
+    (DATA.models[key] || []).forEach(component => {
+      const row = needs.get(String(component.code)) || { need: 0, models: [] };
+      row.need += n(component.quantity);
+      if (!row.models.includes(key)) row.models.push(key);
+      needs.set(String(component.code), row);
+    });
+  });
+  return [...needs.entries()].map(([code, plan]) => {
+    const item = itemByCode(code) || { code, description: '', stock: 0, orders: {}, unit: 'UN' };
+    const [status] = risk(item, plan.need);
+    return { ...item, plannedNeed: plan.need, plannedModels: plan.models, plannedStatus: status };
+  }).filter(item => item.plannedStatus !== 'Regular');
+}
+function plannedSignalItems(kind) {
+  return plannedGeneralItems().filter(item => kind === 'critical' ? item.plannedStatus === 'Crítico' : item.plannedStatus === 'Em atenção');
+}
+function programacaoAlertPanel() {
+  const releases = DATA?.planMonth?.liberacoes || [];
+  const grouped = new Map();
+  releases.forEach(item => { const key = item.modelo || 'Sem modelo'; const row = grouped.get(key) || { ...item, total: 0 }; row.total += 1; grouped.set(key, row); });
+  const models = [...grouped.values()];
+  const critical = plannedSignalItems('critical');
+  const attention = plannedSignalItems('attention');
+  const signal = (label, items, cls) => `<button class="risk-signal ${cls}" data-export-alert="${cls}"><span>${label}</span><b>${fmt(items.length)}</b><small>exportar itens</small></button>`;
+  const allPlanned = plannedGeneralItems();
+  const modelCards = models.map(model => { const key = plannedModelKey(model.modelo); const items = allPlanned.filter(item => item.plannedModels?.includes(key)); const crit = items.filter(item => item.plannedStatus === 'Crítico').length; const att = items.filter(item => item.plannedStatus === 'Em atenção').length; const cls = crit ? 'critical' : att ? 'attention' : 'regular'; const label = crit ? 'Crítico' : att ? 'Atenção' : 'Regular'; return `<div class="model-signal-card"><div><strong>${esc(model.modelo || 'Sem modelo')}</strong><small>${fmt(model.total)} carro${model.total === 1 ? '' : 's'} · ${fmt(crit + att)} itens em risco</small></div><span class="status ${cls === 'critical' ? 'red' : cls === 'attention' ? 'amber' : 'green'}">${label}</span></div>`; }).join('');
+  return `<div class="panel programacao-alert-panel"><div class="panel-header"><div><span class="eyebrow">Liberação programada</span><h3>Visão geral · carros a liberar</h3><span>Fonte: PLANO MES · AA:AF</span></div><span class="date-pill">${fmt(releases.length)} carros</span></div><div class="panel-body"><div class="model-signal-grid">${modelCards || '<div class="empty">Nenhum modelo programado.</div>'}</div><div class="release-table-wrap"><table class="data-table release-table"><thead><tr><th>EN</th><th>Cliente</th><th>Modelo</th><th>PL</th><th>Nome</th><th>Data</th></tr></thead><tbody>${releases.slice(0, 20).map(item => `<tr><td>${esc(item.en || '—')}</td><td>${esc(item.cliente || '—')}</td><td>${esc(item.modelo || '—')}</td><td>${esc(item.pl || '—')}</td><td>${esc(item.nome || '—')}</td><td>${esc(item.data ? new Date(item.data).toLocaleDateString('pt-BR') : '—')}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhuma liberação encontrada.</td></tr>'}</tbody></table></div><div class="alert-export-row">${signal('Críticos', critical, 'critical')}${signal('Atenção', attention, 'attention')}</div></div></div>`;
+}
 function overview() {
   const base = scopedItems();
   const attention = base.filter(item => risk(item)[0] !== 'Regular').length;
   const regular = base.length - attention;
   const stockValue = base.reduce((sum, item) => sum + n(item.stockValue), 0);
-  return `${filterBar()}${metrics()}<div class="dashboard-grid">${riskChart()}${orderPanel()}</div>${planMonthPanel()}`;
+  return `${filterBar()}${metrics()}<div class="dashboard-grid">${riskChart()}${orderPanel()}</div>${planMonthPanel()}${programacaoAlertPanel()}`;
 }
 
 function stockView() {
@@ -1153,6 +1198,25 @@ function cabinsView() {
   return `<div class="pins-page cabins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(CABINS.sourceFile || 'Aba cabines')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-cabin-model="${esc(model)}"><span>Cabines</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel || 'deste modelo')} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba cabines.</p></div><div class="pins-config-controls"><label for="cabins-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="cabins-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(cabinCars)))}" /><button class="primary-btn" id="run-cabins-simulation">Calcular necessidade</button></div></div></div><div id="cabins-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento das cabines · ${esc(activeModel || '—')}</h3><span>${fmt(items.length)} códigos disponíveis na aba cabines</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body">${items.length ? `<div class="toolbar pins-toolbar"><input class="input" id="cabins-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="cabins-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="cabins-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="cabins-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="cabins-load-more"></div>` : `<div class="empty cabins-empty">${emptyMessage}</div>`}</div></div></div>`;
 }
 
+function sheetMetalStatus(item, cars = 1) {
+  const required = n(item.minimum) * Math.max(1, cars);
+  if (n(item.stock) >= required) return ['Regular', 'green'];
+  return hasOpenOrder(itemByCode(item.code) || item) ? ['Em atenção', 'amber'] : ['Crítico', 'red'];
+}
+function exportCriticalItems(items, filename = 'itens-criticos.xls') {
+  const rows = items.map(item => { const base = itemByCode(item.code) || item; const orders = Object.values(base.orders || {}).reduce((sum, v) => sum + n(v), 0); const dates = Object.entries(base.orders || {}).filter(([,v]) => n(v) > 0).map(([m]) => m).join(', '); return `<tr><td>${esc(item.code)}</td><td>${esc(item.description)}</td><td>${fmt(item.stock)}</td><td>${fmt(item.plannedNeed || 0)}</td><td>${orders > 0 ? 'Sim' : 'Não'}</td><td>${esc(dates || '—')}</td></tr>`; }).join('');
+  const html = `<!doctype html><html><head><meta charset="utf-8"></head><body><table><thead><tr><th>Código do item</th><th>Descrição</th><th>Estoque</th><th>Necessidade programada</th><th>Tem pedido</th><th>Data prevista de chegada</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
+  const url = URL.createObjectURL(new Blob([`\ufeff${html}`], { type: 'application/vnd.ms-excel;charset=utf-8' })); const a = document.createElement('a'); a.href=url; a.download=filename; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+}
+function sheetMetalRows(items, model, cars, query='', statusFilter='all', stockFilter='all') {
+  const rows = items.map(item => { const required=n(item.minimum)*Math.max(1,cars); const [status,color]=sheetMetalStatus(item,cars); return {...item,required,status,color,balance:n(item.stock)-required}; }).filter(item => item.modelNeeds?.[model] !== undefined).filter(item => `${item.code} ${item.description}`.toLowerCase().includes(query.trim().toLowerCase())).filter(item => statusFilter==='all'||item.status===statusFilter).filter(item => stockFilter==='all'||(stockFilter==='zero'&&n(item.stock)===0)||(stockFilter==='positive'&&n(item.stock)>0));
+  specializedCounts.sheetMetal=rows.length; const visible=rows.slice(0,specializedLimits.sheetMetal);
+  return visible.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit||'UN')}</td><td>${esc(movementDate(item.lastMovement))}</td><td>${specializedOrderInfo(item).label}</td><td>${fmt(item.minimum)}</td><td>${fmt(cars)}</td><td>${fmt(item.required)}</td><td class="${item.balance<0?'danger-text':''}">${fmt(item.balance)}</td><td><span class="status ${item.color}">${item.status}</span></td><td>${purchaseAction(item,'explosion',item.required,'Chaparias')}</td></tr>`).join('');
+}
+function renderSheetMetalSimulation() {
+  const model=selectedSheetMetalModel||SHEET_METAL.models[0]||'CHAPARIAS'; const cars=Math.max(1,sheetMetalCars); const query=$('#sheet-metal-search')?.value||''; const status=$('#sheet-metal-coverage')?.value||'all'; const stock=$('#sheet-metal-stock-filter')?.value||'all'; const body=$('#sheet-metal-table-body'); if(body) body.innerHTML=sheetMetalRows(SHEET_METAL.items||[],model,cars,query,status,stock)||'<tr><td colspan="10" class="empty">Nenhuma chaparia corresponde aos filtros.</td></tr>'; setSpecializedLoadMore('sheetMetal',specializedCounts.sheetMetal,Math.min(specializedCounts.sheetMetal,specializedLimits.sheetMetal),renderSheetMetalSimulation); bindMaterialButtons(); bindPurchaseButtons();
+}
+function sheetMetalView() { const items=SHEET_METAL.items||[]; const models=SHEET_METAL.models||['CHAPARIAS']; const active=selectedSheetMetalModel||models[0]; return `<div class="pins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2>Chaparias</h2><p>Dados lidos diretamente da aba chaparias da Explosão.</p></div><div class="date-pill">${esc(SHEET_METAL.sourceFile||'Aba chaparias')}</div></div><div class="pins-model-strip">${models.map(m=>`<button class="pins-model-card${m===active?' selected':''}" data-sheet-metal-model="${esc(m)}"><span>Chaparias</span><strong>${esc(m)}</strong><small>${m===active?'modelo selecionado':'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento das chaparias</h3><span>${fmt(items.length)} códigos disponíveis na aba chaparias</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o mínimo</span></div><div class="panel-body">${items.length?`<div class="toolbar pins-toolbar"><input class="input" id="sheet-metal-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="sheet-metal-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="sheet-metal-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedido em aberto</th><th>Mínimo</th><th>Quantidade</th><th>Necessidade</th><th>Saldo</th><th>Situação</th><th>Compras</th></tr></thead><tbody id="sheet-metal-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="sheetMetal-load-more"></div>`:'<div class="empty">Nenhuma chaparia encontrada.</div>'}</div></div></div>`; }
 function productionAlertStatusClass(status) {
   if (status === 'Resolvido') return 'green';
   if (status === 'Em análise') return 'amber';
@@ -1224,9 +1288,9 @@ function openProductionAlertDetail(id) {
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', productionAlerts: 'Aviso da produção' };
+  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, productionAlerts: productionAlertsView };
+  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -1238,6 +1302,13 @@ function render() {
 
 // Liga os eventos dos campos, botões, tabelas e filtros recém-renderizados.
 function bindView() {
+  if (view === 'overview') {
+    document.querySelectorAll('[data-export-alert]').forEach(button => button.onclick = () => {
+      const kind = button.dataset.exportAlert;
+      const items = plannedSignalItems(kind);
+      exportCriticalItems(items, `itens-${kind}-${new Date().toISOString().slice(0, 10)}.xls`);
+    });
+  }
   const globalFilters = [
     ['#analyst-filter', value => { analyst = value; }],
     ['#family-filter', value => { family = value; }],
@@ -1339,6 +1410,12 @@ function bindView() {
     if (CABINS.items?.length) renderCabinSimulation();
   }
 
+  if (view === 'sheetMetal') {
+    document.querySelectorAll('[data-sheet-metal-model]').forEach(button => button.onclick = () => { selectedSheetMetalModel = button.dataset.sheetMetalModel || ''; render(); });
+    const search=$('#sheet-metal-search'); const coverage=$('#sheet-metal-coverage'); const stock=$('#sheet-metal-stock-filter');
+    if(search) search.oninput=renderSheetMetalSimulation; if(coverage) coverage.onchange=renderSheetMetalSimulation; if(stock) stock.onchange=renderSheetMetalSimulation;
+    renderSheetMetalSimulation();
+  }
   if (view === 'pins') {
     document.querySelectorAll('[data-pin-model]').forEach(button => button.onclick = () => {
       selectedPinModel = button.dataset.pinModel || '';
@@ -1568,14 +1645,16 @@ Obrigado!.`);
 // Lê o JSON local e inicia a primeira renderização do dashboard.
 async function load() {
   try {
-    const [dataResponse, historyResponse, consumablesResponse, planoResponse, pinsResponse, cylindersResponse, cabinsResponse] = await Promise.all([
+    const [dataResponse, historyResponse, consumablesResponse, planoResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse] = await Promise.all([
       fetch('data/explosao.json'),
       fetch('data/historico-estoque.json'),
       fetch('data/consumiveis.json'),
       fetch('data/plano-mes.json'),
       fetch('data/pinos.json'),
       fetch('data/cilindros.json'),
-      fetch('data/cabines.json')
+      fetch('data/cabines.json'),
+      fetch('data/chaparias.json'),
+      fetch('data/programacao-modelos.json')
     ]);
     DATA = await dataResponse.json();
     STOCK_HISTORY = historyResponse.ok ? await historyResponse.json() : { records: [] };
@@ -1584,10 +1663,13 @@ async function load() {
     PINS = pinsResponse.ok ? await pinsResponse.json() : { items: [], models: [] };
     CYLINDERS = cylindersResponse.ok ? await cylindersResponse.json() : { items: [], models: [] };
     CABINS = cabinsResponse.ok ? await cabinsResponse.json() : { items: [], models: [] };
+    SHEET_METAL = sheetMetalResponse.ok ? await sheetMetalResponse.json() : { items: [], models: [] };
+    DATA.programacaoModels = programacaoResponse.ok ? await programacaoResponse.json() : { models: [] };
     const itemByCodeMap = new Map((DATA.items || []).map(item => [String(item.code), item]));
     CONSUMABLES.items = (CONSUMABLES.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     PINS.items = (PINS.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     CYLINDERS.items = (CYLINDERS.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
+    SHEET_METAL.items = (SHEET_METAL.items || []).map(item => ({ ...item, unit: item.unit || 'UN', lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     CABINS.items = (CABINS.items || []).map(item => ({ ...item, unit: item.unit || 'UN', lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     $('#source-file').textContent = DATA.sourceFile;
     $('#updated-at').textContent = `Base carregada · ${DATA.generatedAt}`;

@@ -68,6 +68,8 @@ def main() -> int:
         fail(f"planilha de Consumíveis não encontrada: {consumables}")
 
     run([sys.executable, str(SCRIPTS / "convert_excel.py"), str(explosion)])
+    run([sys.executable, str(SCRIPTS / "convert_chaparias.py"), str(explosion)])
+    run([sys.executable, str(SCRIPTS / "convert_programacao.py"), str(explosion)])
 
     embedded_consumables = has_sheet(explosion, "consumiveis")
     if consumables is None and embedded_consumables:
@@ -82,6 +84,9 @@ def main() -> int:
         "plano-mes.json": ("sourceSheet", "months", "models"),
         "pinos.json": ("sourceFile", "sourceSheet", "models", "items"),
         "cilindros.json": ("sourceFile", "sourceSheet", "models", "items"),
+        "cabines.json": ("sourceFile", "sourceSheet", "models", "items"),
+        "chaparias.json": ("sourceFile", "sourceSheet", "models", "items"),
+        "programacao-modelos.json": ("sourceFile", "sourceSheet", "models"),
         "historico-estoque.json": ("description", "records"),
     }
     if consumables is not None:

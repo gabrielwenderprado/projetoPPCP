@@ -1195,6 +1195,88 @@ body.dark-theme .purchase-process-table tbody tr:hover td { background: #102a45;
 .plan-month-panel {
   margin-bottom: 20px;
 }
+.programacao-alert-panel {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.programacao-alert-panel .panel-header {
+  background: linear-gradient(120deg, #102847 0%, #174c7d 62%, #1e6e9f 100%);
+  color: #fff;
+}
+.programacao-alert-panel .panel-header h3,
+.programacao-alert-panel .panel-header span {
+  color: #fff;
+}
+.release-table-wrap {
+  max-height: 360px;
+  overflow: auto;
+  border: 1px solid #e4edf5;
+  border-radius: 12px;
+}
+.release-table {
+  min-width: 860px;
+}
+.release-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f3f8fc;
+  color: #47627c;
+  font-size: 10px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.release-table td { font-size: 12px; }
+.model-signal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.model-signal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e1eaf2;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fff, #f7fbff);
+}
+.model-signal-card strong,
+.model-signal-card small { display: block; }
+.model-signal-card strong { color: var(--navy); font-size: 13px; }
+.model-signal-card small { margin-top: 4px; color: var(--muted); font-size: 11px; }
+.alert-export-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+.risk-signal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 8px 18px rgba(19, 45, 76, .08);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.risk-signal:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(19, 45, 76, .14); }
+.risk-signal span { font-weight: 800; }
+.risk-signal b { font: 700 25px "Space Grotesk"; }
+.risk-signal small { opacity: .82; font-size: 10px; }
+.risk-signal.critical { background: linear-gradient(135deg, #b72d3c, #e45e62); }
+.risk-signal.attention { background: linear-gradient(135deg, #a96b08, #d69b2e); }
+@media (max-width: 760px) {
+  .alert-export-row { grid-template-columns: 1fr; }
+  .release-table-wrap { max-height: 300px; }
+}
 .plan-month-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(90px, 1fr));
