@@ -194,22 +194,6 @@
   ],
   "liberacoes": [
     {
-      "en": "EN012817",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10S",
-      "pl": "PL 3238",
-      "nome": "CESTO",
-      "data": "2026-09-11T00:00:00"
-    },
-    {
-      "en": "EN012845",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10S",
-      "pl": "PL 3238",
-      "nome": "CESTO",
-      "data": "2026-09-11T00:00:00"
-    },
-    {
       "en": "EN012833",
       "cliente": "ENEL SP",
       "modelo": "SKYCITY 10S",
