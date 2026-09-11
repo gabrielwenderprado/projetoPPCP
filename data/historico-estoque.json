@@ -1,33 +1,6 @@
-<<<<<<< HEAD
 {
   "description": "Histórico mensal do valor total do estoque e da quantidade de materiais.",
   "records": [
-    {
-      "date": "2026-08-31",
-      "label": "Agosto 2026",
-      "stockValue": 26706286.79,
-      "itemCount": 5046,
-      "sourceFile": "Cópia de EXPLOSAO_31.08 Atual.xlsm"
-    },
-    {
-      "date": "2026-09-10",
-      "label": "Setembro 2026",
-      "stockValue": 237159937.83,
-      "itemCount": 5919,
-      "sourceFile": "Cópia de EXPLOSAO_10.09.xlsm"
-    }
-  ]
-=======
-{
-  "description": "Histórico mensal do valor total do estoque e da quantidade de materiais.",
-  "records": [
-    {
-      "date": "2026-08-31",
-      "label": "Agosto 2026",
-      "stockValue": 26706286.79,
-      "itemCount": 5046,
-      "sourceFile": "Cópia de EXPLOSAO_31.08 Atual.xlsm"
-    },
     {
       "date": "2026-09-11",
       "label": "Setembro 2026",
@@ -36,5 +9,4 @@
       "sourceFile": "Cópia de EXPLOSAO_11.09.xlsm"
     }
   ]
->>>>>>> b6d84e2 (att)
 }
