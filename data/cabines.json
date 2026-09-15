@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_14.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_15.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-15",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -208,7 +208,7 @@
       "code": "01.02.03.0000000029",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 944,
+      "stock": 544,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -388,7 +388,7 @@
       "code": "01.15.02.0000000120",
       "description": "CONJUNTO FECHO COM CADARÇO 480MM",
       "unit": "UN",
-      "stock": 108,
+      "stock": 72,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -403,7 +403,7 @@
       "code": "01.15.04.0000000072",
       "description": "CINTO DE SEGURANÇA RETRATIL DE 3P X 3430MM",
       "unit": "UN",
-      "stock": 108,
+      "stock": 72,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 27739.6919,
+      "stock": 41834.6919,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 126688,
+      "stock": 126188,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -568,7 +568,7 @@
       "code": "01.02.01.0000000115",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 56008,
+      "stock": 55608,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -763,7 +763,7 @@
       "code": "01.11.04.0000000111",
       "description": "LANTERNA LED BV PARA ILUMINAÇAO (IL5024)",
       "unit": "UN",
-      "stock": 110,
+      "stock": 92,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -778,7 +778,7 @@
       "code": "01.12.07.0000000005",
       "description": "PEGA MAO - PLASTICO",
       "unit": "UN",
-      "stock": 610,
+      "stock": 592,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 222,
+      "stock": 204,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 28,
+      "stock": 16,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 10,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1153,7 +1153,7 @@
       "code": "02.03.02.0000085107",
       "description": "BUCHA DE ABERTURA DA PORTA DA CABINE",
       "unit": "UN",
-      "stock": 316,
+      "stock": 148,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1618,7 +1618,7 @@
       "code": "01.15.02.0000000113",
       "description": "CLIMATIZADOR DE CABINE 24V",
       "unit": "UN",
-      "stock": 52,
+      "stock": 46,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 12,
+      "stock": 6,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1663,7 +1663,7 @@
       "code": "01.15.04.0000000071",
       "description": "EXTINTOR DE INCENDIO 1KG CLASSE ABC",
       "unit": "UN",
-      "stock": 59,
+      "stock": 53,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1678,7 +1678,7 @@
       "code": "01.15.04.0000000076",
       "description": "SUPORTE EXTINTOR DE 3\"",
       "unit": "UN",
-      "stock": 48,
+      "stock": 42,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 39,
+      "stock": 33,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2143,7 +2143,7 @@
       "code": "02.03.01.0000085043",
       "description": "PINO DA ABERTURA A PORTA DA CABINE",
       "unit": "UN",
-      "stock": 180,
+      "stock": 100,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -3148,7 +3148,7 @@
       "code": "01.15.02.0000000138",
       "description": "VASO SANITARIO BANHEIRO QUIMICO PORTATIL CAMPING - 20L",
       "unit": "UN",
-      "stock": 8,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -3163,7 +3163,7 @@
       "code": "01.15.02.0000000140",
       "description": "PIA LAVATORIO PORTATIL CAMPING COM RESERVATORIO",
       "unit": "UN",
-      "stock": 76,
+      "stock": 70,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,

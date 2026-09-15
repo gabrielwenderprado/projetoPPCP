@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_14.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_15.09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-15",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -764,7 +764,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 40,
+      "stock": 35,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -951,7 +951,7 @@
       "code": "01.01.01.0000000155",
       "description": "ENGATE RAPIDO MACHO FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
       "unit": "UN",
-      "stock": 363,
+      "stock": 355,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -968,7 +968,7 @@
       "code": "01.01.01.0000000156",
       "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
       "unit": "UN",
-      "stock": 330,
+      "stock": 322,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1070,7 +1070,7 @@
       "code": "01.13.01.0000000032",
       "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1400 MM - 2 TON",
       "unit": "UN",
-      "stock": 170,
+      "stock": 150,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1410,7 +1410,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 385,
+      "stock": 383,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
