@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_15.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_16.09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-15",
+  "generatedAt": "2026-09-16",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -662,7 +662,7 @@
       "code": "02.02.01.0000078136",
       "description": "PINO ARTICULAÇÃO CAÇAMBA - AS",
       "unit": "UN",
-      "stock": 33,
+      "stock": 23,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1410,7 +1410,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 383,
+      "stock": 378,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1478,7 +1478,7 @@
       "code": "02.03.01.0000085111",
       "description": "PINO INFERIOR NIVELAMENTO",
       "unit": "UN",
-      "stock": 12,
+      "stock": 8,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,
