@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_16.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_17-09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-16",
+  "generatedAt": "2026-09-17",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,7 +13,7 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 35490.1764,
+      "stock": 35098.1764,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 1000,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 5900,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -103,7 +103,7 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 51361.6211,
+      "stock": 50611.6211,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
@@ -193,7 +193,7 @@
       "code": "01.02.02.0000000068",
       "description": "ARRUELA LISA 3/16\" AÇO CARBONO ZINCO PRETO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -208,7 +208,7 @@
       "code": "01.02.03.0000000029",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 544,
+      "stock": 3544,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -388,7 +388,7 @@
       "code": "01.15.02.0000000120",
       "description": "CONJUNTO FECHO COM CADARÇO 480MM",
       "unit": "UN",
-      "stock": 6,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -403,7 +403,7 @@
       "code": "01.15.04.0000000072",
       "description": "CINTO DE SEGURANÇA RETRATIL DE 3P X 3430MM",
       "unit": "UN",
-      "stock": 6,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 40951.2419,
+      "stock": 39871.2419,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 119188,
+      "stock": 113938,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -523,7 +523,7 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 33597.456,
+      "stock": 33417.456,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 50042,
+      "stock": 49042,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -613,7 +613,7 @@
       "code": "01.09.02.0000000021",
       "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
       "unit": "UN",
-      "stock": 242,
+      "stock": 42,
       "modelNeeds": {
         "4 LUGAR": 3,
         "6 LUGAR": 3,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 0.3439,
+      "stock": 4.3439,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1183,7 +1183,7 @@
       "code": "01.04.01.0000000019",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 34646.29,
+      "stock": 34564.29,
       "modelNeeds": {
         "4 LUGAR": 1.8147,
         "6 LUGAR": 1.8147,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 33064.155,
+      "stock": 32958.155,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -3088,7 +3088,7 @@
       "code": "01.04.01.0000000037",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 8981,
+      "stock": 8755,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -3148,7 +3148,7 @@
       "code": "01.15.02.0000000138",
       "description": "VASO SANITARIO BANHEIRO QUIMICO PORTATIL CAMPING - 20L",
       "unit": "UN",
-      "stock": 15,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4738,7 +4738,7 @@
       "code": "01.04.03.0000000070",
       "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - ASTM A36",
       "unit": "UN",
-      "stock": 1950.408,
+      "stock": 1932.51,
       "modelNeeds": {
         "4 LUGAR": 0.0471,
         "6 LUGAR": 0.0471,
