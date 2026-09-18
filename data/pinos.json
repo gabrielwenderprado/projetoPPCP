@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_17-09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_18.09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-17",
+  "generatedAt": "2026-09-18",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -50,7 +50,7 @@
       "code": "01.02.07.0000000005",
       "description": "PINO QUEBRA DEDO 1/4\" X 2\" COM CABO DE AÇO",
       "unit": "UN",
-      "stock": 1707,
+      "stock": 1207,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 20,
@@ -84,7 +84,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 308,
+      "stock": 48,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -135,7 +135,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 290,
+      "stock": 361,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -254,7 +254,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 177,
+      "stock": 438,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -373,7 +373,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 135,
+      "stock": 95,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -832,7 +832,7 @@
       "code": "02.03.01.0000080793",
       "description": "PINO FIXAÇÃO CESTO",
       "unit": "UN",
-      "stock": 16,
+      "stock": 26,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -849,7 +849,7 @@
       "code": "02.03.01.0000083452",
       "description": "PINO FIXAÇAO CESTO",
       "unit": "UN",
-      "stock": 120,
+      "stock": 143,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -900,7 +900,7 @@
       "code": "02.03.01.0000085012",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 54,
+      "stock": 34,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -985,7 +985,7 @@
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 73,
+      "stock": 68,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1002,7 +1002,7 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 114,
+      "stock": 109,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1019,7 +1019,7 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 92,
+      "stock": 87,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1410,7 +1410,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 378,
+      "stock": 358,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1461,7 +1461,7 @@
       "code": "02.03.01.0000085110",
       "description": "PINO SUPERIOR NIVELAMENTO",
       "unit": "UN",
-      "stock": 38,
+      "stock": 139,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,

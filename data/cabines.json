@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_17-09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_18.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-17",
+  "generatedAt": "2026-09-18",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 11050,
+      "stock": 10850,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -388,7 +388,7 @@
       "code": "01.15.02.0000000120",
       "description": "CONJUNTO FECHO COM CADARÇO 480MM",
       "unit": "UN",
-      "stock": 0,
+      "stock": 168,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -403,7 +403,7 @@
       "code": "01.15.04.0000000072",
       "description": "CINTO DE SEGURANÇA RETRATIL DE 3P X 3430MM",
       "unit": "UN",
-      "stock": 0,
+      "stock": 168,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 0,
+      "stock": 56,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 0,
+      "stock": 56,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 0,
+      "stock": 28,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
