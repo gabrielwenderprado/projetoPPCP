@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_18.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_21.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-18",
+  "generatedAt": "2026-09-21",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,7 +13,7 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 35098.1764,
+      "stock": 34872.0964,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 5400,
+      "stock": 4895,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -103,7 +103,7 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 50611.6211,
+      "stock": 50312.0651,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
@@ -118,7 +118,7 @@
       "code": "01.02.01.0000000024",
       "description": "PARAFUSO SEXTAVADO AUTO PERFURANTE 1/4 X 1\" (6,35X1,75X25MM) ROSCA INTEIRA ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 7600,
+      "stock": 5600,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 45,
@@ -133,7 +133,7 @@
       "code": "01.02.03.0000000034",
       "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 3774,
+      "stock": 3474,
       "modelNeeds": {
         "4 LUGAR": 24,
         "6 LUGAR": 18,
@@ -223,7 +223,7 @@
       "code": "01.02.03.0000000074",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 16658,
+      "stock": 16652,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 20,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 39871.2419,
+      "stock": 39510.9269,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 113938,
+      "stock": 109908,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -523,7 +523,7 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 33417.456,
+      "stock": 33058.554,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
@@ -568,7 +568,7 @@
       "code": "01.02.01.0000000115",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 55608,
+      "stock": 55603,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 49042,
+      "stock": 45024,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -898,7 +898,7 @@
       "code": "01.02.07.0000000021",
       "description": "ANEL ELASTICO AÇO CARBONO EIXO E-10",
       "unit": "UN",
-      "stock": 2243,
+      "stock": 1743,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 4.3439,
+      "stock": 16263.3439,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 32958.155,
+      "stock": 32746.205,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -3088,7 +3088,7 @@
       "code": "01.04.01.0000000037",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 8755,
+      "stock": 8528.92,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
