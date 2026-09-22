@@ -1,13 +1,13 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_21.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_22.09.xlsm",
   "sourceSheet": "Programacao",
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-09-22",
   "columns": "AA:AF",
   "models": [
     {
       "name": "guindaste 45",
       "column": 27,
-      "total": 1412.3766,
+      "total": 1414.3766,
       "days": [
         {
           "row": 18,
@@ -1644,13 +1644,17 @@
         {
           "row": 5600,
           "quantity": 1
+        },
+        {
+          "row": 5927,
+          "quantity": 2
         }
       ]
     },
     {
       "name": "10L",
       "column": 28,
-      "total": 1406.9098,
+      "total": 1197.784,
       "days": [
         {
           "row": 8,
@@ -1673,10 +1677,6 @@
           "quantity": 2
         },
         {
-          "row": 35,
-          "quantity": 4
-        },
-        {
           "row": 101,
           "quantity": 2
         },
@@ -1690,10 +1690,6 @@
         },
         {
           "row": 252,
-          "quantity": 8
-        },
-        {
-          "row": 253,
           "quantity": 8
         },
         {
@@ -1725,18 +1721,6 @@
           "quantity": 16
         },
         {
-          "row": 320,
-          "quantity": 2.9716
-        },
-        {
-          "row": 346,
-          "quantity": 0.0633
-        },
-        {
-          "row": 350,
-          "quantity": 0.0322
-        },
-        {
           "row": 366,
           "quantity": 2
         },
@@ -1746,10 +1730,6 @@
         },
         {
           "row": 371,
-          "quantity": 1
-        },
-        {
-          "row": 386,
           "quantity": 1
         },
         {
@@ -1767,10 +1747,6 @@
         {
           "row": 396,
           "quantity": 6
-        },
-        {
-          "row": 405,
-          "quantity": 8
         },
         {
           "row": 458,
@@ -1807,10 +1783,6 @@
         {
           "row": 548,
           "quantity": 5
-        },
-        {
-          "row": 559,
-          "quantity": 2
         },
         {
           "row": 565,
@@ -1873,40 +1845,16 @@
           "quantity": 48
         },
         {
-          "row": 645,
-          "quantity": 1
-        },
-        {
           "row": 655,
           "quantity": 1
-        },
-        {
-          "row": 670,
-          "quantity": 2
         },
         {
           "row": 696,
           "quantity": 2
         },
         {
-          "row": 704,
-          "quantity": 1
-        },
-        {
-          "row": 712,
-          "quantity": 1.5
-        },
-        {
-          "row": 715,
-          "quantity": 0.0529
-        },
-        {
           "row": 716,
           "quantity": 2
-        },
-        {
-          "row": 717,
-          "quantity": 0.2231
         },
         {
           "row": 725,
@@ -1915,10 +1863,6 @@
         {
           "row": 739,
           "quantity": 1
-        },
-        {
-          "row": 746,
-          "quantity": 6
         },
         {
           "row": 754,
@@ -1934,11 +1878,11 @@
         },
         {
           "row": 785,
-          "quantity": 10
+          "quantity": 12
         },
         {
           "row": 786,
-          "quantity": 22
+          "quantity": 12
         },
         {
           "row": 798,
@@ -1974,7 +1918,7 @@
         },
         {
           "row": 836,
-          "quantity": 16
+          "quantity": 12
         },
         {
           "row": 837,
@@ -1986,7 +1930,7 @@
         },
         {
           "row": 839,
-          "quantity": 8
+          "quantity": 12
         },
         {
           "row": 840,
@@ -2085,10 +2029,6 @@
           "quantity": 2
         },
         {
-          "row": 913,
-          "quantity": 2
-        },
-        {
           "row": 934,
           "quantity": 1
         },
@@ -2155,18 +2095,6 @@
         {
           "row": 999,
           "quantity": 4
-        },
-        {
-          "row": 1001,
-          "quantity": 1
-        },
-        {
-          "row": 1003,
-          "quantity": 1
-        },
-        {
-          "row": 1007,
-          "quantity": 1.6135
         },
         {
           "row": 1009,
@@ -2249,10 +2177,6 @@
           "quantity": 1
         },
         {
-          "row": 1092,
-          "quantity": 3.68
-        },
-        {
           "row": 1093,
           "quantity": 18
         },
@@ -2281,16 +2205,8 @@
           "quantity": 1
         },
         {
-          "row": 1179,
-          "quantity": 16
-        },
-        {
           "row": 1195,
           "quantity": 2
-        },
-        {
-          "row": 1285,
-          "quantity": 2.0378
         },
         {
           "row": 1321,
@@ -2409,18 +2325,6 @@
           "quantity": 1
         },
         {
-          "row": 1777,
-          "quantity": 0.8659
-        },
-        {
-          "row": 1779,
-          "quantity": 2.9325
-        },
-        {
-          "row": 1781,
-          "quantity": 57.6656
-        },
-        {
           "row": 1825,
           "quantity": 1
         },
@@ -2475,10 +2379,6 @@
         {
           "row": 1951,
           "quantity": 3
-        },
-        {
-          "row": 1952,
-          "quantity": 2
         },
         {
           "row": 1966,
@@ -2569,16 +2469,8 @@
           "quantity": 2
         },
         {
-          "row": 2307,
-          "quantity": 5
-        },
-        {
           "row": 2357,
           "quantity": 1
-        },
-        {
-          "row": 2359,
-          "quantity": 0.659
         },
         {
           "row": 2362,
@@ -2597,18 +2489,6 @@
           "quantity": 11.2
         },
         {
-          "row": 2516,
-          "quantity": 4
-        },
-        {
-          "row": 2517,
-          "quantity": 4
-        },
-        {
-          "row": 2518,
-          "quantity": 2
-        },
-        {
           "row": 2519,
           "quantity": 1
         },
@@ -2621,31 +2501,11 @@
           "quantity": 3
         },
         {
-          "row": 2680,
-          "quantity": 0.3255
-        },
-        {
           "row": 2701,
           "quantity": 1
         },
         {
-          "row": 2726,
-          "quantity": 4
-        },
-        {
-          "row": 2727,
-          "quantity": 4
-        },
-        {
-          "row": 2728,
-          "quantity": 8
-        },
-        {
           "row": 2794,
-          "quantity": 2
-        },
-        {
-          "row": 2798,
           "quantity": 2
         },
         {
@@ -2711,26 +2571,6 @@
         {
           "row": 3464,
           "quantity": 1
-        },
-        {
-          "row": 3469,
-          "quantity": 0.09
-        },
-        {
-          "row": 3506,
-          "quantity": 0.2726
-        },
-        {
-          "row": 3510,
-          "quantity": 1.1155
-        },
-        {
-          "row": 3511,
-          "quantity": 1.3949
-        },
-        {
-          "row": 3525,
-          "quantity": 2
         },
         {
           "row": 3632,
@@ -2805,39 +2645,11 @@
           "quantity": 1
         },
         {
-          "row": 4340,
-          "quantity": 4
-        },
-        {
           "row": 4361,
           "quantity": 1
         },
         {
           "row": 4362,
-          "quantity": 1
-        },
-        {
-          "row": 4373,
-          "quantity": 1
-        },
-        {
-          "row": 4380,
-          "quantity": 4
-        },
-        {
-          "row": 4385,
-          "quantity": 4
-        },
-        {
-          "row": 4391,
-          "quantity": 4
-        },
-        {
-          "row": 4397,
-          "quantity": 1
-        },
-        {
-          "row": 4398,
           "quantity": 1
         },
         {
@@ -2877,14 +2689,6 @@
           "quantity": 4
         },
         {
-          "row": 4573,
-          "quantity": 3.25
-        },
-        {
-          "row": 4576,
-          "quantity": 1
-        },
-        {
           "row": 4578,
           "quantity": 3
         },
@@ -2899,34 +2703,6 @@
         {
           "row": 4733,
           "quantity": 1
-        },
-        {
-          "row": 4765,
-          "quantity": 1
-        },
-        {
-          "row": 4770,
-          "quantity": 4
-        },
-        {
-          "row": 4771,
-          "quantity": 1
-        },
-        {
-          "row": 4815,
-          "quantity": 0.1517
-        },
-        {
-          "row": 4833,
-          "quantity": 2.6
-        },
-        {
-          "row": 4938,
-          "quantity": 0.1736
-        },
-        {
-          "row": 5091,
-          "quantity": 1.4547
         },
         {
           "row": 5300,
@@ -2961,7 +2737,7 @@
     {
       "name": "30T",
       "column": 29,
-      "total": 630.8653,
+      "total": 632.8653,
       "days": [
         {
           "row": 24,
@@ -4146,13 +3922,17 @@
         {
           "row": 5567,
           "quantity": 1
+        },
+        {
+          "row": 5927,
+          "quantity": 2
         }
       ]
     },
     {
       "name": "guindaste 12",
       "column": 32,
-      "total": 718.2168,
+      "total": 720.2168,
       "days": [
         {
           "row": 18,
@@ -5361,6 +5141,10 @@
         {
           "row": 5926,
           "quantity": 1
+        },
+        {
+          "row": 5927,
+          "quantity": 2
         }
       ]
     }

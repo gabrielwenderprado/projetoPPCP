@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_21.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_22.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-09-22",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,7 +13,7 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 34872.0964,
+      "stock": 32225.7164,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
@@ -103,7 +103,7 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 50312.0651,
+      "stock": 47853.2921,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
@@ -133,7 +133,7 @@
       "code": "01.02.03.0000000034",
       "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 3474,
+      "stock": 3464,
       "modelNeeds": {
         "4 LUGAR": 24,
         "6 LUGAR": 18,
@@ -283,7 +283,7 @@
       "code": "01.02.03.0000000040",
       "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 2600,
+      "stock": 1600,
       "modelNeeds": {
         "4 LUGAR": 12,
         "6 LUGAR": 16,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 39510.9269,
+      "stock": 36146.6869,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -523,7 +523,7 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 33058.554,
+      "stock": 31443.495,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
@@ -583,7 +583,7 @@
       "code": "01.02.03.0000000031",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M5 X 0,80MM CLASSE 5 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 20323,
+      "stock": 20123,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -763,7 +763,7 @@
       "code": "01.11.04.0000000111",
       "description": "LANTERNA LED BV PARA ILUMINAÇAO (IL5024)",
       "unit": "UN",
-      "stock": 59,
+      "stock": 149,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -853,7 +853,7 @@
       "code": "02.01.03.0000085221",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LATERAL",
       "unit": "UN",
-      "stock": 0,
+      "stock": 4,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 56,
+      "stock": 48,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 16263.3439,
+      "stock": 14313.4039,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1183,7 +1183,7 @@
       "code": "01.04.01.0000000019",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 34564.29,
+      "stock": 30055.162,
       "modelNeeds": {
         "4 LUGAR": 1.8147,
         "6 LUGAR": 1.8147,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 32746.205,
+      "stock": 30202.92,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -2053,7 +2053,7 @@
       "code": "02.01.03.0000085192",
       "description": "FORRO PORTA DIREITA",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2068,7 +2068,7 @@
       "code": "02.01.03.0000085195",
       "description": "FORRO PORTA ESQUERDA",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2158,7 +2158,7 @@
       "code": "01.04.01.0000000156",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 6000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 5242.23,
+      "stock": 4044.006,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -2323,7 +2323,7 @@
       "code": "02.01.03.0000085222",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LE FR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2953,7 +2953,7 @@
       "code": "02.01.03.0000085315",
       "description": "FORRO TETO CABINE 6L WC",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2968,7 +2968,7 @@
       "code": "02.01.03.0000085316",
       "description": "FORRO TETO 2 CABINE 6L WC",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2983,7 +2983,7 @@
       "code": "02.01.03.0000085317",
       "description": "FORRO TETO BANHEIRO CABINE 6L WC",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -3088,7 +3088,7 @@
       "code": "01.04.01.0000000037",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 8528.92,
+      "stock": 10173,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4033,7 +4033,7 @@
       "code": "02.01.03.0000085223",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL DIREITO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4048,7 +4048,7 @@
       "code": "02.01.03.0000085224",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL ESQUERDO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4063,7 +4063,7 @@
       "code": "02.01.03.0000085225",
       "description": "PISO DE BORRACHA PADRÃO MOEDA BANHEIRO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4078,7 +4078,7 @@
       "code": "02.01.03.0000085227",
       "description": "FORRO PORTA BANHEIRO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 2,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4693,7 +4693,7 @@
       "code": "01.06.01.0000000004",
       "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
       "unit": "UN",
-      "stock": 545,
+      "stock": 2745,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0.3,
@@ -4738,7 +4738,7 @@
       "code": "01.04.03.0000000070",
       "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - ASTM A36",
       "unit": "UN",
-      "stock": 1932.51,
+      "stock": 1813.19,
       "modelNeeds": {
         "4 LUGAR": 0.0471,
         "6 LUGAR": 0.0471,
