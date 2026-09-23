@@ -1,0 +1,1041 @@
+{
+  "sourceFile": "CópiadeEXPLOSAO_23.09.xlsm",
+  "generatedAt": "2026-09-23",
+  "sourceSheets": {
+    "next": "calfer.next",
+    "calfer": "calfer"
+  },
+  "nextModels": [
+    {
+      "name": "10L",
+      "sourceLabel": "modelo 10L",
+      "items": [
+        {
+          "code": "02.01.03.0000069390",
+          "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "nextStock": 10,
+          "row": 4
+        },
+        {
+          "code": "01.01.10.0000074195",
+          "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
+          "quantityPerMachine": 1,
+          "nextStock": 23,
+          "row": 5
+        },
+        {
+          "code": "02.03.01.0000069406",
+          "description": "PINO DA ARTICULAÇAO DO CILINDRO COM BRAÇO SUPERIOR SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "nextStock": 14,
+          "row": 6
+        },
+        {
+          "code": "02.03.01.0000069418",
+          "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
+          "quantityPerMachine": 1,
+          "nextStock": 11,
+          "row": 7
+        },
+        {
+          "code": "02.03.01.0000069405",
+          "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "nextStock": 1,
+          "row": 8
+        },
+        {
+          "code": "02.03.01.0000069405",
+          "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "nextStock": 1,
+          "row": 9
+        },
+        {
+          "code": "01.01.14.0000071344",
+          "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
+          "quantityPerMachine": 12,
+          "nextStock": 89,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "name": "10S",
+      "sourceLabel": "modelo 10S",
+      "items": [
+        {
+          "code": "02.01.03.0000085070",
+          "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
+          "quantityPerMachine": 1,
+          "nextStock": 15,
+          "row": 13
+        },
+        {
+          "code": "02.01.03.0000071287",
+          "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
+          "quantityPerMachine": 1,
+          "nextStock": 0,
+          "row": 14
+        },
+        {
+          "code": "01.01.14.0000000036",
+          "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
+          "quantityPerMachine": 16,
+          "nextStock": 208,
+          "row": 15
+        },
+        {
+          "code": "01.01.14.0000000046",
+          "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
+          "quantityPerMachine": 8,
+          "nextStock": 197,
+          "row": 16
+        },
+        {
+          "code": "02.03.01.0000069578",
+          "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
+          "quantityPerMachine": 13,
+          "nextStock": 258,
+          "row": 17
+        },
+        {
+          "code": "01.02.01.0000000208",
+          "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
+          "quantityPerMachine": 13,
+          "nextStock": 3625,
+          "row": 18
+        },
+        {
+          "code": "01.02.02.0000000010",
+          "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
+          "quantityPerMachine": 13,
+          "nextStock": 0,
+          "row": 19
+        },
+        {
+          "code": "01.02.03.0000000044",
+          "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
+          "quantityPerMachine": 1,
+          "nextStock": 853,
+          "row": 20
+        },
+        {
+          "code": "01.02.02.0000000027",
+          "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
+          "quantityPerMachine": 1,
+          "nextStock": 747,
+          "row": 21
+        },
+        {
+          "code": "02.03.01.0000085012",
+          "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+          "quantityPerMachine": 1,
+          "nextStock": 1,
+          "row": 22
+        },
+        {
+          "code": "02.03.01.0000084350",
+          "description": "PINO CILINDRO BRACO SUPERIOR",
+          "quantityPerMachine": 2,
+          "nextStock": 0,
+          "row": 23
+        },
+        {
+          "code": "02.03.01.0000084348",
+          "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+          "quantityPerMachine": 2,
+          "nextStock": 46,
+          "row": 24
+        },
+        {
+          "code": "02.03.01.0000084349",
+          "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+          "quantityPerMachine": 2,
+          "nextStock": 0,
+          "row": 25
+        },
+        {
+          "code": "02.03.01.0000084356",
+          "description": "PINO BASTAO TENSOR E ARTICULACAO",
+          "quantityPerMachine": 2,
+          "nextStock": 7,
+          "row": 26
+        },
+        {
+          "code": "02.03.01.0000084355",
+          "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
+          "quantityPerMachine": 2,
+          "nextStock": 96,
+          "row": 27
+        },
+        {
+          "code": "02.03.01.0000084354",
+          "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
+          "quantityPerMachine": 1,
+          "nextStock": 11,
+          "row": 28
+        }
+      ]
+    },
+    {
+      "name": "13LDI",
+      "sourceLabel": "modelo 13LDI",
+      "items": [
+        {
+          "code": "01.01.14.0000000036",
+          "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
+          "quantityPerMachine": 10,
+          "nextStock": 208,
+          "row": 32
+        },
+        {
+          "code": "01.01.14.0000000048",
+          "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
+          "quantityPerMachine": 6,
+          "nextStock": 1909,
+          "row": 33
+        },
+        {
+          "code": "02.02.01.0000083441",
+          "description": "PINO FIX. CRUZETA EXTERNA - AS",
+          "quantityPerMachine": 2,
+          "nextStock": 27,
+          "row": 34
+        },
+        {
+          "code": "02.02.01.0000086368",
+          "description": "PINO FIX. CRUZETA INTERNA - AS",
+          "quantityPerMachine": 1,
+          "nextStock": 111,
+          "row": 35
+        },
+        {
+          "code": "02.02.01.0000083442",
+          "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
+          "quantityPerMachine": 1,
+          "nextStock": 282,
+          "row": 36
+        },
+        {
+          "code": "01.02.02.0000000010",
+          "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
+          "quantityPerMachine": 5,
+          "nextStock": 0,
+          "row": 37
+        },
+        {
+          "code": "01.02.01.0000000144",
+          "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 30MM",
+          "quantityPerMachine": 5,
+          "nextStock": 5777,
+          "row": 38
+        },
+        {
+          "code": "01.02.02.0000000006",
+          "description": "ARRA ALLEN MÉDIA M30 X 56 X 48 DIN 125 A",
+          "quantityPerMachine": 1,
+          "nextStock": 1901,
+          "row": 39
+        },
+        {
+          "code": "01.02.03.0000000047",
+          "description": "PO SX AT ALTA M30 X 2,00 CL. 8.8 DIN 982",
+          "quantityPerMachine": 1,
+          "nextStock": 605,
+          "row": 40
+        },
+        {
+          "code": "01.01.10.0000084360",
+          "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
+          "quantityPerMachine": 1,
+          "nextStock": 132,
+          "row": 41
+        },
+        {
+          "code": "02.01.03.0000066939",
+          "description": "FIBRA DO BRAÇO INFERIOR ISOLADO DO EQUIPAMENTO SKYRIZ 13LDI",
+          "quantityPerMachine": 1,
+          "nextStock": 0,
+          "row": 42
+        },
+        {
+          "code": "02.01.03.0000082542",
+          "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
+          "quantityPerMachine": 1,
+          "nextStock": 24,
+          "row": 43
+        },
+        {
+          "code": "04.02.01.0000000107",
+          "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
+          "quantityPerMachine": 1.5,
+          "nextStock": 1745,
+          "row": 44
+        },
+        {
+          "code": "02.02.01.0000085283",
+          "description": "PINO ENGRENAGEM DE APOIO - AS",
+          "quantityPerMachine": 1,
+          "nextStock": 652,
+          "row": 45
+        },
+        {
+          "code": "02.03.02.0000083460",
+          "description": "ENGRENAGEM ARTICULAÇÃO LANÇAS",
+          "quantityPerMachine": 1,
+          "nextStock": 192,
+          "row": 46
+        },
+        {
+          "code": "02.03.03.0000083484",
+          "description": "ENGRENAGEM APOIO",
+          "quantityPerMachine": 2,
+          "nextStock": 1630,
+          "row": 47
+        },
+        {
+          "code": "01.02.01.0000000199",
+          "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 20MM",
+          "quantityPerMachine": 1,
+          "nextStock": 2363,
+          "row": 48
+        },
+        {
+          "code": "02.02.01.0000086369",
+          "description": "PINO ARTICULAÇÃO LANÇAS - AS",
+          "quantityPerMachine": 1,
+          "nextStock": 264,
+          "row": 49
+        },
+        {
+          "code": "01.01.14.0000000050",
+          "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 30 X 34 X 20 - QSM-3034-20",
+          "quantityPerMachine": 2,
+          "nextStock": 1380,
+          "row": 50
+        },
+        {
+          "code": "01.01.14.0000000051",
+          "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 40 X 44 X 20 - QSM-4044-20",
+          "quantityPerMachine": 2,
+          "nextStock": 3042,
+          "row": 51
+        },
+        {
+          "code": "01.01.14.0000000052",
+          "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
+          "quantityPerMachine": 1,
+          "nextStock": 1784,
+          "row": 52
+        }
+      ]
+    }
+  ],
+  "calferModels": [
+    {
+      "name": "10L",
+      "sourceLabel": "modelo 10L",
+      "items": [
+        {
+          "code": "02.01.03.0000069390",
+          "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 4
+        },
+        {
+          "code": "01.01.10.0000074195",
+          "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 5
+        },
+        {
+          "code": "02.03.01.0000069406",
+          "description": "PINO DA ARTICULAÇAO DO CILINDRO COM BRAÇO SUPERIOR SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 6
+        },
+        {
+          "code": "02.03.01.0000069418",
+          "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 7
+        },
+        {
+          "code": "02.03.01.0000069405",
+          "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 8
+        },
+        {
+          "code": "02.03.01.0000069405",
+          "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 9
+        },
+        {
+          "code": "01.01.14.0000071344",
+          "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
+          "quantityPerMachine": 12,
+          "calferStock": 0,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "name": "10S",
+      "sourceLabel": "modelo 10S",
+      "items": [
+        {
+          "code": "02.01.03.0000085070",
+          "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 13
+        },
+        {
+          "code": "02.01.03.0000071287",
+          "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 14
+        },
+        {
+          "code": "01.01.14.0000000036",
+          "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
+          "quantityPerMachine": 16,
+          "calferStock": 0,
+          "row": 15
+        },
+        {
+          "code": "01.01.14.0000000046",
+          "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
+          "quantityPerMachine": 8,
+          "calferStock": 0,
+          "row": 16
+        },
+        {
+          "code": "02.03.01.0000069578",
+          "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
+          "quantityPerMachine": 13,
+          "calferStock": 0,
+          "row": 17
+        },
+        {
+          "code": "01.02.01.0000000208",
+          "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
+          "quantityPerMachine": 13,
+          "calferStock": 0,
+          "row": 18
+        },
+        {
+          "code": "01.02.02.0000000010",
+          "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
+          "quantityPerMachine": 13,
+          "calferStock": 0,
+          "row": 19
+        },
+        {
+          "code": "01.02.03.0000000044",
+          "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 20
+        },
+        {
+          "code": "01.02.02.0000000027",
+          "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 21
+        },
+        {
+          "code": "02.03.01.0000085012",
+          "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 22
+        },
+        {
+          "code": "02.03.01.0000084350",
+          "description": "PINO CILINDRO BRACO SUPERIOR",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 23
+        },
+        {
+          "code": "02.03.01.0000084348",
+          "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 24
+        },
+        {
+          "code": "02.03.01.0000084349",
+          "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 25
+        },
+        {
+          "code": "02.03.01.0000084356",
+          "description": "PINO BASTAO TENSOR E ARTICULACAO",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 26
+        },
+        {
+          "code": "02.03.01.0000084355",
+          "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 27
+        },
+        {
+          "code": "02.03.01.0000084354",
+          "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 28
+        }
+      ]
+    },
+    {
+      "name": "13LDI",
+      "sourceLabel": "modelo 13LDI",
+      "items": [
+        {
+          "code": "01.01.14.0000000036",
+          "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
+          "quantityPerMachine": 10,
+          "calferStock": 0,
+          "row": 32
+        },
+        {
+          "code": "01.01.14.0000000048",
+          "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
+          "quantityPerMachine": 6,
+          "calferStock": 0,
+          "row": 33
+        },
+        {
+          "code": "02.02.01.0000083441",
+          "description": "PINO FIX. CRUZETA EXTERNA - AS",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 34
+        },
+        {
+          "code": "02.02.01.0000086368",
+          "description": "PINO FIX. CRUZETA INTERNA - AS",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 35
+        },
+        {
+          "code": "02.02.01.0000083442",
+          "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 36
+        },
+        {
+          "code": "01.02.02.0000000010",
+          "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
+          "quantityPerMachine": 5,
+          "calferStock": 0,
+          "row": 37
+        },
+        {
+          "code": "01.02.01.0000000144",
+          "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 30MM",
+          "quantityPerMachine": 5,
+          "calferStock": 0,
+          "row": 38
+        },
+        {
+          "code": "01.02.02.0000000006",
+          "description": "ARRA ALLEN MÉDIA M30 X 56 X 48 DIN 125 A",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 39
+        },
+        {
+          "code": "01.02.03.0000000047",
+          "description": "PO SX AT ALTA M30 X 2,00 CL. 8.8 DIN 982",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 40
+        },
+        {
+          "code": "01.01.10.0000084360",
+          "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 41
+        },
+        {
+          "code": "02.01.03.0000066939",
+          "description": "FIBRA DO BRAÇO INFERIOR ISOLADO DO EQUIPAMENTO SKYRIZ 13LDI",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 42
+        },
+        {
+          "code": "02.01.03.0000082542",
+          "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 43
+        },
+        {
+          "code": "04.02.01.0000000107",
+          "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
+          "quantityPerMachine": 1.5,
+          "calferStock": 0,
+          "row": 44
+        },
+        {
+          "code": "02.02.01.0000085283",
+          "description": "PINO ENGRENAGEM DE APOIO - AS",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 45
+        },
+        {
+          "code": "02.03.02.0000083460",
+          "description": "ENGRENAGEM ARTICULAÇÃO LANÇAS",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 46
+        },
+        {
+          "code": "02.03.03.0000083484",
+          "description": "ENGRENAGEM APOIO",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 47
+        },
+        {
+          "code": "01.02.01.0000000199",
+          "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 20MM",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 48
+        },
+        {
+          "code": "02.02.01.0000086369",
+          "description": "PINO ARTICULAÇÃO LANÇAS - AS",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 49
+        },
+        {
+          "code": "01.01.14.0000000050",
+          "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 30 X 34 X 20 - QSM-3034-20",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 50
+        },
+        {
+          "code": "01.01.14.0000000051",
+          "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 40 X 44 X 20 - QSM-4044-20",
+          "quantityPerMachine": 2,
+          "calferStock": 0,
+          "row": 51
+        },
+        {
+          "code": "01.01.14.0000000052",
+          "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
+          "quantityPerMachine": 1,
+          "calferStock": 0,
+          "row": 52
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "code": "02.01.03.0000069390",
+      "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
+      "nextStock": 10,
+      "calferStock": 0,
+      "models": [
+        "10L"
+      ]
+    },
+    {
+      "code": "01.01.10.0000074195",
+      "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
+      "nextStock": 23,
+      "calferStock": 0,
+      "models": [
+        "10L"
+      ]
+    },
+    {
+      "code": "02.03.01.0000069406",
+      "description": "PINO DA ARTICULAÇAO DO CILINDRO COM BRAÇO SUPERIOR SKYRITZ 10L",
+      "nextStock": 14,
+      "calferStock": 0,
+      "models": [
+        "10L"
+      ]
+    },
+    {
+      "code": "02.03.01.0000069418",
+      "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
+      "nextStock": 11,
+      "calferStock": 0,
+      "models": [
+        "10L"
+      ]
+    },
+    {
+      "code": "02.03.01.0000069405",
+      "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
+      "nextStock": 1,
+      "calferStock": 0,
+      "models": [
+        "10L"
+      ]
+    },
+    {
+      "code": "01.01.14.0000071344",
+      "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
+      "nextStock": 89,
+      "calferStock": 0,
+      "models": [
+        "10L"
+      ]
+    },
+    {
+      "code": "02.01.03.0000085070",
+      "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
+      "nextStock": 15,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.01.03.0000071287",
+      "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
+      "nextStock": 0,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "01.01.14.0000000036",
+      "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
+      "nextStock": 208,
+      "calferStock": 0,
+      "models": [
+        "10S",
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.01.14.0000000046",
+      "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
+      "nextStock": 197,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000069578",
+      "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
+      "nextStock": 258,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "01.02.01.0000000208",
+      "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
+      "nextStock": 3625,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "01.02.02.0000000010",
+      "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
+      "nextStock": 0,
+      "calferStock": 0,
+      "models": [
+        "10S",
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.02.03.0000000044",
+      "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
+      "nextStock": 853,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "01.02.02.0000000027",
+      "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
+      "nextStock": 747,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000085012",
+      "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+      "nextStock": 1,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000084350",
+      "description": "PINO CILINDRO BRACO SUPERIOR",
+      "nextStock": 0,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000084348",
+      "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+      "nextStock": 46,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000084349",
+      "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
+      "nextStock": 0,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000084356",
+      "description": "PINO BASTAO TENSOR E ARTICULACAO",
+      "nextStock": 7,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000084355",
+      "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
+      "nextStock": 96,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "02.03.01.0000084354",
+      "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
+      "nextStock": 11,
+      "calferStock": 0,
+      "models": [
+        "10S"
+      ]
+    },
+    {
+      "code": "01.01.14.0000000048",
+      "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
+      "nextStock": 1909,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.02.01.0000083441",
+      "description": "PINO FIX. CRUZETA EXTERNA - AS",
+      "nextStock": 27,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.02.01.0000086368",
+      "description": "PINO FIX. CRUZETA INTERNA - AS",
+      "nextStock": 111,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.02.01.0000083442",
+      "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
+      "nextStock": 282,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.02.01.0000000144",
+      "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 30MM",
+      "nextStock": 5777,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.02.02.0000000006",
+      "description": "ARRA ALLEN MÉDIA M30 X 56 X 48 DIN 125 A",
+      "nextStock": 1901,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.02.03.0000000047",
+      "description": "PO SX AT ALTA M30 X 2,00 CL. 8.8 DIN 982",
+      "nextStock": 605,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.01.10.0000084360",
+      "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
+      "nextStock": 132,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.01.03.0000066939",
+      "description": "FIBRA DO BRAÇO INFERIOR ISOLADO DO EQUIPAMENTO SKYRIZ 13LDI",
+      "nextStock": 0,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.01.03.0000082542",
+      "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
+      "nextStock": 24,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "04.02.01.0000000107",
+      "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
+      "nextStock": 1745,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.02.01.0000085283",
+      "description": "PINO ENGRENAGEM DE APOIO - AS",
+      "nextStock": 652,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.03.02.0000083460",
+      "description": "ENGRENAGEM ARTICULAÇÃO LANÇAS",
+      "nextStock": 192,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.03.03.0000083484",
+      "description": "ENGRENAGEM APOIO",
+      "nextStock": 1630,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.02.01.0000000199",
+      "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 20MM",
+      "nextStock": 2363,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "02.02.01.0000086369",
+      "description": "PINO ARTICULAÇÃO LANÇAS - AS",
+      "nextStock": 264,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.01.14.0000000050",
+      "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 30 X 34 X 20 - QSM-3034-20",
+      "nextStock": 1380,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.01.14.0000000051",
+      "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 40 X 44 X 20 - QSM-4044-20",
+      "nextStock": 3042,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    },
+    {
+      "code": "01.01.14.0000000052",
+      "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
+      "nextStock": 1784,
+      "calferStock": 0,
+      "models": [
+        "13LDI"
+      ]
+    }
+  ],
+  "meta": {
+    "nextRows": 44,
+    "calferRows": 44
+  }
+}

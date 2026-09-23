@@ -50,6 +50,11 @@ let SHEET_METAL = { items: [], models: [] };
 let selectedSheetMetalModel = '';
 let sheetMetalCars = 1;
 let cabinCars = 1;
+// Controle de estoque operacional da Calfer; os saldos iniciais vêm do Excel e os movimentos desta sessão ficam registrados localmente.
+let CALFER = { nextModels: [], calferModels: [], items: [], transactions: [] };
+let selectedCalferModel = '';
+let calferMachineCount = 1;
+const CALFER_STORAGE_KEY = 'pcm-calfer-transactions';
 // Lista local dos itens selecionados para o Processo de compra.
 let PURCHASE_PROCESS = [];
 // Mantém os conjuntos de dados fora do HTML e carrega as linhas em pequenos blocos.
@@ -374,13 +379,26 @@ function purchaseAction(item, kind = 'explosion', demand, demandLabel = '') {
   return `<button class="purchase-add-btn${added ? ' added' : ''}" data-purchase-key="${esc(purchaseKey(item, kind))}" data-purchase-kind="${kind}" data-purchase-code="${esc(item.code)}" title="${title}" aria-label="${title}" ${disabled ? 'disabled' : ''}>${label}</button>`;
 }
 
-// Classifica o material comparando estoque, necessidade e pedidos em aberto.
+// Soma toda a demanda disponível quando a tela não está filtrada por um mês.
+// Se não houver demanda cadastrada, a Segurança continua sendo o mínimo operacional.
+function totalDemand(item) {
+  return Object.values(item?.demands || {}).reduce((sum, value) => sum + n(value), 0);
+}
+
+function requiredQuantity(item, demand) {
+  const selectedDemand = demand !== undefined && demand !== null && demand !== '' ? n(demand) : totalDemand(item);
+  return selectedDemand > 0 ? selectedDemand : n(item?.safety);
+}
+
+// Classifica o material pela cobertura da demanda, e não apenas pelo estoque de segurança.
+// Pedido aberto não elimina a falta: transforma o risco em Follow-up/Em atenção.
 function risk(item, demand) {
-  const needed = n(demand ?? item.safety);
-  const stock = n(item.stock);
-  const orders = Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
+  const needed = requiredQuantity(item, demand);
+  const stock = n(item?.stock);
+  const orders = Object.values(item?.orders || {}).reduce((sum, value) => sum + n(value), 0);
+  if (orders > 0) return ['Em atenção', 'amber'];
   if (stock >= needed) return ['Regular', 'green'];
-  return [orders > 0 ? 'Em atenção' : 'Crítico', orders > 0 ? 'amber' : 'red'];
+  return ['Crítico', 'red'];
 }
 
 function hasOpenOrder(item) {
@@ -403,16 +421,18 @@ function hasOrderInMonth(item, demand) {
 }
 
 function hasFollowUpOrder(item, demand) {
-  if (demand === undefined || demand === null || demand === '') return hasOpenOrder(item);
-  return hasOrderInMonth(item, demand) || overdueOrders(item).length > 0;
+  // Qualquer pedido quantitativo aberto exige acompanhamento. Isso evita que
+  // uma demanda em falta seja classificada como "Comprar" só porque o pedido
+  // está registrado em outro mês ou porque o estoque está zerado.
+  return hasOpenOrder(item);
 }
 
 // Define a decisão operacional no mês de referência sem ocultar o risco físico.
 function procurementDecision(item, demand, demandLabel = '') {
   const [riskLabel] = risk(item, demand);
-  if (riskLabel === 'Regular') return { label: 'Não comprar', color: 'green', canBuy: false, hasOrder: false };
   const followUp = hasFollowUpOrder(item, demandLabel || demand);
   if (followUp) return { label: 'Follow-up', color: 'amber', canBuy: false, hasOrder: true };
+  if (riskLabel === 'Regular') return { label: 'Não comprar', color: 'green', canBuy: false, hasOrder: false };
   return { label: 'Comprar', color: 'red', canBuy: true, hasOrder: false };
 }
 
@@ -447,11 +467,11 @@ function overdueOrders(item) {
   return orderEntries(item).filter(entry => entry.overdue);
 }
 
-// Acompanhamento também cobre itens sem saldo: stock <= 0, quando houver pedido vencido.
+// Todo item com pedido aberto entra no acompanhamento, inclusive quando o estoque é zero.
 function followUpItems(items = scopedItems()) {
   return items
     .map(item => ({ ...item, overdueOrders: overdueOrders(item) }))
-    .filter(item => item.overdueOrders.length > 0);
+    .filter(item => hasOpenOrder(item));
 }
 
 // Calcula a compra sugerida; pedido no mês ou atraso gera Follow-up e não compra.
@@ -463,6 +483,93 @@ function suggestedPurchase(item, demand, demandLabel = '') {
       ? n(item.demands?.[demandLabel])
       : Object.values(item.demands || {}).reduce((sum, value) => sum + n(value), 0);
   return Math.max(0, totalDemand + n(item.safety) - n(item.stock));
+}
+
+
+function loadCalferTransactions() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CALFER_STORAGE_KEY) || '[]');
+    CALFER.transactions = Array.isArray(saved) ? saved.filter(item => item && item.direction && item.code) : [];
+  } catch (error) { CALFER.transactions = []; }
+}
+
+function saveCalferTransactions() {
+  try { localStorage.setItem(CALFER_STORAGE_KEY, JSON.stringify(CALFER.transactions)); } catch (error) { console.warn('Não foi possível guardar os movimentos Calfer.', error); }
+}
+
+function calferBalances(code) {
+  const base = (CALFER.items || []).find(item => String(item.code) === String(code)) || {};
+  let next = n(base.nextStock);
+  let calfer = n(base.calferStock);
+  CALFER.transactions.filter(item => String(item.code) === String(code)).forEach(move => {
+    const quantity = n(move.quantity);
+    if (move.direction === 'nextToCalfer') { next -= quantity; calfer += quantity; }
+    // O retorno de máquina não repõe o estoque da Next: apenas baixa o saldo
+    // de componentes que ainda constavam como disponíveis na Calfer.
+    if (move.direction === 'calferToNext') { calfer -= quantity; }
+  });
+  return { next: Math.max(0, next), calfer: Math.max(0, calfer) };
+}
+
+function calferModel(modelName, direction) {
+  const list = direction === 'nextToCalfer' ? CALFER.nextModels : CALFER.calferModels;
+  return (list || []).find(model => model.name === modelName) || list?.[0] || { name: modelName || '—', items: [] };
+}
+
+function calferPlan(modelName, machines, direction) {
+  const model = calferModel(modelName, direction);
+  return model.items.map(item => {
+    const required = n(item.quantityPerMachine) * Math.max(1, n(machines));
+    const balance = calferBalances(item.code);
+    const available = direction === 'nextToCalfer' ? balance.next : balance.calfer;
+    const send = Math.min(required, available);
+    return { ...item, required, available, send, shortage: Math.max(0, required - send), after: Math.max(0, available - send), balance };
+  });
+}
+
+function calferCapacity(modelName, direction) {
+  const model = calferModel(modelName, direction);
+  const values = model.items.filter(item => n(item.quantityPerMachine) > 0).map(item => {
+    const balance = calferBalances(item.code);
+    const available = direction === 'nextToCalfer' ? balance.next : balance.calfer;
+    return Math.floor(available / n(item.quantityPerMachine));
+  });
+  return values.length ? Math.max(0, Math.min(...values)) : 0;
+}
+
+function sendCalferMachines(direction, modelName, machines) {
+  const plan = calferPlan(modelName, machines, direction);
+  if (!plan.length) return;
+  const timestamp = new Date().toISOString();
+  plan.filter(row => row.send > 0).forEach(row => CALFER.transactions.push({
+    id: `CF-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    at: timestamp,
+    direction,
+    model: modelName,
+    code: row.code,
+    description: row.description,
+    quantity: row.send,
+    requested: row.required,
+    shortage: row.shortage,
+  }));
+  saveCalferTransactions();
+  render();
+}
+
+function calferRows(plan) {
+  return plan.map(row => `<tr><td><b>${esc(row.code)}</b><div class="desc">${esc(row.description)}</div></td><td>${fmt(row.quantityPerMachine)}</td><td>${fmt(row.required)}</td><td>${fmt(row.available)}</td><td>${fmt(row.send)}</td><td class="${row.shortage > 0 ? 'danger' : 'success'}">${row.shortage > 0 ? `Faltam ${fmt(row.shortage)}` : 'Completo'}</td><td>${fmt(row.after)}</td></tr>`).join('');
+}
+
+function calferView() {
+  const modelNames = [...new Set([...(CALFER.nextModels || []), ...(CALFER.calferModels || [])].map(item => item.name))];
+  const active = selectedCalferModel || modelNames[0] || '';
+  const machines = Math.max(1, Math.floor(n(calferMachineCount) || 1));
+  const outbound = calferPlan(active, machines, 'nextToCalfer');
+  const inbound = calferPlan(active, machines, 'calferToNext');
+  const outboundShortage = outbound.filter(row => row.shortage > 0).length;
+  const inboundShortage = inbound.filter(row => row.shortage > 0).length;
+  const history = [...(CALFER.transactions || [])].reverse().slice(0, 20);
+  return `<div class="view-title"><div><span class="eyebrow">Controle de fornecedor</span><h2>Estoque Calfer</h2><p>Controle dos componentes enviados para a Calfer e das máquinas devolvidas para a Next.</p></div><div class="date-pill">${esc(CALFER.sourceFile || 'abas calfer.next / calfer')}</div></div><div class="pins-model-strip">${modelNames.map(name => `<button class="pins-model-card${name === active ? ' selected' : ''}" data-calfer-model="${esc(name)}"><span>Modelo</span><strong>${esc(name)}</strong><small>${name === active ? 'selecionado' : 'selecionar'}</small></button>`).join('')}</div><div class="panel"><div class="panel-header"><div><h3>Planejar movimentação</h3><span>Modelo ${esc(active || '—')} · quantidade de máquinas</span></div><div class="toolbar"><label class="filter-label">Máquinas</label><input class="input" id="calfer-machines" type="number" min="1" value="${machines}" style="max-width:100px" /></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(calferCapacity(active, 'nextToCalfer'))}</b><span>máquinas possíveis Next → Calfer</span></div><div class="summary-box"><b>${fmt(calferCapacity(active, 'calferToNext'))}</b><span>máquinas possíveis Calfer → Next</span></div><div class="summary-box"><b class="${outboundShortage ? 'danger' : 'success'}">${fmt(outbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no envio</span></div><div class="summary-box"><b class="${inboundShortage ? 'danger' : 'success'}">${fmt(inbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no retorno</span></div></div></div><div class="panel"><div class="panel-header"><div><h3>Next → Calfer</h3><span>O sistema envia o disponível e mostra automaticamente o que ficou faltando.</span></div><button class="primary-btn" id="send-to-calfer" ${outbound.every(row => row.send <= 0) ? 'disabled' : ''}>Enviar ${fmt(machines)} máquina(s) para Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Next</th><th>Enviado</th><th>Resultado</th><th>Saldo Next</th></tr></thead><tbody>${calferRows(outbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Calfer → Next</h3><span>Ao enviar máquinas, o saldo de peças da Calfer é reduzido.</span></div><button class="primary-btn" id="send-to-next" ${inbound.every(row => row.send <= 0) ? 'disabled' : ''}>Receber ${fmt(machines)} máquina(s) da Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Calfer</th><th>Enviado</th><th>Resultado</th><th>Saldo Calfer</th></tr></thead><tbody>${calferRows(inbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Últimos movimentos</h3><span>Os movimentos desta sessão ficam registrados neste navegador.</span></div><button class="secondary-btn" id="clear-calfer-movements" ${history.length ? '' : 'disabled'}>Zerar movimentos locais</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Direção</th><th>Modelo</th><th>Código</th><th>Quantidade</th><th>Faltante</th></tr></thead><tbody>${history.map(move => `<tr><td>${esc(new Date(move.at).toLocaleString('pt-BR'))}</td><td>${move.direction === 'nextToCalfer' ? 'Next → Calfer' : 'Calfer → Next'}</td><td>${esc(move.model)}</td><td>${esc(move.code)}</td><td>${fmt(move.quantity)}</td><td>${fmt(move.shortage || 0)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum movimento realizado.</td></tr>'}</tbody></table></div></div>`;
 }
 
 function optionList(values, selected, label) {
@@ -1293,9 +1400,9 @@ function openProductionAlertDetail(id) {
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', productionAlerts: 'Aviso da produção' };
+  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, productionAlerts: productionAlertsView };
+  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -1367,6 +1474,18 @@ function bindView() {
       document.querySelectorAll('#excess-table-body .excess-row').forEach(row => { row.hidden = !row.textContent.toLowerCase().includes(query); });
     };
     document.querySelectorAll('.excess-code').forEach(button => button.onclick = () => openExcessDetail(button.dataset.excessCode, button.dataset.excessMonth));
+  }
+
+  if (view === 'calfer') {
+    document.querySelectorAll('[data-calfer-model]').forEach(button => button.onclick = () => { selectedCalferModel = button.dataset.calferModel || ''; render(); });
+    const machines = $('#calfer-machines');
+    if (machines) machines.onchange = () => { calferMachineCount = Math.max(1, Math.floor(n(machines.value) || 1)); render(); };
+    const sendToCalfer = $('#send-to-calfer');
+    if (sendToCalfer) sendToCalfer.onclick = () => sendCalferMachines('nextToCalfer', selectedCalferModel, calferMachineCount);
+    const sendToNext = $('#send-to-next');
+    if (sendToNext) sendToNext.onclick = () => sendCalferMachines('calferToNext', selectedCalferModel, calferMachineCount);
+    const clear = $('#clear-calfer-movements');
+    if (clear) clear.onclick = () => { CALFER.transactions = []; saveCalferTransactions(); render(); };
   }
 
   if (view === 'cylinders') {
@@ -1650,7 +1769,7 @@ Obrigado!.`);
 // Lê o JSON local e inicia a primeira renderização do dashboard.
 async function load() {
   try {
-    const [dataResponse, historyResponse, consumablesResponse, planoResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse] = await Promise.all([
+    const [dataResponse, historyResponse, consumablesResponse, planoResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse, calferResponse] = await Promise.all([
       fetch('data/explosao.json'),
       fetch('data/historico-estoque.json'),
       fetch('data/consumiveis.json'),
@@ -1659,7 +1778,8 @@ async function load() {
       fetch('data/cilindros.json'),
       fetch('data/cabines.json'),
       fetch('data/chaparias.json'),
-      fetch('data/programacao-modelos.json')
+      fetch('data/programacao-modelos.json'),
+      fetch('data/calfer.json')
     ]);
     DATA = await dataResponse.json();
     STOCK_HISTORY = historyResponse.ok ? await historyResponse.json() : { records: [] };
@@ -1670,6 +1790,8 @@ async function load() {
     CABINS = cabinsResponse.ok ? await cabinsResponse.json() : { items: [], models: [] };
     SHEET_METAL = sheetMetalResponse.ok ? await sheetMetalResponse.json() : { items: [], models: [] };
     DATA.programacaoModels = programacaoResponse.ok ? await programacaoResponse.json() : { models: [] };
+    CALFER = calferResponse.ok ? await calferResponse.json() : { nextModels: [], calferModels: [], items: [], transactions: [] };
+    loadCalferTransactions();
     const itemByCodeMap = new Map((DATA.items || []).map(item => [String(item.code), item]));
     CONSUMABLES.items = (CONSUMABLES.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     PINS.items = (PINS.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
@@ -1701,6 +1823,7 @@ $('#theme-toggle').onclick = () => {
 $('#logout-button').onclick = () => showLogin('Sessão terminada.');
 loadThemePreference();
 loadPurchaseProcess();
+loadCalferTransactions();
 void loadProductionAlerts();
 if (alertsSyncTimer) clearInterval(alertsSyncTimer);
 alertsSyncTimer = setInterval(() => { if (document.visibilityState !== 'hidden') void syncProductionAlerts(); }, 20000);

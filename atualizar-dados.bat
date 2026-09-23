@@ -30,5 +30,5 @@ if errorlevel 1 (
   exit /b 1
 )
 echo.
-echo Atualizados e verificados: data\explosao.json, data\plano-mes.json, data\pinos.json, data\cilindros.json e data\historico-estoque.json.
+echo Atualizados e verificados: data\explosao.json, data\plano-mes.json, data\pinos.json, data\cilindros.json e data\calfer.json e data\historico-estoque.json.
 pause

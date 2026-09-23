@@ -68,6 +68,7 @@ def main() -> int:
         fail(f"planilha de Consumíveis não encontrada: {consumables}")
 
     run([sys.executable, str(SCRIPTS / "convert_excel.py"), str(explosion)])
+    run([sys.executable, str(SCRIPTS / "convert_calfer.py"), str(explosion)])
     run([sys.executable, str(SCRIPTS / "convert_chaparias.py"), str(explosion)])
     run([sys.executable, str(SCRIPTS / "convert_programacao.py"), str(explosion)])
 
@@ -87,6 +88,7 @@ def main() -> int:
         "cabines.json": ("sourceFile", "sourceSheet", "models", "items"),
         "chaparias.json": ("sourceFile", "sourceSheet", "models", "items"),
         "programacao-modelos.json": ("sourceFile", "sourceSheet", "models"),
+        "calfer.json": ("sourceFile", "generatedAt", "nextModels", "calferModels", "items"),
         "historico-estoque.json": ("description", "records"),
     }
     if consumables is not None:
