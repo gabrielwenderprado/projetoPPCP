@@ -1,7 +1,7 @@
 {
-  "sourceFile": "CópiadeEXPLOSAO_23.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_24.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-23",
+  "generatedAt": "2026-09-24",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,7 +13,7 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 31887.1164,
+      "stock": 31607.1164,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
@@ -103,7 +103,7 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 44256.9551,
+      "stock": 41406.9551,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 34825.6369,
+      "stock": 33145.6369,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -523,7 +523,7 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 29651.789,
+      "stock": 27861.789,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
@@ -583,7 +583,7 @@
       "code": "01.02.03.0000000031",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M5 X 0,80MM CLASSE 5 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 20113,
+      "stock": 19413,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 171,
+      "stock": 261,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -853,7 +853,7 @@
       "code": "02.01.03.0000085221",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LATERAL",
       "unit": "UN",
-      "stock": 4,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1153,7 +1153,7 @@
       "code": "02.03.02.0000085107",
       "description": "BUCHA DE ABERTURA DA PORTA DA CABINE",
       "unit": "UN",
-      "stock": 338,
+      "stock": 988,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 18321.7839,
+      "stock": 16473.7839,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1183,7 +1183,7 @@
       "code": "01.04.01.0000000019",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 29297.642,
+      "stock": 28384.642,
       "modelNeeds": {
         "4 LUGAR": 1.8147,
         "6 LUGAR": 1.8147,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 28507.12,
+      "stock": 27553.12,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -2053,7 +2053,7 @@
       "code": "02.01.03.0000085192",
       "description": "FORRO PORTA DIREITA",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2068,7 +2068,7 @@
       "code": "02.01.03.0000085195",
       "description": "FORRO PORTA ESQUERDA",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2323,7 +2323,7 @@
       "code": "02.01.03.0000085222",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LE FR",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2953,7 +2953,7 @@
       "code": "02.01.03.0000085315",
       "description": "FORRO TETO CABINE 6L WC",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2968,7 +2968,7 @@
       "code": "02.01.03.0000085316",
       "description": "FORRO TETO 2 CABINE 6L WC",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2983,7 +2983,7 @@
       "code": "02.01.03.0000085317",
       "description": "FORRO TETO BANHEIRO CABINE 6L WC",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -3088,7 +3088,7 @@
       "code": "01.04.01.0000000037",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 9946.92,
+      "stock": 9438.92,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4033,7 +4033,7 @@
       "code": "02.01.03.0000085223",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL DIREITO",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4048,7 +4048,7 @@
       "code": "02.01.03.0000085224",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL ESQUERDO",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4063,7 +4063,7 @@
       "code": "02.01.03.0000085225",
       "description": "PISO DE BORRACHA PADRÃO MOEDA BANHEIRO",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4078,7 +4078,7 @@
       "code": "02.01.03.0000085227",
       "description": "FORRO PORTA BANHEIRO",
       "unit": "UN",
-      "stock": 2,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,

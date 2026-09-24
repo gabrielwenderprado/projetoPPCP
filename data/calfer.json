@@ -1,6 +1,6 @@
 {
-  "sourceFile": "CópiadeEXPLOSAO_23.09.xlsm",
-  "generatedAt": "2026-09-23",
+  "sourceFile": "Cópia de EXPLOSAO_24.09.xlsm",
+  "generatedAt": "2026-09-24",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -42,14 +42,14 @@
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
           "quantityPerMachine": 1,
-          "nextStock": 1,
+          "nextStock": 0,
           "row": 8
         },
         {
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
           "quantityPerMachine": 1,
-          "nextStock": 1,
+          "nextStock": 0,
           "row": 9
         },
         {
@@ -83,14 +83,14 @@
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "quantityPerMachine": 16,
-          "nextStock": 208,
+          "nextStock": 958,
           "row": 15
         },
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
           "quantityPerMachine": 8,
-          "nextStock": 197,
+          "nextStock": 797,
           "row": 16
         },
         {
@@ -132,7 +132,7 @@
           "code": "02.03.01.0000085012",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
           "quantityPerMachine": 1,
-          "nextStock": 1,
+          "nextStock": 0,
           "row": 22
         },
         {
@@ -146,7 +146,7 @@
           "code": "02.03.01.0000084348",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
           "quantityPerMachine": 2,
-          "nextStock": 46,
+          "nextStock": 45,
           "row": 24
         },
         {
@@ -160,21 +160,21 @@
           "code": "02.03.01.0000084356",
           "description": "PINO BASTAO TENSOR E ARTICULACAO",
           "quantityPerMachine": 2,
-          "nextStock": 7,
+          "nextStock": 6,
           "row": 26
         },
         {
           "code": "02.03.01.0000084355",
           "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
           "quantityPerMachine": 2,
-          "nextStock": 96,
+          "nextStock": 95,
           "row": 27
         },
         {
           "code": "02.03.01.0000084354",
           "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
           "quantityPerMachine": 1,
-          "nextStock": 11,
+          "nextStock": 10,
           "row": 28
         }
       ]
@@ -187,35 +187,35 @@
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
           "quantityPerMachine": 10,
-          "nextStock": 208,
+          "nextStock": 958,
           "row": 32
         },
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
           "quantityPerMachine": 6,
-          "nextStock": 1909,
+          "nextStock": 2709,
           "row": 33
         },
         {
           "code": "02.02.01.0000083441",
           "description": "PINO FIX. CRUZETA EXTERNA - AS",
           "quantityPerMachine": 2,
-          "nextStock": 27,
+          "nextStock": 26,
           "row": 34
         },
         {
           "code": "02.02.01.0000086368",
           "description": "PINO FIX. CRUZETA INTERNA - AS",
           "quantityPerMachine": 1,
-          "nextStock": 111,
+          "nextStock": 110,
           "row": 35
         },
         {
           "code": "02.02.01.0000083442",
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
           "quantityPerMachine": 1,
-          "nextStock": 282,
+          "nextStock": 281,
           "row": 36
         },
         {
@@ -271,14 +271,14 @@
           "code": "04.02.01.0000000107",
           "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
           "quantityPerMachine": 1.5,
-          "nextStock": 1745,
+          "nextStock": 1625,
           "row": 44
         },
         {
           "code": "02.02.01.0000085283",
           "description": "PINO ENGRENAGEM DE APOIO - AS",
           "quantityPerMachine": 1,
-          "nextStock": 652,
+          "nextStock": 651,
           "row": 45
         },
         {
@@ -306,7 +306,7 @@
           "code": "02.02.01.0000086369",
           "description": "PINO ARTICULAÇÃO LANÇAS - AS",
           "quantityPerMachine": 1,
-          "nextStock": 264,
+          "nextStock": 263,
           "row": 49
         },
         {
@@ -701,7 +701,7 @@
     {
       "code": "02.03.01.0000069405",
       "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
-      "nextStock": 1,
+      "nextStock": 0,
       "calferStock": 0,
       "models": [
         "10L"
@@ -737,7 +737,7 @@
     {
       "code": "01.01.14.0000000036",
       "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-      "nextStock": 208,
+      "nextStock": 958,
       "calferStock": 0,
       "models": [
         "10S",
@@ -747,7 +747,7 @@
     {
       "code": "01.01.14.0000000046",
       "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-      "nextStock": 197,
+      "nextStock": 797,
       "calferStock": 0,
       "models": [
         "10S"
@@ -802,7 +802,7 @@
     {
       "code": "02.03.01.0000085012",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-      "nextStock": 1,
+      "nextStock": 0,
       "calferStock": 0,
       "models": [
         "10S"
@@ -820,7 +820,7 @@
     {
       "code": "02.03.01.0000084348",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-      "nextStock": 46,
+      "nextStock": 45,
       "calferStock": 0,
       "models": [
         "10S"
@@ -838,7 +838,7 @@
     {
       "code": "02.03.01.0000084356",
       "description": "PINO BASTAO TENSOR E ARTICULACAO",
-      "nextStock": 7,
+      "nextStock": 6,
       "calferStock": 0,
       "models": [
         "10S"
@@ -847,7 +847,7 @@
     {
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
-      "nextStock": 96,
+      "nextStock": 95,
       "calferStock": 0,
       "models": [
         "10S"
@@ -856,7 +856,7 @@
     {
       "code": "02.03.01.0000084354",
       "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
-      "nextStock": 11,
+      "nextStock": 10,
       "calferStock": 0,
       "models": [
         "10S"
@@ -865,7 +865,7 @@
     {
       "code": "01.01.14.0000000048",
       "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
-      "nextStock": 1909,
+      "nextStock": 2709,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -874,7 +874,7 @@
     {
       "code": "02.02.01.0000083441",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
-      "nextStock": 27,
+      "nextStock": 26,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -883,7 +883,7 @@
     {
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
-      "nextStock": 111,
+      "nextStock": 110,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -892,7 +892,7 @@
     {
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
-      "nextStock": 282,
+      "nextStock": 281,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -955,7 +955,7 @@
     {
       "code": "04.02.01.0000000107",
       "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
-      "nextStock": 1745,
+      "nextStock": 1625,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -964,7 +964,7 @@
     {
       "code": "02.02.01.0000085283",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
-      "nextStock": 652,
+      "nextStock": 651,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -1000,7 +1000,7 @@
     {
       "code": "02.02.01.0000086369",
       "description": "PINO ARTICULAÇÃO LANÇAS - AS",
-      "nextStock": 264,
+      "nextStock": 263,
       "calferStock": 0,
       "models": [
         "13LDI"
