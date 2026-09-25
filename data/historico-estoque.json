@@ -2,11 +2,11 @@
   "description": "Histórico mensal do valor total do estoque e da quantidade de materiais.",
   "records": [
     {
-      "date": "2026-09-24",
+      "date": "2026-09-25",
       "label": "Setembro 2026",
-      "stockValue": 30640624.53,
+      "stockValue": 30935333.06,
       "itemCount": 5912,
-      "sourceFile": "Cópia de EXPLOSAO_24.09.xlsm"
+      "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm"
     }
   ]
 }

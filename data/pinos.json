@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_24.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-24",
+  "generatedAt": "2026-09-25",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -135,7 +135,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 345,
+      "stock": 331,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -203,7 +203,7 @@
       "code": "02.02.01.0000086615",
       "description": "PINO FIXAÇAO CILINDROS - AS",
       "unit": "UN",
-      "stock": 5,
+      "stock": 25,
       "modelNeeds": {
         "18LDDI": 5,
         "15LDDI": 2,
@@ -254,7 +254,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 423,
+      "stock": 418,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -407,7 +407,7 @@
       "code": "02.03.01.0000085017",
       "description": "PINO INFERIOR DO ESTABILIZADOR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 227,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -509,7 +509,7 @@
       "code": "02.02.01.0000080813",
       "description": "PINO BASCULAMENTO - AS",
       "unit": "UN",
-      "stock": 132,
+      "stock": 127,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -526,7 +526,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 281,
+      "stock": 271,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -611,7 +611,7 @@
       "code": "01.02.07.0000000014",
       "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
       "unit": "UN",
-      "stock": 1238,
+      "stock": 1233,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -628,7 +628,7 @@
       "code": "01.12.05.0000000003",
       "description": "PROTEÇAO PVC PARA ENGATE RAPIDO MACHO 3/8\" NPT (PINO)  PVC - COR LARANJA",
       "unit": "UN",
-      "stock": 428,
+      "stock": 423,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -730,7 +730,7 @@
       "code": "02.02.01.0000083443",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 345,
+      "stock": 340,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -747,7 +747,7 @@
       "code": "02.02.01.0000083444",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 320,
+      "stock": 397,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -781,7 +781,7 @@
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
       "unit": "UN",
-      "stock": 110,
+      "stock": 249,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -849,7 +849,7 @@
       "code": "02.03.01.0000083452",
       "description": "PINO FIXAÇAO CESTO",
       "unit": "UN",
-      "stock": 137,
+      "stock": 242,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -951,7 +951,7 @@
       "code": "01.01.01.0000000155",
       "description": "ENGATE RAPIDO MACHO FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
       "unit": "UN",
-      "stock": 310,
+      "stock": 305,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -968,7 +968,7 @@
       "code": "01.01.01.0000000156",
       "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
       "unit": "UN",
-      "stock": 272,
+      "stock": 267,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1053,7 +1053,7 @@
       "code": "01.13.01.0000000031",
       "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1800 MM - 2 TON",
       "unit": "UN",
-      "stock": 86,
+      "stock": 81,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1410,7 +1410,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 336,
+      "stock": 331,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1427,7 +1427,7 @@
       "code": "02.03.01.0000085021",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 26,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1444,7 +1444,7 @@
       "code": "02.03.01.0000085022",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 16,
+      "stock": 47,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1529,7 +1529,7 @@
       "code": "02.03.02.0000083461",
       "description": "ENGRENAGEM CESTO",
       "unit": "UN",
-      "stock": 243,
+      "stock": 238,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1546,7 +1546,7 @@
       "code": "02.03.02.0000085089",
       "description": "ESPAÇADOR ENGRENAGEM CESTO",
       "unit": "UN",
-      "stock": 71,
+      "stock": 66,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,

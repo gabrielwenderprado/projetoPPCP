@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_24.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-09-24",
+  "generatedAt": "2026-09-25",
   "models": [
     "18LDDI",
     "13",
@@ -178,7 +178,7 @@
       "code": "01.01.10.0000084360",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYRITZ 13L/LD/LDI",
       "unit": "UN",
-      "stock": 132,
+      "stock": 173,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 1,

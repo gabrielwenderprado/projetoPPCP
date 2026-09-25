@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_24.09.xlsm",
-  "generatedAt": "2026-09-24",
+  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
+  "generatedAt": "2026-09-25",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -83,7 +83,7 @@
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "quantityPerMachine": 16,
-          "nextStock": 958,
+          "nextStock": 938,
           "row": 15
         },
         {
@@ -125,7 +125,7 @@
           "code": "01.02.02.0000000027",
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
           "quantityPerMachine": 1,
-          "nextStock": 747,
+          "nextStock": 1747,
           "row": 21
         },
         {
@@ -187,14 +187,14 @@
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
           "quantityPerMachine": 10,
-          "nextStock": 958,
+          "nextStock": 938,
           "row": 32
         },
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
           "quantityPerMachine": 6,
-          "nextStock": 2709,
+          "nextStock": 2699,
           "row": 33
         },
         {
@@ -208,14 +208,14 @@
           "code": "02.02.01.0000086368",
           "description": "PINO FIX. CRUZETA INTERNA - AS",
           "quantityPerMachine": 1,
-          "nextStock": 110,
+          "nextStock": 249,
           "row": 35
         },
         {
           "code": "02.02.01.0000083442",
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
           "quantityPerMachine": 1,
-          "nextStock": 281,
+          "nextStock": 271,
           "row": 36
         },
         {
@@ -250,7 +250,7 @@
           "code": "01.01.10.0000084360",
           "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
           "quantityPerMachine": 1,
-          "nextStock": 132,
+          "nextStock": 173,
           "row": 41
         },
         {
@@ -327,7 +327,7 @@
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
           "quantityPerMachine": 1,
-          "nextStock": 1784,
+          "nextStock": 1764,
           "row": 52
         }
       ]
@@ -737,7 +737,7 @@
     {
       "code": "01.01.14.0000000036",
       "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-      "nextStock": 958,
+      "nextStock": 938,
       "calferStock": 0,
       "models": [
         "10S",
@@ -793,7 +793,7 @@
     {
       "code": "01.02.02.0000000027",
       "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-      "nextStock": 747,
+      "nextStock": 1747,
       "calferStock": 0,
       "models": [
         "10S"
@@ -865,7 +865,7 @@
     {
       "code": "01.01.14.0000000048",
       "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
-      "nextStock": 2709,
+      "nextStock": 2699,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -883,7 +883,7 @@
     {
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
-      "nextStock": 110,
+      "nextStock": 249,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -892,7 +892,7 @@
     {
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
-      "nextStock": 281,
+      "nextStock": 271,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -928,7 +928,7 @@
     {
       "code": "01.01.10.0000084360",
       "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
-      "nextStock": 132,
+      "nextStock": 173,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -1027,7 +1027,7 @@
     {
       "code": "01.01.14.0000000052",
       "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
-      "nextStock": 1784,
+      "nextStock": 1764,
       "calferStock": 0,
       "models": [
         "13LDI"
