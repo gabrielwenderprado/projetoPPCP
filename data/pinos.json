@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-25",
+  "generatedAt": "2026-09-28",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -84,7 +84,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 258,
+      "stock": 593,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -101,7 +101,7 @@
       "code": "02.03.01.0000067336",
       "description": "PINO INFERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 681,
+      "stock": 641,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -305,7 +305,7 @@
       "code": "02.02.01.0000083441",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
       "unit": "UN",
-      "stock": 26,
+      "stock": 176,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -594,7 +594,7 @@
       "code": "01.02.01.0000000240",
       "description": "PINO DE CENTRO 3/8\"(9,52MM) X 1,50 X 3\"(76,20MM) CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 199,
+      "stock": 99,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -781,7 +781,7 @@
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
       "unit": "UN",
-      "stock": 249,
+      "stock": 279,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1240,7 +1240,7 @@
       "code": "02.02.01.0000082265",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 8,
+      "stock": 11,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,

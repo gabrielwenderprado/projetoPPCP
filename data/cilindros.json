@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-09-25",
+  "generatedAt": "2026-09-28",
   "models": [
     "18LDDI",
     "13",
@@ -193,7 +193,7 @@
       "code": "01.01.10.0000084361",
       "description": "CILINDRO HIDRAULICO INFERIOR SKYRITZ 13L/LD/LDI",
       "unit": "UN",
-      "stock": 246,
+      "stock": 241,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 1,

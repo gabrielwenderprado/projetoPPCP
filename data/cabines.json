@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-09-25",
+  "generatedAt": "2026-09-28",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,7 +13,7 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 31607.1164,
+      "stock": 30759.3164,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 7000,
+      "stock": 3000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 33145.6369,
+      "stock": 31584.2719,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -523,7 +523,7 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 27323.436,
+      "stock": 40438.436,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
@@ -568,7 +568,7 @@
       "code": "01.02.01.0000000115",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 55603,
+      "stock": 54763,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -778,7 +778,7 @@
       "code": "01.12.07.0000000005",
       "description": "PEGA MAO - PLASTICO",
       "unit": "UN",
-      "stock": 529,
+      "stock": 629,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1153,7 +1153,7 @@
       "code": "02.03.02.0000085107",
       "description": "BUCHA DE ABERTURA DA PORTA DA CABINE",
       "unit": "UN",
-      "stock": 988,
+      "stock": 676,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 14015.1639,
+      "stock": 13845.6039,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 27553.12,
+      "stock": 27235.195,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 22,
+      "stock": 42,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2143,7 +2143,7 @@
       "code": "02.03.01.0000085043",
       "description": "PINO DA ABERTURA A PORTA DA CABINE",
       "unit": "UN",
-      "stock": 520,
+      "stock": 242,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2158,7 +2158,7 @@
       "code": "01.04.01.0000000156",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 6000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 3744.006,
+      "stock": 2396.004,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4693,7 +4693,7 @@
       "code": "01.06.01.0000000004",
       "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
       "unit": "UN",
-      "stock": 2695,
+      "stock": 2655,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0.3,

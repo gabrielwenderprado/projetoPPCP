@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_25.09.xlsm",
-  "generatedAt": "2026-09-25",
+  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
+  "generatedAt": "2026-09-28",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -14,7 +14,7 @@
           "code": "02.01.03.0000069390",
           "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
           "quantityPerMachine": 1,
-          "nextStock": 10,
+          "nextStock": 19,
           "row": 4
         },
         {
@@ -69,14 +69,14 @@
           "code": "02.01.03.0000085070",
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
           "quantityPerMachine": 1,
-          "nextStock": 15,
+          "nextStock": 31,
           "row": 13
         },
         {
           "code": "02.01.03.0000071287",
           "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
           "quantityPerMachine": 1,
-          "nextStock": 0,
+          "nextStock": 10,
           "row": 14
         },
         {
@@ -97,7 +97,7 @@
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
           "quantityPerMachine": 13,
-          "nextStock": 258,
+          "nextStock": 593,
           "row": 17
         },
         {
@@ -118,14 +118,14 @@
           "code": "01.02.03.0000000044",
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
           "quantityPerMachine": 1,
-          "nextStock": 853,
+          "nextStock": 753,
           "row": 20
         },
         {
           "code": "01.02.02.0000000027",
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
           "quantityPerMachine": 1,
-          "nextStock": 1747,
+          "nextStock": 1739,
           "row": 21
         },
         {
@@ -201,14 +201,14 @@
           "code": "02.02.01.0000083441",
           "description": "PINO FIX. CRUZETA EXTERNA - AS",
           "quantityPerMachine": 2,
-          "nextStock": 26,
+          "nextStock": 176,
           "row": 34
         },
         {
           "code": "02.02.01.0000086368",
           "description": "PINO FIX. CRUZETA INTERNA - AS",
           "quantityPerMachine": 1,
-          "nextStock": 249,
+          "nextStock": 279,
           "row": 35
         },
         {
@@ -264,7 +264,7 @@
           "code": "02.01.03.0000082542",
           "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
           "quantityPerMachine": 1,
-          "nextStock": 24,
+          "nextStock": 29,
           "row": 43
         },
         {
@@ -665,7 +665,7 @@
     {
       "code": "02.01.03.0000069390",
       "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
-      "nextStock": 10,
+      "nextStock": 19,
       "calferStock": 0,
       "models": [
         "10L"
@@ -719,7 +719,7 @@
     {
       "code": "02.01.03.0000085070",
       "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
-      "nextStock": 15,
+      "nextStock": 31,
       "calferStock": 0,
       "models": [
         "10S"
@@ -728,7 +728,7 @@
     {
       "code": "02.01.03.0000071287",
       "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
-      "nextStock": 0,
+      "nextStock": 10,
       "calferStock": 0,
       "models": [
         "10S"
@@ -756,7 +756,7 @@
     {
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-      "nextStock": 258,
+      "nextStock": 593,
       "calferStock": 0,
       "models": [
         "10S"
@@ -784,7 +784,7 @@
     {
       "code": "01.02.03.0000000044",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-      "nextStock": 853,
+      "nextStock": 753,
       "calferStock": 0,
       "models": [
         "10S"
@@ -793,7 +793,7 @@
     {
       "code": "01.02.02.0000000027",
       "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-      "nextStock": 1747,
+      "nextStock": 1739,
       "calferStock": 0,
       "models": [
         "10S"
@@ -874,7 +874,7 @@
     {
       "code": "02.02.01.0000083441",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
-      "nextStock": 26,
+      "nextStock": 176,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -883,7 +883,7 @@
     {
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
-      "nextStock": 249,
+      "nextStock": 279,
       "calferStock": 0,
       "models": [
         "13LDI"
@@ -946,7 +946,7 @@
     {
       "code": "02.01.03.0000082542",
       "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
-      "nextStock": 24,
+      "nextStock": 29,
       "calferStock": 0,
       "models": [
         "13LDI"
