@@ -329,7 +329,15 @@ function addToPurchaseProcess(item, kind = 'explosion', options = {}) {
   const requestedQuantity = Number(options.quantity);
   const quantity = Number.isFinite(requestedQuantity) ? Math.max(0, requestedQuantity) : purchaseQuantity(item, kind);
   if (!quantity || isInPurchaseProcess(item, kind)) return false;
-  PURCHASE_PROCESS.push({ key: purchaseKey(item, kind), code: String(item.code ?? ''), description: String(item.description ?? ''), quantity, source: kind === 'consumable' ? 'Consumível' : 'Explosão' });
+  PURCHASE_PROCESS.push({
+    key: purchaseKey(item, kind),
+    code: String(item.code ?? ''),
+    description: String(item.description ?? ''),
+    unit: String(item.unit || 'UN'),
+    quantity,
+    source: options.source || (kind === 'consumable' ? 'Consumível' : kind === 'followup' ? 'Follow-up' : 'Explosão'),
+    overdueOrders: Array.isArray(options.overdueOrders) ? options.overdueOrders.map(order => ({ month: String(order.month || ''), quantity: n(order.quantity) })) : []
+  });
   savePurchaseProcess();
   if (options.refresh !== false) render();
   return true;
@@ -354,12 +362,29 @@ function loadPurchaseProcess() {
   }
 }
 
+function saveCalferTransactions() {
+  try { localStorage.setItem(CALFER_STORAGE_KEY, JSON.stringify(CALFER.transactions || [])); }
+  catch (error) { console.warn('Não foi possível guardar os movimentos Calfer.', error); }
+}
+
+function loadCalferTransactions() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CALFER_STORAGE_KEY) || '[]');
+    CALFER.transactions = Array.isArray(saved) ? saved.filter(entry => entry && entry.direction && entry.code) : [];
+  } catch (error) { CALFER.transactions = []; }
+}
+
 // Gera um ficheiro .xls simples que abre diretamente no Microsoft Excel.
+function purchaseOverdueText(entry) {
+  const orders = Array.isArray(entry.overdueOrders) ? entry.overdueOrders : [];
+  return orders.map(order => `${String(order.month || '').replace(/^PED\s*/i, '')}: ${fmt(order.quantity)} ${entry.unit || 'UN'}`).join(' | ') || '—';
+}
+
 function exportPurchaseProcess() {
   if (!PURCHASE_PROCESS.length) return;
-  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td>${esc(entry.description)}</td><td>${fmt(entry.quantity)}</td></tr>`).join('');
-  const documentContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body><table><thead><tr><th>Código</th><th>Descrição</th><th>Quantidade de compra</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
-  const blob = new Blob([`\\ufeff${documentContent}`], { type: 'application/vnd.ms-excel;charset=utf-8' });
+  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td>${esc(entry.description)}</td><td>${esc(purchaseOverdueText(entry))}</td><td>${fmt(entry.quantity)}</td><td>${esc(entry.source || '—')}</td></tr>`).join('');
+  const documentContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body><table><thead><tr><th>Código</th><th>Descrição</th><th>Pedidos em atraso</th><th>Quantidade acompanhada</th><th>Origem</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
+  const blob = new Blob([`\ufeff${documentContent}`], { type: 'application/vnd.ms-excel;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
@@ -369,7 +394,6 @@ function exportPurchaseProcess() {
   link.remove();
   URL.revokeObjectURL(url);
 }
-
 function purchaseAction(item, kind = 'explosion', demand, demandLabel = '') {
   const quantity = purchaseQuantity(item, kind, demand, demandLabel);
   const added = isInPurchaseProcess(item, kind);
@@ -560,10 +584,6 @@ function calferRows(plan) {
   return plan.map(row => `<tr><td><b>${esc(row.code)}</b><div class="desc">${esc(row.description)}</div></td><td>${fmt(row.quantityPerMachine)}</td><td>${fmt(row.required)}</td><td>${fmt(row.available)}</td><td>${fmt(row.send)}</td><td class="${row.shortage > 0 ? 'danger' : 'success'}">${row.shortage > 0 ? `Faltam ${fmt(row.shortage)}` : 'Completo'}</td><td>${fmt(row.after)}</td></tr>`).join('');
 }
 
-function calferSimulationRows(plan) {
-  return plan.map(row => `<tr><td><b>${esc(row.code)}</b><div class="desc">${esc(row.description)}</div></td><td>${fmt(row.quantityPerMachine)}</td><td>${fmt(row.required)}</td><td>${fmt(row.available)}</td><td class="${row.shortage > 0 ? 'danger' : 'success'}">${row.shortage > 0 ? `Faltam ${fmt(row.shortage)}` : 'Completo'}</td></tr>`).join('');
-}
-
 function calferView() {
   const modelNames = [...new Set([...(CALFER.nextModels || []), ...(CALFER.calferModels || [])].map(item => item.name))];
   const active = selectedCalferModel || modelNames[0] || '';
@@ -573,7 +593,7 @@ function calferView() {
   const outboundShortage = outbound.filter(row => row.shortage > 0).length;
   const inboundShortage = inbound.filter(row => row.shortage > 0).length;
   const history = [...(CALFER.transactions || [])].reverse().slice(0, 20);
-  return `<div class="view-title"><div><span class="eyebrow">Controle de fornecedor</span><h2>Estoque Calfer</h2><p>Consulte a capacidade dos modelos e simule a quantidade de máquinas para identificar peças faltantes.</p></div><div class="date-pill">${esc(CALFER.sourceFile || 'abas calfer.next / calfer')}</div></div><div class="pins-model-strip">${modelNames.map(name => `<button class="pins-model-card${name === active ? ' selected' : ''}" data-calfer-model="${esc(name)}"><span>Modelo</span><strong>${esc(name)}</strong><small>${name === active ? 'selecionado' : 'selecionar'}</small></button>`).join('')}</div><div class="panel"><div class="panel-header"><div><h3>Simular quantidade de máquinas</h3><span>Altere a quantidade para recalcular automaticamente as necessidades e faltas.</span></div><div class="toolbar"><label class="filter-label">Máquinas</label><input class="input" id="calfer-machines" type="number" min="1" value="${machines}" style="max-width:100px" /></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(calferCapacity(active, 'nextToCalfer'))}</b><span>máquinas possíveis com o estoque Next</span></div><div class="summary-box"><b>${fmt(calferCapacity(active, 'calferToNext'))}</b><span>máquinas possíveis com o estoque Calfer</span></div><div class="summary-box"><b class="${outboundShortage ? 'danger' : 'success'}">${fmt(outbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no estoque Next</span></div><div class="summary-box"><b class="${inboundShortage ? 'danger' : 'success'}">${fmt(inbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no estoque Calfer</span></div></div></div><div class="panel"><div class="panel-header"><div><h3>Simulação Next → Calfer</h3><span>O estoque Next é lido da aba calfer.next. Esta tela apenas simula a necessidade; não envia nem baixa estoque.</span></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Next</th><th>Resultado</th></tr></thead><tbody>${calferSimulationRows(outbound) || '<tr><td colspan="5" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Calfer → Next</h3><span>O estoque Calfer é lido da aba calfer e pode ser ajustado manualmente no Excel.</span></div><button class="primary-btn" id="send-to-next" ${inbound.every(row => row.send <= 0) ? 'disabled' : ''}>Receber ${fmt(machines)} máquina(s) da Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Calfer</th><th>Enviado</th><th>Resultado</th><th>Saldo Calfer</th></tr></thead><tbody>${calferRows(inbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Últimos movimentos</h3><span>Os movimentos desta sessão ficam registrados neste navegador.</span></div><button class="secondary-btn" id="clear-calfer-movements" ${history.length ? '' : 'disabled'}>Zerar movimentos locais</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Direção</th><th>Modelo</th><th>Código</th><th>Quantidade</th><th>Faltante</th></tr></thead><tbody>${history.map(move => `<tr><td>${esc(new Date(move.at).toLocaleString('pt-BR'))}</td><td>${move.direction === 'nextToCalfer' ? 'Next → Calfer' : 'Calfer → Next'}</td><td>${esc(move.model)}</td><td>${esc(move.code)}</td><td>${fmt(move.quantity)}</td><td>${fmt(move.shortage || 0)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum movimento realizado.</td></tr>'}</tbody></table></div></div>`;
+  return `<div class="view-title"><div><span class="eyebrow">Controle de fornecedor</span><h2>Estoque Calfer</h2><p>Controle dos componentes enviados para a Calfer e das máquinas devolvidas para a Next.</p></div><div class="date-pill">${esc(CALFER.sourceFile || 'abas calfer.next / calfer')}</div></div><div class="pins-model-strip">${modelNames.map(name => `<button class="pins-model-card${name === active ? ' selected' : ''}" data-calfer-model="${esc(name)}"><span>Modelo</span><strong>${esc(name)}</strong><small>${name === active ? 'selecionado' : 'selecionar'}</small></button>`).join('')}</div><div class="panel"><div class="panel-header"><div><h3>Planejar movimentação</h3><span>Modelo ${esc(active || '—')} · quantidade de máquinas</span></div><div class="toolbar"><label class="filter-label">Máquinas</label><input class="input" id="calfer-machines" type="number" min="1" value="${machines}" style="max-width:100px" /></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(calferCapacity(active, 'nextToCalfer'))}</b><span>máquinas possíveis Next → Calfer</span></div><div class="summary-box"><b>${fmt(calferCapacity(active, 'calferToNext'))}</b><span>máquinas possíveis Calfer → Next</span></div><div class="summary-box"><b class="${outboundShortage ? 'danger' : 'success'}">${fmt(outbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no envio</span></div><div class="summary-box"><b class="${inboundShortage ? 'danger' : 'success'}">${fmt(inbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no retorno</span></div></div></div><div class="panel"><div class="panel-header"><div><h3>Next → Calfer</h3><span>O sistema envia o disponível e mostra automaticamente o que ficou faltando.</span></div><button class="primary-btn" id="send-to-calfer" ${outbound.every(row => row.send <= 0) ? 'disabled' : ''}>Enviar ${fmt(machines)} máquina(s) para Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Next</th><th>Enviado</th><th>Resultado</th><th>Saldo Next</th></tr></thead><tbody>${calferRows(outbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Calfer → Next</h3><span>Ao enviar máquinas, o saldo de peças da Calfer é reduzido.</span></div><button class="primary-btn" id="send-to-next" ${inbound.every(row => row.send <= 0) ? 'disabled' : ''}>Receber ${fmt(machines)} máquina(s) da Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Calfer</th><th>Enviado</th><th>Resultado</th><th>Saldo Calfer</th></tr></thead><tbody>${calferRows(inbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Últimos movimentos</h3><span>Os movimentos desta sessão ficam registrados neste navegador.</span></div><button class="secondary-btn" id="clear-calfer-movements" ${history.length ? '' : 'disabled'}>Zerar movimentos locais</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Direção</th><th>Modelo</th><th>Código</th><th>Quantidade</th><th>Faltante</th></tr></thead><tbody>${history.map(move => `<tr><td>${esc(new Date(move.at).toLocaleString('pt-BR'))}</td><td>${move.direction === 'nextToCalfer' ? 'Next → Calfer' : 'Calfer → Next'}</td><td>${esc(move.model)}</td><td>${esc(move.code)}</td><td>${fmt(move.quantity)}</td><td>${fmt(move.shortage || 0)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum movimento realizado.</td></tr>'}</tbody></table></div></div>`;
 }
 
 function optionList(values, selected, label) {
@@ -734,12 +754,13 @@ function bindPurchaseButtons() {
       ? (CONSUMABLES.items || []).find(entry => String(entry.code) === String(button.dataset.purchaseCode))
       : itemByCode(button.dataset.purchaseCode);
     if (!item) return;
+    const overdue = kind === 'followup' ? overdueOrders(item) : [];
+    const quantity = kind === 'followup' ? overdue.reduce((sum, order) => sum + n(order.quantity), 0) : undefined;
     // Não reconstruir a página: isso preserva filtros, pesquisa, rolagem e posição atual.
-    const added = addToPurchaseProcess(item, kind, { refresh: false });
+    const added = addToPurchaseProcess(item, kind, { refresh: false, quantity, source: kind === 'followup' ? 'Follow-up' : undefined, overdueOrders: overdue });
     if (added) markPurchaseButtonsForItem(item, kind);
   });
 }
-
 // Abre o detalhe completo do material selecionado pelo usuário.
 function openMaterialDetail(code) {
   const item = itemByCode(code);
@@ -763,14 +784,18 @@ function openMaterialDetail(code) {
 }
 
 function followUpRows(items) {
-  return items.map(item => `<tr><td><button class="material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${esc(item.analyst || '—')}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td>${item.overdueOrders.map(order => `<span class="overdue-tag">${esc(order.month.replace('PED ', ''))}: ${fmt(order.quantity)} ${esc(item.unit)}</span>`).join(' ')}</td><td><span class="status red">Follow-up necessário</span></td></tr>`).join('');
+  return items.map(item => {
+    const overdueTotal = item.overdueOrders.reduce((sum, order) => sum + n(order.quantity), 0);
+    const alreadyAdded = isInPurchaseProcess(item, 'followup');
+    const title = alreadyAdded ? 'Item já está no Processo de compra' : `Levar ${fmt(overdueTotal)} ${item.unit || 'UN'} ao Processo de compra`;
+    return `<tr><td><button class="material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${esc(item.analyst || '—')}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td>${item.overdueOrders.map(order => `<span class="overdue-tag">${esc(order.month.replace('PED ', ''))}: ${fmt(order.quantity)} ${esc(item.unit)}</span>`).join(' ')}</td><td><span class="status red">Follow-up necessário</span></td><td><button class="purchase-add-btn${alreadyAdded ? ' added' : ''}" data-purchase-key="${esc(purchaseKey(item, 'followup'))}" data-purchase-kind="followup" data-purchase-code="${esc(item.code)}" title="${esc(title)}" aria-label="${esc(title)}" ${alreadyAdded ? 'disabled' : ''}>${alreadyAdded ? '✓' : '+'}</button></td></tr>`;
+  }).join('');
 }
-
 // Renderiza a tela com pedidos de meses anteriores que precisam de acompanhamento.
 function followUpView() {
   const items = followUpItems();
   const rows = followUpRows(items);
-  return `${filterBar()}<div class="view-title"><div><h2>Pedidos atrasados para acompanhamento</h2><p>Pedidos abertos em meses anteriores ao mês atual. Confirme o status com o time de compras.</p></div><button class="secondary-btn" id="back-to-overview">← Voltar à visão geral</button></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(items.length)}</b><span>Itens para acompanhamento</span></div><div class="summary-box"><b>${esc(currentMonthDate().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }))}</b><span>Mês de referência</span></div></div><div class="panel"><div class="panel-header"><h3>Lista de pedidos atrasados</h3><span>${fmt(items.length)} itens</span></div><div class="panel-body"><div class="toolbar"><input class="input" id="follow-up-search" placeholder="Pesquisar código, descrição ou analista" /></div><div id="follow-up-table"><div class="table-wrap"><table class="data-table"><thead><tr><th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Última movimentação</th><th>Pedido em atraso</th><th>Situação</th></tr></thead><tbody>${rows || '<tr><td colspan="7" class="empty">Nenhum pedido de mês anterior encontrado.</td></tr>'}</tbody></table></div></div></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Pedidos atrasados para acompanhamento</h2><p>Pedidos abertos em meses anteriores ao mês atual. Confirme o status com o time de compras.</p></div><button class="secondary-btn" id="back-to-overview">← Voltar à visão geral</button></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(items.length)}</b><span>Itens para acompanhamento</span></div><div class="summary-box"><b>${esc(currentMonthDate().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }))}</b><span>Mês de referência</span></div></div><div class="panel"><div class="panel-header"><h3>Lista de pedidos atrasados</h3><span>${fmt(items.length)} itens · + adiciona ao Processo de compra</span></div><div class="panel-body"><div class="toolbar"><input class="input" id="follow-up-search" placeholder="Pesquisar código, descrição ou analista" /></div><div id="follow-up-table"><div class="table-wrap"><table class="data-table"><thead><tr><th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Última movimentação</th><th>Pedido em atraso</th><th>Situação</th><th>Ação</th></tr></thead><tbody>${rows || '<tr><td colspan="7" class="empty">Nenhum pedido de mês anterior encontrado.</td></tr>'}</tbody></table></div></div></div></div>`;
 }
 
 // Formata o valor máximo do eixo vertical sem sobrecarregar o gráfico.
@@ -1145,8 +1170,8 @@ function consumablesView() {
 
 // Mostra os itens escolhidos e permite exportar o conjunto para Excel.
 function renderPurchaseProcessPage() {
-  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td><div class="desc" title="${esc(entry.description)}">${esc(entry.description)}</div></td><td>${fmt(entry.quantity)}</td><td>${esc(entry.source)}</td><td><button class="remove-purchase-btn" data-purchase-remove="${esc(entry.key)}" title="Remover do Processo de compra">Remover</button></td></tr>`).join('');
-  return `<div class="view-title"><div><h2>Processo de compra</h2><p>Itens selecionados para compra, reunidos numa única lista para exportação.</p></div><div class="toolbar purchase-actions"><button class="primary-btn" id="export-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Exportar para Excel</button><button class="secondary-btn" id="clear-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Limpar lista</button></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.length)}</b><span>Itens selecionados</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.reduce((sum, entry) => sum + n(entry.quantity), 0))}</b><span>Quantidade total de compra</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.filter(entry => entry.source === 'Consumível').length)}</b><span>Consumíveis selecionados</span></div></div><div class="panel"><div class="panel-header"><h3>Lista para exportação</h3><span>Dados incluídos: código, descrição e quantidade</span></div><div class="table-wrap"><table class="data-table purchase-process-table"><thead><tr><th>Código</th><th>Descrição</th><th>Quantidade de compra</th><th>Origem</th><th>Ação</th></tr></thead><tbody>${rows || '<tr><td colspan="5" class="empty">Nenhum item foi adicionado. Use o sinal + nas tabelas.</td></tr>'}</tbody></table></div></div>`;
+  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td><div class="desc" title="${esc(entry.description)}">${esc(entry.description)}</div></td><td>${esc(purchaseOverdueText(entry))}</td><td>${fmt(entry.quantity)}</td><td>${esc(entry.source || '—')}</td><td><button class="remove-purchase-btn" data-purchase-remove="${esc(entry.key)}" title="Remover do Processo de compra">Remover</button></td></tr>`).join('');
+  return `<div class="view-title"><div><h2>Processo de compra</h2><p>Itens selecionados para compra, reunidos numa única lista para exportação.</p></div><div class="toolbar purchase-actions"><button class="primary-btn" id="export-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Exportar para Excel</button><button class="secondary-btn" id="clear-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Limpar lista</button></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.length)}</b><span>Itens selecionados</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.reduce((sum, entry) => sum + n(entry.quantity), 0))}</b><span>Quantidade total de compra</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.filter(entry => entry.source === 'Consumível').length)}</b><span>Consumíveis selecionados</span></div></div><div class="panel"><div class="panel-header"><h3>Lista para exportação</h3><span>Dados incluídos: código, descrição, pedidos em atraso, quantidade e origem</span></div><div class="table-wrap"><table class="data-table purchase-process-table"><thead><tr><th>Código</th><th>Descrição</th><th>Pedidos em atraso</th><th>Quantidade acompanhada</th><th>Origem</th><th>Ação</th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="empty">Nenhum item foi adicionado. Use o sinal + nas tabelas.</td></tr>'}</tbody></table></div></div>`;
 }
 
 function setSpecializedLoadMore(kind, total, visible, rerender) {
@@ -1461,7 +1486,7 @@ function bindView() {
       const query = ($('#follow-up-search').value || '').toLowerCase();
       const items = followUpItems().filter(item => `${item.code} ${item.description} ${item.analyst || ''}`.toLowerCase().includes(query));
       const target = $('#follow-up-table tbody');
-      if (target) target.innerHTML = followUpRows(items) || '<tr><td colspan="5" class="empty">Nenhum item encontrado.</td></tr>';
+      if (target) target.innerHTML = followUpRows(items) || '<tr><td colspan="8" class="empty">Nenhum item encontrado.</td></tr>';
       bindMaterialButtons();
     };
   }
