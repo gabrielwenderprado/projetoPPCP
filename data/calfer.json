@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_29.09.xlsm",
-  "generatedAt": "2026-09-29",
+  "sourceFile": "Cópia de EXPLOSAO_30.09.xlsm",
+  "generatedAt": "2026-09-30",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -35,7 +35,7 @@
           "code": "02.03.01.0000069418",
           "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
           "quantityPerMachine": 1,
-          "nextStock": 11,
+          "nextStock": 8,
           "row": 7
         },
         {
@@ -69,7 +69,7 @@
           "code": "02.01.03.0000085070",
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
           "quantityPerMachine": 1,
-          "nextStock": 31,
+          "nextStock": 38,
           "row": 13
         },
         {
@@ -83,7 +83,7 @@
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "quantityPerMachine": 16,
-          "nextStock": 816,
+          "nextStock": 804,
           "row": 15
         },
         {
@@ -97,7 +97,7 @@
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
           "quantityPerMachine": 13,
-          "nextStock": 593,
+          "nextStock": 578,
           "row": 17
         },
         {
@@ -118,7 +118,7 @@
           "code": "01.02.03.0000000044",
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
           "quantityPerMachine": 1,
-          "nextStock": 753,
+          "nextStock": 453,
           "row": 20
         },
         {
@@ -187,14 +187,14 @@
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
           "quantityPerMachine": 10,
-          "nextStock": 816,
+          "nextStock": 804,
           "row": 32
         },
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
           "quantityPerMachine": 6,
-          "nextStock": 2637,
+          "nextStock": 3431,
           "row": 33
         },
         {
@@ -215,7 +215,7 @@
           "code": "02.02.01.0000083442",
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
           "quantityPerMachine": 1,
-          "nextStock": 258,
+          "nextStock": 255,
           "row": 36
         },
         {
@@ -292,7 +292,7 @@
           "code": "02.03.03.0000083484",
           "description": "ENGRENAGEM APOIO",
           "quantityPerMachine": 2,
-          "nextStock": 1621,
+          "nextStock": 1609,
           "row": 47
         },
         {
@@ -327,7 +327,7 @@
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
           "quantityPerMachine": 1,
-          "nextStock": 1739,
+          "nextStock": 1727,
           "row": 52
         }
       ]
@@ -838,7 +838,7 @@
     {
       "code": "02.03.01.0000069418",
       "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
-      "nextStock": 11,
+      "nextStock": 8,
       "calferStock": 0,
       "models": [
         "10L"
@@ -865,7 +865,7 @@
     {
       "code": "02.01.03.0000085070",
       "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
-      "nextStock": 31,
+      "nextStock": 38,
       "calferStock": 0,
       "models": [
         "10S"
@@ -883,7 +883,7 @@
     {
       "code": "01.01.14.0000000036",
       "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-      "nextStock": 816,
+      "nextStock": 804,
       "calferStock": 0,
       "models": [
         "10S",
@@ -903,7 +903,7 @@
     {
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-      "nextStock": 593,
+      "nextStock": 578,
       "calferStock": 0,
       "models": [
         "10S"
@@ -932,7 +932,7 @@
     {
       "code": "01.02.03.0000000044",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-      "nextStock": 753,
+      "nextStock": 453,
       "calferStock": 0,
       "models": [
         "10S"
@@ -1014,7 +1014,7 @@
     {
       "code": "01.01.14.0000000048",
       "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
-      "nextStock": 2637,
+      "nextStock": 3431,
       "calferStock": 0,
       "models": [
         "13LDI",
@@ -1043,7 +1043,7 @@
     {
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
-      "nextStock": 258,
+      "nextStock": 255,
       "calferStock": 0,
       "models": [
         "13LDI",
@@ -1138,7 +1138,7 @@
     {
       "code": "02.03.03.0000083484",
       "description": "ENGRENAGEM APOIO",
-      "nextStock": 1621,
+      "nextStock": 1609,
       "calferStock": 0,
       "models": [
         "13LDI",
@@ -1187,7 +1187,7 @@
     {
       "code": "01.01.14.0000000052",
       "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
-      "nextStock": 1739,
+      "nextStock": 1727,
       "calferStock": 0,
       "models": [
         "13LDI",
