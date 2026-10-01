@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_30.09.xlsm",
-  "generatedAt": "2026-09-30",
+  "sourceFile": "Cópia de EXPLOSAO_01.10.xlsm",
+  "generatedAt": "2026-10-01",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -376,7 +376,7 @@
         {
           "code": "01.01.14.0000071344",
           "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
-          "quantityPerMachine": 720,
+          "quantityPerMachine": 660,
           "calferStock": 12,
           "row": 9
         }
@@ -389,14 +389,14 @@
         {
           "code": "02.01.03.0000085070",
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
-          "quantityPerMachine": 38,
+          "quantityPerMachine": 7,
           "calferStock": 1,
           "row": 12
         },
         {
           "code": "02.01.03.0000071287",
           "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
-          "quantityPerMachine": 10,
+          "quantityPerMachine": 0,
           "calferStock": 1,
           "row": 13
         },
@@ -410,14 +410,14 @@
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-          "quantityPerMachine": 789,
+          "quantityPerMachine": 779,
           "calferStock": 8,
           "row": 15
         },
         {
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-          "quantityPerMachine": 578,
+          "quantityPerMachine": 553,
           "calferStock": 13,
           "row": 16
         },
@@ -431,7 +431,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 12500,
           "calferStock": 13,
           "row": 18
         },
@@ -452,7 +452,7 @@
         {
           "code": "02.03.01.0000085012",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 21,
+          "quantityPerMachine": 0,
           "calferStock": 1,
           "row": 21
         },
@@ -466,7 +466,7 @@
         {
           "code": "02.03.01.0000084348",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 45,
+          "quantityPerMachine": 0,
           "calferStock": 2,
           "row": 23
         },
@@ -480,21 +480,21 @@
         {
           "code": "02.03.01.0000084356",
           "description": "PINO BASTAO TENSOR E ARTICULACAO",
-          "quantityPerMachine": 6,
+          "quantityPerMachine": 0,
           "calferStock": 2,
           "row": 25
         },
         {
           "code": "02.03.01.0000084355",
           "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
-          "quantityPerMachine": 87,
+          "quantityPerMachine": 0,
           "calferStock": 2,
           "row": 26
         },
         {
           "code": "02.03.01.0000084354",
           "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
-          "quantityPerMachine": 32,
+          "quantityPerMachine": 0,
           "calferStock": 1,
           "row": 27
         }
@@ -542,7 +542,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 12500,
           "calferStock": 5,
           "row": 36
         },
@@ -577,21 +577,21 @@
         {
           "code": "02.01.03.0000066939",
           "description": "FIBRA DO BRAÇO INFERIOR ISOLADO DO EQUIPAMENTO SKYRIZ 13LDI",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 6,
           "calferStock": 1,
           "row": 41
         },
         {
           "code": "02.01.03.0000082542",
           "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
-          "quantityPerMachine": 29,
+          "quantityPerMachine": 37,
           "calferStock": 1,
           "row": 42
         },
         {
           "code": "04.02.01.0000000107",
           "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
-          "quantityPerMachine": 1613,
+          "quantityPerMachine": 1493,
           "calferStock": 1.5,
           "row": 43
         },
@@ -688,7 +688,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 12500,
           "calferStock": 5,
           "row": 59
         },
