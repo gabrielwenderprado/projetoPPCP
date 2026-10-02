@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_01.10.xlsm",
-  "generatedAt": "2026-10-01",
+  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
+  "generatedAt": "2026-10-02",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -403,14 +403,14 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 804,
+          "quantityPerMachine": 784,
           "calferStock": 16,
           "row": 14
         },
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-          "quantityPerMachine": 779,
+          "quantityPerMachine": 769,
           "calferStock": 8,
           "row": 15
         },
@@ -431,7 +431,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 12500,
+          "quantityPerMachine": 9500,
           "calferStock": 13,
           "row": 18
         },
@@ -494,7 +494,7 @@
         {
           "code": "02.03.01.0000084354",
           "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 3,
           "calferStock": 1,
           "row": 27
         }
@@ -507,7 +507,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "quantityPerMachine": 804,
+          "quantityPerMachine": 784,
           "calferStock": 10,
           "row": 31
         },
@@ -542,7 +542,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "quantityPerMachine": 12500,
+          "quantityPerMachine": 9500,
           "calferStock": 5,
           "row": 36
         },
@@ -688,7 +688,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 12500,
+          "quantityPerMachine": 9500,
           "calferStock": 5,
           "row": 59
         },
@@ -709,7 +709,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 804,
+          "quantityPerMachine": 784,
           "calferStock": 10,
           "row": 62
         },

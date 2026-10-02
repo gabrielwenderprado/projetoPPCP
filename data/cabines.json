@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_01.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-10-01",
+  "generatedAt": "2026-10-02",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 2000,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 12500,
+      "stock": 9500,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,

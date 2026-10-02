@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_01.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-10-01",
+  "generatedAt": "2026-10-02",
   "models": [
     "18LDDI",
     "13",
@@ -103,7 +103,7 @@
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 54,
+      "stock": 49,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -118,7 +118,7 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 95,
+      "stock": 90,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -163,7 +163,7 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 78,
+      "stock": 73,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
