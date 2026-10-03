@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-09-28",
+  "generatedAt": "2026-10-03",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -16,7 +16,7 @@
       "code": "01.02.08.0000000046",
       "description": "CONTRAPINO 1/8\" X 1.1/4\" ZINCADO BRANCO DIN 94",
       "unit": "UN",
-      "stock": 7040,
+      "stock": 2040,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 8,
@@ -50,7 +50,7 @@
       "code": "01.02.07.0000000005",
       "description": "PINO QUEBRA DEDO 1/4\" X 2\" COM CABO DE AÇO",
       "unit": "UN",
-      "stock": 1002,
+      "stock": 1481,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 20,
@@ -84,7 +84,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 593,
+      "stock": 268,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -101,7 +101,7 @@
       "code": "02.03.01.0000067336",
       "description": "PINO INFERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 641,
+      "stock": 601,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -135,7 +135,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 331,
+      "stock": 310,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -237,7 +237,7 @@
       "code": "02.03.01.0000067337",
       "description": "PINO SUPERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 649,
+      "stock": 607,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -254,7 +254,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 418,
+      "stock": 397,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -288,7 +288,7 @@
       "code": "02.03.03.0000083484",
       "description": "ENGRENAGEM APOIO",
       "unit": "UN",
-      "stock": 1630,
+      "stock": 1609,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -305,7 +305,7 @@
       "code": "02.02.01.0000083441",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
       "unit": "UN",
-      "stock": 176,
+      "stock": 326,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -322,7 +322,7 @@
       "code": "02.03.01.0000084348",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 45,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -356,7 +356,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 119,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -373,7 +373,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 95,
+      "stock": 20,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -390,7 +390,7 @@
       "code": "02.03.01.0000084356",
       "description": "PINO BASTAO TENSOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 6,
+      "stock": 20,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -489,27 +489,10 @@
       "modelCount": 2
     },
     {
-      "code": "02.01.01.0000002157",
-      "description": "MANCAL BASE DO PINO",
-      "unit": "UN",
-      "stock": 0,
-      "modelNeeds": {
-        "18LDDI": 2,
-        "15LDDI": 0,
-        "13LDDI": 1,
-        "10S": 0,
-        "13AT": 0,
-        "10L": 0,
-        "13LDI": 0
-      },
-      "totalNeed": 3,
-      "modelCount": 2
-    },
-    {
       "code": "02.02.01.0000080813",
       "description": "PINO BASCULAMENTO - AS",
       "unit": "UN",
-      "stock": 127,
+      "stock": 120,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -526,7 +509,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 271,
+      "stock": 255,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -611,7 +594,7 @@
       "code": "01.02.07.0000000014",
       "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
       "unit": "UN",
-      "stock": 1233,
+      "stock": 1226,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -628,7 +611,7 @@
       "code": "01.12.05.0000000003",
       "description": "PROTEÇAO PVC PARA ENGATE RAPIDO MACHO 3/8\" NPT (PINO)  PVC - COR LARANJA",
       "unit": "UN",
-      "stock": 423,
+      "stock": 407,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -730,7 +713,7 @@
       "code": "02.02.01.0000083443",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 340,
+      "stock": 333,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -747,7 +730,7 @@
       "code": "02.02.01.0000083444",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 397,
+      "stock": 390,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -764,7 +747,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 50,
+      "stock": 29,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -781,7 +764,7 @@
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
       "unit": "UN",
-      "stock": 279,
+      "stock": 270,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -815,7 +798,7 @@
       "code": "02.03.01.0000071336",
       "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
       "unit": "UN",
-      "stock": 43,
+      "stock": 22,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -849,7 +832,7 @@
       "code": "02.03.01.0000083452",
       "description": "PINO FIXAÇAO CESTO",
       "unit": "UN",
-      "stock": 242,
+      "stock": 315,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -866,7 +849,7 @@
       "code": "02.03.01.0000084354",
       "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
       "unit": "UN",
-      "stock": 10,
+      "stock": 3,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -948,44 +931,10 @@
       "modelCount": 2
     },
     {
-      "code": "01.01.01.0000000155",
-      "description": "ENGATE RAPIDO MACHO FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
-      "unit": "UN",
-      "stock": 305,
-      "modelNeeds": {
-        "18LDDI": 1,
-        "15LDDI": 0,
-        "13LDDI": 0,
-        "10S": 0,
-        "13AT": 0,
-        "10L": 0,
-        "13LDI": 0
-      },
-      "totalNeed": 1,
-      "modelCount": 1
-    },
-    {
-      "code": "01.01.01.0000000156",
-      "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
-      "unit": "UN",
-      "stock": 267,
-      "modelNeeds": {
-        "18LDDI": 1,
-        "15LDDI": 0,
-        "13LDDI": 0,
-        "10S": 0,
-        "13AT": 0,
-        "10L": 0,
-        "13LDI": 0
-      },
-      "totalNeed": 1,
-      "modelCount": 1
-    },
-    {
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 58,
+      "stock": 49,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1002,7 +951,7 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 99,
+      "stock": 90,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1019,7 +968,7 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 82,
+      "stock": 73,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1053,7 +1002,7 @@
       "code": "01.13.01.0000000031",
       "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1800 MM - 2 TON",
       "unit": "UN",
-      "stock": 81,
+      "stock": 61,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1079,6 +1028,23 @@
         "13AT": 0,
         "10L": 0,
         "13LDI": 1
+      },
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "02.01.01.0000002157",
+      "description": "MANCAL BASE DO PINO",
+      "unit": "UN",
+      "stock": 0,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "15LDDI": 0,
+        "13LDDI": 1,
+        "10S": 0,
+        "13AT": 0,
+        "10L": 0,
+        "13LDI": 0
       },
       "totalNeed": 1,
       "modelCount": 1
@@ -1257,7 +1223,7 @@
       "code": "02.02.01.0000082267",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 31,
+      "stock": 33,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1274,7 +1240,7 @@
       "code": "02.02.01.0000083457",
       "description": "ENGRENAGEM ARTIC. BASE/LANÇA - AS",
       "unit": "UN",
-      "stock": 149,
+      "stock": 222,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1410,7 +1376,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 331,
+      "stock": 319,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1427,7 +1393,7 @@
       "code": "02.03.01.0000085021",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 26,
+      "stock": 1,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1444,7 +1410,7 @@
       "code": "02.03.01.0000085022",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 47,
+      "stock": 1,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -1512,7 +1478,7 @@
       "code": "02.03.02.0000083460",
       "description": "ENGRENAGEM ARTICULAÇAO LANÇAS",
       "unit": "UN",
-      "stock": 192,
+      "stock": 133,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1529,7 +1495,7 @@
       "code": "02.03.02.0000083461",
       "description": "ENGRENAGEM CESTO",
       "unit": "UN",
-      "stock": 238,
+      "stock": 231,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1546,7 +1512,7 @@
       "code": "02.03.02.0000085089",
       "description": "ESPAÇADOR ENGRENAGEM CESTO",
       "unit": "UN",
-      "stock": 66,
+      "stock": 59,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
