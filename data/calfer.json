@@ -355,7 +355,7 @@
         {
           "code": "02.03.01.0000069406",
           "description": "PINO DA ARTICULAÇAO DO CILINDRO COM BRAÇO SUPERIOR SKYRITZ 10L",
-          "quantityPerMachine": 14,
+          "quantityPerMachine": 34,
           "calferStock": 1,
           "row": 6
         },
@@ -369,14 +369,14 @@
         {
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 70,
           "calferStock": 1,
           "row": 8
         },
         {
           "code": "01.01.14.0000071344",
           "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
-          "quantityPerMachine": 660,
+          "quantityPerMachine": 600,
           "calferStock": 12,
           "row": 9
         }
@@ -403,49 +403,49 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 784,
+          "quantityPerMachine": 1616,
           "calferStock": 16,
           "row": 14
         },
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-          "quantityPerMachine": 769,
+          "quantityPerMachine": 595,
           "calferStock": 8,
           "row": 15
         },
         {
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-          "quantityPerMachine": 553,
+          "quantityPerMachine": 268,
           "calferStock": 13,
           "row": 16
         },
         {
           "code": "01.02.01.0000000208",
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-          "quantityPerMachine": 3625,
+          "quantityPerMachine": 3365,
           "calferStock": 13,
           "row": 17
         },
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 9500,
+          "quantityPerMachine": 5500,
           "calferStock": 13,
           "row": 18
         },
         {
           "code": "01.02.03.0000000044",
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-          "quantityPerMachine": 453,
+          "quantityPerMachine": 433,
           "calferStock": 1,
           "row": 19
         },
         {
           "code": "01.02.02.0000000027",
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 1708,
+          "quantityPerMachine": 1688,
           "calferStock": 1,
           "row": 20
         },
@@ -459,7 +459,7 @@
         {
           "code": "02.03.01.0000084350",
           "description": "PINO CILINDRO BRACO SUPERIOR",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 119,
           "calferStock": 2,
           "row": 22
         },
@@ -480,14 +480,14 @@
         {
           "code": "02.03.01.0000084356",
           "description": "PINO BASTAO TENSOR E ARTICULACAO",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 20,
           "calferStock": 2,
           "row": 25
         },
         {
           "code": "02.03.01.0000084355",
           "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 20,
           "calferStock": 2,
           "row": 26
         },
@@ -507,7 +507,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "quantityPerMachine": 784,
+          "quantityPerMachine": 1616,
           "calferStock": 10,
           "row": 31
         },
@@ -542,7 +542,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "quantityPerMachine": 9500,
+          "quantityPerMachine": 5500,
           "calferStock": 5,
           "row": 36
         },
@@ -619,7 +619,7 @@
         {
           "code": "01.02.01.0000000199",
           "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 20MM",
-          "quantityPerMachine": 2354,
+          "quantityPerMachine": 3354,
           "calferStock": 1,
           "row": 47
         },
@@ -674,7 +674,7 @@
         {
           "code": "01.02.02.0000000027",
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 1708,
+          "quantityPerMachine": 1688,
           "calferStock": 3,
           "row": 57
         },
@@ -688,7 +688,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 9500,
+          "quantityPerMachine": 5500,
           "calferStock": 5,
           "row": 59
         },
@@ -702,14 +702,14 @@
         {
           "code": "01.02.01.0000000199",
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 20MM CLASSE 10.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN",
-          "quantityPerMachine": 2354,
+          "quantityPerMachine": 3354,
           "calferStock": 1,
           "row": 61
         },
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 784,
+          "quantityPerMachine": 1616,
           "calferStock": 10,
           "row": 62
         },
