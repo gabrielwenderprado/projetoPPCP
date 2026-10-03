@@ -47,7 +47,8 @@ class TestCilindrosSnapshot(unittest.TestCase):
     def test_real_source_snapshot_is_currently_empty_or_structured(self):
         # A aba sem linhas de componentes deve mostrar empty-state, sem quebrar a UI.
         for item in CYLINDER_JSON["items"]:
-            self.assertTrue({"code", "description", "stock", "needByModel"} <= item.keys())
+            self.assertTrue({"code", "description", "stock"} <= item.keys())
+            self.assertTrue("needByModel" in item or "modelNeeds" in item)
 
     def test_pins_snapshot_remains_available(self):
         self.assertGreater(len(PINS_JSON["items"]), 0)

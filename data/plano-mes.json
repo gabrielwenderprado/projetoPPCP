@@ -2,252 +2,244 @@
   "sourceSheet": "PLANO MES",
   "sourceRange": "A15:Y30",
   "months": [
+    "06",
+    "07",
+    "08",
     "09",
     "10",
     "11",
-    "12",
-    "01",
-    "02",
-    "03"
+    "12"
   ],
   "models": [
     {
       "modelo": "10S",
       "quantidades": {
+        "06": 22,
+        "07": 16,
+        "08": 41,
         "09": 106,
-        "10": 59,
+        "10": 35,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "13",
       "quantidades": {
+        "06": 60,
+        "07": 61,
+        "08": 55,
         "09": 80,
         "10": 6,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "13-69",
       "quantidades": {
+        "06": 2,
+        "07": 0,
+        "08": 0,
         "09": 1,
         "10": 4,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "13AT",
       "quantidades": {
+        "06": 0,
+        "07": 4,
+        "08": 0,
         "09": 2,
         "10": 3,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "18",
       "quantidades": {
+        "06": 4,
+        "07": 1,
+        "08": 0,
         "09": 2,
         "10": 2,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "15LDDI",
       "quantidades": {
+        "06": 9,
+        "07": 11,
+        "08": 9,
         "09": 3,
         "10": 2,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 35",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 0,
         "09": 0,
         "10": 5,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 21",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 1,
         "09": 1,
-        "10": 1,
+        "10": 2,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 45",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 1,
         "09": 1,
-        "10": 2,
+        "10": 0,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindate 25",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 0,
         "09": 0,
-        "10": 3,
+        "10": 0,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 16",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 16,
         "09": 40,
         "10": 25,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 12",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 0,
         "09": 3,
         "10": 0,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 7,5",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 0,
         "09": 10,
-        "10": 1,
+        "10": 6,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "guindaste 30T",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 0,
         "09": 0,
-        "10": 1,
+        "10": 0,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     },
     {
       "modelo": "cabine 4 lugar",
       "quantidades": {
+        "06": 0,
+        "07": 0,
+        "08": 0,
         "09": 0,
         "10": 0,
         "11": 0,
-        "12": 0,
-        "01": 0,
-        "02": 0,
-        "03": 0
+        "12": 0
       }
     }
   ],
   "liberacoes": [
     {
-      "en": "EN013318",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3378 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN013320",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3378 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN013322",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3378 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN013330",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3378 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN012855",
+      "en": "EN012851",
       "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-05T00:00:00"
+      "data": "2026-09-23T00:00:00"
     },
     {
-      "en": "EN012863",
+      "en": "EN012595",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-23T00:00:00"
+    },
+    {
+      "en": "EN012597",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-23T00:00:00"
+    },
+    {
+      "en": "EN012598",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-23T00:00:00"
+    },
+    {
+      "en": "EN012596",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-23T00:00:00"
+    },
+    {
+      "en": "EN012865",
       "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN011051",
-      "cliente": "ENEL CE",
-      "modelo": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "pl": "PL 3242",
-      "nome": "GUINDASTE",
-      "data": "2026-10-01T00:00:00"
+      "data": "2026-09-23T00:00:00"
     },
     {
       "en": "EN011048",
@@ -255,1120 +247,400 @@
       "modelo": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
       "pl": "PL 3242",
       "nome": "GUINDASTE",
-      "data": "2026-10-02T00:00:00"
+      "data": "2026-09-23T00:00:00"
     },
     {
-      "en": "EN011180",
+      "en": "EN011051",
       "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN011132",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN011176",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN012998",
-      "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3373",
-      "nome": "CESTO",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN013000",
-      "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3373",
-      "nome": "CESTO",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN011182",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-01T00:00:00"
-    },
-    {
-      "en": "EN012343",
-      "cliente": "NEOENERGIA BAHIA",
-      "modelo": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
-      "pl": "PL 3315",
-      "nome": "CARGA SECA",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN012851",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN012877",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN011174",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN011172",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN011156",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN013004",
-      "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3373",
-      "nome": "CESTO",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN013002",
-      "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3373",
-      "nome": "CESTO",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN012857",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN012867",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN011158",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3166",
-      "nome": "ESCADA",
-      "data": "2026-10-02T00:00:00"
-    },
-    {
-      "en": "EN011162",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3361",
-      "nome": "ESCADA",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN011164",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3361",
-      "nome": "ESCADA",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN011146",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3361",
-      "nome": "ESCADA",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN011166",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3361",
-      "nome": "ESCADA",
-      "data": "2026-10-05T00:00:00"
-    },
-    {
-      "en": "EN012879",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN013382",
-      "cliente": "CF TRANSPORTES",
-      "modelo": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
-      "pl": "PL 3423",
+      "modelo": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "pl": "PL 3242",
       "nome": "GUINDASTE",
-      "data": "2026-10-05T00:00:00"
+      "data": "2026-09-23T00:00:00"
     },
     {
-      "en": "EN012985",
-      "cliente": "CONSTRUTORA B & C LTDA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3307",
-      "nome": "ESCADA",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN012873",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN012875",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN011178",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3393",
-      "nome": "ESCADA",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN011168",
-      "cliente": "ENEL CE",
-      "modelo": "ESCADA CENTRAL METROPOLITANA",
-      "pl": "PL 3393",
-      "nome": "ESCADA",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN012217",
-      "cliente": "ENERGISA MINAS RIO",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3333",
-      "nome": "ESCADA",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN012219",
-      "cliente": "ENERGISA MINAS RIO",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3333",
-      "nome": "ESCADA",
-      "data": "2026-10-06T00:00:00"
-    },
-    {
-      "en": "EN012869",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012635",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3337",
-      "nome": "CESTO",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012629",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3400",
-      "nome": "CESTO",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012651",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3404",
-      "nome": "ESCADA",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012653",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3404",
-      "nome": "ESCADA",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012655",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3404",
-      "nome": "ESCADA",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012903",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012881",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012883",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-07T00:00:00"
-    },
-    {
-      "en": "EN012871",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012657",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3404",
-      "nome": "ESCADA",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012661",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3404",
-      "nome": "ESCADA",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012885",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012923",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012901",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012911",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN012257",
-      "cliente": "ENERGISA SUL SUDESTE",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3408",
-      "nome": "ESCADA",
-      "data": "2026-10-08T00:00:00"
-    },
-    {
-      "en": "EN013326",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3435",
-      "nome": "CESTO",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN012261",
-      "cliente": "ENERGISA SUL SUDESTE",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3408",
-      "nome": "ESCADA",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN012263",
-      "cliente": "ENERGISA SUL SUDESTE",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3408",
-      "nome": "ESCADA",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN012265",
-      "cliente": "ENERGISA SUL SUDESTE",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3408",
-      "nome": "ESCADA",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN012267",
-      "cliente": "ENERGISA SUL SUDESTE",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3408",
-      "nome": "ESCADA",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN012259",
-      "cliente": "ENERGISA SUL SUDESTE",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "pl": "PL 3408",
-      "nome": "ESCADA",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN013324",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3435",
-      "nome": "CESTO",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN013332",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3435",
-      "nome": "CESTO",
-      "data": "2026-10-09T00:00:00"
-    },
-    {
-      "en": "EN012221",
-      "cliente": "ENERGISA MINAS RIO",
+      "en": "EN012599",
+      "cliente": "LOCALIZA - ELINSA",
       "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3432",
-      "nome": "ESCADA",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN012891",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN012921",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN012887",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3324 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN012913",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN012915",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN013334",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3435",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN013342",
-      "cliente": "LOCALIZA - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3435",
-      "nome": "CESTO",
-      "data": "2026-10-13T00:00:00"
-    },
-    {
-      "en": "EN012242",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
-      "nome": "ESCADA",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012246",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
-      "nome": "ESCADA",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012243",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
-      "nome": "ESCADA",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012895",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012917",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012919",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012925",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012927",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-14T00:00:00"
-    },
-    {
-      "en": "EN012905",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012907",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012909",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012244",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
-      "nome": "ESCADA",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012245",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
-      "nome": "ESCADA",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012929",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012931",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012967",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "BASE PRONTA",
-      "nome": "CESTO",
-      "data": "2026-10-15T00:00:00"
-    },
-    {
-      "en": "EN012865",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-16T00:00:00"
-    },
-    {
-      "en": "EN012275",
-      "cliente": "ENERGISA PARAIBA",
-      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
       "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-16T00:00:00"
+      "data": "2026-09-24T00:00:00"
+    },
+    {
+      "en": "EN012600",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-24T00:00:00"
+    },
+    {
+      "en": "EN012601",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-24T00:00:00"
+    },
+    {
+      "en": "EN012602",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-24T00:00:00"
+    },
+    {
+      "en": "EN012603",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-24T00:00:00"
     },
     {
       "en": "EN012889",
       "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-16T00:00:00"
+      "data": "2026-09-24T00:00:00"
     },
     {
-      "en": "EN012899",
+      "en": "EN012891",
       "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-16T00:00:00"
-    },
-    {
-      "en": "EN012949",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-16T00:00:00"
-    },
-    {
-      "en": "EN012248",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
-      "nome": "ESCADA",
-      "data": "2026-10-16T00:00:00"
-    },
-    {
-      "en": "EN012933",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-16T00:00:00"
-    },
-    {
-      "en": "EN012935",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-16T00:00:00"
+      "data": "2026-09-24T00:00:00"
     },
     {
       "en": "EN012893",
       "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
+      "data": "2026-09-24T00:00:00"
+    },
+    {
+      "en": "EN012895",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-24T00:00:00"
     },
     {
       "en": "EN012897",
       "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
+      "data": "2026-09-24T00:00:00"
     },
     {
-      "en": "EN012253",
-      "cliente": "ENERGISA ACRE",
+      "en": "EN012604",
+      "cliente": "LOCALIZA - ELINSA",
       "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
+      "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-19T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012254",
-      "cliente": "ENERGISA ACRE",
+      "en": "EN012605",
+      "cliente": "LOCALIZA - ELINSA",
       "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
+      "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-19T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012937",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012939",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3354 (TERCEIRO)",
-      "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012941",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012943",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012980",
-      "cliente": "FENATRAN 2026",
-      "modelo": "SKYCITY 10 HDOC",
-      "pl": null,
-      "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012979",
-      "cliente": "FENATRAN 2026",
-      "modelo": "SKYCITY 13 LDDI",
-      "pl": null,
-      "nome": "CESTO",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012975",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 65.5T 6H 3M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-19T00:00:00"
-    },
-    {
-      "en": "EN012249",
-      "cliente": "ENERGISA ACRE",
+      "en": "EN012606",
+      "cliente": "LOCALIZA - ELINSA",
       "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
+      "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-20T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012250",
-      "cliente": "ENERGISA ACRE",
+      "en": "EN012607",
+      "cliente": "LOCALIZA - ELINSA",
       "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3419",
+      "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-20T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012945",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012947",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012951",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012953",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012955",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012969",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012974",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012973",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 30.5T 5H 2M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012977",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-20T00:00:00"
-    },
-    {
-      "en": "EN012247",
-      "cliente": "ENERGISA ACRE",
+      "en": "EN012608",
+      "cliente": "LOCALIZA - ELINSA",
       "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3432",
+      "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-21T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012251",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3432",
-      "nome": "ESCADA",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012252",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3432",
-      "nome": "ESCADA",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012957",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012959",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "PL 3386 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012961",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "BASE PRONTA",
-      "nome": "CESTO",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012963",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "BASE PRONTA",
-      "nome": "CESTO",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012965",
-      "cliente": "ENEL SP",
-      "modelo": "SKYCITY 10 S",
-      "pl": "BASE PRONTA",
-      "nome": "CESTO",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012972",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012976",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 17.5C 4H 2M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012971",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-21T00:00:00"
-    },
-    {
-      "en": "EN012543",
-      "cliente": "ENERGISA RONDONIA",
-      "modelo": "SKYCITY 10 S",
-      "pl": null,
-      "nome": "CESTO",
-      "data": "2026-10-22T00:00:00"
-    },
-    {
-      "en": "EN012545",
-      "cliente": "ENERGISA RONDONIA",
-      "modelo": "SKYCITY 10 S",
-      "pl": null,
-      "nome": "CESTO",
-      "data": "2026-10-22T00:00:00"
-    },
-    {
-      "en": "EN013277",
+      "en": "EN012986",
       "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3389 TERCEIRO",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-22T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN013006",
+      "en": "EN012988",
       "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3389 TERCEIRO",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-22T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN013008",
-      "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3389 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-22T00:00:00"
-    },
-    {
-      "en": "EN012273",
-      "cliente": "ENERGISA PARAIBA",
+      "en": "EN013270",
+      "cliente": "CPFL (RGE)",
       "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
       "pl": null,
       "nome": "ESCADA",
-      "data": "2026-10-22T00:00:00"
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012255",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3432",
-      "nome": "ESCADA",
-      "data": "2026-10-22T00:00:00"
-    },
-    {
-      "en": "EN012256",
-      "cliente": "ENERGISA ACRE",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "pl": "PL 3432",
-      "nome": "ESCADA",
-      "data": "2026-10-22T00:00:00"
-    },
-    {
-      "en": "EN013384",
-      "cliente": "FENATRAN 2026",
-      "modelo": "GUINDASTE NEXT NX 3.5 2H 1M",
+      "en": "EN013272",
+      "cliente": "CPFL (RGE)",
+      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
       "pl": null,
-      "nome": "GUINDASTE",
-      "data": "2026-10-22T00:00:00"
+      "nome": "ESCADA",
+      "data": "2026-09-25T00:00:00"
     },
     {
-      "en": "EN012978",
-      "cliente": "FENATRAN 2026",
-      "modelo": "SKYCITY 13,5 AT",
+      "en": "EN013274",
+      "cliente": "CPFL (RGE)",
+      "modelo": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-25T00:00:00"
+    },
+    {
+      "en": "EN012574",
+      "cliente": "LOCALIZA - ELINSA",
+      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "pl": null,
+      "nome": "ESCADA",
+      "data": "2026-09-28T00:00:00"
+    },
+    {
+      "en": "EN012899",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
       "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-22T00:00:00"
+      "data": "2026-09-28T00:00:00"
     },
     {
-      "en": "EN013281",
+      "en": "EN012921",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-28T00:00:00"
+    },
+    {
+      "en": "EN012990",
       "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3389 TERCEIRO",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-23T00:00:00"
+      "data": "2026-09-28T00:00:00"
     },
     {
-      "en": "EN013010",
+      "en": "EN012992",
       "cliente": "VAMOS - LIGHT",
-      "modelo": "SKYCITY 10 L",
-      "pl": "PL 3389 TERCEIRO",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-23T00:00:00"
+      "data": "2026-09-28T00:00:00"
     },
     {
-      "en": "EN013012",
+      "en": "EN012994",
       "cliente": "VAMOS - LIGHT",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-28T00:00:00"
+    },
+    {
+      "en": "EN013250",
+      "cliente": "LOCALIZA - LIGHT",
       "modelo": "SKYCITY 10 L",
-      "pl": "PL 3389 TERCEIRO",
-      "nome": "CESTO",
-      "data": "2026-10-23T00:00:00"
-    },
-    {
-      "en": "EN013073",
-      "cliente": "PREFEITURA MUNICIPAL DE PORANGABA",
-      "modelo": "SKYCITY 10 S - TORRE ALTA",
       "pl": null,
       "nome": "CESTO",
-      "data": "2026-10-23T00:00:00"
+      "data": "2026-09-28T00:00:00"
     },
     {
-      "en": "EN012287",
-      "cliente": "ENERGISA PARAIBA",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "en": "EN013252",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
       "pl": null,
-      "nome": "ESCADA",
-      "data": "2026-10-23T00:00:00"
+      "nome": "CESTO",
+      "data": "2026-09-28T00:00:00"
     },
     {
-      "en": "EN012289",
-      "cliente": "ENERGISA PARAIBA",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "en": "EN013254",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
       "pl": null,
-      "nome": "ESCADA",
-      "data": "2026-10-23T00:00:00"
+      "nome": "CESTO",
+      "data": "2026-09-28T00:00:00"
     },
     {
-      "en": "EN012290",
-      "cliente": "ENERGISA PARAIBA",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "en": "EN012923",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
       "pl": null,
-      "nome": "ESCADA",
-      "data": "2026-10-23T00:00:00"
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
     },
     {
-      "en": "EN012291",
-      "cliente": "ENERGISA PARAIBA",
-      "modelo": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
+      "en": "EN012905",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
       "pl": null,
-      "nome": "ESCADA",
-      "data": "2026-10-23T00:00:00"
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
     },
     {
-      "en": "EN013383",
-      "cliente": "FENATRAN 2026",
-      "modelo": "ROLL UP 6 PALLETS HIB",
+      "en": "EN012907",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
       "pl": null,
-      "nome": "BEBIDA",
-      "data": "2026-10-23T00:00:00"
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN012996",
+      "cliente": "VAMOS - LIGHT",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN013004",
+      "cliente": "VAMOS - LIGHT",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN012998",
+      "cliente": "VAMOS - LIGHT",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN013256",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN013258",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN013262",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-29T00:00:00"
+    },
+    {
+      "en": "EN012901",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN012903",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN012909",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN012911",
+      "cliente": "ENEL SP",
+      "modelo": "SKYCITY 10S",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN013000",
+      "cliente": "VAMOS - LIGHT",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN013002",
+      "cliente": "VAMOS - LIGHT",
+      "modelo": "SKYCITY 10L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN013264",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN013260",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN013266",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
+    },
+    {
+      "en": "EN013268",
+      "cliente": "LOCALIZA - LIGHT",
+      "modelo": "SKYCITY 10 L",
+      "pl": null,
+      "nome": "CESTO",
+      "data": "2026-09-30T00:00:00"
     }
   ],
-  "liberacoesRange": "AA2:AF209"
+  "liberacoesRange": "AA2:AF113"
 }

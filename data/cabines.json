@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-10-03",
+  "generatedAt": "2026-09-28",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,7 +13,7 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 26851.38,
+      "stock": 30759.3164,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 0,
+      "stock": 3000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 5695,
+      "stock": 4895,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -73,7 +73,7 @@
       "code": "01.02.01.0000000059",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 6560,
+      "stock": 6805,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 5500,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -103,7 +103,7 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 50945.4882,
+      "stock": 41406.9551,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
@@ -163,7 +163,7 @@
       "code": "01.04.04.0000000038",
       "description": "TUBO RETANGULAR 30 X 20 X 2,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 4454.31,
+      "stock": 5390.252,
       "modelNeeds": {
         "4 LUGAR": 16.2494,
         "6 LUGAR": 16.2494,
@@ -178,7 +178,7 @@
       "code": "01.02.01.0000000300",
       "description": "PARAFUSO PHILLIPS FLANGEADO AUTO BROCANTE PONTA BROCA 4,2 X 16MM ROSCA INTEIRA ZINCADO PRETO DIN 6921",
       "unit": "UN",
-      "stock": 3000,
+      "stock": 4000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -208,7 +208,7 @@
       "code": "01.02.03.0000000029",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 2359,
+      "stock": 2594,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 10600,
+      "stock": 10850,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -253,7 +253,7 @@
       "code": "01.02.02.0000000060",
       "description": "ARRUELA M8 X 24 X 8,40MM DIN 9021",
       "unit": "UN",
-      "stock": 1200,
+      "stock": 1500,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 24,
@@ -283,7 +283,7 @@
       "code": "01.02.03.0000000040",
       "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 1100,
+      "stock": 1600,
       "modelNeeds": {
         "4 LUGAR": 12,
         "6 LUGAR": 16,
@@ -313,7 +313,7 @@
       "code": "01.02.02.0000000035",
       "description": "ARRUELA LISA ABA LARGA M10 X 23,50 X 1,70MM ZINCADO BRANCO DIN 9021",
       "unit": "UN",
-      "stock": 5555,
+      "stock": 6555,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 22,
@@ -328,7 +328,7 @@
       "code": "01.02.02.0000000017",
       "description": "ARRUELA LISA MEDIA M5 X 10 X 1,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 31876,
+      "stock": 33976,
       "modelNeeds": {
         "4 LUGAR": 8,
         "6 LUGAR": 10,
@@ -358,7 +358,7 @@
       "code": "01.04.04.0000000058",
       "description": "TUBO RETANGULAR 80 X 50 X 2,65 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 9307.6,
+      "stock": 10864.009,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 9.2092,
@@ -373,7 +373,7 @@
       "code": "01.02.01.0000000235",
       "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 16MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 1700,
+      "stock": 2200,
       "modelNeeds": {
         "4 LUGAR": 8,
         "6 LUGAR": 4,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 29309.045,
+      "stock": 31584.2719,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 91908,
+      "stock": 99908,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -523,7 +523,7 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 42062.867,
+      "stock": 40438.436,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
@@ -568,7 +568,7 @@
       "code": "01.02.01.0000000115",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 53943,
+      "stock": 54763,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -583,7 +583,7 @@
       "code": "01.02.03.0000000031",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M5 X 0,80MM CLASSE 5 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 18913,
+      "stock": 19413,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 43024,
+      "stock": 45024,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -703,7 +703,7 @@
       "code": "01.02.05.0000000017",
       "description": "REBITE ROSCADO CABEÇA PLANA M10 X 19,5MM BICROMATIZADO",
       "unit": "UN",
-      "stock": 2900,
+      "stock": 3900,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 3,
@@ -763,7 +763,7 @@
       "code": "01.11.04.0000000111",
       "description": "LANTERNA LED BV PARA ILUMINAÇAO (IL5024)",
       "unit": "UN",
-      "stock": 227,
+      "stock": 149,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -778,7 +778,7 @@
       "code": "01.12.07.0000000005",
       "description": "PEGA MAO - PLASTICO",
       "unit": "UN",
-      "stock": 589,
+      "stock": 629,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 235,
+      "stock": 261,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -868,7 +868,7 @@
       "code": "01.04.04.0000000149",
       "description": "TUBO QUADRADO 40 X 40 X 2,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 3594.358,
+      "stock": 4690.758,
       "modelNeeds": {
         "4 LUGAR": 1.9343,
         "6 LUGAR": 1.9343,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 96,
+      "stock": 56,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 78,
+      "stock": 48,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 11527.07,
+      "stock": 13845.6039,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1183,7 +1183,7 @@
       "code": "01.04.01.0000000019",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 27885.684,
+      "stock": 28384.642,
       "modelNeeds": {
         "4 LUGAR": 1.8147,
         "6 LUGAR": 1.8147,
@@ -1243,7 +1243,7 @@
       "code": "01.04.04.0000000094",
       "description": "TUBO REDONDO INDUSTRIAL 1\"(25,40MM) X 2,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 824.07,
+      "stock": 1033.675,
       "modelNeeds": {
         "4 LUGAR": 1.296,
         "6 LUGAR": 1.296,
@@ -1588,7 +1588,7 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 24267.615,
+      "stock": 27235.195,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
@@ -1603,7 +1603,7 @@
       "code": "01.09.04.0000000024",
       "description": "PLACA DE ALUMINIO GRAVADO 150 X 74MM - CABINE SUPLEMENTAR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 386,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1618,7 +1618,7 @@
       "code": "01.15.02.0000000113",
       "description": "CLIMATIZADOR DE CABINE 24V",
       "unit": "UN",
-      "stock": 55,
+      "stock": 35,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 48,
+      "stock": 28,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1663,7 +1663,7 @@
       "code": "01.15.04.0000000071",
       "description": "EXTINTOR DE INCENDIO 1KG CLASSE ABC",
       "unit": "UN",
-      "stock": 62,
+      "stock": 42,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1678,7 +1678,7 @@
       "code": "01.15.04.0000000076",
       "description": "SUPORTE EXTINTOR DE 3\"",
       "unit": "UN",
-      "stock": 51,
+      "stock": 31,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2158,7 +2158,7 @@
       "code": "01.04.01.0000000156",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 6000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 2396,
+      "stock": 2396.004,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -2983,7 +2983,7 @@
       "code": "02.01.03.0000085317",
       "description": "FORRO TETO BANHEIRO CABINE 6L WC",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -3088,7 +3088,7 @@
       "code": "01.04.01.0000000037",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 8308.68,
+      "stock": 8986.76,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -3103,7 +3103,7 @@
       "code": "01.02.10.0000000051",
       "description": "ADESIVO DUPLA FACE BR 251619 - 19MM X 20M",
       "unit": "UN",
-      "stock": 227,
+      "stock": 229,
       "modelNeeds": {
         "4 LUGAR": 0.6,
         "6 LUGAR": 0,
@@ -3118,7 +3118,7 @@
       "code": "01.04.04.0000000049",
       "description": "TUBO QUADRADO 50 X 50 X 3,00 X 6000MM - NBR 6591",
       "unit": "UN",
-      "stock": 6614.388,
+      "stock": 8420.788,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -3148,7 +3148,7 @@
       "code": "01.15.02.0000000138",
       "description": "VASO SANITARIO BANHEIRO QUIMICO PORTATIL CAMPING - 20L",
       "unit": "UN",
-      "stock": 3,
+      "stock": 1,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4738,7 +4738,7 @@
       "code": "01.04.03.0000000070",
       "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - ASTM A36",
       "unit": "UN",
-      "stock": 1801.258,
+      "stock": 1813.19,
       "modelNeeds": {
         "4 LUGAR": 0.0471,
         "6 LUGAR": 0.0471,

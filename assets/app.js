@@ -437,6 +437,7 @@ function risk(item, demand) {
   const needed = requiredQuantity(item, demand);
   const stock = n(item?.stock);
   const orders = Object.values(item?.orders || {}).reduce((sum, value) => sum + n(value), 0);
+  if (stock <= 0) return ['Crítico', 'red'];
   if (orders > 0) return ['Em atenção', 'amber'];
   if (stock >= needed) return ['Regular', 'green'];
   return ['Crítico', 'red'];
@@ -465,6 +466,7 @@ function hasFollowUpOrder(item, demand) {
   // Qualquer pedido quantitativo aberto exige acompanhamento. Isso evita que
   // uma demanda em falta seja classificada como "Comprar" só porque o pedido
   // está registrado em outro mês ou porque o estoque está zerado.
+  if (overdueOrders(item).length > 0) return true;
   return hasOpenOrder(item);
 }
 
@@ -748,6 +750,34 @@ function bindMaterialButtons() {
     button.onclick = () => openMaterialDetail(button.dataset.code);
   });
 }
+function bindNiguriPinButtons() {
+  document.querySelectorAll('.niguri-pin-code').forEach(button => {
+    button.onclick = () => openPinPlanDetail(button.dataset.code, button.dataset.pinModel || 'Todos os modelos');
+  });
+}
+// Calcula o mesmo consumo mensal usado pelo NIGURI, diretamente do plano anual.
+// Cada EN/modelo do mês multiplica a necessidade unitária do pino naquele modelo.
+function planAnnualPinConsumption(code, model = 'Todos os modelos') {
+  const pin = (PINS.items || []).find(item => String(item.code) === String(code));
+  if (!pin) return [];
+  const planModels = typeof pinsNiguriPlanModels === 'function' ? pinsNiguriPlanModels(model) : [];
+  const months = [...new Set(planModels.flatMap(entry => Object.keys(entry.quantidades || {}).filter(key => /^\d{2}\/\d{4}$/.test(key))))]
+    .sort((a, b) => { const [am, ay] = a.split('/').map(Number); const [bm, by] = b.split('/').map(Number); return ay - by || am - bm; });
+  return months.map(month => ({
+    month,
+    quantity: planModels.reduce((sum, entry) => sum + n(entry.quantidades?.[month]) * n(pin.modelNeeds?.[entry.modelo]), 0),
+    models: planModels.filter(entry => n(entry.quantidades?.[month]) && n(pin.modelNeeds?.[entry.modelo])).map(entry => `${entry.modelo}: ${fmt(entry.quantidades[month])} × ${fmt(pin.modelNeeds?.[entry.modelo])}`).join(' · ')
+  })).filter(entry => entry.quantity > 0);
+}
+
+function pinPlanOrderRows(code, model = 'Todos os modelos') {
+  const item = itemByCode(code) || {};
+  const consumption = planAnnualPinConsumption(code, model);
+  return consumption.map(entry => {
+    const order = n(item.orders?.[`PED ${entry.month}`]);
+    return { ...entry, order, message: order > 0 ? `Já tem pedido com ${fmt(order)} ${item.unit || 'UN'}` : `Colocar ${fmt(entry.quantity)} ${item.unit || 'UN'}` };
+  });
+}
 
 function markPurchaseButtonAdded(button) {
   if (!button) return;
@@ -782,7 +812,9 @@ function bindPurchaseButtons() {
 function openMaterialDetail(code) {
   const item = itemByCode(code);
   if (!item) return;
-  const demands = Object.entries(item.demands || {}).filter(([, value]) => n(value) > 0);
+  const isPin = (PINS.items || []).some(pin => String(pin.code) === String(code));
+  const planDemands = isPin ? planAnnualPinConsumption(code) : [];
+  const demands = planDemands.length ? planDemands.map(entry => [`DEM ${entry.month}`, entry.quantity]) : Object.entries(item.demands || {}).filter(([, value]) => n(value) > 0);
   const orders = orderEntries(item);
   const purchase = suggestedPurchase(item);
   const overlay = document.createElement('div');
@@ -798,6 +830,18 @@ function openMaterialDetail(code) {
   $('#close-material-detail').onclick = close;
   $('#close-material-detail-bottom').onclick = close;
   overlay.onclick = event => { if (event.target === overlay) close(); };
+}
+
+function openPinPlanDetail(code, model = 'Todos os modelos') {
+  const item = itemByCode(code);
+  const pin = (PINS.items || []).find(entry => String(entry.code) === String(code));
+  if (!item || !pin) return openMaterialDetail(code);
+  const rows = pinPlanOrderRows(code, model);
+  const total = rows.reduce((sum, row) => sum + row.quantity, 0);
+  const overlay = document.createElement('div'); overlay.className = 'detail-overlay';
+  overlay.innerHTML = `<section class="material-detail" role="dialog" aria-modal="true" aria-label="Consumo mensal do pino"><div class="material-detail-header"><div><span class="eyebrow">Consumo mensal · Plano anual</span><h2>${esc(item.code)}</h2><p>${esc(item.description)}</p></div><button class="icon-btn" id="close-pin-plan-detail" aria-label="Fechar">×</button></div><div class="detail-metrics"><div><span>Modelo analisado</span><b>${esc(model)}</b></div><div><span>Estoque atual</span><b>${fmt(item.stock)} ${esc(item.unit || 'UN')}</b></div><div><span>Consumo até dezembro</span><b>${fmt(total)} ${esc(item.unit || 'UN')}</b></div><div><span>Meses com consumo</span><b>${fmt(rows.length)}</b></div></div><div class="detail-section"><h3>Necessidade e pedidos por mês</h3><p class="muted">A necessidade usa as ENs do plano anual e a estrutura unitária do pino.</p><div class="detail-list">${rows.map(row => `<div class="detail-list-row"><span>Mês ${esc(row.month)}</span><b>${esc(row.message)} · Necessidade ${fmt(row.quantity)} ${esc(item.unit || 'UN')}</b></div>`).join('') || '<p class="empty">Sem consumo mensal no plano anual para este pino/modelo.</p>'}</div></div><div class="detail-footer"><span>${esc(item.family || '—')} · ${esc(item.obtentionType || '—')}</span><button class="secondary-btn" id="close-pin-plan-detail-bottom">Fechar detalhe</button></div></section>`;
+  document.body.appendChild(overlay);
+  const close = () => overlay.remove(); $('#close-pin-plan-detail').onclick = close; $('#close-pin-plan-detail-bottom').onclick = close; overlay.onclick = event => { if (event.target === overlay) close(); };
 }
 
 function followUpRows(items) {
@@ -974,7 +1018,7 @@ function ordersView() {
   const overdue = base.filter(item => risk(item)[0] !== 'Regular' && Object.values(item.orders || {}).every(value => n(value) === 0));
   const open = base.filter(item => Object.values(item.orders || {}).some(value => n(value) > 0));
   const availableDemandMonths = (DATA.demandMonths?.length ? DATA.demandMonths : [...new Set(base.flatMap(item => Object.keys(item.demands || {})))]).filter(month => base.some(item => n(item.demands?.[month]) > 0));
-  const chosen = demandMonth === 'all' ? (availableDemandMonths[0] || '') : demandMonth;
+  const chosen = demandMonth !== 'all' && availableDemandMonths.includes(demandMonth) ? demandMonth : (availableDemandMonths[0] || '');
   const monthItems = chosen ? ordersItemsForMonth(base, chosen) : [];
   return `${filterBar()}<div class="view-title"><h2>Pedidos e demanda</h2><p>Pedidos, demanda mensal e saldo projetado por material.</p></div><div class="toolbar"><label class="filter-label">Mês da demanda:</label><select class="select" id="demand-month"><option value="all">Todos os meses</option>${availableDemandMonths.map(month => `<option value="${esc(month)}" ${demandMonth === month ? 'selected' : ''}>${esc(month.replace('DEM ', ''))}</option>`).join('')}</select><input class="input" id="orders-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="orders-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div class="summary-strip"><div class="summary-box"><b>${fmt(DATA.openRequests)}</b><span>Solicitações em obtenção</span></div><div class="summary-box"><b>${fmt(open.length)}</b><span>Itens com pedido PED</span></div><div class="summary-box"><b class="danger">${fmt(overdue.length)}</b><span>Itens sem pedido</span></div></div><div class="dashboard-grid">${demandPanel(base)}${orderPanel(base)}</div><div class="panel"><div class="panel-header"><h3>${chosen ? `Necessidade para ${esc(chosen)}` : 'Selecione um mês'}</h3><span>Demanda × estoque</span></div><div id="orders-table">${chosen ? table(monthItems, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>'}</div></div>`;
 }
@@ -1415,7 +1459,7 @@ function pinsNiguriView() {
   const attention = rows.filter(item => item.status === 'Em atenção').length;
   const firstWeek = rows.filter(item => item.firstShortage).sort((a,b) => a.firstShortage.key.localeCompare(b.firstShortage.key))[0]?.firstShortage?.label || '—';
   const weekHeaders = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} máquinas planejadas">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
-  const rowHtml = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit || 'UN')}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
+  const rowHtml = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code niguri-pin-code" data-code="${esc(item.code)}" data-pin-model="${esc(model)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit || 'UN')}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
   return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · linha do tempo</span><h2>NIGURI dos Pinos</h2><p>Saldo projetado por semana usando o modelo da coluna C da aba planoAnual, o mês da coluna D, a estrutura dos pinos, o estoque e a Obtenção.</p></div><div class="date-pill">Fonte: planoAnual · coluna C + coluna D</div></div><div class="panel pins-niguri-controls"><label>Modelo analisado<select class="select" id="pins-niguri-model"><option>Todos os modelos</option>${PINS.models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="pins-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="pins-niguri-status"><option value="all">Todos</option><option value="Crítico">Com falta prevista</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Leitura da projeção:</strong> cada registro do planoAnual é contado pelo produto/modelo na coluna C e agrupado pelo mês da coluna D. O total mensal é distribuído pelas semanas do mês; pedidos da Obtenção são somados no mês previsto de chegada.</div><div class="pins-result-panel panel"><div class="pins-result-head"><div><span class="eyebrow">Necessidade consolidada até 31/12</span><h3>${esc(model)}</h3><p>${fmt(rows.length)} pinos utilizados · primeira falta identificada: ${esc(firstWeek)}</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalNeed)}</strong><small>Críticos: ${fmt(critical)} · Atenção: ${fmt(attention)}</small></div></div></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Saldo acumulado por semana</h3><span>Verde: disponível · amarelo: próximo do limite · vermelho: falta prevista</span></div><span class="pins-legend"><i></i>${fmt(timeline.slots.length)} semanas projetadas</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Estoque inicial</th><th>Necessidade até dez.</th><th>Primeira falta</th>${weekHeaders}</tr></thead><tbody>${rowHtml || '<tr><td colspan="8" class="empty">Nenhum pino corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
 }
 
@@ -2023,10 +2067,12 @@ function bindView() {
           if (fresh) table.innerHTML = fresh.innerHTML;
         }
         bindMaterialButtons();
+        bindNiguriPinButtons();
       };
       if (search) search.oninput = rerenderNiguri;
       if (status) status.onchange = rerenderNiguri;
       bindMaterialButtons();
+      bindNiguriPinButtons();
       return;
     }
     const carsInput = $('#pins-cars');
@@ -2096,7 +2142,7 @@ function bindView() {
       const selectedRisk = $('#orders-risk').value;
       const orderBase = DATA.items || [];
       const availableDemandMonths = (DATA.demandMonths?.length ? DATA.demandMonths : [...new Set(orderBase.flatMap(item => Object.keys(item.demands || {})))]).filter(month => orderBase.some(item => n(item.demands?.[month]) > 0));
-      const chosen = demandMonth === 'all' ? (availableDemandMonths[0] || '') : demandMonth;
+      const chosen = demandMonth !== 'all' && availableDemandMonths.includes(demandMonth) ? demandMonth : (availableDemandMonths[0] || '');
       const items = chosen ? ordersItemsForMonth(orderBase, chosen).filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, item.need)[0] === selectedRisk)) : [];
       if ($('#orders-table')) {
         $('#orders-table').innerHTML = chosen ? table(items, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>';

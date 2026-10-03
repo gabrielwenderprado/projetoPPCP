@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.09.xlsm",
   "sourceSheet": "Programacao",
-  "generatedAt": "2026-10-03",
+  "generatedAt": "2026-09-28",
   "columns": "AA:AF",
   "models": [
     {
@@ -1654,7 +1654,7 @@
     {
       "name": "10L",
       "column": 28,
-      "total": 1176.034,
+      "total": 1197.784,
       "days": [
         {
           "row": 8,
@@ -1677,12 +1677,20 @@
           "quantity": 2
         },
         {
+          "row": 101,
+          "quantity": 2
+        },
+        {
           "row": 122,
           "quantity": 1
         },
         {
           "row": 172,
           "quantity": 2
+        },
+        {
+          "row": 252,
+          "quantity": 8
         },
         {
           "row": 265,
@@ -1711,6 +1719,18 @@
         {
           "row": 279,
           "quantity": 16
+        },
+        {
+          "row": 366,
+          "quantity": 2
+        },
+        {
+          "row": 367,
+          "quantity": 2
+        },
+        {
+          "row": 371,
+          "quantity": 1
         },
         {
           "row": 388,
@@ -1961,6 +1981,10 @@
           "quantity": 12
         },
         {
+          "row": 882,
+          "quantity": 1
+        },
+        {
           "row": 883,
           "quantity": 2
         },
@@ -1993,8 +2017,16 @@
           "quantity": 1.2
         },
         {
+          "row": 906,
+          "quantity": 2
+        },
+        {
           "row": 907,
           "quantity": 1
+        },
+        {
+          "row": 911,
+          "quantity": 2
         },
         {
           "row": 934,
@@ -2002,7 +2034,7 @@
         },
         {
           "row": 938,
-          "quantity": 1.25
+          "quantity": 1
         },
         {
           "row": 951,
@@ -2353,6 +2385,10 @@
           "quantity": 1
         },
         {
+          "row": 1970,
+          "quantity": 1
+        },
+        {
           "row": 2000,
           "quantity": 4
         },
@@ -2478,6 +2514,10 @@
         },
         {
           "row": 3088,
+          "quantity": 1
+        },
+        {
+          "row": 3091,
           "quantity": 1
         },
         {
