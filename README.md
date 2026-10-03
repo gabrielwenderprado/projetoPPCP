@@ -82,3 +82,19 @@ Ao clicar em um código de material, o dashboard mostra estoque, segurança, con
 ## Observação sobre segurança
 
 O login desta cópia é uma camada simples no navegador. Os utilizadores e senhas ficam dentro de `assets/app.js`. Isso é útil para controlar o acesso informal da equipa, mas não equivale a uma autenticação segura de servidor. Não utilize esta proteção como única barreira para informação altamente confidencial.
+
+## Controle de ENs / PVs
+
+A área **Controle de ENs / PVs** usa as linhas já existentes em `data/plano-anual.json` e não exige novas colunas no Excel para começar.
+
+Fluxo: anexe o PDF do PV e execute a leitura. O sistema identifica todas as ENs no documento e vincula automaticamente cada uma que existir no plano anual. Se nenhuma EN do PDF estiver no plano, exibe **Nenhuma EN encontrada — verificar plano**; se uma EN ainda não tiver vínculo, a tabela mostra **PV ainda não gerado**. O sistema também identifica o veículo/chassi, o produto e o PV. O modelo do produto é tratado separadamente do chassi: `CESTO AÉREO SKYCITY 10 L` vira `10L`. O texto vermelho dentro da seção de produto é comparado com a estrutura do modelo identificado.
+
+Divergências de modelo, EN ausente no PDF, modelo não identificado ou item crítico não encontrado na estrutura impedem a conclusão. A primeira página do PDF é convertida em uma miniatura real e exibida nos detalhes, junto com as informações extraídas. O checklist e os campos PV/SC/responsável ficam salvos no `localStorage` do navegador. PDFs escaneados sem camada de texto entram em **Confirmação necessária** e não podem ser liberados automaticamente.
+
+Ao clicar em uma EN, o sistema abre a janela de **Itens críticos da estrutura**. Ela calcula os componentes cujo estoque é menor que a necessidade do modelo, mostra pedidos por mês e quantidade, estoque, necessidade e saldo, e permite baixar um arquivo Excel com código, descrição, pedidos e estoque.
+
+A leitura usa PDF.js carregado pelo navegador. O arquivo `scripts/testes_en_pv.js` possui a regressão automatizada da funcionalidade:
+
+```bash
+node scripts/testes_en_pv.js
+```

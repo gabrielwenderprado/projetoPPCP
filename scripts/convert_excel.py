@@ -135,6 +135,39 @@ for index, header_value in enumerate(headers):
         previous = next((label for item_index, label in reversed(demand_cols) if item_index < index), '')
         sc_cols.append((index, previous))
 
+obtention_by_code = {}
+ws_obtention = wb['Obtencao']
+obtention_header = next(rows(ws_obtention, 1, 60), [])
+obtention_headers = [text(value) for value in obtention_header]
+def obtention_idx(*names):
+    wanted = {normalize(name) for name in names}
+    return next((index for index, value in enumerate(obtention_headers) if normalize(value) in wanted), -1)
+obtention_code_i = obtention_idx('Código Item')
+obtention_qty_i = obtention_idx('Quantidade', 'Qtde Solicitada')
+obtention_status_i = obtention_idx('Status', 'Situação Item')
+obtention_date_i = obtention_idx('Dt. Entrega (PC. Item)', 'Dt. Necessidade')
+obtention_request_i = obtention_idx('Nro. Solicitação')
+obtention_order_i = obtention_idx('Pedido Compra')
+for row in rows(ws_obtention, min(ws_obtention.max_row, 10000), 60):
+    code = text(row[obtention_code_i]) if 0 <= obtention_code_i < len(row) else ''
+    if not code or normalize(code) == 'codigo item':
+        continue
+    status = text(row[obtention_status_i]) if 0 <= obtention_status_i < len(row) else ''
+    if normalize(status) in {'fechado', 'encerrado', 'cancelado'}:
+        continue
+    planned = row[obtention_date_i] if 0 <= obtention_date_i < len(row) else None
+    planned_date = planned.strftime('%Y-%m-%d') if isinstance(planned, (datetime, date)) else text(planned)
+    quantity = compact_number(num(row[obtention_qty_i])) if 0 <= obtention_qty_i < len(row) else 0
+    if quantity <= 0 or not planned_date:
+        continue
+    obtention_by_code.setdefault(code, []).append({
+        'request': text(row[obtention_request_i]) if 0 <= obtention_request_i < len(row) else '',
+        'quantity': quantity,
+        'plannedDate': planned_date,
+        'status': status,
+        'purchaseOrder': text(row[obtention_order_i]) if 0 <= obtention_order_i < len(row) else '',
+    })
+
 items = []
 seen = set()
 analysts = set()
@@ -174,6 +207,7 @@ for row in rows(ws, min(ws.max_row, 30000), 60):
         'orders': orders,
         'demands': demands,
         'colocarSC': colocar_sc,
+        'obtention': obtention_by_code.get(code, []),
     }
     if code not in seen:
         items.append(item)
@@ -221,7 +255,7 @@ for name in MODEL_SHEETS:
 open_requests = 0
 open_quantity = 0
 ws = wb['Obtencao']
-for row in rows(ws, min(ws.max_row, 10000), 20):
+for row in rows(ws, min(ws.max_row, 10000), 60):
     if len(row) > 5 and text(row[0]) and text(row[0]) != 'Nro. Solicitação' and normalize(row[5]) not in {'fechado', 'encerrado', 'cancelado'}:
         open_requests += 1
         open_quantity += num(row[10]) if len(row) > 10 else 0

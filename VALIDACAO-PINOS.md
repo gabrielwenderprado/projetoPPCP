@@ -34,7 +34,34 @@ O conversor identificou 6 modelos e consolidou 73 códigos de pinos em `data/pin
 | `README.md` | Documentação da área e dos arquivos |
 
 ## Resultado dos testes
-
 A compilação dos scripts Python passou. A verificação de sintaxe do JavaScript passou. Os testes dedicados passaram com **42 verificações aprovadas e 0 falhas**. A bateria geral de regressão passou com **98 verificações aprovadas e 0 falhas**. O teste específico de pedidos em excesso também passou, com 4 casos e soma de 7.300 unidades de excesso.
 
 O servidor local respondeu com HTTP 200 para `index.html`, `assets/app.js`, `assets/styles.css`, `data/pinos.json` e `data/explosao.json`. O HTML servido contém o acesso `Pinos por modelo` e o snapshot contém os modelos extraídos.
+
+## NIGURI dos Pinos
+
+A área `Pinos por modelo` passou a ter uma subaba **NIGURI dos pinos**. Ela calcula, para todos os pinos utilizados pelo modelo selecionado:
+
+- estoque inicial pelo código real do item;
+- necessidade unitária pela estrutura da aba `Pinos`;
+- programação até dezembro a partir do `plano-mes.json`;
+- recebimentos previstos por código, quantidade e data da aba `Obtencao`;
+- saldo acumulado por semana;
+- necessidade consolidada até 31/12;
+- primeira semana com falta prevista;
+- filtros por modelo, código/descrição e situação.
+
+Quando a planilha tem data exata de entrega, ela é usada no mês correspondente. Caso o snapshot antigo ainda não tenha o campo detalhado, o sistema mantém compatibilidade usando os pedidos mensais já existentes.
+
+O teste `scripts/testes_pinos_niguri.py` validou **748 cenários** reais de itens, modelos e projeções. O teste Chromium validou login, abertura da tela Pinos, alternância entre as subabas, seleção de modelo, pesquisa, filtro de situação e ausência de erros de console.
+
+## Correção da demanda anual e contraste
+
+O NIGURI agora usa o snapshot `data/plano-anual.json`, gerado pela aba `planoAnual` da planilha. A origem é explícita:
+
+- **coluna C:** Produto/modelo;
+- **coluna D:** MÊS/data planejada.
+
+Os produtos comerciais são relacionados aos modelos da aba Pinos (por exemplo, `SKYCITY 10 S` → `10S`, `SKYCITY 13 LDI` → `13LDI`). O saldo semanal é calculado como estoque inicial menos consumo acumulado mais recebimentos previstos. Assim, estoque zero com demanda passa a ficar vermelho a partir da primeira semana em que houver consumo.
+
+Também foram ajustadas as cores do tema escuro, com texto claro e contraste alto nas células verdes, amarelas e vermelhas.

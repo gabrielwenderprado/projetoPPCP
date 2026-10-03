@@ -71,7 +71,7 @@ check(36, "conversor importa Path", "from pathlib import Path" in converter)
 check(37, "conversor escreve no JSON do projeto", "OUTPUT = PROJECT_ROOT / 'data' / 'explosao.json'" in converter)
 check(38, "conversor escreve no histórico", "HISTORY_OUTPUT" in converter and "stockValue" in converter)
 check(39, "JavaScript passa pela verificação de sintaxe", run(["node", "--check", "assets/app.js"]))
-check(40, "conversor Python passa pela compilação", run([sys.executable, "-m", "py_compile", "scripts/convert_excel.py"]))
+check(40, "conversor Python passa pela compilação", run([sys.executable, "-B", "-c", "compile(open('scripts/convert_excel.py', encoding='utf-8').read(), 'scripts/convert_excel.py', 'exec')"]))
 
 try:
     data = json.loads((ROOT / "data/explosao.json").read_text(encoding="utf-8"))

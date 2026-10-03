@@ -5,6 +5,15 @@ let analyst = 'all';
 let family = 'all';
 let obtentionType = 'all';
 let stockFilter = 'all';
+let selectedEN = '';
+let enPvQuery = '';
+let enPvFocusENs = new Set();
+let EN_PV_REVIEWS = {};
+let EN_PV_PREVIEWS = {};
+let EN_PV_IMPORT_RESULT = null;
+const EN_PV_STORAGE_KEY = 'pcm-en-pv-reviews-v1';
+const EN_PV_PREVIEWS_STORAGE_KEY = 'pcm-en-pv-previews-v1';
+let pdfJsPromise = null;
 const THEME_STORAGE_KEY = 'pcm-dashboard-theme';
 
 // Aplica o tema escolhido e alterna automaticamente a imagem do cabeçalho via CSS.
@@ -329,15 +338,7 @@ function addToPurchaseProcess(item, kind = 'explosion', options = {}) {
   const requestedQuantity = Number(options.quantity);
   const quantity = Number.isFinite(requestedQuantity) ? Math.max(0, requestedQuantity) : purchaseQuantity(item, kind);
   if (!quantity || isInPurchaseProcess(item, kind)) return false;
-  PURCHASE_PROCESS.push({
-    key: purchaseKey(item, kind),
-    code: String(item.code ?? ''),
-    description: String(item.description ?? ''),
-    unit: String(item.unit || 'UN'),
-    quantity,
-    source: options.source || (kind === 'consumable' ? 'Consumível' : kind === 'followup' ? 'Follow-up' : 'Explosão'),
-    overdueOrders: Array.isArray(options.overdueOrders) ? options.overdueOrders.map(order => ({ month: String(order.month || ''), quantity: n(order.quantity) })) : []
-  });
+  PURCHASE_PROCESS.push({ key: purchaseKey(item, kind), code: String(item.code ?? ''), description: String(item.description ?? ''), quantity, source: kind === 'consumable' ? 'Consumível' : 'Explosão' });
   savePurchaseProcess();
   if (options.refresh !== false) render();
   return true;
@@ -362,29 +363,44 @@ function loadPurchaseProcess() {
   }
 }
 
-function saveCalferTransactions() {
-  try { localStorage.setItem(CALFER_STORAGE_KEY, JSON.stringify(CALFER.transactions || [])); }
-  catch (error) { console.warn('Não foi possível guardar os movimentos Calfer.', error); }
+function loadENPVReviews() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(EN_PV_STORAGE_KEY) || '{}');
+    EN_PV_REVIEWS = saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
+    Object.keys(EN_PV_REVIEWS).forEach(en => {
+      if (EN_PV_REVIEWS[en]?.analysis) EN_PV_REVIEWS[en].analysis = compactPVAnalysis(EN_PV_REVIEWS[en].analysis);
+    });
+    try { localStorage.setItem(EN_PV_STORAGE_KEY, JSON.stringify(EN_PV_REVIEWS)); } catch (error) { /* dados ainda podem ser usados nesta sessão */ }
+  } catch (error) {
+    EN_PV_REVIEWS = {};
+  }
 }
 
-function loadCalferTransactions() {
+function saveENPVReviews() {
+  try { localStorage.setItem(EN_PV_STORAGE_KEY, JSON.stringify(EN_PV_REVIEWS)); } catch (error) { console.warn('Não foi possível guardar as análises EN/PV.', error); }
+}
+
+function loadENPVPreviews() {
   try {
-    const saved = JSON.parse(localStorage.getItem(CALFER_STORAGE_KEY) || '[]');
-    CALFER.transactions = Array.isArray(saved) ? saved.filter(entry => entry && entry.direction && entry.code) : [];
-  } catch (error) { CALFER.transactions = []; }
+    const saved = JSON.parse(localStorage.getItem(EN_PV_PREVIEWS_STORAGE_KEY) || '{}');
+    EN_PV_PREVIEWS = saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
+  } catch (error) { EN_PV_PREVIEWS = {}; }
+}
+
+function saveENPVPreviews() {
+  try { localStorage.setItem(EN_PV_PREVIEWS_STORAGE_KEY, JSON.stringify(EN_PV_PREVIEWS)); } catch (error) { console.warn('Não foi possível guardar as miniaturas dos PVs.', error); }
+}
+function compactPVAnalysis(analysis) {
+  if (!analysis || typeof analysis !== 'object') return analysis;
+  return { fileName: analysis.fileName || '', pageCount: analysis.pageCount || 0, productLine: analysis.productLine || '', chassisLine: analysis.chassisLine || '', ens: Array.isArray(analysis.ens) ? analysis.ens : [], pv: analysis.pv || '', model: analysis.model || '', criticalItems: Array.isArray(analysis.criticalItems) ? analysis.criticalItems : [], previewKey: analysis.previewKey || '', analysisMode: analysis.analysisMode || '', status: analysis.status || 'manual', redLineCount: analysis.redLineCount || 0, analyzedAt: analysis.analyzedAt || '' };
 }
 
 // Gera um ficheiro .xls simples que abre diretamente no Microsoft Excel.
-function purchaseOverdueText(entry) {
-  const orders = Array.isArray(entry.overdueOrders) ? entry.overdueOrders : [];
-  return orders.map(order => `${String(order.month || '').replace(/^PED\s*/i, '')}: ${fmt(order.quantity)} ${entry.unit || 'UN'}`).join(' | ') || '—';
-}
-
 function exportPurchaseProcess() {
   if (!PURCHASE_PROCESS.length) return;
-  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td>${esc(entry.description)}</td><td>${esc(purchaseOverdueText(entry))}</td><td>${fmt(entry.quantity)}</td><td>${esc(entry.source || '—')}</td></tr>`).join('');
-  const documentContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body><table><thead><tr><th>Código</th><th>Descrição</th><th>Pedidos em atraso</th><th>Quantidade acompanhada</th><th>Origem</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
-  const blob = new Blob([`\ufeff${documentContent}`], { type: 'application/vnd.ms-excel;charset=utf-8' });
+  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td>${esc(entry.description)}</td><td>${fmt(entry.quantity)}</td></tr>`).join('');
+  const documentContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body><table><thead><tr><th>Código</th><th>Descrição</th><th>Quantidade de compra</th></tr></thead><tbody>${rows}</tbody></table></body></html>`;
+  const blob = new Blob([`\\ufeff${documentContent}`], { type: 'application/vnd.ms-excel;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
@@ -394,6 +410,7 @@ function exportPurchaseProcess() {
   link.remove();
   URL.revokeObjectURL(url);
 }
+
 function purchaseAction(item, kind = 'explosion', demand, demandLabel = '') {
   const quantity = purchaseQuantity(item, kind, demand, demandLabel);
   const added = isInPurchaseProcess(item, kind);
@@ -625,13 +642,14 @@ function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabe
       ? `<td>${fmt(item.need || 0)} ${esc(item.unit)}</td><td class="${n(item.balance) < 0 ? 'danger' : ''}">${fmt(item.balance || 0)}</td>`
       : '';
     const stockDemand = includeDemand ? `<td>${fmt(totalDemand)} ${esc(item.unit)}</td>` : '';
+    const obtainingType = includeDemand ? `<td>${esc(item.obtentionType || '—')}</td>` : '';
     return `<tr>
       <td><button class="material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td>
       <td>${esc(item.analyst || '—')}</td>
       <td>${fmt(item.stock)} ${esc(item.unit)}</td>
       <td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td>
       <td>${fmt(item.safety)}</td>
-      <td>${esc(item.obtentionType || '—')}</td>
+      ${obtainingType}
       <td class="movement-date">${esc(movementDate(item.lastMovement))}</td>
       ${stockDemand}${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : undefined, showDemand ? demandLabel : '')}</td>
     </tr>`;
@@ -639,14 +657,14 @@ function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabe
 }
 
 function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel = '', includeDemand = false) {
-  const columns = (showDemand ? 13 : 11) + (includeDemand ? 1 : 0);
+  const columns = 9 + (showDemand ? 2 : 0) + (includeDemand ? 2 : 0);
   const id = `progressive-table-${++TABLE_SEQUENCE}`;
   const initialLimit = Math.min(Math.max(Number(limit) || TABLE_CHUNK_SIZE, 50), TABLE_CHUNK_SIZE);
   TABLE_DATASETS.set(id, { items, showDemand, demandLabel, includeDemand, cursor: initialLimit });
   const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel, includeDemand);
   const more = items.length > initialLimit ? `<div class="table-load-more"><span>Mostrando ${fmt(initialLimit)} de ${fmt(items.length)} itens</span><button class="secondary-btn table-more-btn" data-table-id="${id}">Carregar mais</button></div>` : `<div class="table-load-more"><span>${fmt(items.length)} itens carregados</span></div>`;
   return `<div class="progressive-table" data-progressive-table="${id}"><div class="table-wrap"><table class="data-table"><thead><tr>
-    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th>${includeDemand ? '<th>tipo de obtenção</th>' : ''}<th>ultima movimentação</th><th>demanda</th>
+    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th>${includeDemand ? '<th>tipo de obtenção</th>' : ''}<th>ultima movimentação</th>${includeDemand ? '<th>demanda</th>' : ''}
     ${showDemand ? '<th>Demanda</th><th>Saldo</th>' : ''}<th>Pedidos</th><th>Situação</th><th>Processo de compra</th>
   </tr></thead><tbody>${rows || `<tr><td colspan="${columns}" class="empty">Nenhum item encontrado.</td></tr>`}</tbody></table></div>${more}</div>`;
 }
@@ -706,9 +724,9 @@ function orderGraphValue(total) {
   return total >= 100000 ? total / 10 : total;
 }
 
-function orderPanel() {
+function orderPanel(panelBase = scopedItems()) {
   const months = DATA.months || [];
-  const base = scopedItems();
+  const base = panelBase;
   const totals = months.map(month => base.reduce((sum, item) => sum + n(item.orders?.[month]), 0));
   const displayed = totals.map(orderGraphValue);
   const max = Math.max(...displayed, 1);
@@ -754,13 +772,12 @@ function bindPurchaseButtons() {
       ? (CONSUMABLES.items || []).find(entry => String(entry.code) === String(button.dataset.purchaseCode))
       : itemByCode(button.dataset.purchaseCode);
     if (!item) return;
-    const overdue = kind === 'followup' ? overdueOrders(item) : [];
-    const quantity = kind === 'followup' ? overdue.reduce((sum, order) => sum + n(order.quantity), 0) : undefined;
     // Não reconstruir a página: isso preserva filtros, pesquisa, rolagem e posição atual.
-    const added = addToPurchaseProcess(item, kind, { refresh: false, quantity, source: kind === 'followup' ? 'Follow-up' : undefined, overdueOrders: overdue });
+    const added = addToPurchaseProcess(item, kind, { refresh: false });
     if (added) markPurchaseButtonsForItem(item, kind);
   });
 }
+
 // Abre o detalhe completo do material selecionado pelo usuário.
 function openMaterialDetail(code) {
   const item = itemByCode(code);
@@ -784,18 +801,14 @@ function openMaterialDetail(code) {
 }
 
 function followUpRows(items) {
-  return items.map(item => {
-    const overdueTotal = item.overdueOrders.reduce((sum, order) => sum + n(order.quantity), 0);
-    const alreadyAdded = isInPurchaseProcess(item, 'followup');
-    const title = alreadyAdded ? 'Item já está no Processo de compra' : `Levar ${fmt(overdueTotal)} ${item.unit || 'UN'} ao Processo de compra`;
-    return `<tr><td><button class="material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${esc(item.analyst || '—')}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td>${item.overdueOrders.map(order => `<span class="overdue-tag">${esc(order.month.replace('PED ', ''))}: ${fmt(order.quantity)} ${esc(item.unit)}</span>`).join(' ')}</td><td><span class="status red">Follow-up necessário</span></td><td><button class="purchase-add-btn${alreadyAdded ? ' added' : ''}" data-purchase-key="${esc(purchaseKey(item, 'followup'))}" data-purchase-kind="followup" data-purchase-code="${esc(item.code)}" title="${esc(title)}" aria-label="${esc(title)}" ${alreadyAdded ? 'disabled' : ''}>${alreadyAdded ? '✓' : '+'}</button></td></tr>`;
-  }).join('');
+  return items.map(item => `<tr><td><button class="material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${esc(item.analyst || '—')}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td>${item.overdueOrders.map(order => `<span class="overdue-tag">${esc(order.month.replace('PED ', ''))}: ${fmt(order.quantity)} ${esc(item.unit)}</span>`).join(' ')}</td><td><span class="status red">Follow-up necessário</span></td></tr>`).join('');
 }
+
 // Renderiza a tela com pedidos de meses anteriores que precisam de acompanhamento.
 function followUpView() {
   const items = followUpItems();
   const rows = followUpRows(items);
-  return `${filterBar()}<div class="view-title"><div><h2>Pedidos atrasados para acompanhamento</h2><p>Pedidos abertos em meses anteriores ao mês atual. Confirme o status com o time de compras.</p></div><button class="secondary-btn" id="back-to-overview">← Voltar à visão geral</button></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(items.length)}</b><span>Itens para acompanhamento</span></div><div class="summary-box"><b>${esc(currentMonthDate().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }))}</b><span>Mês de referência</span></div></div><div class="panel"><div class="panel-header"><h3>Lista de pedidos atrasados</h3><span>${fmt(items.length)} itens · + adiciona ao Processo de compra</span></div><div class="panel-body"><div class="toolbar"><input class="input" id="follow-up-search" placeholder="Pesquisar código, descrição ou analista" /></div><div id="follow-up-table"><div class="table-wrap"><table class="data-table"><thead><tr><th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Última movimentação</th><th>Pedido em atraso</th><th>Situação</th><th>Ação</th></tr></thead><tbody>${rows || '<tr><td colspan="7" class="empty">Nenhum pedido de mês anterior encontrado.</td></tr>'}</tbody></table></div></div></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Pedidos atrasados para acompanhamento</h2><p>Pedidos abertos em meses anteriores ao mês atual. Confirme o status com o time de compras.</p></div><button class="secondary-btn" id="back-to-overview">← Voltar à visão geral</button></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(items.length)}</b><span>Itens para acompanhamento</span></div><div class="summary-box"><b>${esc(currentMonthDate().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }))}</b><span>Mês de referência</span></div></div><div class="panel"><div class="panel-header"><h3>Lista de pedidos atrasados</h3><span>${fmt(items.length)} itens</span></div><div class="panel-body"><div class="toolbar"><input class="input" id="follow-up-search" placeholder="Pesquisar código, descrição ou analista" /></div><div id="follow-up-table"><div class="table-wrap"><table class="data-table"><thead><tr><th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Última movimentação</th><th>Pedido em atraso</th><th>Situação</th></tr></thead><tbody>${rows || '<tr><td colspan="7" class="empty">Nenhum pedido de mês anterior encontrado.</td></tr>'}</tbody></table></div></div></div></div>`;
 }
 
 // Formata o valor máximo do eixo vertical sem sobrecarregar o gráfico.
@@ -899,6 +912,9 @@ function stockView() {
 function demandTotals(month, base) {
   return base.reduce((sum, item) => sum + n(item.demands?.[month]), 0);
 }
+function ordersItemsForMonth(base, month) {
+  return (base || []).map(item => ({ ...item, need: n(item.demands?.[month]), balance: n(item.stock) - n(item.demands?.[month]) })).filter(item => n(item.need) > 0).sort((a, b) => a.balance - b.balance);
+}
 
 function demandPanel(base) {
   const months = DATA.demandMonths || [];
@@ -954,12 +970,13 @@ function excessView() {
 }
 
 function ordersView() {
-  const base = scopedItems();
+  const base = DATA.items || [];
   const overdue = base.filter(item => risk(item)[0] !== 'Regular' && Object.values(item.orders || {}).every(value => n(value) === 0));
   const open = base.filter(item => Object.values(item.orders || {}).some(value => n(value) > 0));
-  const chosen = demandMonth === 'all' ? (DATA.demandMonths?.[0] || '') : demandMonth;
-  const monthItems = chosen ? base.map(item => ({ ...item, need: n(item.demands?.[chosen]), balance: n(item.stock) - n(item.demands?.[chosen]) })).filter(item => n(item.need) > 0).sort((a, b) => a.balance - b.balance) : [];
-  return `${filterBar()}<div class="view-title"><h2></h2><p></p></div><div class="toolbar"><label class="filter-label">Mês da demanda:</label><select class="select" id="demand-month"><option value="all">Todos os meses</option>${(DATA.demandMonths || []).map(month => `<option value="${esc(month)}" ${demandMonth === month ? 'selected' : ''}>${esc(month.replace('DEM ', ''))}</option>`).join('')}</select><input class="input" id="orders-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="orders-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div class="summary-strip"><div class="summary-box"><b>${fmt(DATA.openRequests)}</b><span>Solicitações em obtenção</span></div><div class="summary-box"><b>${fmt(open.length)}</b><span>Itens com pedido PED</span></div><div class="summary-box"><b class="danger">${fmt(overdue.length)}</b><span>Itens sem pedido</span></div></div><div class="dashboard-grid">${demandPanel(base)}${orderPanel()}</div><div class="panel"><div class="panel-header"><h3>${chosen ? `Necessidade para ${esc(chosen)}` : 'Selecione um mês'}</h3><span>Demanda × estoque</span></div><div id="orders-table">${chosen ? table(monthItems, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>'}</div></div>`;
+  const availableDemandMonths = (DATA.demandMonths?.length ? DATA.demandMonths : [...new Set(base.flatMap(item => Object.keys(item.demands || {})))]).filter(month => base.some(item => n(item.demands?.[month]) > 0));
+  const chosen = demandMonth === 'all' ? (availableDemandMonths[0] || '') : demandMonth;
+  const monthItems = chosen ? ordersItemsForMonth(base, chosen) : [];
+  return `${filterBar()}<div class="view-title"><h2>Pedidos e demanda</h2><p>Pedidos, demanda mensal e saldo projetado por material.</p></div><div class="toolbar"><label class="filter-label">Mês da demanda:</label><select class="select" id="demand-month"><option value="all">Todos os meses</option>${availableDemandMonths.map(month => `<option value="${esc(month)}" ${demandMonth === month ? 'selected' : ''}>${esc(month.replace('DEM ', ''))}</option>`).join('')}</select><input class="input" id="orders-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="orders-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div class="summary-strip"><div class="summary-box"><b>${fmt(DATA.openRequests)}</b><span>Solicitações em obtenção</span></div><div class="summary-box"><b>${fmt(open.length)}</b><span>Itens com pedido PED</span></div><div class="summary-box"><b class="danger">${fmt(overdue.length)}</b><span>Itens sem pedido</span></div></div><div class="dashboard-grid">${demandPanel(base)}${orderPanel(base)}</div><div class="panel"><div class="panel-header"><h3>${chosen ? `Necessidade para ${esc(chosen)}` : 'Selecione um mês'}</h3><span>Demanda × estoque</span></div><div id="orders-table">${chosen ? table(monthItems, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>'}</div></div>`;
 }
 
 function modelsView() {
@@ -1170,8 +1187,8 @@ function consumablesView() {
 
 // Mostra os itens escolhidos e permite exportar o conjunto para Excel.
 function renderPurchaseProcessPage() {
-  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td><div class="desc" title="${esc(entry.description)}">${esc(entry.description)}</div></td><td>${esc(purchaseOverdueText(entry))}</td><td>${fmt(entry.quantity)}</td><td>${esc(entry.source || '—')}</td><td><button class="remove-purchase-btn" data-purchase-remove="${esc(entry.key)}" title="Remover do Processo de compra">Remover</button></td></tr>`).join('');
-  return `<div class="view-title"><div><h2>Processo de compra</h2><p>Itens selecionados para compra, reunidos numa única lista para exportação.</p></div><div class="toolbar purchase-actions"><button class="primary-btn" id="export-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Exportar para Excel</button><button class="secondary-btn" id="clear-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Limpar lista</button></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.length)}</b><span>Itens selecionados</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.reduce((sum, entry) => sum + n(entry.quantity), 0))}</b><span>Quantidade total de compra</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.filter(entry => entry.source === 'Consumível').length)}</b><span>Consumíveis selecionados</span></div></div><div class="panel"><div class="panel-header"><h3>Lista para exportação</h3><span>Dados incluídos: código, descrição, pedidos em atraso, quantidade e origem</span></div><div class="table-wrap"><table class="data-table purchase-process-table"><thead><tr><th>Código</th><th>Descrição</th><th>Pedidos em atraso</th><th>Quantidade acompanhada</th><th>Origem</th><th>Ação</th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="empty">Nenhum item foi adicionado. Use o sinal + nas tabelas.</td></tr>'}</tbody></table></div></div>`;
+  const rows = PURCHASE_PROCESS.map(entry => `<tr><td>${esc(entry.code)}</td><td><div class="desc" title="${esc(entry.description)}">${esc(entry.description)}</div></td><td>${fmt(entry.quantity)}</td><td>${esc(entry.source)}</td><td><button class="remove-purchase-btn" data-purchase-remove="${esc(entry.key)}" title="Remover do Processo de compra">Remover</button></td></tr>`).join('');
+  return `<div class="view-title"><div><h2>Processo de compra</h2><p>Itens selecionados para compra, reunidos numa única lista para exportação.</p></div><div class="toolbar purchase-actions"><button class="primary-btn" id="export-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Exportar para Excel</button><button class="secondary-btn" id="clear-purchase-process" ${PURCHASE_PROCESS.length ? '' : 'disabled'}>Limpar lista</button></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.length)}</b><span>Itens selecionados</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.reduce((sum, entry) => sum + n(entry.quantity), 0))}</b><span>Quantidade total de compra</span></div><div class="summary-box"><b>${fmt(PURCHASE_PROCESS.filter(entry => entry.source === 'Consumível').length)}</b><span>Consumíveis selecionados</span></div></div><div class="panel"><div class="panel-header"><h3>Lista para exportação</h3><span>Dados incluídos: código, descrição e quantidade</span></div><div class="table-wrap"><table class="data-table purchase-process-table"><thead><tr><th>Código</th><th>Descrição</th><th>Quantidade de compra</th><th>Origem</th><th>Ação</th></tr></thead><tbody>${rows || '<tr><td colspan="5" class="empty">Nenhum item foi adicionado. Use o sinal + nas tabelas.</td></tr>'}</tbody></table></div></div>`;
 }
 
 function setSpecializedLoadMore(kind, total, visible, rerender) {
@@ -1242,7 +1259,173 @@ function renderPinSimulation() {
   if (result) result.innerHTML = `<div class="pins-result-head"><div><span class="eyebrow">Simulação ativa</span><h3>${esc(model)} · ${fmt(cars)} máquina${cars === 1 ? '' : 's'}</h3><p>A necessidade unitária de cada pino foi multiplicada pela quantidade planejada.</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalRequired)}</strong><small>Estoque nos pinos utilizados: ${fmt(totalStock)}</small></div></div><div class="pins-result-summary"><div><b class="danger">${fmt(critical)}</b><span>Críticos</span></div><div><b class="attention-number">${fmt(attention)}</b><span>Em atenção</span></div><div><b class="success-number">${fmt(regular)}</b><span>Regulares</span></div><div><b>${fmt(simulated.length)}</b><span>Pinos utilizados</span></div></div>`;
 }
 
+let pinsSubView = 'simulation';
+
+function pinsNiguriNormalize(value) {
+  return String(value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function pinsNiguriPlanModels(model) {
+  const annual = DATA?.planAnnual?.models || {};
+  if (Object.keys(annual).length) {
+    const selected = model && model !== 'Todos os modelos' ? [model] : (PINS.models || Object.keys(annual));
+    return selected.map(name => ({ modelo: name, quantidades: annual[name] || {} })).filter(entry => Object.values(entry.quantidades).some(value => n(value) > 0));
+  }
+  const all = DATA?.planMonth?.models || [];
+  if (!model || model === 'Todos os modelos') return all;
+  const target = pinsNiguriNormalize(model);
+  const aliases = {
+    '13lddi': ['13'],
+    '13ldi': ['13'],
+    '18lddi': ['18'],
+    'guin16t': ['guindaste16'],
+    'guin25t': ['guindaste25', 'guindate25'],
+    'guin45': ['guindaste45'],
+    'guin25': ['guindaste25', 'guindate25'],
+    '10s': ['10s'],
+    '10l': ['10l']
+  };
+  const candidates = [target, ...(aliases[target] || [])];
+  return all.filter(entry => {
+    const name = pinsNiguriNormalize(entry.modelo);
+    return candidates.some(candidate => name === candidate || name.includes(candidate) || candidate.includes(name));
+  });
+}
+
+function pinsNiguriMonthSlots(month, year) {
+  const first = new Date(year, month - 1, 1);
+  const next = new Date(year, month, 1);
+  const slots = [];
+  const seen = new Set();
+  for (let day = new Date(first); day < next; day.setDate(day.getDate() + 1)) {
+    const monday = new Date(day);
+    const weekday = monday.getDay() || 7;
+    monday.setDate(monday.getDate() - weekday + 1);
+    const key = `${monday.getFullYear()}-${monday.getMonth()}-${monday.getDate()}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      const isoWeek = String(getWeekNumber(monday)).padStart(2, '0');
+      slots.push({ key, label: `S${isoWeek}`, month: String(month).padStart(2, '0'), year: String(year), quantity: 0, consumption: 0, receipts: 0 });
+    }
+  }
+  return slots;
+}
+
+function getWeekNumber(date) {
+  const target = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const dayNr = target.getUTCDay() || 7;
+  target.setUTCDate(target.getUTCDate() + 4 - dayNr);
+  const yearStart = new Date(Date.UTC(target.getUTCFullYear(), 0, 1));
+  return Math.ceil((((target - yearStart) / 86400000) + 1) / 7);
+}
+
+function pinsNiguriTimeline(model) {
+  const now = new Date();
+  const year = now.getFullYear();
+  const startMonth = now.getMonth() + 1;
+  const planModels = pinsNiguriPlanModels(model);
+  const annualMonths = [...new Set(planModels.flatMap(entry => Object.keys(entry.quantidades || {}).filter(key => key.includes('/'))))]
+    .filter(key => Number(key.split('/')[1]) === year && Number(key.split('/')[0]) >= startMonth)
+    .sort((a, b) => Number(a.split('/')[0]) - Number(b.split('/')[0]));
+  const selectedMonths = annualMonths.length
+    ? annualMonths.map(key => key.split('/')[0])
+    : (DATA?.planMonth?.months || []).map(value => String(value).padStart(2, '0')).filter(month => Number(month) >= startMonth);
+  const seenWeeks = new Set();
+  const slots = selectedMonths.flatMap(month => pinsNiguriMonthSlots(Number(month), year)).filter(slot => {
+    if (seenWeeks.has(slot.key)) return false;
+    seenWeeks.add(slot.key);
+    return true;
+  });
+  const quantitiesByMonth = {};
+  selectedMonths.forEach(month => {
+    const annualKey = `${month}/${year}`;
+    quantitiesByMonth[month] = planModels.reduce((sum, entry) => sum + n(entry.quantidades?.[annualKey] ?? entry.quantidades?.[month]), 0);
+  });
+  selectedMonths.forEach(month => {
+    const monthSlots = slots.filter(slot => slot.month === month);
+    const total = quantitiesByMonth[month] || 0;
+    const base = monthSlots.length ? Math.floor(total / monthSlots.length) : 0;
+    let remainder = monthSlots.length ? total % monthSlots.length : 0;
+    monthSlots.forEach(slot => { slot.quantity = base + (remainder-- > 0 ? 1 : 0); });
+  });
+  return { slots, planModels, selectedMonths };
+}
+
+function pinsNiguriWeekKey(value) {
+  const raw = String(value || '').slice(0, 10);
+  const match = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return '';
+  const date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  const weekday = date.getDay() || 7;
+  date.setDate(date.getDate() - weekday + 1);
+  return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+}
+function pinsNiguriOrders(item, slot, timelineSlots = []) {
+  const source = itemByCode(item.code) || item;
+  const monthSlots = timelineSlots.filter(candidate => candidate.month === slot.month && candidate.year === slot.year);
+  const firstMonthSlot = monthSlots[0]?.key === slot.key;
+  const exactEntries = Array.isArray(source.obtention)
+    ? source.obtention.filter(entry => String(entry.plannedDate || '').startsWith(`${slot.year}-${slot.month}-`))
+    : [];
+  const exact = exactEntries
+    .filter(entry => pinsNiguriWeekKey(entry.plannedDate) === slot.key)
+    .reduce((sum, entry) => sum + n(entry.quantity), 0);
+  if (exact > 0) return exact;
+  // Sem data exata, o pedido mensal entra uma única vez na primeira semana.
+  // Antes, o mesmo recebimento era repetido em todas as semanas do mês.
+  if (exactEntries.length > 0 || !firstMonthSlot) return 0;
+  const key = `PED ${slot.month}/${slot.year}`;
+  return n(source.orders?.[key]);
+}
+
+function pinsNiguriRows(model, query = '', statusFilter = 'all') {
+  const timeline = pinsNiguriTimeline(model);
+  const rows = (PINS.items || []).map(item => {
+    const modelNeed = model === 'Todos os modelos'
+      ? timeline.planModels.reduce((sum, entry) => sum + n(item.modelNeeds?.[entry.modelo]), 0)
+      : n(item.modelNeeds?.[model]);
+    if (modelNeed <= 0) return null;
+    let balance = n(itemByCode(item.code)?.stock ?? item.stock);
+    const balances = [];
+    let totalNeed = 0;
+    timeline.slots.forEach(slot => {
+      const consumption = modelNeed * slot.quantity;
+      const receipt = pinsNiguriOrders(item, slot, timeline.slots);
+      balance = balance - consumption + receipt;
+      totalNeed += consumption;
+      balances.push({ ...slot, consumption, receipts: receipt, balance });
+    });
+    const firstShortage = balances.find(slot => slot.balance < 0);
+    const status = firstShortage ? 'Crítico' : balances.some(slot => slot.balance <= n(item.safety)) ? 'Em atenção' : 'Regular';
+    return { ...item, stock: n(itemByCode(item.code)?.stock ?? item.stock), modelNeed, totalNeed, balances, firstShortage, status, planModels: timeline.planModels };
+  }).filter(Boolean).filter(item => {
+    const text = `${item.code} ${item.description}`.toLowerCase();
+    return text.includes(query.trim().toLowerCase()) && (statusFilter === 'all' || item.status === statusFilter);
+  });
+  return { rows, timeline };
+}
+
+function pinsNiguriView() {
+  const model = selectedPinModel || PINS.models?.[0] || 'Todos os modelos';
+  const query = $('#pins-niguri-search')?.value || '';
+  const statusFilter = $('#pins-niguri-status')?.value || 'all';
+  const { rows, timeline } = pinsNiguriRows(model, query, statusFilter);
+  const totalNeed = rows.reduce((sum, item) => sum + item.totalNeed, 0);
+  const critical = rows.filter(item => item.status === 'Crítico').length;
+  const attention = rows.filter(item => item.status === 'Em atenção').length;
+  const firstWeek = rows.filter(item => item.firstShortage).sort((a,b) => a.firstShortage.key.localeCompare(b.firstShortage.key))[0]?.firstShortage?.label || '—';
+  const weekHeaders = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} máquinas planejadas">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
+  const rowHtml = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit || 'UN')}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
+  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · linha do tempo</span><h2>NIGURI dos Pinos</h2><p>Saldo projetado por semana usando o modelo da coluna C da aba planoAnual, o mês da coluna D, a estrutura dos pinos, o estoque e a Obtenção.</p></div><div class="date-pill">Fonte: planoAnual · coluna C + coluna D</div></div><div class="panel pins-niguri-controls"><label>Modelo analisado<select class="select" id="pins-niguri-model"><option>Todos os modelos</option>${PINS.models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="pins-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="pins-niguri-status"><option value="all">Todos</option><option value="Crítico">Com falta prevista</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Leitura da projeção:</strong> cada registro do planoAnual é contado pelo produto/modelo na coluna C e agrupado pelo mês da coluna D. O total mensal é distribuído pelas semanas do mês; pedidos da Obtenção são somados no mês previsto de chegada.</div><div class="pins-result-panel panel"><div class="pins-result-head"><div><span class="eyebrow">Necessidade consolidada até 31/12</span><h3>${esc(model)}</h3><p>${fmt(rows.length)} pinos utilizados · primeira falta identificada: ${esc(firstWeek)}</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalNeed)}</strong><small>Críticos: ${fmt(critical)} · Atenção: ${fmt(attention)}</small></div></div></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Saldo acumulado por semana</h3><span>Verde: disponível · amarelo: próximo do limite · vermelho: falta prevista</span></div><span class="pins-legend"><i></i>${fmt(timeline.slots.length)} semanas projetadas</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Estoque inicial</th><th>Necessidade até dez.</th><th>Primeira falta</th>${weekHeaders}</tr></thead><tbody>${rowHtml || '<tr><td colspan="8" class="empty">Nenhum pino corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
+}
+
 function pinsView() {
+  const active = pinsSubView === 'niguri' ? 'niguri' : 'simulation';
+  const content = active === 'niguri' ? pinsNiguriView() : pinsSimulationView();
+  return `<div class="pins-page"><div class="pins-subnav"><button class="pins-subtab ${active === 'simulation' ? 'active' : ''}" data-pins-subview="simulation">Pinos por modelo</button><button class="pins-subtab ${active === 'niguri' ? 'active' : ''}" data-pins-subview="niguri">NIGURI dos pinos</button></div>${content}</div>`;
+}
+
+function pinsSimulationView() {
   const items = PINS.items || [];
   const models = PINS.models || [];
   const activeModel = selectedPinModel || models[0] || '';
@@ -1426,12 +1609,258 @@ function openProductionAlertDetail(id) {
   overlay.onclick = event => { if (event.target === overlay) close(); };
 }
 
+function pvNormalize(value) {
+  return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/[^A-Z0-9]+/g, ' ').trim();
+}
+
+function pvModelKey(value) {
+  const raw = pvNormalize(value).replace(/\s+/g, '');
+  const aliases = [['13 5 AT', '13AT'], ['13 5', '13AT'], ['13,5', '13AT'], ['13 AT', '13AT'], ['10 L', '10L'], ['10 S', '10S'], ['15 LDDI', '15LDDI'], ['18 LDDI', '18LDDI'], ['13 LDDI', '13LDDI'], ['13 LDI', '13LDI']];
+  const match = aliases.find(([needle]) => raw.includes(needle.replace(/[^A-Z0-9]/g, '')));
+  if (match) return match[1];
+  return (PINS.models || Object.keys(DATA?.models || {})).find(model => raw.includes(pvNormalize(model).replace(/\s+/g, '')) || pvNormalize(model).replace(/\s+/g, '').includes(raw)) || '';
+}
+
+function pvProductModel(productText) {
+  const text = pvNormalize(productText);
+  const patterns = [
+    [/SKY ?CITY.*18 ?LDDI|18 ?LDDI/, '18LDDI'],
+    [/SKY ?CITY.*15 ?LDDI|15 ?LDDI/, '15LDDI'],
+    [/SKY ?CITY.*13 ?LDDI|13 ?LDDI/, '13LDDI'],
+    [/SKY ?CITY.*13 ?LDI|13 ?LDI/, '13LDI'],
+    [/SKY ?CITY.*13(?:[., ]5)? ?AT|13(?:[., ]5)? ?AT/, '13AT'],
+    [/SKY ?CITY.*10 ?HDOC|10 ?HDOC/, '10HDOC'],
+    [/SKY ?CITY.*10 ?S|10 ?S/, '10S'],
+    [/SKY ?CITY.*10 ?L|10 ?L/, '10L']
+  ];
+  return patterns.find(([pattern]) => pattern.test(text))?.[1] || pvModelKey(text);
+}
+
+function pvTokens(value) {
+  return new Set(pvNormalize(value).split(/\s+/).filter(token => token.length > 2));
+}
+
+function pvStructureMatch(text, model) {
+  const structure = DATA?.models?.[model] || [];
+  const target = pvTokens(text);
+  if (!target.size) return null;
+  let best = null;
+  structure.forEach(component => {
+    const candidate = pvTokens(`${component.code} ${component.description}`);
+    const overlap = [...target].filter(token => candidate.has(token)).length;
+    const score = overlap / Math.max(target.size, 1);
+    if (!best || score > best.score) best = { code: component.code, description: component.description, score };
+  });
+  return best && best.score >= 0.45 ? best : null;
+}
+
+function pvGroupTextItems(items) {
+  const groups = [];
+  items.filter(item => String(item.str || '').trim()).sort((a, b) => (b.transform?.[5] || 0) - (a.transform?.[5] || 0)).forEach(item => {
+    const y = Number(item.transform?.[5] || 0);
+    let group = groups.find(row => Math.abs(row.y - y) < 3);
+    if (!group) { group = { y, items: [] }; groups.push(group); }
+    group.items.push(item);
+  });
+  return groups.sort((a, b) => b.y - a.y).map(group => ({ text: group.items.sort((a, b) => (a.transform?.[4] || 0) - (b.transform?.[4] || 0)).map(item => item.str).join(' ').replace(/\s+/g, ' ').trim(), items: group.items }));
+}
+
+function pvRegionIsRed(canvas, item, viewport) {
+  if (!canvas || !item?.transform || !viewport) return false;
+  const point = viewport.convertToViewportPoint(Number(item.transform[4] || 0), Number(item.transform[5] || 0));
+  const scale = viewport.scale || 1;
+  const width = Math.max(12, Math.abs(Number(item.width || 20)) * scale);
+  const height = Math.max(8, Math.abs(Number(item.transform[3] || 10)) * scale * 1.4);
+  const x0 = Math.max(0, Math.floor(point[0]));
+  const y0 = Math.max(0, Math.floor(point[1] - height));
+  const x1 = Math.min(canvas.width, Math.ceil(point[0] + width));
+  const y1 = Math.min(canvas.height, Math.ceil(point[1] + 2));
+  if (x1 <= x0 || y1 <= y0) return false;
+  const pixels = canvas.getContext('2d').getImageData(x0, y0, x1 - x0, y1 - y0).data;
+  let colored = 0;
+  for (let index = 0; index < pixels.length; index += 16) {
+    const red = pixels[index]; const green = pixels[index + 1]; const blue = pixels[index + 2];
+    if (red > 145 && red > green * 1.35 && red > blue * 1.35 && green < 150) colored += 1;
+  }
+  return colored >= 2;
+}
+
+async function pvLoadPdfJs() {
+  if (!pdfJsPromise) pdfJsPromise = import('./pdf.min.mjs').then(pdfjs => {
+    pdfjs.GlobalWorkerOptions.workerSrc = './pdf.worker.min.mjs';
+    return pdfjs;
+  });
+  return pdfJsPromise;
+}
+
+async function analyzePVFile(file) {
+  const pdfjs = await pvLoadPdfJs();
+  const buffer = await file.arrayBuffer();
+  const pdf = await pdfjs.getDocument({ data: buffer }).promise;
+  const pages = []; const allLines = []; let textItemCount = 0; let redLineCount = 0; let previewDataUrl = '';
+  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+    const page = await pdf.getPage(pageNumber);
+    const content = await page.getTextContent();
+    textItemCount += content.items.length;
+    const viewport = page.getViewport({ scale: 1.5 });
+    const canvas = document.createElement('canvas'); canvas.width = viewport.width; canvas.height = viewport.height;
+    await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+    if (pageNumber === 1) {
+      const previewCanvas = document.createElement('canvas');
+      const previewWidth = 520;
+      previewCanvas.width = previewWidth;
+      previewCanvas.height = Math.max(1, Math.round(previewWidth * viewport.height / viewport.width));
+      previewCanvas.getContext('2d').drawImage(canvas, 0, 0, previewCanvas.width, previewCanvas.height);
+      previewDataUrl = previewCanvas.toDataURL('image/jpeg', 0.68);
+    }
+    const lines = pvGroupTextItems(content.items).map(line => {
+      const red = line.items.some(item => pvRegionIsRed(canvas, item, viewport));
+      if (red) redLineCount += 1;
+      return { text: line.text, red, page: pageNumber };
+    });
+    pages.push({ number: pageNumber, lines }); allLines.push(...lines);
+  }
+  const text = allLines.map(line => line.text).join('\n');
+  const productLine = allLines.find(line => /SKY ?CITY|CESTO A[EÉ]REO|PRODUTO/i.test(line.text))?.text || '';
+  const chassisLine = allLines.find(line => /MARCA\s*\/?\s*MODELO|MARCA.*MODELO/i.test(line.text))?.text.replace(/.*MODELO\s*:?/i, '').trim() || '';
+  const enNumbers = [...new Set((text.match(/EN\s*\d{5,}/gi) || []).map(value => value.replace(/\s+/g, '').toUpperCase()))];
+  const pvNumber = (text.match(/\bPV\s*[-:]?\s*\d{4,}\b/i)?.[0] || '').replace(/\s+/g, '').toUpperCase();
+  const model = pvProductModel(productLine || text);
+  const productStart = allLines.findIndex(line => /PRODUTO/i.test(line.text));
+  const productEnd = allLines.findIndex((line, index) => index > productStart && /INFORMA[CÇ][OÕ]ES ADICIONAIS|INFORMACOES ADICIONAIS/i.test(line.text));
+  const criticalLines = allLines.filter((line, index) => line.red && index >= Math.max(0, productStart) && (productEnd < 0 || index < productEnd) && !/PRODUTO|PEDIDO|REVISAO|REVIS[AÃ]O|INFORMA/i.test(line.text) && line.text.length > 5);
+  const criticalItems = criticalLines.map(line => ({ text: line.text, page: line.page, match: pvStructureMatch(line.text, model) })).filter(item => item.text);
+  return { fileName: file.name, pageCount: pdf.numPages, text, productLine, chassisLine, ens: enNumbers, pv: pvNumber, model, criticalItems, previewDataUrl, analysisMode: textItemCount ? 'automatic' : 'manual', status: textItemCount && redLineCount ? 'analyzed' : 'manual', redLineCount, analyzedAt: new Date().toISOString() };
+}
+
+function enPVSourceRows() {
+  const annual = DATA?.planAnnual?.rows || [];
+  const releases = DATA?.planMonth?.liberacoes || [];
+  const byEN = new Map(releases.map(row => [String(row.en || '').toUpperCase(), row]));
+  return annual.map(row => {
+    const en = String(row.pedido || '').trim().toUpperCase();
+    const release = byEN.get(en) || {};
+    return { en, cliente: row.cliente || release.cliente || '', produto: row.produto || '', modelo: row.modelo || pvProductModel(release.modelo), mes: row.mes || '', data: release.data || '', ...EN_PV_REVIEWS[en] };
+  }).filter(row => row.en);
+}
+function enPVSavedNumber(row) {
+  const review = EN_PV_REVIEWS[row.en] || {};
+  return String(review.pv || review.analysis?.pv || row.pv || '').trim();
+}
+function enPVStatus(row) {
+  const review = EN_PV_REVIEWS[row.en] || row;
+  if (enPVSavedNumber(row)) return ['PV gerado', 'green'];
+  if (!review.analysis) return ['Não iniciada', 'amber'];
+  if (review.analysis.ens?.length && !review.analysis.ens.includes(row.en)) return ['EN ausente no PDF', 'red'];
+  if (!review.analysis.model) return ['Modelo do produto não identificado', 'red'];
+  if (review.analysis.model && row.modelo && pvModelKey(review.analysis.model) !== pvModelKey(row.modelo)) return ['Divergência de modelo', 'red'];
+  if ((review.analysis.criticalItems || []).some(item => !item.match)) return ['Crítica', 'red'];
+  const checklist = review.checklist || {};
+  if (review.analysis.status === 'manual') return ['Confirmação necessária', 'amber'];
+  if (['enVinculada', 'vermelhosRevisados', 'estruturaConferida', 'scResolvida', 'liberada'].every(key => checklist[key])) return ['Concluída', 'green'];
+  return ['Em análise', 'amber'];
+}
+
+function enPVUpdate(en, patch) {
+  const safePatch = { ...patch };
+  if (safePatch.analysis) safePatch.analysis = compactPVAnalysis(safePatch.analysis);
+  EN_PV_REVIEWS[en] = { ...(EN_PV_REVIEWS[en] || {}), ...safePatch, updatedAt: new Date().toISOString(), updatedBy: currentUser?.name || 'Usuário' };
+  saveENPVReviews();
+}
+
+function enPVChecklist(en, key, value) {
+  const current = EN_PV_REVIEWS[en] || {};
+  enPVUpdate(en, { checklist: { ...(current.checklist || {}), [key]: value } });
+}
+
+function criticalItemsForEN(en, vehicleCount = 1) {
+  const row = enPVSourceRows().find(item => item.en === en) || {};
+  const model = pvModelKey(row.modelo) || row.modelo || '';
+  const structure = DATA?.models?.[model] || [];
+  return structure.map(component => {
+    const item = itemByCode(component.code) || {};
+    const required = n(component.quantity) * Math.max(1, n(vehicleCount));
+    const stock = n(item.stock);
+    const orders = Object.entries(item.orders || {}).filter(([, quantity]) => n(quantity) > 0).map(([month, quantity]) => `${month.replace('PED ', '')}: ${fmt(quantity)}`).join(' | ');
+    return { code: component.code, description: component.description || item.description || '', required, stock, balance: stock - required, orders, model, en, critical: stock < required };
+  }).filter(item => item.critical);
+}
+
+function exportCriticalENItems(en, rows) {
+  const headers = ['EN', 'Modelo', 'Código', 'Descrição', 'Pedido (mês: quantidade)', 'Estoque', 'Necessidade', 'Saldo'];
+  const escapeCell = value => `"${String(value ?? '').replace(/"/g, '""')}"`;
+  const csv = [headers, ...rows.map(row => [row.en, row.model, row.code, row.description, row.orders || 'Sem pedido', row.stock, row.required, row.balance])].map(line => line.map(escapeCell).join(';')).join('\r\n');
+  const blob = new Blob([`\ufeff${csv}`], { type: 'text/csv;charset=utf-8' });
+  const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = `itens-criticos-${en}.xls`; link.click();
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+}
+
+function openENCriticalDetail(en) {
+  const row = enPVSourceRows().find(item => item.en === en) || {};
+  const critical = criticalItemsForEN(en, 1);
+  const overlay = document.createElement('div'); overlay.className = 'detail-overlay';
+  overlay.innerHTML = `<section class="material-detail en-critical-modal" role="dialog" aria-modal="true"><div class="material-detail-header"><div><span class="eyebrow">Itens críticos da estrutura</span><h2>${esc(en)}</h2><p>Modelo ${esc(critical[0]?.model || row.modelo || 'não identificado')} · ${fmt(critical.length)} item(ns) crítico(s)</p></div><button class="icon-btn" id="close-en-critical">×</button></div><div class="panel-body"><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(critical.length)}</b><span>Itens abaixo do estoque necessário</span></div><div class="summary-box"><b>${fmt(critical.reduce((sum, item) => sum + item.required, 0))}</b><span>Necessidade estrutural</span></div><div class="summary-box"><b>${fmt(critical.reduce((sum, item) => sum + item.stock, 0))}</b><span>Estoque atual</span></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código</th><th>Descrição</th><th>Pedido</th><th>Estoque</th><th>Necessidade</th><th>Saldo</th></tr></thead><tbody>${critical.map(item => `<tr><td>${esc(item.code)}</td><td>${esc(item.description)}</td><td>${esc(item.orders || 'Sem pedido')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.required)}</td><td class="danger-text">${fmt(item.balance)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum item crítico encontrado para a estrutura deste modelo.</td></tr>'}</tbody></table></div><div class="detail-footer"><button class="secondary-btn" id="export-en-critical">Baixar itens críticos para Excel</button><button class="secondary-btn" id="close-en-critical-bottom">Fechar</button></div></div></section>`;
+  document.body.appendChild(overlay);
+  const close = () => overlay.remove(); $('#close-en-critical').onclick = close; $('#close-en-critical-bottom').onclick = close; $('#export-en-critical').onclick = () => exportCriticalENItems(en, critical); overlay.onclick = event => { if (event.target === overlay) close(); };
+}
+
+function enPVView() {
+  const source = enPVSourceRows();
+  const query = enPvQuery.trim().toLowerCase();
+  const rows = source.filter(row => (!enPvFocusENs.size || enPvFocusENs.has(row.en)) && (!query || `${row.en} ${row.cliente} ${row.produto} ${row.pv || ''}`.toLowerCase().includes(query)));
+  const counts = { total: source.length, done: 0, pending: 0, critical: 0 };
+  source.forEach(row => { const status = enPVStatus(row)[0]; if (status === 'Concluída') counts.done += 1; else if (status === 'Crítica' || status === 'Divergência de modelo' || status === 'EN ausente no PDF') counts.critical += 1; else counts.pending += 1; });
+  const active = rows.find(row => row.en === selectedEN) || rows[0] || source[0];
+  if (active) selectedEN = active.en;
+  const review = active ? (EN_PV_REVIEWS[active.en] || {}) : {};
+  const status = active ? enPVStatus(active) : ['—', 'amber'];
+  const table = rows.slice(0, 250).map(row => { const state = enPVStatus(row); const savedPV = enPVSavedNumber(row); const pvLabel = savedPV ? esc(savedPV) : '<span class="pv-not-generated">PV ainda não gerado</span>'; return `<tr class="en-pv-row" data-en-row-text="${esc(`${row.en} ${row.cliente} ${row.produto} ${savedPV}`.toLowerCase())}"><td><button class="material-code en-select-btn" data-en-select="${esc(row.en)}">${esc(row.en)}</button></td><td>${esc(row.produto || row.modelo || '—')}</td><td>${esc(row.mes || '—')}</td><td>${pvLabel}</td><td>${fmt(row.analysis?.criticalItems?.length || 0)}</td><td>${esc(row.sc || '—')}</td><td>${esc(row.responsavel || '—')}</td><td><span class="status ${state[1]}">${esc(state[0])}</span></td></tr>`; }).join('');
+  const analysis = review.analysis || {};
+  const checklist = review.checklist || {};
+  const criticalRows = (analysis.criticalItems || []).map(item => `<div class="en-pv-critical-row"><span>${esc(item.text)}</span><span class="status ${item.match ? 'amber' : 'red'}">${item.match ? `Encontrado · ${esc(item.match.code)}` : 'Não encontrado na estrutura'}</span></div>`).join('') || '<div class="empty compact-empty">Nenhum item vermelho confirmado ou detectado.</div>';
+  const productModel = analysis.model || active?.modelo || '—';
+  const importBanner = EN_PV_IMPORT_RESULT ? `<div class="en-pv-import ${EN_PV_IMPORT_RESULT.status === 'linked' ? 'green' : 'red'}"><b>${EN_PV_IMPORT_RESULT.status === 'linked' ? `PV ${esc(EN_PV_IMPORT_RESULT.pv || EN_PV_IMPORT_RESULT.fileName)} vinculado automaticamente` : 'Nenhuma EN encontrada no plano anual'}</b><span>ENs no PV: ${fmt(EN_PV_IMPORT_RESULT.foundENs.length)} · vinculadas: ${fmt(EN_PV_IMPORT_RESULT.matchedENs.length)}${EN_PV_IMPORT_RESULT.notInPlan.length ? ` · fora do plano: ${esc(EN_PV_IMPORT_RESULT.notInPlan.join(', '))}` : ''}</span></div>` : '';
+  const preview = analysis.previewDataUrl || (analysis.previewKey ? EN_PV_PREVIEWS[analysis.previewKey] : '');
+  return `<div class="view-title"><div><h2>Controle de ENs / PVs</h2><p>Rastreabilidade da análise por projeto: PDF, modelo estrutural, itens críticos e SC.</p></div><div class="date-pill">Plano anual · ${fmt(counts.total)} ENs</div></div>${importBanner}<div class="en-pv-metrics"><div class="metric"><span class="metric-label">ENs no plano</span><b class="metric-value">${fmt(counts.total)}</b></div><div class="metric en-pv-metric-green"><span class="metric-label">Concluídas</span><b class="metric-value">${fmt(counts.done)}</b></div><div class="metric en-pv-metric-amber"><span class="metric-label">Pendentes</span><b class="metric-value">${fmt(counts.pending)}</b></div><div class="metric en-pv-metric-red"><span class="metric-label">Críticas</span><b class="metric-value">${fmt(counts.critical)}</b></div></div><div class="en-pv-layout"><section class="panel"><div class="panel-header"><div><h3>ENs do plano anual</h3><span>Cada EN permanece rastreável pelo PV e pelo modelo do produto.</span></div><input id="en-pv-search" class="input" placeholder="Pesquisar EN, PV ou cliente" value="${esc(enPvQuery)}" /></div><div class="table-wrap"><table class="data-table en-pv-table"><thead><tr><th>EN</th><th>Produto / modelo</th><th>Mês</th><th>PV</th><th>Itens críticos</th><th>SC</th><th>Responsável</th><th>Status</th></tr></thead><tbody>${table || '<tr><td colspan="8" class="empty">Nenhuma EN encontrada.</td></tr>'}</tbody></table></div></section><section class="panel en-pv-detail"><div class="panel-header"><div><h3>${active ? `${esc(active.en)} · Detalhes da análise` : 'Selecione uma EN'}</h3><span>${active ? esc(status[0]) : '—'}</span></div></div>${active ? `<div class="en-pv-meta"><div><span>Cliente</span><b>${esc(active.cliente || '—')}</b></div><div><span>Veículo/chassi</span><b>${esc(analysis.chassisLine || 'Não informado no PDF')}</b></div><div><span>Produto no PV</span><b>${esc(analysis.productLine || active.produto || 'Aguardando PDF')}</b></div><div><span>Modelo estrutural</span><b class="model-highlight">${esc(productModel)}</b></div><div><span>Entrega</span><b>${esc(active.mes || active.data || '—')}</b></div><div><span>Arquivo PV</span><b>${esc(analysis.fileName || 'Nenhum PDF analisado')}</b></div>${preview ? `<div class="en-pv-preview"><span>Prévia do PV</span><img src="${preview}" alt="Prévia da primeira página do PV" /></div>` : ''}</div><div class="en-pv-upload"><label class="primary-btn" for="en-pv-file">Ler PDF do PV</label><input id="en-pv-file" type="file" accept="application/pdf" hidden /><small>O sistema lê todas as ENs do PV, vincula-as ao plano anual e compara itens críticos com o modelo.</small></div><div class="en-pv-fields"><label>PV<input id="en-pv-number" class="input" value="${esc(review.pv || '')}" placeholder="PV-12345" /></label><label>SC principal<input id="en-pv-sc" class="input" value="${esc(review.sc || '')}" placeholder="SC-000123" /></label><label>Responsável<input id="en-pv-owner" class="input" value="${esc(review.responsavel || currentUser?.name || '')}" /></label><button id="en-pv-save" class="primary-btn">Salvar análise</button></div><h4>Itens críticos identificados no PV</h4><div class="en-pv-critical-list">${criticalRows}</div>${analysis.status === 'manual' ? '<div class="en-pv-warning">O PDF não entregou texto/cor suficiente para uma conclusão automática. Confirme os itens vermelhos antes de liberar a EN.</div>' : ''}<h4>Checklist de liberação</h4><div class="en-pv-checklist">${[['enVinculada','EN vinculada ao PV'],['vermelhosRevisados','Itens vermelhos do PV revisados'],['estruturaConferida',`Estrutura ${esc(productModel)} conferida`],['scResolvida','SC aberta para todos os itens faltantes'],['liberada','EN liberada']].map(([key,label]) => `<label><input type="checkbox" data-en-check="${key}" ${checklist[key] ? 'checked' : ''} />${label}</label>`).join('')}</div><div class="en-pv-alert ${status[1]}">${status[0] === 'Concluída' ? 'EN liberada: checklist completo e modelo estrutural conferido.' : `Atenção: ${esc(status[0])}. A EN não deve ser liberada enquanto houver pendência.`}</div>` : '<div class="empty">Selecione uma EN para iniciar.</div>'}</section></div></div>`;
+}
+
+async function handleENPVUpload(file) {
+  if (!file) return;
+  const button = $('#en-pv-file');
+  try {
+    const analysis = await analyzePVFile(file);
+    const source = enPVSourceRows();
+    const sourceENs = new Set(source.map(row => row.en));
+    const foundENs = [...new Set(analysis.ens || [])];
+    const matchedENs = foundENs.filter(en => sourceENs.has(en));
+    const notInPlan = foundENs.filter(en => !sourceENs.has(en));
+    const previewKey = analysis.pv || analysis.fileName;
+    if (analysis.previewDataUrl) EN_PV_PREVIEWS[previewKey] = analysis.previewDataUrl;
+    saveENPVPreviews();
+    const linkedAnalysis = { ...analysis, previewKey };
+    delete linkedAnalysis.previewDataUrl;
+    matchedENs.forEach(en => enPVUpdate(en, { analysis: linkedAnalysis, pv: analysis.pv || EN_PV_REVIEWS[en]?.pv || '', linkedFromPV: true }));
+    EN_PV_IMPORT_RESULT = { fileName: file.name, pv: analysis.pv, foundENs, matchedENs, notInPlan, status: matchedENs.length ? 'linked' : 'not-found' };
+    enPvFocusENs = new Set(matchedENs);
+    enPvQuery = analysis.pv || '';
+    if (matchedENs.length) selectedEN = matchedENs[0];
+    else if (selectedEN) enPVUpdate(selectedEN, { analysis: linkedAnalysis, pv: analysis.pv || EN_PV_REVIEWS[selectedEN]?.pv || '' });
+    render();
+  } catch (error) {
+    enPVUpdate(selectedEN, { analysis: { fileName: file.name, status: 'manual', error: error.message, analyzedAt: new Date().toISOString() } });
+    render();
+    console.error('Falha ao ler PDF do PV.', error);
+  } finally {
+    if (button) button.value = '';
+  }
+}
+
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', productionAlerts: 'Aviso da produção' };
+  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, productionAlerts: productionAlertsView };
+  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -1486,7 +1915,7 @@ function bindView() {
       const query = ($('#follow-up-search').value || '').toLowerCase();
       const items = followUpItems().filter(item => `${item.code} ${item.description} ${item.analyst || ''}`.toLowerCase().includes(query));
       const target = $('#follow-up-table tbody');
-      if (target) target.innerHTML = followUpRows(items) || '<tr><td colspan="8" class="empty">Nenhum item encontrado.</td></tr>';
+      if (target) target.innerHTML = followUpRows(items) || '<tr><td colspan="5" class="empty">Nenhum item encontrado.</td></tr>';
       bindMaterialButtons();
     };
   }
@@ -1570,10 +1999,36 @@ function bindView() {
     renderSheetMetalSimulation();
   }
   if (view === 'pins') {
+    document.querySelectorAll('[data-pins-subview]').forEach(button => button.onclick = () => {
+      pinsSubView = button.dataset.pinsSubview || 'simulation';
+      render();
+    });
     document.querySelectorAll('[data-pin-model]').forEach(button => button.onclick = () => {
       selectedPinModel = button.dataset.pinModel || '';
       render();
     });
+    if (pinsSubView === 'niguri') {
+      const modelSelect = $('#pins-niguri-model');
+      const search = $('#pins-niguri-search');
+      const status = $('#pins-niguri-status');
+      if (modelSelect) modelSelect.onchange = () => { selectedPinModel = modelSelect.value; render(); };
+      const rerenderNiguri = () => {
+        const selected = modelSelect?.value || selectedPinModel || PINS.models?.[0] || 'Todos os modelos';
+        const result = pinsNiguriRows(selected, search?.value || '', status?.value || 'all');
+        const table = document.querySelector('.pins-niguri-table tbody');
+        if (table) {
+          const current = pinsNiguriView();
+          const temp = document.createElement('div'); temp.innerHTML = current;
+          const fresh = temp.querySelector('.pins-niguri-table tbody');
+          if (fresh) table.innerHTML = fresh.innerHTML;
+        }
+        bindMaterialButtons();
+      };
+      if (search) search.oninput = rerenderNiguri;
+      if (status) status.onchange = rerenderNiguri;
+      bindMaterialButtons();
+      return;
+    }
     const carsInput = $('#pins-cars');
     const runSimulation = () => {
       pinCars = Math.max(1, Math.floor(n(carsInput?.value) || 1));
@@ -1639,10 +2094,12 @@ function bindView() {
     const filterOrders = () => {
       const query = ($('#orders-search').value || '').toLowerCase();
       const selectedRisk = $('#orders-risk').value;
-      const chosen = demandMonth === 'all' ? (DATA.demandMonths?.[0] || '') : demandMonth;
-      const items = chosen ? scopedItems().map(item => ({ ...item, need: n(item.demands?.[chosen]), balance: n(item.stock) - n(item.demands?.[chosen]) })).filter(item => n(item.need) > 0).filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, item.need)[0] === selectedRisk)).sort((a, b) => a.balance - b.balance) : [];
+      const orderBase = DATA.items || [];
+      const availableDemandMonths = (DATA.demandMonths?.length ? DATA.demandMonths : [...new Set(orderBase.flatMap(item => Object.keys(item.demands || {})))]).filter(month => orderBase.some(item => n(item.demands?.[month]) > 0));
+      const chosen = demandMonth === 'all' ? (availableDemandMonths[0] || '') : demandMonth;
+      const items = chosen ? ordersItemsForMonth(orderBase, chosen).filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, item.need)[0] === selectedRisk)) : [];
       if ($('#orders-table')) {
-        $('#orders-table').innerHTML = chosen ? table(items, 150, true) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>';
+        $('#orders-table').innerHTML = chosen ? table(items, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>';
         bindMaterialButtons();
         bindPurchaseButtons();
       }
@@ -1702,6 +2159,33 @@ function bindView() {
 
   if (view === 'simulation') {
     $('#run-simulation').onclick = runWeeklySimulation;
+  }
+  if (view === 'enPV') {
+    const search = $('#en-pv-search');
+    if (search) search.oninput = () => {
+      enPvQuery = search.value || '';
+      const query = enPvQuery.trim().toLowerCase();
+      document.querySelectorAll('.en-pv-row').forEach(row => { row.hidden = !!query && !String(row.dataset.enRowText || '').includes(query); });
+    };
+    document.querySelectorAll('[data-en-select]').forEach(button => button.onclick = () => { selectedEN = button.dataset.enSelect || ''; render(); openENCriticalDetail(selectedEN); });
+    const fileInput = $('#en-pv-file');
+    if (fileInput) fileInput.onchange = () => handleENPVUpload(fileInput.files?.[0]);
+    const save = $('#en-pv-save');
+    if (save) save.onclick = () => {
+      if (!selectedEN) return;
+      const pv = $('#en-pv-number')?.value.trim() || '';
+      const sc = $('#en-pv-sc')?.value.trim() || '';
+      const responsavel = $('#en-pv-owner')?.value.trim() || '';
+      const linkedENs = EN_PV_IMPORT_RESULT?.matchedENs?.length ? EN_PV_IMPORT_RESULT.matchedENs : [selectedEN];
+      linkedENs.forEach(en => {
+        const current = EN_PV_REVIEWS[en] || {};
+        const analysis = current.analysis ? { ...current.analysis, pv: pv || current.analysis.pv || current.pv || '' } : { pv, status: 'manual', ens: linkedENs };
+        enPVUpdate(en, { pv, sc, responsavel, analysis, linkedFromPV: true });
+      });
+      if (EN_PV_IMPORT_RESULT) EN_PV_IMPORT_RESULT.pv = pv || EN_PV_IMPORT_RESULT.pv;
+      render();
+    };
+    document.querySelectorAll('[data-en-check]').forEach(input => input.onchange = () => enPVChecklist(selectedEN, input.dataset.enCheck, input.checked));
   }
 }
 
@@ -1798,11 +2282,12 @@ Obrigado!.`);
 // Lê o JSON local e inicia a primeira renderização do dashboard.
 async function load() {
   try {
-    const [dataResponse, historyResponse, consumablesResponse, planoResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse, calferResponse] = await Promise.all([
+    const [dataResponse, historyResponse, consumablesResponse, planoResponse, annualPlanResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse, calferResponse] = await Promise.all([
       fetch('data/explosao.json'),
       fetch('data/historico-estoque.json'),
       fetch('data/consumiveis.json'),
       fetch('data/plano-mes.json'),
+      fetch('data/plano-anual.json'),
       fetch('data/pinos.json'),
       fetch('data/cilindros.json'),
       fetch('data/cabines.json'),
@@ -1814,6 +2299,7 @@ async function load() {
     STOCK_HISTORY = historyResponse.ok ? await historyResponse.json() : { records: [] };
     CONSUMABLES = consumablesResponse.ok ? await consumablesResponse.json() : { items: [], months: [] };
     DATA.planMonth = planoResponse.ok ? await planoResponse.json() : { models: [], months: [] };
+    DATA.planAnnual = annualPlanResponse.ok ? await annualPlanResponse.json() : { models: {}, rows: [] };
     PINS = pinsResponse.ok ? await pinsResponse.json() : { items: [], models: [] };
     CYLINDERS = cylindersResponse.ok ? await cylindersResponse.json() : { items: [], models: [] };
     CABINS = cabinsResponse.ok ? await cabinsResponse.json() : { items: [], models: [] };
@@ -1853,6 +2339,8 @@ $('#logout-button').onclick = () => showLogin('Sessão terminada.');
 loadThemePreference();
 loadPurchaseProcess();
 loadCalferTransactions();
+loadENPVReviews();
+loadENPVPreviews();
 void loadProductionAlerts();
 if (alertsSyncTimer) clearInterval(alertsSyncTimer);
 alertsSyncTimer = setInterval(() => { if (document.visibilityState !== 'hidden') void syncProductionAlerts(); }, 20000);

@@ -1,6 +1,6 @@
-const CACHE_NAME = 'dashboard-estoque-v3';
+const CACHE_NAME = 'dashboard-estoque-v5-en-pv-orders';
 const APP_FILES = [
-  './', './index.html', './assets/app.js', './assets/styles.css',
+  './', './index.html', './assets/app.js', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
   './data/explosao.json', './data/plano-mes.json', './data/programacao-modelos.json', './data/chaparias.json',
   './data/cabines.json', './data/pinos.json', './data/cilindros.json',

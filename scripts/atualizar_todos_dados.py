@@ -71,6 +71,8 @@ def main() -> int:
     run([sys.executable, str(SCRIPTS / "convert_calfer.py"), str(explosion)])
     run([sys.executable, str(SCRIPTS / "convert_chaparias.py"), str(explosion)])
     run([sys.executable, str(SCRIPTS / "convert_programacao.py"), str(explosion)])
+    if has_sheet(explosion, "planoAnual"):
+        run([sys.executable, str(SCRIPTS / "convert_plano_anual.py"), str(explosion)])
 
     embedded_consumables = has_sheet(explosion, "consumiveis")
     if consumables is None and embedded_consumables:
@@ -83,6 +85,7 @@ def main() -> int:
     snapshots = {
         "explosao.json": ("sourceFile", "generatedAt", "items", "models"),
         "plano-mes.json": ("sourceSheet", "months", "models"),
+        "plano-anual.json": ("sourceFile", "sourceSheet", "columns", "models"),
         "pinos.json": ("sourceFile", "sourceSheet", "models", "items"),
         "cilindros.json": ("sourceFile", "sourceSheet", "models", "items"),
         "cabines.json": ("sourceFile", "sourceSheet", "models", "items"),

@@ -66,7 +66,7 @@ check(35, "dados principais continuam sendo carregados", "fetch('data/explosao.j
 check(36, "conversor principal continua gerando o Plano Mês", "extrair_plano_mes(SOURCE, PLANO_OUTPUT)" in main_converter)
 check(37, "snapshot principal contém itens", len(explosion.get("items", [])) > 0)
 check(38, "JavaScript passa na verificação de sintaxe", subprocess.run(["node", "--check", str(ROOT / "assets/app.js")], capture_output=True).returncode == 0)
-check(39, "conversor de pinos passa na compilação", subprocess.run([sys.executable, "-m", "py_compile", str(ROOT / "scripts/convert_pinos.py")], capture_output=True).returncode == 0)
+check(39, "conversor de pinos passa na compilação", subprocess.run([sys.executable, "-B", "-c", "compile(open('scripts/convert_pinos.py', encoding='utf-8').read(), 'scripts/convert_pinos.py', 'exec')"], cwd=ROOT, capture_output=True).returncode == 0)
 positive = next((item for item in data["items"] if any(value > 0 for value in item["modelNeeds"].values())), None)
 if positive:
     model = next(model for model, value in positive["modelNeeds"].items() if value > 0)
