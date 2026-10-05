@@ -17,7 +17,6 @@
     },
     "13LDDI": {},
     "10S": {
-      "09/2026": 1,
       "10/2026": 61,
       "11/2026": 22,
       "12/2026": 6
@@ -29,7 +28,6 @@
       "12/2026": 9
     },
     "10L": {
-      "09/2026": 4,
       "10/2026": 28,
       "11/2026": 34
     },
@@ -40,8 +38,8 @@
     }
   },
   "products": {
-    "SKYCITY 10 S": 89,
-    "SKYCITY 10 L": 66,
+    "SKYCITY 10 S": 88,
+    "SKYCITY 10 L": 62,
     "SKYCITY 13,5 AT": 28,
     "SKYCITY 10 S - TORRE ALTA": 1,
     "SKYCITY 15 LDDI": 5,
@@ -52,41 +50,6 @@
     "SKYCITY 13 LDI COM LAVADOR": 1
   },
   "rows": [
-    {
-      "pedido": "EN012807",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "09/2026"
-    },
-    {
-      "pedido": "EN013312",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "09/2026"
-    },
-    {
-      "pedido": "EN013314",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "09/2026"
-    },
-    {
-      "pedido": "EN013320",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "09/2026"
-    },
-    {
-      "pedido": "EN013330",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "09/2026"
-    },
     {
       "pedido": "EN012855",
       "cliente": "ENEL SP",
