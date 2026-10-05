@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_02.10.xlsm",
-  "generatedAt": "2026-10-03",
+  "sourceFile": "Cópia de EXPLOSAO_05.10.xlsm",
+  "generatedAt": "2026-10-05",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -403,7 +403,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 1616,
+          "quantityPerMachine": 2416,
           "calferStock": 16,
           "row": 14
         },
@@ -507,7 +507,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "quantityPerMachine": 1616,
+          "quantityPerMachine": 2416,
           "calferStock": 10,
           "row": 31
         },
@@ -709,7 +709,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 1616,
+          "quantityPerMachine": 2416,
           "calferStock": 10,
           "row": 62
         },
