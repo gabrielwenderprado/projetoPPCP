@@ -21,6 +21,10 @@ let EN_PV_REVIEWS = {};
 let currentUser = { name: 'Teste' };
 function saveENPVReviews() {}
 function itemByCode(code) { return DATA.items.find(item => String(item.code) === String(code)); }
+const availabilityStart = source.indexOf('function availabilityStatus');
+const pvStart = source.indexOf('function pvNormalize');
+if (availabilityStart < 0 || pvStart < 0) throw new Error('Regra de status não encontrada');
+eval(source.slice(availabilityStart, pvStart));
 eval(source.slice(start, end));
 const ordersStart = source.indexOf('function ordersItemsForMonth');
 const ordersEnd = source.indexOf('function demandPanel', ordersStart);

@@ -7,7 +7,9 @@ SOURCE = (BASE / 'assets' / 'app.js').read_text(encoding='utf-8')
 # Verificações estruturais da implementação usada no navegador.
 assert 'function totalDemand(item)' in SOURCE
 assert 'function requiredQuantity(item, demand)' in SOURCE
-assert "if (orders > 0) return ['Em atenção', 'amber'];" in SOURCE
+assert 'function availabilityStatus(stock, needed, hasOrder = false)' in SOURCE
+assert "if (available <= 0) return ['Crítico', 'red'];" in SOURCE
+assert "if (hasOrder) return ['Em atenção', 'amber'];" in SOURCE
 assert "return ['Crítico', 'red'];" in SOURCE
 assert 'return hasOpenOrder(item);' in SOURCE
 assert "if (followUp) return { label: 'Follow-up'" in SOURCE
@@ -17,6 +19,10 @@ def decision(stock, demand, orders):
     stock = float(stock or 0)
     demand = float(demand or 0)
     orders = float(orders or 0)
+    if demand <= 0:
+        return 'Regular', 'Não comprar'
+    if stock <= 0:
+        return 'Crítico', 'Comprar'
     if orders > 0:
         return 'Em atenção', 'Follow-up'
     if stock < demand:
@@ -28,10 +34,14 @@ cases = [
     ((5, 10, 0), ('Crítico', 'Comprar')),
     ((10, 10, 0), ('Regular', 'Não comprar')),
     ((20, 10, 0), ('Regular', 'Não comprar')),
-    ((0, 10, 3), ('Em atenção', 'Follow-up')),
+    ((0, 10, 3), ('Crítico', 'Comprar')),
     ((5, 10, 3), ('Em atenção', 'Follow-up')),
     ((20, 10, 3), ('Em atenção', 'Follow-up')),
-    ((0, 0, 2), ('Em atenção', 'Follow-up')),
+    ((0, 0, 2), ('Regular', 'Não comprar')),
+    ((0, 0, 0), ('Regular', 'Não comprar')),
+    ((20, 0, 2), ('Regular', 'Não comprar')),
+    ((0, 10, 2), ('Crítico', 'Comprar')),
+    ((5, 10, 2), ('Em atenção', 'Follow-up')),
 ]
 for inputs, expected in cases:
     actual = decision(*inputs)

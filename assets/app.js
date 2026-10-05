@@ -433,14 +433,19 @@ function requiredQuantity(item, demand) {
 
 // Classifica o material pela cobertura da demanda, e não apenas pelo estoque de segurança.
 // Pedido aberto não elimina a falta: transforma o risco em Follow-up/Em atenção.
+function availabilityStatus(stock, needed, hasOrder = false) {
+  const available = n(stock);
+  const demand = n(needed);
+  if (demand <= 0) return ['Regular', 'green'];
+  if (available <= 0) return ['Crítico', 'red'];
+  if (hasOrder) return ['Em atenção', 'amber'];
+  if (available < demand) return ['Crítico', 'red'];
+  return ['Regular', 'green'];
+}
 function risk(item, demand) {
-  const needed = requiredQuantity(item, demand);
-  const stock = n(item?.stock);
+  const needed = demand !== undefined && demand !== null && demand !== '' ? n(demand) : totalDemand(item);
   const orders = Object.values(item?.orders || {}).reduce((sum, value) => sum + n(value), 0);
-  if (stock <= 0) return ['Crítico', 'red'];
-  if (orders > 0) return ['Em atenção', 'amber'];
-  if (stock >= needed) return ['Regular', 'green'];
-  return ['Crítico', 'red'];
+  return availabilityStatus(item?.stock, needed, orders > 0);
 }
 
 function hasOpenOrder(item) {
@@ -1254,10 +1259,8 @@ function specializedOrderInfo(item) {
   return { total, months, label: total > 0 ? `Sim · ${fmt(total)} ${item.unit || 'UN'}` : 'Não há pedido' };
 }
 
-function pinSimulationStatus(stock, required) {
-  if (required <= 0 || stock >= required) return ['Regular', 'green'];
-  if (stock > 0) return ['Em atenção', 'amber'];
-  return ['Crítico', 'red'];
+function pinSimulationStatus(stock, required, hasOrder = false) {
+  return availabilityStatus(stock, required, hasOrder);
 }
 
 function pinSimulationRows(items, model, cars, query = '', statusFilter = 'all', selectedStockFilter = 'all') {
@@ -1265,7 +1268,7 @@ function pinSimulationRows(items, model, cars, query = '', statusFilter = 'all',
     const unitNeed = n(item.modelNeeds?.[model]);
     const required = unitNeed * cars;
     const balance = n(item.stock) - required;
-    const [status, color] = pinSimulationStatus(n(item.stock), required);
+    const [status, color] = pinSimulationStatus(n(item.stock), required, Object.values(item.orders || {}).some(value => n(value) > 0));
     return { ...item, unitNeed, required, balance, status, color };
   }).filter(item => item.unitNeed > 0).filter(item => {
     const searchable = `${item.code} ${item.description}`.toLowerCase();
@@ -1290,8 +1293,8 @@ function renderPinSimulation() {
   const statusFilter = $('#pins-coverage')?.value || 'all';
   const selectedStockFilter = $('#pins-stock-filter')?.value || 'all';
   const simulated = (PINS.items || []).map(item => ({ ...item, required: n(item.modelNeeds?.[model]) * cars })).filter(item => n(item.required) > 0).filter(item => matchesStockFilterValue(item, selectedStockFilter));
-  const critical = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required)[0] === 'Crítico').length;
-  const attention = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required)[0] === 'Em atenção').length;
+  const critical = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required, Object.values(item.orders || {}).some(value => n(value) > 0))[0] === 'Crítico').length;
+  const attention = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required, Object.values(item.orders || {}).some(value => n(value) > 0))[0] === 'Em atenção').length;
   const regular = simulated.length - critical - attention;
   const totalRequired = simulated.reduce((sum, item) => sum + item.required, 0);
   const totalStock = simulated.reduce((sum, item) => sum + n(item.stock), 0);
@@ -1481,7 +1484,7 @@ function cylinderSimulationRows(items, model, cars, query = '', statusFilter = '
     const unitNeed = n(item.modelNeeds?.[model]);
     const required = unitNeed * cars;
     const balance = n(item.stock) - required;
-    const [status, color] = pinSimulationStatus(n(item.stock), required);
+    const [status, color] = pinSimulationStatus(n(item.stock), required, Object.values(item.orders || {}).some(value => n(value) > 0));
     return { ...item, unitNeed, required, balance, status, color };
   }).filter(item => item.unitNeed > 0).filter(item => {
     const searchable = `${item.code} ${item.description}`.toLowerCase();
@@ -1500,8 +1503,8 @@ function renderCylinderSimulation() {
   const statusFilter = $('#cylinders-coverage')?.value || 'all';
   const selectedStockFilter = $('#cylinders-stock-filter')?.value || 'all';
   const simulated = (CYLINDERS.items || []).map(item => ({ ...item, required: n(item.modelNeeds?.[model]) * cars })).filter(item => n(item.required) > 0).filter(item => matchesStockFilterValue(item, selectedStockFilter));
-  const critical = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required)[0] === 'Crítico').length;
-  const attention = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required)[0] === 'Em atenção').length;
+  const critical = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required, Object.values(item.orders || {}).some(value => n(value) > 0))[0] === 'Crítico').length;
+  const attention = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required, Object.values(item.orders || {}).some(value => n(value) > 0))[0] === 'Em atenção').length;
   const regular = simulated.length - critical - attention;
   const totalRequired = simulated.reduce((sum, item) => sum + item.required, 0);
   const totalStock = simulated.reduce((sum, item) => sum + n(item.stock), 0);
@@ -1526,7 +1529,7 @@ function cabinSimulationRows(items, model, cars, query = '', statusFilter = 'all
     const unitNeed = n(item.modelNeeds?.[model]);
     const required = unitNeed * cars;
     const balance = n(item.stock) - required;
-    const [status, color] = pinSimulationStatus(n(item.stock), required);
+    const [status, color] = pinSimulationStatus(n(item.stock), required, Object.values(item.orders || {}).some(value => n(value) > 0));
     return { ...item, unitNeed, required, balance, status, color };
   }).filter(item => item.unitNeed > 0).filter(item => {
     const searchable = `${item.code} ${item.description}`.toLowerCase();
@@ -1545,8 +1548,8 @@ function renderCabinSimulation() {
   const statusFilter = $('#cabins-coverage')?.value || 'all';
   const selectedStockFilter = $('#cabins-stock-filter')?.value || 'all';
   const simulated = (CABINS.items || []).map(item => ({ ...item, required: n(item.modelNeeds?.[model]) * cars })).filter(item => n(item.required) > 0).filter(item => matchesStockFilterValue(item, selectedStockFilter));
-  const critical = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required)[0] === 'Crítico').length;
-  const attention = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required)[0] === 'Em atenção').length;
+  const critical = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required, Object.values(item.orders || {}).some(value => n(value) > 0))[0] === 'Crítico').length;
+  const attention = simulated.filter(item => pinSimulationStatus(n(item.stock), item.required, Object.values(item.orders || {}).some(value => n(value) > 0))[0] === 'Em atenção').length;
   const regular = simulated.length - critical - attention;
   const totalRequired = simulated.reduce((sum, item) => sum + item.required, 0);
   const totalStock = simulated.reduce((sum, item) => sum + n(item.stock), 0);
@@ -1568,8 +1571,8 @@ function cabinsView() {
 
 function sheetMetalStatus(item, cars = 1) {
   const required = n(item.minimum) * Math.max(1, cars);
-  if (n(item.stock) >= required) return ['Regular', 'green'];
-  return hasOpenOrder(itemByCode(item.code) || item) ? ['Em atenção', 'amber'] : ['Crítico', 'red'];
+  const base = itemByCode(item.code) || item;
+  return availabilityStatus(item.stock, required, hasOpenOrder(base));
 }
 function exportCriticalItems(items, filename = 'itens-criticos.xls') {
   const rows = items.map(item => { const base = itemByCode(item.code) || item; const orders = Object.values(base.orders || {}).reduce((sum, v) => sum + n(v), 0); const dates = Object.entries(base.orders || {}).filter(([,v]) => n(v) > 0).map(([m]) => m).join(', '); return `<tr><td>${esc(item.code)}</td><td>${esc(item.description || base.description || '—')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.plannedNeed || 0)}</td><td>${fmt(item.structureDemand || 0)}</td><td>${orders > 0 ? 'Sim' : 'Não'}</td><td>${esc(dates || '—')}</td></tr>`; }).join('');
@@ -1751,11 +1754,12 @@ async function analyzePVFile(file) {
     await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
     if (pageNumber === 1) {
       const previewCanvas = document.createElement('canvas');
-      const previewWidth = 520;
+      // Mantém uma cópia suficientemente nítida para leitura quando o usuário ampliar.
+      const previewWidth = 1400;
       previewCanvas.width = previewWidth;
       previewCanvas.height = Math.max(1, Math.round(previewWidth * viewport.height / viewport.width));
       previewCanvas.getContext('2d').drawImage(canvas, 0, 0, previewCanvas.width, previewCanvas.height);
-      previewDataUrl = previewCanvas.toDataURL('image/jpeg', 0.68);
+      previewDataUrl = previewCanvas.toDataURL('image/jpeg', 0.82);
     }
     const lines = pvGroupTextItems(content.items).map(line => {
       const red = line.items.some(item => pvRegionIsRed(canvas, item, viewport));
@@ -1789,7 +1793,11 @@ function enPVSourceRows() {
 }
 function enPVSavedNumber(row) {
   const review = EN_PV_REVIEWS[row.en] || {};
-  return String(review.pv || review.analysis?.pv || row.pv || '').trim();
+  const number = String(review.pv || review.analysis?.pv || row.pv || '').trim();
+  if (number) return number;
+  // Mesmo quando o PDF não contém um número legível, a EN foi vinculada
+  // automaticamente ao documento importado e precisa deixar de aparecer como pendente.
+  return review.linkedFromPV && review.analysis?.fileName ? 'PV vinculado' : '';
 }
 function enPVStatus(row) {
   const review = EN_PV_REVIEWS[row.en] || row;
@@ -1826,7 +1834,9 @@ function criticalItemsForEN(en, vehicleCount = 1) {
     const required = n(component.quantity) * Math.max(1, n(vehicleCount));
     const stock = n(item.stock);
     const orders = Object.entries(item.orders || {}).filter(([, quantity]) => n(quantity) > 0).map(([month, quantity]) => `${month.replace('PED ', '')}: ${fmt(quantity)}`).join(' | ');
-    return { code: component.code, description: component.description || item.description || '', required, stock, balance: stock - required, orders, model, en, critical: stock < required };
+    const hasOrder = Object.values(item.orders || {}).some(quantity => n(quantity) > 0);
+    const status = availabilityStatus(stock, required, hasOrder);
+    return { code: component.code, description: component.description || item.description || '', required, stock, balance: stock - required, orders, model, en, status: status[0], critical: status[0] === 'Crítico' };
   }).filter(item => item.critical);
 }
 
@@ -1846,6 +1856,19 @@ function openENCriticalDetail(en) {
   overlay.innerHTML = `<section class="material-detail en-critical-modal" role="dialog" aria-modal="true"><div class="material-detail-header"><div><span class="eyebrow">Itens críticos da estrutura</span><h2>${esc(en)}</h2><p>Modelo ${esc(critical[0]?.model || row.modelo || 'não identificado')} · ${fmt(critical.length)} item(ns) crítico(s)</p></div><button class="icon-btn" id="close-en-critical">×</button></div><div class="panel-body"><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(critical.length)}</b><span>Itens abaixo do estoque necessário</span></div><div class="summary-box"><b>${fmt(critical.reduce((sum, item) => sum + item.required, 0))}</b><span>Necessidade estrutural</span></div><div class="summary-box"><b>${fmt(critical.reduce((sum, item) => sum + item.stock, 0))}</b><span>Estoque atual</span></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código</th><th>Descrição</th><th>Pedido</th><th>Estoque</th><th>Necessidade</th><th>Saldo</th></tr></thead><tbody>${critical.map(item => `<tr><td>${esc(item.code)}</td><td>${esc(item.description)}</td><td>${esc(item.orders || 'Sem pedido')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.required)}</td><td class="danger-text">${fmt(item.balance)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum item crítico encontrado para a estrutura deste modelo.</td></tr>'}</tbody></table></div><div class="detail-footer"><button class="secondary-btn" id="export-en-critical">Baixar itens críticos para Excel</button><button class="secondary-btn" id="close-en-critical-bottom">Fechar</button></div></div></section>`;
   document.body.appendChild(overlay);
   const close = () => overlay.remove(); $('#close-en-critical').onclick = close; $('#close-en-critical-bottom').onclick = close; $('#export-en-critical').onclick = () => exportCriticalENItems(en, critical); overlay.onclick = event => { if (event.target === overlay) close(); };
+}
+
+function openPVPreview(src) {
+  if (!src) return;
+  const overlay = document.createElement('div');
+  overlay.className = 'pv-preview-overlay';
+  overlay.innerHTML = `<section class="pv-preview-dialog" role="dialog" aria-modal="true" aria-label="Prévia ampliada do PV"><div class="pv-preview-toolbar"><strong>Prévia ampliada do PV</strong><button class="icon-btn" id="close-pv-preview" aria-label="Fechar">×</button></div><div class="pv-preview-canvas"><img src="${esc(src)}" alt="PV ampliado para leitura" /></div></section>`;
+  document.body.appendChild(overlay);
+  const close = () => { document.removeEventListener('keydown', onKeyDown); overlay.remove(); };
+  const onKeyDown = event => { if (event.key === 'Escape') close(); };
+  $('#close-pv-preview').onclick = close;
+  overlay.onclick = event => { if (event.target === overlay) close(); };
+  document.addEventListener('keydown', onKeyDown);
 }
 
 function enPVView() {
@@ -2129,6 +2152,7 @@ function bindView() {
       $('#stock-table').innerHTML = table(items, 250, false, '', true);
       bindMaterialButtons();
       bindPurchaseButtons();
+      bindProgressiveTables();
     };
     $('#stock-search').oninput = filter;
     $('#stock-risk').onchange = filter;
@@ -2148,6 +2172,7 @@ function bindView() {
         $('#orders-table').innerHTML = chosen ? table(items, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>';
         bindMaterialButtons();
         bindPurchaseButtons();
+        bindProgressiveTables();
       }
     };
     $('#orders-search').oninput = filterOrders;
@@ -2162,7 +2187,7 @@ function bindView() {
       const modelItems = list.map(component => ({ ...(itemByCode(component.code) || { code: component.code, description: component.description, stock: 0, safety: 0, analyst: '', family: '', obtentionType: '', orders: {}, unit: 'UN' }), requirement: component.quantity })).filter(matchesGlobalFilters);
       box.style.display = 'block';
       box.innerHTML = `<div class="panel-header"><h3>${esc(name)}</h3><span>${list.length} componentes</span></div><div class="toolbar"><select class="select" id="model-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div id="model-table">${table(modelItems, 100)}</div>`;
-      $('#model-risk').onchange = () => { const selectedRisk = $('#model-risk').value; $('#model-table').innerHTML = table(selectedRisk === 'all' ? modelItems : modelItems.filter(item => risk(item)[0] === selectedRisk), 100); bindMaterialButtons(); };
+      $('#model-risk').onchange = () => { const selectedRisk = $('#model-risk').value; $('#model-table').innerHTML = table(selectedRisk === 'all' ? modelItems : modelItems.filter(item => risk(item)[0] === selectedRisk), 100); bindMaterialButtons(); bindProgressiveTables(); };
       box.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
@@ -2213,6 +2238,10 @@ function bindView() {
       const query = enPvQuery.trim().toLowerCase();
       document.querySelectorAll('.en-pv-row').forEach(row => { row.hidden = !!query && !String(row.dataset.enRowText || '').includes(query); });
     };
+    document.querySelectorAll('.en-pv-preview img').forEach(image => {
+      image.title = 'Clique para ampliar e ler o PV';
+      image.onclick = () => openPVPreview(image.currentSrc || image.src);
+    });
     document.querySelectorAll('[data-en-select]').forEach(button => button.onclick = () => { selectedEN = button.dataset.enSelect || ''; render(); openENCriticalDetail(selectedEN); });
     const fileInput = $('#en-pv-file');
     if (fileInput) fileInput.onchange = () => handleENPVUpload(fileInput.files?.[0]);

@@ -490,7 +490,7 @@ body {
 }
 .summary-box {
   padding: 15px;
-  background: #030303;
+  background: #f8fafc;
   border-radius: 12px;
 }
 .summary-box b {
@@ -1740,7 +1740,7 @@ body.dark-theme .pins-niguri-table td.niguri-cell.danger { background: #7e2630 !
 .en-pv-detail .panel-header { background:linear-gradient(135deg,#102847,#17466d); color:#fff; }
 .en-pv-detail .panel-header span { color:#d6e5f5; }
 .en-pv-meta { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; padding:18px 20px 4px; }
-.en-pv-meta div { background:#7094b6; border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
+.en-pv-meta div { background:#f8fafc; border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
 .en-pv-meta span { display:block; color:var(--muted); font-size:10px; margin-bottom:4px; }
 .en-pv-meta b { display:block; font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .model-highlight { color:var(--blue); }
@@ -1776,3 +1776,15 @@ body.dark-theme .pins-niguri-table td.niguri-cell.danger { background: #7e2630 !
 .en-critical-modal { width:min(1120px,calc(100vw - 32px)); max-height:90vh; overflow:auto; }
 .en-critical-modal .panel-body { padding:20px; }
 .en-critical-modal .data-table { min-width:820px; }
+
+/* Visualizador ampliado da prévia do PV */
+.en-pv-preview img { cursor: zoom-in; transition: transform .16s ease, box-shadow .16s ease; }
+.en-pv-preview img:hover { transform: scale(1.01); box-shadow: 0 5px 18px rgba(20, 45, 77, .16); }
+.pv-preview-overlay { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 22px; background: rgba(3, 14, 30, .84); }
+.pv-preview-dialog { width: min(1500px, 96vw); height: min(94vh, 1100px); display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(255,255,255,.18); border-radius: 14px; background: #f7f9fc; box-shadow: 0 24px 80px rgba(0,0,0,.38); }
+.pv-preview-toolbar { display: flex; align-items: center; justify-content: space-between; flex: 0 0 auto; padding: 11px 15px; color: #fff; background: var(--navy); }
+.pv-preview-toolbar strong { font: 600 14px "Space Grotesk"; }
+.pv-preview-toolbar .icon-btn { color: #fff; border-color: rgba(255,255,255,.3); background: rgba(255,255,255,.08); }
+.pv-preview-canvas { flex: 1; overflow: auto; padding: 18px; text-align: center; background: #dfe6ef; }
+.pv-preview-canvas img { display: inline-block; width: auto; min-width: min(100%, 700px); max-width: none; height: auto; min-height: 100%; object-fit: contain; vertical-align: top; background: #fff; box-shadow: 0 5px 22px rgba(20,45,77,.2); }
+@media (max-width: 700px) { .pv-preview-overlay { padding: 8px; } .pv-preview-dialog { width: 100vw; height: 96vh; border-radius: 10px; } .pv-preview-canvas { padding: 8px; } .pv-preview-canvas img { min-width: 760px; } }
