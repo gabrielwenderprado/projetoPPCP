@@ -571,13 +571,6 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN013277",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN013006",
       "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
@@ -592,20 +585,6 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012978",
-      "cliente": "FENATRAN 2026",
-      "produto": "SKYCITY 13,5 AT",
-      "modelo": "13AT",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013281",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN013010",
       "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
@@ -613,7 +592,28 @@
       "mes": "10/2026"
     },
     {
+      "pedido": "EN012978",
+      "cliente": "FENATRAN 2026",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "10/2026"
+    },
+    {
       "pedido": "EN013012",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013014",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013016",
       "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
@@ -683,25 +683,25 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN013340",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013026",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013344",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013028",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013346",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013030",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
       "pedido": "EN013303",
@@ -718,81 +718,74 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN013348",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013277",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013350",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013018",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013352",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013032",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013378",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013034",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013354",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013281",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013356",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013279",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013358",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013285",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013360",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013020",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013362",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013022",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
-      "pedido": "EN013364",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013024",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "11/2026"
-    },
-    {
-      "pedido": "EN013366",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "11/2026"
+      "mes": "10/2026"
     },
     {
       "pedido": "EN013368",
@@ -816,21 +809,28 @@
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013374",
+      "pedido": "EN013340",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013376",
+      "pedido": "EN013344",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013380",
+      "pedido": "EN013346",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013348",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
@@ -935,7 +935,7 @@
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013328",
+      "pedido": "EN013354",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
@@ -963,14 +963,14 @@
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013252",
+      "pedido": "EN013356",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013268",
+      "pedido": "EN013374",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
@@ -981,6 +981,104 @@
       "cliente": "EPR INFRAESTRUTURA",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013376",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013350",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012572",
+      "cliente": "EPR INFRAESTRUTURA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013352",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013378",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013358",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012352",
+      "cliente": "SOMOS RENTAL LTDA",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013360",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013380",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013283",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013362",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013110",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013364",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013366",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
       "mes": "11/2026"
     },
     {
@@ -998,95 +1096,11 @@
       "mes": "11/2026"
     },
     {
-      "pedido": "EN012572",
-      "cliente": "EPR INFRAESTRUTURA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "11/2026"
-    },
-    {
-      "pedido": "EN013279",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013283",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "11/2026"
-    },
-    {
-      "pedido": "EN013285",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012352",
-      "cliente": "SOMOS RENTAL LTDA",
-      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "18LDDI",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013014",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013016",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013018",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN013250",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "11/2026"
-    },
-    {
-      "pedido": "EN013110",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "mes": "11/2026"
-    },
-    {
-      "pedido": "EN013020",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013022",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013024",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
     },
     {
       "pedido": "EN013254",
@@ -1110,27 +1124,6 @@
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013026",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013028",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013030",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN013260",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
@@ -1152,21 +1145,28 @@
       "mes": "11/2026"
     },
     {
-      "pedido": "EN013032",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013034",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN013266",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013252",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013268",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013328",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
