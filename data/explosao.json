@@ -41236,16 +41236,16 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 15,
-        "DEM 11/2026": 34,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": -15,
-        "DEM 11/2026": -34,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
         "DEM 12/2026": 2
       },
       "obtention": []
@@ -252133,13 +252133,6 @@
     ],
     "10L": [
       {
-        "code": "02.01.01.0000069873",
-        "description": "\"TREFILADO 1/2\"\"\"",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.02.11.0000000052",
         "description": "ABRAÇADEIRA CHASSIS DE METAL - IM00803 S",
         "quantity": 10,
@@ -252235,13 +252228,6 @@
         "description": "ARRUELA DO EIXO DA TORRE COM O BRAÇO INFERIOR SKYRITZ",
         "quantity": 2,
         "stock": 16,
-        "demand": 0
-      },
-      {
-        "code": "01.02.02.0000000008",
-        "description": "ARRUELA LISA 1/2\" X 24 X 2,00MM GALVANIZADA ELETROSTATICA BRANCA DIN 125 A",
-        "quantity": 1,
-        "stock": 545,
         "demand": 0
       },
       {
@@ -253127,13 +253113,6 @@
         "demand": 200
       },
       {
-        "code": "02.01.01.0000091267",
-        "description": "FECHAMENTO LATERAL DO ARMÁRIO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.01.03.0000069390",
         "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
         "quantity": 1,
@@ -253173,20 +253152,6 @@
         "description": "FITA DE LED 5 METROS 24V BRANCA PC IP65 600K",
         "quantity": 1.2,
         "stock": 184,
-        "demand": 0
-      },
-      {
-        "code": "01.02.10.0000000033",
-        "description": "FITA DUPLA FACE TRANSPARENTE 9MM X 0.80 X 20M (XT080)",
-        "quantity": 1,
-        "stock": 518,
-        "demand": 0
-      },
-      {
-        "code": "01.02.10.0000000014",
-        "description": "FITA ISOLANTE PVC PRETA 18 MM X 20M",
-        "quantity": 1,
-        "stock": 740,
         "demand": 0
       },
       {
@@ -253239,13 +253204,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000005",
-        "description": "KIT JUNTA ROTATIVA CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.02.09.0000000091",
         "description": "KIT LANCAS CESTA AEREA SKYRITZ 10 L",
         "quantity": 1,
@@ -253264,13 +253222,6 @@
         "description": "KIT SUPERIOR MANGUEIRAS SKYCITY 10 L",
         "quantity": 1,
         "stock": 54,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000060592",
-        "description": "LÂMINA DO PARA-CHOQUE SERIE LEVE",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -253327,13 +253278,6 @@
         "description": "MINI SPOT 24V DNI 0604 VERMELHO",
         "quantity": 1,
         "stock": 430,
-        "demand": 0
-      },
-      {
-        "code": "01.14.02.0000000009",
-        "description": "MOLA Ø18,50 X PASSO 9,00 X ARAME 1,50 X COMP. 86MM",
-        "quantity": 1,
-        "stock": 26,
         "demand": 0
       },
       {
@@ -253717,13 +253661,6 @@
       {
         "code": "01.09.04.0000000010",
         "description": "PLACA DE ALUMINIO GRAVADO N. NIEV 150X74X0,5MM",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.04.0000000003",
-        "description": "PLACA DE ALUMINO ID (PBT 10 A 23,5 TON) 75 X 60 X 0,5MM",
         "quantity": 1,
         "stock": 0,
         "demand": 0
