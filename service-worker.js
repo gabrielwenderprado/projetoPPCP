@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dashboard-estoque-v9-niguri-modelos';
+const CACHE_NAME = 'dashboard-estoque-v10-layout-80';
 const APP_FILES = [
   './', './index.html', './assets/app.js', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',

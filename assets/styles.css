@@ -1790,3 +1790,12 @@ body.dark-theme .pins-niguri-table td.niguri-cell.danger { background: #7e2630 !
 .pv-preview-canvas { flex: 1; overflow: auto; padding: 18px; text-align: center; background: #dfe6ef; }
 .pv-preview-canvas img { display: inline-block; width: auto; min-width: min(100%, 700px); max-width: none; height: auto; min-height: 100%; object-fit: contain; vertical-align: top; background: #fff; box-shadow: 0 5px 22px rgba(20,45,77,.2); }
 @media (max-width: 700px) { .pv-preview-overlay { padding: 8px; } .pv-preview-dialog { width: 100vw; height: 96vh; border-radius: 10px; } .pv-preview-canvas { padding: 8px; } .pv-preview-canvas img { min-width: 760px; } }
+
+/* Em monitores grandes, mantém o navegador em 100%, mas compacta as telas
+   de planejamento para a densidade visual que antes aparecia em 80%. */
+@media (min-width: 1200px) {
+  .pins-page {
+    zoom: .82;
+    width: 121.95122%;
+  }
+}
