@@ -887,7 +887,7 @@ body.dark-theme .data-table td { border-color: #203b56; color: #dce8f5; }
 body.dark-theme .data-table tr:hover { background: #102a45; }
 body.dark-theme .input, body.dark-theme .select { background: #0a1a2d; border-color: #31506d; color: #e6f0fa; }
 body.dark-theme .date-pill { background: #143b63; color: #a9d9fa; }
-body.dark-theme .secondary-btn { color: #dce8f5; border-color: #31506d; }
+body.dark-theme .secondary-btn { color: #000000; border-color: #31506d; }
 @media (max-width: 900px) {
   .topbar { height: 170px; padding: 0 20px; }
   .topbar-title .eyebrow { display: none; }
