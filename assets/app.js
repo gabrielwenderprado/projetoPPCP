@@ -49,6 +49,9 @@ let selectedPinModel = '';
 let pinCars = 1;
 // Semana a partir da qual o NIGURI deve iniciar a projeção.
 let pinsNiguriStartWeek = '';
+let modelNiguriModel = '';
+let modelNiguriStartWeek = '';
+let modelNiguriAnalyst = 'all';
 // Dados consolidados da aba Cilindros, tratados com a mesma lógica de Pinos.
 let CYLINDERS = { items: [], models: [] };
 let selectedCylinderModel = '';
@@ -1504,6 +1507,75 @@ function pinsView() {
   return `<div class="pins-page"><div class="pins-subnav"><button class="pins-subtab ${active === 'simulation' ? 'active' : ''}" data-pins-subview="simulation">Pinos por modelo</button><button class="pins-subtab ${active === 'niguri' ? 'active' : ''}" data-pins-subview="niguri">NIGURI dos pinos</button></div>${content}</div>`;
 }
 
+function modelNiguriNormalize(value) { return String(value || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
+function modelNiguriStructureName(model) {
+  const structures = Object.keys(DATA?.models || {});
+  const aliases = { '13ldi': '13ldi-46kv', '13lddi': '13-69kv' };
+  const preferred = aliases[modelNiguriNormalize(model)] || model;
+  return structures.find(name => modelNiguriNormalize(name) === modelNiguriNormalize(preferred))
+    || structures.find(name => modelNiguriNormalize(name).includes(modelNiguriNormalize(model)))
+    || structures.find(name => modelNiguriNormalize(model).includes(modelNiguriNormalize(name))) || '';
+}
+function modelNiguriStructureRows(model) {
+  const structureName = modelNiguriStructureName(model);
+  const base = new Map((DATA?.items || []).map(item => [String(item.code), item]));
+  return (DATA?.models?.[structureName] || []).map(entry => {
+    const code = String(entry.code || '').trim();
+    if (!/^\d{2}(?:\.\d{2}){2}\.\d{10}$/.test(code)) return null;
+    const source = base.get(code) || {};
+    const quantity = n(entry.quantity);
+    if (quantity <= 0) return null;
+    return { ...source, code, description: source.description || entry.description || code, quantity, unit: source.unit || 'UN', stock: n(source.stock ?? entry.stock), analyst: source.analyst || 'Não informado', safety: n(source.safety), orders: source.orders || {}, lastMovement: source.lastMovement || 'não tem' };
+  }).filter(Boolean);
+}
+function modelNiguriPlanEntries(model) {
+  const annual = DATA?.planAnnual?.models || {};
+  const quantities = annual[model] || {};
+  return [{ modelo: model, quantidades: quantities }];
+}
+function modelNiguriTimeline(model) {
+  const entries = modelNiguriPlanEntries(model);
+  const now = new Date();
+  const currentPeriod = now.getFullYear() * 100 + now.getMonth() + 1;
+  const periods = [...new Set(Object.keys(entries[0]?.quantidades || {}).filter(key => /^(\d{2})\/\d{4}$/.test(key)).filter(key => { const [month, year] = key.split('/').map(Number); return year * 100 + month >= currentPeriod; }))].sort((a,b) => { const [am, ay] = a.split('/').map(Number); const [bm, by] = b.split('/').map(Number); return (ay * 100 + am) - (by * 100 + bm); });
+  const allSlots = periods.flatMap(key => { const [month, year] = key.split('/').map(Number); return pinsNiguriMonthSlots(month, year); });
+  const seen = new Set();
+  const unique = allSlots.filter(slot => !seen.has(slot.key) && seen.add(slot.key));
+  const quantitiesByPeriod = Object.fromEntries(periods.map(key => [key, n(entries[0]?.quantidades?.[key])]));
+  periods.forEach(key => { const [month, year] = key.split('/').map(Number); const monthSlots = unique.filter(slot => Number(slot.month) === month && Number(slot.year) === year); let remainder = monthSlots.length ? quantitiesByPeriod[key] % monthSlots.length : 0; const base = monthSlots.length ? Math.floor(quantitiesByPeriod[key] / monthSlots.length) : 0; monthSlots.forEach(slot => { slot.quantity = base + (remainder-- > 0 ? 1 : 0); }); });
+  const currentKey = pinsNiguriCurrentWeekKey(new Date());
+  const startKey = modelNiguriStartWeek || currentKey;
+  const startDate = pinsNiguriWeekDate(startKey) || pinsNiguriWeekDate(currentKey);
+  const currentDate = pinsNiguriWeekDate(currentKey);
+  const calcDate = startDate && currentDate && startDate > currentDate ? currentDate : startDate;
+  const calculationSlots = unique.filter(slot => pinsNiguriWeekDate(slot.key) >= calcDate);
+  const slots = unique.filter(slot => pinsNiguriWeekDate(slot.key) >= startDate);
+  return { slots, allSlots: unique, calculationSlots, startKey, currentKey, model, structureName: modelNiguriStructureName(model) };
+}
+function modelNiguriRows(model, analyst = 'all', query = '', statusFilter = 'all') {
+  const timeline = modelNiguriTimeline(model);
+  const visible = new Set(timeline.slots.map(slot => slot.key));
+  const rows = modelNiguriStructureRows(model).map(item => {
+    let balance = n(item.stock); const balances = []; let totalNeed = 0;
+    timeline.calculationSlots.forEach(slot => { const consumption = item.quantity * slot.quantity; const receipt = pinsNiguriOrders(item, slot, timeline.calculationSlots); balance = balance - consumption + receipt; if (visible.has(slot.key)) { totalNeed += consumption; balances.push({ ...slot, consumption, receipts: receipt, balance }); } });
+    const firstShortage = balances.find(slot => slot.balance < 0);
+    const status = firstShortage ? 'Crítico' : balances.some(slot => slot.balance <= n(item.safety)) ? 'Em atenção' : totalNeed > 0 ? 'Regular' : 'Regular';
+    return { ...item, totalNeed, balances, firstShortage, status };
+  }).filter(item => (analyst === 'all' || item.analyst === analyst) && `${item.code} ${item.description}`.toLowerCase().includes(String(query).trim().toLowerCase()) && (statusFilter === 'all' || item.status === statusFilter));
+  return { rows, timeline };
+}
+function modelNiguriView() {
+  const models = Object.keys(DATA?.planAnnual?.models || {});
+  const model = modelNiguriModel || models[0] || '';
+  const analysts = [...new Set((DATA?.items || []).map(item => item.analyst).filter(Boolean))].sort();
+  const query = $('#model-niguri-search')?.value || ''; const status = $('#model-niguri-status')?.value || 'all';
+  const analyst = modelNiguriAnalyst || 'all'; const { rows, timeline } = modelNiguriRows(model, analyst, query, status);
+  const headers = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} modelos planejados">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
+  const body = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${esc(item.analyst)}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.quantity)} ${esc(item.unit)}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit)}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.receipts > 0 ? 'receipt' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
+  const options = timeline.allSlots.map(slot => `<option value="${esc(slot.key)}" ${slot.key === timeline.startKey ? 'selected' : ''}>${esc(slot.label)} · ${esc(slot.month)}/${esc(slot.year)}</option>`).join('');
+  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · estrutura completa</span><h2>NIGURI dos modelos</h2><p>Todos os itens da estrutura do modelo, cruzados com estoque, pedidos e o planoAnual.</p></div><div class="date-pill">Estrutura: ${esc(timeline.structureName || 'não encontrada')}</div></div><div class="panel pins-niguri-controls"><label>Modelo<select class="select" id="model-niguri-model">${models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="model-niguri-start-week">${options}</select></label><label>Analista<select class="select" id="model-niguri-analyst"><option value="all">Todos os analistas</option>${analysts.map(entry => `<option value="${esc(entry)}" ${entry === analyst ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="model-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="model-niguri-status"><option value="all">Todas</option><option value="Crítico">Críticos</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Regra:</strong> o consumo semanal é a quantidade do item na estrutura multiplicada pelos modelos do planoAnual. Recebimentos entram na semana prevista e permanecem no saldo acumulado das semanas seguintes.</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Itens da estrutura · ${esc(model)}</h3><span>${fmt(rows.length)} itens encontrados · ${fmt(timeline.slots.length)} semanas projetadas</span></div><span class="pins-legend"><i></i> Verde: saldo · amarelo: recebimento/limite · vermelho: falta</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Analista</th><th>Estoque</th><th>Qtd./modelo</th><th>Necessidade até dez.</th><th>Primeira falta</th>${headers}</tr></thead><tbody>${body || '<tr><td colspan="8" class="empty">Nenhum item corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
+}
+
 function pinsSimulationView() {
   const items = PINS.items || [];
   const models = PINS.models || [];
@@ -1957,9 +2029,9 @@ async function handleENPVUpload(file) {
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
+  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
+  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -1992,6 +2064,14 @@ function bindView() {
   bindMaterialButtons();
   bindPurchaseButtons();
   bindProgressiveTables();
+  if (view === 'modelNiguri') {
+    const model = $('#model-niguri-model'); const week = $('#model-niguri-start-week'); const analystSelect = $('#model-niguri-analyst'); const search = $('#model-niguri-search'); const status = $('#model-niguri-status');
+    if (model) model.onchange = () => { modelNiguriModel = model.value; modelNiguriStartWeek = ''; render(); };
+    if (week) week.onchange = () => { modelNiguriStartWeek = week.value; render(); };
+    if (analystSelect) analystSelect.onchange = () => { modelNiguriAnalyst = analystSelect.value; render(); };
+    if (search) search.oninput = () => { const current = modelNiguriView(); const temp = document.createElement('div'); temp.innerHTML = current; const oldBody = document.querySelector('.pins-niguri-table tbody'); const newBody = temp.querySelector('.pins-niguri-table tbody'); if (oldBody && newBody) oldBody.innerHTML = newBody.innerHTML; bindMaterialButtons(); };
+    if (status) status.onchange = () => { const current = modelNiguriView(); const temp = document.createElement('div'); temp.innerHTML = current; const oldBody = document.querySelector('.pins-niguri-table tbody'); const newBody = temp.querySelector('.pins-niguri-table tbody'); if (oldBody && newBody) oldBody.innerHTML = newBody.innerHTML; bindMaterialButtons(); };
+  }
   document.querySelectorAll('[data-go-view]').forEach(button => button.onclick = () => {
     view = button.dataset.goView;
     document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item.dataset.view === view));
