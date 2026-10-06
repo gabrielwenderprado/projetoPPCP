@@ -1718,9 +1718,11 @@ body.dark-theme .purchase-process-table tbody tr:hover td { background: #102a45;
 .niguri-cell { min-width: 76px; color: #163b61; text-align: center; font-weight: 800; }
 .niguri-cell.good { background: #d7f2e1 !important; color: #176442; }
 .niguri-cell.attention { background: #fff4ad !important; color: #725c00; }
+.niguri-cell.receipt { background: #ffe5a8 !important; color: #805400; }
 .niguri-cell.danger { background: #ffc4c7 !important; color: #8c202a; }
 body.dark-theme .pins-niguri-table td.niguri-cell.good { background: #174d3a !important; color: #eafff2 !important; text-shadow: 0 1px 1px #061c13; }
 body.dark-theme .pins-niguri-table td.niguri-cell.attention { background: #6f5a08 !important; color: #fffbea !important; text-shadow: 0 1px 1px #241d00; }
+body.dark-theme .pins-niguri-table td.niguri-cell.receipt { background: #76520a !important; color: #fff7d6 !important; text-shadow: 0 1px 1px #241d00; }
 body.dark-theme .pins-niguri-table td.niguri-cell.danger { background: #7e2630 !important; color: #fff3f4 !important; text-shadow: 0 1px 1px #2a080c; }
 @media (max-width: 900px) {
   .pins-niguri-controls { grid-template-columns: 1fr; }

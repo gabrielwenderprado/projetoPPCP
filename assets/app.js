@@ -47,6 +47,8 @@ let CONSUMABLES = { items: [], months: [] };
 let PINS = { items: [], models: [] };
 let selectedPinModel = '';
 let pinCars = 1;
+// Semana a partir da qual o NIGURI deve iniciar a projeção.
+let pinsNiguriStartWeek = '';
 // Dados consolidados da aba Cilindros, tratados com a mesma lógica de Pinos.
 let CYLINDERS = { items: [], models: [] };
 let selectedCylinderModel = '';
@@ -1366,7 +1368,19 @@ function getWeekNumber(date) {
   return Math.ceil((((target - yearStart) / 86400000) + 1) / 7);
 }
 
-function pinsNiguriTimeline(model) {
+function pinsNiguriCurrentWeekKey(date = new Date()) {
+  const monday = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const weekday = monday.getDay() || 7;
+  monday.setDate(monday.getDate() - weekday + 1);
+  return `${monday.getFullYear()}-${monday.getMonth()}-${monday.getDate()}`;
+}
+
+function pinsNiguriWeekDate(key) {
+  const match = String(key || '').match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  return match ? new Date(Number(match[1]), Number(match[2]), Number(match[3])) : null;
+}
+
+function pinsNiguriTimeline(model, requestedStartKey = '') {
   const now = new Date();
   const year = now.getFullYear();
   const startMonth = now.getMonth() + 1;
@@ -1378,7 +1392,7 @@ function pinsNiguriTimeline(model) {
     ? annualMonths.map(key => key.split('/')[0])
     : (DATA?.planMonth?.months || []).map(value => String(value).padStart(2, '0')).filter(month => Number(month) >= startMonth);
   const seenWeeks = new Set();
-  const slots = selectedMonths.flatMap(month => pinsNiguriMonthSlots(Number(month), year)).filter(slot => {
+  const allSlots = selectedMonths.flatMap(month => pinsNiguriMonthSlots(Number(month), year)).filter(slot => {
     if (seenWeeks.has(slot.key)) return false;
     seenWeeks.add(slot.key);
     return true;
@@ -1389,13 +1403,27 @@ function pinsNiguriTimeline(model) {
     quantitiesByMonth[month] = planModels.reduce((sum, entry) => sum + n(entry.quantidades?.[annualKey] ?? entry.quantidades?.[month]), 0);
   });
   selectedMonths.forEach(month => {
-    const monthSlots = slots.filter(slot => slot.month === month);
+    const monthSlots = allSlots.filter(slot => slot.month === month);
     const total = quantitiesByMonth[month] || 0;
     const base = monthSlots.length ? Math.floor(total / monthSlots.length) : 0;
     let remainder = monthSlots.length ? total % monthSlots.length : 0;
     monthSlots.forEach(slot => { slot.quantity = base + (remainder-- > 0 ? 1 : 0); });
   });
-  return { slots, planModels, selectedMonths };
+  const currentKey = pinsNiguriCurrentWeekKey(now);
+  const requestedKey = requestedStartKey || pinsNiguriStartWeek || currentKey;
+  const requestedDate = pinsNiguriWeekDate(requestedKey) || pinsNiguriWeekDate(currentKey);
+  const currentDate = pinsNiguriWeekDate(currentKey);
+  const calculationStartKey = requestedDate && currentDate && requestedDate > currentDate ? currentKey : requestedKey;
+  const calculationStartDate = pinsNiguriWeekDate(calculationStartKey) || currentDate;
+  const slots = allSlots.filter(slot => {
+    const slotDate = pinsNiguriWeekDate(slot.key);
+    return slotDate && requestedDate && slotDate >= requestedDate;
+  });
+  const calculationSlots = allSlots.filter(slot => {
+    const slotDate = pinsNiguriWeekDate(slot.key);
+    return slotDate && calculationStartDate && slotDate >= calculationStartDate;
+  });
+  return { slots, allSlots, calculationSlots, planModels, selectedMonths, currentKey, startKey: requestedKey, calculationStartKey };
 }
 
 function pinsNiguriWeekKey(value) {
@@ -1426,7 +1454,7 @@ function pinsNiguriOrders(item, slot, timelineSlots = []) {
 }
 
 function pinsNiguriRows(model, query = '', statusFilter = 'all') {
-  const timeline = pinsNiguriTimeline(model);
+  const timeline = pinsNiguriTimeline(model, pinsNiguriStartWeek);
   const rows = (PINS.items || []).map(item => {
     const modelNeed = model === 'Todos os modelos'
       ? timeline.planModels.reduce((sum, entry) => sum + n(item.modelNeeds?.[entry.modelo]), 0)
@@ -1435,12 +1463,15 @@ function pinsNiguriRows(model, query = '', statusFilter = 'all') {
     let balance = n(itemByCode(item.code)?.stock ?? item.stock);
     const balances = [];
     let totalNeed = 0;
-    timeline.slots.forEach(slot => {
+    const visibleKeys = new Set(timeline.slots.map(slot => slot.key));
+    timeline.calculationSlots.forEach(slot => {
       const consumption = modelNeed * slot.quantity;
-      const receipt = pinsNiguriOrders(item, slot, timeline.slots);
+      const receipt = pinsNiguriOrders(item, slot, timeline.calculationSlots);
       balance = balance - consumption + receipt;
-      totalNeed += consumption;
-      balances.push({ ...slot, consumption, receipts: receipt, balance });
+      if (visibleKeys.has(slot.key)) {
+        totalNeed += consumption;
+        balances.push({ ...slot, consumption, receipts: receipt, balance });
+      }
     });
     const firstShortage = balances.find(slot => slot.balance < 0);
     const status = firstShortage ? 'Crítico' : balances.some(slot => slot.balance <= n(item.safety)) ? 'Em atenção' : 'Regular';
@@ -1462,8 +1493,9 @@ function pinsNiguriView() {
   const attention = rows.filter(item => item.status === 'Em atenção').length;
   const firstWeek = rows.filter(item => item.firstShortage).sort((a,b) => a.firstShortage.key.localeCompare(b.firstShortage.key))[0]?.firstShortage?.label || '—';
   const weekHeaders = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} máquinas planejadas">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
-  const rowHtml = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code niguri-pin-code" data-code="${esc(item.code)}" data-pin-model="${esc(model)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit || 'UN')}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
-  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · linha do tempo</span><h2>NIGURI dos Pinos</h2><p>Saldo projetado por semana usando o modelo da coluna C da aba planoAnual, o mês da coluna D, a estrutura dos pinos, o estoque e a Obtenção.</p></div><div class="date-pill">Fonte: planoAnual · coluna C + coluna D</div></div><div class="panel pins-niguri-controls"><label>Modelo analisado<select class="select" id="pins-niguri-model"><option>Todos os modelos</option>${PINS.models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="pins-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="pins-niguri-status"><option value="all">Todos</option><option value="Crítico">Com falta prevista</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Leitura da projeção:</strong> cada registro do planoAnual é contado pelo produto/modelo na coluna C e agrupado pelo mês da coluna D. O total mensal é distribuído pelas semanas do mês; pedidos da Obtenção são somados no mês previsto de chegada.</div><div class="pins-result-panel panel"><div class="pins-result-head"><div><span class="eyebrow">Necessidade consolidada até 31/12</span><h3>${esc(model)}</h3><p>${fmt(rows.length)} pinos utilizados · primeira falta identificada: ${esc(firstWeek)}</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalNeed)}</strong><small>Críticos: ${fmt(critical)} · Atenção: ${fmt(attention)}</small></div></div></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Saldo acumulado por semana</h3><span>Verde: disponível · amarelo: próximo do limite · vermelho: falta prevista</span></div><span class="pins-legend"><i></i>${fmt(timeline.slots.length)} semanas projetadas</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Estoque inicial</th><th>Necessidade até dez.</th><th>Primeira falta</th>${weekHeaders}</tr></thead><tbody>${rowHtml || '<tr><td colspan="8" class="empty">Nenhum pino corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
+  const rowHtml = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code niguri-pin-code" data-code="${esc(item.code)}" data-pin-model="${esc(model)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit || 'UN')}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.receipts > 0 ? 'receipt' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
+  const weekOptions = timeline.allSlots.map(slot => `<option value="${esc(slot.key)}" ${slot.key === timeline.startKey ? 'selected' : ''}>${esc(slot.label)} · ${esc(slot.month)}/${esc(slot.year)}</option>`).join('');
+  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · linha do tempo</span><h2>NIGURI dos Pinos</h2><p>Saldo projetado por semana usando o modelo da coluna C da aba planoAnual, o mês da coluna D, a estrutura dos pinos, o estoque e a Obtenção.</p></div><div class="date-pill">Fonte: planoAnual · coluna C + coluna D</div></div><div class="panel pins-niguri-controls"><label>Modelo analisado<select class="select" id="pins-niguri-model"><option>Todos os modelos</option>${PINS.models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="pins-niguri-start-week">${weekOptions}</select></label><label>Pesquisar<input class="input" id="pins-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="pins-niguri-status"><option value="all">Todos</option><option value="Crítico">Com falta prevista</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Leitura da projeção:</strong> escolha S40, S41, S42 ou outra semana para iniciar a visualização. O recebimento entra na semana prevista; essa quantidade fica disponível para o consumo das semanas seguintes. Verde = saldo suficiente, amarelo = recebimento na semana ou saldo próximo do limite, vermelho = saldo negativo.</div><div class="pins-result-panel panel"><div class="pins-result-head"><div><span class="eyebrow">Necessidade consolidada até 31/12</span><h3>${esc(model)}</h3><p>${fmt(rows.length)} pinos utilizados · início em ${esc(timeline.slots[0]?.label || '—')} · primeira falta identificada: ${esc(firstWeek)}</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalNeed)}</strong><small>Críticos: ${fmt(critical)} · Atenção: ${fmt(attention)}</small></div></div></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Saldo acumulado por semana</h3><span>Verde: disponível · amarelo: recebimento/próximo do limite · vermelho: falta prevista</span></div><span class="pins-legend"><i></i>${fmt(timeline.slots.length)} semanas projetadas</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Estoque inicial</th><th>Necessidade até dez.</th><th>Primeira falta</th>${weekHeaders}</tr></thead><tbody>${rowHtml || '<tr><td colspan="8" class="empty">Nenhum pino corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
 }
 
 function pinsView() {
@@ -2076,9 +2108,11 @@ function bindView() {
     });
     if (pinsSubView === 'niguri') {
       const modelSelect = $('#pins-niguri-model');
+      const startWeekSelect = $('#pins-niguri-start-week');
       const search = $('#pins-niguri-search');
       const status = $('#pins-niguri-status');
       if (modelSelect) modelSelect.onchange = () => { selectedPinModel = modelSelect.value; render(); };
+      if (startWeekSelect) startWeekSelect.onchange = () => { pinsNiguriStartWeek = startWeekSelect.value; render(); };
       const rerenderNiguri = () => {
         const selected = modelSelect?.value || selectedPinModel || PINS.models?.[0] || 'Todos os modelos';
         const result = pinsNiguriRows(selected, search?.value || '', status?.value || 'all');

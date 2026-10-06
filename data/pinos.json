@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO_05.10.xlsm",
   "sourceSheet": "Pinos",
-  "generatedAt": "2026-10-05",
+  "generatedAt": "2026-10-06",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -50,7 +50,7 @@
       "code": "01.02.07.0000000005",
       "description": "PINO QUEBRA DEDO 1/4\" X 2\" COM CABO DE AÇO",
       "unit": "UN",
-      "stock": 1481,
+      "stock": 1381,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 20,
@@ -84,7 +84,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 268,
+      "stock": 854,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -356,7 +356,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 119,
+      "stock": 9,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -560,7 +560,7 @@
       "code": "01.01.10.0000071234",
       "description": "CILINDRO HIDRAULICO SAPATA SKYCITY",
       "unit": "UN",
-      "stock": 303,
+      "stock": 273,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -577,7 +577,7 @@
       "code": "01.02.01.0000000240",
       "description": "PINO DE CENTRO 3/8\"(9,52MM) X 1,50 X 3\"(76,20MM) CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 99,
+      "stock": 9,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -866,7 +866,7 @@
       "code": "02.03.01.0000085011",
       "description": "PINO ARTICULAÇAO CAÇAMBA",
       "unit": "UN",
-      "stock": 13,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -934,7 +934,7 @@
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 49,
+      "stock": 43,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -951,7 +951,7 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 90,
+      "stock": 84,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -968,7 +968,7 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 73,
+      "stock": 67,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
