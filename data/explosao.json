@@ -176062,16 +176062,16 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 30,
-        "DEM 11/2026": 68,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": -30,
-        "DEM 11/2026": -68,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -257737,13 +257737,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000089",
-        "description": "KIT COMANDO SUPERIOR CESTA AEREA SKYCITY 10 L",
-        "quantity": 1,
-        "stock": 3,
-        "demand": 0
-      },
-      {
         "code": "02.02.01.0000067318",
         "description": "CONJUNTO DO SUPORTE DO COMANDO SUPERIOR DO EQUIPAMENTO SKYCITY 13 LDI",
         "quantity": 1,
@@ -257926,13 +257919,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000090",
-        "description": "KIT RESERVATORIO HIDRAULICO CESTA AEREA SKYCITY 10 L",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 0
-      },
-      {
         "code": "02.02.01.0000069147",
         "description": "RESERVATORIO DE OLEO DE 40 LITROS",
         "quantity": 1,
@@ -258038,20 +258024,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000010",
-        "description": "KIT AVULSOS CESTA AEREA SKYCITY 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.06.0000000003",
-        "description": "BOMBA HIDRAULICA DE ALUMINIO DE 16 LITROS COM FLANGE SAE B 2 FUROS - ANTI-HORARIO - COM EIXO DE 13 ESTRIAS - SAIDA TRASE",
-        "quantity": 1,
-        "stock": 65,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000254",
         "description": "CONEXAO MACHO RETO UMA10 X M16X1,5 - S",
         "quantity": 1,
@@ -258070,13 +258042,6 @@
         "description": "UNIAO MACHO LINHA LEVE T10 X M16 X 1 NPT",
         "quantity": 4,
         "stock": 1327,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000066942",
-        "description": "CHAPA DE FIXAÇAO DA BORRACHA",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -258241,20 +258206,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000003",
-        "description": "KIT KANBAN CESTA AEREA SKYRTIZ 13 L / LDI - 2 ESTABILIZADORES",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "04.02.06.0000000036",
-        "description": "OLEO HIDRAULICO IPITUR HLP 68",
-        "quantity": 95,
-        "stock": 6000,
-        "demand": 0
-      },
-      {
         "code": "01.02.11.0000000037",
         "description": "ABRAÇADEIRA NYLON K55L 390MM X 7,6MM - PRETO",
         "quantity": 60,
@@ -258266,13 +258217,6 @@
         "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
         "quantity": 3,
         "stock": 2655,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000091",
-        "description": "KIT LANCAS CESTA AEREA SKYCITY 10 L",
-        "quantity": 1,
-        "stock": 4,
         "demand": 0
       },
       {
@@ -258295,13 +258239,6 @@
         "quantity": 1,
         "stock": 684,
         "demand": 0
-      },
-      {
-        "code": "02.02.01.0000069402",
-        "description": "CJ PINO DE ARTICULAÇÃO DO BRAÇO COM A TORRE",
-        "quantity": 1,
-        "stock": 11,
-        "demand": 26
       },
       {
         "code": "02.03.01.0000069404",
@@ -258385,13 +258322,6 @@
         "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 25MM",
         "quantity": 1,
         "stock": 118,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000067307",
-        "description": "CHAPA FURADA DE FIXAÇAO DA BORRACHA DO BRAÇO SUPERIOR E INFERIOR DO EQUIPAMENTO SKYCITY",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -258486,34 +258416,6 @@
         "demand": 26
       },
       {
-        "code": "02.02.03.0000075103",
-        "description": "BASTAO DE NIVELAMENTO FABRICADO EM FIBRA DE 2300 MM 10 L",
-        "quantity": 2,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000082848",
-        "description": "PONTEIRA BASTAO ISOLADO",
-        "quantity": 1,
-        "stock": 363,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000082847",
-        "description": "PONTEIRA ROSCADA BASTAO ISOLADO",
-        "quantity": 1,
-        "stock": 374,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000085133",
-        "description": "BARRA PULTRUDADA Ø5/8\" X 2100 MM",
-        "quantity": 1,
-        "stock": 220,
-        "demand": 0
-      },
-      {
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 3,
@@ -258567,13 +258469,6 @@
         "description": "TAMPA DE JANELA DE INSPEÇAO DOS BRAÇOS",
         "quantity": 2,
         "stock": 127,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000079276",
-        "description": "TAMPA DO BRAÇO SUPERIOR",
-        "quantity": 1,
-        "stock": 75,
         "demand": 0
       },
       {
@@ -258675,13 +258570,6 @@
         "demand": 0
       },
       {
-        "code": "01.04.03.0000000079",
-        "description": "BARRA REDONDA LAMINADA 1\"(25,40MM) X 6000MM - SAE 4340",
-        "quantity": 0.0449,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.06.01.0000080495",
         "description": "BORRACHA DE APOIO LANÇA ( BORRACHA RETA)",
         "quantity": 1,
@@ -258700,13 +258588,6 @@
         "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 70 MM - GEOMET",
         "quantity": 6,
         "stock": 12856,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000092",
-        "description": "KIT ACABAMENTO - SKYCITY 10 L",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -258749,13 +258630,6 @@
         "description": "BORRACHA FECHAMENTO TRASEIRO",
         "quantity": 1,
         "stock": 150,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000038",
-        "description": "KIT HIDRAULICO CARROCERIA CESTA AEREA SKYCITY 13 L / LDI - 2 ESTABILIZADORES SEM FERRAMENTA",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -258836,13 +258710,6 @@
         "demand": 0
       },
       {
-        "code": "02.01.02.0000067338",
-        "description": "PROTEÇAO DA VALVULA DA SAPATA DE ALUMINIO EQUIPAMENTO SKYCITY",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.05.01.0000000006",
         "description": "CHAPA DE ALUMINIO XADREZ  2,70 X 1250 X 3000MM - LIGA 3105 H114",
         "quantity": 0.29,
@@ -258885,13 +258752,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.05.0000000015",
-        "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 10L / 10HDOC / 13L / 13LDI - 2 ESTABILIZADORES",
-        "quantity": 1,
-        "stock": 29,
-        "demand": 0
-      },
-      {
         "code": "01.01.04.0000072921",
         "description": "COMANDO HIDRAULICO COM 1 SECÇAO COM MICROSWITCH",
         "quantity": 2,
@@ -258920,24 +258780,10 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000093",
-        "description": "KIT INDUSTRIALIZADO - CESTA AEREA SKYCITY 10 L",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.12.05.0000000019",
         "description": "REFORÇO PARA CAPA DA CAÇAMBA (BOJO)",
         "quantity": 1,
         "stock": 70,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000005",
-        "description": "KIT JUNTA ROTATIVA CESTA AEREA SKYCITY 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -258952,27 +258798,6 @@
         "description": "CONEXAO MACHO RETO 3/8\" NPT TUBO 10 - UMA 10 X 3/8\" NPT - L",
         "quantity": 4,
         "stock": 114,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000059",
-        "description": "KIT ENSAIOS CESTAS AEREAS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "07.02.03.0000000005",
-        "description": "ENSAIO ELETRICO",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "07.02.03.0000000012",
-        "description": "ENSAIO ELETRICO DO LINER CESTO AEREO",
-        "quantity": 1,
-        "stock": 1,
         "demand": 0
       },
       {
