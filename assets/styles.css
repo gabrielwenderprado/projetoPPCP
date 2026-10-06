@@ -490,7 +490,7 @@ body {
 }
 .summary-box {
   padding: 15px;
-  background: #f8fafc;
+  background: #000000;
   border-radius: 12px;
 }
 .summary-box b {
@@ -1742,7 +1742,7 @@ body.dark-theme .pins-niguri-table td.niguri-cell.danger { background: #7e2630 !
 .en-pv-detail .panel-header { background:linear-gradient(135deg,#102847,#17466d); color:#fff; }
 .en-pv-detail .panel-header span { color:#d6e5f5; }
 .en-pv-meta { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; padding:18px 20px 4px; }
-.en-pv-meta div { background:#f8fafc; border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
+.en-pv-meta div { background:#7793af;; border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
 .en-pv-meta span { display:block; color:var(--muted); font-size:10px; margin-bottom:4px; }
 .en-pv-meta b { display:block; font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .model-highlight { color:var(--blue); }
