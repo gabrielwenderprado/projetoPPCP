@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_05.10.xlsm",
-  "generatedAt": "2026-10-06",
+  "sourceFile": "Cópia de EXPLOSAO_07.10.xlsm",
+  "generatedAt": "2026-10-07",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -341,7 +341,7 @@
         {
           "code": "02.01.03.0000069390",
           "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
-          "quantityPerMachine": 4,
+          "quantityPerMachine": 0,
           "calferStock": 1,
           "row": 4
         },
@@ -396,14 +396,14 @@
         {
           "code": "02.01.03.0000071287",
           "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
-          "quantityPerMachine": 20,
+          "quantityPerMachine": 0,
           "calferStock": 1,
           "row": 13
         },
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 2386,
+          "quantityPerMachine": 2216,
           "calferStock": 16,
           "row": 14
         },
@@ -431,7 +431,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 5200,
+          "quantityPerMachine": 3700,
           "calferStock": 13,
           "row": 18
         },
@@ -459,7 +459,7 @@
         {
           "code": "02.03.01.0000084350",
           "description": "PINO CILINDRO BRACO SUPERIOR",
-          "quantityPerMachine": 9,
+          "quantityPerMachine": 8,
           "calferStock": 2,
           "row": 22
         },
@@ -507,7 +507,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "quantityPerMachine": 2386,
+          "quantityPerMachine": 2216,
           "calferStock": 10,
           "row": 31
         },
@@ -535,14 +535,14 @@
         {
           "code": "02.02.01.0000083442",
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
-          "quantityPerMachine": 255,
+          "quantityPerMachine": 250,
           "calferStock": 1,
           "row": 35
         },
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "quantityPerMachine": 5200,
+          "quantityPerMachine": 3700,
           "calferStock": 5,
           "row": 36
         },
@@ -591,7 +591,7 @@
         {
           "code": "04.02.01.0000000107",
           "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
-          "quantityPerMachine": 1493,
+          "quantityPerMachine": 1469,
           "calferStock": 1.5,
           "row": 43
         },
@@ -612,7 +612,7 @@
         {
           "code": "02.03.03.0000083484",
           "description": "ENGRENAGEM APOIO",
-          "quantityPerMachine": 1609,
+          "quantityPerMachine": 1589,
           "calferStock": 2,
           "row": 46
         },
@@ -647,7 +647,7 @@
         {
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
-          "quantityPerMachine": 1727,
+          "quantityPerMachine": 1707,
           "calferStock": 1,
           "row": 51
         }
@@ -688,7 +688,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 5200,
+          "quantityPerMachine": 3700,
           "calferStock": 5,
           "row": 59
         },
@@ -709,7 +709,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 2386,
+          "quantityPerMachine": 2216,
           "calferStock": 10,
           "row": 62
         },
@@ -730,7 +730,7 @@
         {
           "code": "02.02.01.0000083442",
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
-          "quantityPerMachine": 255,
+          "quantityPerMachine": 250,
           "calferStock": 1,
           "row": 65
         },
@@ -758,14 +758,14 @@
         {
           "code": "02.03.03.0000083484",
           "description": "ENGRENAGEM APOIO",
-          "quantityPerMachine": 1609,
+          "quantityPerMachine": 1589,
           "calferStock": 1,
           "row": 69
         },
         {
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE LISA 25,4 X 28 X 12,7",
-          "quantityPerMachine": 1727,
+          "quantityPerMachine": 1707,
           "calferStock": 1,
           "row": 70
         },
