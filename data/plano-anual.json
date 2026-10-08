@@ -1,40 +1,53 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_07.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_08.10.xlsm",
   "sourceSheet": "planoAnual",
-  "generatedAt": "2026-10-07",
+  "generatedAt": "2026-10-08",
   "columns": {
     "model": "C",
     "month": "D"
   },
   "models": {
     "18LDDI": {
+      "01/2027": 4,
       "10/2026": 2
     },
     "15LDDI": {
-      "10/2026": 2
+      "10/2026": 2,
+      "12/2026": 3
     },
     "13LDDI": {},
     "10S": {
-      "10/2026": 61
+      "10/2026": 61,
+      "11/2026": 22,
+      "12/2026": 6
     },
     "13AT": {
-      "10/2026": 1
+      "01/2027": 15,
+      "10/2026": 1,
+      "11/2026": 5,
+      "12/2026": 9
     },
     "10L": {
-      "10/2026": 19
+      "10/2026": 28,
+      "11/2026": 34
     },
     "13LDI": {
-      "10/2026": 3
+      "10/2026": 8,
+      "11/2026": 15,
+      "12/2026": 50
     }
   },
   "products": {
-    "SKYCITY 10 S": 60,
-    "SKYCITY 10 L": 19,
-    "SKYCITY 13,5 AT": 1,
-    "SKYCITY 18 LDDI - ISOLAÇÃO 69kV": 2,
+    "SKYCITY 10 S": 88,
+    "SKYCITY 10 L": 62,
+    "SKYCITY 13,5 AT": 28,
     "SKYCITY 10 S - TORRE ALTA": 1,
-    "SKYCITY 13 LDI": 3,
-    "SKYCITY 15 LDDI": 2
+    "SKYCITY 13 LDI": 70,
+    "SKYCITY 18 LDDI - ISOLAÇÃO 69kV": 6,
+    "SKYCITY 15 LDDI": 5,
+    "SKYCITY 13 AT COM LAVADOR": 2,
+    "SKYCITY 13 LDI - ISOLAÇÃO 69kV": 2,
+    "SKYCITY 13 LDI COM LAVADOR": 1
   },
   "rows": [
     {
@@ -45,24 +58,17 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012998",
+      "pedido": "EN013000",
       "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012867",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012879",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
+      "pedido": "EN012998",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
       "mes": "10/2026"
     },
     {
@@ -87,7 +93,28 @@
       "mes": "10/2026"
     },
     {
+      "pedido": "EN013004",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
       "pedido": "EN012857",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012867",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012879",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -108,14 +135,7 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012871",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012901",
+      "pedido": "EN012869",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -129,22 +149,22 @@
       "mes": "10/2026"
     },
     {
+      "pedido": "EN012881",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012883",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
       "pedido": "EN012629",
       "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012913",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012869",
-      "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "mes": "10/2026"
@@ -157,14 +177,14 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012881",
+      "pedido": "EN012871",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012883",
+      "pedido": "EN012901",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -185,17 +205,17 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN013324",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN012923",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013324",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
       "mes": "10/2026"
     },
     {
@@ -206,14 +226,28 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012921",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
+      "pedido": "EN013332",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012887",
+      "pedido": "EN013334",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013342",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012913",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -234,7 +268,14 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012917",
+      "pedido": "EN012921",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012887",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -242,6 +283,20 @@
     },
     {
       "pedido": "EN012919",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012949",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012917",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -262,13 +317,6 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012905",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN012929",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
@@ -276,21 +324,7 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012889",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012891",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012895",
+      "pedido": "EN012905",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -318,49 +352,7 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012865",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013332",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013334",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013342",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN012967",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012949",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012933",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -374,7 +366,42 @@
       "mes": "10/2026"
     },
     {
+      "pedido": "EN012865",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012889",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012891",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012895",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
       "pedido": "EN012897",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012933",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -389,6 +416,20 @@
     },
     {
       "pedido": "EN012939",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012941",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012935",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
@@ -444,20 +485,6 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012935",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012941",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "mes": "10/2026"
-    },
-    {
       "pedido": "EN012957",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
@@ -493,6 +520,34 @@
       "mes": "10/2026"
     },
     {
+      "pedido": "EN012543",
+      "cliente": "ENERGISA RONDONIA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012545",
+      "cliente": "ENERGISA RONDONIA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013006",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013008",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
       "pedido": "EN012978",
       "cliente": "FENATRAN 2026",
       "produto": "SKYCITY 13,5 AT",
@@ -500,52 +555,17 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012354",
-      "cliente": "SOMOS RENTAL LTDA",
-      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "18LDDI",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013340",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013010",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "10/2026"
     },
     {
-      "pedido": "EN013344",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013012",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013356",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012352",
-      "cliente": "SOMOS RENTAL LTDA",
-      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "18LDDI",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013348",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN012543",
-      "cliente": "ENERGISA RONDONIA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
       "mes": "10/2026"
     },
     {
@@ -563,36 +583,8 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN013336",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013338",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013350",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013354",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "mes": "10/2026"
-    },
-    {
-      "pedido": "EN013358",
-      "cliente": "LOCALIZA - LIGHT",
+      "pedido": "EN013016",
+      "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "mes": "10/2026"
@@ -619,10 +611,66 @@
       "mes": "10/2026"
     },
     {
-      "pedido": "EN012565",
+      "pedido": "EN012354",
+      "cliente": "SOMOS RENTAL LTDA",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013303",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013287",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012559",
       "cliente": "CGB ENERGIA LTDA",
-      "produto": "SKYCITY 15 LDDI",
-      "modelo": "15LDDI",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012562",
+      "cliente": "CGB ENERGIA LTDA",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013026",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013028",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013030",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN012352",
+      "cliente": "SOMOS RENTAL LTDA",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
       "mes": "10/2026"
     },
     {
@@ -633,25 +681,1229 @@
       "mes": "10/2026"
     },
     {
+      "pedido": "EN012565",
+      "cliente": "CGB ENERGIA LTDA",
+      "produto": "SKYCITY 15 LDDI",
+      "modelo": "15LDDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013277",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013018",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013032",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013034",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013291",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013281",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013279",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013285",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013020",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013022",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013024",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "10/2026"
+    },
+    {
+      "pedido": "EN013368",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013370",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013372",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011426",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011428",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011430",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011480",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011482",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011484",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013340",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013344",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013346",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013348",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013354",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013356",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013374",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013376",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013350",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013352",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013378",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013358",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
       "pedido": "EN013360",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "10/2026"
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013380",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013283",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011512",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
     },
     {
       "pedido": "EN013362",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
-      "mes": "10/2026"
+      "mes": "11/2026"
     },
     {
-      "pedido": "EN012545",
-      "cliente": "ENERGISA RONDONIA",
+      "pedido": "EN013364",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013366",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013289",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013295",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013110",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013293",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011518",
+      "cliente": "ENEL RJ",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
-      "mes": "10/2026"
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011524",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013080",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013082",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013084",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013086",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013088",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013090",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013092",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013094",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013096",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013098",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013100",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013102",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013071",
+      "cliente": "CPFL - DEMONSTRAÇÃO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013336",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN010981",
+      "cliente": "LACTEC",
+      "produto": "SKYCITY 13 AT COM LAVADOR",
+      "modelo": "13AT",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013338",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013250",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013254",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN009504",
+      "cliente": "LACTEC",
+      "produto": "SKYCITY 13 AT COM LAVADOR",
+      "modelo": "13AT",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013256",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013258",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013260",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013262",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013264",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013266",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012172",
+      "cliente": "ELEKTRO",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012174",
+      "cliente": "ELEKTRO",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012162",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012031",
+      "cliente": "LM FROTAS - CONSOLIS SOLUCOES INTELIGENTES LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013307",
+      "cliente": "PREFEITURA MUNICIPAL DE UNIÃO DA VITÓRIA",
+      "produto": "SKYCITY 13 LDI - ISOLAÇÃO 69kV",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012547",
+      "cliente": "EPR INFRAESTRUTURA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012572",
+      "cliente": "EPR INFRAESTRUTURA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013252",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013268",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012637",
+      "cliente": "ELENG ENGENHARIA LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012639",
+      "cliente": "ELENG ENGENHARIA LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013328",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012541",
+      "cliente": "ENERGISA SERGIPE",
+      "produto": "SKYCITY 13 LDI - ISOLAÇÃO 69kV",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN012981",
+      "cliente": "FENATRAN 2026",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011486",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011488",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN011490",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "11/2026"
+    },
+    {
+      "pedido": "EN013385",
+      "cliente": "MUNICIPIO DE AMANBAI",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013556",
+      "cliente": "LIDER VEÍCULOS",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013558",
+      "cliente": "LIDER VEÍCULOS",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011432",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011434",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011436",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011472",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011478",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN012011",
+      "cliente": "NEXT IMPLEMENTOS (JAC)",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011442",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011444",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011438",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011476",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011468",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011470",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011474",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013151",
+      "cliente": "ELENG ENGENHARIA LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011446",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011462",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011464",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011466",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013149",
+      "cliente": "ELENG ENGENHARIA LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011835",
+      "cliente": "DIBRACAM (ENEL RJ)",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011202",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 15 LDDI",
+      "modelo": "15LDDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011205",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 15 LDDI",
+      "modelo": "15LDDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011326",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011456",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011458",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011460",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011492",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI COM LAVADOR",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011208",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 15 LDDI",
+      "modelo": "15LDDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN010949",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011448",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN010953",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN010951",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN010955",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011450",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011452",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN011454",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013435",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013437",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013439",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013441",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013443",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013445",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013447",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013449",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013451",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013453",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013455",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013457",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013459",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013461",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013463",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013465",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013467",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013469",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013471",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013509",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013387",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013389",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013391",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013393",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013395",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013397",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013399",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013401",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013403",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "12/2026"
+    },
+    {
+      "pedido": "EN013405",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013407",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013409",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013411",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013413",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013415",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013417",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013419",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013421",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013423",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013425",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013427",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013429",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013431",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013433",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013535",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013537",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013539",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
+      "mes": "01/2027"
+    },
+    {
+      "pedido": "EN013541",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "18LDDI",
+      "mes": "01/2027"
     }
   ]
 }

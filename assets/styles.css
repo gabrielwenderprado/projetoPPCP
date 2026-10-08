@@ -490,7 +490,7 @@ body {
 }
 .summary-box {
   padding: 15px;
-  background: #000000;
+  background: #f8fafc;
   border-radius: 12px;
 }
 .summary-box b {
@@ -942,7 +942,7 @@ body.dark-theme .progressive-table .data-table td:last-child { background: #0d20
 body.dark-theme .progressive-table .data-table thead th:last-child { background: #102a45; }
 body.dark-theme .progressive-table .data-table tbody tr:hover td:last-child { background: #153858; }
 body.dark-theme .simulation-section-label > span { background: #153858; color: #a9d9fa; }
-body.dark-theme .sim-model-option { background: #ffffff; border-color: #ffffff; color: #dce8f5; }
+body.dark-theme .sim-model-option { background: #102a45; border-color: #294763; color: #dce8f5; }
 body.dark-theme .sim-model-option:hover { background: #153858; }
 body.dark-theme .sim-model-option:has(input[type="checkbox"]:checked) { background: #16476a; border-color: #4d9bd4; }
 body.dark-theme .sim-model-check i { background: #0a1a2d; border-color: #55718d; }
@@ -1672,7 +1672,7 @@ body.dark-theme .purchase-process-table tbody tr:hover td { background: #102a45;
 .sim-model-check i { display: block; width: 17px; height: 17px; border: 1.5px solid #aebdcd; border-radius: 5px; background: #fff; }
 .sim-model-check input:checked + i { border-color: #1c75ae; background: #1c75ae; box-shadow: inset 0 0 0 3px #fff; }
 .sim-model-check input:focus-visible + i { outline: 3px solid rgba(46,128,189,.25); outline-offset: 2px; }
-.sim-model-name { align-self: center; overflow: hidden; color: #000000; font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.sim-model-name { align-self: center; overflow: hidden; color: #1d3b5c; font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
 .sim-model-unit { align-self: center; color: #8a9aae; font-size: 10px; }
 .sim-model-option .sim-model-cars { align-self: center; width: 68px; min-height: 31px; padding: 5px 8px; border-color: #d5e1ed; font-size: 12px; text-align: center; }
 .simulation-action-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 24px; padding: 17px 26px; border-top: 1px solid #e6edf4; background: #f8fafc; }
@@ -1742,7 +1742,7 @@ body.dark-theme .pins-niguri-table td.niguri-cell.danger { background: #7e2630 !
 .en-pv-detail .panel-header { background:linear-gradient(135deg,#102847,#17466d); color:#fff; }
 .en-pv-detail .panel-header span { color:#d6e5f5; }
 .en-pv-meta { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; padding:18px 20px 4px; }
-.en-pv-meta div { background:#7793af;; border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
+.en-pv-meta div { background:#f8fafc; border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
 .en-pv-meta span { display:block; color:var(--muted); font-size:10px; margin-bottom:4px; }
 .en-pv-meta b { display:block; font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .model-highlight { color:var(--blue); }

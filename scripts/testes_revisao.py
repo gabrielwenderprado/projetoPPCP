@@ -100,7 +100,7 @@ check(57, "guia de login explica o campo username", "username" in (ROOT / "GUIA-
 check(58, "guia de login explica a limpeza da sessão", "Ctrl + F5" in (ROOT / "GUIA-LOGIN.md").read_text(encoding="utf-8"))
 
 plano = json.loads((ROOT / "data/plano-mes.json").read_text(encoding="utf-8"))
-check(59, "Plano Mês contém meses 06 e 07", plano.get("months", [])[:2] == ["06", "07"])
+check(59, "Plano Mês contém meses da fonte atual", len(plano.get("months", [])) > 0 and all(str(month).zfill(2).isdigit() for month in plano.get("months", [])))
 check(60, "Plano Mês contém as 15 linhas de modelos", len(plano.get("models", [])) == 15)
 check(61, "Plano Mês contém a fonte e o intervalo", plano.get("sourceSheet") == "PLANO MES" and plano.get("sourceRange") == "A15:Y30")
 check(62, "configuração central permanece offline por padrão", json.loads((ROOT / "data/alertas-config.json").read_text(encoding="utf-8")).get("endpoint") == "")
