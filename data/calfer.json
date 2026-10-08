@@ -362,7 +362,7 @@
         {
           "code": "02.03.01.0000069418",
           "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
-          "quantityPerMachine": 8,
+          "quantityPerMachine": 34,
           "calferStock": 1,
           "row": 7
         },
@@ -452,7 +452,7 @@
         {
           "code": "02.03.01.0000085012",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 15,
           "calferStock": 1,
           "row": 21
         },
@@ -473,7 +473,7 @@
         {
           "code": "02.03.01.0000084349",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 58,
           "calferStock": 2,
           "row": 24
         },

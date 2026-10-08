@@ -600,9 +600,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-03",
       "unit": "UN",
-      "stock": 1583,
+      "stock": 0,
       "stockMax": 20000,
-      "stockValue": 126.64,
+      "stockValue": 0,
       "safety": 10000,
       "orders": {
         "PED 06/2026": 0,
@@ -623,8 +623,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 1583,
-        "DEM 11/2026": 1583,
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
         "DEM 12/2026": 3250,
         "DEM 01/2026": 0
       },
@@ -1747,7 +1747,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-01-15",
       "unit": "UN",
-      "stock": 252,
+      "stock": 505,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 0,
@@ -1770,8 +1770,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 502,
-        "DEM 11/2026": 502,
+        "DEM 10/2026": 755,
+        "DEM 11/2026": 755,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -6540,9 +6540,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 75,
+      "stock": 70,
       "stockMax": 0,
-      "stockValue": 65172.75,
+      "stockValue": 60827.9,
       "safety": 30,
       "orders": {
         "PED 06/2026": 0,
@@ -6563,8 +6563,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 75,
-        "DEM 11/2026": 75,
+        "DEM 10/2026": 70,
+        "DEM 11/2026": 70,
         "DEM 12/2026": 105,
         "DEM 01/2026": 0
       },
@@ -23710,7 +23710,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-01-05",
       "unit": "UN",
-      "stock": 0,
+      "stock": 58,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 0,
@@ -23733,8 +23733,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": -4,
-        "DEM 11/2026": 142,
+        "DEM 10/2026": 54,
+        "DEM 11/2026": 200,
         "DEM 12/2026": -18,
         "DEM 01/2026": 120
       },
@@ -24248,9 +24248,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-01-28",
       "unit": "UN",
-      "stock": 3,
+      "stock": 18,
       "stockMax": 0,
-      "stockValue": 357,
+      "stockValue": 2142,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -24271,8 +24271,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 63,
-        "DEM 11/2026": 3,
+        "DEM 10/2026": 78,
+        "DEM 11/2026": 18,
         "DEM 12/2026": 10,
         "DEM 01/2026": 0
       },
@@ -24896,9 +24896,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 68,
+      "stock": 64,
       "stockMax": 0,
-      "stockValue": 2671.04,
+      "stockValue": 2513.92,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -24919,8 +24919,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 68,
-        "DEM 11/2026": 68,
+        "DEM 10/2026": 64,
+        "DEM 11/2026": 64,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -29883,9 +29883,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-07",
       "unit": "UN",
-      "stock": 207,
+      "stock": 191,
       "stockMax": 0,
-      "stockValue": 35906.22,
+      "stockValue": 33130.86,
       "safety": 80,
       "orders": {
         "PED 06/2026": 0,
@@ -29906,8 +29906,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 238,
-        "DEM 11/2026": 207,
+        "DEM 10/2026": 222,
+        "DEM 11/2026": 191,
         "DEM 12/2026": 503.1,
         "DEM 01/2026": 0
       },
@@ -32899,9 +32899,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-01-02",
       "unit": "UN",
-      "stock": 128,
+      "stock": 118,
       "stockMax": 0,
-      "stockValue": 2560,
+      "stockValue": 2360,
       "safety": 32,
       "orders": {
         "PED 06/2026": 0,
@@ -32922,8 +32922,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 173,
-        "DEM 11/2026": 208,
+        "DEM 10/2026": 163,
+        "DEM 11/2026": 198,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -33951,7 +33951,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-09",
       "unit": "UN",
-      "stock": 200,
+      "stock": 0,
       "stockMax": 200,
       "stockValue": 0,
       "safety": 400,
@@ -33974,8 +33974,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 700,
-        "DEM 11/2026": 800,
+        "DEM 10/2026": 500,
+        "DEM 11/2026": 600,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -39255,9 +39255,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-07",
       "unit": "UN",
-      "stock": 24,
+      "stock": 20,
       "stockMax": 0,
-      "stockValue": 1440,
+      "stockValue": 1200,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -39278,8 +39278,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 24,
-        "DEM 11/2026": 24,
+        "DEM 10/2026": 20,
+        "DEM 11/2026": 20,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -39664,9 +39664,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-07",
       "unit": "UN",
-      "stock": 23,
+      "stock": 19,
       "stockMax": 0,
-      "stockValue": 2300,
+      "stockValue": 1900,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -39687,8 +39687,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 23,
-        "DEM 11/2026": 23,
+        "DEM 10/2026": 19,
+        "DEM 11/2026": 19,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -42571,9 +42571,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 960,
+      "stock": 760,
       "stockMax": 0,
-      "stockValue": 214.7136,
+      "stockValue": 169.9816,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -42594,8 +42594,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 1960,
-        "DEM 11/2026": 960,
+        "DEM 10/2026": 1760,
+        "DEM 11/2026": 760,
         "DEM 12/2026": 400,
         "DEM 01/2026": 0
       },
@@ -44766,9 +44766,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "M³",
-      "stock": 370,
+      "stock": 0,
       "stockMax": 0,
-      "stockValue": 2088.28,
+      "stockValue": 0,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -44789,8 +44789,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 1670,
-        "DEM 11/2026": 370,
+        "DEM 10/2026": 1300,
+        "DEM 11/2026": 0,
         "DEM 12/2026": 319.29,
         "DEM 01/2026": 0
       },
@@ -45433,7 +45433,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-05",
       "unit": "UN",
-      "stock": 3400,
+      "stock": 2800,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 1800,
@@ -45456,8 +45456,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 3340,
-        "DEM 11/2026": 3400,
+        "DEM 10/2026": 2740,
+        "DEM 11/2026": 2800,
         "DEM 12/2026": 572,
         "DEM 01/2026": 0
       },
@@ -75940,9 +75940,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 8,
+      "stock": 6,
       "stockMax": 0,
-      "stockValue": 520,
+      "stockValue": 390,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -75963,8 +75963,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 8,
-        "DEM 11/2026": 8,
+        "DEM 10/2026": 6,
+        "DEM 11/2026": 6,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -80654,7 +80654,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-01-21",
       "unit": "UN",
-      "stock": 138,
+      "stock": 136,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 0,
@@ -80677,8 +80677,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 158,
-        "DEM 11/2026": 138,
+        "DEM 10/2026": 156,
+        "DEM 11/2026": 136,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -96453,9 +96453,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 208,
+      "stock": 158,
       "stockMax": 300,
-      "stockValue": 1104.87,
+      "stockValue": 839.2763,
       "safety": 140,
       "orders": {
         "PED 06/2026": 0,
@@ -96476,8 +96476,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 208,
-        "DEM 11/2026": 208,
+        "DEM 10/2026": 158,
+        "DEM 11/2026": 158,
         "DEM 12/2026": 736,
         "DEM 01/2026": 0
       },
@@ -105967,7 +105967,7 @@
       "unit": "UN",
       "stock": 8,
       "stockMax": 40,
-      "stockValue": 404,
+      "stockValue": 0,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -131207,7 +131207,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 1112,
+      "stock": 2312,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 0,
@@ -131230,8 +131230,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 1512,
-        "DEM 11/2026": 1912,
+        "DEM 10/2026": 2712,
+        "DEM 11/2026": 3112,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -138728,9 +138728,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-02-04",
       "unit": "MT",
-      "stock": 545,
+      "stock": 445,
       "stockMax": 0,
-      "stockValue": 7357.5,
+      "stockValue": 6007.5,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -138751,8 +138751,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 1045,
-        "DEM 11/2026": 545,
+        "DEM 10/2026": 945,
+        "DEM 11/2026": 445,
         "DEM 12/2026": 5,
         "DEM 01/2026": 0
       },
@@ -143031,9 +143031,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 0,
+      "stock": 15,
       "stockMax": 0,
-      "stockValue": 0,
+      "stockValue": 1845,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -143054,8 +143054,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 18,
-        "DEM 11/2026": -19,
+        "DEM 10/2026": 33,
+        "DEM 11/2026": -4,
         "DEM 12/2026": -9,
         "DEM 01/2026": 21
       },
@@ -145410,9 +145410,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 8,
+      "stock": 34,
       "stockMax": 0,
-      "stockValue": 992,
+      "stockValue": 4216,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -145433,8 +145433,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 68,
-        "DEM 11/2026": 8,
+        "DEM 10/2026": 94,
+        "DEM 11/2026": 34,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -155289,7 +155289,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 700,
+      "stock": 7500,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 100,
@@ -155312,8 +155312,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 668,
-        "DEM 11/2026": 4100,
+        "DEM 10/2026": 7468,
+        "DEM 11/2026": 10900,
         "DEM 12/2026": 3376,
         "DEM 01/2026": 0
       },
@@ -158031,9 +158031,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 55,
+      "stock": 50,
       "stockMax": 0,
-      "stockValue": 457.05,
+      "stockValue": 415.5,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -158054,8 +158054,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 55,
-        "DEM 11/2026": 55,
+        "DEM 10/2026": 50,
+        "DEM 11/2026": 50,
         "DEM 12/2026": 11,
         "DEM 01/2026": 0
       },
@@ -160093,7 +160093,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "2026-01-22",
       "unit": "MT",
-      "stock": 1575,
+      "stock": 1375,
       "stockMax": 200,
       "stockValue": 0,
       "safety": 0,
@@ -160116,8 +160116,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 1530,
-        "DEM 11/2026": 1825,
+        "DEM 10/2026": 1330,
+        "DEM 11/2026": 1625,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -165051,9 +165051,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 68,
+      "stock": 65,
       "stockMax": 0,
-      "stockValue": 1428,
+      "stockValue": 1365,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -165074,8 +165074,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 188,
-        "DEM 11/2026": 68,
+        "DEM 10/2026": 185,
+        "DEM 11/2026": 65,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -171120,9 +171120,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 27,
+      "stock": 24,
       "stockMax": 0,
-      "stockValue": 17779.5,
+      "stockValue": 15804,
       "safety": 5,
       "orders": {
         "PED 06/2026": 0,
@@ -171143,8 +171143,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 73,
-        "DEM 11/2026": 27,
+        "DEM 10/2026": 70,
+        "DEM 11/2026": 24,
         "DEM 12/2026": 60,
         "DEM 01/2026": 0
       },
@@ -171515,7 +171515,7 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 220,
+      "stock": 213,
       "stockMax": 0,
       "stockValue": 0,
       "safety": 150,
@@ -171538,8 +171538,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 440,
-        "DEM 11/2026": 660,
+        "DEM 10/2026": 433,
+        "DEM 11/2026": 653,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -178551,7 +178551,7 @@
       "unit": "UN",
       "stock": 3,
       "stockMax": 0,
-      "stockValue": 345,
+      "stockValue": 0,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -182010,9 +182010,9 @@
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 4500,
+      "stock": 4300,
       "stockMax": 6000,
-      "stockValue": 114975,
+      "stockValue": 109865,
       "safety": 5000,
       "orders": {
         "PED 06/2026": 0,
@@ -182033,8 +182033,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 4500,
-        "DEM 11/2026": 4500,
+        "DEM 10/2026": 4300,
+        "DEM 11/2026": 4300,
         "DEM 12/2026": 10,
         "DEM 01/2026": 0
       },
@@ -187044,9 +187044,9 @@
       "obtentionType": "#REF!",
       "lastMovement": "2026-02-05",
       "unit": "UN",
-      "stock": 44,
+      "stock": 43,
       "stockMax": 0,
-      "stockValue": 4084.08,
+      "stockValue": 3991.26,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -187067,8 +187067,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 74,
-        "DEM 11/2026": 44,
+        "DEM 10/2026": 73,
+        "DEM 11/2026": 43,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -187692,9 +187692,9 @@
       "obtentionType": "Fabricado",
       "lastMovement": "2026-01-05",
       "unit": "UN",
-      "stock": 35,
+      "stock": 29,
       "stockMax": 0,
-      "stockValue": 50002.3767,
+      "stockValue": 41430.5407,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -187715,8 +187715,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 35,
-        "DEM 11/2026": 35,
+        "DEM 10/2026": 29,
+        "DEM 11/2026": 29,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -228281,7 +228281,7 @@
         "code": "01.01.02.0000000071",
         "description": "CABO BOMBA MANUAL",
         "quantity": 1,
-        "stock": 128,
+        "stock": 118,
         "demand": 0
       },
       {
@@ -228442,7 +228442,7 @@
         "code": "02.02.01.0000085010",
         "description": "SUPORTE COMANDO CESTO - AS",
         "quantity": 1,
-        "stock": 35,
+        "stock": 29,
         "demand": 0
       },
       {
@@ -228820,7 +228820,7 @@
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 3,
-        "stock": 545,
+        "stock": 445,
         "demand": 0
       },
       {
@@ -228869,7 +228869,7 @@
         "code": "02.03.01.0000084349",
         "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
         "quantity": 2,
-        "stock": 0,
+        "stock": 58,
         "demand": 0
       },
       {
@@ -228897,21 +228897,21 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 1,
-        "stock": 207,
+        "stock": 191,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000031",
         "description": "CAPA LANÇA SUPERIOR SKYCITY 10S",
         "quantity": 1,
-        "stock": 23,
+        "stock": 19,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000032",
         "description": "CAPA LANÇA BASTAO SUPERIOR SKYCITY 10S",
         "quantity": 1,
-        "stock": 24,
+        "stock": 20,
         "demand": 0
       },
       {
@@ -228960,7 +228960,7 @@
         "code": "02.03.01.0000085012",
         "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
         "quantity": 1,
-        "stock": 0,
+        "stock": 15,
         "demand": 0
       },
       {
@@ -229184,7 +229184,7 @@
         "code": "01.11.05.0000000017",
         "description": "CENTRAL DE CONTROLE REMOTO (RECEPTOR)+ 2 CONTROLES DE ACIONAMENTO",
         "quantity": 1,
-        "stock": 75,
+        "stock": 70,
         "demand": 0
       },
       {
@@ -229317,7 +229317,7 @@
         "code": "01.11.02.0000000014",
         "description": "TERMINAL (FEMEA) 6,3MM FIO ENCAIXE COM TRAVA (ETE-7020-A)",
         "quantity": 12,
-        "stock": 4500,
+        "stock": 4300,
         "demand": 0
       },
       {
@@ -229416,7 +229416,7 @@
       {
         "code": "CABO BOMBA MANUAL",
         "description": "1",
-        "quantity": 128,
+        "quantity": 118,
         "stock": 0,
         "demand": 0
       },
@@ -229507,7 +229507,7 @@
       {
         "code": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "description": "4",
-        "quantity": 3400,
+        "quantity": 2800,
         "stock": 0,
         "demand": 0
       },
@@ -229605,7 +229605,7 @@
       {
         "code": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 82",
         "description": "2",
-        "quantity": 252,
+        "quantity": 505,
         "stock": 0,
         "demand": 0
       },
@@ -229822,7 +229822,7 @@
       {
         "code": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "description": "3",
-        "quantity": 1575,
+        "quantity": 1375,
         "stock": 0,
         "demand": 0
       },
@@ -230067,7 +230067,7 @@
       {
         "code": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "description": "4",
-        "quantity": 545,
+        "quantity": 445,
         "stock": 0,
         "demand": 0
       },
@@ -230354,7 +230354,7 @@
       {
         "code": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "description": "1",
-        "quantity": 207,
+        "quantity": 191,
         "stock": 0,
         "demand": 0
       },
@@ -230756,7 +230756,7 @@
         "code": "01.01.02.0000000071",
         "description": "CABO BOMBA MANUAL",
         "quantity": 1,
-        "stock": 128,
+        "stock": 118,
         "demand": 0
       },
       {
@@ -230798,7 +230798,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 4,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -230945,7 +230945,7 @@
         "code": "02.03.01.0000085009",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 82",
         "quantity": 2,
-        "stock": 252,
+        "stock": 505,
         "demand": 0
       },
       {
@@ -231162,7 +231162,7 @@
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "quantity": 3,
-        "stock": 1575,
+        "stock": 1375,
         "demand": 0
       },
       {
@@ -231414,7 +231414,7 @@
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 4,
-        "stock": 545,
+        "stock": 445,
         "demand": 0
       },
       {
@@ -232002,7 +232002,7 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 1,
-        "stock": 207,
+        "stock": 191,
         "demand": 0
       },
       {
@@ -232079,7 +232079,7 @@
         "code": "02.02.05.0000000013",
         "description": "KIT SUPERIOR DE MANGUEIRAS SKYCITY 13L / LD / LDI / LDDI",
         "quantity": 1,
-        "stock": 86,
+        "stock": 101,
         "demand": 0
       },
       {
@@ -232130,7 +232130,7 @@
         "code": "01.01.02.0000000071",
         "description": "CABO BOMBA MANUAL",
         "quantity": 1,
-        "stock": 128,
+        "stock": 118,
         "demand": 60
       },
       {
@@ -232298,7 +232298,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 4,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -232445,7 +232445,7 @@
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "quantity": 3,
-        "stock": 1575,
+        "stock": 1375,
         "demand": 100
       },
       {
@@ -233789,7 +233789,7 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 1,
-        "stock": 207,
+        "stock": 191,
         "demand": 0
       },
       {
@@ -233938,7 +233938,7 @@
         "code": "01.01.02.0000000071",
         "description": "CABO BOMBA MANUAL",
         "quantity": 1,
-        "stock": 128,
+        "stock": 118,
         "demand": 60
       },
       {
@@ -234008,7 +234008,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 2,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -234232,7 +234232,7 @@
         "code": "02.03.01.0000085009",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 82",
         "quantity": 2,
-        "stock": 252,
+        "stock": 505,
         "demand": 500
       },
       {
@@ -234421,7 +234421,7 @@
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "quantity": 3,
-        "stock": 1575,
+        "stock": 1375,
         "demand": 100
       },
       {
@@ -234533,7 +234533,7 @@
         "code": "01.02.03.0000000046",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M18 X 2,50MM CLASSE 10.9 ZINCADO BRANCO DIN 982",
         "quantity": 8,
-        "stock": 700,
+        "stock": 7500,
         "demand": 0
       },
       {
@@ -234715,7 +234715,7 @@
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 3,
-        "stock": 545,
+        "stock": 445,
         "demand": 500
       },
       {
@@ -234995,7 +234995,7 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 2,
-        "stock": 207,
+        "stock": 191,
         "demand": 46
       },
       {
@@ -235564,7 +235564,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 2,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -235781,7 +235781,7 @@
         "code": "02.03.01.0000085009",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 82",
         "quantity": 2,
-        "stock": 252,
+        "stock": 505,
         "demand": 500
       },
       {
@@ -235977,7 +235977,7 @@
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "quantity": 3,
-        "stock": 1575,
+        "stock": 1375,
         "demand": 0
       },
       {
@@ -236096,7 +236096,7 @@
         "code": "01.02.03.0000000046",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M18 X 2,50MM CLASSE 10.9 ZINCADO BRANCO DIN 982",
         "quantity": 8,
-        "stock": 700,
+        "stock": 7500,
         "demand": 0
       },
       {
@@ -236432,7 +236432,7 @@
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 3,
-        "stock": 545,
+        "stock": 445,
         "demand": 500
       },
       {
@@ -236663,7 +236663,7 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 2,
-        "stock": 207,
+        "stock": 191,
         "demand": 46
       },
       {
@@ -238835,7 +238835,7 @@
         "code": "01.11.02.0000000014",
         "description": "TERMINAL (FEMEA) 6,3MM FIO ENCAIXE COM TRAVA (ETE-7020-A)",
         "quantity": 4,
-        "stock": 4500,
+        "stock": 4300,
         "demand": 0
       },
       {
@@ -238884,7 +238884,7 @@
         "code": "01.02.11.0000000038",
         "description": "ABRAÇADEIRA NYLON K22 200MM X 4,8MM - PRETO",
         "quantity": 20,
-        "stock": 1583,
+        "stock": 0,
         "demand": 0
       },
       {
@@ -238968,7 +238968,7 @@
         "code": "01.02.03.0000000091",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 982",
         "quantity": 8,
-        "stock": 960,
+        "stock": 760,
         "demand": 0
       },
       {
@@ -241574,7 +241574,7 @@
         "code": "01.11.02.0000000014",
         "description": "TERMINAL (FEMEA) 6,3MM FIO ENCAIXE COM TRAVA (ETE-7020-A)",
         "quantity": 4,
-        "stock": 4500,
+        "stock": 4300,
         "demand": 0
       },
       {
@@ -241595,7 +241595,7 @@
         "code": "01.02.11.0000000038",
         "description": "ABRAÇADEIRA NYLON K22 200MM X 4,8MM - PRETO",
         "quantity": 20,
-        "stock": 1583,
+        "stock": 0,
         "demand": 0
       },
       {
@@ -241877,7 +241877,7 @@
         "code": "01.02.03.0000000091",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 982",
         "quantity": 8,
-        "stock": 960,
+        "stock": 760,
         "demand": 0
       },
       {
@@ -259668,7 +259668,7 @@
         "code": "01.01.02.0000000071",
         "description": "CABO BOMBA MANUAL",
         "quantity": 1,
-        "stock": 128,
+        "stock": 118,
         "demand": 0
       },
       {
@@ -259710,7 +259710,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 4,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -260053,7 +260053,7 @@
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "quantity": 3,
-        "stock": 1575,
+        "stock": 1375,
         "demand": 0
       },
       {
@@ -260263,7 +260263,7 @@
         "code": "02.03.01.0000069404",
         "description": "PINO DE ARTICULAÇAO DA BASE DO CILINDRO INFERIOR SKYCITY 10L",
         "quantity": 1,
-        "stock": 3,
+        "stock": 18,
         "demand": 35
       },
       {
@@ -260438,7 +260438,7 @@
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 3,
-        "stock": 545,
+        "stock": 445,
         "demand": 0
       },
       {
@@ -260627,7 +260627,7 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 1,
-        "stock": 207,
+        "stock": 191,
         "demand": 0
       },
       {
@@ -260851,7 +260851,7 @@
         "code": "02.03.01.0000069418",
         "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
         "quantity": 1,
-        "stock": 8,
+        "stock": 34,
         "demand": 0
       },
       {
@@ -260909,7 +260909,7 @@
         "code": "01.01.02.0000000071",
         "description": "CABO BOMBA MANUAL",
         "quantity": 1,
-        "stock": 128,
+        "stock": 118,
         "demand": 0
       },
       {
@@ -260944,7 +260944,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 4,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -261119,7 +261119,7 @@
         "code": "02.03.01.0000085009",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 82",
         "quantity": 2,
-        "stock": 252,
+        "stock": 505,
         "demand": 250
       },
       {
@@ -261350,7 +261350,7 @@
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
         "quantity": 3,
-        "stock": 1575,
+        "stock": 1375,
         "demand": 100
       },
       {
@@ -261574,7 +261574,7 @@
         "code": "01.01.03.0000000394",
         "description": "CAPA PROTEÇAO TEXTIL Ø110 - POLIESTER",
         "quantity": 4,
-        "stock": 545,
+        "stock": 445,
         "demand": 0
       },
       {
@@ -261917,7 +261917,7 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 1,
-        "stock": 207,
+        "stock": 191,
         "demand": 0
       },
       {
@@ -262906,7 +262906,7 @@
         "code": "01.02.03.0000000045",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 982",
         "quantity": 8,
-        "stock": 3400,
+        "stock": 2800,
         "demand": 0
       },
       {
@@ -263172,7 +263172,7 @@
         "code": "01.02.11.0000000038",
         "description": "ABRAÇADEIRA NYLON K22 200MM X 4,8MM - PRETO",
         "quantity": 2,
-        "stock": 1583,
+        "stock": 0,
         "demand": 0
       },
       {
@@ -263200,7 +263200,7 @@
         "code": "01.11.05.0000000019",
         "description": "INTERRUPTOR PORTA (ETE-7945)",
         "quantity": 2,
-        "stock": 208,
+        "stock": 158,
         "demand": 0
       },
       {
@@ -263214,7 +263214,7 @@
         "code": "01.11.02.0000000014",
         "description": "TERMINAL (FEMEA) 6,3MM FIO ENCAIXE COM TRAVA (ETE-7020-A)",
         "quantity": 2,
-        "stock": 4500,
+        "stock": 4300,
         "demand": 0
       },
       {
@@ -268160,7 +268160,7 @@
         "code": "01.11.02.0000000014",
         "description": "TERMINAL (FEMEA) 6,3MM FIO ENCAIXE COM TRAVA (ETE-7020-A)",
         "quantity": 4,
-        "stock": 4500,
+        "stock": 4300,
         "demand": 0
       },
       {
@@ -268223,7 +268223,7 @@
         "code": "01.02.11.0000000038",
         "description": "ABRAÇADEIRA NYLON K22 200MM X 4,8MM - PRETO",
         "quantity": 20,
-        "stock": 1583,
+        "stock": 0,
         "demand": 0
       },
       {
@@ -272119,7 +272119,7 @@
         "code": "01.02.11.0000000038",
         "description": "ABRAÇADEIRA NYLON K22 200MM X 4,8MM - PRETO",
         "quantity": 20,
-        "stock": 1583,
+        "stock": 0,
         "demand": 0
       },
       {
