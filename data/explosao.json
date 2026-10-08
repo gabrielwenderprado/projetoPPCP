@@ -24806,15 +24806,15 @@
     },
     {
       "code": "02.03.01.0000085021",
-      "description": "0",
+      "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "analyst": "BRUNO",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 0,
+      "stock": 26,
       "stockMax": 0,
-      "stockValue": 0,
+      "stockValue": 3182.4,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -24835,8 +24835,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
+        "DEM 10/2026": 26,
+        "DEM 11/2026": 26,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -177734,11 +177734,11 @@
       "analyst": "BRUNO",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
-      "lastMovement": "2026-02-05",
+      "lastMovement": "00:00:00",
       "unit": "UN",
-      "stock": 0,
+      "stock": 31,
       "stockMax": 0,
-      "stockValue": 0,
+      "stockValue": 4278,
       "safety": 0,
       "orders": {
         "PED 06/2026": 0,
@@ -177759,8 +177759,8 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
+        "DEM 10/2026": 31,
+        "DEM 11/2026": 31,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
