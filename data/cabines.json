@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_08.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_09.10.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 5095,
+      "stock": 4895,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 2550,
+      "stock": 6550,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -133,7 +133,7 @@
       "code": "01.02.03.0000000034",
       "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 8664,
+      "stock": 6864,
       "modelNeeds": {
         "4 LUGAR": 24,
         "6 LUGAR": 18,
@@ -613,7 +613,7 @@
       "code": "01.09.02.0000000021",
       "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
       "unit": "UN",
-      "stock": 280,
+      "stock": 200,
       "modelNeeds": {
         "4 LUGAR": 3,
         "6 LUGAR": 3,

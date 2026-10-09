@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_08.10.xlsm",
-  "generatedAt": "2026-10-08",
+  "sourceFile": "Cópia de EXPLOSAO_09.10.xlsm",
+  "generatedAt": "2026-10-09",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -362,7 +362,7 @@
         {
           "code": "02.03.01.0000069418",
           "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
-          "quantityPerMachine": 34,
+          "quantityPerMachine": 8,
           "calferStock": 1,
           "row": 7
         },
@@ -389,7 +389,7 @@
         {
           "code": "02.01.03.0000085070",
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
-          "quantityPerMachine": 2,
+          "quantityPerMachine": 12,
           "calferStock": 1,
           "row": 12
         },
@@ -431,14 +431,14 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 2550,
+          "quantityPerMachine": 6550,
           "calferStock": 13,
           "row": 18
         },
         {
           "code": "01.02.03.0000000044",
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-          "quantityPerMachine": 433,
+          "quantityPerMachine": 533,
           "calferStock": 1,
           "row": 19
         },
@@ -452,7 +452,7 @@
         {
           "code": "02.03.01.0000085012",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 15,
+          "quantityPerMachine": 0,
           "calferStock": 1,
           "row": 21
         },
@@ -466,14 +466,14 @@
         {
           "code": "02.03.01.0000084348",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 45,
+          "quantityPerMachine": 15,
           "calferStock": 2,
           "row": 23
         },
         {
           "code": "02.03.01.0000084349",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 58,
+          "quantityPerMachine": 56,
           "calferStock": 2,
           "row": 24
         },
@@ -514,7 +514,7 @@
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
-          "quantityPerMachine": 3731,
+          "quantityPerMachine": 3387,
           "calferStock": 6,
           "row": 32
         },
@@ -528,7 +528,7 @@
         {
           "code": "02.02.01.0000086368",
           "description": "PINO FIX. CRUZETA INTERNA - AS",
-          "quantityPerMachine": 270,
+          "quantityPerMachine": 268,
           "calferStock": 1,
           "row": 34
         },
@@ -542,7 +542,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "quantityPerMachine": 2550,
+          "quantityPerMachine": 6550,
           "calferStock": 5,
           "row": 36
         },
@@ -584,7 +584,7 @@
         {
           "code": "02.01.03.0000082542",
           "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
-          "quantityPerMachine": 37,
+          "quantityPerMachine": 41,
           "calferStock": 1,
           "row": 42
         },
@@ -688,7 +688,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "quantityPerMachine": 2550,
+          "quantityPerMachine": 6550,
           "calferStock": 5,
           "row": 59
         },
@@ -716,7 +716,7 @@
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
-          "quantityPerMachine": 3731,
+          "quantityPerMachine": 3387,
           "calferStock": 6,
           "row": 63
         },
@@ -737,7 +737,7 @@
         {
           "code": "02.02.01.0000086368",
           "description": "PINO FIX. CRUZETA INTERNA - AS",
-          "quantityPerMachine": 270,
+          "quantityPerMachine": 268,
           "calferStock": 1,
           "row": 66
         },

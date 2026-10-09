@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_08.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_09.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -248,7 +248,7 @@
       "code": "02.03.01.0000079054",
       "description": "PINO INFERIOR DA SAPATA",
       "unit": "UN",
-      "stock": 277,
+      "stock": 303,
       "modelNeeds": {
         "18LDDI": 8,
         "15LDDI": 8,
@@ -599,7 +599,7 @@
       "code": "02.03.01.0000067336",
       "description": "PINO INFERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 601,
+      "stock": 1031,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1418,7 +1418,7 @@
       "code": "02.03.01.0000067337",
       "description": "PINO SUPERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 607,
+      "stock": 660,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1886,7 +1886,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 58,
+      "stock": 56,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3173,7 +3173,7 @@
       "code": "02.03.01.0000084348",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 45,
+      "stock": 15,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4343,7 +4343,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 25,
+      "stock": 34,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4460,7 +4460,7 @@
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
       "unit": "UN",
-      "stock": 270,
+      "stock": 268,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5279,7 +5279,7 @@
       "code": "02.03.01.0000085012",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 15,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
