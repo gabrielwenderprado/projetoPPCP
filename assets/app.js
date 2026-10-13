@@ -1,6 +1,8 @@
 let DATA = null;
+// Snapshot central da programação produtiva; alimenta a primeira tela e o filtro do NIGURI.
+let PRODUCTION_MAP = { records: [], summary: {} };
 // Controla qual área do dashboard está aberta neste momento.
-let view = 'overview';
+let view = 'productionMap';
 let analyst = 'all';
 let family = 'all';
 let obtentionType = 'all';
@@ -38,6 +40,12 @@ function loadThemePreference() {
 }
 // Guarda os filtros selecionados pelo usuário para manter a navegação consistente.
 let demandMonth = 'all';
+let productionMapQuery = '';
+let productionMapStatus = 'all';
+let productionMapDateStart = '';
+let productionMapDateEnd = '';
+let productionMapWeekStart = 'all';
+let productionMapWeekEnd = 'all';
 let excessMonth = 'all';
 // Guarda o histórico mensal carregado do ficheiro separado.
 let STOCK_HISTORY = { records: [] };
@@ -756,7 +764,7 @@ function planMonthPanel() {
 }
 
 function bindMaterialButtons() {
-  document.querySelectorAll('.material-code').forEach(button => {
+  document.querySelectorAll('.material-code:not(.production-en-btn)').forEach(button => {
     button.onclick = () => openMaterialDetail(button.dataset.code);
   });
 }
@@ -950,6 +958,113 @@ function programacaoAlertPanel() {
   const allPlanned = plannedGeneralItems();
   const modelCards = models.map(model => { const key = plannedModelKey(model.modelo); const items = allPlanned.filter(item => item.plannedModels?.includes(key)); const crit = items.filter(item => item.plannedStatus === 'Crítico').length; const att = items.filter(item => item.plannedStatus === 'Em atenção').length; const cls = crit ? 'critical' : att ? 'attention' : 'regular'; const label = crit ? 'Crítico' : att ? 'Atenção' : 'Regular'; return `<div class="model-signal-card"><div><strong>${esc(model.modelo || 'Sem modelo')}</strong><small>${fmt(model.total)} carro${model.total === 1 ? '' : 's'} · ${fmt(crit + att)} itens em risco</small></div><span class="status ${cls === 'critical' ? 'red' : cls === 'attention' ? 'amber' : 'green'}">${label}</span></div>`; }).join('');
   return `<div class="panel programacao-alert-panel"><div class="panel-header"><div><span class="eyebrow">Liberação programada</span><h3>Visão geral · carros a liberar</h3><span>Fonte: PLANO MES · AA:AF</span></div><span class="date-pill">${fmt(releases.length)} carros</span></div><div class="panel-body"><div class="model-signal-grid">${modelCards || '<div class="empty">Nenhum modelo programado.</div>'}</div><div class="release-table-wrap"><table class="data-table release-table"><thead><tr><th>EN</th><th>Cliente</th><th>Modelo</th><th>PL</th><th>Nome</th><th>Data</th></tr></thead><tbody>${releases.map(item => `<tr><td>${esc(item.en || '—')}</td><td>${esc(item.cliente || '—')}</td><td>${esc(item.modelo || '—')}</td><td>${esc(item.pl || '—')}</td><td>${esc(item.nome || '—')}</td><td>${esc(item.data ? new Date(item.data).toLocaleDateString('pt-BR') : '—')}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhuma liberação encontrada.</td></tr>'}</tbody></table></div><div class="alert-export-row">${signal('Críticos', critical, 'critical')}${signal('Atenção', attention, 'attention')}</div></div></div>`;
+}
+function productionStatusExcluded(value) {
+  const status = String(value || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+  return status === 'ENTREGUE' || status === 'VITRINI';
+}
+function productionRecordByEN(en) {
+  const key = String(en || '').trim().toUpperCase();
+  return (PRODUCTION_MAP.records || []).find(row => String(row.en || '').trim().toUpperCase() === key) || null;
+}
+function productionENExcludedFromNiguri(en) {
+  const row = productionRecordByEN(en);
+  return !!row && productionStatusExcluded(row.productionStatusNormalized || row.productionStatus);
+}
+function productionMapStatusClass(status) {
+  const s = String(status || '').toUpperCase();
+  return productionStatusExcluded(status) ? 'status gray' : s === 'EM PRODUÇÃO' ? 'status green' : s === 'PROJETO' ? 'status blue' : s === 'ARRANJO' ? 'status amber' : s === 'CANCELADO' ? 'status red' : 'status purple';
+}
+function productionMapStages(row) {
+  const stages = row.stages || [];
+  return `<div class="production-stage-list">${stages.map(stage => `<span class="production-stage-chip ${stage.completed ? 'done' : 'pending'}"><i class="production-stage-dot ${stage.completed ? 'done' : 'pending'}"></i>${esc(stage.name)}</span>`).join('')}</div>`;
+}
+function productionMapDate(value) {
+  if (!value) return null;
+  const date = new Date(`${String(value).slice(0, 10)}T23:59:59`);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+function productionMapLate(row) {
+  const finalDate = productionMapDate(row.finalDate);
+  return !!finalDate && finalDate < new Date() && !productionStatusExcluded(row.productionStatus);
+}
+function productionMapWeekNumber(value) {
+  const match = String(value || '').match(/(\d+)/);
+  return match ? Number(match[1]) : null;
+}
+function productionMapWeekOptions() {
+  return [...new Set((PRODUCTION_MAP.records || []).map(row => row.week).filter(Boolean))].sort((a, b) => (productionMapWeekNumber(a) || 0) - (productionMapWeekNumber(b) || 0));
+}
+function productionMapModelForEN(row) {
+  const plan = (DATA?.planAnnual?.rows || []).find(item => String(item.pedido || '').trim().toUpperCase() === String(row.en || '').trim().toUpperCase());
+  if (plan?.modelo && DATA?.models?.[plan.modelo]) return plan.modelo;
+  const raw = String(plan?.modelo || row.model || '').trim();
+  const candidate = raw.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const exact = Object.keys(DATA?.models || {}).find(key => key.toLowerCase().replace(/[^a-z0-9]/g, '') === candidate);
+  if (exact) return exact;
+  const sky = raw.match(/(?:skycity|skyritz)?\s*(\d{1,2})\s*([a-z]{1,4})/i);
+  if (sky) {
+    const compact = `${sky[1]}${sky[2]}`.toLowerCase();
+    const alias = Object.keys(DATA?.models || {}).find(key => key.toLowerCase().replace(/[^a-z0-9]/g, '') === compact || key.toLowerCase().replace(/[^a-z0-9]/g, '').startsWith(compact));
+    if (alias) return alias;
+  }
+  return plan?.modelo || '';
+}
+function productionMapMissingItems(row) {
+  const structuralModel = productionMapModelForEN(row);
+  const structure = DATA?.models?.[structuralModel] || [];
+  const dueMonth = String(row.month || '').padStart(2, '0');
+  return structure.filter(component => component?.code && component.code !== 'Descrição').map(component => {
+    const item = itemByCode(component.code) || { code: component.code, description: component.description || '', stock: 0, orders: {}, unit: 'UN' };
+    const required = n(component.quantity);
+    const stock = n(item.stock);
+    const orderMonth = dueMonth ? `PED ${dueMonth}` : '';
+    const order = orderMonth ? n(item.orders?.[orderMonth]) : Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
+    const balanceNow = stock - required;
+    const balanceWithOrder = stock + order - required;
+    return { ...item, required, stock, order, orderMonth, balanceNow, balanceWithOrder, covered: balanceWithOrder >= 0, missing: balanceNow < 0 };
+  }).filter(item => item.missing).sort((a, b) => a.balanceWithOrder - b.balanceWithOrder);
+}
+function openProductionMapDetail(en) {
+  const row = productionRecordByEN(en);
+  if (!row) return;
+  const structuralModel = productionMapModelForEN(row);
+  const missing = productionMapMissingItems(row);
+  const covered = missing.filter(item => item.covered).length;
+  const uncovered = missing.length - covered;
+  const finalDate = productionMapDate(row.finalDate);
+  const late = productionMapLate(row);
+  const stages = row.stages || [];
+  const overlay = document.createElement('div');
+  overlay.className = 'detail-overlay production-map-detail-overlay';
+  overlay.innerHTML = `<section class="material-detail production-map-detail" role="dialog" aria-modal="true"><div class="material-detail-header"><div><span class="eyebrow">Mapa produtivo · detalhe da EN</span><h2>${esc(row.en)}</h2><p>${esc(row.client || 'Cliente não informado')} · ${esc(row.model || 'Modelo não informado')}</p></div><button class="icon-btn" id="close-production-map-detail">×</button></div><div class="production-map-detail-body"><div class="production-map-detail-meta"><div><span>PV / PL</span><b>${esc(row.pv || '—')} / ${esc(row.pl || '—')}</b></div><div><span>Modelo estrutural</span><b>${esc(structuralModel || 'Não identificado')}</b></div><div><span>Data final</span><b class="${late ? 'production-late-text' : ''}">${esc(row.finalDate || '—')}${late ? ' · ATRASADO' : ''}</b></div><div><span>Semana / mês</span><b>${esc(row.week || '—')} · ${esc(row.month || '—')}</b></div><div><span>Status</span><b><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></b></div><div><span>Itens faltantes</span><b>${fmt(missing.length)} · ${fmt(covered)} cobertos / ${fmt(uncovered)} sem cobertura</b></div></div><div class="production-map-detail-section"><h3>Etapas produtivas</h3><div class="production-stage-detail-grid">${stages.map(stage => `<div class="production-stage-detail ${stage.completed ? 'done' : 'pending'}"><i class="production-stage-dot ${stage.completed ? 'done' : 'pending'}"></i><div><b>${esc(stage.name)}</b><small>${stage.completed ? `Concluída${stage.statusValue ? ` · ${esc(stage.statusValue)}` : ''}` : 'Pendente'}</small></div></div>`).join('')}</div></div><div class="production-map-detail-section"><div class="production-map-detail-title"><div><h3>Itens faltantes e atendimento</h3><p>Comparação da estrutura com estoque e pedido previsto para o mês da entrega.</p></div><span class="status ${uncovered ? 'red' : 'green'}">${uncovered ? `${fmt(uncovered)} sem cobertura` : 'Pedidos cobrem a falta'}</span></div><div class="table-wrap"><table class="data-table production-missing-table"><thead><tr><th>Código / descrição</th><th>Necessidade</th><th>Estoque</th><th>Pedido no mês</th><th>Saldo após pedido</th><th>Atende a data?</th></tr></thead><tbody>${missing.map(item => `<tr><td><b>${esc(item.code)}</b><div class="desc">${esc(item.description || '—')}</div></td><td>${fmt(item.required)} ${esc(item.unit || 'UN')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.order)}<div class="desc">${esc(item.orderMonth || 'pedidos abertos')}</div></td><td class="${item.balanceWithOrder < 0 ? 'danger-text' : 'attention-text'}">${fmt(item.balanceWithOrder)}</td><td><span class="status ${item.covered ? 'green' : 'red'}">${item.covered ? 'Sim' : 'Não'}</span></td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum item faltante: estoque atual cobre a estrutura.</td></tr>'}</tbody></table></div></div></div><div class="detail-footer"><span>${late ? 'Atenção: esta EN está atrasada.' : 'Prazo conforme mapa produtivo.'}</span><button class="secondary-btn" id="close-production-map-detail-bottom">Fechar</button></div></section>`;
+  document.body.appendChild(overlay);
+  const close = () => overlay.remove();
+  $('#close-production-map-detail').onclick = close;
+  $('#close-production-map-detail-bottom').onclick = close;
+  overlay.onclick = event => { if (event.target === overlay) close(); };
+}
+function productionMapView() {
+  const weekStartNumber = productionMapWeekStart === 'all' ? null : productionMapWeekNumber(productionMapWeekStart);
+  const weekEndNumber = productionMapWeekEnd === 'all' ? null : productionMapWeekNumber(productionMapWeekEnd);
+  const startDate = productionMapDate(productionMapDateStart);
+  const endDate = productionMapDate(productionMapDateEnd);
+  const records = (PRODUCTION_MAP.records || []).filter(row => {
+    const textMatch = !productionMapQuery || `${row.en} ${row.pv || ''} ${row.client || ''} ${row.model || ''}`.toLowerCase().includes(productionMapQuery.toLowerCase());
+    const statusMatch = productionMapStatus === 'all' || String(row.productionStatus || '') === productionMapStatus;
+    const rowDate = productionMapDate(row.finalDate);
+    const dateMatch = (!startDate || (rowDate && rowDate >= startDate)) && (!endDate || (rowDate && rowDate <= endDate));
+    const rowWeek = productionMapWeekNumber(row.week);
+    const weekMatch = (!weekStartNumber || (rowWeek !== null && rowWeek >= weekStartNumber)) && (!weekEndNumber || (rowWeek !== null && rowWeek <= weekEndNumber));
+    return textMatch && statusMatch && dateMatch && weekMatch;
+  });
+  const summary = PRODUCTION_MAP.summary || {};
+  const statusCounts = records.reduce((counts, row) => { const key = String(row.productionStatus || 'SEM STATUS'); counts[key] = (counts[key] || 0) + 1; return counts; }, {});
+  const deliveredCount = statusCounts.ENTREGUE || 0;
+  const lateCount = records.filter(productionMapLate).length;
+  const pendingCount = (statusCounts.ARRANJO || 0) + (statusCounts.COMERCIAL || 0);
+  const rows = records.slice(0, 250).map(row => `<tr><td><button class="material-code production-en-btn" data-production-en="${esc(row.en)}">${esc(row.en)}</button><div class="desc">${esc(row.pv || 'PV não informado')} · ${esc(row.pl || 'PL não informado')}</div></td><td><strong>${esc(row.client || '—')}</strong><div class="desc">${esc(row.model || '—')}</div></td><td><div class="production-stage-dots">${productionMapStages(row)}</div></td><td><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></td><td>${esc(row.finalDate || '—')}</td><td>${esc(row.week || '—')}</td></tr>`).join('');
+  return `<div class="view-title production-map-heading"><div><span class="eyebrow">Planejamento produtivo integrado</span><h2>Mapa produtivo</h2><p>Programação por EN, etapas concluídas, prazo final e status do carro.</p></div><div class="date-pill">${fmt(summary.totalENs || records.length)} ENs · fonte: ${esc(PRODUCTION_MAP.sourceFile || 'planejamento produtivo')}</div></div><div class="production-map-metrics"><div class="metric"><span>Total de ENs</span><b>${fmt(summary.totalENs || 0)}</b></div><div class="metric green"><span>Em produção</span><b>${fmt(statusCounts['EM PRODUÇÃO'] || 0)}</b></div><div class="metric blue"><span>Em projeto</span><b>${fmt(statusCounts.PROJETO || 0)}</b></div><div class="metric amber"><span>Arranjo</span><b>${fmt(statusCounts.ARRANJO || 0)}</b></div><div class="metric purple"><span>Comercial</span><b>${fmt(statusCounts.COMERCIAL || 0)}</b></div><div class="metric gray"><span>Entregues</span><b>${fmt(deliveredCount)}</b><small>visíveis no mapa</small></div><div class="metric red"><span>Atrasados</span><b>${fmt(lateCount)}</b><small>prazo final vencido</small></div><div class="metric amber"><span>Arranjo/Comercial</span><b>${fmt(pendingCount)}</b><small>com pendência</small></div></div><div class="panel production-map-panel"><div class="toolbar production-map-filters"><input class="input" id="production-map-search" value="${esc(productionMapQuery)}" placeholder="Pesquisar EN, PV, cliente ou modelo" /><select class="select" id="production-map-status"><option value="all">Todos os status</option>${Object.keys(statusCounts).map(status => `<option value="${esc(status)}" ${productionMapStatus === status ? 'selected' : ''}>${esc(status)}</option>`).join('')}</select><label class="production-map-filter-field">Data inicial<input class="input" id="production-map-date-start" type="date" value="${esc(productionMapDateStart)}" /></label><label class="production-map-filter-field">Data final<input class="input" id="production-map-date-end" type="date" value="${esc(productionMapDateEnd)}" /></label><label class="production-map-filter-field">Semana inicial<select class="select" id="production-map-week-start"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekStart === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><label class="production-map-filter-field">Semana final<select class="select" id="production-map-week-end"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekEnd === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><button class="secondary-btn production-map-clear" id="production-map-clear-filters">Limpar filtros</button><span class="production-map-count">${fmt(records.length)} registros encontrados</span></div><div class="table-wrap"><table class="data-table production-map-table"><thead><tr><th>EN / PV</th><th>Cliente / modelo</th><th>Etapas produtivas</th><th>Status</th><th>Data final</th><th>Semana</th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="empty">Nenhuma EN encontrada.</td></tr>'}</tbody></table></div><div class="production-map-legend"><span><i class="production-stage-dot done"></i> etapa concluída</span><span><i class="production-stage-dot pending"></i> etapa pendente</span><span>Clique na EN para ver etapas, itens faltantes, pedidos e cobertura da data.</span></div></div>`;
 }
 function overview() {
   const base = scopedItems();
@@ -1316,12 +1431,28 @@ let pinsSubView = 'simulation';
 function pinsNiguriNormalize(value) {
   return String(value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 }
+function activeAnnualQuantities(model) {
+  const annual = DATA?.planAnnual?.models || {};
+  const fallback = { ...(annual[model] || {}) };
+  const rows = DATA?.planAnnual?.rows || [];
+  const mapRecords = typeof PRODUCTION_MAP !== 'undefined' ? (PRODUCTION_MAP.records || []) : [];
+  if (!rows.length || !mapRecords.length) return fallback;
+  const modelRows = rows.filter(row => String(row.modelo || '') === String(model));
+  const excluded = en => {
+    const found = mapRecords.find(item => String(item.en || '').trim().toUpperCase() === String(en || '').trim().toUpperCase());
+    const status = String(found?.productionStatusNormalized || found?.productionStatus || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    return status === 'ENTREGUE' || status === 'VITRINI';
+  };
+  const result = {};
+  modelRows.filter(row => !excluded(row.pedido)).forEach(row => { const month = String(row.mes || '').trim(); if (month) result[month] = n(result[month]) + 1; });
+  return modelRows.length ? result : fallback;
+}
 
 function pinsNiguriPlanModels(model) {
   const annual = DATA?.planAnnual?.models || {};
   if (Object.keys(annual).length) {
     const selected = model && model !== 'Todos os modelos' ? [model] : (PINS.models || Object.keys(annual));
-    return selected.map(name => ({ modelo: name, quantidades: annual[name] || {} })).filter(entry => Object.values(entry.quantidades).some(value => n(value) > 0));
+    return selected.map(name => ({ modelo: name, quantidades: activeAnnualQuantities(name) })).filter(entry => Object.values(entry.quantidades).some(value => n(value) > 0));
   }
   const all = DATA?.planMonth?.models || [];
   if (!model || model === 'Todos os modelos') return all;
@@ -1531,7 +1662,7 @@ function pinsNiguriView() {
   const weekHeaders = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} máquinas planejadas">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
   const rowHtml = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code niguri-pin-code" data-code="${esc(item.code)}" data-pin-model="${esc(model)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit || 'UN')}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.receipts > 0 ? 'receipt' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
   const weekOptions = timeline.allSlots.map(slot => `<option value="${esc(slot.key)}" ${slot.key === timeline.startKey ? 'selected' : ''}>${esc(slot.label)} · ${esc(slot.month)}/${esc(slot.year)}</option>`).join('');
-  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · linha do tempo</span><h2>NIGIRI dos Pinos</h2><p>Saldo projetado por semana usando a necessidade oficial da aba PinosAnual, de S41 a S52, e os recebimentos dos pedidos.</p></div><div class="date-pill">Fonte: PinosAnual · S41 a S52</div></div><div class="panel pins-niguri-controls"><label>Modelo analisado<select class="select" id="pins-niguri-model"><option>Todos os modelos</option>${PINS.models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="pins-niguri-start-week">${weekOptions}</select></label><label>Pesquisar<input class="input" id="pins-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="pins-niguri-status"><option value="all">Todos</option><option value="Crítico">Com falta prevista</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Leitura da projeção:</strong> escolha qualquer semana entre S41 e S52 para iniciar a visualização. O recebimento entra na semana prevista; essa quantidade fica disponível para o consumo das semanas seguintes. Verde = saldo suficiente, amarelo = recebimento na semana ou saldo próximo do limite, vermelho = saldo negativo.</div><div class="pins-result-panel panel"><div class="pins-result-head"><div><span class="eyebrow">Necessidade consolidada até 31/12</span><h3>${esc(model)}</h3><p>${fmt(rows.length)} pinos utilizados · início em ${esc(timeline.slots[0]?.label || '—')} · primeira falta identificada: ${esc(firstWeek)}</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalNeed)}</strong><small>Críticos: ${fmt(critical)} · Atenção: ${fmt(attention)}</small></div></div></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Saldo acumulado por semana</h3><span>Verde: disponível · amarelo: recebimento/próximo do limite · vermelho: falta prevista</span></div><span class="pins-legend"><i></i>${fmt(timeline.slots.length)} semanas projetadas</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Estoque inicial</th><th>Necessidade até dez.</th><th>Primeira falta</th>${weekHeaders}</tr></thead><tbody>${rowHtml || '<tr><td colspan="8" class="empty">Nenhum pino corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
+  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · linha do tempo</span><h2>NIGURI dos Pinos</h2><p>Saldo projetado por semana usando a necessidade oficial da aba PinosAnual, de S41 a S52, e os recebimentos dos pedidos.</p></div><div class="date-pill">Fonte: PinosAnual · S41 a S52</div></div><div class="panel pins-niguri-controls"><label>Modelo analisado<select class="select" id="pins-niguri-model"><option>Todos os modelos</option>${PINS.models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="pins-niguri-start-week">${weekOptions}</select></label><label>Pesquisar<input class="input" id="pins-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="pins-niguri-status"><option value="all">Todos</option><option value="Crítico">Com falta prevista</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Leitura da projeção:</strong> escolha qualquer semana entre S41 e S52 para iniciar a visualização. O recebimento entra na semana prevista; essa quantidade fica disponível para o consumo das semanas seguintes. Verde = saldo suficiente, amarelo = recebimento na semana ou saldo próximo do limite, vermelho = saldo negativo.</div><div class="pins-result-panel panel"><div class="pins-result-head"><div><span class="eyebrow">Necessidade consolidada até 31/12</span><h3>${esc(model)}</h3><p>${fmt(rows.length)} pinos utilizados · início em ${esc(timeline.slots[0]?.label || '—')} · primeira falta identificada: ${esc(firstWeek)}</p></div><div class="pins-result-total"><span>Necessidade total</span><strong>${fmt(totalNeed)}</strong><small>Críticos: ${fmt(critical)} · Atenção: ${fmt(attention)}</small></div></div></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Saldo acumulado por semana</h3><span>Verde: disponível · amarelo: recebimento/próximo do limite · vermelho: falta prevista</span></div><span class="pins-legend"><i></i>${fmt(timeline.slots.length)} semanas projetadas</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Estoque inicial</th><th>Necessidade até dez.</th><th>Primeira falta</th>${weekHeaders}</tr></thead><tbody>${rowHtml || '<tr><td colspan="8" class="empty">Nenhum pino corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
 }
 
 function pinsView() {
@@ -1563,7 +1694,7 @@ function modelNiguriStructureRows(model) {
 }
 function modelNiguriPlanEntries(model) {
   const annual = DATA?.planAnnual?.models || {};
-  const quantities = annual[model] || {};
+  const quantities = activeAnnualQuantities(model);
   return [{ modelo: model, quantidades: quantities }];
 }
 function modelNiguriTimeline(model) {
@@ -2062,9 +2193,9 @@ async function handleENPVUpload(file) {
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
+  const titles = { productionMap: 'Mapa produtivo', overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
+  const pages = { productionMap: productionMapView, overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -2076,6 +2207,19 @@ function render() {
 
 // Liga os eventos dos campos, botões, tabelas e filtros recém-renderizados.
 function bindView() {
+  if (view === 'productionMap') {
+    const search = $('#production-map-search'); const status = $('#production-map-status');
+    if (search) search.oninput = () => { productionMapQuery = search.value || ''; render(); };
+    if (status) status.onchange = () => { productionMapStatus = status.value || 'all'; render(); };
+    const dateStart = $('#production-map-date-start'); const dateEnd = $('#production-map-date-end'); const weekStart = $('#production-map-week-start'); const weekEnd = $('#production-map-week-end');
+    if (dateStart) dateStart.onchange = () => { productionMapDateStart = dateStart.value || ''; render(); };
+    if (dateEnd) dateEnd.onchange = () => { productionMapDateEnd = dateEnd.value || ''; render(); };
+    if (weekStart) weekStart.onchange = () => { productionMapWeekStart = weekStart.value || 'all'; render(); };
+    if (weekEnd) weekEnd.onchange = () => { productionMapWeekEnd = weekEnd.value || 'all'; render(); };
+    const clearFilters = $('#production-map-clear-filters');
+    if (clearFilters) clearFilters.onclick = () => { productionMapQuery = ''; productionMapStatus = 'all'; productionMapDateStart = ''; productionMapDateEnd = ''; productionMapWeekStart = 'all'; productionMapWeekEnd = 'all'; render(); };
+    document.querySelectorAll('.production-en-btn').forEach(button => button.onclick = () => openProductionMapDetail(button.dataset.productionEn || ''));
+  }
   if (view === 'overview') {
     document.querySelectorAll('[data-export-alert]').forEach(button => button.onclick = () => {
       const kind = button.dataset.exportAlert;
@@ -2504,12 +2648,13 @@ Obrigado!.`);
 // Lê o JSON local e inicia a primeira renderização do dashboard.
 async function load() {
   try {
-    const [dataResponse, historyResponse, consumablesResponse, planoResponse, annualPlanResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse, calferResponse] = await Promise.all([
+    const [dataResponse, historyResponse, consumablesResponse, planoResponse, annualPlanResponse, productionMapResponse, pinsResponse, cylindersResponse, cabinsResponse, sheetMetalResponse, programacaoResponse, calferResponse] = await Promise.all([
       fetch('data/explosao.json'),
       fetch('data/historico-estoque.json'),
       fetch('data/consumiveis.json'),
       fetch('data/plano-mes.json'),
       fetch('data/plano-anual.json'),
+      fetch('data/mapa-produtivo.json'),
       fetch('data/pinos.json'),
       fetch('data/cilindros.json'),
       fetch('data/cabines.json'),
@@ -2522,6 +2667,7 @@ async function load() {
     CONSUMABLES = consumablesResponse.ok ? await consumablesResponse.json() : { items: [], months: [] };
     DATA.planMonth = planoResponse.ok ? await planoResponse.json() : { models: [], months: [] };
     DATA.planAnnual = annualPlanResponse.ok ? await annualPlanResponse.json() : { models: {}, rows: [] };
+    PRODUCTION_MAP = productionMapResponse.ok ? await productionMapResponse.json() : { records: [], summary: {} };
     PINS = pinsResponse.ok ? await pinsResponse.json() : { items: [], models: [] };
     CYLINDERS = cylindersResponse.ok ? await cylindersResponse.json() : { items: [], models: [] };
     CABINS = cabinsResponse.ok ? await cabinsResponse.json() : { items: [], models: [] };

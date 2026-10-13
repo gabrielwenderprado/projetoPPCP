@@ -2,7 +2,7 @@ const CACHE_NAME = 'dashboard-estoque-v12-pinosanual-s41-s52';
 const APP_FILES = [
   './', './index.html', './assets/app.js', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
-  './data/explosao.json', './data/plano-mes.json', './data/programacao-modelos.json', './data/chaparias.json',
+  './data/explosao.json', './data/mapa-produtivo.json', './data/plano-mes.json', './data/programacao-modelos.json', './data/chaparias.json',
   './data/cabines.json', './data/pinos.json', './data/cilindros.json',
   './data/historico-estoque.json', './data/consumiveis.json'
 ];

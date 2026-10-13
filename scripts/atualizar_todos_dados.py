@@ -2,7 +2,8 @@
 """Executa e verifica a atualização completa dos snapshots do dashboard.
 
 Uso:
-  python scripts/atualizar_todos_dados.py explosao.xlsm [consumiveis.xlsx]
+  python scripts/atualizar_todos_dados.py explosao.xlsm [consumiveis.xlsx] [planejamento_produtivo.xlsx]
+  ou: python scripts/atualizar_todos_dados.py explosao.xlsm --mapa planejamento_produtivo.xlsx
 
 A planilha de Consumíveis é opcional porque, no projeto original, ela é uma
 origem separada da planilha de Explosão. Se a aba consumiveis existir na
@@ -59,13 +60,24 @@ def verify_json(filename: str, required: tuple[str, ...]) -> dict:
 
 def main() -> int:
     if len(sys.argv) < 2:
-        fail("informe a planilha de Explosão; o Consumível pode ser informado como segundo argumento")
-    explosion = Path(sys.argv[1]).expanduser().resolve()
+        fail("informe a planilha de Explosão; o Consumível e o mapa podem ser informados como argumentos opcionais")
+    args = sys.argv[1:]
+    production_map = None
+    if '--mapa' in args:
+        index = args.index('--mapa')
+        if index + 1 >= len(args): fail('informe o caminho da planilha após --mapa')
+        production_map = Path(args[index + 1]).expanduser().resolve()
+        del args[index:index + 2]
+    explosion = Path(args[0]).expanduser().resolve()
     if not explosion.exists():
         fail(f"planilha de Explosão não encontrada: {explosion}")
-    consumables = Path(sys.argv[2]).expanduser().resolve() if len(sys.argv) >= 3 else None
+    consumables = Path(args[1]).expanduser().resolve() if len(args) >= 2 else None
+    if production_map is None and len(args) >= 3:
+        production_map = Path(args[2]).expanduser().resolve()
     if consumables and not consumables.exists():
         fail(f"planilha de Consumíveis não encontrada: {consumables}")
+    if production_map and not production_map.exists():
+        fail(f"planilha de planejamento produtivo não encontrada: {production_map}")
 
     run([sys.executable, str(SCRIPTS / "convert_excel.py"), str(explosion)])
     run([sys.executable, str(SCRIPTS / "convert_pinos.py"), str(explosion)])
@@ -82,6 +94,10 @@ def main() -> int:
         run([sys.executable, str(SCRIPTS / "convert_consumiveis.py"), str(consumables)])
     else:
         print("AVISO: Consumíveis não atualizado: informe a segunda planilha ou use uma origem com a aba consumiveis.")
+    if production_map is not None:
+        run([sys.executable, str(SCRIPTS / "convert_mapa_produtivo.py"), str(production_map)])
+    else:
+        print("AVISO: Mapa produtivo não atualizado: informe a terceira planilha de planejamento.")
 
     snapshots = {
         "explosao.json": ("sourceFile", "generatedAt", "items", "models"),
@@ -94,6 +110,7 @@ def main() -> int:
         "programacao-modelos.json": ("sourceFile", "sourceSheet", "models"),
         "calfer.json": ("sourceFile", "generatedAt", "nextModels", "calferModels", "items"),
         "historico-estoque.json": ("description", "records"),
+        "mapa-produtivo.json": ("sourceFile", "sourceSheet", "records", "summary"),
     }
     if consumables is not None:
         snapshots["consumiveis.json"] = ("sourceFile", "sheet", "months", "items")
