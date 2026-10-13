@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_09.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_13.10.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-10-09",
+  "generatedAt": "2026-10-13",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -178,7 +178,7 @@
       "code": "01.02.01.0000000300",
       "description": "PARAFUSO PHILLIPS FLANGEADO AUTO BROCANTE PONTA BROCA 4,2 X 16MM ROSCA INTEIRA ZINCADO PRETO DIN 6921",
       "unit": "UN",
-      "stock": 3000,
+      "stock": 2990,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -283,7 +283,7 @@
       "code": "01.02.03.0000000040",
       "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 1100,
+      "stock": 700,
       "modelNeeds": {
         "4 LUGAR": 12,
         "6 LUGAR": 16,
@@ -388,7 +388,7 @@
       "code": "01.15.02.0000000120",
       "description": "CONJUNTO FECHO COM CADARÇO 480MM",
       "unit": "UN",
-      "stock": 168,
+      "stock": 132,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -403,7 +403,7 @@
       "code": "01.15.04.0000000072",
       "description": "CINTO DE SEGURANÇA RETRATIL DE 3P X 3430MM",
       "unit": "UN",
-      "stock": 168,
+      "stock": 132,
       "modelNeeds": {
         "4 LUGAR": 4,
         "6 LUGAR": 6,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 83908,
+      "stock": 83846,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -763,7 +763,7 @@
       "code": "01.11.04.0000000111",
       "description": "LANTERNA LED BV PARA ILUMINAÇAO (IL5024)",
       "unit": "UN",
-      "stock": 227,
+      "stock": 209,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -778,7 +778,7 @@
       "code": "01.12.07.0000000005",
       "description": "PEGA MAO - PLASTICO",
       "unit": "UN",
-      "stock": 589,
+      "stock": 548,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 227,
+      "stock": 209,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 85,
+      "stock": 73,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 56,
+      "stock": 44,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 44,
+      "stock": 38,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1663,7 +1663,7 @@
       "code": "01.15.04.0000000071",
       "description": "EXTINTOR DE INCENDIO 1KG CLASSE ABC",
       "unit": "UN",
-      "stock": 62,
+      "stock": 56,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1678,7 +1678,7 @@
       "code": "01.15.04.0000000076",
       "description": "SUPORTE EXTINTOR DE 3\"",
       "unit": "UN",
-      "stock": 51,
+      "stock": 45,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 42,
+      "stock": 36,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -3148,7 +3148,7 @@
       "code": "01.15.02.0000000138",
       "description": "VASO SANITARIO BANHEIRO QUIMICO PORTATIL CAMPING - 20L",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -3163,7 +3163,7 @@
       "code": "01.15.02.0000000140",
       "description": "PIA LAVATORIO PORTATIL CAMPING COM RESERVATORIO",
       "unit": "UN",
-      "stock": 57,
+      "stock": 51,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,

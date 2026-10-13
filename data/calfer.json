@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_09.10.xlsm",
-  "generatedAt": "2026-10-09",
+  "sourceFile": "Cópia de EXPLOSAO_13.10.xlsm",
+  "generatedAt": "2026-10-13",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -341,7 +341,7 @@
         {
           "code": "02.01.03.0000069390",
           "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
-          "quantityPerMachine": 0,
+          "quantityPerMachine": 13,
           "calferStock": 1,
           "row": 4
         },
@@ -466,7 +466,7 @@
         {
           "code": "02.03.01.0000084348",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 15,
+          "quantityPerMachine": 137,
           "calferStock": 2,
           "row": 23
         },
@@ -563,14 +563,14 @@
         {
           "code": "01.02.03.0000000047",
           "description": "PO SX AT ALTA M30 X 2,00 CL. 8.8 DIN 982",
-          "quantityPerMachine": 596,
+          "quantityPerMachine": 590,
           "calferStock": 1,
           "row": 39
         },
         {
           "code": "01.01.10.0000084360",
           "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
-          "quantityPerMachine": 173,
+          "quantityPerMachine": 172,
           "calferStock": 1,
           "row": 40
         },
@@ -667,7 +667,7 @@
         {
           "code": "01.02.03.0000000047",
           "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M30 X 2,0MM CLASSE 8 ZINCADO BRANCO DIN 985",
-          "quantityPerMachine": 596,
+          "quantityPerMachine": 590,
           "calferStock": 1,
           "row": 56
         },
