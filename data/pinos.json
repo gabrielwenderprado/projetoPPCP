@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_13.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_14.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-13",
+  "generatedAt": "2026-10-14",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -599,7 +599,7 @@
       "code": "02.03.01.0000067336",
       "description": "PINO INFERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 1031,
+      "stock": 1005,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -716,7 +716,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 295,
+      "stock": 292,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1535,7 +1535,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 387,
+      "stock": 386,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -2003,7 +2003,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 84,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2822,7 +2822,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 250,
+      "stock": 240,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3407,7 +3407,7 @@
       "code": "01.02.07.0000000014",
       "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
       "unit": "UN",
-      "stock": 1221,
+      "stock": 1220,
       "modelNeeds": {
         "18LDDI": 1,
         "13LDI": 1,
@@ -4109,7 +4109,7 @@
       "code": "02.02.01.0000083443",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 328,
+      "stock": 327,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4226,7 +4226,7 @@
       "code": "02.02.01.0000083444",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 385,
+      "stock": 384,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4343,7 +4343,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 34,
+      "stock": 35,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4460,7 +4460,7 @@
       "code": "02.02.01.0000086368",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
       "unit": "UN",
-      "stock": 268,
+      "stock": 259,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4928,7 +4928,7 @@
       "code": "02.03.01.0000083452",
       "description": "PINO FIXAÇAO CESTO",
       "unit": "UN",
-      "stock": 310,
+      "stock": 309,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5162,7 +5162,7 @@
       "code": "02.03.01.0000085011",
       "description": "PINO ARTICULAÇAO CAÇAMBA",
       "unit": "UN",
-      "stock": 57,
+      "stock": 51,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 308,
+      "stock": 307,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7268,7 +7268,7 @@
       "code": "02.03.01.0000085021",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 31,
+      "stock": 30,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -7385,7 +7385,7 @@
       "code": "02.03.01.0000085022",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 31,
+      "stock": 30,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -7502,7 +7502,7 @@
       "code": "02.03.01.0000085110",
       "description": "PINO SUPERIOR NIVELAMENTO",
       "unit": "UN",
-      "stock": 138,
+      "stock": 137,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,
