@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dashboard-estoque-v16-correcao-13ldi';
+const CACHE_NAME = 'dashboard-estoque-v17-mapa-obtencao';
 const APP_FILES = [
   './', './index.html', './assets/app.js', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',

@@ -92,6 +92,35 @@ let PRODUCTION_ALERTS = [];
 let ALERTS_ENDPOINT = '';
 let alertsSyncTimer = null;
 const PRODUCTION_ALERTS_STORAGE_KEY = 'pcm-alertas-producao';
+// Itens dispensados manualmente em uma EN ficam ocultos somente neste navegador.
+const PRODUCTION_DISMISSED_STORAGE_KEY = 'pcm-production-dismissed-items-v1';
+let PRODUCTION_DISMISSED_ITEMS = {};
+
+function loadProductionDismissedItems() {
+  try {
+    const saved = localStorage.getItem(PRODUCTION_DISMISSED_STORAGE_KEY);
+    const parsed = saved ? JSON.parse(saved) : {};
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+  } catch (error) { return {}; }
+}
+function saveProductionDismissedItems() {
+  try { localStorage.setItem(PRODUCTION_DISMISSED_STORAGE_KEY, JSON.stringify(PRODUCTION_DISMISSED_ITEMS)); } catch (error) { /* modo privado/armazenamento indisponível */ }
+}
+function productionDismissKey(en, code) {
+  return `${String(en || '').trim().toUpperCase()}::${String(code || '').trim()}`;
+}
+function isProductionItemDismissed(en, code) {
+  return !!PRODUCTION_DISMISSED_ITEMS[productionDismissKey(en, code)];
+}
+function dismissProductionItem(en, code) {
+  const key = productionDismissKey(en, code);
+  PRODUCTION_DISMISSED_ITEMS[key] = { en: String(en || '').trim().toUpperCase(), code: String(code || '').trim(), at: new Date().toISOString(), by: currentUser?.name || 'Usuário' };
+  saveProductionDismissedItems();
+}
+function restoreProductionItem(en, code) {
+  delete PRODUCTION_DISMISSED_ITEMS[productionDismissKey(en, code)];
+  saveProductionDismissedItems();
+}
 
 // Carrega os avisos do navegador enquanto a central não estiver configurada.
 function loadLocalProductionAlerts() {
@@ -1010,26 +1039,46 @@ function productionMapModelForEN(row) {
   }
   return plan?.modelo || '';
 }
+function productionMapOrderForMonth(item, row) {
+  const orders = item?.orders || {};
+  const finalDate = String(row?.finalDate || row?.date || '').slice(0, 10);
+  const dateMatch = finalDate.match(/^(\d{4})-(\d{2})-/);
+  const monthMatch = String(row?.month || '').match(/(\d{1,2})/);
+  const month = monthMatch ? String(Number(monthMatch[1])).padStart(2, '0') : '';
+  const year = dateMatch ? dateMatch[1] : '';
+  const candidates = [];
+  if (month && year) candidates.push(`PED ${month}/${year}`);
+  if (month) candidates.push(`PED ${month}`);
+  const exactKey = Object.keys(orders).find(key => candidates.some(candidate => String(key).trim().toUpperCase() === candidate));
+  if (exactKey) return { key: exactKey, quantity: n(orders[exactKey]) };
+  // Compatibilidade com chaves antigas ou planilhas que trazem espaços/ano em formatos diferentes.
+  const fallback = Object.keys(orders).find(key => {
+    const normalized = String(key).toUpperCase().replace(/\s+/g, '');
+    return month && (normalized === `PED${month}` || (year && normalized === `PED${month}/${year}`));
+  });
+  return fallback ? { key: fallback, quantity: n(orders[fallback]) } : { key: candidates[0] || '', quantity: 0 };
+}
 function productionMapMissingItems(row) {
   const structuralModel = productionMapModelForEN(row);
   const structure = DATA?.models?.[structuralModel] || [];
-  const dueMonth = String(row.month || '').padStart(2, '0');
   return structure.filter(component => component?.code && component.code !== 'Descrição').map(component => {
     const item = itemByCode(component.code) || { code: component.code, description: component.description || '', stock: 0, orders: {}, unit: 'UN' };
     const required = n(component.quantity);
     const stock = n(item.stock);
-    const orderMonth = dueMonth ? `PED ${dueMonth}` : '';
-    const order = orderMonth ? n(item.orders?.[orderMonth]) : Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
+    const orderInfo = productionMapOrderForMonth(item, row);
+    const orderMonth = orderInfo.key || 'pedidos abertos';
+    const order = orderInfo.quantity;
     const balanceNow = stock - required;
     const balanceWithOrder = stock + order - required;
     return { ...item, required, stock, order, orderMonth, balanceNow, balanceWithOrder, covered: balanceWithOrder >= 0, missing: balanceNow < 0 };
-  }).filter(item => item.missing).sort((a, b) => a.balanceWithOrder - b.balanceWithOrder);
+  }).filter(item => item.missing && !isProductionItemDismissed(row.en, item.code)).sort((a, b) => a.balanceWithOrder - b.balanceWithOrder);
 }
 function openProductionMapDetail(en) {
   const row = productionRecordByEN(en);
   if (!row) return;
   const structuralModel = productionMapModelForEN(row);
   const missing = productionMapMissingItems(row);
+  const dismissedForEN = Object.values(PRODUCTION_DISMISSED_ITEMS).filter(item => item.en === String(row.en || '').trim().toUpperCase());
   const covered = missing.filter(item => item.covered).length;
   const uncovered = missing.length - covered;
   const finalDate = productionMapDate(row.finalDate);
@@ -1037,11 +1086,23 @@ function openProductionMapDetail(en) {
   const stages = row.stages || [];
   const overlay = document.createElement('div');
   overlay.className = 'detail-overlay production-map-detail-overlay';
-  overlay.innerHTML = `<section class="material-detail production-map-detail" role="dialog" aria-modal="true"><div class="material-detail-header"><div><span class="eyebrow">Mapa produtivo · detalhe da EN</span><h2>${esc(row.en)}</h2><p>${esc(row.client || 'Cliente não informado')} · ${esc(row.model || 'Modelo não informado')}</p></div><button class="icon-btn" id="close-production-map-detail">×</button></div><div class="production-map-detail-body"><div class="production-map-detail-meta"><div><span>PV / PL</span><b>${esc(row.pv || '—')} / ${esc(row.pl || '—')}</b></div><div><span>Modelo estrutural</span><b>${esc(structuralModel || 'Não identificado')}</b></div><div><span>Data final</span><b class="${late ? 'production-late-text' : ''}">${esc(row.finalDate || '—')}${late ? ' · ATRASADO' : ''}</b></div><div><span>Semana / mês</span><b>${esc(row.week || '—')} · ${esc(row.month || '—')}</b></div><div><span>Status</span><b><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></b></div><div><span>Itens faltantes</span><b>${fmt(missing.length)} · ${fmt(covered)} cobertos / ${fmt(uncovered)} sem cobertura</b></div></div><div class="production-map-detail-section"><h3>Etapas produtivas</h3><div class="production-stage-detail-grid">${stages.map(stage => `<div class="production-stage-detail ${stage.completed ? 'done' : 'pending'}"><i class="production-stage-dot ${stage.completed ? 'done' : 'pending'}"></i><div><b>${esc(stage.name)}</b><small>${stage.completed ? `Concluída${stage.statusValue ? ` · ${esc(stage.statusValue)}` : ''}` : 'Pendente'}</small></div></div>`).join('')}</div></div><div class="production-map-detail-section"><div class="production-map-detail-title"><div><h3>Itens faltantes e atendimento</h3><p>Comparação da estrutura com estoque e pedido previsto para o mês da entrega.</p></div><span class="status ${uncovered ? 'red' : 'green'}">${uncovered ? `${fmt(uncovered)} sem cobertura` : 'Pedidos cobrem a falta'}</span></div><div class="table-wrap"><table class="data-table production-missing-table"><thead><tr><th>Código / descrição</th><th>Necessidade</th><th>Estoque</th><th>Pedido no mês</th><th>Saldo após pedido</th><th>Atende a data?</th></tr></thead><tbody>${missing.map(item => `<tr><td><b>${esc(item.code)}</b><div class="desc">${esc(item.description || '—')}</div></td><td>${fmt(item.required)} ${esc(item.unit || 'UN')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.order)}<div class="desc">${esc(item.orderMonth || 'pedidos abertos')}</div></td><td class="${item.balanceWithOrder < 0 ? 'danger-text' : 'attention-text'}">${fmt(item.balanceWithOrder)}</td><td><span class="status ${item.covered ? 'green' : 'red'}">${item.covered ? 'Sim' : 'Não'}</span></td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum item faltante: estoque atual cobre a estrutura.</td></tr>'}</tbody></table></div></div></div><div class="detail-footer"><span>${late ? 'Atenção: esta EN está atrasada.' : 'Prazo conforme mapa produtivo.'}</span><button class="secondary-btn" id="close-production-map-detail-bottom">Fechar</button></div></section>`;
+  overlay.innerHTML = `<section class="material-detail production-map-detail" role="dialog" aria-modal="true"><div class="material-detail-header"><div><span class="eyebrow">Mapa produtivo · detalhe da EN</span><h2>${esc(row.en)}</h2><p>${esc(row.client || 'Cliente não informado')} · ${esc(row.model || 'Modelo não informado')}</p></div><button class="icon-btn" id="close-production-map-detail">×</button></div><div class="production-map-detail-body"><div class="production-map-detail-meta"><div><span>PV / PL</span><b>${esc(row.pv || '—')} / ${esc(row.pl || '—')}</b></div><div><span>Modelo estrutural</span><b>${esc(structuralModel || 'Não identificado')}</b></div><div><span>Data final</span><b class="${late ? 'production-late-text' : ''}">${esc(row.finalDate || '—')}${late ? ' · ATRASADO' : ''}</b></div><div><span>Semana / mês</span><b>${esc(row.week || '—')} · ${esc(row.month || '—')}</b></div><div><span>Status</span><b><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></b></div><div><span>Itens faltantes</span><b>${fmt(missing.length)} · ${fmt(covered)} cobertos / ${fmt(uncovered)} sem cobertura</b></div></div><div class="production-map-detail-section"><h3>Etapas produtivas</h3><div class="production-stage-detail-grid">${stages.map(stage => `<div class="production-stage-detail ${stage.completed ? 'done' : 'pending'}"><i class="production-stage-dot ${stage.completed ? 'done' : 'pending'}"></i><div><b>${esc(stage.name)}</b><small>${stage.completed ? `Concluída${stage.statusValue ? ` · ${esc(stage.statusValue)}` : ''}` : 'Pendente'}</small></div></div>`).join('')}</div></div><div class="production-map-detail-section"><div class="production-map-detail-title"><div><h3>Itens faltantes e atendimento</h3><p>Comparação da estrutura com estoque e pedido previsto para o mês da entrega. Itens removidos ficam ocultos somente para esta EN neste navegador.</p></div>${dismissedForEN.length ? `<button class="secondary-btn production-restore-items-btn" id="restore-production-items">Restaurar removidos (${fmt(dismissedForEN.length)})</button>` : ''}<span class="status ${uncovered ? 'red' : 'green'}">${uncovered ? `${fmt(uncovered)} sem cobertura` : 'Pedidos cobrem a falta'}</span></div><div class="table-wrap"><table class="data-table production-missing-table"><thead><tr><th>Código / descrição</th><th>Necessidade</th><th>Estoque</th><th>Pedido no mês</th><th>Saldo após pedido</th><th>Atende a data?</th><th>Ação</th></tr></thead><tbody>${missing.map(item => `<tr><td><b>${esc(item.code)}</b><div class="desc">${esc(item.description || '—')}</div></td><td>${fmt(item.required)} ${esc(item.unit || 'UN')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.order)}<div class="desc">${esc(item.orderMonth || 'pedidos abertos')}</div></td><td class="${item.balanceWithOrder < 0 ? 'danger-text' : 'attention-text'}">${fmt(item.balanceWithOrder)}</td><td><span class="status ${item.covered ? 'green' : 'red'}">${item.covered ? 'Sim' : 'Não'}</span></td><td><button type="button" class="secondary-btn production-dismiss-item" data-production-dismiss-en="${esc(row.en)}" data-production-dismiss-code="${esc(item.code)}" title="Remover este item somente desta análise">Remover</button></td></tr>`).join('') || '<tr><td colspan="7" class="empty">Nenhum item faltante: estoque atual cobre a estrutura.</td></tr>'}</tbody></table></div></div></div><div class="detail-footer"><span>${late ? 'Atenção: esta EN está atrasada.' : 'Prazo conforme mapa produtivo.'}</span><button class="secondary-btn" id="close-production-map-detail-bottom">Fechar</button></div></section>`;
   document.body.appendChild(overlay);
   const close = () => overlay.remove();
   $('#close-production-map-detail').onclick = close;
   $('#close-production-map-detail-bottom').onclick = close;
+  document.querySelectorAll('[data-production-dismiss-en]').forEach(button => button.onclick = () => {
+    dismissProductionItem(button.dataset.productionDismissEn, button.dataset.productionDismissCode);
+    close();
+    openProductionMapDetail(button.dataset.productionDismissEn);
+  });
+  const restore = $('#restore-production-items');
+  if (restore) restore.onclick = () => {
+    Object.keys(PRODUCTION_DISMISSED_ITEMS).forEach(key => { if (PRODUCTION_DISMISSED_ITEMS[key]?.en === String(row.en || '').trim().toUpperCase()) delete PRODUCTION_DISMISSED_ITEMS[key]; });
+    saveProductionDismissedItems();
+    close();
+    openProductionMapDetail(row.en);
+  };
   overlay.onclick = event => { if (event.target === overlay) close(); };
 }
 function productionMapView() {
@@ -1063,8 +1124,8 @@ function productionMapView() {
   const deliveredCount = statusCounts.ENTREGUE || 0;
   const lateCount = records.filter(productionMapLate).length;
   const pendingCount = (statusCounts.ARRANJO || 0) + (statusCounts.COMERCIAL || 0);
-  const rows = records.slice(0, 250).map(row => `<tr><td><button class="material-code production-en-btn" data-production-en="${esc(row.en)}">${esc(row.en)}</button><div class="desc">${esc(row.pv || 'PV não informado')} · ${esc(row.pl || 'PL não informado')}</div></td><td><strong>${esc(row.client || '—')}</strong><div class="desc">${esc(row.model || '—')}</div></td><td><div class="production-stage-dots">${productionMapStages(row)}</div></td><td><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></td><td>${esc(row.finalDate || '—')}</td><td>${esc(row.week || '—')}</td></tr>`).join('');
-  return `<div class="view-title production-map-heading"><div><span class="eyebrow">Planejamento produtivo integrado</span><h2>Mapa produtivo</h2><p>Programação por EN, etapas concluídas, prazo final e status do carro.</p></div><div class="date-pill">${fmt(summary.totalENs || records.length)} ENs · fonte: ${esc(PRODUCTION_MAP.sourceFile || 'planejamento produtivo')}</div></div><div class="production-map-metrics"><div class="metric"><span>Total de ENs</span><b>${fmt(summary.totalENs || 0)}</b></div><div class="metric green"><span>Em produção</span><b>${fmt(statusCounts['EM PRODUÇÃO'] || 0)}</b></div><div class="metric blue"><span>Em projeto</span><b>${fmt(statusCounts.PROJETO || 0)}</b></div><div class="metric amber"><span>Arranjo</span><b>${fmt(statusCounts.ARRANJO || 0)}</b></div><div class="metric purple"><span>Comercial</span><b>${fmt(statusCounts.COMERCIAL || 0)}</b></div><div class="metric gray"><span>Entregues</span><b>${fmt(deliveredCount)}</b><small>visíveis no mapa</small></div><div class="metric red"><span>Atrasados</span><b>${fmt(lateCount)}</b><small>prazo final vencido</small></div><div class="metric amber"><span>Arranjo/Comercial</span><b>${fmt(pendingCount)}</b><small>com pendência</small></div></div><div class="panel production-map-panel"><div class="toolbar production-map-filters"><input class="input" id="production-map-search" value="${esc(productionMapQuery)}" placeholder="Pesquisar EN, PV, cliente ou modelo" /><select class="select" id="production-map-status"><option value="all">Todos os status</option>${Object.keys(statusCounts).map(status => `<option value="${esc(status)}" ${productionMapStatus === status ? 'selected' : ''}>${esc(status)}</option>`).join('')}</select><label class="production-map-filter-field">Data inicial<input class="input" id="production-map-date-start" type="date" value="${esc(productionMapDateStart)}" /></label><label class="production-map-filter-field">Data final<input class="input" id="production-map-date-end" type="date" value="${esc(productionMapDateEnd)}" /></label><label class="production-map-filter-field">Semana inicial<select class="select" id="production-map-week-start"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekStart === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><label class="production-map-filter-field">Semana final<select class="select" id="production-map-week-end"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekEnd === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><button class="secondary-btn production-map-clear" id="production-map-clear-filters">Limpar filtros</button><span class="production-map-count">${fmt(records.length)} registros encontrados</span></div><div class="table-wrap"><table class="data-table production-map-table"><thead><tr><th>EN / PV</th><th>Cliente / modelo</th><th>Etapas produtivas</th><th>Status</th><th>Data final</th><th>Semana</th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="empty">Nenhuma EN encontrada.</td></tr>'}</tbody></table></div><div class="production-map-legend"><span><i class="production-stage-dot done"></i> etapa concluída</span><span><i class="production-stage-dot pending"></i> etapa pendente</span><span>Clique na EN para ver etapas, itens faltantes, pedidos e cobertura da data.</span></div></div>`;
+  const rows = records.slice(0, 250).map(row => `<tr class="production-map-row" data-production-row-text="${esc(`${row.en || ''} ${row.pv || ''} ${row.client || ''} ${row.model || ''}`.toLowerCase())}"><td><button class="material-code production-en-btn" data-production-en="${esc(row.en)}">${esc(row.en)}</button><div class="desc">${esc(row.pv || 'PV não informado')} · ${esc(row.pl || 'PL não informado')}</div></td><td><strong>${esc(row.client || '—')}</strong><div class="desc">${esc(row.model || '—')}</div></td><td><div class="production-stage-dots">${productionMapStages(row)}</div></td><td><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></td><td>${esc(row.finalDate || '—')}</td><td>${esc(row.week || '—')}</td></tr>`).join('');
+  return `<div class="view-title production-map-heading"><div><span class="eyebrow">Planejamento produtivo integrado</span><h2>Mapa produtivo</h2><p>Programação por EN, etapas concluídas, prazo final e status do carro.</p></div><div class="date-pill">${fmt(summary.totalENs || records.length)} ENs · fonte: ${esc(PRODUCTION_MAP.sourceFile || 'planejamento produtivo')}</div></div><div class="production-map-metrics"><div class="metric"><span>Total de ENs</span><b>${fmt(summary.totalENs || 0)}</b></div><div class="metric green"><span>Em produção</span><b>${fmt(statusCounts['EM PRODUÇÃO'] || 0)}</b></div><div class="metric blue"><span>Em projeto</span><b>${fmt(statusCounts.PROJETO || 0)}</b></div><div class="metric amber"><span>Arranjo</span><b>${fmt(statusCounts.ARRANJO || 0)}</b></div><div class="metric purple"><span>Comercial</span><b>${fmt(statusCounts.COMERCIAL || 0)}</b></div><div class="metric gray"><span>Entregues</span><b>${fmt(deliveredCount)}</b><small>visíveis no mapa</small></div><div class="metric red"><span>Atrasados</span><b>${fmt(lateCount)}</b><small>prazo final vencido</small></div><div class="metric amber"><span>Arranjo/Comercial</span><b>${fmt(pendingCount)}</b><small>com pendência</small></div></div><div class="panel production-map-panel"><div class="toolbar production-map-filters"><input class="input" id="production-map-search" value="${esc(productionMapQuery)}" placeholder="Pesquisar EN, PV, cliente ou modelo" /><select class="select" id="production-map-status"><option value="all">Todos os status</option>${Object.keys(statusCounts).map(status => `<option value="${esc(status)}" ${productionMapStatus === status ? 'selected' : ''}>${esc(status)}</option>`).join('')}</select><label class="production-map-filter-field">Data inicial<input class="input" id="production-map-date-start" type="date" value="${esc(productionMapDateStart)}" /></label><label class="production-map-filter-field">Data final<input class="input" id="production-map-date-end" type="date" value="${esc(productionMapDateEnd)}" /></label><label class="production-map-filter-field">Semana inicial<select class="select" id="production-map-week-start"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekStart === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><label class="production-map-filter-field">Semana final<select class="select" id="production-map-week-end"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekEnd === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><button class="secondary-btn production-map-clear" id="production-map-clear-filters">Limpar filtros</button><span class="production-map-count" id="production-map-count">${fmt(records.length)} registros encontrados</span></div><div class="table-wrap"><table class="data-table production-map-table"><thead><tr><th>EN / PV</th><th>Cliente / modelo</th><th>Etapas produtivas</th><th>Status</th><th>Data final</th><th>Semana</th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="empty">Nenhuma EN encontrada.</td></tr>'}</tbody></table></div><div class="production-map-legend"><span><i class="production-stage-dot done"></i> etapa concluída</span><span><i class="production-stage-dot pending"></i> etapa pendente</span><span>Clique na EN para ver etapas, itens faltantes, pedidos e cobertura da data.</span></div></div>`;
 }
 function overview() {
   const base = scopedItems();
@@ -2209,7 +2270,18 @@ function render() {
 function bindView() {
   if (view === 'productionMap') {
     const search = $('#production-map-search'); const status = $('#production-map-status');
-    if (search) search.oninput = () => { productionMapQuery = search.value || ''; render(); };
+    if (search) search.oninput = () => {
+      productionMapQuery = search.value || '';
+      const query = productionMapQuery.trim().toLowerCase();
+      let visible = 0;
+      document.querySelectorAll('.production-map-row').forEach(row => {
+        const matches = !query || String(row.dataset.productionRowText || '').includes(query);
+        row.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      const counter = $('#production-map-count');
+      if (counter) counter.textContent = `${fmt(visible)} registros encontrados`;
+    };
     if (status) status.onchange = () => { productionMapStatus = status.value || 'all'; render(); };
     const dateStart = $('#production-map-date-start'); const dateEnd = $('#production-map-date-end'); const weekStart = $('#production-map-week-start'); const weekEnd = $('#production-map-week-end');
     if (dateStart) dateStart.onchange = () => { productionMapDateStart = dateStart.value || ''; render(); };
@@ -2705,6 +2777,7 @@ $('#theme-toggle').onclick = () => {
 };
 $('#logout-button').onclick = () => showLogin('Sessão terminada.');
 loadThemePreference();
+PRODUCTION_DISMISSED_ITEMS = loadProductionDismissedItems();
 loadPurchaseProcess();
 loadCalferTransactions();
 loadENPVReviews();
