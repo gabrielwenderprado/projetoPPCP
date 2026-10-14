@@ -252,6 +252,50 @@ for name in MODEL_SHEETS:
     if model_items:
         models[name] = model_items
 
+# Corrige abas antigas exportadas sem a coluna Código, especialmente 13ldi-46kv.
+def code_like(value):
+    return bool(re.match(r'^\d{2}(?:\.\d+)+$', text(value)))
+def desc_key(value):
+    return re.sub(r'[^a-z0-9]+', '', normalize(value))
+item_by_description = {desc_key(item.get('description')): item for item in items if item.get('description')}
+reference_by_description = {}
+for model_name, model_rows in models.items():
+    if model_name == '13ldi-46kv':
+        continue
+    for component in model_rows:
+        if code_like(component.get('code')) and component.get('description'):
+            reference_by_description.setdefault(desc_key(component['description']), component['code'])
+known_13ldi = {
+    'CESTA AEREA SKYRITZ 13 LDI 46 KV': '03.06.01.0000000026',
+    'FIBRA BRACO SUPERIOR ISOLADO SKYRITZ 13': '02.01.03.0000082542',
+    'TEE FEMEA CENTRAL M10': '01.01.01.0000000466',
+    'KIT DE ADESIVOS POLICARBONATO SKYCITY 13 LDI': '02.02.03.0000000008',
+}
+for model_name, model_rows in models.items():
+    malformed = model_name == '13ldi-46kv' and any(text(c.get('code')).lower() == 'descrição' for c in model_rows)
+    repaired = []
+    for component in model_rows:
+        raw_description = text(component.get('code'))
+        if malformed and text(component.get('code')).lower() == 'descrição':
+            continue
+        if malformed:
+            raw_description = text(component.get('code'))
+            component = {**component, 'description': raw_description, '_shifted_quantity': component.get('description')}
+        if (malformed or (not code_like(component.get('code')) and component.get('code') and num(component.get('description')) > 0 and num(component.get('quantity')) == 0)):
+            key = desc_key(raw_description)
+            item = item_by_description.get(key)
+            code = item.get('code') if item else reference_by_description.get(key)
+            if not code and model_name == '13ldi-46kv':
+                upper = normalize(raw_description).upper()
+                for fragment, known_code in known_13ldi.items():
+                    if normalize(fragment).upper() in upper:
+                        code = known_code
+                        break
+            if code:
+                catalog = next((candidate for candidate in items if candidate.get('code') == code), None)
+                component = {**component, 'code': code, 'description': catalog.get('description', raw_description) if catalog else raw_description, 'quantity': compact_number(num(component.get('_shifted_quantity', component.get('description')))), 'stock': catalog.get('stock', component.get('stock', 0)) if catalog else component.get('stock', 0)}
+        repaired.append(component)
+    models[model_name] = repaired
 open_requests = 0
 open_quantity = 0
 ws = wb['Obtencao']
