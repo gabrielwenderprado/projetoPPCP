@@ -226760,6 +226760,52 @@
         "DEM 01/2026": 0
       },
       "obtention": []
+    },
+    {
+      "code": "01.06.01.0000000005",
+      "description": "BORRACHA DE APOIO DO BOJO \"MANGUEIRA INDL LONADA",
+      "analyst": "",
+      "family": "BORRACHA",
+      "obtentionType": "Comprado",
+      "lastMovement": "nao tem",
+      "unit": "UN",
+      "stock": 28,
+      "stockMax": 120,
+      "stockValue": 0,
+      "safety": 80,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 50,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000017624",
+          "quantity": 50,
+          "plannedDate": "2026-10-15",
+          "status": "AP",
+          "purchaseOrder": "0005939/26"
+        }
+      ]
     }
   ],
   "models": {
