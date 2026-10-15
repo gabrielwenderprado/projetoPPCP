@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_14.10.xlsm",
-  "generatedAt": "2026-10-14",
+  "sourceFile": "Cópia de EXPLOSAO_15.10.xlsm",
+  "generatedAt": "2026-10-15",
   "sourceSheets": {
     "next": "calfer.next",
     "calfer": "calfer"
@@ -403,21 +403,21 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 2118,
+          "quantityPerMachine": 2094,
           "calferStock": 16,
           "row": 14
         },
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-          "quantityPerMachine": 543,
+          "quantityPerMachine": 531,
           "calferStock": 8,
           "row": 15
         },
         {
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-          "quantityPerMachine": 854,
+          "quantityPerMachine": 774,
           "calferStock": 13,
           "row": 16
         },
@@ -438,7 +438,7 @@
         {
           "code": "01.02.03.0000000044",
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-          "quantityPerMachine": 533,
+          "quantityPerMachine": 483,
           "calferStock": 1,
           "row": 19
         },
@@ -459,7 +459,7 @@
         {
           "code": "02.03.01.0000084350",
           "description": "PINO CILINDRO BRACO SUPERIOR",
-          "quantityPerMachine": 84,
+          "quantityPerMachine": 72,
           "calferStock": 2,
           "row": 22
         },
@@ -473,7 +473,7 @@
         {
           "code": "02.03.01.0000084349",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "quantityPerMachine": 56,
+          "quantityPerMachine": 44,
           "calferStock": 2,
           "row": 24
         },
@@ -507,7 +507,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "quantityPerMachine": 2118,
+          "quantityPerMachine": 2094,
           "calferStock": 10,
           "row": 31
         },
@@ -709,7 +709,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "quantityPerMachine": 2118,
+          "quantityPerMachine": 2094,
           "calferStock": 10,
           "row": 62
         },
