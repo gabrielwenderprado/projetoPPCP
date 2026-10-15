@@ -1,819 +1,207 @@
 {
   "sourceFile": "planejamento_produtivo.xlsx",
   "sourceSheet": "Planilha1",
-  "generatedAt": "2026-10-14",
+  "generatedAt": "2026-10-15",
   "records": [
     {
-      "en": "EN013318",
-      "pv": "2976/26",
-      "pl": "PL 3378 TERCEIRO",
-      "client": "LOCALIZA - LIGHT",
-      "model": "SKYCITY 10 L",
-      "family": "CESTO",
-      "truckModel": "MB - ACCELO 1117",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-01",
-      "firstDeliveryDate": "2026-09-28",
-      "week": "Semana 40",
+      "en": "EN013270",
+      "pv": "2783/26",
+      "pl": "PL 3381",
+      "client": "CPFL (RGE)",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "FORD RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-09",
+      "firstDeliveryDate": "2026-10-09",
+      "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-09-11",
+      "vehicleArrival": "2026-08-24",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "14-set.",
-          "statusValue": "2026-09-26",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "17-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "17-set.",
-          "statusValue": "25-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "23-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "24-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "1-out.",
-          "statusValue": "1-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013322",
-      "pv": "2978/26",
-      "pl": "PL 3378 TERCEIRO",
-      "client": "LOCALIZA - LIGHT",
-      "model": "SKYCITY 10 L",
-      "family": "CESTO",
-      "truckModel": "MB - ACCELO 1117",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-29",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-09-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "15-set.",
-          "statusValue": "2026-09-26",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "18-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "19-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "24-set.",
-          "statusValue": "30-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
           "planned": "25-set.",
-          "statusValue": "30-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "1-out.",
-          "statusValue": "1-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013314",
-      "pv": "2974/26",
-      "pl": "PL 3378 TERCEIRO",
-      "client": "LOCALIZA - LIGHT",
-      "model": "SKYCITY 10 L",
-      "family": "CESTO",
-      "truckModel": "MB - ACCELO 1117",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-25",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-09-11",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "11-set.",
-          "statusValue": "2026-09-26",
+          "statusValue": "2026-09-25",
           "completed": true
         },
         {
           "name": "Solda bases",
-          "planned": "16-set.",
-          "statusValue": "2026-09-28",
+          "planned": "30-set.",
+          "statusValue": "2026-09-26",
           "completed": true
         },
         {
           "name": "Subconjunto",
-          "planned": "17-set.",
+          "planned": "2-out.",
           "statusValue": "26-set.",
           "completed": true
         },
         {
           "name": "Terceiro eixo",
-          "planned": "16-set.",
-          "statusValue": "25-set.",
+          "planned": "30-set.",
+          "statusValue": "26-set.",
           "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": null,
+          "planned": "2-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "22-set.",
-          "statusValue": "30-set.",
+          "planned": "5-out.",
+          "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Integração",
-          "planned": "23-set.",
-          "statusValue": "30-set.",
+          "planned": "6-out.",
+          "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Montagem final",
-          "planned": "30-set.",
-          "statusValue": "1-out.",
-          "completed": true
+          "planned": "7-out.",
+          "statusValue": null,
+          "completed": false
         }
       ],
       "missingItems": [],
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN013320",
-      "pv": "2977/26",
-      "pl": "PL 3378 TERCEIRO",
-      "client": "LOCALIZA - LIGHT",
-      "model": "SKYCITY 10 L",
-      "family": "CESTO",
-      "truckModel": "MB - ACCELO 1117",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-28",
-      "week": "Semana 40",
+      "en": "EN013272",
+      "pv": "2784/26",
+      "pl": "PL 3381",
+      "client": "CPFL (RGE)",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "FORD RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-09",
+      "firstDeliveryDate": "2026-10-09",
+      "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-09-11",
+      "vehicleArrival": "2026-08-21",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "14-set.",
+          "planned": "25-set.",
+          "statusValue": "2026-09-25",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "30-set.",
           "statusValue": "2026-09-26",
           "completed": true
         },
         {
-          "name": "Solda bases",
-          "planned": "17-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
           "name": "Subconjunto",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
+          "planned": "2-out.",
+          "statusValue": "26-set.",
           "completed": true
         },
         {
           "name": "Terceiro eixo",
-          "planned": "17-set.",
-          "statusValue": "25-set.",
+          "planned": "30-set.",
+          "statusValue": "26-set.",
           "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": null,
+          "planned": "2-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "23-set.",
-          "statusValue": "30-set.",
+          "planned": "5-out.",
+          "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Integração",
-          "planned": "24-set.",
-          "statusValue": "30-set.",
+          "planned": "6-out.",
+          "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Montagem final",
-          "planned": "30-set.",
-          "statusValue": "1-out.",
-          "completed": true
+          "planned": "7-out.",
+          "statusValue": null,
+          "completed": false
         }
       ],
       "missingItems": [],
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN013330",
-      "pv": "2982/26",
-      "pl": "PL 3378 TERCEIRO",
-      "client": "LOCALIZA - LIGHT",
-      "model": "SKYCITY 10 L",
-      "family": "CESTO",
-      "truckModel": "MB - ACCELO 1117",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-29",
-      "week": "Semana 40",
+      "en": "EN013274",
+      "pv": "2785/26",
+      "pl": "PL 3381",
+      "client": "CPFL (RGE)",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "FORD RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-09",
+      "firstDeliveryDate": "2026-10-09",
+      "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-09-14",
+      "vehicleArrival": "2026-08-21",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "15-set.",
+          "planned": "25-set.",
+          "statusValue": "2026-09-25",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "30-set.",
           "statusValue": "2026-09-26",
           "completed": true
         },
         {
-          "name": "Solda bases",
-          "planned": "18-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
           "name": "Subconjunto",
-          "planned": "19-set.",
-          "statusValue": "30-set.",
+          "planned": "2-out.",
+          "statusValue": "26-set.",
           "completed": true
         },
         {
           "name": "Terceiro eixo",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "24-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "25-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "1-out.",
-          "statusValue": "1-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011180",
-      "pv": "187/26",
-      "pl": "PL 3166",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-23",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-08-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "9-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "14-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "15-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "14-set.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "21-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
           "planned": "30-set.",
-          "statusValue": "3-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011176",
-      "pv": "185/26",
-      "pl": "PL 3166",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-24",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-08-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "10-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "15-set.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "16-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "15-set.",
-          "statusValue": "28-set.",
+          "statusValue": "26-set.",
           "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": null,
+          "planned": "2-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "21-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "22-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "30-set.",
-          "statusValue": "3-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011182",
-      "pv": "188/26",
-      "pl": "PL 3166",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-24",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-08-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "10-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "15-set.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "16-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "15-set.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "21-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "22-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "30-set.",
-          "statusValue": "3-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011174",
-      "pv": "184/26",
-      "pl": "PL 3166",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-03",
-      "firstDeliveryDate": "2026-09-24",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-08-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "10-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "15-set.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "16-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "15-set.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "21-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "22-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "1-out.",
-          "statusValue": "3-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012603",
-      "pv": "2071/26",
-      "pl": "PL 3357",
-      "client": "LOCALIZA - ELINSA",
-      "model": "CARROCERIA COM SUPORTE DE ESCADAS LATERAIS",
-      "family": "ESCADA",
-      "truckModel": "TOYOTA - HILUX",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": null,
-      "firstDeliveryDate": "2026-09-30",
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": "2026-07-13",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "16-set.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "21-set.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "22-set.",
-          "statusValue": "25-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "21-set.",
-          "statusValue": "24-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "25-set.",
+          "planned": "5-out.",
           "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Integração",
-          "planned": "28-set.",
+          "planned": "6-out.",
           "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Montagem final",
-          "planned": "25-set.",
+          "planned": "7-out.",
           "statusValue": null,
           "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012692",
-      "pv": "2136/26",
-      "pl": "PL 3294",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "ENTREGUE",
-      "productionStatusNormalized": "ENTREGUE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-09-30",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-09-24",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "16-set.",
-          "statusValue": "2026-09-08",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "21-set.",
-          "statusValue": "2026-09-11",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "22-set.",
-          "statusValue": "10-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "21-set.",
-          "statusValue": "n/a",
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "25-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "28-set.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "30-set.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012701",
-      "pv": "2145/26",
-      "pl": "PL 3303",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "ENTREGUE",
-      "productionStatusNormalized": "ENTREGUE",
-      "finalDate": "2026-10-02",
-      "firstDeliveryDate": "2026-10-01",
-      "week": "Semana 40",
-      "month": 10,
-      "vehicleArrival": "2026-09-21",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "17-set.",
-          "statusValue": "2026-09-14",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "22-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "23-set.",
-          "statusValue": "18-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "22-set.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "28-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "29-set.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "1-out.",
-          "statusValue": "2026-10-01",
-          "completed": true
         }
       ],
       "missingItems": [],
@@ -888,6 +276,142 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012855",
+      "pv": "2304/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-10-06",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "22-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "25-set.",
+          "statusValue": "2026-09-21",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "29-set.",
+          "statusValue": "23-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "25-set.",
+          "statusValue": "21-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "29-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "30-set.",
+          "statusValue": "22-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "1-out.",
+          "statusValue": "2026-09-22",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN011051",
+      "pv": "216/26",
+      "pl": "PL 3242",
+      "client": "ENEL CE",
+      "model": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "family": "GUINDASTE",
+      "truckModel": "VW - 26.260",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-05",
+      "firstDeliveryDate": "2026-09-22",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-03-03",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "8-set.",
+          "statusValue": "2026-09-10",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "11-set.",
+          "statusValue": "2026-09-21",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "12-set.",
+          "statusValue": "21-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "11-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": null,
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "17-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "18-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
+          "statusValue": "3-out.",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN011048",
       "pv": "215/26",
       "pl": "PL 3242",
@@ -895,8 +419,8 @@
       "model": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
       "family": "GUINDASTE",
       "truckModel": "VW - 26.260",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
       "finalDate": "2026-10-05",
       "firstDeliveryDate": "2026-09-22",
       "week": "Semana 41",
@@ -963,8 +487,8 @@
       "model": "ESCADA CENTRAL METROPOLITANA",
       "family": "ESCADA",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
       "finalDate": "2026-10-05",
       "firstDeliveryDate": "2026-09-24",
       "week": "Semana 41",
@@ -1024,8 +548,8 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN013000",
-      "pv": "2676/26",
+      "en": "EN012998",
+      "pv": "2675/26",
       "pl": "PL 3373",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
@@ -1033,6 +557,74 @@
       "truckModel": "VW - 11.180",
       "productionStatus": "VITRINE",
       "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-10-06",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-25",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "22-set.",
+          "statusValue": "2026-09-23",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "25-set.",
+          "statusValue": "2026-09-23",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "29-set.",
+          "statusValue": "25-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "25-set.",
+          "statusValue": "25-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "29-set.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Máquina",
+          "planned": "30-set.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "1-out.",
+          "statusValue": "2026-10-01",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN013000",
+      "pv": "2676/26",
+      "pl": "PL 3373",
+      "client": "VAMOS - LIGHT",
+      "model": "SKYCITY 10 L",
+      "family": "CESTO",
+      "truckModel": "VW - 11.180",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
       "finalDate": "2026-10-05",
       "firstDeliveryDate": "2026-09-29",
       "week": "Semana 41",
@@ -1092,6 +684,210 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012343",
+      "pv": "1639/26",
+      "pl": "PL 3315",
+      "client": "NEOENERGIA BAHIA",
+      "model": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
+      "family": "CARGA SECA",
+      "truckModel": "VW - 27.320",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-13",
+      "firstDeliveryDate": "2026-10-13",
+      "week": "Semana 42",
+      "month": 10,
+      "vehicleArrival": "2026-09-02",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "29-set.",
+          "statusValue": "2026-08-14",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "2-out.",
+          "statusValue": "2026-09-02",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "6-out.",
+          "statusValue": "21-ago.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "2-out.",
+          "statusValue": "23-ago.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "6-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "7-out.",
+          "statusValue": "2026-09-08",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "8-out.",
+          "statusValue": "2026-09-08",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "9-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012851",
+      "pv": "2302/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-07",
+      "firstDeliveryDate": "2026-10-07",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-14",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "23-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "28-set.",
+          "statusValue": "2026-09-22",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "30-set.",
+          "statusValue": "23-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "28-set.",
+          "statusValue": "21-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "30-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "1-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "2-out.",
+          "statusValue": "2026-10-05",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "5-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012877",
+      "pv": "2315/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-07",
+      "firstDeliveryDate": "2026-10-07",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "23-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "28-set.",
+          "statusValue": "2026-09-22",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "30-set.",
+          "statusValue": "23-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "28-set.",
+          "statusValue": "22-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "30-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "1-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "2-out.",
+          "statusValue": "2026-10-05",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "5-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN011172",
       "pv": "183/26",
       "pl": "PL 3166",
@@ -1099,8 +895,8 @@
       "model": "ESCADA CENTRAL METROPOLITANA",
       "family": "ESCADA",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
       "finalDate": "2026-10-05",
       "firstDeliveryDate": "2026-09-24",
       "week": "Semana 41",
@@ -1167,8 +963,8 @@
       "model": "ESCADA CENTRAL METROPOLITANA",
       "family": "ESCADA",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
       "finalDate": "2026-10-05",
       "firstDeliveryDate": "2026-09-25",
       "week": "Semana 41",
@@ -1296,1026 +1092,6 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN011158",
-      "pv": "176/26",
-      "pl": "PL 3166",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-05",
-      "firstDeliveryDate": "2026-09-25",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-07-23",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "11-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "16-set.",
-          "statusValue": "2026-09-30",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "17-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "16-set.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "22-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "23-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "3-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011051",
-      "pv": "216/26",
-      "pl": "PL 3242",
-      "client": "ENEL CE",
-      "model": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "family": "GUINDASTE",
-      "truckModel": "VW - 26.260",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-05",
-      "firstDeliveryDate": "2026-09-22",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-03-03",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "8-set.",
-          "statusValue": "2026-09-10",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "11-set.",
-          "statusValue": "2026-09-21",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "12-set.",
-          "statusValue": "21-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "11-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "17-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "3-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011162",
-      "pv": "178/26",
-      "pl": "PL 3361",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-09-25",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-07-23",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "11-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "16-set.",
-          "statusValue": "2026-09-30",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "17-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "16-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "22-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": "6-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011166",
-      "pv": "180/26",
-      "pl": "PL 3361",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-09-28",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "14-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "17-set.",
-          "statusValue": "2026-09-30",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "18-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "17-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "23-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011168",
-      "pv": "181/26",
-      "pl": "PL 3393",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-09-29",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "15-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "18-set.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "19-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "18-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "24-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012695",
-      "pv": "2139/26",
-      "pl": "PL 3303",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "ENTREGUE",
-      "productionStatusNormalized": "ENTREGUE",
-      "finalDate": "2026-10-08",
-      "firstDeliveryDate": "2026-09-30",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-25",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "16-set.",
-          "statusValue": "2026-09-14",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "21-set.",
-          "statusValue": "2026-09-21",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "22-set.",
-          "statusValue": "18-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "21-set.",
-          "statusValue": "06./10",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "25-set.",
-          "statusValue": "6-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "28-set.",
-          "statusValue": "2026-10-06",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "7-out.",
-          "statusValue": "2026-10-06",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012855",
-      "pv": "2304/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "2026-09-21",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": "23-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "21-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "22-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "2026-09-22",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012998",
-      "pv": "2675/26",
-      "pl": "PL 3373",
-      "client": "VAMOS - LIGHT",
-      "model": "SKYCITY 10 L",
-      "family": "CESTO",
-      "truckModel": "VW - 11.180",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-25",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": "25-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "25-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012867",
-      "pv": "2310/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "2026-09-22",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "22-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "25-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011146",
-      "pv": "170/26",
-      "pl": "PL 3361",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-07-23",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "2026-09-30",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013382",
-      "pv": "2896/26",
-      "pl": "PL 3423",
-      "client": "CF TRANSPORTES",
-      "model": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
-      "family": "GUINDASTE",
-      "truckModel": "Ford Cargo 1622 6x2",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-07",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": null,
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
-          "statusValue": "2026-10-01",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "n/a",
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": "n/a",
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "n/a",
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012873",
-      "pv": "2313/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-07",
-      "firstDeliveryDate": "2026-10-07",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "23-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "28-set.",
-          "statusValue": "2026-09-22",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "30-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "28-set.",
-          "statusValue": "22-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "30-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "1-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "2-out.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012871",
-      "pv": "2312/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-07",
-      "firstDeliveryDate": "2026-10-07",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "23-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "28-set.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "30-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "28-set.",
-          "statusValue": "22-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "30-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "1-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "2-out.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012851",
-      "pv": "2302/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-07",
-      "firstDeliveryDate": "2026-10-07",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-14",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "23-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "28-set.",
-          "statusValue": "2026-09-22",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "30-set.",
-          "statusValue": "23-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "28-set.",
-          "statusValue": "21-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "30-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "2-out.",
-          "statusValue": "2026-10-05",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012877",
-      "pv": "2315/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-07",
-      "firstDeliveryDate": "2026-10-07",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "23-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "28-set.",
-          "statusValue": "2026-09-22",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "30-set.",
-          "statusValue": "23-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "28-set.",
-          "statusValue": "22-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "30-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "2-out.",
-          "statusValue": "2026-10-05",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
       "en": "EN013002",
       "pv": "2677/26",
       "pl": "PL 3373",
@@ -2323,8 +1099,8 @@
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
       "finalDate": "2026-10-07",
       "firstDeliveryDate": "2026-10-07",
       "week": "Semana 41",
@@ -2376,482 +1152,6 @@
         {
           "name": "Montagem final",
           "planned": "5-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012879",
-      "pv": "2316/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-06",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "2026-09-22",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "24-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "3-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "2026-10-03",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012869",
-      "pv": "2311/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-13",
-      "firstDeliveryDate": "2026-10-13",
-      "week": "Semana 42",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "29-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "2-out.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "6-out.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "2-out.",
-          "statusValue": "22-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "6-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "7-out.",
-          "statusValue": "6-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "8-out.",
-          "statusValue": "2026-10-06",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "9-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012901",
-      "pv": "2327/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-07",
-      "firstDeliveryDate": "2026-10-07",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-21",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "23-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "28-set.",
-          "statusValue": "2026-09-24",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "30-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "28-set.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "30-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "2-out.",
-          "statusValue": "2026-10-05",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "5-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012913",
-      "pv": "2333/26",
-      "pl": "PL 3354 (TERCEIRO)",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-08",
-      "firstDeliveryDate": "2026-10-08",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-24",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "24-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "29-set.",
-          "statusValue": "2026-09-28",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "1-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "1-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "6-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013270",
-      "pv": "2783/26",
-      "pl": "PL 3381",
-      "client": "CPFL (RGE)",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "FORD RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-09",
-      "firstDeliveryDate": "2026-10-09",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-24",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "25-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "30-set.",
-          "statusValue": "2026-09-26",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "2-out.",
-          "statusValue": "26-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "30-set.",
-          "statusValue": "26-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "2-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "5-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "6-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "7-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013272",
-      "pv": "2784/26",
-      "pl": "PL 3381",
-      "client": "CPFL (RGE)",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "FORD RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-09",
-      "firstDeliveryDate": "2026-10-09",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-21",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "25-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "30-set.",
-          "statusValue": "2026-09-26",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "2-out.",
-          "statusValue": "26-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "30-set.",
-          "statusValue": "26-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "2-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "5-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "6-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "7-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013274",
-      "pv": "2785/26",
-      "pl": "PL 3381",
-      "client": "CPFL (RGE)",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "FORD RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-09",
-      "firstDeliveryDate": "2026-10-09",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-21",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "25-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "30-set.",
-          "statusValue": "2026-09-26",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "2-out.",
-          "statusValue": "26-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "30-set.",
-          "statusValue": "26-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "2-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "5-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "6-out.",
-          "statusValue": "28-set.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "7-out.",
           "statusValue": null,
           "completed": false
         }
@@ -2928,612 +1228,476 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012651",
-      "pv": "2105/26",
-      "pl": "PL 3404",
-      "client": "ELENG ENGENHARIA LTDA",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "TOYOTA - HILUX",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-08",
-      "firstDeliveryDate": "2026-10-08",
+      "en": "EN012867",
+      "pv": "2310/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-10-06",
       "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-08-28",
+      "vehicleArrival": "2026-09-08",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "24-set.",
-          "statusValue": "2026-09-29",
+          "planned": "22-set.",
+          "statusValue": "2026-09-18",
           "completed": true
         },
         {
           "name": "Solda bases",
-          "planned": "29-set.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "1-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "29-set.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "1-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "6-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012653",
-      "pv": "2106/26",
-      "pl": "PL 3404",
-      "client": "ELENG ENGENHARIA LTDA",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "TOYOTA - HILUX",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-08",
-      "firstDeliveryDate": "2026-10-08",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-28",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "24-set.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "29-set.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "29-set.",
-          "statusValue": "23-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "1-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "6-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012655",
-      "pv": "2107/26",
-      "pl": "PL 3404",
-      "client": "ELENG ENGENHARIA LTDA",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "TOYOTA - HILUX",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-08",
-      "firstDeliveryDate": "2026-10-08",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-28",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "24-set.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "29-set.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "29-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "1-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "6-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012657",
-      "pv": "2108/26",
-      "pl": "PL 3404",
-      "client": "ELENG ENGENHARIA LTDA",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "TOYOTA - HILUX",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-08",
-      "firstDeliveryDate": "2026-10-08",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-08-28",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "24-set.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "29-set.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "1-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "29-set.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "1-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "5-out.",
-          "statusValue": "8-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "6-out.",
-          "statusValue": "8-out.",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012661",
-      "pv": "2109/26",
-      "pl": "PL 3404",
-      "client": "ELENG ENGENHARIA LTDA",
-      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
-      "family": "ESCADA",
-      "truckModel": "TOYOTA - HILUX",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-09",
-      "firstDeliveryDate": "2026-10-09",
-      "week": "Semana 41",
-      "month": 10,
-      "vehicleArrival": "2026-09-11",
-      "stages": [
-        {
-          "name": "Corte e dobra",
           "planned": "25-set.",
-          "statusValue": "2026-09-29",
+          "statusValue": "2026-09-22",
           "completed": true
         },
         {
-          "name": "Solda bases",
+          "name": "Subconjunto",
+          "planned": "29-set.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "25-set.",
+          "statusValue": "22-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "29-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
           "planned": "30-set.",
+          "statusValue": "25-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "1-out.",
+          "statusValue": "2026-09-28",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
           "statusValue": "2026-10-07",
           "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "2-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "30-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "2-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "5-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "6-out.",
-          "statusValue": "9-out.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "7-out.",
-          "statusValue": null,
-          "completed": false
         }
       ],
       "missingItems": [],
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012687",
-      "pv": "2131/26",
-      "pl": "PL 3294",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-27",
-      "firstDeliveryDate": "2026-10-22",
-      "week": "Semana 44",
+      "en": "EN011158",
+      "pv": "176/26",
+      "pl": "PL 3166",
+      "client": "ENEL CE",
+      "model": "ESCADA CENTRAL METROPOLITANA",
+      "family": "ESCADA",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-05",
+      "firstDeliveryDate": "2026-09-25",
+      "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-10-07",
+      "vehicleArrival": "2026-07-23",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "8-out.",
-          "statusValue": "2026-09-08",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "13-out.",
-          "statusValue": "2026-09-15",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "15-out.",
-          "statusValue": "11-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "13-out.",
-          "statusValue": "n/a",
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "15-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "16-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": "19-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "20-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012697",
-      "pv": "2141/26",
-      "pl": "PL 3303",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-27",
-      "firstDeliveryDate": "2026-10-22",
-      "week": "Semana 44",
-      "month": 10,
-      "vehicleArrival": "2026-10-07",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "8-out.",
-          "statusValue": "2026-09-14",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "13-out.",
+          "planned": "11-set.",
           "statusValue": "2026-09-25",
           "completed": true
         },
         {
+          "name": "Solda bases",
+          "planned": "16-set.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        },
+        {
           "name": "Subconjunto",
-          "planned": "15-out.",
-          "statusValue": "18-set.",
+          "planned": "17-set.",
+          "statusValue": "1-out.",
           "completed": true
         },
         {
           "name": "Terceiro eixo",
-          "planned": "13-out.",
-          "statusValue": "n/a",
-          "completed": false
+          "planned": "16-set.",
+          "statusValue": "28-set.",
+          "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": "15-out.",
+          "planned": null,
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "16-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "22-set.",
+          "statusValue": "1-out.",
+          "completed": true
         },
         {
           "name": "Integração",
-          "planned": "19-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "23-set.",
+          "statusValue": "1-out.",
+          "completed": true
         },
         {
           "name": "Montagem final",
-          "planned": "20-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "2-out.",
+          "statusValue": "3-out.",
+          "completed": true
         }
       ],
       "missingItems": [],
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012681",
-      "pv": "2125/26",
-      "pl": "PL 3294",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-28",
-      "firstDeliveryDate": "2026-10-23",
-      "week": "Semana 44",
+      "en": "EN011162",
+      "pv": "178/26",
+      "pl": "PL 3361",
+      "client": "ENEL CE",
+      "model": "ESCADA CENTRAL METROPOLITANA",
+      "family": "ESCADA",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-09-25",
+      "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-10-07",
+      "vehicleArrival": "2026-07-23",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "9-out.",
-          "statusValue": "2026-09-08",
+          "planned": "11-set.",
+          "statusValue": "2026-09-28",
           "completed": true
         },
         {
           "name": "Solda bases",
-          "planned": "14-out.",
-          "statusValue": "2026-09-16",
+          "planned": "16-set.",
+          "statusValue": "2026-09-30",
           "completed": true
         },
         {
           "name": "Subconjunto",
-          "planned": "16-out.",
-          "statusValue": "11-set.",
+          "planned": "17-set.",
+          "statusValue": "5-out.",
           "completed": true
         },
         {
           "name": "Terceiro eixo",
-          "planned": "14-out.",
-          "statusValue": "n/a",
-          "completed": false
+          "planned": "16-set.",
+          "statusValue": "30-set.",
+          "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": "16-out.",
+          "planned": null,
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "19-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "22-set.",
+          "statusValue": "5-out.",
+          "completed": true
         },
         {
           "name": "Integração",
-          "planned": "20-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "5-out.",
+          "statusValue": "5-out.",
+          "completed": true
         },
         {
           "name": "Montagem final",
-          "planned": "21-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "5-out.",
+          "statusValue": "6-out.",
+          "completed": true
         }
       ],
       "missingItems": [],
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012343",
-      "pv": "1639/26",
-      "pl": "PL 3315",
-      "client": "NEOENERGIA BAHIA",
-      "model": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
-      "family": "CARGA SECA",
-      "truckModel": "VW - 27.320",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-13",
-      "firstDeliveryDate": "2026-10-13",
-      "week": "Semana 42",
+      "en": "EN011146",
+      "pv": "170/26",
+      "pl": "PL 3361",
+      "client": "ENEL CE",
+      "model": "ESCADA CENTRAL METROPOLITANA",
+      "family": "ESCADA",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-10-06",
+      "week": "Semana 41",
       "month": 10,
-      "vehicleArrival": "2026-09-02",
+      "vehicleArrival": "2026-07-23",
       "stages": [
         {
           "name": "Corte e dobra",
+          "planned": "22-set.",
+          "statusValue": "2026-09-28",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "25-set.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
           "planned": "29-set.",
-          "statusValue": "2026-08-14",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "2-out.",
-          "statusValue": "2026-09-02",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "6-out.",
-          "statusValue": "21-ago.",
-          "completed": true
+          "statusValue": null,
+          "completed": false
         },
         {
           "name": "Terceiro eixo",
-          "planned": "2-out.",
-          "statusValue": "23-ago.",
+          "planned": "25-set.",
+          "statusValue": "30-set.",
           "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": "6-out.",
+          "planned": "29-set.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "7-out.",
-          "statusValue": "2026-09-08",
+          "planned": "30-set.",
+          "statusValue": "5-out.",
           "completed": true
         },
         {
           "name": "Integração",
-          "planned": "8-out.",
-          "statusValue": "2026-09-08",
+          "planned": "1-out.",
+          "statusValue": "5-out.",
           "completed": true
         },
         {
           "name": "Montagem final",
-          "planned": "9-out.",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN011166",
+      "pv": "180/26",
+      "pl": "PL 3361",
+      "client": "ENEL CE",
+      "model": "ESCADA CENTRAL METROPOLITANA",
+      "family": "ESCADA",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-09-28",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-14",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "14-set.",
+          "statusValue": "2026-09-28",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "17-set.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "18-set.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "17-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": null,
           "statusValue": null,
           "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "23-set.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "5-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012879",
+      "pv": "2316/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-10-06",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "22-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "25-set.",
+          "statusValue": "2026-09-22",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "29-set.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "25-set.",
+          "statusValue": "24-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "29-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "30-set.",
+          "statusValue": "3-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "1-out.",
+          "statusValue": "2026-10-03",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN013382",
+      "pv": "2896/26",
+      "pl": "PL 3423",
+      "client": "CF TRANSPORTES",
+      "model": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
+      "family": "GUINDASTE",
+      "truckModel": "Ford Cargo 1622 6x2",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-07",
+      "firstDeliveryDate": "2026-10-06",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": null,
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "22-set.",
+          "statusValue": "2026-10-01",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "25-set.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "29-set.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "25-set.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "29-set.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Máquina",
+          "planned": "30-set.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "1-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
         }
       ],
       "missingItems": [],
@@ -3608,476 +1772,68 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012903",
-      "pv": "2328/26",
+      "en": "EN012873",
+      "pv": "2313/26",
       "pl": "PL 3324 TERCEIRO",
       "client": "ENEL SP",
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-13",
-      "firstDeliveryDate": "2026-10-13",
-      "week": "Semana 42",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-07",
+      "firstDeliveryDate": "2026-10-07",
+      "week": "Semana 41",
       "month": 10,
       "vehicleArrival": "2026-09-08",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": "29-set.",
+          "planned": "23-set.",
           "statusValue": "2026-09-18",
           "completed": true
         },
         {
           "name": "Solda bases",
-          "planned": "2-out.",
-          "statusValue": "2026-09-23",
+          "planned": "28-set.",
+          "statusValue": "2026-09-22",
           "completed": true
         },
         {
           "name": "Subconjunto",
-          "planned": "6-out.",
+          "planned": "30-set.",
           "statusValue": "1-out.",
           "completed": true
         },
         {
           "name": "Terceiro eixo",
-          "planned": "2-out.",
-          "statusValue": "24-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "6-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "7-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "8-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "9-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012883",
-      "pv": "2318/26",
-      "pl": "PL 3324 TERCEIRO",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-13",
-      "firstDeliveryDate": "2026-10-13",
-      "week": "Semana 42",
-      "month": 10,
-      "vehicleArrival": "2026-09-08",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "29-set.",
-          "statusValue": "2026-09-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "2-out.",
-          "statusValue": "2026-09-23",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "6-out.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "2-out.",
-          "statusValue": "24-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "6-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "7-out.",
-          "statusValue": "25-set.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "8-out.",
-          "statusValue": "2026-10-09",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "9-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012929",
-      "pv": "2341/26",
-      "pl": "PL 3354 (TERCEIRO)",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-13",
-      "firstDeliveryDate": "2026-10-15",
-      "week": "Semana 42",
-      "month": 10,
-      "vehicleArrival": "2026-09-24",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "29-set.",
-          "statusValue": "2026-09-25",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "2-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "6-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "2-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "6-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "7-out.",
-          "statusValue": "7-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "8-out.",
-          "statusValue": "2026-10-07",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "9-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012702",
-      "pv": "2146/26",
-      "pl": "PL 3303",
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
-      "family": "CABINE SUP.",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "VITRINE",
-      "productionStatusNormalized": "VITRINE",
-      "finalDate": "2026-10-19",
-      "firstDeliveryDate": "2026-10-16",
-      "week": "Semana 43",
-      "month": 10,
-      "vehicleArrival": "2026-10-01",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "2-out.",
-          "statusValue": "2026-09-14",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "7-out.",
-          "statusValue": "2026-09-29",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "9-out.",
-          "statusValue": "18-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "7-out.",
-          "statusValue": "n/a",
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "9-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": "13-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "14-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012356",
-      "pv": "2018/26",
-      "pl": "AMBIPAR",
-      "client": "AMBIPAR RESPONSE S.A",
-      "model": "INTEGRAÇÃO GUINDASTE",
-      "family": "INSTALAÇÃO",
-      "truckModel": "MB ATEGO 2730",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
-      "finalDate": "2026-09-09",
-      "firstDeliveryDate": "2026-10-01",
-      "week": "Semana 37",
-      "month": 9,
-      "vehicleArrival": "2026-06-03",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "17-set.",
-          "statusValue": "2026-08-18",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "22-set.",
-          "statusValue": "2026-09-10",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "24-set.",
-          "statusValue": "21-set.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "22-set.",
-          "statusValue": "2026-10-14",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "24-set.",
-          "statusValue": "28-ago.",
-          "completed": true
-        },
-        {
-          "name": "Máquina",
-          "planned": "25-set.",
-          "statusValue": "2026-08-28",
-          "completed": true
-        },
-        {
-          "name": "Integração",
           "planned": "28-set.",
-          "statusValue": "2026-09-08",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012807",
-      "pv": "2280/26",
-      "pl": "PL 3229",
-      "client": "ENEL SP",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
-      "finalDate": "2026-09-09",
-      "firstDeliveryDate": "2026-10-01",
-      "week": "Semana 37",
-      "month": 9,
-      "vehicleArrival": "2026-08-13",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "17-set.",
-          "statusValue": "2026-08-13",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "22-set.",
-          "statusValue": "2026-09-01",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "24-set.",
-          "statusValue": "20-ago.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "22-set.",
-          "statusValue": "4-set.",
+          "statusValue": "22-set.",
           "completed": true
         },
         {
           "name": "Encarroçamento",
-          "planned": "24-set.",
-          "statusValue": "4-set.",
-          "completed": true
+          "planned": "30-set.",
+          "statusValue": null,
+          "completed": false
         },
         {
           "name": "Máquina",
-          "planned": "25-set.",
-          "statusValue": "2026-09-04",
+          "planned": "1-out.",
+          "statusValue": "28-set.",
           "completed": true
         },
         {
           "name": "Integração",
-          "planned": "28-set.",
-          "statusValue": "2026-09-04",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "29-set.",
-          "statusValue": "2026-09-05",
-          "completed": true
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011164",
-      "pv": "179/26",
-      "pl": "PL 3361",
-      "client": "ENEL CE",
-      "model": "ESCADA CENTRAL METROPOLITANA",
-      "family": "ESCADA",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
-      "finalDate": "2026-09-09",
-      "firstDeliveryDate": "2026-10-06",
-      "week": "Semana 37",
-      "month": 9,
-      "vehicleArrival": "2026-07-23",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "22-set.",
+          "planned": "2-out.",
           "statusValue": "2026-09-28",
           "completed": true
         },
         {
-          "name": "Solda bases",
-          "planned": "25-set.",
-          "statusValue": "2026-09-30",
-          "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "29-set.",
-          "statusValue": "1-out.",
-          "completed": true
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "25-set.",
-          "statusValue": "30-set.",
-          "completed": true
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "29-set.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "30-set.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "1-out.",
-          "statusValue": "5-out.",
-          "completed": true
-        },
-        {
           "name": "Montagem final",
-          "planned": "2-out.",
-          "statusValue": null,
-          "completed": false
+          "planned": "5-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
         }
       ],
       "missingItems": [],
@@ -4220,6 +1976,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN011168",
+      "pv": "181/26",
+      "pl": "PL 3393",
+      "client": "ENEL CE",
+      "model": "ESCADA CENTRAL METROPOLITANA",
+      "family": "ESCADA",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-06",
+      "firstDeliveryDate": "2026-09-29",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-14",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "15-set.",
+          "statusValue": "2026-09-28",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "18-set.",
+          "statusValue": "2026-10-01",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "19-set.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "18-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": null,
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "24-set.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "5-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012217",
       "pv": "1450/26",
       "pl": "PL 3333",
@@ -4356,6 +2180,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012869",
+      "pv": "2311/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-13",
+      "firstDeliveryDate": "2026-10-13",
+      "week": "Semana 42",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "29-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "2-out.",
+          "statusValue": "2026-09-23",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "6-out.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "2-out.",
+          "statusValue": "22-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "6-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "7-out.",
+          "statusValue": "6-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "8-out.",
+          "statusValue": "2026-10-06",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "9-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012635",
       "pv": "2097/26",
       "pl": null,
@@ -4431,8 +2323,8 @@
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "KIA - BONGO",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
       "finalDate": "2026-10-13",
       "firstDeliveryDate": "2026-10-08",
       "week": "Semana 42",
@@ -4492,6 +2384,278 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012651",
+      "pv": "2105/26",
+      "pl": "PL 3404",
+      "client": "ELENG ENGENHARIA LTDA",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "TOYOTA - HILUX",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-08",
+      "firstDeliveryDate": "2026-10-08",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-28",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "24-set.",
+          "statusValue": "2026-09-29",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "29-set.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "1-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "29-set.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "1-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "6-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012653",
+      "pv": "2106/26",
+      "pl": "PL 3404",
+      "client": "ELENG ENGENHARIA LTDA",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "TOYOTA - HILUX",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-08",
+      "firstDeliveryDate": "2026-10-08",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-28",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "24-set.",
+          "statusValue": "2026-09-29",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "29-set.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "1-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "29-set.",
+          "statusValue": "23-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "1-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "6-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012655",
+      "pv": "2107/26",
+      "pl": "PL 3404",
+      "client": "ELENG ENGENHARIA LTDA",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "TOYOTA - HILUX",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-08",
+      "firstDeliveryDate": "2026-10-08",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-28",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "24-set.",
+          "statusValue": "2026-09-29",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "29-set.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "1-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "29-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "1-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "6-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012903",
+      "pv": "2328/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-13",
+      "firstDeliveryDate": "2026-10-13",
+      "week": "Semana 42",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "29-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "2-out.",
+          "statusValue": "2026-09-23",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "6-out.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "2-out.",
+          "statusValue": "24-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "6-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "7-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "8-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "9-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012881",
       "pv": "2317/26",
       "pl": "PL 3324 TERCEIRO",
@@ -4499,8 +2663,8 @@
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
       "finalDate": "2026-10-14",
       "firstDeliveryDate": "2026-10-13",
       "week": "Semana 42",
@@ -4552,6 +2716,278 @@
         {
           "name": "Montagem final",
           "planned": "13-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012883",
+      "pv": "2318/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-13",
+      "firstDeliveryDate": "2026-10-13",
+      "week": "Semana 42",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "29-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "2-out.",
+          "statusValue": "2026-09-23",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "6-out.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "2-out.",
+          "statusValue": "24-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "6-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "7-out.",
+          "statusValue": "25-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "8-out.",
+          "statusValue": "2026-10-09",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "9-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012871",
+      "pv": "2312/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-07",
+      "firstDeliveryDate": "2026-10-07",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-08",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "23-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "28-set.",
+          "statusValue": "2026-09-23",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "30-set.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "28-set.",
+          "statusValue": "22-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "30-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "1-out.",
+          "statusValue": "28-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "2-out.",
+          "statusValue": "2026-09-28",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "5-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012657",
+      "pv": "2108/26",
+      "pl": "PL 3404",
+      "client": "ELENG ENGENHARIA LTDA",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "TOYOTA - HILUX",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-08",
+      "firstDeliveryDate": "2026-10-08",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-08-28",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "24-set.",
+          "statusValue": "2026-09-29",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "29-set.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "1-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "29-set.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "1-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": "8-out.",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "6-out.",
+          "statusValue": "8-out.",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012661",
+      "pv": "2109/26",
+      "pl": "PL 3404",
+      "client": "ELENG ENGENHARIA LTDA",
+      "model": "ESCADA CENTRAL ELETRO HIDRAULICA",
+      "family": "ESCADA",
+      "truckModel": "TOYOTA - HILUX",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-09",
+      "firstDeliveryDate": "2026-10-09",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-11",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "25-set.",
+          "statusValue": "2026-09-29",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "30-set.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "2-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "30-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "2-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "5-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "6-out.",
+          "statusValue": "9-out.",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "7-out.",
           "statusValue": null,
           "completed": false
         }
@@ -4635,8 +3071,8 @@
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
       "finalDate": "2026-10-14",
       "firstDeliveryDate": "2026-10-14",
       "week": "Semana 42",
@@ -4696,6 +3132,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012901",
+      "pv": "2327/26",
+      "pl": "PL 3324 TERCEIRO",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-07",
+      "firstDeliveryDate": "2026-10-07",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-21",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "23-set.",
+          "statusValue": "2026-09-18",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "28-set.",
+          "statusValue": "2026-09-24",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "30-set.",
+          "statusValue": "1-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "28-set.",
+          "statusValue": "28-set.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "30-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "1-out.",
+          "statusValue": "5-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "2-out.",
+          "statusValue": "2026-10-05",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "5-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012911",
       "pv": "2332/26",
       "pl": "PL 3324 TERCEIRO",
@@ -4703,8 +3207,8 @@
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
       "finalDate": "2026-10-14",
       "firstDeliveryDate": "2026-10-13",
       "week": "Semana 42",
@@ -4880,14 +3384,14 @@
         {
           "name": "Máquina",
           "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "13-out.",
+          "completed": true
         },
         {
           "name": "Integração",
           "planned": "13-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "13-out.",
+          "completed": true
         },
         {
           "name": "Montagem final",
@@ -5288,14 +3792,14 @@
         {
           "name": "Máquina",
           "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "13-out.",
+          "completed": true
         },
         {
           "name": "Integração",
           "planned": "13-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "13-out.",
+          "completed": true
         },
         {
           "name": "Montagem final",
@@ -5648,6 +4152,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012913",
+      "pv": "2333/26",
+      "pl": "PL 3354 (TERCEIRO)",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-08",
+      "firstDeliveryDate": "2026-10-08",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-24",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "24-set.",
+          "statusValue": "2026-09-25",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "29-set.",
+          "statusValue": "2026-09-28",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "1-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "29-set.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "1-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "5-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Montagem final",
+          "planned": "6-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012915",
       "pv": "2334/26",
       "pl": "PL 3354 (TERCEIRO)",
@@ -5725,7 +4297,7 @@
       "truckModel": "MB - ACCELO 1117",
       "productionStatus": "EM PRODUÇÃO",
       "productionStatusNormalized": "EM PRODUÇÃO",
-      "finalDate": "2026-10-20",
+      "finalDate": "2026-10-19",
       "firstDeliveryDate": "2026-10-19",
       "week": "Semana 43",
       "month": 10,
@@ -6358,8 +4930,8 @@
         {
           "name": "Subconjunto",
           "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "14-out.",
+          "completed": true
         },
         {
           "name": "Terceiro eixo",
@@ -6426,8 +4998,8 @@
         {
           "name": "Subconjunto",
           "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "14-out.",
+          "completed": true
         },
         {
           "name": "Terceiro eixo",
@@ -6494,8 +5066,8 @@
         {
           "name": "Subconjunto",
           "planned": "9-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "14-out.",
+          "completed": true
         },
         {
           "name": "Terceiro eixo",
@@ -6736,6 +5308,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012929",
+      "pv": "2341/26",
+      "pl": "PL 3354 (TERCEIRO)",
+      "client": "ENEL SP",
+      "model": "SKYCITY 10 S",
+      "family": "CESTO",
+      "truckModel": "FORD - RANGER",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-13",
+      "firstDeliveryDate": "2026-10-15",
+      "week": "Semana 42",
+      "month": 10,
+      "vehicleArrival": "2026-09-24",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "29-set.",
+          "statusValue": "2026-09-25",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "2-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "6-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "2-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "6-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "7-out.",
+          "statusValue": "7-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "8-out.",
+          "statusValue": "2026-10-07",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "9-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012931",
       "pv": "2342/26",
       "pl": "PL 3354 (TERCEIRO)",
@@ -6881,7 +5521,7 @@
       "truckModel": "FORD - RANGER",
       "productionStatus": "EM PRODUÇÃO",
       "productionStatusNormalized": "EM PRODUÇÃO",
-      "finalDate": "2026-10-19",
+      "finalDate": "2026-10-20",
       "firstDeliveryDate": "2026-10-16",
       "week": "Semana 43",
       "month": 10,
@@ -7106,8 +5746,8 @@
         {
           "name": "Subconjunto",
           "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "14-out.",
+          "completed": true
         },
         {
           "name": "Terceiro eixo",
@@ -10840,13 +9480,13 @@
         {
           "name": "Solda bases",
           "planned": "15-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "2026-10-13",
+          "completed": true
         },
         {
           "name": "Subconjunto",
           "planned": "19-out.",
-          "statusValue": null,
+          "statusValue": "n/a",
           "completed": false
         },
         {
@@ -11435,8 +10075,8 @@
       "model": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
       "family": "CESTO",
       "truckModel": "MB ATEGO 1719/48",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
+      "productionStatus": "ARRANJO",
+      "productionStatusNormalized": "ARRANJO",
       "finalDate": "2026-10-27",
       "firstDeliveryDate": "2026-10-23",
       "week": "Semana 44",
@@ -11594,8 +10234,8 @@
         {
           "name": "Subconjunto",
           "planned": "9-out.",
-          "statusValue": null,
-          "completed": false
+          "statusValue": "14-out.",
+          "completed": true
         },
         {
           "name": "Terceiro eixo",
@@ -12314,13 +10954,13 @@
     {
       "en": "EN013016",
       "pv": "2684/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -12382,13 +11022,13 @@
     {
       "en": "EN013018",
       "pv": "2685/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -12790,13 +11430,13 @@
     {
       "en": "EN013020",
       "pv": "2686/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -12858,13 +11498,13 @@
     {
       "en": "EN013022",
       "pv": "2687/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -12926,13 +11566,13 @@
     {
       "en": "EN013024",
       "pv": "2688/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -13198,13 +11838,13 @@
     {
       "en": "EN013026",
       "pv": "2689/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -13266,13 +11906,13 @@
     {
       "en": "EN013028",
       "pv": "2690/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -13334,13 +11974,13 @@
     {
       "en": "EN013030",
       "pv": "2691/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -14014,13 +12654,13 @@
     {
       "en": "EN013032",
       "pv": "2692/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -14082,13 +12722,13 @@
     {
       "en": "EN013034",
       "pv": "2693/26",
-      "pl": "PL 3459",
+      "pl": "PL 3459 (TERCEIRO)",
       "client": "VAMOS - LIGHT",
       "model": "SKYCITY 10 L",
       "family": "CESTO",
       "truckModel": "VW - 11.180",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -19996,15 +18636,15 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012549",
-      "pv": "1991/26",
+      "en": "EN013228",
+      "pv": "2612/26",
       "pl": null,
-      "client": "ARAPIRACA",
-      "model": "ROLL UP 8P HIBRIDA - PLANA",
-      "family": "BEBIDA",
-      "truckModel": "VW - 9.180",
-      "productionStatus": "CANCELADO",
-      "productionStatusNormalized": "CANCELADO",
+      "client": "V RENTAL LOCACAO DE MAQUINAS E EQUIPAMENTOS S/A",
+      "model": "CARROCERIA CARGA SECA COM CABINE SUPLEMENTAR",
+      "family": "CARGA SECA",
+      "truckModel": "FOTON AUMARK S 1217",
+      "productionStatus": "PROJETO",
+      "productionStatusNormalized": "PROJETO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -20268,20 +18908,20 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012550",
-      "pv": "1992/26",
+      "en": "EN012148",
+      "pv": "1321/26",
       "pl": null,
-      "client": "ARAPIRACA",
-      "model": "ROLL UP 8P HIBRIDA - PLANA",
-      "family": "BEBIDA",
-      "truckModel": "VW - 9.180",
-      "productionStatus": "CANCELADO",
-      "productionStatusNormalized": "CANCELADO",
+      "client": "CPFL",
+      "model": "SKYCITY 10 HDOC",
+      "family": "CESTO",
+      "truckModel": "AGRALE 10000A",
+      "productionStatus": "ARRANJO",
+      "productionStatusNormalized": "ARRANJO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-08",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -20744,15 +19384,15 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012551",
-      "pv": "1993/26",
+      "en": "EN013226",
+      "pv": "2611/26",
       "pl": null,
-      "client": "ARAPIRACA",
-      "model": "ROLL UP 8P HIBRIDA - PLANA",
-      "family": "BEBIDA",
-      "truckModel": "VW - 9.180",
-      "productionStatus": "CANCELADO",
-      "productionStatusNormalized": "CANCELADO",
+      "client": "V RENTAL LOCACAO DE MAQUINAS E EQUIPAMENTOS S/A",
+      "model": "CARROCERIA CARGA SECA COM CABINE SUPLEMENTAR",
+      "family": "CARGA SECA",
+      "truckModel": "FOTON AUMARK S 1217",
+      "productionStatus": "PROJETO",
+      "productionStatusNormalized": "PROJETO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -21152,15 +19792,15 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012552",
-      "pv": "1994/26",
+      "en": "EN013230",
+      "pv": "2613/26",
       "pl": null,
-      "client": "ARAPIRACA",
-      "model": "ROLL UP 8P HIBRIDA - PLANA",
-      "family": "BEBIDA",
-      "truckModel": "VW - 9.180",
-      "productionStatus": "CANCELADO",
-      "productionStatusNormalized": "CANCELADO",
+      "client": "V RENTAL LOCACAO DE MAQUINAS E EQUIPAMENTOS S/A",
+      "model": "CARROCERIA CARGA SECA COM CABINE SUPLEMENTAR",
+      "family": "CARGA SECA",
+      "truckModel": "FOTON AUMARK S 1217",
+      "productionStatus": "PROJETO",
+      "productionStatusNormalized": "PROJETO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -21696,20 +20336,20 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012553",
-      "pv": "1995/26",
+      "en": "EN013049",
+      "pv": "2437/26",
       "pl": null,
-      "client": "ARAPIRACA",
-      "model": "ROLL UP 8P HIBRIDA - PLANA",
-      "family": "BEBIDA",
-      "truckModel": "VW - 9.180",
-      "productionStatus": "CANCELADO",
-      "productionStatusNormalized": "CANCELADO",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "BASCULANTE TRASEIRO 16m³",
+      "family": "BASCULANTE",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "PROJETO",
+      "productionStatusNormalized": "PROJETO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-08-21",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -22104,134 +20744,66 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN012554",
-      "pv": "1996/26",
-      "pl": null,
-      "client": "ARAPIRACA",
-      "model": "ROLL UP 8P HIBRIDA - PLANA",
-      "family": "BEBIDA",
-      "truckModel": "VW - 9.180",
-      "productionStatus": "CANCELADO",
-      "productionStatusNormalized": "CANCELADO",
-      "finalDate": null,
-      "firstDeliveryDate": null,
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": null,
+      "en": "EN012156",
+      "pv": "1325/26",
+      "pl": "PL 3472",
+      "client": "CPFL",
+      "model": "SKYCITY 10 HDOC",
+      "family": "CESTO",
+      "truckModel": "MB - 1117",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
+      "finalDate": "2026-10-16",
+      "firstDeliveryDate": "2026-10-16",
+      "week": "Semana 42",
+      "month": 10,
+      "vehicleArrival": "2026-08-31",
       "stages": [
         {
           "name": "Corte e dobra",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
+          "planned": "5-out.",
+          "statusValue": "2026-10-13",
+          "completed": true
         },
         {
           "name": "Solda bases",
-          "planned": null,
+          "planned": "8-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Subconjunto",
-          "planned": null,
+          "planned": "12-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Terceiro eixo",
-          "planned": null,
+          "planned": "8-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Encarroçamento",
-          "planned": null,
+          "planned": "12-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Máquina",
-          "planned": null,
+          "planned": "13-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Integração",
-          "planned": null,
+          "planned": "14-out.",
           "statusValue": null,
           "completed": false
         },
         {
           "name": "Montagem final",
-          "planned": "28-dez.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013228",
-      "pv": "2612/26",
-      "pl": null,
-      "client": "V RENTAL LOCACAO DE MAQUINAS E EQUIPAMENTOS S/A",
-      "model": "CARROCERIA CARGA SECA COM CABINE SUPLEMENTAR",
-      "family": "CARGA SECA",
-      "truckModel": "FOTON AUMARK S 1217",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
-      "finalDate": null,
-      "firstDeliveryDate": null,
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": null,
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Solda bases",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "28-dez.",
+          "planned": "15-out.",
           "statusValue": null,
           "completed": false
         }
@@ -22322,74 +20894,6 @@
       "week": "Semana 53",
       "month": 12,
       "vehicleArrival": null,
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Solda bases",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "28-dez.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012148",
-      "pv": "1321/26",
-      "pl": null,
-      "client": "CPFL",
-      "model": "SKYCITY 10 HDOC",
-      "family": "CESTO",
-      "truckModel": "AGRALE 10000A",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
-      "finalDate": null,
-      "firstDeliveryDate": null,
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": "2026-10-08",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -22593,7 +21097,7 @@
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-14",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -22662,74 +21166,6 @@
       "week": "Semana 53",
       "month": 12,
       "vehicleArrival": "2026-09-09",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Solda bases",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "28-dez.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013226",
-      "pv": "2611/26",
-      "pl": null,
-      "client": "V RENTAL LOCACAO DE MAQUINAS E EQUIPAMENTOS S/A",
-      "model": "CARROCERIA CARGA SECA COM CABINE SUPLEMENTAR",
-      "family": "CARGA SECA",
-      "truckModel": "FOTON AUMARK S 1217",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
-      "finalDate": null,
-      "firstDeliveryDate": null,
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": null,
       "stages": [
         {
           "name": "Corte e dobra",
@@ -23063,74 +21499,6 @@
       "model": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
       "family": "GUINDASTE",
       "truckModel": "VW - 26.260",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
-      "finalDate": null,
-      "firstDeliveryDate": null,
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": null,
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Solda bases",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "28-dez.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN013230",
-      "pv": "2613/26",
-      "pl": null,
-      "client": "V RENTAL LOCACAO DE MAQUINAS E EQUIPAMENTOS S/A",
-      "model": "CARROCERIA CARGA SECA COM CABINE SUPLEMENTAR",
-      "family": "CARGA SECA",
-      "truckModel": "FOTON AUMARK S 1217",
       "productionStatus": "PROJETO",
       "productionStatusNormalized": "PROJETO",
       "finalDate": null,
@@ -23600,74 +21968,6 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
-      "en": "EN013049",
-      "pv": "2437/26",
-      "pl": null,
-      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "model": "BASCULANTE TRASEIRO 16m³",
-      "family": "BASCULANTE",
-      "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
-      "finalDate": null,
-      "firstDeliveryDate": null,
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": "2026-08-21",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Solda bases",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "28-dez.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
       "en": "EN013234",
       "pv": "2615/26",
       "pl": null,
@@ -23966,74 +22266,6 @@
           "planned": "8-out.",
           "statusValue": "2026-10-13",
           "completed": true
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "8-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": "12-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "13-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Integração",
-          "planned": "14-out.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Montagem final",
-          "planned": "15-out.",
-          "statusValue": null,
-          "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN012156",
-      "pv": "1325/26",
-      "pl": "PL 3472",
-      "client": "CPFL",
-      "model": "SKYCITY 10 HDOC",
-      "family": "CESTO",
-      "truckModel": "MB - 1117",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
-      "finalDate": "2026-10-16",
-      "firstDeliveryDate": "2026-10-16",
-      "week": "Semana 42",
-      "month": 10,
-      "vehicleArrival": "2026-08-31",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "5-out.",
-          "statusValue": "2026-10-13",
-          "completed": true
-        },
-        {
-          "name": "Solda bases",
-          "planned": "8-out.",
-          "statusValue": null,
-          "completed": false
         },
         {
           "name": "Subconjunto",
@@ -24758,13 +22990,13 @@
     {
       "en": "EN012981",
       "pv": null,
-      "pl": null,
+      "pl": "PL 3496",
       "client": "FENATRAN 2026",
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "FORD - RANGER",
-      "productionStatus": "ARRANJO",
-      "productionStatusNormalized": "ARRANJO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": "2026-10-27",
       "firstDeliveryDate": null,
       "week": "Semana 44",
@@ -26458,13 +24690,13 @@
     {
       "en": "EN013050",
       "pv": "2438/26",
-      "pl": null,
+      "pl": "PL 3500",
       "client": "ELEKTRO",
       "model": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
       "family": "CARGA SECA",
       "truckModel": "MB - 2730 6X4",
-      "productionStatus": "COMERCIAL",
-      "productionStatusNormalized": "COMERCIAL",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -27211,8 +25443,8 @@
       "model": "SKYCITY 10 S",
       "family": "CESTO",
       "truckModel": "KIA - BONGO",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
       "finalDate": "2026-10-13",
       "firstDeliveryDate": null,
       "week": "Semana 42",
@@ -27266,74 +25498,6 @@
           "planned": "9-out.",
           "statusValue": null,
           "completed": false
-        }
-      ],
-      "missingItems": [],
-      "missingItemsSource": "calculado pelo sistema"
-    },
-    {
-      "en": "EN011510",
-      "pv": "453/26",
-      "pl": null,
-      "client": "ENEL RJ",
-      "model": "SKYCITY 10 S",
-      "family": "CESTO",
-      "truckModel": "FORD - RANGER",
-      "productionStatus": "ENTREGUE",
-      "productionStatusNormalized": "ENTREGUE",
-      "finalDate": null,
-      "firstDeliveryDate": "2026-12-31",
-      "week": "Semana 53",
-      "month": 12,
-      "vehicleArrival": "2026-06-22",
-      "stages": [
-        {
-          "name": "Corte e dobra",
-          "planned": "17-dez.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Solda bases",
-          "planned": "22-dez.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Subconjunto",
-          "planned": "23-dez.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Terceiro eixo",
-          "planned": "22-dez.",
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Encarroçamento",
-          "planned": null,
-          "statusValue": null,
-          "completed": false
-        },
-        {
-          "name": "Máquina",
-          "planned": "28-dez.",
-          "statusValue": "25-ago.",
-          "completed": true
-        },
-        {
-          "name": "Integração",
-          "planned": "29-dez.",
-          "statusValue": "25-ago.",
-          "completed": true
-        },
-        {
-          "name": "Montagem final",
-          "planned": "30-dez.",
-          "statusValue": "26-ago.",
-          "completed": true
         }
       ],
       "missingItems": [],
@@ -31501,7 +29665,7 @@
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-15",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -31558,13 +29722,13 @@
     {
       "en": "EN013157",
       "pv": "3052/26",
-      "pl": null,
+      "pl": "PL 3500",
       "client": "NEOENERGIA PERNAMBUCO",
       "model": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
       "family": "CARGA SECA",
       "truckModel": "VW - 27.320 6X4",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -31626,13 +29790,13 @@
     {
       "en": "EN013158",
       "pv": "3053/26",
-      "pl": null,
+      "pl": "PL 3500",
       "client": "NEOENERGIA PERNAMBUCO",
       "model": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
       "family": "CARGA SECA",
       "truckModel": "VW - 27.320 6X4",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -31694,13 +29858,13 @@
     {
       "en": "EN013159",
       "pv": "3054/26",
-      "pl": null,
+      "pl": "PL 3500",
       "client": "NEOENERGIA PERNAMBUCO",
       "model": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
       "family": "CARGA SECA",
       "truckModel": "VW - 27.320 6X4",
-      "productionStatus": "PROJETO",
-      "productionStatusNormalized": "PROJETO",
+      "productionStatus": "EM PRODUÇÃO",
+      "productionStatusNormalized": "EM PRODUÇÃO",
       "finalDate": null,
       "firstDeliveryDate": null,
       "week": "Semana 53",
@@ -31977,7 +30141,7 @@
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-15",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -32045,7 +30209,7 @@
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-15",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -32113,7 +30277,7 @@
       "firstDeliveryDate": null,
       "week": "Semana 53",
       "month": 12,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-15",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -40940,6 +39104,142 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012695",
+      "pv": "2139/26",
+      "pl": "PL 3303",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-08",
+      "firstDeliveryDate": "2026-09-30",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-25",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "16-set.",
+          "statusValue": "2026-09-14",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "21-set.",
+          "statusValue": "2026-09-21",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "22-set.",
+          "statusValue": "18-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "21-set.",
+          "statusValue": "06./10",
+          "completed": true
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": null,
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "25-set.",
+          "statusValue": "6-out.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "28-set.",
+          "statusValue": "2026-10-06",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "7-out.",
+          "statusValue": "2026-10-06",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012696",
+      "pv": "2140/26",
+      "pl": "PL 3303",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-05",
+      "firstDeliveryDate": "2026-10-01",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-24",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "17-set.",
+          "statusValue": "2026-09-14",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "22-set.",
+          "statusValue": "2026-09-22",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "23-set.",
+          "statusValue": "18-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "22-set.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": null,
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "28-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "29-set.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "30-set.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012698",
       "pv": "2142/26",
       "pl": "PL 3303",
@@ -41076,6 +39376,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012683",
+      "pv": "2127/26",
+      "pl": "PL 3294",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "ENTREGUE",
+      "productionStatusNormalized": "ENTREGUE",
+      "finalDate": "2026-10-09",
+      "firstDeliveryDate": "2026-10-05",
+      "week": "Semana 41",
+      "month": 10,
+      "vehicleArrival": "2026-09-28",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "21-set.",
+          "statusValue": "2026-09-08",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "24-set.",
+          "statusValue": "2026-09-14",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "25-set.",
+          "statusValue": "10-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "24-set.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": null,
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "30-set.",
+          "statusValue": "30-set.",
+          "completed": true
+        },
+        {
+          "name": "Integração",
+          "planned": "1-out.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        },
+        {
+          "name": "Montagem final",
+          "planned": "2-out.",
+          "statusValue": "2026-09-30",
+          "completed": true
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012684",
       "pv": "2128/26",
       "pl": "PL 3294",
@@ -41089,7 +39457,7 @@
       "firstDeliveryDate": "2026-10-22",
       "week": "Semana 44",
       "month": 10,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-14",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -41212,6 +39580,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012687",
+      "pv": "2131/26",
+      "pl": "PL 3294",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-27",
+      "firstDeliveryDate": "2026-10-22",
+      "week": "Semana 44",
+      "month": 10,
+      "vehicleArrival": "2026-10-07",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "8-out.",
+          "statusValue": "2026-09-08",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "13-out.",
+          "statusValue": "2026-09-15",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "15-out.",
+          "statusValue": "11-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "13-out.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "15-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "16-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Integração",
+          "planned": "19-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Montagem final",
+          "planned": "20-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012688",
       "pv": "2132/26",
       "pl": "PL 3294",
@@ -41219,8 +39655,8 @@
       "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
       "family": "CABINE SUP.",
       "truckModel": "IVECO - TECTOR 17.210",
-      "productionStatus": "EM PRODUÇÃO",
-      "productionStatusNormalized": "EM PRODUÇÃO",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
       "finalDate": "2026-10-17",
       "firstDeliveryDate": "2026-10-15",
       "week": "Semana 42",
@@ -41272,6 +39708,142 @@
         {
           "name": "Montagem final",
           "planned": "13-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012697",
+      "pv": "2141/26",
+      "pl": "PL 3303",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-27",
+      "firstDeliveryDate": "2026-10-22",
+      "week": "Semana 44",
+      "month": 10,
+      "vehicleArrival": "2026-10-07",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "8-out.",
+          "statusValue": "2026-09-14",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "13-out.",
+          "statusValue": "2026-09-25",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "15-out.",
+          "statusValue": "18-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "13-out.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "15-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "16-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Integração",
+          "planned": "19-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Montagem final",
+          "planned": "20-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
+      "en": "EN012702",
+      "pv": "2146/26",
+      "pl": "PL 3303",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-19",
+      "firstDeliveryDate": "2026-10-16",
+      "week": "Semana 43",
+      "month": 10,
+      "vehicleArrival": "2026-10-01",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "2-out.",
+          "statusValue": "2026-09-14",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "7-out.",
+          "statusValue": "2026-09-29",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "9-out.",
+          "statusValue": "18-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "7-out.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "9-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "12-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Integração",
+          "planned": "13-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Montagem final",
+          "planned": "14-out.",
           "statusValue": null,
           "completed": false
         }
@@ -41416,6 +39988,74 @@
       "missingItemsSource": "calculado pelo sistema"
     },
     {
+      "en": "EN012681",
+      "pv": "2125/26",
+      "pl": "PL 3294",
+      "client": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "model": "CABINE SUPLEMENTAR COM 06 LUGARES C/ BANHEIRO",
+      "family": "CABINE SUP.",
+      "truckModel": "IVECO - TECTOR 17.210",
+      "productionStatus": "VITRINE",
+      "productionStatusNormalized": "VITRINE",
+      "finalDate": "2026-10-28",
+      "firstDeliveryDate": "2026-10-23",
+      "week": "Semana 44",
+      "month": 10,
+      "vehicleArrival": "2026-10-07",
+      "stages": [
+        {
+          "name": "Corte e dobra",
+          "planned": "9-out.",
+          "statusValue": "2026-09-08",
+          "completed": true
+        },
+        {
+          "name": "Solda bases",
+          "planned": "14-out.",
+          "statusValue": "2026-09-16",
+          "completed": true
+        },
+        {
+          "name": "Subconjunto",
+          "planned": "16-out.",
+          "statusValue": "11-set.",
+          "completed": true
+        },
+        {
+          "name": "Terceiro eixo",
+          "planned": "14-out.",
+          "statusValue": "n/a",
+          "completed": false
+        },
+        {
+          "name": "Encarroçamento",
+          "planned": "16-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Máquina",
+          "planned": "19-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Integração",
+          "planned": "20-out.",
+          "statusValue": null,
+          "completed": false
+        },
+        {
+          "name": "Montagem final",
+          "planned": "21-out.",
+          "statusValue": null,
+          "completed": false
+        }
+      ],
+      "missingItems": [],
+      "missingItemsSource": "calculado pelo sistema"
+    },
+    {
       "en": "EN012682",
       "pv": "2126/26",
       "pl": "PL 3294",
@@ -41429,7 +40069,7 @@
       "firstDeliveryDate": "2026-10-23",
       "week": "Semana 44",
       "month": 10,
-      "vehicleArrival": null,
+      "vehicleArrival": "2026-10-14",
       "stages": [
         {
           "name": "Corte e dobra",
@@ -41757,34 +40397,30 @@
     }
   ],
   "summary": {
-    "totalENs": 614,
-    "activeENs": 609,
-    "excludedFromNiguri": 5,
+    "totalENs": 594,
+    "activeENs": 560,
+    "excludedFromNiguri": 34,
     "byStatus": {
-      "VITRINE": 53,
-      "ENTREGUE": 5,
-      "EM PRODUÇÃO": 176,
-      "ARRANJO": 111,
-      "PROJETO": 239,
-      "CANCELADO": 6,
-      "COMERCIAL": 24
+      "ENTREGUE": 34,
+      "VITRINE": 19,
+      "EM PRODUÇÃO": 182,
+      "ARRANJO": 101,
+      "PROJETO": 235,
+      "COMERCIAL": 23
     },
     "byMonth": {
-      "10": 214,
-      "12": 394,
-      "9": 3,
+      "10": 205,
       "11": 2,
+      "12": 386,
       "para segunda m": 1
     },
     "byWeek": {
-      "Semana 40": 11,
-      "Semana 53": 394,
-      "Semana 41": 36,
+      "Semana 41": 38,
       "Semana 42": 45,
       "Semana 44": 71,
+      "Semana 45": 2,
       "Semana 43": 52,
-      "Semana 37": 3,
-      "Semana 45": 2
+      "Semana 53": 386
     },
     "excludedStatuses": [
       "ENTREGUE",
