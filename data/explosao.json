@@ -262725,13 +262725,6 @@
     ],
     "10HDOC": [
       {
-        "code": "03.06.01.0000000012",
-        "description": "CESTA AEREA SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.01.05.0000000003",
         "description": "MODULO DE GIRO BE435-Z1 EIXO 25,0 CHAVETADO",
         "quantity": 1,
@@ -263035,14 +263028,14 @@
       {
         "code": "02.02.01.0000067114",
         "description": "RESERVATORIO HIDRAULICO 60 LITROS CESTAS AEREAS SKYRITZ 10 HDOC / 13 L / LD / LDI / LDDI",
-        "quantity": 5,
+        "quantity": 1,
         "stock": 30,
         "demand": 50
       },
       {
         "code": "01.01.08.0000000031",
         "description": "FILTRO DE SUCÇAO PARA RESERVATORIO DE OLEO DE 40L/MIN - COM ROSCA DE FIXAÇAO DE 1\" BSP - HLSC3-010",
-        "quantity": 13,
+        "quantity": 1,
         "stock": 95,
         "demand": 0
       },
@@ -263128,13 +263121,6 @@
         "description": "CONEXAO 90° - MACHO X MACHO - JMA 10X1/2 NPT - L",
         "quantity": 1,
         "stock": 564,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000010",
-        "description": "KIT AVULSOS CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -263684,13 +263670,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000217",
-        "description": "KIT ACABAMENTO - SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.12.05.0000000011",
         "description": "CAPA DE BOJO",
         "quantity": 1,
@@ -263980,7 +263959,7 @@
       {
         "code": "01.01.05.0000000009",
         "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
-        "quantity": 60,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       }
