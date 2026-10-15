@@ -261668,13 +261668,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000215",
-        "description": "KIT TORRE CESTA AEREA SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.01.05.0000000003",
         "description": "MODULO DE GIRO BE435-Z1 EIXO 25,0 CHAVETADO",
         "quantity": 1,
@@ -261752,13 +261745,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000085946",
-        "description": "BASE CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 172,
-        "demand": 0
-      },
-      {
         "code": "01.01.02.0000073066",
         "description": "VALVULA EMERGENCIA 3 VIAS HASTE LONGA VERMELHA (95 MM)",
         "quantity": 1,
@@ -261787,13 +261773,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000088378",
-        "description": "TORRE CESTA AEREA SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 10,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000083",
         "description": "CONEXAO MACHO RETO 3/4\" UNF TUBO 10 - UMA 10 X 3/4\" UNF - L",
         "quantity": 14,
@@ -261813,27 +261792,6 @@
         "quantity": 4,
         "stock": 0,
         "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000004",
-        "description": "KIT COMANDO SUPERIOR CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000085183",
-        "description": "SUPORTE COMANDO CESTO - AS",
-        "quantity": 1,
-        "stock": 144,
-        "demand": 50
-      },
-      {
-        "code": "02.01.01.0000085469",
-        "description": "BASE APOIO SUPORTE CESTO",
-        "quantity": 1,
-        "stock": 151,
-        "demand": 50
       },
       {
         "code": "01.01.04.0000072407",
@@ -261866,21 +261824,21 @@
       {
         "code": "02.03.02.0000068279",
         "description": "BUCHA ACIONAMENTO ALAVANCAS COMANDO SUPERIOR Ø38 X 55",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 470,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085036",
         "description": "BUCHA ARTICULACAO COMANDO SUPERIOR DIM. 38 X 29",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 926,
         "demand": 0
       },
       {
         "code": "02.03.02.0000084777",
         "description": "BUCHA ARTICULAÇAO COMANDO SUPERIOR Ø38 X 44",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 289,
         "demand": 0
       },
@@ -261894,7 +261852,7 @@
       {
         "code": "02.03.02.0000085037",
         "description": "BUCHA ARTICULACAO COMANDO SUPERIOR DIM. 38 X 22",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 3197,
         "demand": 0
       },
@@ -261908,42 +261866,42 @@
       {
         "code": "02.03.01.0000085009",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 82",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 503,
         "demand": 0
       },
       {
         "code": "02.03.01.0000085008",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 115",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 282,
         "demand": 0
       },
       {
         "code": "02.03.01.0000085006",
         "description": "ADAPTADOR ALAVANCA M10 PARA M8",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 593,
         "demand": 0
       },
       {
         "code": "01.01.04.0000000025",
         "description": "CONJUNTO DA ALAVANCA APOIO C/ MANETE, HASTE E MOLA",
-        "quantity": 3,
+        "quantity": 4,
         "stock": 496,
         "demand": 200
       },
       {
         "code": "01.01.01.0000000246",
         "description": "CONEXAO ARTICULADA M8 - WGRM-08 LC MS",
-        "quantity": 8,
+        "quantity": 3,
         "stock": 1192,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000002",
         "description": "PROTEÇAO PVC PARA ENGATE RAPIDO FEMEA 3/8\" NPT FEMEA (ACOPLADOR) - COR LARANJA",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 355,
         "demand": 0
       },
@@ -261957,7 +261915,7 @@
       {
         "code": "01.02.01.0000000116",
         "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 55MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 1000,
         "demand": 0
       },
@@ -261971,63 +261929,56 @@
       {
         "code": "01.01.01.0000000089",
         "description": "CONEXAO TEE FEMEA LATERAL PORCA GIRATORIA M16X1,5 TUBO 10 - MTVLA 10-L",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 508,
         "demand": 1000
       },
       {
         "code": "01.01.01.0000000100",
         "description": "RETA PARA PAINEL - MACHO X MACHO - 3/8\" NPT X DKO M16 TUBO 10L PARA PAINEL",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 405,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000290",
         "description": "CONEXAO EMENDA M16 X 1,5 TUBO 10 - MALA 10 L",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 680,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000034",
         "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 16,
+        "quantity": 4,
         "stock": 6864,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000014",
         "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 2,
+        "quantity": 16,
         "stock": 69846,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000080",
         "description": "CONEXAO 90° - MACHO X MACHO - JIA 10 - L",
-        "quantity": 5,
+        "quantity": 2,
         "stock": 2298,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000007",
-        "description": "KIT RESERVATORIO HIDRAULICO CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 13,
         "demand": 0
       },
       {
         "code": "02.02.01.0000067114",
         "description": "RESERVATORIO HIDRAULICO 60 LITROS CESTAS AEREAS SKYRITZ 10 HDOC / 13 L / LD / LDI / LDDI",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 30,
         "demand": 50
       },
       {
         "code": "01.01.08.0000000031",
         "description": "FILTRO DE SUCÇAO PARA RESERVATORIO DE OLEO DE 40L/MIN - COM ROSCA DE FIXAÇAO DE 1\" BSP - HLSC3-010",
-        "quantity": 1,
+        "quantity": 13,
         "stock": 95,
         "demand": 0
       },
@@ -262062,49 +262013,49 @@
       {
         "code": "01.02.01.0000000045",
         "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 0,
         "demand": 1000
       },
       {
         "code": "01.02.01.0000000114",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 7600,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000032",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 7000,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000008",
         "description": "TEE FEMEA - CLASSE 150LB - 1/2\" NPT - GALVANIZADO",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 131,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000059",
         "description": "CONEXAO RETA - MACHO X MACHO - COM ROSCA DE 1/2\" NPT",
-        "quantity": 2,
+        "quantity": 6,
         "stock": 526,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000097",
         "description": "CONEXAO RETA - MACHO X MACHO -  3/4\" BSP VEDAÇAO ANEL O RING X DKO M16 TUBO 10L",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 283,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000162",
         "description": "ESPIGAO MACHO FIXO - 7/8\" X 1/2\" NPT",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 226,
         "demand": 0
       },
@@ -262118,7 +262069,7 @@
       {
         "code": "02.02.09.0000000010",
         "description": "KIT AVULSOS CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 0,
         "demand": 0
       },
@@ -262139,56 +262090,56 @@
       {
         "code": "01.01.03.0000000051",
         "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
-        "quantity": 3,
+        "quantity": 2,
         "stock": 1375,
         "demand": 100
       },
       {
         "code": "01.07.06.0000000008",
         "description": "UNIAO MACHO LINHA LEVE T10 X M16 X 1 NPT",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 1327,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000118",
         "description": "CONEXAO 90º FEMEA GIRATORIA 1/8\" NPT TUBO 10 - JMA 10 X 1/8\" NPT - L",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 690,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000026",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 2000,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000209",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 35MM CLASSE 8.8 ROSCA INTEIRA DIN 912",
-        "quantity": 10,
+        "quantity": 1,
         "stock": 3217,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000053",
         "description": "ARRUELA DE PRESSAO M8 X 14,80 X 1,90 ZINCADO BRANCO DIN 127",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 6308,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000163",
         "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 45MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 3,
         "stock": 5882,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000016",
         "description": "ARRUELA LISA MEDIA M12 X 24 X 2,50MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 14,
+        "quantity": 4,
         "stock": 8499,
         "demand": 0
       },
@@ -262202,35 +262153,35 @@
       {
         "code": "01.02.02.0000000002",
         "description": "ARRUELA DE PRESSAO PESADA M12 X 1/2\" X 3,84MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 2,
+        "quantity": 8,
         "stock": 3390,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000019",
         "description": "ARRUELA DE PRESSAO MEDIA M6 X 11,80 X 1,50MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 4,
+        "quantity": 10,
         "stock": 15490,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000080",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 80MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 6,
         "stock": 90,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000001",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 5816,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000104",
         "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 14,
         "stock": 3583,
         "demand": 0
       },
@@ -262244,35 +262195,35 @@
       {
         "code": "01.02.01.0000000009",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 1024,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000208",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 3365,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000059",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M16 X 2,00MM CLASSE 10 ZINCADO BRANCO DIN 982",
-        "quantity": 16,
+        "quantity": 2,
         "stock": 18198,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000072",
         "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 16023,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000017",
         "description": "ARRUELA LISA MEDIA M5 X 10 X 1,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 31876,
         "demand": 0
       },
@@ -262284,23 +262235,16 @@
         "demand": 0
       },
       {
-        "code": "01.01.01.0000000235",
-        "description": "BUCHA DE REDUÇAO - MACHO FIXO X FEMEA FIXA - 1.5/8\" 12 FIOS UNF X 1\" 11 FIOS BSP",
-        "quantity": 4,
-        "stock": 3301,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000159",
         "description": "ESPIGAO MACHO FIXO - 7/8\" X 1.1/16\" UNF VEDAÇAO ANEL O RING",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 921,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000095",
         "description": "CONEXAO MACHO RETO 1/4\" NPT TUBO 10 - UMA 10 X 1/4\" NPT - L",
-        "quantity": 6,
+        "quantity": 16,
         "stock": 1526,
         "demand": 0
       },
@@ -262312,23 +262256,9 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000216",
-        "description": "KIT LANCAS CESTA AEREA SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.14.0000000036",
-        "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-        "quantity": 4,
-        "stock": 2094,
-        "demand": 0
-      },
-      {
         "code": "01.01.16.0000000067",
         "description": "EMENDA DE CORRENTE ASA 60 HEAVY DUTY (19,05MM)",
-        "quantity": 8,
+        "quantity": 4,
         "stock": 556,
         "demand": 800
       },
@@ -262342,14 +262272,14 @@
       {
         "code": "01.02.07.0000000014",
         "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 1220,
         "demand": 0
       },
       {
         "code": "02.02.01.0000083443",
         "description": "PINO FIX. CILINDRO BASE - AS",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 327,
         "demand": 0
       },
@@ -262370,21 +262300,21 @@
       {
         "code": "02.03.02.0000069590",
         "description": "ESTICADOR DE BASTOES DE NIVELAMENTO DOS EQUIPAMENTO SKYRITZ",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 220,
         "demand": 0
       },
       {
         "code": "02.03.02.0000083461",
         "description": "ENGRENAGEM CESTO",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 225,
         "demand": 50
       },
       {
         "code": "02.03.03.0000080810",
         "description": "CHAVETA DIN 6885 AB - 10 X 8",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 659,
         "demand": 0
       },
@@ -262405,7 +262335,7 @@
       {
         "code": "01.01.02.0000073067",
         "description": "VALVULA CONTRABALANCO DUPLA FLANGEADA (SKYRITZ)",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 552,
         "demand": 0
       },
@@ -262419,14 +262349,14 @@
       {
         "code": "01.06.01.0000080494",
         "description": "BORRACHA DE APOIO LANÇA ( BORRACHA 45°)",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 58,
         "demand": 0
       },
       {
         "code": "02.02.01.0000085285",
         "description": "PINO ENGRENAGEM DE APOIO - AS",
-        "quantity": 3,
+        "quantity": 4,
         "stock": 292,
         "demand": 0
       },
@@ -262447,49 +262377,49 @@
       {
         "code": "01.02.03.0000000047",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M30 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 3135,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000027",
         "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 3,
+        "quantity": 1,
         "stock": 3658,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000010",
         "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 12,
+        "quantity": 2,
         "stock": 5500,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000099",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M6 X 1,00 X 35MM CLASSE 5.8 ROSCA PARCIAL ENEGRECIDO DE TEMPERA DIN 9",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 900,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000027",
         "description": "PORCA SEXTAVADA COMUM ESQUERDA 12,70 X 13,00MM FPP UNC ZINCADO BRANCO DIN 934",
-        "quantity": 8,
+        "quantity": 2,
         "stock": 5144,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000023",
         "description": "PORCA SEXTAVADA COMUM DIREITA 12,70 X 13MM FPP UNC ZINCADO BRANCO DIN 934",
-        "quantity": 8,
+        "quantity": 3,
         "stock": 6068,
         "demand": 0
       },
       {
         "code": "02.03.03.0000083484",
         "description": "ENGRENAGEM APOIO",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 1576,
         "demand": 0
       },
@@ -262503,49 +262433,49 @@
       {
         "code": "02.01.01.0000095867",
         "description": "ABRAÇADEIRA TAMPA BRAÇO SUPERIOR",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 18,
         "demand": 0
       },
       {
         "code": "02.02.03.0000075103",
         "description": "BASTAO DE NIVELAMENTO FABRICADO EM FIBRA DE 2300 MM 10 L",
-        "quantity": 2,
+        "quantity": 3,
         "stock": 2,
         "demand": 0
       },
       {
         "code": "02.03.01.0000082848",
         "description": "PONTEIRA BASTAO ISOLADO",
-        "quantity": 1,
+        "quantity": 12,
         "stock": 294,
         "demand": 0
       },
       {
         "code": "02.03.01.0000082847",
         "description": "PONTEIRA ROSCADA BASTAO ISOLADO",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 280,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085133",
         "description": "BARRA PULTRUDADA Ø5/8\" X 2100 MM",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 220,
         "demand": 0
       },
       {
         "code": "02.02.02.0000086134",
         "description": "LANÇA SUPERIOR 10 HDOC",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 10,
         "demand": 0
       },
       {
         "code": "01.01.10.0000085416",
         "description": "CILINDRO HIDRAULICO INFERIOR 10HDOC",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 17,
         "demand": 0
       },
@@ -262559,7 +262489,7 @@
       {
         "code": "02.02.01.0000088379",
         "description": "FIXAÇAO CILINDRO BASCULAMENTO",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 1,
         "demand": 0
       },
@@ -262573,7 +262503,7 @@
       {
         "code": "02.03.01.0000085110",
         "description": "PINO SUPERIOR NIVELAMENTO",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 137,
         "demand": 10
       },
@@ -262587,21 +262517,21 @@
       {
         "code": "02.02.01.0000088257",
         "description": "BASTAO AÇO NIVELAMENTO COMPR. 1700 MM - AS",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 2,
         "demand": 0
       },
       {
         "code": "02.02.01.0000088256",
         "description": "BASTAO AÇO NIVELAMENTO COMPR. 600 MM - AS",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.01.0000083427",
         "description": "BASTAO AÇO NIVELAMENTO COMPR. 880 MM - AS",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 58,
         "demand": 100
       },
@@ -262615,7 +262545,7 @@
       {
         "code": "02.01.03.0000079277",
         "description": "TAMPA DE JANELA DE INSPEÇAO DOS BRAÇOS",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 240,
         "demand": 0
       },
@@ -262636,7 +262566,7 @@
       {
         "code": "01.01.14.0000000048",
         "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 3331,
         "demand": 0
       },
@@ -262650,42 +262580,42 @@
       {
         "code": "01.06.01.0000080495",
         "description": "BORRACHA DE APOIO LANÇA ( BORRACHA RETA)",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 87,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000006",
         "description": "ARRUELA LISA MEDIA M30 X 56 X 4,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 1882,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000042",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M24 X 2,0MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 3,
+        "quantity": 2,
         "stock": 1535,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000144",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 12,
+        "quantity": 1,
         "stock": 5682,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000020",
         "description": "ARRUELA DE PRESSAO MEDIA M16 X 27,40 X 3,35MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 3042,
         "demand": 0
       },
       {
         "code": "01.01.14.0000000052",
         "description": "BUCHA AUTOLUBRIFICANTE LISA 25,4 X 28 X 12,7",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 1694,
         "demand": 0
       },
@@ -262706,7 +262636,7 @@
       {
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 233,
         "demand": 0
       },
@@ -262716,433 +262646,6 @@
         "quantity": 1,
         "stock": 150,
         "demand": 115
-      },
-      {
-        "code": "02.02.03.0000000021",
-        "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 10 HDOC - 4 ESTABILIZADORES 46KV",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000100",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – AVISO DE UTILIZAÇAO DA BOMBA MANUAL",
-        "quantity": 1,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000064",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 150 X 100MM ESP. 0,25MM - ISOLAMENTO PARA 46 KV",
-        "quantity": 4,
-        "stock": 724,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000094",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – CUIDADO NAO FORÇAR EQUIPAMENTO",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000096",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – ATENÇAO AO DESCER",
-        "quantity": 2,
-        "stock": 18,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000085",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 35 X 60MM ESP. 0,25MM - FERRAMENTA (DESLIGA E LIGA)",
-        "quantity": 2,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000088",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 49 X 60MM ESP. 0,25MM - ESTABILIZADORES FRONTAL E TRASEIRO",
-        "quantity": 2,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000089",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 70 X 60MM ESP. 0,25MM - ESTABILIZADOR SOBE E DESCE",
-        "quantity": 1,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000069",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 216 X 126MM ESP. 0,25MM - CAÇAMBA NAO ISOLANTE",
-        "quantity": 1,
-        "stock": 218,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000097",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – ATENÇAO PROTEÇAO FRAGIL",
-        "quantity": 1,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000073",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 250 X 106MM ESP. 0,25MM - RISCO DE CHOQUE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000070",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 169 X 110MM ESP. 0,25MM - PERIGO(SAPATA ESTABILIZADORA)",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000078",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 140 X 136MM ESP. 0,25MM - INFORMAÇOES SOBRE OLEO HIDRAULICO - MANUTENÇAO P",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000076",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 165 X 100MM ESP. 0,25MM - NOTA IMPORTANTE",
-        "quantity": 1,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000063",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 250 X 180MM ESP. 0,25MM - CAPACIDADE DE CARGA 136KG",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000092",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 147 X 40MM ESP. 0,25MM – ENGRENAGENS DE ROTAÇAO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000031",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 45MM ESP. 0,25MM - SELO DE TESTE DE INFILTRAÇAO",
-        "quantity": 1,
-        "stock": 80,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000021",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
-        "quantity": 3,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000065",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 80MM ESP. 0,25MM - BRAÇO NAO ISOLADO",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000086",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 25MM ESP. 0,25MM - GRAXA ESQUERDA",
-        "quantity": 4,
-        "stock": 28,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000087",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 25MM ESP. 0,25MM - GRAXA DIREITA",
-        "quantity": 4,
-        "stock": 26,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000147",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 57 X 30MM ESP. 0,25MM - BOTAO ACIONAR ALAVANCAS",
-        "quantity": 2,
-        "stock": 88,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000090",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 68 X 33MM ESP. 0,25MM – ALÇA DE RESGATE",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000099",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – SEGURANÇA NAO VIAJAR DENTRO DA CESTA",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000091",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 200 X 25MM ESP. 0,25MM - (DIREÇOES BRAÇOS E GIRO)",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000111",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 70 X 35MM ESP. 0,18MM - PARTIDA / DESLIGA",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000107",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 45 X 25 X 0,18MM – RPM + / -",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000102",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 40MM ESP. 0,25MM – EMERGENCIA DESABILITAR COMANDO HIDRAULICO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000068",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 212 X 100MM ESP. 0,25MM - RISCO DE INCENDIO",
-        "quantity": 1,
-        "stock": 49,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000098",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM – ATENÇAO NA CONEXAO DE FERRAMENTA A TOMADA",
-        "quantity": 1,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000075",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 145 X 126MM ESP. 0,25MM - PERIGO",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000081",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 145 X 126MM ESP. 0,25MM - CUIDADO",
-        "quantity": 1,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000077",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 190 X 100MM ESP. 0,25MM - INSTRUÇOES DE OPERAÇAO",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000066",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 216 X 126MM ESP. 0,25MM - RISCO DE CHOQUE",
-        "quantity": 1,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000080",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 145 X 126MM ESP. 0,25MM - CUIDADO (COM SEÇAO ISOLADA)",
-        "quantity": 1,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000079",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 160 X 125MM ESP. 0,25MM - CUIDADO (NAO-ISOLADO)",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000067",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 135 X 65MM ESP. 0,25MM - QUEDA DA CAÇAMBA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000082",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 160 X 80MM ESP. 0,25MM - PERIGO (RISCO DE CHOQUE ELETRICO)",
-        "quantity": 1,
-        "stock": 14,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000103",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 40 X 50MM ESP. 0,25MM – ATERRAMENTO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000104",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 40 X 50MM ESP. 0,25MM – ATERRAMENTO PARA ENSAIO",
-        "quantity": 1,
-        "stock": 153,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000119",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 180MM ESP. 0,25MM – INSTRUÇOES DE OPERAÇAO DA TOMADA DE FORÇA",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000120",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 655 X 25MM ESP. 0,25MM – SETA ISOLAMENTO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000132",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 160 X 100MM ESP. 0,25MM - DIAGRAMA DE ALCANÇE SKYRITZ 10HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000047",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 420 X 75MM ESP. 0,25MM - FUNDO PRETO ADESIVO SKYCITY10HDOC",
-        "quantity": 3,
-        "stock": 18,
-        "demand": 0
-      },
-      {
-        "code": "01.09.04.0000000014",
-        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYRITZ 10 HDOC - 130 X 150 X 0,5MM CANTOS RETOS",
-        "quantity": 1,
-        "stock": 20,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000117",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - FAROL AREA",
-        "quantity": 1,
-        "stock": 402,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000115",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - SISTEMA ELETRICO",
-        "quantity": 1,
-        "stock": 352,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000116",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - TOMADA DE FORÇA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000112",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - FAROL DE MANEJO",
-        "quantity": 1,
-        "stock": 352,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000118",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - TOMADA 12V",
-        "quantity": 1,
-        "stock": 301,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000113",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - GIROLED",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000114",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 60 X 35MM ESP. 0,25MM - ILUMINAÇAO ARMARIO",
-        "quantity": 1,
-        "stock": 552,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000109",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 260 X 60MM ESP. 0,10MM - CERTIFICADO QUALIDADE CI-3437-018-00",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "01.09.03.0000000038",
-        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" MONTAGEM FINAL - AZUL",
-        "quantity": 1,
-        "stock": 450,
-        "demand": 0
-      },
-      {
-        "code": "01.09.03.0000000039",
-        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" ELETRICA - AMARELO",
-        "quantity": 1,
-        "stock": 386,
-        "demand": 0
-      },
-      {
-        "code": "01.09.03.0000000040",
-        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" PINTURA - VERMELHO",
-        "quantity": 1,
-        "stock": 462,
-        "demand": 0
-      },
-      {
-        "code": "01.09.03.0000000041",
-        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" MECANICA DE TESTE - VERDE",
-        "quantity": 1,
-        "stock": 300,
-        "demand": 0
-      },
-      {
-        "code": "01.09.03.0000000042",
-        "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" INSPEÇAO FINAL - ROXO",
-        "quantity": 1,
-        "stock": 450,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000151",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 130 X 60MM ESP. 0,25MM - (DIREÇOES BRAÇOS E GIRO DA CAÇAMBA)",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.09.02.0000000320",
-        "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 100 X 60MM ESP. 0,25MM - RISCO DE ACIDENTE GRAVE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000218",
-        "description": "KIT PRE - MONTAGEM TERCEIRO CESTA AEREA SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
       },
       {
         "code": "01.02.01.0000000199",
@@ -263168,21 +262671,21 @@
       {
         "code": "01.01.14.0000000050",
         "description": "BUCHA AUTOLUBRIFICANTE LISA 30 X 34 X 20",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 1298,
         "demand": 0
       },
       {
         "code": "01.01.14.0000000051",
         "description": "BUCHA AUTOLUBRIFICANTE LISA 40 X 44 X 20",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 3006,
         "demand": 0
       },
       {
         "code": "02.02.01.0000088251",
         "description": "PINO FIX. CRUZETA EXTERNA - AS",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 2,
         "demand": 0
       },
@@ -263201,24 +262704,10 @@
         "demand": 0
       },
       {
-        "code": "02.01.03.0000085379",
-        "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYCITY 10 HDOC",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.02.02.0000000004",
         "description": "ARRUELA LISA MEDIA M20 X 37 X 3,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 24,
-        "stock": 7156,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000219",
-        "description": "KIT INDUSTRIALIZADO CESTA AEREA SKYCITY 10 HDOC",
         "quantity": 1,
-        "stock": 0,
+        "stock": 7156,
         "demand": 0
       },
       {
@@ -263226,34 +262715,6 @@
         "description": "REFORÇO PARA CAPA DA CAÇAMBA (BOJO)",
         "quantity": 1,
         "stock": 120,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086169",
-        "description": "MONTAGEM CRUZETA INTERNA 10 HDOC",
-        "quantity": 1,
-        "stock": 10,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000079310",
-        "description": "CRUZETA INTERNA - AS",
-        "quantity": 1,
-        "stock": 73,
-        "demand": 50
-      },
-      {
-        "code": "02.02.01.0000088249",
-        "description": "BRAÇO LINK ARTICULAÇAO 10 HDOC",
-        "quantity": 2,
-        "stock": 20,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000005",
-        "description": "KIT JUNTA ROTATIVA CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -263266,36 +262727,8 @@
       {
         "code": "01.01.01.0000000081",
         "description": "CONEXAO MACHO RETO 3/8\" NPT TUBO 10 - UMA 10 X 3/8\" NPT - L",
-        "quantity": 4,
+        "quantity": 10,
         "stock": 114,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000059",
-        "description": "KIT ENSAIOS CESTAS AEREAS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "07.02.03.0000000005",
-        "description": "ENSAIO ELETRICO",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "07.02.03.0000000012",
-        "description": "ENSAIO ELETRICO DO LINER CESTO AEREO",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000085",
-        "description": "KIT MONTAGEM TOMADA DE FORCA CESTAS AEREAS",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -263308,48 +262741,41 @@
       {
         "code": "01.11.05.0000000022",
         "description": "INTERRUPTOR LUZ DE FREIO PARA LINHA DE AR 4,5 BAR - M10 X 1,0",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 64,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000024",
         "description": "TEE UNIAO EMENDA 6MM",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 583,
         "demand": 0
       },
       {
         "code": "05.01.01.0000000662",
         "description": "CONEXAO RETA 1/8\" BSP X TUBO 6 MM",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 823,
         "demand": 0
       },
       {
         "code": "01.07.06.0000000037",
         "description": "COTOVELO MACHO 1/8\" BSP TUBO 6 MM",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 390,
         "demand": 0
       },
       {
         "code": "01.07.05.0000000005",
         "description": "TUBO EM POLIAMIDA PA6 6 X 4 - 27 BAR",
-        "quantity": 3,
+        "quantity": 2,
         "stock": 400,
         "demand": 200
       },
       {
         "code": "01.01.01.0000000466",
         "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000003",
-        "description": "KIT KANBAN CESTA AEREA SKYRTIZ 13 L / LDI - 2 ESTABILIZADORES",
         "quantity": 1,
         "stock": 0,
         "demand": 0
@@ -263357,63 +262783,49 @@
       {
         "code": "01.02.11.0000000037",
         "description": "ABRAÇADEIRA NYLON K55L 390MM X 7,6MM - PRETO",
-        "quantity": 60,
+        "quantity": 6,
         "stock": 82500,
         "demand": 15000
       },
       {
-        "code": "01.06.01.0000000004",
-        "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
-        "quantity": 3,
-        "stock": 2605,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000038",
-        "description": "KIT HIDRAULICO CARROCERIA CESTA AEREA SKYRITZ 13 L / LDI - 2 ESTABILIZADORES SEM FERRAMENTA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000079",
         "description": "CONEXAO FEMEA RETA UFA 10 X 1/4\" NPT - L",
-        "quantity": 1,
+        "quantity": 24,
         "stock": 400,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000085",
         "description": "CONEXAO MACHO RETO 9/16\" UNF TUBO 10 - UMA 10 X 9/16\" UNF - L",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 0,
         "demand": 950
       },
       {
         "code": "01.01.02.0000063054",
         "description": "VALVULA RETENÇAO EM LINHA 3/4 - 16 UNF",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 244,
         "demand": 0
       },
       {
         "code": "01.01.02.0000065619",
         "description": "VALVULA RETENÇAO PILOTADA DUPLA FLANGEADA 9/16 - 18 UNF",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 80,
         "demand": 0
       },
       {
         "code": "01.01.02.0000073062",
         "description": "VALVULA  DIRECIONAL 3 VIAS RETORNO POR MOLA (INTERLOCK)",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 219,
         "demand": 0
       },
       {
         "code": "02.03.01.0000067336",
         "description": "PINO INFERIOR DA SAPATA SKYRITZ",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 1005,
         "demand": 0
       },
@@ -263432,34 +262844,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000067325",
-        "description": "PERFIL INTERNO DA SAPATA DOS EQUIPAMENTOS SKYRITZ",
-        "quantity": 2,
-        "stock": 302,
-        "demand": 126
-      },
-      {
-        "code": "02.02.01.0000067329",
-        "description": "PERFIL EXTERNO DA SAPATA DOS EQUIPAMENTOS SKYRITZ",
-        "quantity": 2,
-        "stock": 295,
-        "demand": 126
-      },
-      {
-        "code": "02.02.01.0000067335",
-        "description": "BASE DE APOIO DA SAPATA EQUIPAMENTO SKYRITZ",
-        "quantity": 2,
-        "stock": 282,
-        "demand": 100
-      },
-      {
-        "code": "02.01.02.0000067338",
-        "description": "PROTEÇAO DA VALVULA DA SAPATA DE ALUMINIO EQUIPAMENTO SKYRITZ",
-        "quantity": 2,
-        "stock": 26,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000212",
         "description": "BUJAO MACHO SEXTAVADO INTERNO DIN 906 1/4\" BSP - BMBSI-04",
         "quantity": 1,
@@ -263469,7 +262853,7 @@
       {
         "code": "01.01.10.0000018380",
         "description": "CILINDRO HIDRAULICO SAPATA SKYRITZ",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 500,
         "demand": 20
       },
@@ -263483,21 +262867,21 @@
       {
         "code": "01.02.01.0000000096",
         "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.08.0000000046",
         "description": "CONTRAPINO 1/8\" X 1.1/4\" ZINCADO BRANCO DIN 94",
-        "quantity": 12,
+        "quantity": 2,
         "stock": 2040,
         "demand": 0
       },
       {
         "code": "02.02.05.0000000015",
         "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 10L / 10HDOC / 13L / 13LDI - 2 ESTABILIZADORES",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 49,
         "demand": 0
       },
@@ -263511,14 +262895,14 @@
       {
         "code": "01.01.02.0000073063",
         "description": "VALVULA EMERGENCIA 3 VIAS HASTE CURTA VERMELHA (45 MM)",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 322,
         "demand": 0
       },
       {
         "code": "01.02.11.0000000035",
         "description": "ABRAÇADEIRA MANGOTE 3/4\" 29 A 32MM FITA 20MM AÇO CARBONO ZINCADO BRANCO",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 312,
         "demand": 0
       },
@@ -263532,7 +262916,7 @@
       {
         "code": "01.01.05.0000000009",
         "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
-        "quantity": 1,
+        "quantity": 60,
         "stock": 0,
         "demand": 0
       }
