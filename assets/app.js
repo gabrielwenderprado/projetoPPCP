@@ -601,67 +601,59 @@ function calferBalances(code) {
   return { next: Math.max(0, next), calfer: Math.max(0, calfer) };
 }
 
-function calferModel(modelName, direction) {
-  const list = direction === 'nextToCalfer' ? CALFER.nextModels : CALFER.calferModels;
-  return (list || []).find(model => model.name === modelName) || list?.[0] || { name: modelName || '—', items: [] };
+function calferSelectedModel(modelName) {
+  const list = CALFER.calferModels || [];
+  return list.find(model => model.name === modelName) || list[0] || { name: modelName || '—', items: [] };
 }
-
-function calferPlan(modelName, machines, direction) {
-  const model = calferModel(modelName, direction);
-  return model.items.map(item => {
-    const required = n(item.quantityPerMachine) * Math.max(1, n(machines));
-    const balance = calferBalances(item.code);
-    const available = direction === 'nextToCalfer' ? balance.next : balance.calfer;
-    const send = Math.min(required, available);
-    return { ...item, required, available, send, shortage: Math.max(0, required - send), after: Math.max(0, available - send), balance };
+function calferReferenceItem(code) {
+  return (CALFER.items || []).find(item => String(item.code) === String(code)) || {};
+}
+function calferModelItems(modelName) {
+  const model = calferSelectedModel(modelName);
+  const grouped = new Map();
+  (model.items || []).forEach(item => {
+    const code = String(item.code || '').trim();
+    if (!code) return;
+    const existing = grouped.get(code) || { ...item, code, quantityPerMachine: 0 };
+    existing.quantityPerMachine += n(item.quantityPerMachine);
+    const reference = calferReferenceItem(code);
+    existing.nextStock = n(reference.nextStock);
+    existing.calferStock = n(item.calferStock);
+    existing.description = item.description || reference.description || '';
+    grouped.set(code, existing);
+  });
+  return [...grouped.values()];
+}
+function calferAvailabilityPlan(modelName, machines) {
+  const requested = Math.max(1, Math.floor(n(machines) || 1));
+  return calferModelItems(modelName).map(item => {
+    const perMachine = n(item.quantityPerMachine);
+    const required = perMachine * requested;
+    const available = Math.max(0, n(item.calferStock));
+    const shortage = Math.max(0, required - available);
+    const capacity = perMachine > 0 ? Math.floor(available / perMachine) : 0;
+    return { ...item, requested, required, available, shortage, capacity, covered: shortage === 0 };
   });
 }
-
-function calferCapacity(modelName, direction) {
-  const model = calferModel(modelName, direction);
-  const values = model.items.filter(item => n(item.quantityPerMachine) > 0).map(item => {
-    const balance = calferBalances(item.code);
-    const available = direction === 'nextToCalfer' ? balance.next : balance.calfer;
-    return Math.floor(available / n(item.quantityPerMachine));
-  });
-  return values.length ? Math.max(0, Math.min(...values)) : 0;
+function calferCompleteMachineCapacity(modelName) {
+  const rows = calferAvailabilityPlan(modelName, 1);
+  const capacities = rows.filter(row => n(row.quantityPerMachine) > 0).map(row => row.capacity);
+  return capacities.length ? Math.max(0, Math.min(...capacities)) : 0;
 }
-
-function sendCalferMachines(direction, modelName, machines) {
-  const plan = calferPlan(modelName, machines, direction);
-  if (!plan.length) return;
-  const timestamp = new Date().toISOString();
-  plan.filter(row => row.send > 0).forEach(row => CALFER.transactions.push({
-    id: `CF-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
-    at: timestamp,
-    direction,
-    model: modelName,
-    code: row.code,
-    description: row.description,
-    quantity: row.send,
-    requested: row.required,
-    shortage: row.shortage,
-  }));
-  saveCalferTransactions();
-  render();
-}
-
 function calferRows(plan) {
-  return plan.map(row => `<tr><td><b>${esc(row.code)}</b><div class="desc">${esc(row.description)}</div></td><td>${fmt(row.quantityPerMachine)}</td><td>${fmt(row.required)}</td><td>${fmt(row.available)}</td><td>${fmt(row.send)}</td><td class="${row.shortage > 0 ? 'danger' : 'success'}">${row.shortage > 0 ? `Faltam ${fmt(row.shortage)}` : 'Completo'}</td><td>${fmt(row.after)}</td></tr>`).join('');
+  return plan.map(row => `<tr><td><b>${esc(row.code)}</b><div class="desc">${esc(row.description || '—')}</div></td><td>${fmt(row.nextStock)}</td><td>${fmt(row.quantityPerMachine)}</td><td>${fmt(row.calferStock)}</td><td>${fmt(row.required)}</td><td class="${row.shortage > 0 ? 'danger-text' : 'success-text'}">${row.shortage > 0 ? `Faltam ${fmt(row.shortage)}` : 'Atende'}</td><td>${fmt(row.capacity)}</td></tr>`).join('');
 }
-
 function calferView() {
-  const modelNames = [...new Set([...(CALFER.nextModels || []), ...(CALFER.calferModels || [])].map(item => item.name))];
-  const active = selectedCalferModel || modelNames[0] || '';
+  const modelNames = [...new Set((CALFER.calferModels || []).map(item => item.name))];
+  const active = selectedCalferModel && modelNames.includes(selectedCalferModel) ? selectedCalferModel : (modelNames[0] || '');
   const machines = Math.max(1, Math.floor(n(calferMachineCount) || 1));
-  const outbound = calferPlan(active, machines, 'nextToCalfer');
-  const inbound = calferPlan(active, machines, 'calferToNext');
-  const outboundShortage = outbound.filter(row => row.shortage > 0).length;
-  const inboundShortage = inbound.filter(row => row.shortage > 0).length;
-  const history = [...(CALFER.transactions || [])].reverse().slice(0, 20);
-  return `<div class="view-title"><div><span class="eyebrow">Controle de fornecedor</span><h2>Estoque Calfer</h2><p>Controle dos componentes enviados para a Calfer e das máquinas devolvidas para a Next.</p></div><div class="date-pill">${esc(CALFER.sourceFile || 'abas calfer.next / calfer')}</div></div><div class="pins-model-strip">${modelNames.map(name => `<button class="pins-model-card${name === active ? ' selected' : ''}" data-calfer-model="${esc(name)}"><span>Modelo</span><strong>${esc(name)}</strong><small>${name === active ? 'selecionado' : 'selecionar'}</small></button>`).join('')}</div><div class="panel"><div class="panel-header"><div><h3>Planejar movimentação</h3><span>Modelo ${esc(active || '—')} · quantidade de máquinas</span></div><div class="toolbar"><label class="filter-label">Máquinas</label><input class="input" id="calfer-machines" type="number" min="1" value="${machines}" style="max-width:100px" /></div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(calferCapacity(active, 'nextToCalfer'))}</b><span>máquinas possíveis Next → Calfer</span></div><div class="summary-box"><b>${fmt(calferCapacity(active, 'calferToNext'))}</b><span>máquinas possíveis Calfer → Next</span></div><div class="summary-box"><b class="${outboundShortage ? 'danger' : 'success'}">${fmt(outbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no envio</span></div><div class="summary-box"><b class="${inboundShortage ? 'danger' : 'success'}">${fmt(inbound.filter(row => row.shortage > 0).reduce((sum,row) => sum + row.shortage, 0))}</b><span>peças faltantes no retorno</span></div></div></div><div class="panel"><div class="panel-header"><div><h3>Next → Calfer</h3><span>O sistema envia o disponível e mostra automaticamente o que ficou faltando.</span></div><button class="primary-btn" id="send-to-calfer" ${outbound.every(row => row.send <= 0) ? 'disabled' : ''}>Enviar ${fmt(machines)} máquina(s) para Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Next</th><th>Enviado</th><th>Resultado</th><th>Saldo Next</th></tr></thead><tbody>${calferRows(outbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Calfer → Next</h3><span>Ao enviar máquinas, o saldo de peças da Calfer é reduzido.</span></div><button class="primary-btn" id="send-to-next" ${inbound.every(row => row.send <= 0) ? 'disabled' : ''}>Receber ${fmt(machines)} máquina(s) da Calfer</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código / descrição</th><th>Por máquina</th><th>Necessidade</th><th>Estoque Calfer</th><th>Enviado</th><th>Resultado</th><th>Saldo Calfer</th></tr></thead><tbody>${calferRows(inbound) || '<tr><td colspan="7" class="empty">Modelo sem componentes.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="panel-header"><div><h3>Últimos movimentos</h3><span>Os movimentos desta sessão ficam registrados neste navegador.</span></div><button class="secondary-btn" id="clear-calfer-movements" ${history.length ? '' : 'disabled'}>Zerar movimentos locais</button></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Direção</th><th>Modelo</th><th>Código</th><th>Quantidade</th><th>Faltante</th></tr></thead><tbody>${history.map(move => `<tr><td>${esc(new Date(move.at).toLocaleString('pt-BR'))}</td><td>${move.direction === 'nextToCalfer' ? 'Next → Calfer' : 'Calfer → Next'}</td><td>${esc(move.model)}</td><td>${esc(move.code)}</td><td>${fmt(move.quantity)}</td><td>${fmt(move.shortage || 0)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum movimento realizado.</td></tr>'}</tbody></table></div></div>`;
+  const plan = calferAvailabilityPlan(active, machines);
+  const capacity = calferCompleteMachineCapacity(active);
+  const missing = plan.filter(row => row.shortage > 0);
+  const totalMissing = missing.reduce((sum, row) => sum + row.shortage, 0);
+  const model = calferSelectedModel(active);
+  return `<div class="view-title"><div><span class="eyebrow">Controle de fornecedor</span><h2>Estoque Calfer</h2><p>Visão consolidada do estoque informado na aba <b>calfer</b>. O estoque Next é exibido somente como referência.</p></div><div class="date-pill">${esc(CALFER.sourceFile || 'aba calfer')}</div></div><div class="pins-model-strip calfer-model-strip">${modelNames.map(name => `<button class="pins-model-card${name === active ? ' selected' : ''}" data-calfer-model="${esc(name)}"><span>Modelo</span><strong>${esc(name)}</strong><small>${name === active ? 'selecionado' : 'consultar capacidade'}</small></button>`).join('')}</div><div class="panel calfer-capacity-panel"><div class="panel-header"><div><h3>${esc(active || 'Modelo não selecionado')}</h3><span>${fmt(model.items?.length || 0)} componentes na estrutura Calfer</span></div><div class="toolbar"><label class="filter-label" for="calfer-machines">Quantidade de máquinas</label><input class="input" id="calfer-machines" type="number" min="1" value="${machines}" style="max-width:120px" /></div></div><div class="summary-strip"><div class="summary-box"><b class="${capacity > 0 ? 'success' : 'danger'}">${fmt(capacity)}</b><span>máquinas completas possíveis</span></div><div class="summary-box"><b>${fmt(machines)}</b><span>máquinas solicitadas</span></div><div class="summary-box"><b class="${missing.length ? 'danger' : 'success'}">${fmt(missing.length)}</b><span>componentes insuficientes</span></div><div class="summary-box"><b class="${totalMissing ? 'danger' : 'success'}">${fmt(totalMissing)}</b><span>peças faltantes</span></div></div></div><div class="panel"><div class="panel-header"><div><h3>Componentes do modelo ${esc(active || '—')}</h3><span>Capacidade calculada pelo menor saldo entre os componentes do estoque Calfer.</span></div></div><div class="table-wrap"><table class="data-table calfer-single-table"><thead><tr><th>Código / descrição</th><th>Estoque Next<br><small>referência</small></th><th>Qtd. por máquina</th><th>Estoque Calfer</th><th>Necessário para ${fmt(machines)}</th><th>Atendimento</th><th>Máquinas possíveis</th></tr></thead><tbody>${calferRows(plan) || '<tr><td colspan="7" class="empty">O modelo não possui componentes na aba calfer.</td></tr>'}</tbody></table></div></div>${missing.length ? `<div class="panel calfer-shortage-panel"><div class="panel-header"><div><h3>O que falta para montar ${fmt(machines)} máquina(s)</h3><span>Itens abaixo do necessário no estoque da Calfer.</span></div></div><div class="detail-list">${missing.map(row => `<div class="detail-list-row detail-overdue"><span><b>${esc(row.code)}</b> · ${esc(row.description || '—')}</span><b>Faltam ${fmt(row.shortage)} · estoque ${fmt(row.available)} / necessário ${fmt(row.required)}</b></div>`).join('')}</div></div>` : `<div class="panel calfer-success-panel"><div class="panel-body"><strong>Estoque suficiente para montar ${fmt(machines)} máquina(s) do modelo ${esc(active)}.</strong></div></div>`}</div>`;
 }
-
 function optionList(values, selected, label) {
   return `<select class="select" id="${label.id}"><option value="all">${label.all}</option>${values.map(value => `<option value="${esc(value)}" ${selected === value ? 'selected' : ''}>${esc(value)}</option>`).join('')}</select>`;
 }
@@ -2365,13 +2357,14 @@ function bindView() {
   if (view === 'calfer') {
     document.querySelectorAll('[data-calfer-model]').forEach(button => button.onclick = () => { selectedCalferModel = button.dataset.calferModel || ''; render(); });
     const machines = $('#calfer-machines');
-    if (machines) machines.onchange = () => { calferMachineCount = Math.max(1, Math.floor(n(machines.value) || 1)); render(); };
-    const sendToCalfer = $('#send-to-calfer');
-    if (sendToCalfer) sendToCalfer.onclick = () => sendCalferMachines('nextToCalfer', selectedCalferModel, calferMachineCount);
-    const sendToNext = $('#send-to-next');
-    if (sendToNext) sendToNext.onclick = () => sendCalferMachines('calferToNext', selectedCalferModel, calferMachineCount);
-    const clear = $('#clear-calfer-movements');
-    if (clear) clear.onclick = () => { CALFER.transactions = []; saveCalferTransactions(); render(); };
+    if (machines) machines.oninput = () => {
+      calferMachineCount = Math.max(1, Math.floor(n(machines.value) || 1));
+      const value = calferMachineCount;
+      if (String(machines.value) !== String(value)) machines.value = value;
+      render();
+      const refreshed = $('#calfer-machines');
+      if (refreshed) { refreshed.focus(); refreshed.setSelectionRange(String(value).length, String(value).length); }
+    };
   }
 
   if (view === 'cylinders') {
