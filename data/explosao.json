@@ -109195,7 +109195,7 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 15,
+        "DEM 10/2026": 0,
         "DEM 11/2026": 0,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0,
@@ -109203,7 +109203,7 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": -13,
+        "DEM 10/2026": 2,
         "DEM 11/2026": 2,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
@@ -126482,18 +126482,18 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
+        "DEM 10/2026": 106,
+        "DEM 11/2026": 75,
+        "DEM 12/2026": 71,
+        "DEM 01/2026": 15,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
+        "DEM 10/2026": -106,
+        "DEM 11/2026": -75,
+        "DEM 12/2026": -71,
+        "DEM 01/2026": -15
       },
       "obtention": []
     },
@@ -230045,10 +230045,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
@@ -231582,10 +231582,10 @@
         "_shifted_quantity": "1"
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" NPT -  RSJ-80-238-238",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0,
         "_shifted_quantity": "1"
       }
@@ -232985,10 +232985,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
@@ -234709,10 +234709,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
@@ -236265,10 +236265,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
@@ -237933,10 +237933,10 @@
         "demand": 2
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
@@ -261652,10 +261652,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
@@ -263530,10 +263530,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.05.0000000007",
-        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8\" RMB - 2S - NPT",
+        "code": "01.01.05.0000000009",
+        "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
-        "stock": 2,
+        "stock": 0,
         "demand": 0
       }
     ],
