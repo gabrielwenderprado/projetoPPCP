@@ -228941,6 +228941,1070 @@
         "DEM 01/2026": 0
       },
       "obtention": []
+    },
+    {
+      "code": "03.06.01.0000000012",
+      "description": "CESTA AEREA SKYCITY 10 HDOC",
+      "analyst": "KELEN",
+      "family": "MONTAGEM CESTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 386,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.09.0000000010",
+      "description": "KIT AVULSOS CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 444,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "01.01.06.0000000003",
+      "description": "BOMBA HIDRAULICA DE ALUMINIO DE 16 LITROS COM FLANGE SAE B 2 FUROS -  ANTI-HORARIO - COM EIXO DE 13 ESTRIAS",
+      "analyst": "KELEN",
+      "family": "HIDRAULICA",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 109,
+      "stockMax": 0,
+      "stockValue": 48069,
+      "safety": 80,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 13,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 122,
+        "DEM 11/2026": 109,
+        "DEM 12/2026": 445,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000018147",
+          "quantity": 13,
+          "plannedDate": "2026-10-28",
+          "status": "AP",
+          "purchaseOrder": "0006714/26"
+        }
+      ]
+    },
+    {
+      "code": "02.01.01.0000095867",
+      "description": "ABRAÇADEIRA TAMPA BRAÇO SUPERIOR",
+      "analyst": "KELEN",
+      "family": "PEÇA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 18,
+      "stockMax": 0,
+      "stockValue": 1980,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 18,
+        "DEM 11/2026": 18,
+        "DEM 12/2026": 496,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.03.0000075103",
+      "description": "BASTAO DE NIVELAMENTO FABRICADO EM FIBRA DE 2300 MM 10 L",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 764.05,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 497,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.03.01.0000082848",
+      "description": "PONTEIRA BASTAO ISOLADO",
+      "analyst": "KELEN",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-01-06",
+      "unit": "UN",
+      "stock": 294,
+      "stockMax": 0,
+      "stockValue": 27930,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 240,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 534,
+        "DEM 11/2026": 294,
+        "DEM 12/2026": 498,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000017612",
+          "quantity": 240,
+          "plannedDate": "2026-10-13",
+          "status": "AP",
+          "purchaseOrder": "0006067/26"
+        }
+      ]
+    },
+    {
+      "code": "02.03.01.0000082847",
+      "description": "PONTEIRA ROSCADA BASTAO ISOLADO",
+      "analyst": "KELEN",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-01-06",
+      "unit": "UN",
+      "stock": 280,
+      "stockMax": 0,
+      "stockValue": 26600,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 240,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 520,
+        "DEM 11/2026": 280,
+        "DEM 12/2026": 499,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000017612",
+          "quantity": 240,
+          "plannedDate": "2026-10-13",
+          "status": "AP",
+          "purchaseOrder": "0006067/26"
+        }
+      ]
+    },
+    {
+      "code": "02.01.03.0000085133",
+      "description": "BARRA PULTRUDADA Ø5/8\" X 2100 MM",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 220,
+      "stockMax": 0,
+      "stockValue": 21951.6,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 220,
+        "DEM 11/2026": 220,
+        "DEM 12/2026": 500,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.02.0000086134",
+      "description": "LANÇA SUPERIOR 10 HDOC",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 10,
+      "stockMax": 0,
+      "stockValue": 23532.35,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 6,
+        "PED 07/2026": 6,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 10,
+        "DEM 11/2026": 10,
+        "DEM 12/2026": 501,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-02",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 2,
+          "plannedDate": "2026-06-08",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        }
+      ]
+    },
+    {
+      "code": "01.01.10.0000085416",
+      "description": "CILINDRO HIDRAULICO INFERIOR 10HDOC",
+      "analyst": "KELEN",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 17,
+      "stockMax": 0,
+      "stockValue": 27710,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 17,
+        "DEM 11/2026": 17,
+        "DEM 12/2026": 502,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.01.0000088370",
+      "description": "TAMPA BRAÇO SUPERIOR 10 HDOC",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 1,
+      "stockMax": 0,
+      "stockValue": 258.825,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 10,
+        "PED 07/2026": 10,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 1,
+        "DEM 12/2026": 503,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-06",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-05-29",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-05-25",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 2,
+          "plannedDate": "2026-06-08",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-02",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.01.0000088379",
+      "description": "FIXAÇAO CILINDRO BASCULAMENTO",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "CJ",
+      "stock": 1,
+      "stockMax": 0,
+      "stockValue": 258.825,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 10,
+        "PED 07/2026": 10,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 1,
+        "DEM 12/2026": 504,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-02",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-06",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 2,
+          "plannedDate": "2026-06-08",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-05-29",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-05-25",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.01.0000088257",
+      "description": "BASTAO AÇO NIVELAMENTO COMPR. 1700 MM - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 446.04,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 30,
+        "PED 07/2026": 30,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 508,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000015826",
+          "quantity": 12,
+          "plannedDate": "2026-05-29",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 12,
+          "plannedDate": "2026-06-06",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 12,
+          "plannedDate": "2026-06-02",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 12,
+          "plannedDate": "2026-05-25",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 6,
+          "plannedDate": "2026-06-08",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.01.0000088256",
+      "description": "BASTAO AÇO NIVELAMENTO COMPR. 600 MM - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 20,
+        "PED 07/2026": 20,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 509,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000015826",
+          "quantity": 8,
+          "plannedDate": "2026-05-29",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 8,
+          "plannedDate": "2026-06-02",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-08",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 8,
+          "plannedDate": "2026-06-06",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 8,
+          "plannedDate": "2026-05-25",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.02.0000086207",
+      "description": "LANÇA INFERIOR 10 HDOC",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 10,
+      "stockMax": 0,
+      "stockValue": 32940.8,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 6,
+        "PED 07/2026": 6,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 10,
+        "DEM 11/2026": 10,
+        "DEM 12/2026": 511,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000015826",
+          "quantity": 2,
+          "plannedDate": "2026-06-08",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        },
+        {
+          "request": "0000015826",
+          "quantity": 4,
+          "plannedDate": "2026-06-02",
+          "status": "AP",
+          "purchaseOrder": "0003269/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.01.0000088376",
+      "description": "ENGRENAGEM ARTIC. BASE/ LANÇA SKYCITY 10 HDOC",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "CJ",
+      "stock": 19,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 10,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 29,
+        "DEM 11/2026": 19,
+        "DEM 12/2026": 513,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000017571",
+          "quantity": 10,
+          "plannedDate": "2026-10-19",
+          "status": "AP",
+          "purchaseOrder": "0005967/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.09.0000000217",
+      "description": "KIT ACABAMENTO - SKYCITY 10 HDOC",
+      "analyst": "KELEN",
+      "family": "USINAGEM",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 523,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.01.0000088251",
+      "description": "PINO FIX. CRUZETA EXTERNA - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 2,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 2,
+        "DEM 11/2026": 2,
+        "DEM 12/2026": 532,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.01.0000088247",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 1,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 1,
+        "DEM 11/2026": 1,
+        "DEM 12/2026": 533,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "01.01.01.0000000466",
+      "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
+      "analyst": "KELEN",
+      "family": "HIDRAULICA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 15,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": -15,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 545,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.05.0000000015",
+      "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 10L / 10HDOC / 13L / 13LDI - 2 ESTABILIZADORES",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 49,
+      "stockMax": 0,
+      "stockValue": 44890.076,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 20,
+        "PED 11/2026": 5,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 69,
+        "DEM 11/2026": 54,
+        "DEM 12/2026": 560,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000016784",
+          "quantity": 4,
+          "plannedDate": "2026-07-24",
+          "status": "AP",
+          "purchaseOrder": ""
+        },
+        {
+          "request": "0000018177",
+          "quantity": 5,
+          "plannedDate": "2026-11-09",
+          "status": "AP",
+          "purchaseOrder": ""
+        },
+        {
+          "request": "0000018177",
+          "quantity": 20,
+          "plannedDate": "2026-10-28",
+          "status": "AP",
+          "purchaseOrder": ""
+        }
+      ]
+    },
+    {
+      "code": "01.09.03.0000000002",
+      "description": "KIT ADESIVO 10HDOC 78 ADESIVOS VINIL BRANCO 3M",
+      "analyst": "KELEN",
+      "family": "IDENTIFICAÇÃO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 564,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
     }
   ],
   "models": {
@@ -230553,7 +231617,7 @@
         "code": "01.01.06.0000000003",
         "description": "BOMBA HIDRAULICA DE ALUMINIO DE 16 LITROS COM FLANGE SAE B 2 FUROS -  ANTI-HORARIO - COM EIXO DE 13 ESTRIAS",
         "quantity": 1,
-        "stock": 0,
+        "stock": 109,
         "demand": 0,
         "_shifted_quantity": "1"
       },
@@ -231382,10 +232446,10 @@
         "_shifted_quantity": "1"
       },
       {
-        "code": "02.02.01.0000083441",
+        "code": "02.02.01.0000088251",
         "description": "PINO FIX. CRUZETA EXTERNA - AS",
         "quantity": 2,
-        "stock": 326,
+        "stock": 2,
         "demand": 0,
         "_shifted_quantity": "2"
       },
@@ -233572,7 +234636,7 @@
         "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
         "quantity": 1,
         "stock": 0,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "01.01.04.0000083508",
@@ -236038,7 +237102,7 @@
         "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
         "quantity": 2,
         "stock": 0,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "01.01.02.0000063054",
@@ -237692,7 +238756,7 @@
         "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
         "quantity": 2,
         "stock": 0,
-        "demand": 2
+        "demand": 0
       },
       {
         "code": "01.01.02.0000063054",
@@ -275512,6 +276576,7 @@
     "MADEIRA",
     "MAQUINA",
     "MAQUINA/ EQUIPAMENTO",
+    "MONTAGEM CESTO",
     "PEÇA",
     "PINTURA",
     "PLASTICO",
