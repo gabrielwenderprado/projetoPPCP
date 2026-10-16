@@ -1,13 +1,13 @@
 {
   "sourceFile": "Cópia de EXPLOSAO_15.10.xlsm",
   "sourceSheet": "Programacao",
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-10-16",
   "columns": "AA:AF",
   "models": [
     {
       "name": "guindaste 45",
       "column": 27,
-      "total": 1557.3766,
+      "total": 1724.3766,
       "days": [
         {
           "row": 18,
@@ -1644,13 +1644,105 @@
         {
           "row": 5861,
           "quantity": 1
+        },
+        {
+          "row": 5876,
+          "quantity": 1
+        },
+        {
+          "row": 5883,
+          "quantity": 2
+        },
+        {
+          "row": 5884,
+          "quantity": 2
+        },
+        {
+          "row": 5887,
+          "quantity": 4
+        },
+        {
+          "row": 5891,
+          "quantity": 12
+        },
+        {
+          "row": 5900,
+          "quantity": 2
+        },
+        {
+          "row": 5901,
+          "quantity": 6
+        },
+        {
+          "row": 5904,
+          "quantity": 4
+        },
+        {
+          "row": 5905,
+          "quantity": 20
+        },
+        {
+          "row": 5911,
+          "quantity": 1
+        },
+        {
+          "row": 5928,
+          "quantity": 20
+        },
+        {
+          "row": 5931,
+          "quantity": 20
+        },
+        {
+          "row": 5932,
+          "quantity": 8
+        },
+        {
+          "row": 5934,
+          "quantity": 20
+        },
+        {
+          "row": 5941,
+          "quantity": 8
+        },
+        {
+          "row": 5969,
+          "quantity": 2
+        },
+        {
+          "row": 5970,
+          "quantity": 2
+        },
+        {
+          "row": 5973,
+          "quantity": 2
+        },
+        {
+          "row": 5974,
+          "quantity": 2
+        },
+        {
+          "row": 5978,
+          "quantity": 4
+        },
+        {
+          "row": 5999,
+          "quantity": 1
+        },
+        {
+          "row": 6006,
+          "quantity": 8
+        },
+        {
+          "row": 6032,
+          "quantity": 16
         }
       ]
     },
     {
       "name": "10L",
       "column": 28,
-      "total": 1173.412,
+      "total": 1543.702,
       "days": [
         {
           "row": 10,
@@ -2843,13 +2935,361 @@
         {
           "row": 5872,
           "quantity": 1
+        },
+        {
+          "row": 5876,
+          "quantity": 1
+        },
+        {
+          "row": 5877,
+          "quantity": 1
+        },
+        {
+          "row": 5878,
+          "quantity": 1
+        },
+        {
+          "row": 5879,
+          "quantity": 2
+        },
+        {
+          "row": 5880,
+          "quantity": 1
+        },
+        {
+          "row": 5881,
+          "quantity": 1
+        },
+        {
+          "row": 5882,
+          "quantity": 2
+        },
+        {
+          "row": 5883,
+          "quantity": 2
+        },
+        {
+          "row": 5884,
+          "quantity": 4
+        },
+        {
+          "row": 5885,
+          "quantity": 5
+        },
+        {
+          "row": 5886,
+          "quantity": 2
+        },
+        {
+          "row": 5887,
+          "quantity": 2
+        },
+        {
+          "row": 5888,
+          "quantity": 2
+        },
+        {
+          "row": 5890,
+          "quantity": 2
+        },
+        {
+          "row": 5891,
+          "quantity": 2
+        },
+        {
+          "row": 5898,
+          "quantity": 1
+        },
+        {
+          "row": 5899,
+          "quantity": 11
+        },
+        {
+          "row": 5900,
+          "quantity": 8
+        },
+        {
+          "row": 5901,
+          "quantity": 4
+        },
+        {
+          "row": 5902,
+          "quantity": 4
+        },
+        {
+          "row": 5903,
+          "quantity": 8
+        },
+        {
+          "row": 5904,
+          "quantity": 14
+        },
+        {
+          "row": 5905,
+          "quantity": 41
+        },
+        {
+          "row": 5906,
+          "quantity": 6
+        },
+        {
+          "row": 5909,
+          "quantity": 1
+        },
+        {
+          "row": 5910,
+          "quantity": 1
+        },
+        {
+          "row": 5911,
+          "quantity": 1
+        },
+        {
+          "row": 5912,
+          "quantity": 1
+        },
+        {
+          "row": 5913,
+          "quantity": 1
+        },
+        {
+          "row": 5914,
+          "quantity": 6
+        },
+        {
+          "row": 5916,
+          "quantity": 6
+        },
+        {
+          "row": 5917,
+          "quantity": 1
+        },
+        {
+          "row": 5918,
+          "quantity": 1
+        },
+        {
+          "row": 5919,
+          "quantity": 2
+        },
+        {
+          "row": 5921,
+          "quantity": 1
+        },
+        {
+          "row": 5923,
+          "quantity": 1
+        },
+        {
+          "row": 5924,
+          "quantity": 3
+        },
+        {
+          "row": 5925,
+          "quantity": 4
+        },
+        {
+          "row": 5926,
+          "quantity": 2
+        },
+        {
+          "row": 5927,
+          "quantity": 10
+        },
+        {
+          "row": 5928,
+          "quantity": 6
+        },
+        {
+          "row": 5929,
+          "quantity": 4
+        },
+        {
+          "row": 5930,
+          "quantity": 2
+        },
+        {
+          "row": 5931,
+          "quantity": 1
+        },
+        {
+          "row": 5932,
+          "quantity": 2
+        },
+        {
+          "row": 5933,
+          "quantity": 4
+        },
+        {
+          "row": 5934,
+          "quantity": 16
+        },
+        {
+          "row": 5935,
+          "quantity": 4
+        },
+        {
+          "row": 5936,
+          "quantity": 4
+        },
+        {
+          "row": 5937,
+          "quantity": 2
+        },
+        {
+          "row": 5938,
+          "quantity": 4
+        },
+        {
+          "row": 5939,
+          "quantity": 1
+        },
+        {
+          "row": 5941,
+          "quantity": 2
+        },
+        {
+          "row": 5942,
+          "quantity": 2
+        },
+        {
+          "row": 5943,
+          "quantity": 4
+        },
+        {
+          "row": 5946,
+          "quantity": 60
+        },
+        {
+          "row": 5947,
+          "quantity": 3
+        },
+        {
+          "row": 5956,
+          "quantity": 1
+        },
+        {
+          "row": 5957,
+          "quantity": 4
+        },
+        {
+          "row": 5968,
+          "quantity": 3
+        },
+        {
+          "row": 5969,
+          "quantity": 1
+        },
+        {
+          "row": 5970,
+          "quantity": 1
+        },
+        {
+          "row": 5973,
+          "quantity": 1
+        },
+        {
+          "row": 5974,
+          "quantity": 1
+        },
+        {
+          "row": 5975,
+          "quantity": 2
+        },
+        {
+          "row": 5976,
+          "quantity": 4
+        },
+        {
+          "row": 5977,
+          "quantity": 2
+        },
+        {
+          "row": 5995,
+          "quantity": 2
+        },
+        {
+          "row": 5996,
+          "quantity": 2
+        },
+        {
+          "row": 5997,
+          "quantity": 1
+        },
+        {
+          "row": 5999,
+          "quantity": 1
+        },
+        {
+          "row": 6000,
+          "quantity": 1
+        },
+        {
+          "row": 6001,
+          "quantity": 1
+        },
+        {
+          "row": 6002,
+          "quantity": 2
+        },
+        {
+          "row": 6003,
+          "quantity": 4
+        },
+        {
+          "row": 6004,
+          "quantity": 1
+        },
+        {
+          "row": 6005,
+          "quantity": 8
+        },
+        {
+          "row": 6006,
+          "quantity": 6
+        },
+        {
+          "row": 6007,
+          "quantity": 1
+        },
+        {
+          "row": 6009,
+          "quantity": 12
+        },
+        {
+          "row": 6017,
+          "quantity": 0.29
+        },
+        {
+          "row": 6019,
+          "quantity": 1
+        },
+        {
+          "row": 6020,
+          "quantity": 1
+        },
+        {
+          "row": 6028,
+          "quantity": 2
+        },
+        {
+          "row": 6032,
+          "quantity": 12
+        },
+        {
+          "row": 6035,
+          "quantity": 1
+        },
+        {
+          "row": 6129,
+          "quantity": 1
         }
       ]
     },
     {
       "name": "30T",
       "column": 29,
-      "total": 679.8653,
+      "total": 773.8653,
       "days": [
         {
           "row": 24,
@@ -3958,13 +4398,81 @@
         {
           "row": 5861,
           "quantity": 1
+        },
+        {
+          "row": 5883,
+          "quantity": 16
+        },
+        {
+          "row": 5884,
+          "quantity": 6
+        },
+        {
+          "row": 5891,
+          "quantity": 12
+        },
+        {
+          "row": 5901,
+          "quantity": 2
+        },
+        {
+          "row": 5904,
+          "quantity": 12
+        },
+        {
+          "row": 5905,
+          "quantity": 16
+        },
+        {
+          "row": 5911,
+          "quantity": 1
+        },
+        {
+          "row": 5928,
+          "quantity": 4
+        },
+        {
+          "row": 5934,
+          "quantity": 8
+        },
+        {
+          "row": 5969,
+          "quantity": 1
+        },
+        {
+          "row": 5970,
+          "quantity": 1
+        },
+        {
+          "row": 5973,
+          "quantity": 1
+        },
+        {
+          "row": 5974,
+          "quantity": 1
+        },
+        {
+          "row": 5977,
+          "quantity": 2
+        },
+        {
+          "row": 5978,
+          "quantity": 4
+        },
+        {
+          "row": 5999,
+          "quantity": 1
+        },
+        {
+          "row": 6032,
+          "quantity": 6
         }
       ]
     },
     {
       "name": "guindaste 12",
       "column": 32,
-      "total": 806.2168,
+      "total": 925.2168,
       "days": [
         {
           "row": 18,
@@ -5165,6 +5673,82 @@
         {
           "row": 5861,
           "quantity": 1
+        },
+        {
+          "row": 5876,
+          "quantity": 1
+        },
+        {
+          "row": 5883,
+          "quantity": 8
+        },
+        {
+          "row": 5884,
+          "quantity": 6
+        },
+        {
+          "row": 5891,
+          "quantity": 10
+        },
+        {
+          "row": 5901,
+          "quantity": 6
+        },
+        {
+          "row": 5904,
+          "quantity": 4
+        },
+        {
+          "row": 5905,
+          "quantity": 12
+        },
+        {
+          "row": 5911,
+          "quantity": 1
+        },
+        {
+          "row": 5928,
+          "quantity": 4
+        },
+        {
+          "row": 5933,
+          "quantity": 12
+        },
+        {
+          "row": 5934,
+          "quantity": 6
+        },
+        {
+          "row": 5941,
+          "quantity": 4
+        },
+        {
+          "row": 5969,
+          "quantity": 1
+        },
+        {
+          "row": 5970,
+          "quantity": 1
+        },
+        {
+          "row": 5973,
+          "quantity": 1
+        },
+        {
+          "row": 5974,
+          "quantity": 1
+        },
+        {
+          "row": 5978,
+          "quantity": 4
+        },
+        {
+          "row": 5999,
+          "quantity": 1
+        },
+        {
+          "row": 6032,
+          "quantity": 36
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO_15.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-10-16",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -365,7 +365,7 @@
       "code": "02.02.01.0000085281",
       "description": "PINO ENGRENAGEM APOIO - AS",
       "unit": "UN",
-      "stock": 44,
+      "stock": 40,
       "modelNeeds": {
         "18LDDI": 14,
         "15LDDI": 2,
@@ -2705,7 +2705,7 @@
       "code": "02.02.01.0000080813",
       "description": "PINO BASCULAMENTO - AS",
       "unit": "UN",
-      "stock": 115,
+      "stock": 113,
       "modelNeeds": {
         "18LDDI": 1,
         "13LDDI": 1,
@@ -3407,7 +3407,7 @@
       "code": "01.02.07.0000000014",
       "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
       "unit": "UN",
-      "stock": 1220,
+      "stock": 1218,
       "modelNeeds": {
         "18LDDI": 1,
         "13LDI": 1,
@@ -3992,7 +3992,7 @@
       "code": "02.02.01.0000082263",
       "description": "PINO FIXAÇAO CILINDROS - AS",
       "unit": "UN",
-      "stock": 56,
+      "stock": 54,
       "modelNeeds": {
         "18LDDI": 2,
         "15LDDI": 0,
@@ -4694,7 +4694,7 @@
       "code": "02.03.01.0000071336",
       "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
       "unit": "UN",
-      "stock": 15,
+      "stock": 14,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4811,7 +4811,7 @@
       "code": "02.03.01.0000080793",
       "description": "PINO FIXAÇÃO CESTO",
       "unit": "UN",
-      "stock": 27,
+      "stock": 25,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -6449,7 +6449,7 @@
       "code": "02.02.01.0000082265",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 11,
+      "stock": 9,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -6566,7 +6566,7 @@
       "code": "02.02.01.0000082267",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 33,
+      "stock": 31,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 301,
+      "stock": 299,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,

@@ -1,6 +1,6 @@
 {
   "sourceFile": "Cópia de EXPLOSAO_15.10.xlsm",
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-10-16",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -91,7 +91,7 @@
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-          "nextStock": 531,
+          "nextStock": 1131,
           "quantityPerMachine": 8,
           "calferStock": -96,
           "row": 15
@@ -115,7 +115,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 5500,
+          "nextStock": 15500,
           "quantityPerMachine": 13,
           "calferStock": -156,
           "row": 18
@@ -209,7 +209,7 @@
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
-          "nextStock": 3331,
+          "nextStock": 3319,
           "quantityPerMachine": 6,
           "calferStock": 0,
           "row": 32
@@ -241,7 +241,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "nextStock": 5500,
+          "nextStock": 15500,
           "quantityPerMachine": 5,
           "calferStock": 0,
           "row": 36
@@ -361,7 +361,7 @@
         {
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
-          "nextStock": 1694,
+          "nextStock": 1686,
           "quantityPerMachine": 1,
           "calferStock": 0,
           "row": 51
@@ -407,7 +407,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 5500,
+          "nextStock": 15500,
           "quantityPerMachine": 5,
           "calferStock": 0,
           "row": 59
@@ -439,7 +439,7 @@
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
-          "nextStock": 3331,
+          "nextStock": 3319,
           "quantityPerMachine": 6,
           "calferStock": 0,
           "row": 63
@@ -495,7 +495,7 @@
         {
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE LISA 25,4 X 28 X 12,7",
-          "nextStock": 1694,
+          "nextStock": 1686,
           "quantityPerMachine": 1,
           "calferStock": 0,
           "row": 70
@@ -633,7 +633,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 531,
+      "nextStock": 1131,
       "calferStock": -96
     },
     {
@@ -662,7 +662,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 5500,
+      "nextStock": 15500,
       "calferStock": 0
     },
     {
@@ -754,7 +754,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 3331,
+      "nextStock": 3319,
       "calferStock": 0
     },
     {
@@ -927,7 +927,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 1694,
+      "nextStock": 1686,
       "calferStock": 0
     },
     {
