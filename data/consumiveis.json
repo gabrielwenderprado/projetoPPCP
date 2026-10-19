@@ -1,6 +1,6 @@
 {
-  "sourceFile": "consumiveis Pronta 15.10.xlsx",
-  "generatedAt": "2026-10-15",
+  "sourceFile": "consumiveis Pronta 19.10.xlsx",
+  "generatedAt": "2026-10-19",
   "sheet": "consumiveis",
   "columns": {
     "code": "A",
@@ -30,16 +30,16 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 10/2026": 30,
+        "PED 11/2026": 60,
+        "PED 12/2026": 30
       },
-      "orderTotal": 0,
+      "orderTotal": 120,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -53,7 +53,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -76,16 +76,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-11-09T00:00:00",
+      "nextPurchaseDate": "2026-11-13T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 20,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 30,
+        "PED 12/2026": 30
       },
-      "orderTotal": 20,
+      "orderTotal": 80,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -99,7 +99,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -122,7 +122,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -145,39 +145,39 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 200,
+        "PED 12/2026": 200
       },
-      "orderTotal": 0,
+      "orderTotal": 400,
       "buyStatus": "",
       "averageCost": 0
     },
     {
       "code": "04.02.01.0000000098",
       "description": "ARAME SOLDA MIG - Ø1MM - (AWS A5.18 ER70S 6)",
-      "stock": 1005,
-      "purchaseQty": 1745,
+      "stock": 2310,
+      "purchaseQty": 440,
       "minStock": 1250,
       "maxStock": 2500,
-      "stockStatus": "Comprar",
+      "stockStatus": "OK",
       "maxStatus": "Ok",
-      "purchaseDate": "2026-08-21T00:00:00",
-      "nextPurchaseDate": "2026-08-28T00:00:00",
-      "reviewStatus": "REVISAR HOJE",
+      "purchaseDate": "Não comprar",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
+      "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
-        "PED 09/2026": 1296,
+        "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 2610,
-        "PED 12/2026": 2610
+        "PED 11/2026": 1305,
+        "PED 12/2026": 1305
       },
-      "orderTotal": 6516,
+      "orderTotal": 2610,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -191,7 +191,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -214,16 +214,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 10/2026": 3,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 3,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -237,16 +237,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 21,
-        "PED 10/2026": 0,
+        "PED 10/2026": 20,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 21,
+      "orderTotal": 41,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -265,11 +265,11 @@
       "orders": {
         "PED 08/2026": 11,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 10/2026": 20,
+        "PED 11/2026": 20,
+        "PED 12/2026": 20
       },
-      "orderTotal": 11,
+      "orderTotal": 71,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -283,30 +283,30 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 11,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 40,
+        "PED 12/2026": 40
       },
-      "orderTotal": 11,
+      "orderTotal": 91,
       "buyStatus": "",
       "averageCost": 0
     },
     {
       "code": "05.02.13.0000000270",
       "description": "BICO DE CONTATO - BITOLA DE ARAME:1.0MM ROSCA: M8 X COMPRIMENTO: 30MM - (REF. BOXER 703096)",
-      "stock": 70,
-      "purchaseQty": -24.166667,
+      "stock": 60,
+      "purchaseQty": -14.166667,
       "minStock": 20.833333,
       "maxStock": 41.666667,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 1,
@@ -329,7 +329,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 5,
@@ -352,16 +352,16 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 10/2026": 40,
+        "PED 11/2026": 80,
+        "PED 12/2026": 40
       },
-      "orderTotal": 0,
+      "orderTotal": 160,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -375,7 +375,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -398,7 +398,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -421,7 +421,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -444,7 +444,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -467,7 +467,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -490,16 +490,16 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 60,
-        "PED 12/2026": 60
+        "PED 11/2026": 120,
+        "PED 12/2026": 120
       },
-      "orderTotal": 120,
+      "orderTotal": 240,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -513,7 +513,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -536,16 +536,16 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 10/2026": 25,
         "PED 11/2026": 50,
         "PED 12/2026": 25
       },
-      "orderTotal": 75,
+      "orderTotal": 100,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -559,16 +559,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 94,
+        "PED 12/2026": 47
       },
-      "orderTotal": 0,
+      "orderTotal": 141,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -582,16 +582,16 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 10,
+        "PED 12/2026": 10
       },
-      "orderTotal": 0,
+      "orderTotal": 20,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -605,7 +605,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -628,7 +628,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -651,7 +651,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 1,
@@ -674,7 +674,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -697,7 +697,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -720,7 +720,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -743,7 +743,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 1,
@@ -766,7 +766,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -794,11 +794,11 @@
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 5,
-        "PED 10/2026": 10,
+        "PED 10/2026": 30,
         "PED 11/2026": 10,
         "PED 12/2026": 5
       },
-      "orderTotal": 30,
+      "orderTotal": 50,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -841,10 +841,10 @@
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 20,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 30,
+        "PED 12/2026": 10
       },
-      "orderTotal": 20,
+      "orderTotal": 60,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -858,16 +858,16 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 80,
+        "PED 12/2026": 40
       },
-      "orderTotal": 0,
+      "orderTotal": 120,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -881,16 +881,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 10/2026": 10,
+        "PED 11/2026": 20,
+        "PED 12/2026": 10
       },
-      "orderTotal": 0,
+      "orderTotal": 40,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -904,7 +904,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -927,7 +927,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -950,7 +950,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -973,7 +973,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -996,7 +996,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1019,7 +1019,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1035,37 +1035,37 @@
     {
       "code": "04.01.07.0000000020",
       "description": "BROCA AÇO RAPIDO 5MM",
-      "stock": 151,
-      "purchaseQty": -96,
+      "stock": 101,
+      "purchaseQty": -46,
       "minStock": 30,
       "maxStock": 60,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 70,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 140,
+        "PED 12/2026": 70
       },
-      "orderTotal": 70,
+      "orderTotal": 280,
       "buyStatus": "",
       "averageCost": 0
     },
     {
       "code": "04.01.07.0000000019",
       "description": "BROCA AÇO RAPIDO 6MM",
-      "stock": 238,
-      "purchaseQty": 339.75,
+      "stock": 221,
+      "purchaseQty": 356.75,
       "minStock": 60,
       "maxStock": 120,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1104,14 +1104,14 @@
     {
       "code": "04.01.07.0000000003",
       "description": "BROCA AÇO RAPIDO 8MM",
-      "stock": 131,
-      "purchaseQty": -76,
+      "stock": 128,
+      "purchaseQty": -73,
       "minStock": 15,
       "maxStock": 30,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1134,7 +1134,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1157,7 +1157,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1180,7 +1180,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1196,14 +1196,14 @@
     {
       "code": "01.11.01.0000000053",
       "description": "CABO FLEXIVEL 1 X 1,5MM² - VERDE",
-      "stock": 11100,
-      "purchaseQty": -6400,
+      "stock": 10600,
+      "purchaseQty": -5900,
       "minStock": 2100,
       "maxStock": 4200,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1226,7 +1226,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1249,7 +1249,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1272,7 +1272,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1295,7 +1295,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1318,7 +1318,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1341,7 +1341,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1364,7 +1364,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1387,7 +1387,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1410,7 +1410,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1456,7 +1456,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1479,7 +1479,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1502,7 +1502,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1525,7 +1525,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1541,8 +1541,8 @@
     {
       "code": "01.11.01.0000000056",
       "description": "CABO FLEXIVEL 1 X 6MM² - VERMELHO",
-      "stock": 500,
-      "purchaseQty": 600,
+      "stock": 300,
+      "purchaseQty": 800,
       "minStock": 500,
       "maxStock": 1000,
       "stockStatus": "Comprar",
@@ -1564,38 +1564,38 @@
     {
       "code": "01.11.01.0000000027",
       "description": "CABO FLEXIVEL 750V 50MM² - PRETO",
-      "stock": 3250,
-      "purchaseQty": -1233.333333,
+      "stock": 0,
+      "purchaseQty": 2016.666667,
       "minStock": 916.666667,
       "maxStock": 1833.333333,
-      "stockStatus": "OK",
-      "maxStatus": "acima do maximo 🚨",
-      "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
-      "reviewStatus": "Não comprar",
+      "stockStatus": "Comprar",
+      "maxStatus": "Ok",
+      "purchaseDate": "2026-08-21T00:00:00",
+      "nextPurchaseDate": "2026-08-28T00:00:00",
+      "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 10/2026": 300,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 300,
       "buyStatus": "",
       "averageCost": 0
     },
     {
       "code": "01.11.01.0000000036",
       "description": "CABO FLEXIVEL PP 2 X 1MM²",
-      "stock": 1015,
-      "purchaseQty": 2650,
+      "stock": 965,
+      "purchaseQty": 2700,
       "minStock": 1000,
       "maxStock": 2000,
-      "stockStatus": "OK",
+      "stockStatus": "Comprar",
       "maxStatus": "Ok",
-      "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
-      "reviewStatus": "Não comprar",
+      "purchaseDate": "2026-08-21T00:00:00",
+      "nextPurchaseDate": "2026-08-28T00:00:00",
+      "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
@@ -1640,7 +1640,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1663,7 +1663,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1679,15 +1679,15 @@
     {
       "code": "04.02.11.0000000007",
       "description": "DETERGENTE PINHO PARA ASSOALHO ALUMINIO GALAO 5L - GPR",
-      "stock": 6,
-      "purchaseQty": 18.666667,
+      "stock": 4,
+      "purchaseQty": 20.666667,
       "minStock": 5,
       "maxStock": 10,
-      "stockStatus": "OK",
+      "stockStatus": "Comprar",
       "maxStatus": "Ok",
-      "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
-      "reviewStatus": "Não comprar",
+      "purchaseDate": "2026-08-21T00:00:00",
+      "nextPurchaseDate": "2026-08-28T00:00:00",
+      "reviewStatus": "REVISAR HOJE",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
@@ -1709,7 +1709,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1732,7 +1732,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1755,7 +1755,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1771,8 +1771,8 @@
     {
       "code": "04.02.04.0000000100",
       "description": "DIFUSOR DE GAS BX36 - MATERIAL: CERAMICO COMPRIMENTO: 32,4 - (REF. BOXER 703097)",
-      "stock": 19,
-      "purchaseQty": 25.916667,
+      "stock": 14,
+      "purchaseQty": 30.916667,
       "minStock": 20.416667,
       "maxStock": 40.833333,
       "stockStatus": "Comprar",
@@ -1801,7 +1801,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1829,11 +1829,11 @@
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 8,
-        "PED 10/2026": 0,
+        "PED 10/2026": 20,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 8,
+      "orderTotal": 28,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1847,7 +1847,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1863,14 +1863,14 @@
     {
       "code": "04.02.03.0000000002",
       "description": "DISCO DE CORTE DE FERRO / INOX 4.1/2\" X 1,0 MM X 7/8\"",
-      "stock": 4755,
-      "purchaseQty": 4271.166667,
+      "stock": 4555,
+      "purchaseQty": 4471.166667,
       "minStock": 1300,
       "maxStock": 2600,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1899,10 +1899,10 @@
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 800,
+        "PED 12/2026": 400
       },
-      "orderTotal": 0,
+      "orderTotal": 1200,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -1916,7 +1916,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1939,7 +1939,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1962,7 +1962,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -1985,7 +1985,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2008,7 +2008,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2054,7 +2054,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2077,7 +2077,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2100,7 +2100,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2123,7 +2123,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2174,11 +2174,11 @@
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 41,
-        "PED 10/2026": 0,
+        "PED 10/2026": 20,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 41,
+      "orderTotal": 61,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2192,7 +2192,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2220,11 +2220,11 @@
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 5,
-        "PED 10/2026": 0,
+        "PED 10/2026": 20,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 5,
+      "orderTotal": 25,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2238,7 +2238,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2261,7 +2261,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2307,7 +2307,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2330,7 +2330,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2353,7 +2353,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2376,7 +2376,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2392,14 +2392,14 @@
     {
       "code": "01.09.03.0000000040",
       "description": "ETIQUETA VINIL COM ADESIVO DE Ø4,2CM - \"QUALIDADE SETORES\" PINTURA - VERMELHO",
-      "stock": 462,
-      "purchaseQty": -292,
+      "stock": 300,
+      "purchaseQty": -130,
       "minStock": 150,
       "maxStock": 300,
       "stockStatus": "OK",
-      "maxStatus": "acima do maximo 🚨",
+      "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2415,14 +2415,14 @@
     {
       "code": "04.02.01.0000000101",
       "description": "FILME STRECH 5040 500 X 0.25MM BOBINA DE 4KG",
-      "stock": 61,
-      "purchaseQty": 14,
+      "stock": 55,
+      "purchaseQty": 20,
       "minStock": 25,
       "maxStock": 50,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2461,37 +2461,37 @@
     {
       "code": "04.04.04.0000000027",
       "description": "FITA CREPE 24MMX 50M",
-      "stock": 156,
-      "purchaseQty": 64,
+      "stock": 300,
+      "purchaseQty": -80,
       "minStock": 100,
       "maxStock": 200,
       "stockStatus": "OK",
-      "maxStatus": "Ok",
+      "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 160,
+        "PED 10/2026": 80,
         "PED 11/2026": 160,
         "PED 12/2026": 80
       },
-      "orderTotal": 400,
+      "orderTotal": 320,
       "buyStatus": "",
       "averageCost": 0
     },
     {
       "code": "04.04.04.0000000026",
       "description": "FITA CREPE 48MMX 50M",
-      "stock": 528,
-      "purchaseQty": -253,
+      "stock": 508,
+      "purchaseQty": -233,
       "minStock": 125,
       "maxStock": 250,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2514,7 +2514,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 7,
@@ -2537,7 +2537,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2560,16 +2560,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 1100,
-        "PED 12/2026": 1100
+        "PED 11/2026": 0,
+        "PED 12/2026": 0
       },
-      "orderTotal": 2200,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2583,7 +2583,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2606,7 +2606,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2629,7 +2629,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2675,7 +2675,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 800,
@@ -2698,7 +2698,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 20,
@@ -2727,10 +2727,10 @@
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 20,
+        "PED 12/2026": 20
       },
-      "orderTotal": 0,
+      "orderTotal": 40,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -2744,7 +2744,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2767,7 +2767,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2813,7 +2813,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2836,7 +2836,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2882,7 +2882,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2898,15 +2898,15 @@
     {
       "code": "04.04.03.0000000034",
       "description": "PANO DE LIMPEZA WIPER WYPALL X 50 ROLO JUMBO 1 X 1000",
-      "stock": 18,
-      "purchaseQty": 52,
+      "stock": 32,
+      "purchaseQty": 38,
       "minStock": 20,
       "maxStock": 40,
-      "stockStatus": "Comprar",
+      "stockStatus": "OK",
       "maxStatus": "Ok",
-      "purchaseDate": "2026-08-21T00:00:00",
-      "nextPurchaseDate": "2026-08-28T00:00:00",
-      "reviewStatus": "REVISAR HOJE",
+      "purchaseDate": "Não comprar",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
+      "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 25,
         "PED 09/2026": 0,
@@ -2928,7 +2928,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2951,7 +2951,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -2974,7 +2974,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3020,7 +3020,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3043,7 +3043,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3066,7 +3066,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3089,7 +3089,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3112,16 +3112,16 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 10/2026": 40,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 40,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3135,7 +3135,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3158,7 +3158,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3181,7 +3181,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3204,7 +3204,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3227,7 +3227,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3250,7 +3250,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3312,14 +3312,14 @@
     {
       "code": "01.11.11.0000000012",
       "description": "PORTA FUSÍVEL LÂMINA UNIVERSAL 1,5 MM (ETE-7198).",
-      "stock": 610,
-      "purchaseQty": -60,
+      "stock": 510,
+      "purchaseQty": 40,
       "minStock": 250,
       "maxStock": 500,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3342,7 +3342,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3365,7 +3365,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3388,7 +3388,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3411,7 +3411,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3427,23 +3427,23 @@
     {
       "code": "04.02.07.0000000006",
       "description": "ROLO DE VELUDO 15CM",
-      "stock": 3,
-      "purchaseQty": 50.166667,
+      "stock": 60,
+      "purchaseQty": -6.833333,
       "minStock": 24.166667,
       "maxStock": 48.333333,
-      "stockStatus": "Comprar",
-      "maxStatus": "Ok",
-      "purchaseDate": "2026-08-21T00:00:00",
-      "nextPurchaseDate": "2026-08-28T00:00:00",
-      "reviewStatus": "REVISAR HOJE",
+      "stockStatus": "OK",
+      "maxStatus": "acima do maximo 🚨",
+      "purchaseDate": "Não comprar",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
+      "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 20,
-        "PED 11/2026": 40,
-        "PED 12/2026": 20
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0
       },
-      "orderTotal": 80,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3463,33 +3463,33 @@
         "PED 08/2026": 0,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0
+        "PED 11/2026": 40,
+        "PED 12/2026": 20
       },
-      "orderTotal": 0,
+      "orderTotal": 60,
       "buyStatus": "",
       "averageCost": 0
     },
     {
       "code": "04.02.07.0000000007",
       "description": "ROLO PELE CARNEIRO 09CM NEWART",
-      "stock": 5,
-      "purchaseQty": 20.208333,
+      "stock": 65,
+      "purchaseQty": -39.791667,
       "minStock": 11.458333,
       "maxStock": 22.916667,
-      "stockStatus": "Comprar",
-      "maxStatus": "Ok",
-      "purchaseDate": "2026-08-21T00:00:00",
-      "nextPurchaseDate": "2026-08-28T00:00:00",
-      "reviewStatus": "REVISAR HOJE",
+      "stockStatus": "OK",
+      "maxStatus": "acima do maximo 🚨",
+      "purchaseDate": "Não comprar",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
+      "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 20,
-        "PED 11/2026": 40,
-        "PED 12/2026": 20
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0
       },
-      "orderTotal": 80,
+      "orderTotal": 0,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -3503,7 +3503,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3526,7 +3526,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3549,7 +3549,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3572,7 +3572,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3595,7 +3595,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3618,7 +3618,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3641,7 +3641,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3664,7 +3664,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3687,7 +3687,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3710,7 +3710,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3733,7 +3733,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3756,7 +3756,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3779,7 +3779,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3802,7 +3802,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3841,14 +3841,14 @@
     {
       "code": "01.09.02.0000000010",
       "description": "ETIQUETA VINIL COM ADESIVO DE 10 X 25MM ESP. 0,10MM - TOMADA 12V",
-      "stock": 860,
-      "purchaseQty": -760,
+      "stock": 760,
+      "purchaseQty": -660,
       "minStock": 50,
       "maxStock": 300,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3871,7 +3871,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3894,7 +3894,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3917,7 +3917,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3933,14 +3933,14 @@
     {
       "code": "04.02.01.0000000107",
       "description": "ADESIVO PU 55 PARA-BRISAS SACHE 600ML",
-      "stock": 1349,
-      "purchaseQty": -899,
+      "stock": 1329,
+      "purchaseQty": -879,
       "minStock": 400,
       "maxStock": 800,
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 800,
@@ -3963,7 +3963,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -3991,11 +3991,11 @@
       "orders": {
         "PED 08/2026": 0,
         "PED 09/2026": 0,
-        "PED 10/2026": 0,
+        "PED 10/2026": 200,
         "PED 11/2026": 0,
         "PED 12/2026": 0
       },
-      "orderTotal": 0,
+      "orderTotal": 200,
       "buyStatus": "",
       "averageCost": 0
     },
@@ -4009,7 +4009,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -4032,7 +4032,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -4078,7 +4078,7 @@
       "stockStatus": "OK",
       "maxStatus": "Ok",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
@@ -4101,7 +4101,7 @@
       "stockStatus": "OK",
       "maxStatus": "acima do maximo 🚨",
       "purchaseDate": "Não comprar",
-      "nextPurchaseDate": "2026-10-22T00:00:00",
+      "nextPurchaseDate": "2026-10-26T00:00:00",
       "reviewStatus": "Não comprar",
       "orders": {
         "PED 08/2026": 0,
