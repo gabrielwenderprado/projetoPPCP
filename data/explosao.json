@@ -159716,17 +159716,17 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 10,
+        "DEM 10/2026": 2,
         "DEM 11/2026": 10,
-        "DEM 12/2026": 30,
+        "DEM 12/2026": 18,
         "DEM 01/2026": 30,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": -10,
+        "DEM 10/2026": -2,
         "DEM 11/2026": -10,
-        "DEM 12/2026": -10,
+        "DEM 12/2026": 2,
         "DEM 01/2026": -30
       },
       "obtention": [
@@ -181066,17 +181066,17 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 2,
+        "DEM 10/2026": 0,
         "DEM 11/2026": 0,
-        "DEM 12/2026": 3,
+        "DEM 12/2026": 0,
         "DEM 01/2026": 0,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": -2,
+        "DEM 10/2026": 0,
         "DEM 11/2026": 0,
-        "DEM 12/2026": 1,
+        "DEM 12/2026": 4,
         "DEM 01/2026": 0
       },
       "obtention": [
@@ -237460,13 +237460,6 @@
     ],
     "15LDDI": [
       {
-        "code": "03.06.01.0000000067",
-        "description": "CESTA AEREA SKYCITY 15,5 LDDI - BASCULAMENTO MANUAL COM FERRAMENTA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.01.02.0000073065",
         "description": "BOMBA MANUAL",
         "quantity": 1,
@@ -237597,13 +237590,6 @@
         "description": "ABRAÇADEIRA",
         "quantity": 1,
         "stock": 5,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086243",
-        "description": "TORRE BASE COM BASCULAMENTO HIDRAULICO - AS",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -238440,13 +238426,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.02.0000085320",
-        "description": "LANÇA INFERIOR SKYCITY 15 - AS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.06.01.0000080494",
         "description": "BORRACHA DE APOIO LANÇA ( BORRACHA 45°)",
         "quantity": 2,
@@ -238776,13 +238755,6 @@
         "demand": 200
       },
       {
-        "code": "01.01.01.0000000466",
-        "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.01.02.0000063054",
         "description": "VALVULA RETENÇAO EM LINHA 3/4 - 16 UNF",
         "quantity": 2,
@@ -238885,13 +238857,6 @@
         "description": "CORPO INTERNO ESTABILIZADOR - AS",
         "quantity": 4,
         "stock": 64,
-        "demand": 0
-      },
-      {
-        "code": "02.01.02.0000079055",
-        "description": "PROTEÇÃO DO TUBO EXTERNO DA SAPATA",
-        "quantity": 4,
-        "stock": 0,
         "demand": 0
       },
       {
