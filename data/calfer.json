@@ -31,7 +31,7 @@
           "description": "PINO DA ARTICULAÇAO DO CILINDRO COM BRAÇO SUPERIOR SKYRITZ 10L",
           "nextStock": 74,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 40,
           "row": 6
         },
         {
@@ -85,7 +85,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "nextStock": 2086,
           "quantityPerMachine": 16,
-          "calferStock": 96,
+          "calferStock": 800,
           "row": 14
         },
         {
@@ -93,7 +93,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
           "nextStock": 1127,
           "quantityPerMachine": 8,
-          "calferStock": 48,
+          "calferStock": 600,
           "row": 15
         },
         {
@@ -109,7 +109,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
           "nextStock": 3365,
           "quantityPerMachine": 13,
-          "calferStock": 522,
+          "calferStock": 800,
           "row": 17
         },
         {
@@ -125,7 +125,7 @@
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
           "nextStock": 483,
           "quantityPerMachine": 1,
-          "calferStock": 294,
+          "calferStock": 400,
           "row": 19
         },
         {
@@ -195,7 +195,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
           "nextStock": 2086,
           "quantityPerMachine": 10,
-          "calferStock": 0,
+          "calferStock": 800,
           "row": 29
         },
         {
@@ -203,7 +203,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
           "nextStock": 3319,
           "quantityPerMachine": 6,
-          "calferStock": 0,
+          "calferStock": 600,
           "row": 30
         },
         {
@@ -315,7 +315,7 @@
           "description": "ENGRENAGEM APOIO",
           "nextStock": 1576,
           "quantityPerMachine": 2,
-          "calferStock": 0,
+          "calferStock": 200,
           "row": 44
         },
         {
@@ -355,7 +355,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
           "nextStock": 1686,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 150,
           "row": 49
         }
       ]
@@ -385,7 +385,7 @@
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
           "nextStock": 3658,
           "quantityPerMachine": 3,
-          "calferStock": 0,
+          "calferStock": 100,
           "row": 54
         },
         {
@@ -417,7 +417,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 20MM CLASSE 10.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN",
           "nextStock": 3844,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 300,
           "row": 58
         },
         {
@@ -425,7 +425,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "nextStock": 2086,
           "quantityPerMachine": 10,
-          "calferStock": 0,
+          "calferStock": 800,
           "row": 59
         },
         {
@@ -433,7 +433,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
           "nextStock": 3319,
           "quantityPerMachine": 6,
-          "calferStock": 0,
+          "calferStock": 600,
           "row": 60
         },
         {
@@ -477,20 +477,12 @@
           "row": 65
         },
         {
-          "code": "02.03.03.0000083484",
-          "description": "ENGRENAGEM APOIO",
-          "nextStock": 1576,
-          "quantityPerMachine": 1,
-          "calferStock": 0,
-          "row": 66
-        },
-        {
           "code": "01.01.14.0000000052",
           "description": "BUCHA AUTOLUBRIFICANTE LISA 25,4 X 28 X 12,7",
           "nextStock": 1686,
           "quantityPerMachine": 1,
-          "calferStock": 0,
-          "row": 67
+          "calferStock": 150,
+          "row": 66
         },
         {
           "code": "01.02.02.0000000004",
@@ -498,7 +490,7 @@
           "nextStock": 7156,
           "quantityPerMachine": 24,
           "calferStock": 0,
-          "row": 68
+          "row": 67
         },
         {
           "code": "02.02.01.0000088251",
@@ -506,7 +498,7 @@
           "nextStock": 2,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 69
+          "row": 68
         },
         {
           "code": "02.02.01.0000088247",
@@ -514,7 +506,7 @@
           "nextStock": 1,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 70
+          "row": 69
         },
         {
           "code": "01.01.10.0000000014",
@@ -522,7 +514,7 @@
           "nextStock": 0,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 71
+          "row": 70
         },
         {
           "code": "02.01.03.0000085379",
@@ -530,7 +522,7 @@
           "nextStock": 0,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 72
+          "row": 71
         }
       ]
     }
@@ -561,7 +553,7 @@
         "10L"
       ],
       "nextStock": 74,
-      "calferStock": 0
+      "calferStock": 40
     },
     {
       "code": "02.03.01.0000069418",
@@ -617,7 +609,7 @@
         "10HDOC"
       ],
       "nextStock": 2086,
-      "calferStock": 0
+      "calferStock": 800
     },
     {
       "code": "01.01.14.0000000046",
@@ -626,7 +618,7 @@
         "10S"
       ],
       "nextStock": 1127,
-      "calferStock": 48
+      "calferStock": 600
     },
     {
       "code": "02.03.01.0000069578",
@@ -644,7 +636,7 @@
         "10S"
       ],
       "nextStock": 3365,
-      "calferStock": 522
+      "calferStock": 800
     },
     {
       "code": "01.02.02.0000000010",
@@ -664,7 +656,7 @@
         "10S"
       ],
       "nextStock": 483,
-      "calferStock": 294
+      "calferStock": 400
     },
     {
       "code": "01.02.02.0000000027",
@@ -674,7 +666,7 @@
         "10HDOC"
       ],
       "nextStock": 3658,
-      "calferStock": 0
+      "calferStock": 100
     },
     {
       "code": "02.03.01.0000085012",
@@ -738,7 +730,7 @@
         "10HDOC"
       ],
       "nextStock": 3319,
-      "calferStock": 0
+      "calferStock": 600
     },
     {
       "code": "02.02.01.0000083441",
@@ -858,11 +850,10 @@
       "code": "02.03.03.0000083484",
       "description": "ENGRENAGEM APOIO",
       "models": [
-        "13LDI",
-        "10HDOC"
+        "13LDI"
       ],
       "nextStock": 1576,
-      "calferStock": 0
+      "calferStock": 200
     },
     {
       "code": "01.02.01.0000000199",
@@ -872,7 +863,7 @@
         "10HDOC"
       ],
       "nextStock": 3844,
-      "calferStock": 0
+      "calferStock": 300
     },
     {
       "code": "02.02.01.0000086369",
@@ -911,7 +902,7 @@
         "10HDOC"
       ],
       "nextStock": 1686,
-      "calferStock": 0
+      "calferStock": 150
     },
     {
       "code": "01.02.03.0000000042",
@@ -969,8 +960,8 @@
     }
   ],
   "meta": {
-    "nextRows": 63,
-    "calferRows": 63,
+    "nextRows": 62,
+    "calferRows": 62,
     "singleSheet": true
   }
 }
