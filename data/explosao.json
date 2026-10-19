@@ -44362,16 +44362,16 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
+        "DEM 10/2026": 180,
+        "DEM 11/2026": 200,
+        "DEM 12/2026": 20,
         "DEM 01/2026": 0,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 1000,
+        "DEM 10/2026": -180,
+        "DEM 11/2026": 800,
         "DEM 12/2026": 0,
         "DEM 01/2026": 0
       },
@@ -232463,6 +232463,13 @@
         "quantity": 1,
         "stock": 0,
         "demand": 0
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "13ldi-46kv": [
@@ -234001,6 +234008,14 @@
         "stock": 0,
         "demand": 0,
         "_shifted_quantity": "1"
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "GUARNIÇAO DA PORTA (TRIBULBO) SEM ABA",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0,
+        "_shifted_quantity": "20"
       }
     ],
     "13-69kv": [
@@ -235401,6 +235416,13 @@
         "code": "01.01.05.0000000009",
         "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
         "stock": 0,
         "demand": 0
       }
@@ -237456,6 +237478,13 @@
         "quantity": 0.1012,
         "stock": 334,
         "demand": 0
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "15LDDI": [
@@ -238984,6 +239013,13 @@
         "quantity": 20,
         "stock": 0,
         "demand": 200
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "18lddi": [
@@ -240650,6 +240686,13 @@
         "code": "01.01.05.0000000009",
         "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
         "stock": 0,
         "demand": 0
       }
@@ -264371,6 +264414,13 @@
         "quantity": 1,
         "stock": 0,
         "demand": 0
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "10HDOC": [
@@ -265610,6 +265660,13 @@
         "code": "01.01.05.0000000009",
         "description": "JUNTA ROTATIVA HIDRAULICA - 2 PASSAGENS 3/8 NPT",
         "quantity": 1,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.06.03.0000000006",
+        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
+        "quantity": 20,
         "stock": 0,
         "demand": 0
       }
