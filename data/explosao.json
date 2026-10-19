@@ -230973,6 +230973,387 @@
         "DEM 01/2026": 0
       },
       "obtention": []
+    },
+    {
+      "code": "03.06.01.0000000067",
+      "description": "CESTA AEREA SKYCITY 15,5 LDDI - BASCULAMENTO MANUAL COM FERRAMENTA",
+      "analyst": "KELEN",
+      "family": "SUB CONJUNTOS",
+      "obtentionType": "Fabricado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 860,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.02.0000085320",
+      "description": "LANÇA INFERIOR SKYCITY 15 - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 1023,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.01.0000087867",
+      "description": "PINO FIX. CRUZETA INTERNA - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 22,
+      "stockMax": 0,
+      "stockValue": 6050,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 20,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 22,
+        "DEM 11/2026": 42,
+        "DEM 12/2026": 1056,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000017570",
+          "quantity": 20,
+          "plannedDate": "2026-11-10",
+          "status": "AP",
+          "purchaseOrder": "0006167/26"
+        }
+      ]
+    },
+    {
+      "code": "02.02.01.0000087868",
+      "description": "PINO ARTIC. LANÇAS - AS",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 23,
+      "stockMax": 0,
+      "stockValue": 9108,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 20,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 23,
+        "DEM 11/2026": 43,
+        "DEM 12/2026": 1057,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000017570",
+          "quantity": 20,
+          "plannedDate": "2026-11-10",
+          "status": "AP",
+          "purchaseOrder": "0006167/26"
+        }
+      ]
+    },
+    {
+      "code": "05.01.01.0000000102",
+      "description": "CABO FLEXIVEL 750V 1 X 1,5MM² - VERMELHO",
+      "analyst": "KELEN",
+      "family": "PREDIAL",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "MT",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 200,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 200,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 1077,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000018044",
+          "quantity": 200,
+          "plannedDate": "2026-10-22",
+          "status": "AG",
+          "purchaseOrder": ""
+        }
+      ]
+    },
+    {
+      "code": "02.02.03.0000000043",
+      "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 15 LDDI BASCULAMENTO HIDRAULICO - 4 ESTABILIZADORES 69KV",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 0,
+      "stockValue": 0,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 5,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 5,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 1135,
+        "DEM 01/2026": 0
+      },
+      "obtention": [
+        {
+          "request": "0000018044",
+          "quantity": 2,
+          "plannedDate": "2026-10-23",
+          "status": "AG",
+          "purchaseOrder": ""
+        },
+        {
+          "request": "0000018044",
+          "quantity": 3,
+          "plannedDate": "2026-10-30",
+          "status": "AG",
+          "purchaseOrder": ""
+        }
+      ]
+    },
+    {
+      "code": "02.02.03.0000000015",
+      "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 15 LDDI BASCULAMENTO MANUAL - 4 ESTABILIZADORES 69KV",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 14,
+      "stockMax": 0,
+      "stockValue": 2954,
+      "safety": 6,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 14,
+        "DEM 11/2026": 14,
+        "DEM 12/2026": 1136,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.05.0000000012",
+      "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 15 - 4 ESTABILIZADORES",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 23,
+      "stockMax": 0,
+      "stockValue": 22779.614,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 23,
+        "DEM 11/2026": 23,
+        "DEM 12/2026": 1137,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
+    },
+    {
+      "code": "02.02.05.0000000011",
+      "description": "KIT SUPERIOR DE MANGUEIRAS SKYCITY 15",
+      "analyst": "KELEN",
+      "family": "CONJUNTO",
+      "obtentionType": "Comprado",
+      "lastMovement": "2026-02-03",
+      "unit": "UN",
+      "stock": 11,
+      "stockMax": 0,
+      "stockValue": 37.191,
+      "safety": 0,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 11,
+        "DEM 11/2026": 11,
+        "DEM 12/2026": 1138,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
     }
   ],
   "models": {
@@ -233462,10 +233843,10 @@
         "_shifted_quantity": "1"
       },
       {
-        "code": "02.02.01.0000086368",
+        "code": "02.02.01.0000087867",
         "description": "PINO FIX. CRUZETA INTERNA - AS",
         "quantity": 1,
-        "stock": 263,
+        "stock": 22,
         "demand": 0,
         "_shifted_quantity": "1"
       },
@@ -237083,7 +237464,7 @@
         "description": "CESTA AEREA SKYCITY 15,5 LDDI - BASCULAMENTO MANUAL COM FERRAMENTA",
         "quantity": 1,
         "stock": 0,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "01.01.02.0000073065",
@@ -238063,7 +238444,7 @@
         "description": "LANÇA INFERIOR SKYCITY 15 - AS",
         "quantity": 1,
         "stock": 0,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "01.06.01.0000080494",
@@ -238245,14 +238626,14 @@
         "description": "PINO FIX. CRUZETA INTERNA - AS",
         "quantity": 1,
         "stock": 22,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "02.02.01.0000087868",
         "description": "PINO ARTIC. LANÇAS - AS",
         "quantity": 1,
         "stock": 23,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "02.02.02.0000080488",
@@ -238350,7 +238731,7 @@
         "description": "CABO FLEXIVEL 750V 1 X 1,5MM² - VERMELHO",
         "quantity": 2,
         "stock": 0,
-        "demand": 3
+        "demand": 200
       },
       {
         "code": "01.01.02.0000000081",
@@ -238588,28 +238969,28 @@
         "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 15 LDDI BASCULAMENTO HIDRAULICO - 4 ESTABILIZADORES 69KV",
         "quantity": 1,
         "stock": 0,
-        "demand": 3
+        "demand": 5
       },
       {
         "code": "02.02.03.0000000015",
         "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 15 LDDI BASCULAMENTO MANUAL - 4 ESTABILIZADORES 69KV",
         "quantity": 1,
         "stock": 0,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "02.02.05.0000000012",
         "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 15 - 4 ESTABILIZADORES",
         "quantity": 1,
         "stock": 23,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "02.02.05.0000000011",
         "description": "KIT SUPERIOR DE MANGUEIRAS SKYCITY 15",
         "quantity": 1,
         "stock": 11,
-        "demand": 3
+        "demand": 0
       },
       {
         "code": "01.15.02.0000000114",
@@ -240011,7 +240392,7 @@
         "description": "CABO FLEXIVEL 750V 1 X 1,5MM² - VERMELHO",
         "quantity": 2,
         "stock": 0,
-        "demand": 2
+        "demand": 200
       },
       {
         "code": "01.01.02.0000000081",

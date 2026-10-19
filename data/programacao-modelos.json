@@ -7,7 +7,7 @@
     {
       "name": "guindaste 45",
       "column": 27,
-      "total": 1724.3766,
+      "total": 2098.3766,
       "days": [
         {
           "row": 18,
@@ -1736,13 +1736,253 @@
         {
           "row": 6032,
           "quantity": 16
+        },
+        {
+          "row": 6168,
+          "quantity": 1
+        },
+        {
+          "row": 6176,
+          "quantity": 4
+        },
+        {
+          "row": 6177,
+          "quantity": 2
+        },
+        {
+          "row": 6180,
+          "quantity": 4
+        },
+        {
+          "row": 6181,
+          "quantity": 1
+        },
+        {
+          "row": 6183,
+          "quantity": 4
+        },
+        {
+          "row": 6185,
+          "quantity": 12
+        },
+        {
+          "row": 6187,
+          "quantity": 1
+        },
+        {
+          "row": 6193,
+          "quantity": 4
+        },
+        {
+          "row": 6194,
+          "quantity": 20
+        },
+        {
+          "row": 6196,
+          "quantity": 2
+        },
+        {
+          "row": 6199,
+          "quantity": 1
+        },
+        {
+          "row": 6200,
+          "quantity": 2
+        },
+        {
+          "row": 6201,
+          "quantity": 2
+        },
+        {
+          "row": 6202,
+          "quantity": 4
+        },
+        {
+          "row": 6203,
+          "quantity": 6
+        },
+        {
+          "row": 6204,
+          "quantity": 2
+        },
+        {
+          "row": 6209,
+          "quantity": 2
+        },
+        {
+          "row": 6222,
+          "quantity": 2
+        },
+        {
+          "row": 6223,
+          "quantity": 2
+        },
+        {
+          "row": 6228,
+          "quantity": 4
+        },
+        {
+          "row": 6229,
+          "quantity": 2
+        },
+        {
+          "row": 6230,
+          "quantity": 2
+        },
+        {
+          "row": 6234,
+          "quantity": 4
+        },
+        {
+          "row": 6238,
+          "quantity": 1
+        },
+        {
+          "row": 6248,
+          "quantity": 2
+        },
+        {
+          "row": 6249,
+          "quantity": 2
+        },
+        {
+          "row": 6257,
+          "quantity": 2
+        },
+        {
+          "row": 6259,
+          "quantity": 20
+        },
+        {
+          "row": 6260,
+          "quantity": 12
+        },
+        {
+          "row": 6262,
+          "quantity": 20
+        },
+        {
+          "row": 6263,
+          "quantity": 8
+        },
+        {
+          "row": 6278,
+          "quantity": 4
+        },
+        {
+          "row": 6279,
+          "quantity": 4
+        },
+        {
+          "row": 6281,
+          "quantity": 8
+        },
+        {
+          "row": 6282,
+          "quantity": 20
+        },
+        {
+          "row": 6305,
+          "quantity": 16
+        },
+        {
+          "row": 6309,
+          "quantity": 2
+        },
+        {
+          "row": 6310,
+          "quantity": 4
+        },
+        {
+          "row": 6311,
+          "quantity": 24
+        },
+        {
+          "row": 6334,
+          "quantity": 8
+        },
+        {
+          "row": 6344,
+          "quantity": 8
+        },
+        {
+          "row": 6345,
+          "quantity": 20
+        },
+        {
+          "row": 6356,
+          "quantity": 16
+        },
+        {
+          "row": 6367,
+          "quantity": 8
+        },
+        {
+          "row": 6396,
+          "quantity": 1
+        },
+        {
+          "row": 6400,
+          "quantity": 2
+        },
+        {
+          "row": 6412,
+          "quantity": 1
+        },
+        {
+          "row": 6419,
+          "quantity": 2
+        },
+        {
+          "row": 6420,
+          "quantity": 2
+        },
+        {
+          "row": 6421,
+          "quantity": 2
+        },
+        {
+          "row": 6426,
+          "quantity": 20
+        },
+        {
+          "row": 6427,
+          "quantity": 8
+        },
+        {
+          "row": 6428,
+          "quantity": 20
+        },
+        {
+          "row": 6432,
+          "quantity": 4
+        },
+        {
+          "row": 6435,
+          "quantity": 6
+        },
+        {
+          "row": 6436,
+          "quantity": 2
+        },
+        {
+          "row": 6438,
+          "quantity": 1
+        },
+        {
+          "row": 6439,
+          "quantity": 2
+        },
+        {
+          "row": 6440,
+          "quantity": 2
         }
       ]
     },
     {
       "name": "10L",
       "column": 28,
-      "total": 1543.702,
+      "total": 2237.702,
       "days": [
         {
           "row": 10,
@@ -3283,13 +3523,581 @@
         {
           "row": 6129,
           "quantity": 1
+        },
+        {
+          "row": 6168,
+          "quantity": 1
+        },
+        {
+          "row": 6169,
+          "quantity": 1
+        },
+        {
+          "row": 6170,
+          "quantity": 1
+        },
+        {
+          "row": 6171,
+          "quantity": 1
+        },
+        {
+          "row": 6173,
+          "quantity": 1
+        },
+        {
+          "row": 6174,
+          "quantity": 2
+        },
+        {
+          "row": 6175,
+          "quantity": 1
+        },
+        {
+          "row": 6176,
+          "quantity": 14
+        },
+        {
+          "row": 6178,
+          "quantity": 2
+        },
+        {
+          "row": 6179,
+          "quantity": 4
+        },
+        {
+          "row": 6182,
+          "quantity": 5
+        },
+        {
+          "row": 6184,
+          "quantity": 2
+        },
+        {
+          "row": 6185,
+          "quantity": 2
+        },
+        {
+          "row": 6186,
+          "quantity": 4
+        },
+        {
+          "row": 6192,
+          "quantity": 2
+        },
+        {
+          "row": 6193,
+          "quantity": 2
+        },
+        {
+          "row": 6194,
+          "quantity": 41
+        },
+        {
+          "row": 6195,
+          "quantity": 5
+        },
+        {
+          "row": 6196,
+          "quantity": 4
+        },
+        {
+          "row": 6197,
+          "quantity": 11
+        },
+        {
+          "row": 6198,
+          "quantity": 1
+        },
+        {
+          "row": 6200,
+          "quantity": 2
+        },
+        {
+          "row": 6201,
+          "quantity": 8
+        },
+        {
+          "row": 6202,
+          "quantity": 14
+        },
+        {
+          "row": 6203,
+          "quantity": 4
+        },
+        {
+          "row": 6204,
+          "quantity": 4
+        },
+        {
+          "row": 6207,
+          "quantity": 1
+        },
+        {
+          "row": 6208,
+          "quantity": 1
+        },
+        {
+          "row": 6209,
+          "quantity": 1
+        },
+        {
+          "row": 6211,
+          "quantity": 5
+        },
+        {
+          "row": 6212,
+          "quantity": 1
+        },
+        {
+          "row": 6220,
+          "quantity": 3
+        },
+        {
+          "row": 6222,
+          "quantity": 1
+        },
+        {
+          "row": 6223,
+          "quantity": 1
+        },
+        {
+          "row": 6224,
+          "quantity": 2
+        },
+        {
+          "row": 6225,
+          "quantity": 2
+        },
+        {
+          "row": 6226,
+          "quantity": 11
+        },
+        {
+          "row": 6227,
+          "quantity": 2
+        },
+        {
+          "row": 6229,
+          "quantity": 1
+        },
+        {
+          "row": 6230,
+          "quantity": 2
+        },
+        {
+          "row": 6231,
+          "quantity": 5
+        },
+        {
+          "row": 6232,
+          "quantity": 4
+        },
+        {
+          "row": 6233,
+          "quantity": 1
+        },
+        {
+          "row": 6236,
+          "quantity": 1
+        },
+        {
+          "row": 6237,
+          "quantity": 1
+        },
+        {
+          "row": 6238,
+          "quantity": 1
+        },
+        {
+          "row": 6239,
+          "quantity": 1
+        },
+        {
+          "row": 6240,
+          "quantity": 1
+        },
+        {
+          "row": 6242,
+          "quantity": 6
+        },
+        {
+          "row": 6243,
+          "quantity": 1
+        },
+        {
+          "row": 6245,
+          "quantity": 2
+        },
+        {
+          "row": 6247,
+          "quantity": 1
+        },
+        {
+          "row": 6248,
+          "quantity": 2
+        },
+        {
+          "row": 6249,
+          "quantity": 4
+        },
+        {
+          "row": 6250,
+          "quantity": 6
+        },
+        {
+          "row": 6251,
+          "quantity": 4
+        },
+        {
+          "row": 6252,
+          "quantity": 1
+        },
+        {
+          "row": 6253,
+          "quantity": 3
+        },
+        {
+          "row": 6254,
+          "quantity": 4
+        },
+        {
+          "row": 6255,
+          "quantity": 1
+        },
+        {
+          "row": 6256,
+          "quantity": 2
+        },
+        {
+          "row": 6257,
+          "quantity": 8
+        },
+        {
+          "row": 6258,
+          "quantity": 10
+        },
+        {
+          "row": 6259,
+          "quantity": 6
+        },
+        {
+          "row": 6260,
+          "quantity": 2
+        },
+        {
+          "row": 6261,
+          "quantity": 2
+        },
+        {
+          "row": 6262,
+          "quantity": 1
+        },
+        {
+          "row": 6263,
+          "quantity": 2
+        },
+        {
+          "row": 6264,
+          "quantity": 4
+        },
+        {
+          "row": 6265,
+          "quantity": 2
+        },
+        {
+          "row": 6266,
+          "quantity": 4
+        },
+        {
+          "row": 6267,
+          "quantity": 4
+        },
+        {
+          "row": 6268,
+          "quantity": 2
+        },
+        {
+          "row": 6269,
+          "quantity": 4
+        },
+        {
+          "row": 6270,
+          "quantity": 6
+        },
+        {
+          "row": 6277,
+          "quantity": 2
+        },
+        {
+          "row": 6278,
+          "quantity": 14
+        },
+        {
+          "row": 6279,
+          "quantity": 2
+        },
+        {
+          "row": 6280,
+          "quantity": 4
+        },
+        {
+          "row": 6281,
+          "quantity": 2
+        },
+        {
+          "row": 6282,
+          "quantity": 16
+        },
+        {
+          "row": 6283,
+          "quantity": 4
+        },
+        {
+          "row": 6284,
+          "quantity": 60
+        },
+        {
+          "row": 6285,
+          "quantity": 3
+        },
+        {
+          "row": 6290,
+          "quantity": 4
+        },
+        {
+          "row": 6292,
+          "quantity": 1
+        },
+        {
+          "row": 6293,
+          "quantity": 1
+        },
+        {
+          "row": 6300,
+          "quantity": 1
+        },
+        {
+          "row": 6302,
+          "quantity": 3
+        },
+        {
+          "row": 6305,
+          "quantity": 12
+        },
+        {
+          "row": 6309,
+          "quantity": 4
+        },
+        {
+          "row": 6311,
+          "quantity": 2
+        },
+        {
+          "row": 6331,
+          "quantity": 2
+        },
+        {
+          "row": 6332,
+          "quantity": 1
+        },
+        {
+          "row": 6334,
+          "quantity": 2
+        },
+        {
+          "row": 6335,
+          "quantity": 12
+        },
+        {
+          "row": 6337,
+          "quantity": 4
+        },
+        {
+          "row": 6338,
+          "quantity": 6
+        },
+        {
+          "row": 6341,
+          "quantity": 1
+        },
+        {
+          "row": 6343,
+          "quantity": 6
+        },
+        {
+          "row": 6344,
+          "quantity": 6
+        },
+        {
+          "row": 6345,
+          "quantity": 41
+        },
+        {
+          "row": 6346,
+          "quantity": 1
+        },
+        {
+          "row": 6347,
+          "quantity": 1
+        },
+        {
+          "row": 6356,
+          "quantity": 12
+        },
+        {
+          "row": 6359,
+          "quantity": 3
+        },
+        {
+          "row": 6367,
+          "quantity": 2
+        },
+        {
+          "row": 6368,
+          "quantity": 12
+        },
+        {
+          "row": 6373,
+          "quantity": 1
+        },
+        {
+          "row": 6392,
+          "quantity": 2
+        },
+        {
+          "row": 6393,
+          "quantity": 2
+        },
+        {
+          "row": 6394,
+          "quantity": 1
+        },
+        {
+          "row": 6396,
+          "quantity": 1
+        },
+        {
+          "row": 6397,
+          "quantity": 1
+        },
+        {
+          "row": 6398,
+          "quantity": 4
+        },
+        {
+          "row": 6399,
+          "quantity": 8
+        },
+        {
+          "row": 6400,
+          "quantity": 2
+        },
+        {
+          "row": 6401,
+          "quantity": 12
+        },
+        {
+          "row": 6409,
+          "quantity": 8
+        },
+        {
+          "row": 6413,
+          "quantity": 2
+        },
+        {
+          "row": 6414,
+          "quantity": 1
+        },
+        {
+          "row": 6416,
+          "quantity": 1
+        },
+        {
+          "row": 6417,
+          "quantity": 1
+        },
+        {
+          "row": 6419,
+          "quantity": 1
+        },
+        {
+          "row": 6420,
+          "quantity": 1
+        },
+        {
+          "row": 6421,
+          "quantity": 1
+        },
+        {
+          "row": 6424,
+          "quantity": 1
+        },
+        {
+          "row": 6425,
+          "quantity": 2
+        },
+        {
+          "row": 6426,
+          "quantity": 41
+        },
+        {
+          "row": 6427,
+          "quantity": 6
+        },
+        {
+          "row": 6428,
+          "quantity": 16
+        },
+        {
+          "row": 6429,
+          "quantity": 1
+        },
+        {
+          "row": 6431,
+          "quantity": 5
+        },
+        {
+          "row": 6433,
+          "quantity": 11
+        },
+        {
+          "row": 6434,
+          "quantity": 4
+        },
+        {
+          "row": 6435,
+          "quantity": 4
+        },
+        {
+          "row": 6436,
+          "quantity": 4
+        },
+        {
+          "row": 6437,
+          "quantity": 4
+        },
+        {
+          "row": 6439,
+          "quantity": 8
+        },
+        {
+          "row": 6440,
+          "quantity": 1
+        },
+        {
+          "row": 6441,
+          "quantity": 6
+        },
+        {
+          "row": 6448,
+          "quantity": 1
         }
       ]
     },
     {
       "name": "30T",
       "column": 29,
-      "total": 773.8653,
+      "total": 1071.8653,
       "days": [
         {
           "row": 24,
@@ -4466,13 +5274,197 @@
         {
           "row": 6032,
           "quantity": 6
+        },
+        {
+          "row": 6176,
+          "quantity": 12
+        },
+        {
+          "row": 6177,
+          "quantity": 10
+        },
+        {
+          "row": 6180,
+          "quantity": 5
+        },
+        {
+          "row": 6181,
+          "quantity": 2
+        },
+        {
+          "row": 6183,
+          "quantity": 5
+        },
+        {
+          "row": 6185,
+          "quantity": 12
+        },
+        {
+          "row": 6187,
+          "quantity": 2
+        },
+        {
+          "row": 6194,
+          "quantity": 16
+        },
+        {
+          "row": 6196,
+          "quantity": 6
+        },
+        {
+          "row": 6200,
+          "quantity": 16
+        },
+        {
+          "row": 6202,
+          "quantity": 12
+        },
+        {
+          "row": 6203,
+          "quantity": 2
+        },
+        {
+          "row": 6204,
+          "quantity": 6
+        },
+        {
+          "row": 6209,
+          "quantity": 1
+        },
+        {
+          "row": 6222,
+          "quantity": 1
+        },
+        {
+          "row": 6223,
+          "quantity": 1
+        },
+        {
+          "row": 6227,
+          "quantity": 2
+        },
+        {
+          "row": 6228,
+          "quantity": 4
+        },
+        {
+          "row": 6229,
+          "quantity": 1
+        },
+        {
+          "row": 6230,
+          "quantity": 16
+        },
+        {
+          "row": 6234,
+          "quantity": 5
+        },
+        {
+          "row": 6238,
+          "quantity": 1
+        },
+        {
+          "row": 6248,
+          "quantity": 16
+        },
+        {
+          "row": 6249,
+          "quantity": 6
+        },
+        {
+          "row": 6259,
+          "quantity": 4
+        },
+        {
+          "row": 6260,
+          "quantity": 12
+        },
+        {
+          "row": 6278,
+          "quantity": 12
+        },
+        {
+          "row": 6282,
+          "quantity": 8
+        },
+        {
+          "row": 6305,
+          "quantity": 6
+        },
+        {
+          "row": 6309,
+          "quantity": 6
+        },
+        {
+          "row": 6310,
+          "quantity": 4
+        },
+        {
+          "row": 6311,
+          "quantity": 4
+        },
+        {
+          "row": 6345,
+          "quantity": 16
+        },
+        {
+          "row": 6356,
+          "quantity": 6
+        },
+        {
+          "row": 6396,
+          "quantity": 1
+        },
+        {
+          "row": 6400,
+          "quantity": 16
+        },
+        {
+          "row": 6412,
+          "quantity": 2
+        },
+        {
+          "row": 6419,
+          "quantity": 1
+        },
+        {
+          "row": 6420,
+          "quantity": 1
+        },
+        {
+          "row": 6421,
+          "quantity": 1
+        },
+        {
+          "row": 6426,
+          "quantity": 16
+        },
+        {
+          "row": 6428,
+          "quantity": 8
+        },
+        {
+          "row": 6432,
+          "quantity": 5
+        },
+        {
+          "row": 6435,
+          "quantity": 2
+        },
+        {
+          "row": 6436,
+          "quantity": 6
+        },
+        {
+          "row": 6440,
+          "quantity": 1
         }
       ]
     },
     {
       "name": "guindaste 12",
       "column": 32,
-      "total": 925.2168,
+      "total": 1259.2168,
       "days": [
         {
           "row": 18,
@@ -5749,6 +6741,222 @@
         {
           "row": 6032,
           "quantity": 36
+        },
+        {
+          "row": 6168,
+          "quantity": 1
+        },
+        {
+          "row": 6176,
+          "quantity": 4
+        },
+        {
+          "row": 6177,
+          "quantity": 2
+        },
+        {
+          "row": 6180,
+          "quantity": 2
+        },
+        {
+          "row": 6181,
+          "quantity": 1
+        },
+        {
+          "row": 6183,
+          "quantity": 2
+        },
+        {
+          "row": 6185,
+          "quantity": 10
+        },
+        {
+          "row": 6187,
+          "quantity": 2
+        },
+        {
+          "row": 6194,
+          "quantity": 12
+        },
+        {
+          "row": 6196,
+          "quantity": 6
+        },
+        {
+          "row": 6199,
+          "quantity": 1
+        },
+        {
+          "row": 6200,
+          "quantity": 8
+        },
+        {
+          "row": 6202,
+          "quantity": 4
+        },
+        {
+          "row": 6203,
+          "quantity": 6
+        },
+        {
+          "row": 6204,
+          "quantity": 6
+        },
+        {
+          "row": 6209,
+          "quantity": 1
+        },
+        {
+          "row": 6222,
+          "quantity": 1
+        },
+        {
+          "row": 6223,
+          "quantity": 1
+        },
+        {
+          "row": 6228,
+          "quantity": 4
+        },
+        {
+          "row": 6229,
+          "quantity": 1
+        },
+        {
+          "row": 6230,
+          "quantity": 8
+        },
+        {
+          "row": 6234,
+          "quantity": 2
+        },
+        {
+          "row": 6238,
+          "quantity": 1
+        },
+        {
+          "row": 6248,
+          "quantity": 8
+        },
+        {
+          "row": 6249,
+          "quantity": 6
+        },
+        {
+          "row": 6259,
+          "quantity": 4
+        },
+        {
+          "row": 6260,
+          "quantity": 10
+        },
+        {
+          "row": 6264,
+          "quantity": 12
+        },
+        {
+          "row": 6278,
+          "quantity": 4
+        },
+        {
+          "row": 6281,
+          "quantity": 4
+        },
+        {
+          "row": 6282,
+          "quantity": 6
+        },
+        {
+          "row": 6305,
+          "quantity": 36
+        },
+        {
+          "row": 6309,
+          "quantity": 6
+        },
+        {
+          "row": 6310,
+          "quantity": 24
+        },
+        {
+          "row": 6311,
+          "quantity": 17
+        },
+        {
+          "row": 6334,
+          "quantity": 4
+        },
+        {
+          "row": 6335,
+          "quantity": 4
+        },
+        {
+          "row": 6345,
+          "quantity": 12
+        },
+        {
+          "row": 6356,
+          "quantity": 36
+        },
+        {
+          "row": 6367,
+          "quantity": 4
+        },
+        {
+          "row": 6368,
+          "quantity": 4
+        },
+        {
+          "row": 6396,
+          "quantity": 1
+        },
+        {
+          "row": 6400,
+          "quantity": 8
+        },
+        {
+          "row": 6412,
+          "quantity": 1
+        },
+        {
+          "row": 6419,
+          "quantity": 1
+        },
+        {
+          "row": 6420,
+          "quantity": 1
+        },
+        {
+          "row": 6421,
+          "quantity": 1
+        },
+        {
+          "row": 6426,
+          "quantity": 12
+        },
+        {
+          "row": 6428,
+          "quantity": 6
+        },
+        {
+          "row": 6432,
+          "quantity": 2
+        },
+        {
+          "row": 6435,
+          "quantity": 6
+        },
+        {
+          "row": 6436,
+          "quantity": 6
+        },
+        {
+          "row": 6438,
+          "quantity": 1
+        },
+        {
+          "row": 6440,
+          "quantity": 1
         }
       ]
     }
