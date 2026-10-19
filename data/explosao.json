@@ -235436,20 +235436,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000124",
-        "description": "KIT TORRE CESTA AEREA SKYCITY 13 AT",
-        "quantity": 1,
-        "stock": 6,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000078139",
-        "description": "COLUNA BASE - AS",
-        "quantity": 1,
-        "stock": 10,
-        "demand": 0
-      },
-      {
         "code": "01.01.02.0000073065",
         "description": "BOMBA MANUAL",
         "quantity": 1,
@@ -235569,13 +235555,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000078116",
-        "description": "TORRE SKYCITY 13 AT - AS",
-        "quantity": 1,
-        "stock": 7,
-        "demand": 0
-      },
-      {
         "code": "01.01.04.0000000042",
         "description": "COMANDO HIDRAULICO COM 5 SECÇOES AMBOS COM RETORNO POR MOLA ALAVANCA P/ BAIXO",
         "quantity": 1,
@@ -235664,13 +235643,6 @@
         "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 70 MM - GEOMET",
         "quantity": 18,
         "stock": 12856,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000007",
-        "description": "KIT RESERVATORIO HIDRAULICO CESTA AEREA SKYCITY 13 L / LD / LDI / LDDI",
-        "quantity": 1,
-        "stock": 13,
         "demand": 0
       },
       {
@@ -235769,13 +235741,6 @@
         "description": "ESPIGAO MACHO FIXO - 7/8\" X 1/2\" NPT",
         "quantity": 1,
         "stock": 22,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000116",
-        "description": "KIT AVULSOS CESTA AEREA SKYCITY 13 AT",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -235926,13 +235891,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000117",
-        "description": "KIT KANBAN - SKYCITY 13 AT",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "04.02.06.0000000036",
         "description": "OLEO HIDRAULICO IPITUR HLP 68",
         "quantity": 1,
@@ -235951,13 +235909,6 @@
         "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
         "quantity": 1,
         "stock": 2605,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000120",
-        "description": "KIT PRE - MONTAGEM TERCEIRO CESTA AEREA SKYCITY 13 AT",
-        "quantity": 8,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -236003,13 +235954,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000005",
-        "description": "KIT JUNTA ROTATIVA CESTA AEREA SKYCITY 13 L / LD / LDI / LDDI",
-        "quantity": 60,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.01.01.0000086291",
         "description": "FIXAÇAO INFERIOR JUNTA ROTATIVA",
         "quantity": 3,
@@ -236021,13 +235965,6 @@
         "description": "CONEXAO MACHO RETO 3/8\" NPT TUBO 10 - UMA 10 X 3/8\" NPT - L",
         "quantity": 1,
         "stock": 376,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000085",
-        "description": "KIT MONTAGEM TOMADA DE FORCA CESTAS AEREAS",
-        "quantity": 4,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -236077,13 +236014,6 @@
         "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
         "quantity": 1,
         "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000125",
-        "description": "KIT COMANDO SUPERIOR CESTA AEREA SKYCITY 13 AT",
-        "quantity": 4,
-        "stock": 3,
         "demand": 0
       },
       {
@@ -236255,13 +236185,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000059",
-        "description": "KIT ENSAIOS CESTAS AEREAS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "07.02.03.0000000005",
         "description": "ENSAIO ELETRICO",
         "quantity": 1,
@@ -236273,13 +236196,6 @@
         "description": "ENSAIO ELETRICO DO LINER CESTO AEREO",
         "quantity": 1,
         "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000123",
-        "description": "KIT HIDRAULICO CARROCERIA CESTA AEREA SKYCITY 13 AT - 4 ESTABILIZADORES SEM FERRAMENTA",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -236465,13 +236381,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000127",
-        "description": "KIT LANCAS CESTA AEREA SKYCITY 13 AT",
-        "quantity": 8,
-        "stock": 10,
-        "demand": 0
-      },
-      {
         "code": "02.02.01.0000078117",
         "description": "ARTICULAÇÃO BRAÇOS - AS",
         "quantity": 52,
@@ -236577,206 +236486,10 @@
         "demand": 0
       },
       {
-        "code": "01.01.03.0000000375",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - LILAS",
-        "quantity": 4,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000379",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - BRANCO",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000767",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - 2 BRANCO",
-        "quantity": 10,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000768",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - AZUL",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000769",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - 2 AZUL",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000770",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - VERDE",
-        "quantity": 12,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000772",
-        "description": "MANGUEIRA R7 1/4\" X 8.300 MM - TRF X TRF (10L M16 X 1,5) - AMARELO",
-        "quantity": 52,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000372",
-        "description": "MANGUEIRA R7 3/8\" X 8.300 MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO",
-        "quantity": 19,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000737",
-        "description": "MANGUEIRA R7 1/2\" X 7.900 MM - TRF X TRF (12S M20 X 1,5) - VERMELHO",
-        "quantity": 17,
-        "stock": 33,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000739",
-        "description": "MANGUEIRA R7 1/2\" X 700 MM - TRF X TRF (12S M20 X 1,5) - 2 ROXO",
-        "quantity": 18,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000735",
-        "description": "MANGUEIRA R2AT 1/2\" X 600 MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO + 2 AMARELO",
-        "quantity": 10,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000740",
-        "description": "MANGUEIRA R7 3/8\" X 850 MM - TRF X TRF (12S M20 X 1,5) - 2 PRETO",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000741",
-        "description": "MANGUEIRA R7 1/4\" X 1.300 MM - TRF X TRF (10L M16 X 1,5) - MARROM",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000742",
-        "description": "MANGUEIRA R7 1/4\" X 700 MM - TRF X TC 90 (10L M16 X 1,5) - 2 AZUL",
-        "quantity": 28,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.02.05.0000000078",
         "description": "KIT INFERIOR DE MANGUEIRAS (LANÇAS) SKYCITY 13.5 AT",
         "quantity": 1,
         "stock": 34,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000364",
-        "description": "MANGUEIRA R7 3/8\" X 7.130 MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO",
-        "quantity": 1,
-        "stock": 7,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000724",
-        "description": "MANGUEIRA R7 1/2\" X 7.130 MM - TRF X TRF (12S M20 X 1,5) - VERMELHO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000352",
-        "description": "MANGUEIRA R7 1/4\" X 7.330 MM - TRF X TRF (10L M16 X 1,5) - AMARELO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000358",
-        "description": "MANGUEIRA R7 1/4\" X 6.100 MM - TRF X TRF (10L M16 X 1,5) - VERDE",
-        "quantity": 8,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000606",
-        "description": "MANGUEIRA R7 1/4\" X 5.760 MM - TRF X TRF (10L M16 X 1,5) – BRANCO",
-        "quantity": 10,
-        "stock": 20,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000362",
-        "description": "MANGUEIRA R7 1/4\" X 5.500 MM - TRF X TRF (10L M16 X 1,5) - LILAS",
-        "quantity": 4,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000738",
-        "description": "MANGUEIRA R7 1/2\" X 4.300 MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO + 2 AMARELO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000092",
-        "description": "MANGUEIRA R7 1/4\" X 3.000 MM - TRF X TRF (10L M16 X 1,5) - 2 VERDE + 2 BRANCO",
-        "quantity": 16,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000348",
-        "description": "MANGUEIRA R7 1/4\" X 2.560 MM - TRF X TRF (10L M16 X 1,5) - LILAS",
-        "quantity": 2,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000605",
-        "description": "MANGUEIRA R7 1/4\" X 1.900 MM – TRF X TRF (10L M16 X 1,5) – BRANCO",
-        "quantity": 6,
-        "stock": 16,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000360",
-        "description": "MANGUEIRA R7 1/4\" X 1.150 MM - TRF X TRF (10L M16 X 1,5) - VERDE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000725",
-        "description": "MANGUEIRA R7 1/4\" X 700 MM - TRF X TRF (10L M16 X 1,5) - 2 VERMELHO",
-        "quantity": 12,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000726",
-        "description": "MANGUEIRA R2AT 1/2\" X 500MM - TRF X TRF (12S M20 X 1,5) - 2 VERMELHO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000774",
-        "description": "MANGUEIRA R7 1/4\" X 7.330 MM - TRF X TRF (10L M16 X 1,5) - 2 AZUL",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -237039,13 +236752,6 @@
         "demand": 0
       },
       {
-        "code": "02.03.01.0000078575",
-        "description": "EIXO DO CILINDRO BRACO INF",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.01.01.0000082255",
         "description": "TRAVA PINO Ø40",
         "quantity": 1,
@@ -237074,13 +236780,6 @@
         "demand": 0
       },
       {
-        "code": "02.03.01.0000078574",
-        "description": "EIXO DO CILINDRO BRACO SUP E LINK",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.02.01.0000087738",
         "description": "APOIO CILINDRO NIVELAMENTO",
         "quantity": 1,
@@ -237102,24 +236801,10 @@
         "demand": 0
       },
       {
-        "code": "02.03.01.0000078582",
-        "description": "EIXO DO CILINDRO BRACO SUP",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.02.01.0000078129",
         "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
         "quantity": 1,
         "stock": 45,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000078146",
-        "description": "EIXO DO CILINDRO BRACO SUP",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -237130,38 +236815,10 @@
         "demand": 20
       },
       {
-        "code": "02.03.01.0000078561",
-        "description": "EIXO DE ARTICULACAO SUPE BASC CACAMBA",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000085255",
-        "description": "TRAVA DO PINO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.02.01.0000078136",
         "description": "PINO ARTICULAÇÃO CAÇAMBA - AS",
         "quantity": 1,
         "stock": 8,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000078183",
-        "description": "EIXO DE ARTICULACAO BASC CACAMBA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000083488",
-        "description": "EIXO ATUADOR ROTATIVO",
-        "quantity": 1,
-        "stock": 19,
         "demand": 0
       },
       {
@@ -237183,13 +236840,6 @@
         "description": "CILINDRO HIDRAULICO MESTRE SKYCITY 13AT",
         "quantity": 5,
         "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000129",
-        "description": "KIT ACABAMENTO - SKYCITY 13 AT",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -237309,34 +236959,6 @@
         "description": "PROTECAO BATOQUE REGULADOR",
         "quantity": 1,
         "stock": 18,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000118",
-        "description": "KIT LANCAS CESTA AEREA SKYCITY 13 AT GARRA",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000078115",
-        "description": "BRAÇO INFERIOR - AS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.03.0000078565",
-        "description": "BASE LANÇA SUPERIOR - AS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000078113",
-        "description": "LANÇA ISOLADA EXTENSIVA - AS",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
