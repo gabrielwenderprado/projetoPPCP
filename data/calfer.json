@@ -15,7 +15,7 @@
           "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
           "nextStock": 14,
           "quantityPerMachine": 1,
-          "calferStock": 13,
+          "calferStock": 27,
           "row": 4
         },
         {
@@ -69,7 +69,7 @@
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
           "nextStock": 11,
           "quantityPerMachine": 1,
-          "calferStock": 9,
+          "calferStock": 18,
           "row": 12
         },
         {
@@ -77,7 +77,7 @@
           "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
           "nextStock": 15,
           "quantityPerMachine": 1,
-          "calferStock": 7,
+          "calferStock": 22,
           "row": 13
         },
         {
@@ -196,7 +196,7 @@
           "nextStock": 2086,
           "quantityPerMachine": 10,
           "calferStock": 0,
-          "row": 30
+          "row": 29
         },
         {
           "code": "01.01.14.0000000048",
@@ -204,7 +204,7 @@
           "nextStock": 3319,
           "quantityPerMachine": 6,
           "calferStock": 0,
-          "row": 31
+          "row": 30
         },
         {
           "code": "02.02.01.0000083441",
@@ -212,7 +212,7 @@
           "nextStock": 341,
           "quantityPerMachine": 2,
           "calferStock": 70,
-          "row": 32
+          "row": 31
         },
         {
           "code": "02.02.01.0000086368",
@@ -220,7 +220,7 @@
           "nextStock": 263,
           "quantityPerMachine": 1,
           "calferStock": 12,
-          "row": 33
+          "row": 32
         },
         {
           "code": "02.02.01.0000083442",
@@ -228,7 +228,7 @@
           "nextStock": 240,
           "quantityPerMachine": 1,
           "calferStock": 40,
-          "row": 34
+          "row": 33
         },
         {
           "code": "01.02.02.0000000010",
@@ -236,7 +236,7 @@
           "nextStock": 15500,
           "quantityPerMachine": 5,
           "calferStock": 0,
-          "row": 35
+          "row": 34
         },
         {
           "code": "01.02.01.0000000144",
@@ -244,7 +244,7 @@
           "nextStock": 5682,
           "quantityPerMachine": 5,
           "calferStock": 1000,
-          "row": 36
+          "row": 35
         },
         {
           "code": "01.02.02.0000000006",
@@ -252,7 +252,7 @@
           "nextStock": 1882,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 37
+          "row": 36
         },
         {
           "code": "01.02.03.0000000047",
@@ -260,7 +260,7 @@
           "nextStock": 3135,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 38
+          "row": 37
         },
         {
           "code": "01.01.10.0000084360",
@@ -268,7 +268,7 @@
           "nextStock": 172,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 39
+          "row": 38
         },
         {
           "code": "02.01.03.0000066939",
@@ -276,7 +276,7 @@
           "nextStock": 6,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 40
+          "row": 39
         },
         {
           "code": "02.01.03.0000082542",
@@ -284,7 +284,7 @@
           "nextStock": 41,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 41
+          "row": 40
         },
         {
           "code": "04.02.01.0000000107",
@@ -292,7 +292,7 @@
           "nextStock": 1329,
           "quantityPerMachine": 1.5,
           "calferStock": 0,
-          "row": 42
+          "row": 41
         },
         {
           "code": "02.02.01.0000085283",
@@ -300,7 +300,7 @@
           "nextStock": 658,
           "quantityPerMachine": 1,
           "calferStock": 16,
-          "row": 43
+          "row": 42
         },
         {
           "code": "02.03.02.0000083460",
@@ -308,7 +308,7 @@
           "nextStock": 124,
           "quantityPerMachine": 1,
           "calferStock": 50,
-          "row": 44
+          "row": 43
         },
         {
           "code": "02.03.03.0000083484",
@@ -316,7 +316,7 @@
           "nextStock": 1576,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 45
+          "row": 44
         },
         {
           "code": "01.02.01.0000000199",
@@ -324,7 +324,7 @@
           "nextStock": 3844,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 46
+          "row": 45
         },
         {
           "code": "02.02.01.0000086369",
@@ -332,7 +332,7 @@
           "nextStock": 263,
           "quantityPerMachine": 1,
           "calferStock": 13,
-          "row": 47
+          "row": 46
         },
         {
           "code": "01.01.14.0000000050",
@@ -340,7 +340,7 @@
           "nextStock": 1298,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 48
+          "row": 47
         },
         {
           "code": "01.01.14.0000000051",
@@ -348,7 +348,7 @@
           "nextStock": 3006,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 49
+          "row": 48
         },
         {
           "code": "01.01.14.0000000052",
@@ -356,7 +356,7 @@
           "nextStock": 1686,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 50
+          "row": 49
         }
       ]
     },
@@ -370,7 +370,7 @@
           "nextStock": 1535,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 54
+          "row": 52
         },
         {
           "code": "01.02.03.0000000047",
@@ -378,7 +378,7 @@
           "nextStock": 3135,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 55
+          "row": 53
         },
         {
           "code": "01.02.02.0000000027",
@@ -386,7 +386,7 @@
           "nextStock": 3658,
           "quantityPerMachine": 3,
           "calferStock": 0,
-          "row": 56
+          "row": 54
         },
         {
           "code": "01.02.02.0000000006",
@@ -394,7 +394,7 @@
           "nextStock": 1882,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 57
+          "row": 55
         },
         {
           "code": "01.02.02.0000000010",
@@ -402,7 +402,7 @@
           "nextStock": 15500,
           "quantityPerMachine": 5,
           "calferStock": 0,
-          "row": 58
+          "row": 56
         },
         {
           "code": "01.02.01.0000000144",
@@ -410,7 +410,7 @@
           "nextStock": 5682,
           "quantityPerMachine": 5,
           "calferStock": 1000,
-          "row": 59
+          "row": 57
         },
         {
           "code": "01.02.01.0000000199",
@@ -418,7 +418,7 @@
           "nextStock": 3844,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 60
+          "row": 58
         },
         {
           "code": "01.01.14.0000000036",
@@ -426,7 +426,7 @@
           "nextStock": 2086,
           "quantityPerMachine": 10,
           "calferStock": 0,
-          "row": 61
+          "row": 59
         },
         {
           "code": "01.01.14.0000000048",
@@ -434,7 +434,7 @@
           "nextStock": 3319,
           "quantityPerMachine": 6,
           "calferStock": 0,
-          "row": 62
+          "row": 60
         },
         {
           "code": "02.03.02.0000083460",
@@ -442,7 +442,7 @@
           "nextStock": 124,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 63
+          "row": 61
         },
         {
           "code": "02.02.01.0000083442",
@@ -450,7 +450,7 @@
           "nextStock": 240,
           "quantityPerMachine": 1,
           "calferStock": 40,
-          "row": 64
+          "row": 62
         },
         {
           "code": "02.02.01.0000086368",
@@ -458,7 +458,7 @@
           "nextStock": 263,
           "quantityPerMachine": 1,
           "calferStock": 12,
-          "row": 65
+          "row": 63
         },
         {
           "code": "01.01.14.0000000050",
@@ -466,7 +466,7 @@
           "nextStock": 1298,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 66
+          "row": 64
         },
         {
           "code": "01.01.14.0000000051",
@@ -474,7 +474,7 @@
           "nextStock": 3006,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 67
+          "row": 65
         },
         {
           "code": "02.03.03.0000083484",
@@ -482,7 +482,7 @@
           "nextStock": 1576,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 68
+          "row": 66
         },
         {
           "code": "01.01.14.0000000052",
@@ -490,7 +490,7 @@
           "nextStock": 1686,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 69
+          "row": 67
         },
         {
           "code": "01.02.02.0000000004",
@@ -498,7 +498,7 @@
           "nextStock": 7156,
           "quantityPerMachine": 24,
           "calferStock": 0,
-          "row": 70
+          "row": 68
         },
         {
           "code": "02.02.01.0000088251",
@@ -506,7 +506,7 @@
           "nextStock": 2,
           "quantityPerMachine": 2,
           "calferStock": 0,
-          "row": 71
+          "row": 69
         },
         {
           "code": "02.02.01.0000088247",
@@ -514,7 +514,7 @@
           "nextStock": 1,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 72
+          "row": 70
         },
         {
           "code": "01.01.10.0000000014",
@@ -522,7 +522,7 @@
           "nextStock": 0,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 73
+          "row": 71
         },
         {
           "code": "02.01.03.0000085379",
@@ -530,7 +530,7 @@
           "nextStock": 0,
           "quantityPerMachine": 1,
           "calferStock": 0,
-          "row": 74
+          "row": 72
         }
       ]
     }
@@ -543,7 +543,7 @@
         "10L"
       ],
       "nextStock": 14,
-      "calferStock": 13
+      "calferStock": 27
     },
     {
       "code": "01.01.10.0000074195",
@@ -597,7 +597,7 @@
         "10S"
       ],
       "nextStock": 11,
-      "calferStock": 9
+      "calferStock": 18
     },
     {
       "code": "02.01.03.0000071287",
@@ -606,7 +606,7 @@
         "10S"
       ],
       "nextStock": 15,
-      "calferStock": 7
+      "calferStock": 22
     },
     {
       "code": "01.01.14.0000000036",
