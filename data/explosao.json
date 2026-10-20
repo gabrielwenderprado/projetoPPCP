@@ -231299,6 +231299,44 @@
         "DEM 01/2026": 0
       },
       "obtention": []
+    },
+    {
+      "code": "02.01.01.0000067307",
+      "description": "CHAPA FURADA DE FIXAÇAO DA BORRACHA DO BRAÇO SUPERIOR E INFERIOR DO EQUIPAMENTO SKYCITY",
+      "analyst": "KELEN",
+      "family": "PEÇA",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 0,
+      "stockMax": 2000,
+      "stockValue": 0,
+      "safety": 250,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 0,
+        "PED 09/2026": 0,
+        "PED 10/2026": 0,
+        "PED 11/2026": 0,
+        "PED 12/2026": 0,
+        "PED 01/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 1145,
+        "DEM 01/2026": 0
+      },
+      "obtention": []
     }
   ],
   "models": {
@@ -263986,6 +264024,20 @@
         "code": "01.06.03.0000000006",
         "description": "guarnição da porta ( TRIBULBO) SEM ABA",
         "quantity": 20,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.02.0000069579",
+        "description": "ARRUELA PARA O EIXO DA CESTA SKYCITY",
+        "quantity": 2,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.01.01.0000067307",
+        "description": "CHAPA FURADA DE FIXAÇAO DA BORRACHA DO BRAÇO SUPERIOR E INFERIOR DO EQUIPAMENTO SKYCITY",
+        "quantity": 2,
         "stock": 0,
         "demand": 0
       }
