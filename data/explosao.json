@@ -238625,6 +238625,13 @@
         "quantity": 20,
         "stock": 0,
         "demand": 750
+      },
+      {
+        "code": "02.01.01.0000080803",
+        "description": "chapa fixaçao borracha",
+        "quantity": 2,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "18lddi": [
@@ -240298,6 +240305,13 @@
         "code": "01.06.03.0000000006",
         "description": "guarnição da porta ( TRIBULBO) SEM ABA",
         "quantity": 20,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.01.01.0000080803",
+        "description": "chapa fixaçao borracha",
+        "quantity": 2,
         "stock": 0,
         "demand": 0
       }
