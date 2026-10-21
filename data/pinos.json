@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_19.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_21.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-20",
+  "generatedAt": "2026-10-21",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -1535,7 +1535,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 387,
+      "stock": 384,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
