@@ -239891,6 +239891,14 @@
         "stock": 1200,
         "demand": 0,
         "_shifted_quantity": "20"
+      },
+      {
+        "code": "01.09.04.0000000015",
+        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 13M - 130 X 150 X 0,5MM CANTOS RETOS",
+        "quantity": 1,
+        "stock": 193,
+        "demand": 0,
+        "_shifted_quantity": "1"
       }
     ],
     "13-69kv": [
@@ -241299,6 +241307,13 @@
         "description": "guarnição da porta ( TRIBULBO) SEM ABA",
         "quantity": 20,
         "stock": 1200,
+        "demand": 0
+      },
+      {
+        "code": "01.09.04.0000000015",
+        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 13M - 130 X 150 X 0,5MM CANTOS RETOS",
+        "quantity": 1,
+        "stock": 193,
         "demand": 0
       }
     ],
@@ -242982,6 +242997,13 @@
         "quantity": 20,
         "stock": 1200,
         "demand": 750
+      },
+      {
+        "code": "01.09.04.0000000012",
+        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 13,5 AT - 130 X 150 X 0,5MM CANTOS RETOS",
+        "quantity": 1,
+        "stock": 47,
+        "demand": 0
       }
     ],
     "15LDDI": [
@@ -244523,6 +244545,13 @@
         "description": "chapa fixaçao borracha",
         "quantity": 2,
         "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.09.04.0000000016",
+        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 15.5 - 130 X 150 X 0,5MM CANTOS RETOS",
+        "quantity": 1,
+        "stock": 85,
         "demand": 0
       }
     ],
@@ -269946,6 +269975,13 @@
         "quantity": 2,
         "stock": 0,
         "demand": 0
+      },
+      {
+        "code": "01.09.04.0000000013",
+        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 10L - 130 X 150 X 0,5MM CANTOS RETOS",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "10HDOC": [
@@ -271193,6 +271229,13 @@
         "description": "guarnição da porta ( TRIBULBO) SEM ABA",
         "quantity": 20,
         "stock": 1200,
+        "demand": 0
+      },
+      {
+        "code": "01.09.04.0000000014",
+        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 10 HDOC - 130 X 150 X 0,5MM CANTOS RETOS",
+        "quantity": 1,
+        "stock": 1,
         "demand": 0
       }
     ],
