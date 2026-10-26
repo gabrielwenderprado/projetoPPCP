@@ -235914,10 +235914,24 @@
     ],
     "13AT": [
       {
-        "code": "03.06.01.0000000063",
-        "description": "CESTA AEREA SKYCITY 13,5 AT 4 ESTABILIZADORES SEM FERRAMENTA",
+        "code": "03.06.01.0000000019",
+        "description": "CESTA AEREA SKYCITY 13,5 AT 2 ESTABILIZADORES SEM FERRAMENTA",
         "quantity": 1,
         "stock": 0,
+        "demand": 3
+      },
+      {
+        "code": "02.02.09.0000000124",
+        "description": "KIT TORRE CESTA AEREA SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 6,
+        "demand": 0
+      },
+      {
+        "code": "02.02.01.0000078139",
+        "description": "COLUNA BASE - AS",
+        "quantity": 1,
+        "stock": 10,
         "demand": 0
       },
       {
@@ -235942,6 +235956,13 @@
         "demand": 377
       },
       {
+        "code": "01.01.02.0000073066",
+        "description": "VALVULA EMERGENCIA 3 VIAS HASTE LONGA VERMELHA (95 MM)",
+        "quantity": 1,
+        "stock": 503,
+        "demand": 0
+      },
+      {
         "code": "01.02.11.0000000043",
         "description": "ABRAÇADEIRA ELECTROAMANCO 1/2 E 3/4\" CINZA",
         "quantity": 2,
@@ -235956,11 +235977,11 @@
         "demand": 0
       },
       {
-        "code": "01.01.01.0000000089",
-        "description": "CONEXAO TEE FEMEA LATERAL PORCA GIRATORIA M16X1,5 TUBO 10 - MTVLA 10-L",
-        "quantity": 2,
-        "stock": 350,
-        "demand": 1000
+        "code": "01.01.01.0000000083",
+        "description": "CONEXAO MACHO RETO 3/4\" UNF TUBO 10 - UMA 10 X 3/4\" UNF - L",
+        "quantity": 19,
+        "stock": 2755,
+        "demand": 900
       },
       {
         "code": "01.02.01.0000000075",
@@ -235977,20 +235998,6 @@
         "demand": 0
       },
       {
-        "code": "01.02.02.0000000012",
-        "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 6,
-        "stock": 31500,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000074",
-        "description": "CONEXAO 90º FEMEA GIRATORIA MJLA 10 - L",
-        "quantity": 19,
-        "stock": 2300,
-        "demand": 0
-      },
-      {
         "code": "01.02.01.0000000163",
         "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 45MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
         "quantity": 2,
@@ -235998,10 +236005,10 @@
         "demand": 0
       },
       {
-        "code": "01.02.02.0000000040",
-        "description": "ARRUELA DE PRESSAO M12 X 21,10 X 2,35MM ZINCADO BRANCO DIN 127",
-        "quantity": 2,
-        "stock": 5000,
+        "code": "01.02.02.0000000016",
+        "description": "ARRUELA LISA MEDIA M12 X 24 X 2,50MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 4,
+        "stock": 6799,
         "demand": 0
       },
       {
@@ -236026,17 +236033,17 @@
         "demand": 0
       },
       {
-        "code": "01.02.02.0000000002",
-        "description": "ARRUELA DE PRESSAO PESADA M12 X 1/2\" X 3,84MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 2,
-        "stock": 3390,
-        "demand": 0
-      },
-      {
         "code": "01.02.01.0000000147",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 80MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
         "quantity": 2,
         "stock": 2050,
+        "demand": 0
+      },
+      {
+        "code": "02.02.01.0000078116",
+        "description": "TORRE SKYCITY 13 AT - AS",
+        "quantity": 1,
+        "stock": 7,
         "demand": 0
       },
       {
@@ -236068,18 +236075,11 @@
         "demand": 0
       },
       {
-        "code": "01.01.02.0000073066",
-        "description": "VALVULA EMERGENCIA 3 VIAS HASTE LONGA VERMELHA (95 MM)",
-        "quantity": 1,
-        "stock": 503,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000083",
-        "description": "CONEXAO MACHO RETO 3/4\" UNF TUBO 10 - UMA 10 X 3/4\" UNF - L",
-        "quantity": 19,
-        "stock": 2755,
-        "demand": 900
+        "code": "01.01.01.0000000089",
+        "description": "CONEXAO TEE FEMEA LATERAL PORCA GIRATORIA M16X1,5 TUBO 10 - MTVLA 10-L",
+        "quantity": 2,
+        "stock": 350,
+        "demand": 1000
       },
       {
         "code": "01.02.03.0000000026",
@@ -236093,6 +236093,13 @@
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 60MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
         "quantity": 2,
         "stock": 7504,
+        "demand": 0
+      },
+      {
+        "code": "01.02.02.0000000012",
+        "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
+        "quantity": 6,
+        "stock": 31500,
         "demand": 0
       },
       {
@@ -236110,10 +236117,17 @@
         "demand": 950
       },
       {
-        "code": "01.02.02.0000000016",
-        "description": "ARRUELA LISA MEDIA M12 X 24 X 2,50MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
-        "stock": 6799,
+        "code": "01.01.01.0000000074",
+        "description": "CONEXAO 90º FEMEA GIRATORIA MJLA 10 - L",
+        "quantity": 19,
+        "stock": 2300,
+        "demand": 0
+      },
+      {
+        "code": "01.02.02.0000000040",
+        "description": "ARRUELA DE PRESSAO M12 X 21,10 X 2,35MM ZINCADO BRANCO DIN 127",
+        "quantity": 2,
+        "stock": 5000,
         "demand": 0
       },
       {
@@ -236124,6 +236138,13 @@
         "demand": 0
       },
       {
+        "code": "01.02.02.0000000002",
+        "description": "ARRUELA DE PRESSAO PESADA M12 X 1/2\" X 3,84MM ZINCADO BRANCO ASA B-27.1",
+        "quantity": 2,
+        "stock": 3390,
+        "demand": 0
+      },
+      {
         "code": "01.02.01.0000000327",
         "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 70 MM - GEOMET",
         "quantity": 18,
@@ -236131,73 +236152,31 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000067114",
-        "description": "RESERVATORIO HIDRAULICO 60 LITROS CESTAS AEREAS SKYCITY 10 HDOC / 13 L / LD / LDI / LDDI",
+        "code": "02.02.09.0000000116",
+        "description": "KIT AVULSOS CESTA AEREA SKYCITY 13 AT",
         "quantity": 1,
-        "stock": 52,
-        "demand": 54
-      },
-      {
-        "code": "01.01.08.0000000031",
-        "description": "FILTRO DE SUCÇAO PARA RESERVATORIO DE OLEO DE 40L/MIN - COM ROSCA DE FIXAÇAO DE 1\" BSP - HLSC3-010",
-        "quantity": 1,
-        "stock": 89,
+        "stock": 0,
         "demand": 0
       },
       {
-        "code": "01.01.08.0000000005",
-        "description": "FILTRO RETORNO EM TANQUE 10 MICRA 3/4\" BSP",
+        "code": "01.01.01.0000000254",
+        "description": "CONEXAO MACHO RETO UMA10 X M16X1,5 - S",
         "quantity": 1,
-        "stock": 128,
+        "stock": 194,
         "demand": 0
       },
       {
-        "code": "01.01.08.0000000025",
-        "description": "BOCAL DE ABASTECIMENTO HIDRAULICO GRANDE COM 6 PARAFUSOS DE FIXAÇAO",
-        "quantity": 1,
-        "stock": 124,
-        "demand": 0
+        "code": "01.01.03.0000000051",
+        "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
+        "quantity": 3,
+        "stock": 1175,
+        "demand": 100
       },
       {
-        "code": "01.01.01.0000000311",
-        "description": "INDICADOR NIVEL OLEO HIDR. COM ESCALA E TERMOMETRO 127 MM",
-        "quantity": 1,
-        "stock": 315,
-        "demand": 120
-      },
-      {
-        "code": "01.01.02.0000000049",
-        "description": "VALVULA ESFERA TRIPARTIDA PASSAGEM PLENA 1/2\" NPT CLASSE 300",
-        "quantity": 1,
-        "stock": 238,
-        "demand": 0
-      },
-      {
-        "code": "01.02.01.0000000045",
-        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 6,
-        "stock": 34300,
-        "demand": 1000
-      },
-      {
-        "code": "01.02.01.0000000114",
-        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 6,
-        "stock": 7600,
-        "demand": 0
-      },
-      {
-        "code": "01.02.03.0000000032",
-        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-        "quantity": 2,
-        "stock": 5100,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000008",
-        "description": "TEE FEMEA - CLASSE 150LB - 1/2\" NPT - GALVANIZADO",
-        "quantity": 6,
-        "stock": 131,
+        "code": "01.07.06.0000000008",
+        "description": "UNIAO MACHO LINHA LEVE T10 X M16 X 1 NPT",
+        "quantity": 4,
+        "stock": 1327,
         "demand": 0
       },
       {
@@ -236208,72 +236187,30 @@
         "demand": 0
       },
       {
-        "code": "01.01.01.0000000059",
-        "description": "CONEXAO RETA - MACHO X MACHO - COM ROSCA DE 1/2\" NPT",
-        "quantity": 1,
-        "stock": 686,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000097",
-        "description": "CONEXAO RETA - MACHO X MACHO -  3/4\" BSP VEDAÇAO ANEL O RING X DKO M16 TUBO 10L",
-        "quantity": 2,
-        "stock": 283,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000162",
-        "description": "ESPIGAO MACHO FIXO - 7/8\" X 1/2\" NPT",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 60
-      },
-      {
-        "code": "01.01.01.0000000254",
-        "description": "CONEXAO MACHO RETO UMA10 X M16X1,5 - S",
-        "quantity": 2,
-        "stock": 194,
-        "demand": 0
-      },
-      {
-        "code": "01.01.03.0000000051",
-        "description": "PROTETOR MANGUEIRA ESPIRAL PRETO 1/4\" R2",
-        "quantity": 2,
-        "stock": 1175,
-        "demand": 100
-      },
-      {
-        "code": "01.07.06.0000000008",
-        "description": "UNIAO MACHO LINHA LEVE T10 X M16 X 1 NPT",
-        "quantity": 1,
-        "stock": 1327,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000118",
         "description": "CONEXAO 90º FEMEA GIRATORIA 1/8\" NPT TUBO 10 - JMA 10 X 1/8\" NPT - L",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 690,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000209",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 35MM CLASSE 8.8 ROSCA INTEIRA DIN 912",
-        "quantity": 3,
+        "quantity": 10,
         "stock": 3135,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000053",
         "description": "ARRUELA DE PRESSAO M8 X 14,80 X 1,90 ZINCADO BRANCO DIN 127",
-        "quantity": 4,
+        "quantity": 6,
         "stock": 6308,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000019",
         "description": "ARRUELA DE PRESSAO MEDIA M6 X 11,80 X 1,50MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 15490,
         "demand": 0
       },
@@ -236287,35 +236224,35 @@
       {
         "code": "01.02.03.0000000001",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 10,
+        "quantity": 1,
         "stock": 5816,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000104",
         "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 6,
+        "quantity": 2,
         "stock": 4083,
+        "demand": 0
+      },
+      {
+        "code": "01.02.02.0000000022",
+        "description": "ARRUELA DE PRESSAO M10 X 18,10 X 2,05MM ZINCADO BRANCO DIN 127",
+        "quantity": 2,
+        "stock": 1514,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000009",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 974,
-        "demand": 0
-      },
-      {
-        "code": "01.02.03.0000000059",
-        "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M16 X 2,00MM CLASSE 10 ZINCADO BRANCO DIN 982",
-        "quantity": 2,
-        "stock": 18198,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000072",
         "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 16023,
         "demand": 0
       },
@@ -236343,29 +236280,15 @@
       {
         "code": "01.01.01.0000000159",
         "description": "ESPIGAO MACHO FIXO - 7/8\" X 1.1/16\" UNF VEDAÇAO ANEL O RING",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 930,
         "demand": 0
       },
       {
         "code": "01.01.06.0000000020",
         "description": "BOMBA HIDRAULICA 25CM³ SAE B 13Z - ANTI-HORARIO",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 14,
-        "demand": 0
-      },
-      {
-        "code": "01.02.02.0000000022",
-        "description": "ARRUELA DE PRESSAO M10 X 18,10 X 2,05MM ZINCADO BRANCO DIN 127",
-        "quantity": 16,
-        "stock": 1514,
-        "demand": 0
-      },
-      {
-        "code": "01.02.01.0000000208",
-        "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 4,
-        "stock": 3065,
         "demand": 0
       },
       {
@@ -236376,51 +236299,79 @@
         "demand": 0
       },
       {
+        "code": "01.02.01.0000000208",
+        "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
+        "quantity": 2,
+        "stock": 3065,
+        "demand": 0
+      },
+      {
+        "code": "01.02.03.0000000059",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M16 X 2,00MM CLASSE 10 ZINCADO BRANCO DIN 982",
+        "quantity": 16,
+        "stock": 18198,
+        "demand": 0
+      },
+      {
+        "code": "02.02.09.0000000117",
+        "description": "KIT KANBAN - SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 0
+      },
+      {
         "code": "04.02.06.0000000036",
         "description": "OLEO HIDRAULICO IPITUR HLP 68",
-        "quantity": 1,
+        "quantity": 130,
         "stock": 0,
         "demand": 1
       },
       {
         "code": "01.02.11.0000000037",
         "description": "ABRAÇADEIRA NYLON K55L 390MM X 7,6MM - PRETO",
-        "quantity": 1,
+        "quantity": 60,
         "stock": 76300,
         "demand": 30000
       },
       {
         "code": "01.06.01.0000000004",
         "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 5405,
+        "demand": 0
+      },
+      {
+        "code": "02.02.09.0000000120",
+        "description": "KIT PRE - MONTAGEM TERCEIRO CESTA AEREA SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.14.0000000042",
         "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 50 X 45 X 50",
-        "quantity": 14,
+        "quantity": 4,
         "stock": 217,
         "demand": 0
       },
       {
         "code": "01.01.14.0000000048",
         "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 2671,
         "demand": 0
       },
       {
         "code": "02.01.03.0000078171",
         "description": "FIBRA BASTAO TENSOR INFERIOR ISOLADO SKYCITY 13 AT",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 22,
         "demand": 10
       },
       {
         "code": "02.01.03.0000078150",
         "description": "FIBRA BRAÇO INFERIOR ISOLADO SKYCITY 13 AT",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 8,
         "demand": 10
       },
@@ -236434,28 +236385,21 @@
       {
         "code": "02.01.03.0000078173",
         "description": "FIBRA BRAÇO EXTENSIVO ISOLADO SKYCITY 13 AT",
-        "quantity": 130,
+        "quantity": 1,
         "stock": 2,
         "demand": 0
       },
       {
-        "code": "02.01.01.0000086291",
-        "description": "FIXAÇAO INFERIOR JUNTA ROTATIVA",
-        "quantity": 3,
-        "stock": 111,
-        "demand": 132
-      },
-      {
-        "code": "01.01.01.0000000081",
-        "description": "CONEXAO MACHO RETO 3/8\" NPT TUBO 10 - UMA 10 X 3/8\" NPT - L",
+        "code": "02.02.09.0000000085",
+        "description": "KIT MONTAGEM TOMADA DE FORCA CESTAS AEREAS",
         "quantity": 1,
-        "stock": 376,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.02.0000000081",
         "description": "VALVULA 3/2 VIAS NF BOTAO TRAVA 1/8\" BSP - PUSH/PULL",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 192,
         "demand": 0
       },
@@ -236469,36 +236413,43 @@
       {
         "code": "01.01.01.0000000024",
         "description": "TEE UNIAO EMENDA 6MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 563,
         "demand": 0
       },
       {
         "code": "05.01.01.0000000662",
         "description": "CONEXAO RETA 1/8\" BSP X TUBO 6 MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 823,
         "demand": 0
       },
       {
         "code": "01.07.06.0000000037",
         "description": "COTOVELO MACHO 1/8\" BSP TUBO 6 MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 390,
         "demand": 0
       },
       {
         "code": "01.07.05.0000000005",
         "description": "TUBO EM POLIAMIDA PA6 6 X 4 - 27 BAR",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 800,
         "demand": 200
       },
       {
         "code": "01.01.01.0000000466",
         "description": "TEE FEMEA CENTRAL M10 X 1,0 X TUBO 6 MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.02.09.0000000125",
+        "description": "KIT COMANDO SUPERIOR CESTA AEREA SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 3,
         "demand": 0
       },
       {
@@ -236511,7 +236462,7 @@
       {
         "code": "01.01.04.0000000025",
         "description": "CONJUNTO DA ALAVANCA APOIO C/ MANETE, HASTE E MOLA",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 801,
         "demand": 0
       },
@@ -236525,63 +236476,63 @@
       {
         "code": "01.01.01.0000000156",
         "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 278,
         "demand": 0
       },
       {
         "code": "02.03.01.0000085006",
         "description": "ADAPTADOR ALAVANCA M10 PARA M8",
-        "quantity": 2,
+        "quantity": 6,
         "stock": 530,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000246",
         "description": "CONEXAO ARTICULADA M8 - WGRM-08 LC MS",
-        "quantity": 2,
+        "quantity": 12,
         "stock": 1192,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000002",
         "description": "PROTEÇAO PVC PARA ENGATE RAPIDO FEMEA 3/8\" NPT FEMEA (ACOPLADOR) - COR LARANJA",
-        "quantity": 3,
+        "quantity": 1,
         "stock": 640,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000003",
         "description": "PROTEÇAO PVC PARA ENGATE RAPIDO MACHO 3/8\" NPT (PINO)  PVC - COR LARANJA",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 746,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000083",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 90MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 1596,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000078",
         "description": "CONEXAO FEMEA RETA PORCA GIRATORIA UFA 10 X 1/4\" BSP-S",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 1107,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000100",
         "description": "RETA PARA PAINEL - MACHO X MACHO - 3/8\" NPT X DKO M16 TUBO 10L PARA PAINEL",
-        "quantity": 6,
+        "quantity": 2,
         "stock": 405,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000034",
         "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 1,
+        "quantity": 24,
         "stock": 6864,
         "demand": 0
       },
@@ -236595,14 +236546,14 @@
       {
         "code": "02.02.01.0000087601",
         "description": "FIXAÇAO VALVULA EMERGENCIA",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 7,
         "demand": 0
       },
       {
         "code": "02.01.01.0000093027",
         "description": "FIXACAO COMANDO 1 VIA",
-        "quantity": 12,
+        "quantity": 1,
         "stock": 13,
         "demand": 0
       },
@@ -236614,30 +236565,23 @@
         "demand": 0
       },
       {
-        "code": "01.01.02.0000000117",
-        "description": "VALVULA RETENÇAO PILOTADA DUPLA NIPEL M16X1.5 - 3/4 - 16 UNF",
-        "quantity": 1,
-        "stock": 35,
-        "demand": 0
-      },
-      {
         "code": "02.03.01.0000085010",
         "description": "BARRA ROSCADA CONEXAO ARTICULADA M8 X 105",
-        "quantity": 2,
+        "quantity": 7,
         "stock": 558,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085191",
         "description": "BUCHA ARTICULACAO COMANDO SUPERIOR DIAM. 38 X 89",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 50,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085189",
         "description": "BUCHA ARTICULACAO COMANDO SUPERIOR DIAM. 38 X 29",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 163,
         "demand": 0
       },
@@ -236651,22 +236595,36 @@
       {
         "code": "02.03.02.0000085210",
         "description": "BUCHA ALAVANCA Ø38 X 57",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 71,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085211",
         "description": "BUCHA ALAVANCA Ø38 X 56",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 63,
         "demand": 0
       },
       {
         "code": "02.03.01.0000085115",
         "description": "PINO ARTICULACAO ALAVANCAS COMANDO",
-        "quantity": 24,
+        "quantity": 1,
         "stock": 29,
+        "demand": 0
+      },
+      {
+        "code": "01.01.02.0000000117",
+        "description": "VALVULA RETENÇAO PILOTADA DUPLA NIPEL M16X1.5 - 3/4 - 16 UNF",
+        "quantity": 1,
+        "stock": 35,
+        "demand": 0
+      },
+      {
+        "code": "02.02.09.0000000059",
+        "description": "KIT ENSAIOS CESTAS AEREAS",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
@@ -236684,16 +236642,23 @@
         "demand": 40
       },
       {
+        "code": "02.02.09.0000000126",
+        "description": "KIT HIDRAULICO CARROCERIA CESTA AEREA SKYCITY 13 AT - 2 ESTABILIZADORES SEM FERRAMENTA",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 3
+      },
+      {
         "code": "01.01.02.0000063054",
         "description": "VALVULA RETENÇAO EM LINHA 3/4 - 16 UNF",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 304,
         "demand": 0
       },
       {
         "code": "01.01.02.0000065619",
         "description": "VALVULA RETENÇAO PILOTADA DUPLA FLANGEADA 9/16 - 18 UNF",
-        "quantity": 7,
+        "quantity": 4,
         "stock": 310,
         "demand": 0
       },
@@ -236705,23 +236670,16 @@
         "demand": 0
       },
       {
-        "code": "01.01.04.0000000010",
-        "description": "COMANDO HIDRAULICO COM 2 SECÇAO AMBOS COM MICROSWITCH",
-        "quantity": 2,
-        "stock": 82,
-        "demand": 0
-      },
-      {
         "code": "01.15.02.0000000045",
         "description": "MANOMETRO HORIZONTAL DIAMETRO EXTERNO 63 MM COM FLANGE - 300 KGF/CM² X 4400 PSI LOGO NEXT",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 145,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000212",
         "description": "BUJAO MACHO SEXTAVADO INTERNO DIN 906 1/4\" BSP - BMBSI-04",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 210,
         "demand": 0
       },
@@ -236742,77 +236700,63 @@
       {
         "code": "01.01.01.0000000290",
         "description": "CONEXAO EMENDA M16 X 1,5 TUBO 10 - MALA 10 L",
-        "quantity": 1,
+        "quantity": 14,
         "stock": 980,
-        "demand": 0
-      },
-      {
-        "code": "01.02.11.0000000035",
-        "description": "ABRAÇADEIRA MANGOTE 3/4\" 29 A 32MM FITA 20MM AÇO CARBONO ZINCADO BRANCO",
-        "quantity": 2,
-        "stock": 262,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000096",
         "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 7,
+        "quantity": 8,
         "stock": 10200,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000020",
         "description": "ARRUELA DE PRESSAO MEDIA M16 X 27,40 X 3,35MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 15,
+        "quantity": 28,
         "stock": 2942,
         "demand": 0
       },
       {
         "code": "01.13.01.0000000031",
         "description": "CJ CATRACA MOVEL 50 S/ PINO E PARAF C/ CINTA POLIESTER LARANJA C/ GANCHO J 50 X 1800 MM - 2 TON",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 183,
-        "demand": 0
-      },
-      {
-        "code": "02.02.05.0000000014",
-        "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 10L / 10HDOC / 13L / 13LD / 13LDI / 13LDDI - 4 ESTABILIZADORES",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.08.0000000046",
         "description": "CONTRAPINO 1/8\" X 1.1/4\" ZINCADO BRANCO DIN 94",
-        "quantity": 1,
+        "quantity": 12,
         "stock": 2040,
         "demand": 0
       },
       {
         "code": "01.01.10.0000079502",
         "description": "CILINDRO HIDRAULICO ESTABILIZADOR SKYCITY 13AT / 15",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 36,
         "demand": 16
       },
       {
         "code": "02.03.01.0000079054",
         "description": "PINO INFERIOR DA SAPATA",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 607,
         "demand": 0
       },
       {
         "code": "02.03.01.0000079053",
         "description": "PINO SUPERIOR DA SAPATA",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 202,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078609",
         "description": "BASE ESTABILIZADOR - AS",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 28,
         "demand": 0
       },
@@ -236826,7 +236770,7 @@
       {
         "code": "02.02.01.0000078605",
         "description": "CORPO INTERNO ESTABILIZADOR - AS",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 56,
         "demand": 0
       },
@@ -236840,63 +236784,91 @@
       {
         "code": "01.05.01.0000000006",
         "description": "CHAPA DE ALUMINIO XADREZ  2,70 X 1250 X 3000MM - LIGA 3105 H114",
-        "quantity": 1,
+        "quantity": 0.36,
         "stock": 16134.42,
         "demand": 15000
       },
       {
         "code": "01.02.01.0000000023",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M6 X 1,00 X 45MM CLASSE 12.9 ROSCA PARCIAL ENEGRECIDO DE TEMPERA DIN",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 1700,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000079",
         "description": "CONEXAO FEMEA RETA UFA 10 X 1/4\" NPT - L",
-        "quantity": 14,
+        "quantity": 1,
         "stock": 400,
         "demand": 0
       },
       {
+        "code": "01.01.04.0000072921",
+        "description": "COMANDO HIDRAULICO COM 1 SECÇAO COM MICROSWITCH",
+        "quantity": 2,
+        "stock": 117,
+        "demand": 170
+      },
+      {
         "code": "01.01.02.0000073063",
         "description": "VALVULA EMERGENCIA 3 VIAS HASTE CURTA VERMELHA (45 MM)",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 289,
+        "demand": 0
+      },
+      {
+        "code": "01.02.11.0000000035",
+        "description": "ABRAÇADEIRA MANGOTE 3/4\" 29 A 32MM FITA 20MM AÇO CARBONO ZINCADO BRANCO",
+        "quantity": 1,
+        "stock": 262,
+        "demand": 0
+      },
+      {
+        "code": "02.02.05.0000000113",
+        "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI)  SKYCITY 13.5 AT - 2 ESTABILIZADORES DIANTEIROS",
+        "quantity": 1,
+        "stock": 9,
+        "demand": 3
+      },
+      {
+        "code": "02.02.09.0000000127",
+        "description": "KIT LANCAS CESTA AEREA SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 10,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078117",
         "description": "ARTICULAÇÃO BRAÇOS - AS",
-        "quantity": 52,
+        "quantity": 1,
         "stock": 5,
         "demand": 0
       },
       {
         "code": "01.01.15.0000000027",
         "description": "ROTULA GE 40 DO 2RS",
-        "quantity": 28,
+        "quantity": 1,
         "stock": 12,
         "demand": 0
       },
       {
         "code": "01.02.07.0000000013",
         "description": "ANEL ELASTICO AÇO CARBONO FURO I-62 66,20 X 2,00MM",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 272,
         "demand": 0
       },
       {
         "code": "02.03.02.0000082839",
         "description": "FIXAÇAO PLACA DESLIZE",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 243,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000007",
         "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M8 X 1,25 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 7991",
-        "quantity": 24,
+        "quantity": 10,
         "stock": 5334,
         "demand": 0
       },
@@ -236910,63 +236882,63 @@
       {
         "code": "01.01.02.0000073067",
         "description": "VALVULA CONTRABALANCO DUPLA FLANGEADA (SKYCITY)",
-        "quantity": 8,
+        "quantity": 2,
         "stock": 529,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000202",
         "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 4,
+        "quantity": 16,
         "stock": 600,
         "demand": 0
       },
       {
         "code": "01.01.14.0000000046",
         "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-        "quantity": 4,
+        "quantity": 6,
         "stock": 493,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000037",
         "description": "ATUADOR ROTATIVO HIDRAULICO",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 30,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000010",
         "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 12,
         "stock": 22500,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000280",
         "description": "CONEXAO MACHO RETO 7/16\" UNF TUBO 10 - UMA 10 X 7/16\" UNF - L",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 20,
         "demand": 0
       },
       {
         "code": "01.01.02.0000000082",
         "description": "VALVULA CONTRABALANCO DUPLA FLANGEADA  (SKYCITY)",
-        "quantity": 0.36,
+        "quantity": 2,
         "stock": 132,
         "demand": 0
       },
       {
         "code": "02.01.03.0000063694",
         "description": "LINER PARA CAÇAMBA",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 142,
         "demand": 375
       },
       {
         "code": "02.02.05.0000000077",
         "description": "KIT DE MANGUEIRAS DA LANÇA TELESCÓPICA SKYCITY 13.5 AT",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 7,
         "demand": 0
       },
@@ -236975,34 +236947,6 @@
         "description": "KIT INFERIOR DE MANGUEIRAS (LANÇAS) SKYCITY 13.5 AT",
         "quantity": 1,
         "stock": 34,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086088",
-        "description": "BRAÇO INFERIOR 13 AT",
-        "quantity": 10,
-        "stock": 5,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000078118",
-        "description": "BASTÃO TENSOR INFERIOR - AS",
-        "quantity": 10,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086070",
-        "description": "BRAÇO SUPERIOR 13 AT",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086021",
-        "description": "BRAÇO EXTENSIVO 13 AT",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -237022,7 +236966,7 @@
       {
         "code": "02.01.03.0000085243",
         "description": "CAÇAMBA DE FIBRA (BOJO) - COM CANELETA FIXACAO COMANDO",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 4,
         "demand": 3
       },
@@ -237057,21 +237001,21 @@
       {
         "code": "02.02.01.0000087682",
         "description": "FIXAÇAO HASTE CILINDRO EXTENSIVO",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 1,
         "demand": 0
       },
       {
         "code": "02.01.01.0000094556",
         "description": "FIXAÇAO ESTEIRA",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 4,
         "demand": 0
       },
       {
         "code": "02.01.03.0000078176",
         "description": "PLACA DESLIZE TRASEIRA BRAÇO INTERNO 13AT",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 230,
         "demand": 0
       },
@@ -237085,63 +237029,63 @@
       {
         "code": "02.01.03.0000085207",
         "description": "PLACA DESLIZE SUPERIOR TRASEIRA BRAÇO INTERNO 13AT",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 30,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085357",
         "description": "DESLIZE APOIO CILINDRO EXTENSIVO 13 AT",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 10,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085356",
         "description": "DESLIZE APOIO CILINDRO EXTENSIVO 13 AT",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 9,
         "demand": 0
       },
       {
         "code": "02.01.01.0000082844",
         "description": "CALÇO PLACA DESLIZE",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 2,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085363",
         "description": "PLACA DESLIZE INFERIOR",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 9,
         "demand": 0
       },
       {
         "code": "02.03.01.0000085106",
         "description": "PINO ROSCADO DO DESLIZE",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 67,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085364",
         "description": "BUCHA DO DESLIZE",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 183,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000112",
         "description": "PORCA DE FIXAÇAO KM 6 ZINCADA BRANCA",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 220,
         "demand": 0
       },
       {
         "code": "02.03.01.0000085142",
         "description": "EIXO DA HASTE CILINDRO EXTENSAO",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 5,
         "demand": 0
       },
@@ -237155,14 +237099,14 @@
       {
         "code": "01.02.01.0000000316",
         "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M10 X 1,5 X 30MM ROSCA INTEIRA CLASSE 10.9 ZINCADO BRANCO DIN 7991",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 1000,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000319",
         "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 1000,
         "demand": 0
       },
@@ -237176,49 +237120,49 @@
       {
         "code": "02.03.01.0000078578",
         "description": "EIXO DA BASE CILINDRO EXTENSAO",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000085257",
         "description": "TRAVA PINO Ø16",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.04.01.0000000091",
         "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A-588 / SAC 350",
-        "quantity": 2,
+        "quantity": 0.0989,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.02.0000000118",
         "description": "VALVULA LIMITADORA DUPLA COM SISTEMA DE NAO RETORNO",
-        "quantity": 4,
-        "stock": 6,
+        "quantity": 1,
+        "stock": 47,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078134",
         "description": "PINO TRASEIRO ARTICULAÇÃO - AS",
-        "quantity": 10,
-        "stock": 30,
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078138",
         "description": "PINO ARTICULAÇÃO TORRE - AS",
-        "quantity": 3,
-        "stock": 23,
+        "quantity": 2,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.03.01.0000078186",
         "description": "EIXO DA TORRE",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
@@ -237233,7 +237177,14 @@
         "code": "02.02.01.0000078131",
         "description": "PINO BRAÇO INFERIOR - AS",
         "quantity": 1,
-        "stock": 41,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.01.0000078575",
+        "description": "EIXO DO CILINDRO BRACO INF",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
@@ -237246,8 +237197,8 @@
       {
         "code": "02.02.01.0000078132",
         "description": "PINO FRONTAL ARTICULAÇÃO - AS",
-        "quantity": 1,
-        "stock": 17,
+        "quantity": 2,
+        "stock": 0,
         "demand": 20
       },
       {
@@ -237261,91 +237212,147 @@
         "code": "02.02.01.0000078133",
         "description": "PINO BRAÇO SUPERIOR / LINK - AS",
         "quantity": 1,
-        "stock": 25,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.01.0000078574",
+        "description": "EIXO DO CILINDRO BRACO SUP E LINK",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.01.0000087738",
         "description": "APOIO CILINDRO NIVELAMENTO",
         "quantity": 1,
-        "stock": 57,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000340",
         "description": "PARAFUSO SEXTAVADO M20 X 2,50 X 40MM CLASSE 8.8 ROSCA TOTAL ZINCADO BRANCO DIN 933",
         "quantity": 1,
-        "stock": 355,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078583",
         "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
         "quantity": 1,
-        "stock": 54,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.01.0000078582",
+        "description": "EIXO DO CILINDRO BRACO SUP",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078129",
         "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
         "quantity": 1,
-        "stock": 45,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.01.0000078146",
+        "description": "EIXO DO CILINDRO BRACO SUP",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.01.0000078137",
         "description": "PINO SUPERIOR ARTICULAÇÃO CAÇAMBA - AS",
         "quantity": 1,
-        "stock": 10,
+        "stock": 0,
         "demand": 20
+      },
+      {
+        "code": "02.03.01.0000078561",
+        "description": "EIXO DE ARTICULACAO SUPE BASC CACAMBA",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.01.01.0000085255",
+        "description": "TRAVA DO PINO",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 0
       },
       {
         "code": "02.02.01.0000078136",
         "description": "PINO ARTICULAÇÃO CAÇAMBA - AS",
+        "quantity": 2,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.01.0000078183",
+        "description": "EIXO DE ARTICULACAO BASC CACAMBA",
         "quantity": 1,
-        "stock": 8,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.03.01.0000083488",
+        "description": "EIXO ATUADOR ROTATIVO",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.15.04.0000000083",
         "description": "ESTEIRA PORTA CABOS",
-        "quantity": 5,
-        "stock": 23,
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.10.0000085392",
         "description": "CILINDRO HIDRAULICO ESCRAVO SKYCITY 13AT",
-        "quantity": 5,
-        "stock": 7,
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.10.0000085391",
         "description": "CILINDRO HIDRAULICO MESTRE SKYCITY 13AT",
-        "quantity": 5,
-        "stock": 1,
+        "quantity": 1,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "02.02.09.0000000129",
+        "description": "KIT ACABAMENTO - SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.02.03.0000000020",
         "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 13 AT - 2 ESTABILIZADORES 46KV",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 20
       },
       {
         "code": "01.12.05.0000000027",
         "description": "CAPA LANÇA SUPERIOR SKYCITY 13 AT",
-        "quantity": 4,
-        "stock": 9,
+        "quantity": 1,
+        "stock": 0,
         "demand": 20
       },
       {
         "code": "01.12.05.0000000028",
         "description": "CAPA LANÇA INFERIOR SKYCITY 13 AT",
-        "quantity": 4,
-        "stock": 12,
+        "quantity": 1,
+        "stock": 0,
         "demand": 20
       },
       {
@@ -237359,69 +237366,69 @@
         "code": "01.01.13.0000073469",
         "description": "CAIXA DE FERRAMENTAS EM FIBRA NA COR LARANJA",
         "quantity": 1,
-        "stock": 218,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000034",
         "description": "CAPA BOJO SKYCITY 13 AT",
         "quantity": 1,
-        "stock": 17,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085239",
         "description": "PROTECAO COMANDO SUPERIOR 13 AT",
-        "quantity": 0.0989,
-        "stock": 1,
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085241",
         "description": "PROTECAO ENGATE RAPIDO",
         "quantity": 1,
-        "stock": 30,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085242",
         "description": "PROTECAO VALVULA SELETORA",
         "quantity": 1,
-        "stock": 16,
+        "stock": 0,
         "demand": 5
       },
       {
         "code": "02.01.03.0000085359",
         "description": "PROTECAO VALVULA",
         "quantity": 1,
-        "stock": 8,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085365",
         "description": "FECHAMENTO TRASEIRO",
-        "quantity": 2,
-        "stock": 3,
+        "quantity": 1,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085366",
         "description": "PROTECAO VALV. CILINDRO NIVELAMENTO",
         "quantity": 1,
-        "stock": 4,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085367",
         "description": "CALHA SUPORTE MANGUEIRAS",
         "quantity": 1,
-        "stock": 4,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085368",
         "description": "TAMPA FECHAMENTO BRACO INTERNO",
-        "quantity": 0.2875,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
@@ -237429,176 +237436,148 @@
         "code": "02.01.03.0000085369",
         "description": "CALHA SUPORTE MANGUEIRAS",
         "quantity": 1,
-        "stock": 8,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085370",
         "description": "PROTECAO ATUADOR ROTATIVO",
         "quantity": 1,
-        "stock": 3,
+        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085381",
         "description": "PROTECAO BATOQUE REGULADOR",
-        "quantity": 1,
-        "stock": 18,
+        "quantity": 2,
+        "stock": 0,
         "demand": 0
       },
       {
-        "code": "02.02.01.0000078121",
-        "description": "SUPORTE BASCULAMENTO CAÇAMBA - AS",
+        "code": "02.02.09.0000000220",
+        "description": "KIT JUNTA ROTATIVA CESTA AEREA SKYCITY 13 AT",
         "quantity": 1,
-        "stock": 5,
+        "stock": 0,
+        "demand": 3
+      },
+      {
+        "code": "02.01.01.0000086291",
+        "description": "FIXAÇAO INFERIOR JUNTA ROTATIVA",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 132
+      },
+      {
+        "code": "01.01.01.0000000256",
+        "description": "CONEXAO MACHO RETO 3/8\" NPT TUBO 12 - UMA 12 X 3/8\" NPT - S",
+        "quantity": 4,
+        "stock": 0,
         "demand": 0
       },
       {
-        "code": "02.02.01.0000085370",
-        "description": "SUPORTE FIXAÇAO GARRA - AS",
+        "code": "02.02.09.0000000250",
+        "description": "KIT RESERVATORIO - SKYCITY 13 AT",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 3
+      },
+      {
+        "code": "01.01.08.0000000031",
+        "description": "FILTRO DE SUCÇAO PARA RESERVATORIO DE OLEO DE 40L/MIN - COM ROSCA DE FIXAÇAO DE 1\" BSP - HLSC3-010",
         "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
-        "code": "02.01.03.0000078178",
-        "description": "PLACA DESLIZE SUPERIOR BRAÇO INTERNO 13AT",
-        "quantity": 1,
-        "stock": 60,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000078184",
-        "description": "PLACA DESLIZE INFERIOR BRAÇO INTERNO 13AT",
-        "quantity": 1,
-        "stock": 102,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000078185",
-        "description": "PLACA DESLIZE INFERIOR BRAÇO INTERNO 13AT",
-        "quantity": 1,
-        "stock": 108,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000078579",
-        "description": "EIXO DA HASTE CILINDRO EXTENSAO",
-        "quantity": 1,
-        "stock": 20,
-        "demand": 0
-      },
-      {
-        "code": "01.15.04.0000000043",
-        "description": "ESTEIRA PORTA CABOS",
+        "code": "01.01.08.0000000005",
+        "description": "FILTRO RETORNO EM TANQUE 10 MICRA 3/4\" BSP",
         "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
-        "code": "02.01.01.0000078207",
-        "description": "CALHA SUPORTE MANGUEIRAS",
+        "code": "01.01.08.0000000025",
+        "description": "BOCAL DE ABASTECIMENTO HIDRAULICO GRANDE COM 6 PARAFUSOS DE FIXAÇAO",
         "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
-        "code": "01.04.01.0000000029",
-        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
-        "quantity": 1,
-        "stock": 62827.7096,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000078564",
-        "description": "CALHA SUPORTE MANGUEIRAS DIANT",
+        "code": "01.01.01.0000000311",
+        "description": "INDICADOR NIVEL OLEO HIDR. COM ESCALA E TERMOMETRO 127 MM",
         "quantity": 1,
         "stock": 0,
-        "demand": 0
+        "demand": 120
       },
       {
-        "code": "02.01.01.0000078179",
-        "description": "CHAPA FIXAÇAO INTERNA",
-        "quantity": 0.307,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000078124",
-        "description": "FIXAÇÃO CILINDRO ESTENSIVO - AS",
-        "quantity": 0.307,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.10.0000083972",
-        "description": "CILINDRO HIDRAULICO NIVELAMENTO MESTRE SKYCITY 13AT",
-        "quantity": 0.307,
-        "stock": 34,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000086570",
-        "description": "PROTECAO COMANDO TORRE",
-        "quantity": 0.307,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.01.0000000051",
-        "description": "CHAPA DE AÇO LAMINADO A QUENTE - 9,52 X 1200 X 3000MM - ASTM A36",
-        "quantity": 0.307,
-        "stock": 20836.82,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000086566",
-        "description": "PROTECAO VALVULA CILINDRO EXTENSIVO",
+        "code": "01.01.02.0000000049",
+        "description": "VALVULA ESFERA TRIPARTIDA PASSAGEM PLENA 1/2\" NPT CLASSE 300",
         "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
-        "code": "02.02.01.0000086477",
-        "description": "PROTECAO SUPORTE GARRA",
+        "code": "01.02.01.0000000045",
+        "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 6,
+        "stock": 0,
+        "demand": 1000
+      },
+      {
+        "code": "01.02.01.0000000114",
+        "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
+        "quantity": 2,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.02.03.0000000032",
+        "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
+        "quantity": 6,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.01.01.0000000008",
+        "description": "TEE FEMEA - CLASSE 150LB - 1/2\" NPT - GALVANIZADO",
         "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
-        "code": "02.01.01.0000086564",
-        "description": "PROTECAO VALVULA CILINDRO NIVELAMENTO",
+        "code": "01.01.01.0000000262",
+        "description": "CONEXAO 90° - MACHO X MACHO - JMA 12X1/2 NPT - S",
         "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
-        "code": "01.01.01.0000000298",
-        "description": "CONEXAO MACHO RETA IGUAL UDA 16-S",
-        "quantity": 0.1012,
-        "stock": 50,
+        "code": "01.01.01.0000000059",
+        "description": "CONEXAO RETA - MACHO X MACHO - COM ROSCA DE 1/2\" NPT",
+        "quantity": 2,
+        "stock": 0,
         "demand": 0
       },
       {
-        "code": "01.01.01.0000000299",
-        "description": "CONEXAO RETA - MACHO 9/16\" JIC X FEMEA 3/8\" NPT",
-        "quantity": 0.1012,
-        "stock": 334,
-        "demand": 0
-      },
-      {
-        "code": "01.06.03.0000000006",
-        "description": "guarnição da porta ( TRIBULBO) SEM ABA",
-        "quantity": 20,
-        "stock": 1200,
-        "demand": 750
-      },
-      {
-        "code": "01.09.04.0000000012",
-        "description": "PLACA DE ALUMINIO DE IDENTIFICAÇAO DO EQUIPAMENTO SKYCITY 13,5 AT - 130 X 150 X 0,5MM CANTOS RETOS",
+        "code": "01.01.01.0000000259",
+        "description": "CONEXAO MACHO RETO 3/4\" BSP TUBO 12 - UMA 12 X 3/4\" BSP - S",
         "quantity": 1,
-        "stock": 47,
+        "stock": 0,
         "demand": 0
+      },
+      {
+        "code": "01.01.01.0000000162",
+        "description": "ESPIGAO MACHO FIXO - 7/8\" X 1/2\" NPT",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 60
+      },
+      {
+        "code": "02.02.01.0000067114",
+        "description": "RESERVATORIO HIDRAULICO 60 LITROS CESTAS AEREAS SKYCITY 10 HDOC / 13 L / LD / LDI / LDDI",
+        "quantity": 1,
+        "stock": 0,
+        "demand": 54
       }
     ],
     "15LDDI": [
