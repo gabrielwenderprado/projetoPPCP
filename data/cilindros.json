@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_21.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_26.10.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-26",
   "models": [
     "18LDDI",
     "13",
@@ -223,7 +223,7 @@
       "code": "01.01.10.0000085209",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYCITY 18",
       "unit": "UN",
-      "stock": 6,
+      "stock": 5,
       "modelNeeds": {
         "18LDDI": 1,
         "13": 0,

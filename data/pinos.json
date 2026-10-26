@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_21.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_26.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-26",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -365,7 +365,7 @@
       "code": "02.02.01.0000085281",
       "description": "PINO ENGRENAGEM APOIO - AS",
       "unit": "UN",
-      "stock": 54,
+      "stock": 94,
       "modelNeeds": {
         "18LDDI": 14,
         "15LDDI": 2,
@@ -482,7 +482,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 724,
+      "stock": 714,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1184,7 +1184,7 @@
       "code": "02.02.01.0000086615",
       "description": "PINO FIXAÇAO CILINDROS - AS",
       "unit": "UN",
-      "stock": 23,
+      "stock": 21,
       "modelNeeds": {
         "18LDDI": 5,
         "15LDDI": 2,
@@ -1535,7 +1535,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 377,
+      "stock": 162,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -1886,7 +1886,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 116,
+      "stock": 278,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2003,7 +2003,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 96,
+      "stock": 286,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2120,7 +2120,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 23,
+      "stock": 133,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3056,7 +3056,7 @@
       "code": "02.02.01.0000086616",
       "description": "PINO ARTIC. LANÇAS - AS",
       "unit": "UN",
-      "stock": 20,
+      "stock": 19,
       "modelNeeds": {
         "18LDDI": 2,
         "15LDDI": 1,
@@ -4343,7 +4343,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 70,
+      "stock": 65,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4694,7 +4694,7 @@
       "code": "02.03.01.0000071336",
       "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
       "unit": "UN",
-      "stock": 2,
+      "stock": 198,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4811,7 +4811,7 @@
       "code": "02.03.01.0000080793",
       "description": "PINO FIXAÇÃO CESTO",
       "unit": "UN",
-      "stock": 26,
+      "stock": 16,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -5162,7 +5162,7 @@
       "code": "02.03.01.0000085011",
       "description": "PINO ARTICULAÇAO CAÇAMBA",
       "unit": "UN",
-      "stock": 27,
+      "stock": 22,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 282,
+      "stock": 275,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,

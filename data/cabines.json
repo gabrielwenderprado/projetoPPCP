@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_21.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_26.10.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-26",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 34000,
+      "stock": 31500,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 4395,
+      "stock": 3995,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -73,7 +73,7 @@
       "code": "01.02.01.0000000059",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 6360,
+      "stock": 6160,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 10100,
+      "stock": 9900,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 41346,
+      "stock": 40846,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -568,7 +568,7 @@
       "code": "01.02.01.0000000115",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 47143,
+      "stock": 44943,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 28869,
+      "stock": 21869,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
