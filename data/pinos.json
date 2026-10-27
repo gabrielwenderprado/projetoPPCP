@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_26.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_27.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-26",
+  "generatedAt": "2026-10-27",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -365,7 +365,7 @@
       "code": "02.02.01.0000085281",
       "description": "PINO ENGRENAGEM APOIO - AS",
       "unit": "UN",
-      "stock": 94,
+      "stock": 54,
       "modelNeeds": {
         "18LDDI": 14,
         "15LDDI": 2,
@@ -482,7 +482,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 714,
+      "stock": 699,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -599,7 +599,7 @@
       "code": "02.03.01.0000067336",
       "description": "PINO INFERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 1165,
+      "stock": 1135,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1535,7 +1535,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 162,
+      "stock": 161,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -2003,7 +2003,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 286,
+      "stock": 86,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2588,7 +2588,7 @@
       "code": "01.02.08.0000000020",
       "description": "CONTRAPINO 1/8\" X 1\" ZINCADO BRANCO DIN 94",
       "unit": "UN",
-      "stock": 4499,
+      "stock": 4497,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 3,
@@ -3290,7 +3290,7 @@
       "code": "01.02.01.0000000240",
       "description": "PINO DE CENTRO 3/8\"(9,52MM) X 1,50 X 3\"(76,20MM) CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 800,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4811,7 +4811,7 @@
       "code": "02.03.01.0000080793",
       "description": "PINO FIXAÇÃO CESTO",
       "unit": "UN",
-      "stock": 16,
+      "stock": 15,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -5396,7 +5396,7 @@
       "code": "02.03.01.0000085016",
       "description": "PINO SUPERIOR ESTABILIZADOR",
       "unit": "UN",
-      "stock": 99,
+      "stock": 198,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 275,
+      "stock": 271,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7736,7 +7736,7 @@
       "code": "02.03.01.0000085115",
       "description": "PINO ARTICULACAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 29,
+      "stock": 28,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,

@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_26.10.xlsm",
-  "generatedAt": "2026-10-26",
+  "sourceFile": "Cópia de EXPLOSAO_27.10.xlsm",
+  "generatedAt": "2026-10-27",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -21,7 +21,7 @@
         {
           "code": "01.01.10.0000074195",
           "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
-          "nextStock": 30,
+          "nextStock": 60,
           "quantityPerMachine": 1,
           "calferStock": 23,
           "row": 5
@@ -45,7 +45,7 @@
         {
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
-          "nextStock": 135,
+          "nextStock": 15,
           "quantityPerMachine": 1,
           "calferStock": 35,
           "row": 8
@@ -53,7 +53,7 @@
         {
           "code": "01.01.14.0000071344",
           "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
-          "nextStock": 542,
+          "nextStock": 506,
           "quantityPerMachine": 12,
           "calferStock": 89,
           "row": 9
@@ -99,7 +99,7 @@
         {
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-          "nextStock": 714,
+          "nextStock": 699,
           "quantityPerMachine": 13,
           "calferStock": 105,
           "row": 16
@@ -115,7 +115,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 22500,
+          "nextStock": 21500,
           "quantityPerMachine": 13,
           "calferStock": 405,
           "row": 18
@@ -233,7 +233,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "nextStock": 22500,
+          "nextStock": 21500,
           "quantityPerMachine": 5,
           "calferStock": 0,
           "row": 34
@@ -399,7 +399,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 22500,
+          "nextStock": 21500,
           "quantityPerMachine": 5,
           "calferStock": -10,
           "row": 56
@@ -503,7 +503,7 @@
         {
           "code": "01.01.10.0000000014",
           "description": "CILINDRO HIDRAULICO SUPERIOR 10HDOC",
-          "nextStock": 0,
+          "nextStock": 2,
           "quantityPerMachine": 1,
           "calferStock": -2,
           "row": 69
@@ -535,7 +535,7 @@
       "models": [
         "10L"
       ],
-      "nextStock": 30,
+      "nextStock": 60,
       "calferStock": 23
     },
     {
@@ -562,7 +562,7 @@
       "models": [
         "10L"
       ],
-      "nextStock": 135,
+      "nextStock": 15,
       "calferStock": 35
     },
     {
@@ -571,7 +571,7 @@
       "models": [
         "10L"
       ],
-      "nextStock": 542,
+      "nextStock": 506,
       "calferStock": 89
     },
     {
@@ -618,7 +618,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 714,
+      "nextStock": 699,
       "calferStock": 105
     },
     {
@@ -638,7 +638,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 22500,
+      "nextStock": 21500,
       "calferStock": -10
     },
     {
@@ -929,7 +929,7 @@
       "models": [
         "10HDOC"
       ],
-      "nextStock": 0,
+      "nextStock": 2,
       "calferStock": -2
     },
     {
