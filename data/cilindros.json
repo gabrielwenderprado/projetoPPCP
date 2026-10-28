@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_27.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.10.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-10-27",
+  "generatedAt": "2026-10-28",
   "models": [
     "18LDDI",
     "13",
@@ -28,7 +28,7 @@
       "code": "01.01.10.0000018380",
       "description": "CILINDRO HIDRAULICO SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 632,
+      "stock": 612,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 2,
@@ -58,7 +58,7 @@
       "code": "01.01.10.0000078125",
       "description": "CILINDRO HIDRAULICO EXTENSIVO SKYCITY 13AT",
       "unit": "UN",
-      "stock": 35,
+      "stock": 34,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -73,7 +73,7 @@
       "code": "01.01.10.0000078126",
       "description": "CILINDRO HIDRAULICO INFERIOR SKYCITY 13AT",
       "unit": "UN",
-      "stock": 28,
+      "stock": 27,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -88,7 +88,7 @@
       "code": "01.01.10.0000078127",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYCITY 13AT",
       "unit": "UN",
-      "stock": 29,
+      "stock": 28,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -178,7 +178,7 @@
       "code": "01.01.10.0000084360",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYRITZ 13L/LD/LDI",
       "unit": "UN",
-      "stock": 184,
+      "stock": 228,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 1,
@@ -193,7 +193,7 @@
       "code": "01.01.10.0000084361",
       "description": "CILINDRO HIDRAULICO INFERIOR SKYRITZ 13L/LD/LDI",
       "unit": "UN",
-      "stock": 322,
+      "stock": 366,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 1,

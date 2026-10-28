@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_27.10.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO_28.10.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-10-27",
+  "generatedAt": "2026-10-28",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -248,7 +248,7 @@
       "code": "02.03.01.0000079054",
       "description": "PINO INFERIOR DA SAPATA",
       "unit": "UN",
-      "stock": 607,
+      "stock": 557,
       "modelNeeds": {
         "18LDDI": 8,
         "15LDDI": 8,
@@ -599,7 +599,7 @@
       "code": "02.03.01.0000067336",
       "description": "PINO INFERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 1135,
+      "stock": 1085,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1067,7 +1067,7 @@
       "code": "02.03.01.0000079053",
       "description": "PINO SUPERIOR DA SAPATA",
       "unit": "UN",
-      "stock": 202,
+      "stock": 152,
       "modelNeeds": {
         "18LDDI": 4,
         "13AT": 4,
@@ -1418,7 +1418,7 @@
       "code": "02.03.01.0000067337",
       "description": "PINO SUPERIOR DA SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 760,
+      "stock": 710,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1652,7 +1652,7 @@
       "code": "02.03.01.0000085106",
       "description": "PINO ROSCADO DO DESLIZE",
       "unit": "UN",
-      "stock": 67,
+      "stock": 62,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2120,7 +2120,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 133,
+      "stock": 214,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3524,7 +3524,7 @@
       "code": "02.02.01.0000078132",
       "description": "PINO FRONTAL ARTICULAÇÃO - AS",
       "unit": "UN",
-      "stock": 17,
+      "stock": 16,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3758,7 +3758,7 @@
       "code": "02.02.01.0000078138",
       "description": "PINO ARTICULAÇÃO TORRE - AS",
       "unit": "UN",
-      "stock": 23,
+      "stock": 21,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5045,7 +5045,7 @@
       "code": "02.03.01.0000084354",
       "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
       "unit": "UN",
-      "stock": 53,
+      "stock": 96,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5513,7 +5513,7 @@
       "code": "01.02.07.0000000001",
       "description": "PINO QUEBRA DEDO 1/4\" X 2\"",
       "unit": "UN",
-      "stock": 1030,
+      "stock": 1055,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5630,7 +5630,7 @@
       "code": "02.02.01.0000078129",
       "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
       "unit": "UN",
-      "stock": 45,
+      "stock": 44,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5747,7 +5747,7 @@
       "code": "02.02.01.0000078131",
       "description": "PINO BRAÇO INFERIOR - AS",
       "unit": "UN",
-      "stock": 41,
+      "stock": 40,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5864,7 +5864,7 @@
       "code": "02.02.01.0000078133",
       "description": "PINO BRAÇO SUPERIOR / LINK - AS",
       "unit": "UN",
-      "stock": 25,
+      "stock": 23,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5981,7 +5981,7 @@
       "code": "02.02.01.0000078134",
       "description": "PINO TRASEIRO ARTICULAÇÃO - AS",
       "unit": "UN",
-      "stock": 30,
+      "stock": 29,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -6098,7 +6098,7 @@
       "code": "02.02.01.0000078135",
       "description": "PINO BASE EXTENSÃO - AS",
       "unit": "UN",
-      "stock": 18,
+      "stock": 16,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -6332,7 +6332,7 @@
       "code": "02.02.01.0000078583",
       "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
       "unit": "UN",
-      "stock": 54,
+      "stock": 53,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 271,
+      "stock": 270,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7736,7 +7736,7 @@
       "code": "02.03.01.0000085115",
       "description": "PINO ARTICULACAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 28,
+      "stock": 27,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
