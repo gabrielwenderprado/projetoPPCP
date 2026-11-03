@@ -4133,7 +4133,7 @@
     {
       "name": "30T",
       "column": 29,
-      "total": 1071.8653,
+      "total": 932.5985,
       "days": [
         {
           "row": 24,
@@ -4228,23 +4228,11 @@
           "quantity": 0.023
         },
         {
-          "row": 330,
-          "quantity": 0.1771
-        },
-        {
-          "row": 333,
-          "quantity": 0.0897
-        },
-        {
           "row": 396,
           "quantity": 4
         },
         {
           "row": 462,
-          "quantity": 1
-        },
-        {
-          "row": 525,
           "quantity": 1
         },
         {
@@ -4293,10 +4281,6 @@
         },
         {
           "row": 885,
-          "quantity": 1
-        },
-        {
-          "row": 900,
           "quantity": 1
         },
         {
@@ -4350,10 +4334,6 @@
         {
           "row": 998,
           "quantity": 2
-        },
-        {
-          "row": 1018,
-          "quantity": 1
         },
         {
           "row": 1021,
@@ -4412,47 +4392,7 @@
           "quantity": 1
         },
         {
-          "row": 1428,
-          "quantity": 1
-        },
-        {
-          "row": 1429,
-          "quantity": 2
-        },
-        {
-          "row": 1430,
-          "quantity": 1
-        },
-        {
-          "row": 1431,
-          "quantity": 2
-        },
-        {
-          "row": 1433,
-          "quantity": 1
-        },
-        {
-          "row": 1434,
-          "quantity": 1
-        },
-        {
-          "row": 1453,
-          "quantity": 1
-        },
-        {
-          "row": 1454,
-          "quantity": 1
-        },
-        {
-          "row": 1456,
-          "quantity": 2
-        },
-        {
           "row": 1458,
-          "quantity": 1
-        },
-        {
-          "row": 1465,
           "quantity": 1
         },
         {
@@ -4496,10 +4436,6 @@
           "quantity": 1
         },
         {
-          "row": 1832,
-          "quantity": 1
-        },
-        {
           "row": 2018,
           "quantity": 1
         },
@@ -4509,14 +4445,6 @@
         },
         {
           "row": 2144,
-          "quantity": 1
-        },
-        {
-          "row": 2202,
-          "quantity": 1
-        },
-        {
-          "row": 2205,
           "quantity": 1
         },
         {
@@ -4537,22 +4465,6 @@
         },
         {
           "row": 2983,
-          "quantity": 1
-        },
-        {
-          "row": 3061,
-          "quantity": 2
-        },
-        {
-          "row": 3070,
-          "quantity": 1
-        },
-        {
-          "row": 3071,
-          "quantity": 1
-        },
-        {
-          "row": 3081,
           "quantity": 1
         },
         {
@@ -4600,48 +4512,12 @@
           "quantity": 2
         },
         {
-          "row": 4033,
-          "quantity": 1
-        },
-        {
           "row": 4039,
-          "quantity": 1
-        },
-        {
-          "row": 4040,
-          "quantity": 1
-        },
-        {
-          "row": 4052,
-          "quantity": 1
-        },
-        {
-          "row": 4054,
-          "quantity": 1
-        },
-        {
-          "row": 4055,
           "quantity": 1
         },
         {
           "row": 4066,
           "quantity": 2
-        },
-        {
-          "row": 4071,
-          "quantity": 2
-        },
-        {
-          "row": 4072,
-          "quantity": 2
-        },
-        {
-          "row": 4086,
-          "quantity": 1
-        },
-        {
-          "row": 4087,
-          "quantity": 1
         },
         {
           "row": 4102,
@@ -4672,10 +4548,6 @@
           "quantity": 4
         },
         {
-          "row": 4358,
-          "quantity": 1
-        },
-        {
           "row": 4428,
           "quantity": 2
         },
@@ -4692,16 +4564,8 @@
           "quantity": 8
         },
         {
-          "row": 4611,
-          "quantity": 1
-        },
-        {
           "row": 4697,
           "quantity": 6
-        },
-        {
-          "row": 4701,
-          "quantity": 2
         },
         {
           "row": 4772,
@@ -4709,18 +4573,6 @@
         },
         {
           "row": 4773,
-          "quantity": 1
-        },
-        {
-          "row": 4786,
-          "quantity": 1
-        },
-        {
-          "row": 4796,
-          "quantity": 1
-        },
-        {
-          "row": 4855,
           "quantity": 1
         },
         {
@@ -4780,26 +4632,6 @@
           "quantity": 1
         },
         {
-          "row": 4980,
-          "quantity": 1
-        },
-        {
-          "row": 4983,
-          "quantity": 1
-        },
-        {
-          "row": 4984,
-          "quantity": 1
-        },
-        {
-          "row": 4985,
-          "quantity": 1
-        },
-        {
-          "row": 4988,
-          "quantity": 1
-        },
-        {
           "row": 5091,
           "quantity": 1
         },
@@ -4828,15 +4660,7 @@
           "quantity": 2
         },
         {
-          "row": 5115,
-          "quantity": 1
-        },
-        {
           "row": 5116,
-          "quantity": 1
-        },
-        {
-          "row": 5117,
           "quantity": 1
         },
         {
@@ -4852,147 +4676,7 @@
           "quantity": 1
         },
         {
-          "row": 5161,
-          "quantity": 1
-        },
-        {
-          "row": 5166,
-          "quantity": 1
-        },
-        {
-          "row": 5168,
-          "quantity": 1
-        },
-        {
           "row": 5171,
-          "quantity": 1
-        },
-        {
-          "row": 5174,
-          "quantity": 1
-        },
-        {
-          "row": 5180,
-          "quantity": 1
-        },
-        {
-          "row": 5181,
-          "quantity": 1
-        },
-        {
-          "row": 5185,
-          "quantity": 2
-        },
-        {
-          "row": 5187,
-          "quantity": 1
-        },
-        {
-          "row": 5189,
-          "quantity": 1
-        },
-        {
-          "row": 5210,
-          "quantity": 1
-        },
-        {
-          "row": 5211,
-          "quantity": 1
-        },
-        {
-          "row": 5213,
-          "quantity": 1
-        },
-        {
-          "row": 5214,
-          "quantity": 1
-        },
-        {
-          "row": 5215,
-          "quantity": 1
-        },
-        {
-          "row": 5216,
-          "quantity": 1
-        },
-        {
-          "row": 5217,
-          "quantity": 1
-        },
-        {
-          "row": 5218,
-          "quantity": 1
-        },
-        {
-          "row": 5219,
-          "quantity": 1
-        },
-        {
-          "row": 5221,
-          "quantity": 1
-        },
-        {
-          "row": 5222,
-          "quantity": 1
-        },
-        {
-          "row": 5234,
-          "quantity": 1
-        },
-        {
-          "row": 5236,
-          "quantity": 1
-        },
-        {
-          "row": 5241,
-          "quantity": 2
-        },
-        {
-          "row": 5242,
-          "quantity": 1
-        },
-        {
-          "row": 5243,
-          "quantity": 1
-        },
-        {
-          "row": 5244,
-          "quantity": 1
-        },
-        {
-          "row": 5245,
-          "quantity": 1
-        },
-        {
-          "row": 5246,
-          "quantity": 1
-        },
-        {
-          "row": 5247,
-          "quantity": 1
-        },
-        {
-          "row": 5249,
-          "quantity": 4
-        },
-        {
-          "row": 5251,
-          "quantity": 1
-        },
-        {
-          "row": 5257,
-          "quantity": 1
-        },
-        {
-          "row": 5258,
-          "quantity": 1
-        },
-        {
-          "row": 5259,
-          "quantity": 1
-        },
-        {
-          "row": 5260,
           "quantity": 1
         },
         {
@@ -5016,10 +4700,6 @@
           "quantity": 1
         },
         {
-          "row": 5283,
-          "quantity": 1
-        },
-        {
           "row": 5284,
           "quantity": 1
         },
@@ -5028,147 +4708,11 @@
           "quantity": 1
         },
         {
-          "row": 5288,
-          "quantity": 1
-        },
-        {
-          "row": 5289,
-          "quantity": 1
-        },
-        {
           "row": 5292,
           "quantity": 1
         },
         {
-          "row": 5300,
-          "quantity": 2
-        },
-        {
-          "row": 5301,
-          "quantity": 1
-        },
-        {
-          "row": 5309,
-          "quantity": 4
-        },
-        {
-          "row": 5318,
-          "quantity": 1
-        },
-        {
-          "row": 5326,
-          "quantity": 1
-        },
-        {
-          "row": 5327,
-          "quantity": 1
-        },
-        {
-          "row": 5328,
-          "quantity": 1
-        },
-        {
-          "row": 5329,
-          "quantity": 1
-        },
-        {
-          "row": 5332,
-          "quantity": 1
-        },
-        {
-          "row": 5335,
-          "quantity": 2
-        },
-        {
-          "row": 5339,
-          "quantity": 1
-        },
-        {
           "row": 5341,
-          "quantity": 1
-        },
-        {
-          "row": 5342,
-          "quantity": 1
-        },
-        {
-          "row": 5343,
-          "quantity": 1
-        },
-        {
-          "row": 5344,
-          "quantity": 1
-        },
-        {
-          "row": 5345,
-          "quantity": 1
-        },
-        {
-          "row": 5346,
-          "quantity": 1
-        },
-        {
-          "row": 5350,
-          "quantity": 1
-        },
-        {
-          "row": 5351,
-          "quantity": 1
-        },
-        {
-          "row": 5354,
-          "quantity": 1
-        },
-        {
-          "row": 5355,
-          "quantity": 1
-        },
-        {
-          "row": 5356,
-          "quantity": 1
-        },
-        {
-          "row": 5361,
-          "quantity": 1
-        },
-        {
-          "row": 5362,
-          "quantity": 1
-        },
-        {
-          "row": 5363,
-          "quantity": 1
-        },
-        {
-          "row": 5364,
-          "quantity": 1
-        },
-        {
-          "row": 5365,
-          "quantity": 1
-        },
-        {
-          "row": 5366,
-          "quantity": 1
-        },
-        {
-          "row": 5367,
-          "quantity": 1
-        },
-        {
-          "row": 5368,
-          "quantity": 1
-        },
-        {
-          "row": 5369,
-          "quantity": 1
-        },
-        {
-          "row": 5370,
-          "quantity": 11
-        },
-        {
-          "row": 5371,
           "quantity": 1
         },
         {
