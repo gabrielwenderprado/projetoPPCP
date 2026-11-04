@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_03.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-11-03",
+  "generatedAt": "2026-11-04",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -1886,7 +1886,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 224,
+      "stock": 216,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2003,7 +2003,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 272,
+      "stock": 264,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2120,7 +2120,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 200,
+      "stock": 192,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2588,7 +2588,7 @@
       "code": "01.02.08.0000000020",
       "description": "CONTRAPINO 1/8\" X 1\" ZINCADO BRANCO DIN 94",
       "unit": "UN",
-      "stock": 4491,
+      "stock": 3491,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 3,
@@ -3173,7 +3173,7 @@
       "code": "02.03.01.0000084348",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 117,
+      "stock": 237,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3992,7 +3992,7 @@
       "code": "02.02.01.0000082263",
       "description": "PINO FIXAÇAO CILINDROS - AS",
       "unit": "UN",
-      "stock": 78,
+      "stock": 117,
       "modelNeeds": {
         "18LDDI": 2,
         "15LDDI": 0,
@@ -4343,7 +4343,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 58,
+      "stock": 54,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5162,7 +5162,7 @@
       "code": "02.03.01.0000085011",
       "description": "PINO ARTICULAÇAO CAÇAMBA",
       "unit": "UN",
-      "stock": 195,
+      "stock": 191,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -6449,7 +6449,7 @@
       "code": "02.02.01.0000082265",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 29,
+      "stock": 49,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,

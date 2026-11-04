@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_03.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-11-03",
+  "generatedAt": "2026-11-04",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 23100,
+      "stock": 13000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 650,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 19494,
+      "stock": 16194,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -118,7 +118,7 @@
       "code": "01.02.01.0000000024",
       "description": "PARAFUSO SEXTAVADO AUTO PERFURANTE 1/4 X 1\" (6,35X1,75X25MM) ROSCA INTEIRA ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 4200,
+      "stock": 4000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 45,
@@ -133,7 +133,7 @@
       "code": "01.02.03.0000000034",
       "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 4614,
+      "stock": 3673,
       "modelNeeds": {
         "4 LUGAR": 24,
         "6 LUGAR": 18,
@@ -208,7 +208,7 @@
       "code": "01.02.03.0000000029",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 979,
+      "stock": 629,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -223,7 +223,7 @@
       "code": "01.02.03.0000000074",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 6430,
+      "stock": 7430,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 20,
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 9900,
+      "stock": 9700,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 44144.3338,
+      "stock": 48664.3338,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 35146,
+      "stock": 28846,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 20869,
+      "stock": 19869,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -613,7 +613,7 @@
       "code": "01.09.02.0000000021",
       "description": "ETIQUETA POLICARBONATO CRISTAL COM ADESIVO DE 275 X 65MM ESP. 0,25MM - NEXT IMPLEMENTOS",
       "unit": "UN",
-      "stock": 0,
+      "stock": 560,
       "modelNeeds": {
         "4 LUGAR": 3,
         "6 LUGAR": 3,
@@ -793,7 +793,7 @@
       "code": "01.15.02.0000000121",
       "description": "CONJUNTO FECHADURA COR PRETA COM CHAVE",
       "unit": "UN",
-      "stock": 247,
+      "stock": 243,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1663,7 +1663,7 @@
       "code": "01.15.04.0000000071",
       "description": "EXTINTOR DE INCENDIO 1KG CLASSE ABC",
       "unit": "UN",
-      "stock": 50,
+      "stock": 72,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -1678,7 +1678,7 @@
       "code": "01.15.04.0000000076",
       "description": "SUPORTE EXTINTOR DE 3\"",
       "unit": "UN",
-      "stock": 39,
+      "stock": 61,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2158,7 +2158,7 @@
       "code": "01.04.01.0000000156",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 6000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 3156,
+      "stock": 6516,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4693,7 +4693,7 @@
       "code": "01.06.01.0000000004",
       "description": "PERFIL ACABAMENTO PVC 9 X 14 PTO 2 GARRAS (CASCO DE COBRA)",
       "unit": "UN",
-      "stock": 5305,
+      "stock": 5205,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0.3,

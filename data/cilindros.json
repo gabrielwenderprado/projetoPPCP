@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO_03.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-11-03",
+  "generatedAt": "2026-11-04",
   "models": [
     "18LDDI",
     "13",
@@ -28,7 +28,7 @@
       "code": "01.01.10.0000018380",
       "description": "CILINDRO HIDRAULICO SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 697,
+      "stock": 677,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 2,
