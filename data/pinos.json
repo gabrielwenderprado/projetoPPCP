@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-11-04",
+  "generatedAt": "2026-11-05",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -131,7 +131,7 @@
       "code": "01.02.08.0000000046",
       "description": "CONTRAPINO 1/8\" X 1.1/4\" ZINCADO BRANCO DIN 94",
       "unit": "UN",
-      "stock": 2040,
+      "stock": 810,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 8,
@@ -2588,7 +2588,7 @@
       "code": "01.02.08.0000000020",
       "description": "CONTRAPINO 1/8\" X 1\" ZINCADO BRANCO DIN 94",
       "unit": "UN",
-      "stock": 3491,
+      "stock": 2237,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 3,

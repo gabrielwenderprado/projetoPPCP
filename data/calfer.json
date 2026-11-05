@@ -1,6 +1,6 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
-  "generatedAt": "2026-11-04",
+  "generatedAt": "2026-11-05",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -13,7 +13,7 @@
         {
           "code": "02.01.03.0000069390",
           "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
-          "nextStock": 0,
+          "nextStock": 8,
           "quantityPerMachine": 1,
           "calferStock": 27,
           "row": 4
@@ -67,7 +67,7 @@
         {
           "code": "02.01.03.0000085070",
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
-          "nextStock": 2,
+          "nextStock": 10,
           "quantityPerMachine": 1,
           "calferStock": 10,
           "row": 12
@@ -83,7 +83,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "nextStock": 778,
+          "nextStock": 1978,
           "quantityPerMachine": 16,
           "calferStock": 592,
           "row": 14
@@ -193,7 +193,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "nextStock": 778,
+          "nextStock": 1978,
           "quantityPerMachine": 10,
           "calferStock": 800,
           "row": 29
@@ -281,7 +281,7 @@
         {
           "code": "02.01.03.0000082542",
           "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
-          "nextStock": 31,
+          "nextStock": 34,
           "quantityPerMachine": 1,
           "calferStock": 10,
           "row": 40
@@ -289,7 +289,7 @@
         {
           "code": "04.02.01.0000000107",
           "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
-          "nextStock": 1038,
+          "nextStock": 911,
           "quantityPerMachine": 1.5,
           "calferStock": 0,
           "row": 41
@@ -423,7 +423,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "nextStock": 778,
+          "nextStock": 1978,
           "quantityPerMachine": 10,
           "calferStock": 780,
           "row": 59
@@ -526,7 +526,7 @@
       "models": [
         "10L"
       ],
-      "nextStock": 0,
+      "nextStock": 8,
       "calferStock": 27
     },
     {
@@ -580,7 +580,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 2,
+      "nextStock": 10,
       "calferStock": 10
     },
     {
@@ -600,7 +600,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 778,
+      "nextStock": 1978,
       "calferStock": 780
     },
     {
@@ -807,7 +807,7 @@
       "models": [
         "13LDI"
       ],
-      "nextStock": 31,
+      "nextStock": 34,
       "calferStock": 10
     },
     {
@@ -816,7 +816,7 @@
       "models": [
         "13LDI"
       ],
-      "nextStock": 1038,
+      "nextStock": 911,
       "calferStock": 0
     },
     {

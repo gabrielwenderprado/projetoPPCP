@@ -1,29 +1,17 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-11-04",
+  "generatedAt": "2026-11-05",
   "models": [
     "18LDDI",
     "13",
     "13AT",
-    "10S"
+    "10S",
+    "10HDOC",
+    "10L",
+    "15LDDI"
   ],
   "items": [
-    {
-      "code": "01.01.10.0000087165",
-      "description": "CILINDRO HIDRAULICO ESTABILIZADOR SKYCITY 18",
-      "unit": "UN",
-      "stock": 12,
-      "modelNeeds": {
-        "18LDDI": 4,
-        "13": 0,
-        "13AT": 0,
-        "10S": 0
-      },
-      "lastMovement": "não tem",
-      "totalNeed": 4,
-      "modelCount": 1
-    },
     {
       "code": "01.01.10.0000018380",
       "description": "CILINDRO HIDRAULICO SAPATA SKYRITZ",
@@ -33,25 +21,139 @@
         "18LDDI": 0,
         "13": 2,
         "13AT": 0,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 4,
+        "10L": 2,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
-      "totalNeed": 2,
+      "totalNeed": 8,
+      "modelCount": 3
+    },
+    {
+      "code": "01.01.10.0000079502",
+      "description": "CILINDRO HIDRAULICO ESTABILIZADOR SKYCITY 13AT / 15",
+      "unit": "UN",
+      "stock": 52,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 4
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 4,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000087165",
+      "description": "CILINDRO HIDRAULICO ESTABILIZADOR SKYCITY 18",
+      "unit": "UN",
+      "stock": 12,
+      "modelNeeds": {
+        "18LDDI": 4,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 4,
       "modelCount": 1
     },
     {
       "code": "01.01.10.0000071234",
       "description": "CILINDRO HIDRAULICO SAPATA SKYCITY",
       "unit": "UN",
-      "stock": 339,
+      "stock": 309,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
         "13AT": 0,
-        "10S": 2
+        "10S": 2,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000083472",
+      "description": "CILINDRO HIDRAULICO SUPERIOR 15LDDI",
+      "unit": "UN",
+      "stock": 20,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 2
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 2,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000000014",
+      "description": "CILINDRO HIDRAULICO SUPERIOR 10HDOC",
+      "unit": "UN",
+      "stock": 2,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 1,
+        "10L": 0,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000074194",
+      "description": "CILINDRO HIDRAULICO INFERIOR 10L",
+      "unit": "UN",
+      "stock": 98,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 1,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000074195",
+      "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
+      "unit": "UN",
+      "stock": 67,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 1,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 1,
       "modelCount": 1
     },
     {
@@ -63,7 +165,10 @@
         "18LDDI": 0,
         "13": 0,
         "13AT": 1,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -78,7 +183,10 @@
         "18LDDI": 0,
         "13": 0,
         "13AT": 1,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -93,7 +201,10 @@
         "18LDDI": 0,
         "13": 0,
         "13AT": 1,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -103,12 +214,15 @@
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 67,
+      "stock": 63,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
         "13AT": 0,
-        "10S": 1
+        "10S": 1,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -118,12 +232,33 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 110,
+      "stock": 106,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
         "13AT": 0,
-        "10S": 1
+        "10S": 1,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000083471",
+      "description": "CILINDRO HIDRAULICO INFERIOR 15LDDI",
+      "unit": "UN",
+      "stock": 14,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 1
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -138,7 +273,10 @@
         "18LDDI": 0,
         "13": 0,
         "13AT": 1,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -153,7 +291,10 @@
         "18LDDI": 0,
         "13": 0,
         "13AT": 1,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -163,12 +304,15 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 93,
+      "stock": 89,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
         "13AT": 0,
-        "10S": 1
+        "10S": 1,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -183,7 +327,10 @@
         "18LDDI": 0,
         "13": 1,
         "13AT": 0,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -198,7 +345,10 @@
         "18LDDI": 0,
         "13": 1,
         "13AT": 0,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -213,7 +363,10 @@
         "18LDDI": 1,
         "13": 0,
         "13AT": 0,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -228,7 +381,10 @@
         "18LDDI": 1,
         "13": 0,
         "13AT": 0,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -243,7 +399,46 @@
         "18LDDI": 1,
         "13": 0,
         "13AT": 0,
-        "10S": 0
+        "10S": 0,
+        "10HDOC": 0,
+        "10L": 0,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000085416",
+      "description": "CILINDRO HIDRAULICO INFERIOR 10HDOC",
+      "unit": "UN",
+      "stock": 13,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 1,
+        "10L": 0,
+        "15LDDI": 0
+      },
+      "lastMovement": "não tem",
+      "totalNeed": 1,
+      "modelCount": 1
+    },
+    {
+      "code": "01.01.10.0000088643",
+      "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY 10HDOC",
+      "unit": "UN",
+      "stock": 13,
+      "modelNeeds": {
+        "18LDDI": 0,
+        "13": 0,
+        "13AT": 0,
+        "10S": 0,
+        "10HDOC": 1,
+        "10L": 0,
+        "15LDDI": 0
       },
       "lastMovement": "não tem",
       "totalNeed": 1,
@@ -254,6 +449,6 @@
     "headerRow": 2,
     "modelRow": 1,
     "firstDataRow": 3,
-    "codeBlocks": 4
+    "codeBlocks": 7
   }
 }
