@@ -36,7 +36,7 @@ python scripts/atualizar_todos_dados.py /caminho/para/explosao.xlsm [/caminho/pa
 
 O segundo ficheiro é necessário apenas quando a planilha de Consumíveis estiver separada. Se a primeira planilha tiver uma aba chamada `consumiveis`, ela será detetada automaticamente. O conversor direto `convert_excel.py` continua disponível para uso técnico, mas a atualização normal deve ser feita pelos scripts `atualizar-dados.bat` ou `atualizar-dados.sh`.
 
-O conversor lê as abas `Estoque`, `Obtencao`, `Programacao`, `familia`, `estoque segurança` e as abas de modelos. Ele extrai, entre outros dados, família, tipo de obtenção, estoque, estoque de segurança, pedidos `PED`, demanda `DEM` e valor do estoque. Na mesma execução, os conversores especializados leem as abas `Pinos` e `cilindros`, produzindo `data/pinos.json` e `data/cilindros.json`.
+O conversor lê as abas `Estoque`, `Obtencao`, `Programacao`, `familia`, `estoque segurança` e as abas de modelos. Ele extrai, entre outros dados, família, tipo de obtenção, estoque, estoque de segurança, pedidos `PED` e valor do estoque. A demanda mensal em Estoque e o consumo semanal no NIGURI usam as quantidades por modelo da aba `PLANO MES` multiplicadas pelas estruturas; os cabeçalhos mensais são lidos dinamicamente desde a linha 15. A aba `planoAnual` fornece as ENs, clientes, modelos e datas previstas para a lista semanal de **Carros a liberar** na Visão geral. Na mesma execução, os conversores especializados leem `Pinos`, `cilindros` e `cabines`.
 
 Depois de atualizar o JSON, recarregue o dashboard com `Ctrl + F5`.
 
@@ -44,9 +44,11 @@ Depois de atualizar o JSON, recarregue o dashboard com `Ctrl + F5`.
 
 A visão geral mostra materiais cadastrados, valor total do estoque, solicitações de obtenção em aberto, classificação de risco e pedidos previstos por mês. Os filtros globais combinam **Carteira**, **Família** e **Tipo de obtenção**.
 
-A área **Estoque** permite pesquisar por código ou descrição e filtrar materiais críticos, em atenção ou regulares. A área **Pedidos e demanda** separa pedidos `PED` da demanda mensal `DEM` calculada na aba `Programacao`, mostrando o saldo projetado por item.
+Na área **Estoque**, selecione o mês do Plano Mês para ver, na mesma tabela, o pedido `PED` daquele mês e a demanda derivada da estrutura do produto planeado. Os separadores autónomos **Pedidos e demanda** e **Modelos** foram removidos para evitar duplicação: os pedidos continuam na tabela de Estoque e as estruturas continuam carregadas internamente para o NIGURI e as simulações.
 
-A área **Modelos** permite consultar os componentes de cada modelo. As áreas **Pinos por modelo** e **Cilindros por modelo** tratam exclusivamente as abas `Pinos` e `cilindros`, respetivamente, consolidando código, descrição, estoque atual, última movimentação e necessidade separada por modelo. Em cada simulador, selecione um modelo, informe a quantidade de máquinas e execute o cálculo: a necessidade é multiplicada pela quantidade informada, o saldo é comparado com o estoque e cada componente recebe a situação **Regular**, **Em Atenção** ou **Crítico**. Também é possível pesquisar, filtrar a situação e filtrar o estoque. Os modelos de guindastes utilizam as colunas `Código`, `Descrição` e `Quantidade` da explosão.
+O **NIGURI dos modelos** lista as estruturas carregadas das abas de modelos e distribui pelas semanas a quantidade mensal do modelo na aba `PLANO MES`; a quantidade do mês corrente é repartida apenas pelas semanas que ainda estão abertas. Os aliases de guindaste usam a capacidade-base: por exemplo, `guindaste 16,5` corresponde ao modelo-base `guindaste 16`. A lista da Visão geral **Carros a liberar** usa as ENs e as datas da coluna D do `planoAnual`; permite seleccionar uma semana e exportar um `.xlsx` formatado com todas as ENs dessa semana, modelo, cliente, semana, lista de itens críticos e previsão de pedido para os críticos. Quando uma EN não tem itens críticos, o Excel escreve **“Sem crítico”**. Itens em atenção podem continuar visíveis no painel, mas não são incluídos no ficheiro Excel. Uma variante sem BOM correspondente — por exemplo, guindaste 35,5 quando a cópia do Excel não contém uma estrutura guindaste 35 — é assinalada e não recebe consumo inventado. As áreas **Pinos por modelo** e **Cilindros por modelo** mantêm os seus cálculos especializados.
+
+A página **Evolução do estoque** mostra barras mensais para o valor total do estoque e uma tabela com os valores exactos de cada mês.
 
 Ao clicar em um código de material, o dashboard mostra estoque, segurança, consumo mensal, pedidos e quantidade sugerida para compra. O cartão de **Follow-up** abre a relação de pedidos de meses anteriores que precisam ser verificados com o time de compras.
 
@@ -57,6 +59,7 @@ Ao clicar em um código de material, o dashboard mostra estoque, segurança, con
 | `index.html` | Estrutura da tela de login e do dashboard |
 | `assets/styles.css` | Cores, layout, responsividade e estilos dos componentes |
 | `assets/app.js` | Login, filtros, cálculos, tabelas, detalhes e navegação |
+| `assets/exceljs.min.js` | Biblioteca local para exportação Excel `.xlsx` com estilos, sem dependência externa |
 | `assets/login-pcp.png` | Imagem usada na tela de login |
 | `NEXT - Logo_edited.avif` | Logo exibido na barra lateral |
 | `data/explosao.json` | Dados convertidos da planilha Excel |

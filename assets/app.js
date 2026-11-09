@@ -39,7 +39,6 @@ function loadThemePreference() {
   applyTheme(saved === 'dark' ? 'dark' : 'light');
 }
 // Guarda os filtros selecionados pelo usuário para manter a navegação consistente.
-let demandMonth = 'all';
 let productionMapQuery = '';
 let productionMapStatus = 'all';
 let productionMapDateStart = '';
@@ -60,6 +59,8 @@ let pinsNiguriStartWeek = '';
 let modelNiguriModel = '';
 let modelNiguriStartWeek = '';
 let modelNiguriAnalyst = 'all';
+let stockPlanMonth = '';
+let releaseWeekFilter = '';
 // Dados consolidados da aba Cilindros, tratados com a mesma lógica de Pinos.
 let CYLINDERS = { items: [], models: [] };
 let selectedCylinderModel = '';
@@ -674,15 +675,16 @@ function filterBar() {
   </div>`;
 }
 
-function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabel = '', includeDemand = false) {
+function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabel = '', includeDemand = false, stockPeriod = '') {
   return items.slice(offset, offset + limit).map(item => {
-    const [label, color] = risk(item, showDemand ? item.need : undefined);
-    const orders = Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
+    const periodDemand = includeDemand ? n(item.demands?.[`DEM ${stockPeriod}`]) : undefined;
+    const [label, color] = risk(item, showDemand ? item.need : periodDemand);
+    const orders = includeDemand ? orderQuantityForPeriod(item, stockPeriod) : Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
     const totalDemand = Object.values(item.demands || {}).reduce((sum, value) => sum + n(value), 0);
     const demand = showDemand
       ? `<td>${fmt(item.need || 0)} ${esc(item.unit)}</td><td class="${n(item.balance) < 0 ? 'danger' : ''}">${fmt(item.balance || 0)}</td>`
       : '';
-    const stockDemand = includeDemand ? `<td>${fmt(totalDemand)} ${esc(item.unit)}</td>` : '';
+    const stockDemand = includeDemand ? `<td>${fmt(periodDemand)} ${esc(item.unit)}</td>` : '';
     const obtainingType = includeDemand ? `<td>${esc(item.obtentionType || '—')}</td>` : '';
     return `<tr>
       <td><button class="material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td>
@@ -692,21 +694,21 @@ function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabe
       <td>${fmt(item.safety)}</td>
       ${obtainingType}
       <td class="movement-date">${esc(movementDate(item.lastMovement))}</td>
-      ${stockDemand}${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : undefined, showDemand ? demandLabel : '')}</td>
+      ${stockDemand}${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : periodDemand, includeDemand ? `DEM ${stockPeriod}` : (showDemand ? demandLabel : ''))}</td>
     </tr>`;
   }).join('');
 }
 
-function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel = '', includeDemand = false) {
+function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel = '', includeDemand = false, stockPeriod = '') {
   const columns = 9 + (showDemand ? 2 : 0) + (includeDemand ? 2 : 0);
   const id = `progressive-table-${++TABLE_SEQUENCE}`;
   const initialLimit = Math.min(Math.max(Number(limit) || TABLE_CHUNK_SIZE, 50), TABLE_CHUNK_SIZE);
-  TABLE_DATASETS.set(id, { items, showDemand, demandLabel, includeDemand, cursor: initialLimit });
-  const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel, includeDemand);
+  TABLE_DATASETS.set(id, { items, showDemand, demandLabel, includeDemand, stockPeriod, cursor: initialLimit });
+  const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel, includeDemand, stockPeriod);
   const more = items.length > initialLimit ? `<div class="table-load-more"><span>Mostrando ${fmt(initialLimit)} de ${fmt(items.length)} itens</span><button class="secondary-btn table-more-btn" data-table-id="${id}">Carregar mais</button></div>` : `<div class="table-load-more"><span>${fmt(items.length)} itens carregados</span></div>`;
   return `<div class="progressive-table" data-progressive-table="${id}"><div class="table-wrap"><table class="data-table"><thead><tr>
-    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th>${includeDemand ? '<th>tipo de obtenção</th>' : ''}<th>ultima movimentação</th>${includeDemand ? '<th>demanda</th>' : ''}
-    ${showDemand ? '<th>Demanda</th><th>Saldo</th>' : ''}<th>Pedidos</th><th>Situação</th><th>Processo de compra</th>
+    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th>${includeDemand ? '<th>Tipo de obtenção</th>' : ''}<th>Última movimentação</th>${includeDemand ? `<th>Demanda PLANO MES · ${esc(stockPeriod)}</th>` : ''}
+    ${showDemand ? '<th>Demanda</th><th>Saldo</th>' : ''}<th>${includeDemand ? `Pedido · ${esc(stockPeriod)}` : 'Pedidos'}</th><th>Situação</th><th>Processo de compra</th>
   </tr></thead><tbody>${rows || `<tr><td colspan="${columns}" class="empty">Nenhum item encontrado.</td></tr>`}</tbody></table></div>${more}</div>`;
 }
 
@@ -723,7 +725,7 @@ function bindProgressiveTables() {
       const start = dataset.cursor;
       const end = Math.min(start + TABLE_CHUNK_SIZE, dataset.items.length);
       window.setTimeout(() => {
-        tbody.insertAdjacentHTML('beforeend', itemRows(dataset.items, end - start, dataset.showDemand, start, dataset.demandLabel, dataset.includeDemand));
+        tbody.insertAdjacentHTML('beforeend', itemRows(dataset.items, end - start, dataset.showDemand, start, dataset.demandLabel, dataset.includeDemand, dataset.stockPeriod));
         dataset.cursor = end;
         const label = container.querySelector('.table-load-more span');
         if (label) label.textContent = end < dataset.items.length ? `Mostrando ${fmt(end)} de ${fmt(dataset.items.length)} itens` : `${fmt(end)} itens carregados`;
@@ -774,14 +776,37 @@ function orderPanel(panelBase = scopedItems()) {
   return `<div class="panel"><div class="panel-header"><h3>Itens em pedidos por mês</h3><span>Quantidade de itens/unidades nas colunas PED</span></div><div class="panel-body">${months.map((month, index) => `<div class="chart-row"><span>${esc(month.replace('PED ', ''))}</span><div class="bar-track"><div class="bar-fill" style="background:#3278df;width:${displayed[index] / max * 100}%"></div></div><b>${fmt(displayed[index])} itens</b></div>`).join('') || '<div class="empty">Sem colunas de pedidos.</div>'}</div></div>`;
 }
 
+function planMonthPeriods() {
+  const plan = DATA?.planMonth || {};
+  if (Array.isArray(plan.periods) && plan.periods.length) return plan.periods;
+  const months = Array.isArray(plan.months) ? plan.months : [];
+  let year = new Date().getFullYear(); let previous = null;
+  return months.map(value => {
+    const raw = String(value || ''); const match = raw.match(/^(\d{1,2})(?:\/(\d{4}))?$/);
+    if (!match) return null;
+    const month = Number(match[1]);
+    if (match[2]) year = Number(match[2]);
+    else if (previous !== null && month < previous) year += 1;
+    previous = month;
+    return { key: `${String(month).padStart(2, '0')}/${year}`, month: String(month).padStart(2, '0'), year: String(year) };
+  }).filter(Boolean);
+}
+
+function currentPlanMonthPeriod() {
+  const periods = planMonthPeriods();
+  const now = new Date(); const current = now.getFullYear() * 100 + now.getMonth() + 1;
+  return periods.find(period => Number(period.year) * 100 + Number(period.month) >= current)?.key || periods.at(-1)?.key || '';
+}
+
 function planMonthPanel() {
   const plan = DATA.planMonth || { models: [], months: [] };
   const models = plan.models || [];
-  const months = plan.months || [];
-  if (!models.length) return '<div class="panel"><div class="empty">Plano Mês não disponível neste snapshot.</div></div>';
+  const periods = planMonthPeriods();
+  const months = periods.map(period => period.key);
+  if (!models.length || !months.length) return '<div class="panel"><div class="empty">Plano Mês não disponível neste snapshot.</div></div>';
   const totals = months.map(month => models.reduce((sum, model) => sum + n(model.quantidades?.[month]), 0));
   const max = Math.max(...totals, 1);
-  return `<div class="panel plan-month-panel"><div class="panel-header"><div><h3>Plano Mês · produção prevista</h3><span>Quantidade de veículos planeados por mês</span></div><span>Fonte: aba PLANO MES</span></div><div class="panel-body"><div class="plan-month-grid">${months.map((month, index) => `<div class="plan-month-card"><span>Mês ${esc(month)}</span><strong>${fmt(totals[index])}</strong><small>veículos</small><div class="bar-track"><div class="bar-fill" style="background:#1b9a82;width:${totals[index] / max * 100}%"></div></div></div>`).join('')}</div><div class="plan-month-table-wrap"><table class="data-table plan-month-table"><thead><tr><th>Modelo</th>${months.map(month => `<th>${esc(month)}</th>`).join('')}</tr></thead><tbody>${models.map(model => `<tr><td><strong>${esc(model.modelo)}</strong></td>${months.map(month => `<td>${fmt(model.quantidades?.[month])}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div></div>`;
+  return `<div class="panel plan-month-panel"><div class="panel-header"><div><h3>Plano Mês · produção prevista</h3><span>Quantidade de veículos planeados por mês</span></div><span>Fonte: aba PLANO MES</span></div><div class="panel-body"><div class="plan-month-grid">${months.map((month, index) => `<div class="plan-month-card"><span>${esc(month)}</span><strong>${fmt(totals[index])}</strong><small>veículos</small><div class="bar-track"><div class="bar-fill" style="background:#1b9a82;width:${totals[index] / max * 100}%"></div></div></div>`).join('')}</div><div class="plan-month-table-wrap"><table class="data-table plan-month-table"><thead><tr><th>Modelo</th>${months.map(month => `<th>${esc(month)}</th>`).join('')}</tr></thead><tbody>${models.map(model => `<tr><td><strong>${esc(model.modelo)}</strong></td>${months.map(month => `<td>${fmt(model.quantidades?.[month])}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div></div>`;
 }
 
 function bindMaterialButtons() {
@@ -902,38 +927,47 @@ function chartValue(value) {
   return money(amount);
 }
 
-// Cria o gráfico de linha com duas séries: valor em reais e quantidade de itens.
+// Cria um gráfico de barras do valor mensal; a quantidade fica visível na tabela inferior.
 function stockHistoryChart() {
-  const records = (STOCK_HISTORY.records || []).slice(-12);
+  const byMonth = new Map();
+  (STOCK_HISTORY.records || []).forEach(record => {
+    const key = String(record.date || record.label || '');
+    const monthKey = key.match(/^\d{4}-\d{2}/)?.[0] || key;
+    byMonth.set(monthKey, record);
+  });
+  const records = [...byMonth.values()].sort((a, b) => String(a.date || a.label || '').localeCompare(String(b.date || b.label || ''))).slice(-12);
   if (!records.length) return '<div class="empty">Ainda não existe histórico registado.</div>';
 
-  const width = 900;
+  const width = Math.max(900, records.length * 112);
   const height = 320;
-  const padding = { top: 30, right: 28, bottom: 58, left: 78 };
+  const padding = { top: 42, right: 24, bottom: 58, left: 86 };
   const plotWidth = width - padding.left - padding.right;
   const plotHeight = height - padding.top - padding.bottom;
   const values = records.map(record => n(record.stockValue));
   const counts = records.map(record => n(record.itemCount));
   const maxValue = Math.max(...values, 1);
-  const maxCount = Math.max(...counts, 1);
-  const x = index => records.length === 1 ? padding.left + plotWidth / 2 : padding.left + (index / (records.length - 1)) * plotWidth;
+  const slotWidth = plotWidth / records.length;
+  const x = index => padding.left + slotWidth * (index + 0.5);
   const yValue = value => padding.top + plotHeight - (value / maxValue) * plotHeight;
-  const yCount = value => padding.top + plotHeight - (value / maxCount) * plotHeight;
-  const valuePoints = values.map((value, index) => `${x(index).toFixed(1)},${yValue(value).toFixed(1)}`).join(' ');
-  const countPoints = counts.map((value, index) => `${x(index).toFixed(1)},${yCount(value).toFixed(1)}`).join(' ');
   const grid = [0, 0.5, 1].map(step => {
     const y = padding.top + plotHeight - step * plotHeight;
-    return `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" class="history-grid-line" /><text x="${padding.left - 12}" y="${y + 4}" text-anchor="end" class="history-axis-label">${chartValue(maxValue * step)}</text><text x="${width - padding.right + 12}" y="${y + 4}" text-anchor="start" class="history-axis-label">${fmt(maxCount * step)} itens</text>`;
+    return `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" class="history-grid-line" /><text x="${padding.left - 12}" y="${y + 4}" text-anchor="end" class="history-axis-label">${chartValue(maxValue * step)}</text>`;
   }).join('');
-  const labels = records.map((record, index) => `<text x="${x(index)}" y="${height - 22}" text-anchor="middle" class="history-axis-label">${esc(record.label || record.date)}</text>`).join('');
-  const dots = records.map((record, index) => `<circle cx="${x(index)}" cy="${yValue(values[index])}" r="4" class="history-dot-value"><title>${esc(record.label || record.date)} · ${money(values[index])}</title></circle><circle cx="${x(index)}" cy="${yCount(counts[index])}" r="4" class="history-dot-count"><title>${esc(record.label || record.date)} · ${fmt(counts[index])} itens</title></circle>`).join('');
+  const bars = records.map((record, index) => {
+    const barWidth = Math.min(56, slotWidth * 0.56);
+    const barHeight = Math.max(1, plotHeight - (yValue(values[index]) - padding.top));
+    const barY = padding.top + plotHeight - barHeight;
+    const label = record.label || record.date;
+    return `<rect x="${(x(index) - barWidth / 2).toFixed(1)}" y="${barY.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${barHeight.toFixed(1)}" rx="5" class="history-bar"><title>${esc(label)} · ${money(values[index])} · ${fmt(counts[index])} itens</title></rect><text x="${x(index)}" y="${Math.max(16, barY - 8)}" text-anchor="middle" class="history-bar-value-label">${esc(chartValue(values[index]))}</text><text x="${x(index)}" y="${height - 22}" text-anchor="middle" class="history-axis-label">${esc(label)}</text>`;
+  }).join('');
   const latest = records[records.length - 1];
-  return `<div class="history-chart-wrap"><div class="history-summary"><div><span>Último valor registado</span><b>${money(latest.stockValue)}</b></div><div><span>Itens no último registo</span><b>${fmt(latest.itemCount)}</b></div><div><span>Registos disponíveis</span><b>${fmt(records.length)}</b></div></div><div class="history-legend"><span><i class="history-legend-value"></i> Valor do estoque</span><span><i class="history-legend-count"></i> Quantidade de itens</span></div><div class="history-chart-scroll"><svg class="history-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Evolução do valor do estoque e da quantidade de itens"><g>${grid}</g><polyline points="${valuePoints}" class="history-line history-line-value" /><polyline points="${countPoints}" class="history-line history-line-count" />${dots}${labels}</svg></div></div>`;
+  const details = records.map(record => `<tr><td>${esc(record.label || record.date)}</td><td>${money(record.stockValue)}</td><td>${fmt(record.itemCount)}</td></tr>`).join('');
+  return `<div class="history-chart-wrap"><div class="history-summary"><div><span>Último valor registado</span><b>${money(latest.stockValue)}</b></div><div><span>Itens no último registo</span><b>${fmt(latest.itemCount)}</b></div><div><span>Registos disponíveis</span><b>${fmt(records.length)}</b></div></div><div class="history-chart-scroll"><svg class="history-chart" style="width:${width}px;max-width:none" viewBox="0 0 ${width} ${height}" role="img" aria-label="Gráfico de barras com valor do estoque por mês"><g>${grid}</g>${bars}</svg></div><div class="table-wrap history-values-table-wrap"><table class="data-table"><thead><tr><th>Mês</th><th>Valor do estoque</th><th>Quantidade de materiais</th></tr></thead><tbody>${details}</tbody></table></div></div>`;
 }
 
 // Renderiza uma página separada para acompanhar a evolução histórica do estoque.
 function stockHistoryView() {
-  return `${filterBar()}<div class="view-title"><div><h2>Evolução do estoque</h2><p>em faze de teste, logo teremos a evoluçao do estoque.</p></div><div class="date-pill">A partir de ${esc(STOCK_HISTORY.records?.[0]?.label || 'este mês')}</div></div><div class="panel"><div class="panel-header"><h3>Histórico do estoque</h3><span>Atualização mensal</span></div><div class="panel-body">${stockHistoryChart()}</div></div><div class="panel history-help-panel"><div class="panel-header"><h3>Como o histórico cresce</h3></div><div class="panel-body"><p>Cada atualização da planilha acrescenta um novo registo com a data, o valor total do estoque e a quantidade de materiais. O primeiro ponto representa a base atual.</p><p class="history-note">Se dois registos forem feitos no mesmo mês, será mantido o registo mais recente desse mês.</p></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Evolução do estoque</h2><p>Valor total do estoque por mês, com os valores exactos na tabela abaixo.</p></div><div class="date-pill">A partir de ${esc(STOCK_HISTORY.records?.[0]?.label || 'este mês')}</div></div><div class="panel"><div class="panel-header"><h3>Histórico do estoque</h3><span>Atualização mensal</span></div><div class="panel-body">${stockHistoryChart()}</div></div><div class="panel history-help-panel"><div class="panel-header"><h3>Como o histórico cresce</h3></div><div class="panel-body"><p>Cada atualização da planilha acrescenta um registo mensal com a data, o valor total do estoque e a quantidade de materiais.</p><p class="history-note">Se houver mais de um registo no mesmo mês, será exibido o mais recente desse mês.</p></div></div>`;
 }
 
 function plannedModelKey(name) {
@@ -944,41 +978,123 @@ function plannedModelKey(name) {
   const target = raw.replace(/[^A-Z0-9]/g, '');
   return Object.keys(DATA?.models || {}).find(key => { const candidate = String(key).toUpperCase().replace(/[^A-Z0-9]/g, ''); return candidate && (target.includes(candidate) || candidate.includes(target)); }) || '';
 }
-function plannedGeneralItems() {
-  const releases = DATA?.planMonth?.liberacoes || [];
-  const needs = new Map();
-  releases.forEach(release => {
-    const key = plannedModelKey(release.modelo);
-    if (!key) return;
-    (DATA.models[key] || []).forEach(component => {
-      const row = needs.get(String(component.code)) || { need: 0, demand: 0, models: [], stocks: [] };
-      row.need += n(component.quantity);
-      row.demand += n(component.demand);
-      if (component.stock !== undefined) row.stocks.push(n(component.stock));
-      if (!row.models.includes(key)) row.models.push(key);
-      needs.set(String(component.code), row);
-    });
-  });
-  return [...needs.entries()].map(([code, plan]) => {
-    const item = itemByCode(code) || { code, description: '', stock: 0, orders: {}, unit: 'UN' };
-    const [status] = risk(item, plan.need);
-    return { ...item, stock: plan.stocks.length ? Math.min(...plan.stocks) : n(item.stock), plannedNeed: plan.need, structureDemand: plan.demand, plannedModels: plan.models, plannedStatus: status };
-  }).filter(item => item.plannedStatus !== 'Regular');
+function annualWeekInfo(value) {
+  const match = String(value || '').slice(0, 10).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return null;
+  const date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  if (Number.isNaN(date.getTime())) return null;
+  const weekKey = pinsNiguriWeekKey(date.toISOString().slice(0, 10));
+  const thursday = new Date(date); thursday.setDate(thursday.getDate() + (4 - (thursday.getDay() || 7)));
+  const week = getWeekNumber(date);
+  const year = thursday.getFullYear();
+  return { key: weekKey, week, year, label: `Semana ${String(week).padStart(2, '0')} · ${year}` };
 }
-function plannedSignalItems(kind) {
-  return plannedGeneralItems().filter(item => kind === 'critical' ? item.plannedStatus === 'Crítico' : item.plannedStatus === 'Em atenção');
+function releaseRowsForWeek(weekKey) {
+  const annualRows = DATA?.planAnnual?.rows || [];
+  const grouped = new Map();
+  annualRows.forEach(entry => {
+    const week = annualWeekInfo(entry.data);
+    const en = String(entry.pedido || '').trim().toUpperCase();
+    if (!week || week.key !== weekKey || !en || annualRowIsExcluded(entry)) return;
+    const key = `${en}::${week.key}`;
+    const row = grouped.get(key) || { en, model: entry.modelo || entry.estrutura || '—', client: entry.cliente || '—', week, criticalItems: [], attentionItems: [], forecastItems: [], structureMissing: false };
+    const structure = modelNiguriStructureName(row.model);
+    const components = structure ? modelNiguriStructureRows(row.model) : [];
+    if (!components.length) row.structureMissing = true;
+    components.forEach(item => {
+      const [status] = risk(item, item.quantity);
+      if (status !== 'Crítico' && status !== 'Em atenção') return;
+      const detail = { code: item.code, description: item.description, unit: item.unit || 'UN', quantity: n(item.quantity), hasOrder: hasOpenOrder(item), orders: item.orders || {} };
+      const target = status === 'Crítico' ? row.criticalItems : row.attentionItems;
+      if (!target.some(existing => existing.code === detail.code)) target.push(detail);
+      if (detail.hasOrder && !row.forecastItems.some(existing => existing.code === detail.code)) row.forecastItems.push(detail);
+    });
+    grouped.set(key, row);
+  });
+  return [...grouped.values()].sort((a, b) => a.week.key.localeCompare(b.week.key) || a.en.localeCompare(b.en));
+}
+function releaseWeekOptions() {
+  const options = new Map();
+  (DATA?.planAnnual?.rows || []).forEach(row => { const info = annualWeekInfo(row.data); if (info) options.set(info.key, info); });
+  return [...options.values()].sort((a, b) => a.key.localeCompare(b.key));
+}
+function releaseItemText(item) { return `${item.code} — ${item.description}`; }
+function releaseItemList(items, className) {
+  return items.length ? `<ul class="release-item-list ${className}">${items.map(item => `<li><strong>${esc(item.code)}</strong><span>${esc(item.description)}</span></li>`).join('')}</ul>` : '<span class="release-none">—</span>';
+}
+function releaseCurrentRows() {
+  const options = releaseWeekOptions();
+  if (!options.length) return { options, selected: '', rows: [] };
+  const selected = options.some(option => option.key === releaseWeekFilter) ? releaseWeekFilter : (options.find(option => option.key >= pinsNiguriCurrentWeekKey()) || options[0]).key;
+  releaseWeekFilter = selected;
+  return { options, selected, rows: releaseRowsForWeek(selected) };
+}
+async function exportReleaseWeekXlsx() {
+  const { options, selected, rows } = releaseCurrentRows();
+  const info = options.find(option => option.key === selected);
+  const exportRows = rows;
+  if (!window.ExcelJS) { alert('A biblioteca de exportação Excel não carregou. Recarregue o painel e tente novamente.'); return; }
+  const workbook = new window.ExcelJS.Workbook();
+  workbook.creator = 'PCP Next'; workbook.subject = `Carros a liberar · ${info?.label || 'semana'}`; workbook.title = 'Carros a liberar — itens críticos';
+  workbook.created = new Date();
+  const sheet = workbook.addWorksheet('Carros a liberar', { views: [{ state: 'frozen', ySplit: 4 }] });
+  sheet.columns = [
+    { header: 'EN', key: 'en', width: 16 }, { header: 'Modelo', key: 'model', width: 23 },
+    { header: 'Cliente', key: 'client', width: 30 }, { header: 'Semana', key: 'week', width: 18 },
+    { header: 'Itens críticos', key: 'critical', width: 58 }, { header: 'Previsão de pedido', key: 'forecast', width: 25 }
+  ];
+  sheet.mergeCells('A1:F1'); sheet.getCell('A1').value = 'CARROS A LIBERAR · ITENS CRÍTICOS';
+  sheet.getCell('A1').font = { name: 'Aptos Display', size: 16, bold: true, color: { argb: 'FFFFFFFF' } };
+  sheet.getCell('A1').fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF102847' } };
+  sheet.getCell('A1').alignment = { vertical: 'middle', horizontal: 'left' }; sheet.getRow(1).height = 32;
+  sheet.mergeCells('A2:F2'); sheet.getCell('A2').value = `${info?.label || 'Semana não definida'}  |  ${exportRows.length} EN(s)  |  Exportado em ${new Date().toLocaleDateString('pt-BR')}`;
+  sheet.getCell('A2').font = { name: 'Aptos', size: 10, color: { argb: 'FF526579' }, italic: true };
+  sheet.getCell('A2').alignment = { vertical: 'middle' }; sheet.getRow(2).height = 23;
+  sheet.mergeCells('A3:F3'); sheet.getCell('A3').value = 'Inclui todas as ENs da semana. A coluna de materiais lista itens críticos (estoque insuficiente ou zero); quando não houver, indica “Sem crítico”.';
+  sheet.getCell('A3').font = { name: 'Aptos', size: 9, color: { argb: 'FF526579' } };
+  sheet.getCell('A3').alignment = { wrapText: true, vertical: 'middle' }; sheet.getRow(3).height = 28;
+  const headers = ['EN', 'Modelo', 'Cliente', 'Semana', 'Itens críticos', 'Previsão de pedido'];
+  const header = sheet.getRow(4); header.values = headers; header.height = 28;
+  header.eachCell(cell => { cell.font = { name: 'Aptos', size: 10, bold: true, color: { argb: 'FFFFFFFF' } }; cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF1769A6' } }; cell.alignment = { vertical: 'middle', horizontal: 'left', wrapText: true }; cell.border = { bottom: { style: 'medium', color: { argb: 'FF0D4975' } } }; });
+  exportRows.forEach((row, index) => {
+    const criticalForecastItems = row.criticalItems.filter(item => item.hasOrder);
+    const forecast = !row.criticalItems.length ? 'Sem item crítico' : criticalForecastItems.length ? `Tem pedido (${criticalForecastItems.length} item(ns) crítico(s))` : 'Sem pedido para os itens críticos';
+    const values = [row.en, row.model, row.client, row.week.label, row.criticalItems.map(releaseItemText).join('\n') || 'Sem crítico', forecast];
+    const excelRow = sheet.addRow(values); excelRow.height = Math.max(30, Math.min(120, 20 + row.criticalItems.length * 18));
+    excelRow.eachCell(cell => { cell.font = { name: 'Aptos', size: 10, color: { argb: 'FF24364B' } }; cell.alignment = { vertical: 'top', wrapText: true }; cell.border = { bottom: { style: 'hair', color: { argb: 'FFDCE5EF' } } }; if (index % 2 === 1) cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFF5F8FC' } }; });
+    excelRow.getCell(5).fill = { type: 'pattern', pattern: 'solid', fgColor: row.criticalItems.length ? { argb: 'FFFFE2D5' } : { argb: 'FFE5F5EB' } };
+    excelRow.getCell(5).font = { name: 'Aptos', size: 10, color: { argb: row.criticalItems.length ? 'FF9B2618' : 'FF176442' }, bold: !!row.criticalItems.length };
+    excelRow.getCell(6).fill = { type: 'pattern', pattern: 'solid', fgColor: criticalForecastItems.length ? { argb: 'FFFFF1C9' } : { argb: 'FFE5F5EB' } };
+    excelRow.getCell(6).font = { name: 'Aptos', size: 10, bold: true, color: { argb: criticalForecastItems.length ? 'FF805A00' : 'FF176442' } };
+  });
+  if (!exportRows.length) {
+    sheet.mergeCells('A5:F5'); sheet.getCell('A5').value = 'Nenhuma EN prevista nesta semana.';
+    sheet.getCell('A5').font = { name: 'Aptos', size: 11, color: { argb: 'FF526579' }, italic: true };
+    sheet.getCell('A5').alignment = { vertical: 'middle', horizontal: 'center' }; sheet.getRow(5).height = 28;
+  }
+  sheet.autoFilter = { from: 'A4', to: `F${Math.max(4, 4 + exportRows.length)}` };
+  sheet.pageSetup = { orientation: 'landscape', fitToPage: true, fitToWidth: 1, fitToHeight: 0, paperSize: 9, margins: { left: 0.25, right: 0.25, top: 0.45, bottom: 0.45, header: 0.2, footer: 0.2 } };
+  sheet.headerFooter.oddFooter = '&LPCP Next&CConfidencial&R&P / &N';
+  const buffer = await workbook.xlsx.writeBuffer();
+  const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+  const url = URL.createObjectURL(blob); const link = document.createElement('a');
+  const weekFile = (info?.label || 'semana').replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').toLowerCase();
+  link.href = url; link.download = `carros-a-liberar-${weekFile}-${new Date().toISOString().slice(0, 10)}.xlsx`; link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 function programacaoAlertPanel() {
-  const releases = DATA?.planMonth?.liberacoes || [];
-  const grouped = new Map();
-  releases.forEach(item => { const key = item.modelo || 'Sem modelo'; const row = grouped.get(key) || { ...item, total: 0 }; row.total += 1; grouped.set(key, row); });
-  const models = [...grouped.values()];
-  const critical = plannedSignalItems('critical');
-  const attention = plannedSignalItems('attention');
-  const signal = (label, items, cls) => `<button class="risk-signal ${cls}" data-export-alert="${cls}"><span>${label}</span><b>${fmt(items.length)}</b><small>exportar itens</small></button>`;
-  const allPlanned = plannedGeneralItems();
-  const modelCards = models.map(model => { const key = plannedModelKey(model.modelo); const items = allPlanned.filter(item => item.plannedModels?.includes(key)); const crit = items.filter(item => item.plannedStatus === 'Crítico').length; const att = items.filter(item => item.plannedStatus === 'Em atenção').length; const cls = crit ? 'critical' : att ? 'attention' : 'regular'; const label = crit ? 'Crítico' : att ? 'Atenção' : 'Regular'; return `<div class="model-signal-card"><div><strong>${esc(model.modelo || 'Sem modelo')}</strong><small>${fmt(model.total)} carro${model.total === 1 ? '' : 's'} · ${fmt(crit + att)} itens em risco</small></div><span class="status ${cls === 'critical' ? 'red' : cls === 'attention' ? 'amber' : 'green'}">${label}</span></div>`; }).join('');
-  return `<div class="panel programacao-alert-panel"><div class="panel-header"><div><span class="eyebrow">Liberação programada</span><h3>Visão geral · carros a liberar</h3><span>Fonte: PLANO MES · AA:AF</span></div><span class="date-pill">${fmt(releases.length)} carros</span></div><div class="panel-body"><div class="model-signal-grid">${modelCards || '<div class="empty">Nenhum modelo programado.</div>'}</div><div class="release-table-wrap"><table class="data-table release-table"><thead><tr><th>EN</th><th>Cliente</th><th>Modelo</th><th>PL</th><th>Nome</th><th>Data</th></tr></thead><tbody>${releases.map(item => `<tr><td>${esc(item.en || '—')}</td><td>${esc(item.cliente || '—')}</td><td>${esc(item.modelo || '—')}</td><td>${esc(item.pl || '—')}</td><td>${esc(item.nome || '—')}</td><td>${esc(item.data ? new Date(item.data).toLocaleDateString('pt-BR') : '—')}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhuma liberação encontrada.</td></tr>'}</tbody></table></div><div class="alert-export-row">${signal('Críticos', critical, 'critical')}${signal('Atenção', attention, 'attention')}</div></div></div>`;
+  const { options, selected, rows } = releaseCurrentRows();
+  const weekInfo = options.find(option => option.key === selected);
+  const criticalCount = rows.reduce((sum, row) => sum + row.criticalItems.length, 0);
+  const attentionCount = rows.reduce((sum, row) => sum + row.attentionItems.length, 0);
+  const optionHtml = options.map(option => `<option value="${esc(option.key)}" ${option.key === selected ? 'selected' : ''}>${esc(option.label)}</option>`).join('') || '<option value="">Sem semanas no Plano Anual</option>';
+  const tableRows = rows.map(row => {
+    const forecast = row.structureMissing ? 'Estrutura indisponível' : row.forecastItems.length ? 'Tem pedido em aberto' : 'Sem pedido em aberto';
+    const forecastClass = row.structureMissing ? 'muted' : row.forecastItems.length ? 'attention' : 'good';
+    return `<tr><td><strong>${esc(row.en)}</strong></td><td>${esc(row.model)}</td><td>${esc(row.client)}</td><td>${esc(row.week.label)}</td><td>${releaseItemList(row.criticalItems, 'critical-list')}</td><td>${releaseItemList(row.attentionItems, 'attention-list')}</td><td><span class="release-forecast ${forecastClass}" title="${esc(row.forecastItems.map(item => `${item.code} · ${Object.entries(item.orders).filter(([, value]) => n(value) > 0).map(([month]) => month).join(', ')}`).join('\n'))}">${forecast}</span></td></tr>`;
+  }).join('');
+  const cards = rows.map(row => `<article class="release-mobile-card"><div class="release-mobile-card-head"><strong>${esc(row.en)}</strong><span class="release-week-pill">${esc(row.week.label)}</span></div><div class="release-mobile-model">${esc(row.model)} · ${esc(row.client)}</div><div class="release-mobile-block critical-list"><b>Itens críticos</b>${releaseItemList(row.criticalItems, 'critical-list')}</div><div class="release-mobile-block attention-list"><b>Itens em atenção</b>${releaseItemList(row.attentionItems, 'attention-list')}</div><div class="release-mobile-forecast"><b>Previsão</b><span>${row.structureMissing ? 'Estrutura não encontrada' : row.forecastItems.length ? 'Tem pedido em aberto' : 'Sem pedido em aberto'}</span></div></article>`).join('');
+  return `<div class="panel programacao-alert-panel"><div class="panel-header"><div><span class="eyebrow">Liberação programada</span><h3>Visão geral · carros a liberar</h3><span>Fonte: PLANO ANUAL · datas previstas da coluna D</span></div><span class="date-pill">${fmt(rows.length)} ENs · ${esc(weekInfo?.label || 'semana')}</span></div><div class="panel-body"><div class="release-week-toolbar"><label for="release-week-filter">Semana do Plano Anual</label><select class="select" id="release-week-filter">${optionHtml}</select><button class="primary-btn release-export-btn" id="export-release-week" type="button">Exportar semana (.xlsx)</button></div><div class="release-week-summary"><span><b class="danger-text">${fmt(criticalCount)}</b> itens críticos</span><span><b class="attention-text">${fmt(attentionCount)}</b> itens em atenção</span><span>${fmt(rows.filter(row => row.forecastItems.length).length)} EN(s) com pedido para item em risco</span></div><div class="release-table-wrap"><table class="data-table release-table"><thead><tr><th>EN</th><th>Modelo</th><th>Cliente</th><th>Semana</th><th>Itens críticos</th><th>Itens em atenção</th><th>Previsão de pedido</th></tr></thead><tbody>${tableRows || '<tr><td colspan="7" class="empty">Nenhuma EN prevista para esta semana.</td></tr>'}</tbody></table></div><div class="release-mobile-list">${cards || '<div class="empty">Nenhuma EN prevista para esta semana.</div>'}</div><p class="release-method-note">O Excel mantém todas as ENs da semana e os materiais críticos; quando não há itens críticos, mostra “Sem crítico”. Os itens em atenção permanecem visíveis no painel, mas não são exportados.</p></div></div>`;
 }
 function productionStatusExcluded(value) {
   const status = String(value || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
@@ -1128,22 +1244,16 @@ function overview() {
 }
 
 function stockView() {
-  return `${filterBar()}<div class="view-title"><h2>Estoque</h2><p>Demanda consolidada das colunas DEM da Programacao.</p></div><div class="panel"><div class="panel-body"><div class="toolbar"><input class="input" id="stock-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="stock-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div id="stock-table">${table(scopedItems(), 250, false, '', true)}</div></div></div>`;
+  const periods = planMonthPeriods();
+  const selected = periods.some(period => period.key === stockPlanMonth) ? stockPlanMonth : currentPlanMonthPeriod();
+  stockPlanMonth = selected;
+  const unmatched = DATA.planMonthUnmatchedModels || [];
+  const warning = unmatched.length ? `<p class="history-note stock-plan-warning">Sem estrutura correspondente no Excel; não foi possível calcular demanda para: ${unmatched.map(esc).join(', ')}.</p>` : '';
+  return `${filterBar()}<div class="view-title"><div><h2>Estoque</h2><p>Pedidos do mês e demanda calculada pelas estruturas × produção da aba PLANO MES.</p></div></div><div class="panel"><div class="panel-body"><div class="toolbar"><label class="filter-label" for="stock-plan-month">Mês do plano:</label><select class="select" id="stock-plan-month">${periods.map(period => `<option value="${esc(period.key)}" ${period.key === selected ? 'selected' : ''}>${esc(period.key)}</option>`).join('')}</select><input class="input" id="stock-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="stock-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div>${warning}<div id="stock-table">${table(scopedItems(), 250, false, '', true, selected)}</div></div></div>`;
 }
 
-function demandTotals(month, base) {
-  return base.reduce((sum, item) => sum + n(item.demands?.[month]), 0);
-}
 function ordersItemsForMonth(base, month) {
   return (base || []).map(item => ({ ...item, need: n(item.demands?.[month]), balance: n(item.stock) - n(item.demands?.[month]) })).filter(item => n(item.need) > 0).sort((a, b) => a.balance - b.balance);
-}
-
-function demandPanel(base) {
-  const months = DATA.demandMonths || [];
-  const chosen = demandMonth === 'all' ? months : months.filter(month => month === demandMonth);
-  const values = chosen.map(month => demandTotals(month, base));
-  const max = Math.max(...values, 1);
-  return `<div class="panel"><div class="panel-header"><h3>Demanda mensal da explosão</h3><span>Itens/unidades nas colunas DEM da Programacao</span></div><div class="panel-body">${chosen.map((month, index) => `<div class="chart-row"><span>${month.replace('DEM ', '')}</span><div class="bar-track"><div class="bar-fill" style="background:#18a999;width:${values[index] / max * 100}%"></div></div><b>${fmt(values[index])}</b></div>`).join('') || '<div class="empty">Não foram encontradas colunas DEM.</div>'}</div></div>`;
 }
 
 function excessMonthPairs() {
@@ -1189,20 +1299,6 @@ function excessView() {
   }));
   rows.sort((a, b) => b.excess - a.excess);
   return `${filterBar()}<div class="view-title"><div><h2>Pedidos em excesso</h2><p>Comparação exata entre pedido e demanda do próprio mês.</p></div><div class="date-pill">Follow-up com Compras</div></div><div class="toolbar"><label class="filter-label">Mês:</label><select class="select" id="excess-month"><option value="all">Todos os meses</option>${excessMonthPairs().map(pair => `<option value="${esc(pair.orderMonth)}" ${excessMonth === pair.orderMonth ? 'selected' : ''}>${esc(pair.label)}</option>`).join('')} </select><input class="input" id="excess-search" placeholder="Pesquisar código ou descrição" /></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(rows.length)}</b><span>Excessos mensais</span></div><div class="summary-box"><b>${fmt(new Set(rows.map(row => row.code)).size)}</b><span>Materiais para verificar</span></div><div class="summary-box"><b>${fmt(rows.reduce((sum, row) => sum + row.excess, 0))}</b><span>Unidades em excesso</span></div></div><div class="panel"><div class="panel-header"><h3>Pedidos acima da demanda do mês</h3><span>Clique no código para abrir os próximos meses</span></div><div class="table-wrap"><table class="data-table excess-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Demanda</th><th>Pedido</th><th>Excesso</th><th>Mês</th><th>Follow-up</th></tr></thead><tbody id="excess-table-body">${excessRows(rows) || '<tr><td colspan="8" class="empty">Nenhum pedido acima da demanda mensal.</td></tr>'}</tbody></table></div></div>`;
-}
-
-function ordersView() {
-  const base = DATA.items || [];
-  const overdue = base.filter(item => risk(item)[0] !== 'Regular' && Object.values(item.orders || {}).every(value => n(value) === 0));
-  const open = base.filter(item => Object.values(item.orders || {}).some(value => n(value) > 0));
-  const availableDemandMonths = (DATA.demandMonths?.length ? DATA.demandMonths : [...new Set(base.flatMap(item => Object.keys(item.demands || {})))]).filter(month => base.some(item => n(item.demands?.[month]) > 0));
-  const chosen = demandMonth !== 'all' && availableDemandMonths.includes(demandMonth) ? demandMonth : (availableDemandMonths[0] || '');
-  const monthItems = chosen ? ordersItemsForMonth(base, chosen) : [];
-  return `${filterBar()}<div class="view-title"><h2>Pedidos e demanda</h2><p>Pedidos, demanda mensal e saldo projetado por material.</p></div><div class="toolbar"><label class="filter-label">Mês da demanda:</label><select class="select" id="demand-month"><option value="all">Todos os meses</option>${availableDemandMonths.map(month => `<option value="${esc(month)}" ${demandMonth === month ? 'selected' : ''}>${esc(month.replace('DEM ', ''))}</option>`).join('')}</select><input class="input" id="orders-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="orders-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div class="summary-strip"><div class="summary-box"><b>${fmt(DATA.openRequests)}</b><span>Solicitações em obtenção</span></div><div class="summary-box"><b>${fmt(open.length)}</b><span>Itens com pedido PED</span></div><div class="summary-box"><b class="danger">${fmt(overdue.length)}</b><span>Itens sem pedido</span></div></div><div class="dashboard-grid">${demandPanel(base)}${orderPanel(base)}</div><div class="panel"><div class="panel-header"><h3>${chosen ? `Necessidade para ${esc(chosen)}` : 'Selecione um mês'}</h3><span>Demanda × estoque</span></div><div id="orders-table">${chosen ? table(monthItems, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>'}</div></div>`;
-}
-
-function modelsView() {
-  return `${filterBar()}<div class="view-title"><h2>Estrutura de modelos</h2><p>Escolha um modelo para consultar os componentes da explosão.</p></div><div class="model-grid">${Object.entries(DATA.models).map(([name, items]) => `<div class="model-card" data-model="${esc(name)}"><b>${esc(name)}</b><span>Estrutura da explosão</span><strong>${fmt(items.length)} componentes →</strong></div>`).join('')}</div><div id="model-detail" class="panel" style="margin-top:20px;display:none"></div>`;
 }
 
 function simulation() {
@@ -1484,21 +1580,22 @@ let pinsSubView = 'simulation';
 function pinsNiguriNormalize(value) {
   return String(value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 }
+function annualRowIsExcluded(row) {
+  const mapRecords = typeof PRODUCTION_MAP !== 'undefined' ? (PRODUCTION_MAP.records || []) : [];
+  const found = mapRecords.find(item => String(item.en || '').trim().toUpperCase() === String(row?.pedido || '').trim().toUpperCase());
+  const status = String(found?.productionStatusNormalized || found?.productionStatus || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+  return status === 'ENTREGUE' || status === 'VITRINI';
+}
 function activeAnnualQuantities(model) {
   const annual = DATA?.planAnnual?.models || {};
   const fallback = { ...(annual[model] || {}) };
   const rows = DATA?.planAnnual?.rows || [];
-  const mapRecords = typeof PRODUCTION_MAP !== 'undefined' ? (PRODUCTION_MAP.records || []) : [];
-  if (!rows.length || !mapRecords.length) return fallback;
+  if (!rows.length) return fallback;
   const modelRows = rows.filter(row => String(row.modelo || '') === String(model));
-  const excluded = en => {
-    const found = mapRecords.find(item => String(item.en || '').trim().toUpperCase() === String(en || '').trim().toUpperCase());
-    const status = String(found?.productionStatusNormalized || found?.productionStatus || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-    return status === 'ENTREGUE' || status === 'VITRINI';
-  };
+  if (!modelRows.length) return fallback;
   const result = {};
-  modelRows.filter(row => !excluded(row.pedido)).forEach(row => { const month = String(row.mes || '').trim(); if (month) result[month] = n(result[month]) + 1; });
-  return modelRows.length ? result : fallback;
+  modelRows.filter(row => !annualRowIsExcluded(row)).forEach(row => { const month = String(row.mes || '').trim(); if (month) result[month] = n(result[month]) + 1; });
+  return result;
 }
 
 function pinsNiguriPlanModels(model) {
@@ -1727,11 +1824,77 @@ function pinsView() {
 function modelNiguriNormalize(value) { return String(value || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
 function modelNiguriStructureName(model) {
   const structures = Object.keys(DATA?.models || {});
-  const aliases = { '13ldi': '13ldi-46kv', '13lddi': '13-69kv' };
-  const preferred = aliases[modelNiguriNormalize(model)] || model;
+  const aliases = {
+    '13': '13ldi-46kv', '13ldi': '13ldi-46kv', '1369': '13-69kv', '1369kv': '13-69kv', '13lddi': '13-69kv',
+    '18': '18lddi', 'guindaste16': 'guin-16T', 'guindaste25': 'guin-25T', 'guindate25': 'guin-25T',
+    'guindaste45': 'guin-45', 'guindaste21': '21T', 'guindaste30t': '30-T', 'guindaste12': '12-T', 'guindaste75': '7T'
+  };
+  const normalized = modelNiguriNormalize(model);
+  const crane = normalized.match(/^(?:guindaste|guindate)(\d+)/);
+  const craneAliases = { '7': '7T', '12': '12-T', '16': 'guin-16T', '21': '21T', '25': 'guin-25T', '30': '30-T', '35': 'guin-35T', '45': 'guin-45' };
+  const craneBase = crane ? Object.keys(craneAliases).sort((a, b) => b.length - a.length).find(prefix => crane[1].startsWith(prefix)) : '';
+  const preferred = aliases[normalized] || (craneBase ? craneAliases[craneBase] : model);
+  if (DATA?.models?.[preferred]) return preferred;
   return structures.find(name => modelNiguriNormalize(name) === modelNiguriNormalize(preferred))
-    || structures.find(name => modelNiguriNormalize(name).includes(modelNiguriNormalize(model)))
-    || structures.find(name => modelNiguriNormalize(model).includes(modelNiguriNormalize(name))) || '';
+    || structures.find(name => modelNiguriNormalize(name).includes(normalized))
+    || structures.find(name => normalized && normalized.includes(modelNiguriNormalize(name))) || '';
+}
+function planMonthModelQuantity(modelEntry, period) {
+  const values = modelEntry?.quantidades || {};
+  const key = period?.key || '';
+  if (values[key] !== undefined) return n(values[key]);
+  return n(values[period?.month || '']);
+}
+function planModelStructureRows(modelLabel) {
+  const structureName = modelNiguriStructureName(modelLabel);
+  if (structureName) return DATA?.models?.[structureName] || [];
+  const label = modelNiguriNormalize(modelLabel);
+  const cabinAliases = {
+    'cabine4lugar': '4 LUGAR', 'cabine6lugar': '6 LUGAR',
+    'cabine6lugarcombanheiro': '6 LUGAR C/ BANHEIRO', 'cabine8lugar': '8 LUGAR'
+  };
+  const cabinName = cabinAliases[label] || (CABINS.models || []).find(name => modelNiguriNormalize(name) === label);
+  if (!cabinName) return [];
+  return (CABINS.items || []).map(item => ({ ...item, quantity: n(item.modelNeeds?.[cabinName]) })).filter(item => item.quantity > 0);
+}
+function orderQuantityForPeriod(item, periodKey) {
+  const [month, year] = String(periodKey || '').split('/');
+  const orders = item?.orders || {};
+  const exact = `PED ${month}/${year}`.replace(/\s+/g, ' ').trim().toUpperCase();
+  const monthly = `PED ${month}`.replace(/\s+/g, ' ').trim().toUpperCase();
+  const entry = Object.entries(orders).find(([key]) => String(key).replace(/\s+/g, ' ').trim().toUpperCase() === exact)
+    || Object.entries(orders).find(([key]) => String(key).replace(/\s+/g, ' ').trim().toUpperCase() === monthly);
+  return n(entry?.[1]);
+}
+function syncPlanMonthDemands() {
+  if (!DATA?.items) return;
+  const periods = planMonthPeriods();
+  const demandByCode = new Map();
+  const unmatched = new Set();
+  (DATA.planMonth?.models || []).forEach(modelEntry => {
+    const quantities = periods.map(period => planMonthModelQuantity(modelEntry, period));
+    if (!quantities.some(quantity => quantity > 0)) return;
+    const components = planModelStructureRows(modelEntry.modelo);
+    if (!components.length) { unmatched.add(String(modelEntry.modelo)); return; }
+    periods.forEach((period, index) => {
+      const plannedMachines = quantities[index];
+      if (!plannedMachines) return;
+      components.forEach(component => {
+        const code = String(component.code || '').trim();
+        if (!code) return;
+        const demand = n(component.quantity) * plannedMachines;
+        const byPeriod = demandByCode.get(code) || {};
+        byPeriod[period.key] = n(byPeriod[period.key]) + demand;
+        demandByCode.set(code, byPeriod);
+      });
+    });
+  });
+  DATA.demandMonths = periods.map(period => `DEM ${period.key}`);
+  DATA.planMonthUnmatchedModels = [...unmatched];
+  DATA.items.forEach(item => {
+    const planned = demandByCode.get(String(item.code)) || {};
+    item.demands = Object.fromEntries(periods.map(period => [`DEM ${period.key}`, n(planned[period.key])]));
+  });
 }
 function modelNiguriStructureRows(model) {
   const structureName = modelNiguriStructureName(model);
@@ -1746,27 +1909,44 @@ function modelNiguriStructureRows(model) {
   }).filter(Boolean);
 }
 function modelNiguriPlanEntries(model) {
-  const annual = DATA?.planAnnual?.models || {};
-  const quantities = activeAnnualQuantities(model);
-  return [{ modelo: model, quantidades: quantities }];
+  const structureName = modelNiguriStructureName(model);
+  const monthlyModels = DATA?.planMonth?.models || [];
+  const matched = monthlyModels.filter(entry => structureName && modelNiguriStructureName(entry.modelo) === structureName);
+  const periods = planMonthPeriods();
+  const quantities = {};
+  periods.forEach(period => { quantities[period.key] = matched.reduce((sum, entry) => sum + planMonthModelQuantity(entry, period), 0); });
+  return [{ modelo: structureName || model, quantidades: quantities, rows: [], monthlyModels: matched }];
 }
 function modelNiguriTimeline(model) {
   const entries = modelNiguriPlanEntries(model);
-  const now = new Date();
-  const currentPeriod = now.getFullYear() * 100 + now.getMonth() + 1;
-  const periods = [...new Set(Object.keys(entries[0]?.quantidades || {}).filter(key => /^(\d{2})\/\d{4}$/.test(key)).filter(key => { const [month, year] = key.split('/').map(Number); return year * 100 + month >= currentPeriod; }))].sort((a,b) => { const [am, ay] = a.split('/').map(Number); const [bm, by] = b.split('/').map(Number); return (ay * 100 + am) - (by * 100 + bm); });
-  const allSlots = periods.flatMap(key => { const [month, year] = key.split('/').map(Number); return pinsNiguriMonthSlots(month, year); });
-  const seen = new Set();
-  const unique = allSlots.filter(slot => !seen.has(slot.key) && seen.add(slot.key));
-  const quantitiesByPeriod = Object.fromEntries(periods.map(key => [key, n(entries[0]?.quantidades?.[key])]));
-  periods.forEach(key => { const [month, year] = key.split('/').map(Number); const monthSlots = unique.filter(slot => Number(slot.month) === month && Number(slot.year) === year); let remainder = monthSlots.length ? quantitiesByPeriod[key] % monthSlots.length : 0; const base = monthSlots.length ? Math.floor(quantitiesByPeriod[key] / monthSlots.length) : 0; monthSlots.forEach(slot => { slot.quantity = base + (remainder-- > 0 ? 1 : 0); }); });
   const currentKey = pinsNiguriCurrentWeekKey(new Date());
-  const startKey = modelNiguriStartWeek || currentKey;
-  const startDate = pinsNiguriWeekDate(startKey) || pinsNiguriWeekDate(currentKey);
   const currentDate = pinsNiguriWeekDate(currentKey);
+  const currentPeriod = currentDate ? currentDate.getFullYear() * 100 + currentDate.getMonth() + 1 : 0;
+  const periods = planMonthPeriods().filter(period => Number(period.year) * 100 + Number(period.month) >= currentPeriod);
+  const slotsByWeek = new Map();
+  periods.forEach(period => {
+    const month = Number(period.month); const year = Number(period.year);
+    const calendarMonthSlots = pinsNiguriMonthSlots(month, year);
+    // O stock é o saldo actual: reparte a procura total do mês corrente apenas pelas semanas ainda abertas.
+    const monthSlots = year * 100 + month === currentPeriod
+      ? calendarMonthSlots.filter(slot => { const date = pinsNiguriWeekDate(slot.key); return date && currentDate && date >= currentDate; })
+      : calendarMonthSlots;
+    const total = n(entries[0]?.quantidades?.[period.key]);
+    let remainder = monthSlots.length ? total % monthSlots.length : 0;
+    const base = monthSlots.length ? Math.floor(total / monthSlots.length) : 0;
+    monthSlots.forEach(slot => {
+      const weeklyPlan = base + (remainder-- > 0 ? 1 : 0);
+      const existing = slotsByWeek.get(slot.key);
+      if (existing) existing.quantity += weeklyPlan;
+      else slotsByWeek.set(slot.key, { ...slot, quantity: weeklyPlan });
+    });
+  });
+  const unique = [...slotsByWeek.values()].filter(slot => { const date = pinsNiguriWeekDate(slot.key); return date && currentDate && date >= currentDate; }).sort((a, b) => pinsNiguriWeekDate(a.key) - pinsNiguriWeekDate(b.key));
+  const startKey = modelNiguriStartWeek && unique.some(slot => slot.key === modelNiguriStartWeek) ? modelNiguriStartWeek : currentKey;
+  const startDate = pinsNiguriWeekDate(startKey) || pinsNiguriWeekDate(currentKey);
   const calcDate = startDate && currentDate && startDate > currentDate ? currentDate : startDate;
-  const calculationSlots = unique.filter(slot => pinsNiguriWeekDate(slot.key) >= calcDate);
-  const slots = unique.filter(slot => pinsNiguriWeekDate(slot.key) >= startDate);
+  const calculationSlots = unique.filter(slot => { const date = pinsNiguriWeekDate(slot.key); return date && calcDate && date >= calcDate; });
+  const slots = unique.filter(slot => { const date = pinsNiguriWeekDate(slot.key); return date && startDate && date >= startDate; });
   return { slots, allSlots: unique, calculationSlots, startKey, currentKey, model, structureName: modelNiguriStructureName(model) };
 }
 function modelNiguriRows(model, analyst = 'all', query = '', statusFilter = 'all') {
@@ -1782,15 +1962,19 @@ function modelNiguriRows(model, analyst = 'all', query = '', statusFilter = 'all
   return { rows, timeline };
 }
 function modelNiguriView() {
-  const models = Object.keys(DATA?.planAnnual?.models || {});
-  const model = modelNiguriModel || models[0] || '';
+  const models = Object.keys(DATA?.models || {}).sort((a, b) => a.localeCompare(b));
+  const model = models.includes(modelNiguriModel) ? modelNiguriModel : (models[0] || '');
+  modelNiguriModel = model;
   const analysts = [...new Set((DATA?.items || []).map(item => item.analyst).filter(Boolean))].sort();
   const query = $('#model-niguri-search')?.value || ''; const status = $('#model-niguri-status')?.value || 'all';
   const analyst = modelNiguriAnalyst || 'all'; const { rows, timeline } = modelNiguriRows(model, analyst, query, status);
+  const unmatched = DATA?.planMonthUnmatchedModels || [];
+  const planWarning = unmatched.length ? `<div class="history-note stock-plan-warning">Modelos do PLANO MES sem estrutura correspondente para calcular NIGURI: ${unmatched.map(esc).join(', ')}. Para estes modelos é necessária uma aba/BOM de estrutura no Excel.</div>` : '';
+  const scheduleNote = timeline.allSlots.some(slot => n(slot.quantity) > 0) ? '' : '<div class="history-note stock-plan-warning">Não há quantidade planeada futura para esta estrutura no PLANO MES. A estrutura continua disponível; os saldos serão mostrados sem consumo projectado.</div>';
   const headers = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} modelos planejados">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
   const body = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${esc(item.analyst)}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.quantity)} ${esc(item.unit)}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit)}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.receipts > 0 ? 'receipt' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
-  const options = timeline.allSlots.map(slot => `<option value="${esc(slot.key)}" ${slot.key === timeline.startKey ? 'selected' : ''}>${esc(slot.label)} · ${esc(slot.month)}/${esc(slot.year)}</option>`).join('');
-  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · estrutura completa</span><h2>NIGURI dos modelos</h2><p>Todos os itens da estrutura do modelo, cruzados com estoque, pedidos e o planoAnual.</p></div><div class="date-pill">Estrutura: ${esc(timeline.structureName || 'não encontrada')}</div></div><div class="panel pins-niguri-controls"><label>Modelo<select class="select" id="model-niguri-model">${models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="model-niguri-start-week">${options}</select></label><label>Analista<select class="select" id="model-niguri-analyst"><option value="all">Todos os analistas</option>${analysts.map(entry => `<option value="${esc(entry)}" ${entry === analyst ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="model-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="model-niguri-status"><option value="all">Todas</option><option value="Crítico">Críticos</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Regra:</strong> o consumo semanal é a quantidade do item na estrutura multiplicada pelos modelos do planoAnual. Recebimentos entram na semana prevista e permanecem no saldo acumulado das semanas seguintes.</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Itens da estrutura · ${esc(model)}</h3><span>${fmt(rows.length)} itens encontrados · ${fmt(timeline.slots.length)} semanas projetadas</span></div><span class="pins-legend"><i></i> Verde: saldo · amarelo: recebimento/limite · vermelho: falta</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Analista</th><th>Estoque</th><th>Qtd./modelo</th><th>Necessidade até dez.</th><th>Primeira falta</th>${headers}</tr></thead><tbody>${body || '<tr><td colspan="8" class="empty">Nenhum item corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
+  const options = timeline.allSlots.map(slot => `<option value="${esc(slot.key)}" ${slot.key === timeline.startKey ? 'selected' : ''}>${esc(slot.label)} · ${esc(slot.month)}/${esc(slot.year)}</option>`).join('') || '<option value="">Sem semanas no plano actual</option>';
+  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · estrutura completa</span><h2>NIGURI dos modelos</h2><p>Estruturas das abas de modelos, com demanda mensal da aba PLANO MES distribuída pelas semanas.</p></div><div class="date-pill">Estrutura: ${esc(timeline.structureName || 'não encontrada')}</div></div>${planWarning}${scheduleNote}<div class="panel pins-niguri-controls"><label>Modelo<select class="select" id="model-niguri-model">${models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="model-niguri-start-week">${options}</select></label><label>Analista<select class="select" id="model-niguri-analyst"><option value="all">Todos os analistas</option>${analysts.map(entry => `<option value="${esc(entry)}" ${entry === analyst ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="model-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="model-niguri-status"><option value="all">Todas</option><option value="Crítico">Críticos</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Regra:</strong> a quantidade mensal do modelo no PLANO MES é agrupada pela estrutura equivalente (ex.: guindaste 16,5 → guindaste 16) e distribuída pelas semanas do calendário. Pedidos previstos entram no saldo acumulado.</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Itens da estrutura · ${esc(model)}</h3><span>${fmt(rows.length)} itens encontrados · ${fmt(timeline.slots.length)} semanas projectadas</span></div><span class="pins-legend"><i></i> Verde: saldo · amarelo: recebimento/limite · vermelho: falta</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Analista</th><th>Estoque</th><th>Qtd./modelo</th><th>Necessidade no período</th><th>Primeira falta</th>${headers}</tr></thead><tbody>${body || '<tr><td colspan="8" class="empty">Nenhum item corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
 }
 
 function pinsSimulationView() {
@@ -2246,9 +2430,9 @@ async function handleENPVUpload(file) {
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { productionMap: 'Mapa produtivo', overview: 'Visão geral', stock: 'Estoque', orders: 'Pedidos e demanda', models: 'Modelos', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
+  const titles = { productionMap: 'Mapa produtivo', overview: 'Visão geral', stock: 'Estoque', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { productionMap: productionMapView, overview, stock: stockView, orders: ordersView, models: modelsView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
+  const pages = { productionMap: productionMapView, overview, stock: stockView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -2285,11 +2469,10 @@ function bindView() {
     document.querySelectorAll('.production-en-btn').forEach(button => button.onclick = () => openProductionMapDetail(button.dataset.productionEn || ''));
   }
   if (view === 'overview') {
-    document.querySelectorAll('[data-export-alert]').forEach(button => button.onclick = () => {
-      const kind = button.dataset.exportAlert;
-      const items = plannedSignalItems(kind);
-      exportCriticalItems(items, `itens-${kind}-${new Date().toISOString().slice(0, 10)}.xls`);
-    });
+    const releaseWeek = $('#release-week-filter');
+    if (releaseWeek) releaseWeek.onchange = () => { releaseWeekFilter = releaseWeek.value; render(); };
+    const exportRelease = $('#export-release-week');
+    if (exportRelease) exportRelease.onclick = () => exportReleaseWeekXlsx().catch(error => { console.error('Falha ao exportar carros a liberar.', error); alert('Não foi possível gerar o Excel. Tente novamente.'); });
   }
   const globalFilters = [
     ['#analyst-filter', value => { analyst = value; }],
@@ -2339,9 +2522,6 @@ function bindView() {
       bindMaterialButtons();
     };
   }
-
-  const demandSelector = $('#demand-month');
-  if (demandSelector) demandSelector.onchange = () => { demandMonth = demandSelector.value; render(); };
 
   if (view === 'excess') {
     const monthSelector = $('#excess-month');
@@ -2501,51 +2681,21 @@ function bindView() {
   }
 
   if (view === 'stock') {
+    const monthSelect = $('#stock-plan-month');
     const filter = () => {
       const query = ($('#stock-search').value || '').toLowerCase();
       const selectedRisk = $('#stock-risk').value;
-      const items = scopedItems().filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item)[0] === selectedRisk));
-      $('#stock-table').innerHTML = table(items, 250, false, '', true);
+      const period = monthSelect?.value || stockPlanMonth || currentPlanMonthPeriod();
+      stockPlanMonth = period;
+      const items = scopedItems().filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, n(item.demands?.[`DEM ${period}`]))[0] === selectedRisk));
+      $('#stock-table').innerHTML = table(items, 250, false, '', true, period);
       bindMaterialButtons();
       bindPurchaseButtons();
       bindProgressiveTables();
     };
     $('#stock-search').oninput = filter;
     $('#stock-risk').onchange = filter;
-  }
-
-  if (view === 'orders') {
-    const monthSelect = $('#demand-month');
-    if (monthSelect) monthSelect.onchange = () => { demandMonth = monthSelect.value; render(); };
-    const filterOrders = () => {
-      const query = ($('#orders-search').value || '').toLowerCase();
-      const selectedRisk = $('#orders-risk').value;
-      const orderBase = DATA.items || [];
-      const availableDemandMonths = (DATA.demandMonths?.length ? DATA.demandMonths : [...new Set(orderBase.flatMap(item => Object.keys(item.demands || {})))]).filter(month => orderBase.some(item => n(item.demands?.[month]) > 0));
-      const chosen = demandMonth !== 'all' && availableDemandMonths.includes(demandMonth) ? demandMonth : (availableDemandMonths[0] || '');
-      const items = chosen ? ordersItemsForMonth(orderBase, chosen).filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, item.need)[0] === selectedRisk)) : [];
-      if ($('#orders-table')) {
-        $('#orders-table').innerHTML = chosen ? table(items, 150, true, chosen) : '<div class="empty">Selecione um mês para mostrar os itens e o saldo projetado.</div>';
-        bindMaterialButtons();
-        bindPurchaseButtons();
-        bindProgressiveTables();
-      }
-    };
-    $('#orders-search').oninput = filterOrders;
-    $('#orders-risk').onchange = filterOrders;
-  }
-
-  if (view === 'models') {
-    document.querySelectorAll('.model-card').forEach(card => card.onclick = () => {
-      const name = card.dataset.model;
-      const box = $('#model-detail');
-      const list = DATA.models[name] || [];
-      const modelItems = list.map(component => ({ ...(itemByCode(component.code) || { code: component.code, description: component.description, stock: 0, safety: 0, analyst: '', family: '', obtentionType: '', orders: {}, unit: 'UN' }), requirement: component.quantity })).filter(matchesGlobalFilters);
-      box.style.display = 'block';
-      box.innerHTML = `<div class="panel-header"><h3>${esc(name)}</h3><span>${list.length} componentes</span></div><div class="toolbar"><select class="select" id="model-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div><div id="model-table">${table(modelItems, 100)}</div>`;
-      $('#model-risk').onchange = () => { const selectedRisk = $('#model-risk').value; $('#model-table').innerHTML = table(selectedRisk === 'all' ? modelItems : modelItems.filter(item => risk(item)[0] === selectedRisk), 100); bindMaterialButtons(); bindProgressiveTables(); };
-      box.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
+    if (monthSelect) monthSelect.onchange = filter;
   }
 
   if (view === 'purchaseProcess') {
@@ -2746,6 +2896,7 @@ async function load() {
     CYLINDERS.items = (CYLINDERS.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     SHEET_METAL.items = (SHEET_METAL.items || []).map(item => ({ ...item, unit: item.unit || 'UN', lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
     CABINS.items = (CABINS.items || []).map(item => ({ ...item, unit: item.unit || 'UN', lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
+    syncPlanMonthDemands();
     $('#source-file').textContent = DATA.sourceFile;
     $('#updated-at').textContent = `Base carregada · ${DATA.generatedAt}`;
     render();

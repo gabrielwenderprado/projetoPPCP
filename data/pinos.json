@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-11-05",
+  "generatedAt": "2026-11-09",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -482,7 +482,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 1359,
+      "stock": 1339,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -716,7 +716,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 441,
+      "stock": 443,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1652,7 +1652,7 @@
       "code": "02.03.01.0000085106",
       "description": "PINO ROSCADO DO DESLIZE",
       "unit": "UN",
-      "stock": 62,
+      "stock": 142,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1886,7 +1886,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 216,
+      "stock": 297,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2237,7 +2237,7 @@
       "code": "02.03.01.0000084356",
       "description": "PINO BASTAO TENSOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 90,
+      "stock": 156,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2822,7 +2822,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 244,
+      "stock": 364,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3875,7 +3875,7 @@
       "code": "02.02.01.0000082257",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
       "unit": "UN",
-      "stock": 54,
+      "stock": 85,
       "modelNeeds": {
         "18LDDI": 2,
         "15LDDI": 0,
@@ -5279,7 +5279,7 @@
       "code": "02.03.01.0000085012",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 3,
+      "stock": 82,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5396,7 +5396,7 @@
       "code": "02.03.01.0000085016",
       "description": "PINO SUPERIOR ESTABILIZADOR",
       "unit": "UN",
-      "stock": 198,
+      "stock": 208,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 251,
+      "stock": 237,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
