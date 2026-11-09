@@ -8,95 +8,78 @@
   },
   "models": {
     "18LDDI": {
-      "10/2026": 2,
       "12/2026": 4
     },
     "15LDDI": {
-      "10/2026": 2,
-      "11/2026": 1,
-      "12/2026": 3
+      "12/2026": 4
     },
     "13LDDI": {
-      "10/2026": 1,
       "11/2026": 2
     },
     "10S": {
-      "10/2026": 62,
-      "11/2026": 29,
-      "12/2026": 5
+      "11/2026": 24,
+      "12/2026": 11
     },
     "13AT": {
-      "10/2026": 1,
-      "11/2026": 5,
-      "12/2026": 25
+      "11/2026": 2,
+      "12/2026": 28
     },
     "10L": {
-      "10/2026": 21,
-      "11/2026": 40
+      "11/2026": 38,
+      "12/2026": 1
     },
     "13LDI": {
-      "10/2026": 8,
-      "11/2026": 22,
-      "12/2026": 43
+      "11/2026": 17,
+      "12/2026": 52
     },
     "10HDOC": {
-      "10/2026": 9,
-      "11/2026": 10,
-      "12/2026": 1
+      "11/2026": 4,
+      "12/2026": 14
     },
     "13-69kv": {},
     "13ldi-46kv": {},
     "18lddi": {},
     "guin-16T": {
-      "10/2026": 7,
-      "11/2026": 19,
-      "12/2026": 19
+      "11/2026": 20,
+      "12/2026": 23
     },
     "guin-25T": {
       "12/2026": 18
     },
-    "guin-45": {
-      "10/2026": 3
-    },
+    "guin-45": {},
     "21T": {
-      "10/2026": 1,
       "11/2026": 9
     },
     "30-T": {
-      "10/2026": 1,
-      "11/2026": 1
+      "12/2026": 1
     },
     "7T": {
-      "10/2026": 1,
-      "11/2026": 7,
-      "12/2026": 2
+      "12/2026": 7
     }
   },
   "products": {
-    "SKYCITY 10 S": 95,
-    "SKYCITY 10 L": 61,
-    "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M": 3,
-    "SKYCITY 10 HDOC": 20,
-    "SKYCITY 13 LDDI": 1,
-    "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M": 10,
-    "GUINDASTE NEXT NX 30.5T 5H 2M": 2,
-    "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M": 45,
-    "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M": 10,
-    "SKYCITY 13,5 AT": 29,
-    "SKYCITY 18 LDDI - ISOLAÇÃO 69kV": 6,
-    "SKYCITY 13 LDI": 70,
+    "SKYCITY 13 LDI": 66,
+    "SKYCITY 10 S": 34,
+    "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M": 43,
     "SKYCITY 10 S - TORRE ALTA": 1,
-    "SKYCITY 15 LDDI": 6,
+    "SKYCITY 10 L": 39,
+    "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M": 9,
+    "SKYCITY 10 HDOC": 18,
     "SKYCITY 13 LDDI - ISOLAÇÃO 69kV": 2,
+    "SKYCITY 13,5 AT": 28,
     "SKYCITY 13 AT COM LAVADOR": 2,
     "SKYCITY 13 LDI - ISOLAÇÃO 69kV": 2,
+    "SKYCITY 15 LDDI": 4,
+    "GUINDASTE NEXT NX 30.5T 5H 2M": 1,
     "SKYCITY 13 LDI COM LAVADOR": 1,
-    "GUINDASTE NEXT NX 25.5T 4H 3M": 18
+    "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M": 7,
+    "GUINDASTE NEXT NX 25.5T 4H 3M": 18,
+    "SKYCITY 18 LDDI - ISOLAÇÃO 69kV": 4
   },
   "unmatchedCraneProducts": [
     {
       "produto": "CARROCERIA CARGA SECA DE AÇO PARA GUINDASTE",
-      "quantidade": 44
+      "quantidade": 33
     },
     {
       "produto": "GUINDASTE NEXT NX 10.5 3H 2M",
@@ -105,14 +88,6 @@
     {
       "produto": "GUINDASTE NEXT NX 16.5T TRAVE 4H 2M",
       "quantidade": 7
-    },
-    {
-      "produto": "GUINDASTE NEXT NX 17.5C 4H 2M",
-      "quantidade": 1
-    },
-    {
-      "produto": "GUINDASTE NEXT NX 3.5 2H 1M",
-      "quantidade": 1
     },
     {
       "produto": "GUINDASTE NEXT NX 35.5T 4H 3M",
@@ -124,886 +99,18 @@
     },
     {
       "produto": "GUINDASTE NEXT NX 65.5T 6H 3M",
-      "quantidade": 2
-    },
-    {
-      "produto": "INTEGRAÇÃO GUINDASTE",
       "quantidade": 1
     }
   ],
   "rows": [
-    {
-      "pedido": "EN012807",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-02"
-    },
-    {
-      "pedido": "EN012855",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-05"
-    },
-    {
-      "pedido": "EN012998",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-05"
-    },
-    {
-      "pedido": "EN012867",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-05"
-    },
-    {
-      "pedido": "EN012879",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-05"
-    },
-    {
-      "pedido": "EN013382",
-      "cliente": "CF TRANSPORTES",
-      "produto": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
-      "modelo": "guin-45",
-      "estrutura": "guin-45",
-      "mes": "10/2026",
-      "data": "2026-10-05"
-    },
-    {
-      "pedido": "EN012851",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012877",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN013002",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012857",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012873",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012871",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012901",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012875",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-06"
-    },
-    {
-      "pedido": "EN012913",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-07"
-    },
-    {
-      "pedido": "EN012629",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-07"
-    },
-    {
-      "pedido": "EN012869",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-12"
-    },
-    {
-      "pedido": "EN012903",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-12"
-    },
-    {
-      "pedido": "EN012883",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-12"
-    },
-    {
-      "pedido": "EN012881",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-12"
-    },
-    {
-      "pedido": "EN012885",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-12"
-    },
-    {
-      "pedido": "EN012911",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-12"
-    },
-    {
-      "pedido": "EN013151",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-13"
-    },
-    {
-      "pedido": "EN012923",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-13"
-    },
-    {
-      "pedido": "EN012887",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-13"
-    },
-    {
-      "pedido": "EN012929",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-14"
-    },
-    {
-      "pedido": "EN012921",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-14"
-    },
-    {
-      "pedido": "EN012915",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-14"
-    },
-    {
-      "pedido": "EN013326",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-14"
-    },
-    {
-      "pedido": "EN013324",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-14"
-    },
-    {
-      "pedido": "EN012919",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012925",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012927",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012899",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012156",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012891",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN013276",
-      "cliente": "VILA MUNCK",
-      "produto": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
-      "modelo": "guin-45",
-      "estrutura": "guin-45",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012152",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012154",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-15"
-    },
-    {
-      "pedido": "EN012895",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012917",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012905",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012907",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012909",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012931",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012889",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012865",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012893",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012150",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012980",
-      "cliente": "FENATRAN 2026",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012949",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012979",
-      "cliente": "FENATRAN 2026",
-      "produto": "SKYCITY 13 LDDI",
-      "modelo": "13LDDI",
-      "estrutura": "13-69kv",
-      "mes": "10/2026",
-      "data": "2026-10-16"
-    },
-    {
-      "pedido": "EN012967",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012939",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012943",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012945",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012935",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012947",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012951",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012953",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012955",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012969",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012974",
-      "cliente": "FENATRAN 2026",
-      "produto": "GUINDASTE NEXT NX 45.5T TRAVE 5H 3M",
-      "modelo": "guin-45",
-      "estrutura": "guin-45",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012977",
-      "cliente": "FENATRAN 2026",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN012973",
-      "cliente": "FENATRAN 2026",
-      "produto": "GUINDASTE NEXT NX 30.5T 5H 2M",
-      "modelo": "30-T",
-      "estrutura": "30-T",
-      "mes": "10/2026",
-      "data": "2026-10-19"
-    },
-    {
-      "pedido": "EN013334",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012933",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012897",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012937",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012941",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012971",
-      "cliente": "FENATRAN 2026",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012957",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012959",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012961",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012963",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012965",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN012972",
-      "cliente": "FENATRAN 2026",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "10/2026",
-      "data": "2026-10-20"
-    },
-    {
-      "pedido": "EN013342",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-21"
-    },
-    {
-      "pedido": "EN013340",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-21"
-    },
-    {
-      "pedido": "EN012978",
-      "cliente": "FENATRAN 2026",
-      "produto": "SKYCITY 13,5 AT",
-      "modelo": "13AT",
-      "estrutura": "13AT",
-      "mes": "10/2026",
-      "data": "2026-10-21"
-    },
-    {
-      "pedido": "EN012349",
-      "cliente": "EQUATORIAL RS",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-21"
-    },
-    {
-      "pedido": "EN013332",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-22"
-    },
-    {
-      "pedido": "EN012158",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-22"
-    },
-    {
-      "pedido": "EN012160",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-22"
-    },
-    {
-      "pedido": "EN013356",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-22"
-    },
-    {
-      "pedido": "EN012981",
-      "cliente": "FENATRAN 2026",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-22"
-    },
-    {
-      "pedido": "EN012354",
-      "cliente": "SOMOS RENTAL LTDA",
-      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "18LDDI",
-      "estrutura": "18lddi",
-      "mes": "10/2026",
-      "data": "2026-10-23"
-    },
-    {
-      "pedido": "EN013014",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-23"
-    },
-    {
-      "pedido": "EN013297",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-23"
-    },
     {
       "pedido": "EN013299",
       "cliente": "VAMOS - LIGHT",
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-23"
-    },
-    {
-      "pedido": "EN013071",
-      "cliente": "CPFL - DEMONSTRAÇÃO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-23"
-    },
-    {
-      "pedido": "EN012352",
-      "cliente": "SOMOS RENTAL LTDA",
-      "produto": "SKYCITY 18 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "18LDDI",
-      "estrutura": "18lddi",
-      "mes": "10/2026",
-      "data": "2026-10-26"
-    },
-    {
-      "pedido": "EN013073",
-      "cliente": "PREFEITURA MUNICIPAL DE PORANGABA",
-      "produto": "SKYCITY 10 S - TORRE ALTA",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "10/2026",
-      "data": "2026-10-26"
-    },
-    {
-      "pedido": "EN012565",
-      "cliente": "CGB ENERGIA LTDA",
-      "produto": "SKYCITY 15 LDDI",
-      "modelo": "15LDDI",
-      "estrutura": "15LDDI",
-      "mes": "10/2026",
-      "data": "2026-10-26"
-    },
-    {
-      "pedido": "EN013336",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-26"
-    },
-    {
-      "pedido": "EN013358",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-26"
-    },
-    {
-      "pedido": "EN013119",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-26"
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
       "pedido": "EN013301",
@@ -1011,143 +118,17 @@
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-26"
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
-      "pedido": "EN012568",
-      "cliente": "CSM EMPREENDIMENTOS E ENERGIA LTDA",
-      "produto": "SKYCITY 15 LDDI",
-      "modelo": "15LDDI",
-      "estrutura": "15LDDI",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013338",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013113",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013360",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013362",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013303",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013291",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-27"
-    },
-    {
-      "pedido": "EN013122",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN013125",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN013364",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN013366",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN013368",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN012559",
-      "cliente": "CGB ENERGIA LTDA",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN012562",
-      "cliente": "CGB ENERGIA LTDA",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-28"
-    },
-    {
-      "pedido": "EN013287",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "10/2026",
-      "data": "2026-10-28"
+      "pedido": "EN012951",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
       "pedido": "EN013116",
@@ -1155,503 +136,71 @@
       "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
-      "mes": "10/2026",
-      "data": "2026-10-29"
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
-      "pedido": "EN013346",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-29"
+      "pedido": "EN013119",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
-      "pedido": "EN013352",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-29"
+      "pedido": "EN012559",
+      "cliente": "CGB ENERGIA LTDA",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
-      "pedido": "EN013370",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "10/2026",
-      "data": "2026-10-29"
+      "pedido": "EN012562",
+      "cliente": "CGB ENERGIA LTDA",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
-      "pedido": "EN012033",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-29"
+      "pedido": "EN013122",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-09"
     },
     {
-      "pedido": "EN012126",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "10/2026",
-      "data": "2026-10-29"
-    },
-    {
-      "pedido": "EN012635",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
+      "pedido": "EN013073",
+      "cliente": "PREFEITURA MUNICIPAL DE PORANGABA",
+      "produto": "SKYCITY 10 S - TORRE ALTA",
       "modelo": "10S",
       "estrutura": "10S",
       "mes": "11/2026",
-      "data": "2026-11-02"
+      "data": "2026-11-10"
     },
     {
-      "pedido": "EN013344",
+      "pedido": "EN013368",
       "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-02"
+      "data": "2026-11-10"
     },
     {
-      "pedido": "EN013348",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013350",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013354",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013277",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013006",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013008",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013010",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013250",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013254",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013256",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013258",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013012",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013016",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013018",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013020",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013022",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013024",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013028",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013030",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013032",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013128",
+      "pedido": "EN013125",
       "cliente": "VAMOS - ELINSA",
       "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013131",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013134",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013137",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013140",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013143",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013372",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013374",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013560",
-      "cliente": "CERIM (Cooperativa de Eletrificação e Desenvolvimento da Região de Itu e Mairinque",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-02"
-    },
-    {
-      "pedido": "EN013783",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013784",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013785",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013778",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013779",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013780",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013781",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN013782",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-05"
-    },
-    {
-      "pedido": "EN012543",
-      "cliente": "ENERGISA RONDONIA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN012545",
-      "cliente": "ENERGISA RONDONIA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013281",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013252",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013104",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "SKYCITY 13 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "13LDDI",
-      "estrutura": "13-69kv",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013107",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "SKYCITY 13 LDDI - ISOLAÇÃO 69kV",
-      "modelo": "13LDDI",
-      "estrutura": "13-69kv",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013262",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013264",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013260",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013266",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013279",
-      "cliente": "VAMOS - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-10"
     },
     {
       "pedido": "EN013283",
@@ -1660,106 +209,43 @@
       "modelo": "10L",
       "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-10"
     },
     {
-      "pedido": "EN013285",
-      "cliente": "VAMOS - LIGHT",
+      "pedido": "EN013364",
+      "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-12"
     },
     {
-      "pedido": "EN013026",
-      "cliente": "VAMOS - LIGHT",
+      "pedido": "EN013360",
+      "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-11"
     },
     {
-      "pedido": "EN013034",
-      "cliente": "VAMOS - LIGHT",
+      "pedido": "EN013356",
+      "cliente": "LOCALIZA - LIGHT",
       "produto": "SKYCITY 10 L",
       "modelo": "10L",
       "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-12"
     },
     {
-      "pedido": "EN013080",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
+      "pedido": "EN013370",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013082",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013084",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013086",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013088",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013090",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013092",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
-    },
-    {
-      "pedido": "EN013094",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-11"
     },
     {
       "pedido": "EN013289",
@@ -1768,7 +254,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-11"
     },
     {
       "pedido": "EN013293",
@@ -1777,7 +263,16 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-11"
+    },
+    {
+      "pedido": "EN013350",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-11"
     },
     {
       "pedido": "EN013295",
@@ -1786,16 +281,160 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-12"
     },
     {
-      "pedido": "EN012128",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
+      "pedido": "EN013362",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-11"
+    },
+    {
+      "pedido": "EN013285",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-11"
+    },
+    {
+      "pedido": "EN013131",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-12"
+    },
+    {
+      "pedido": "EN013113",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-14"
+    },
+    {
+      "pedido": "EN013137",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-14"
+    },
+    {
+      "pedido": "EN013354",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN013372",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN013277",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-10"
+    },
+    {
+      "pedido": "EN013250",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN013252",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN013254",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN013560",
+      "cliente": "CERIM (Cooperativa de Eletrificação e Desenvolvimento da Região de Itu e Mairinque",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-12"
+    },
+    {
+      "pedido": "EN013281",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-10"
+    },
+    {
+      "pedido": "EN013128",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN013134",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-13"
+    },
+    {
+      "pedido": "EN012937",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-10"
+    },
+    {
+      "pedido": "EN013374",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-13"
     },
     {
       "pedido": "EN013376",
@@ -1804,16 +443,214 @@
       "modelo": "10L",
       "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-13"
     },
     {
-      "pedido": "EN011512",
-      "cliente": "ENEL RJ",
+      "pedido": "EN013030",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-18"
+    },
+    {
+      "pedido": "EN013032",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-18"
+    },
+    {
+      "pedido": "EN013034",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-20"
+    },
+    {
+      "pedido": "EN013016",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-16"
+    },
+    {
+      "pedido": "EN012955",
+      "cliente": "ENEL SP",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "estrutura": "10S",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-16"
+    },
+    {
+      "pedido": "EN013018",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-16"
+    },
+    {
+      "pedido": "EN013022",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-16"
+    },
+    {
+      "pedido": "EN013020",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-17"
+    },
+    {
+      "pedido": "EN013024",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-18"
+    },
+    {
+      "pedido": "EN013028",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-20"
+    },
+    {
+      "pedido": "EN013026",
+      "cliente": "VAMOS - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-19"
+    },
+    {
+      "pedido": "EN013140",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-16"
+    },
+    {
+      "pedido": "EN013256",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-18"
+    },
+    {
+      "pedido": "EN013258",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-19"
+    },
+    {
+      "pedido": "EN013262",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-18"
+    },
+    {
+      "pedido": "EN013264",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-17"
+    },
+    {
+      "pedido": "EN013143",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-16"
+    },
+    {
+      "pedido": "EN013094",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-17"
+    },
+    {
+      "pedido": "EN013260",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-17"
+    },
+    {
+      "pedido": "EN013266",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "11/2026",
+      "data": "2026-11-19"
+    },
+    {
+      "pedido": "EN013084",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-18"
+    },
+    {
+      "pedido": "EN012961",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-20"
+    },
+    {
+      "pedido": "EN013080",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-17"
     },
     {
       "pedido": "EN013578",
@@ -1822,7 +659,16 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-19"
+    },
+    {
+      "pedido": "EN013082",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-18"
     },
     {
       "pedido": "EN013584",
@@ -1831,178 +677,25 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-06"
+      "data": "2026-11-18"
     },
     {
-      "pedido": "EN012325",
-      "cliente": "EQUATORIAL PIAUI",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "11/2026",
-      "data": "2026-11-09"
-    },
-    {
-      "pedido": "EN013268",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013328",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013038",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013110",
-      "cliente": "VAMOS - ELINSA",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013380",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013096",
+      "pedido": "EN013086",
       "cliente": "ENERGISA MATO GROSSO",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "estrutura": "10S",
       "mes": "11/2026",
-      "data": "2026-11-13"
+      "data": "2026-11-20"
     },
     {
-      "pedido": "EN013098",
+      "pedido": "EN013088",
       "cliente": "ENERGISA MATO GROSSO",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "estrutura": "10S",
       "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013100",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013102",
-      "cliente": "ENERGISA MATO GROSSO",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN012130",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN012172",
-      "cliente": "ELEKTRO",
-      "produto": "SKYCITY 13,5 AT",
-      "modelo": "13AT",
-      "estrutura": "13AT",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013378",
-      "cliente": "LOCALIZA - LIGHT",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN010981",
-      "cliente": "LACTEC",
-      "produto": "SKYCITY 13 AT COM LAVADOR",
-      "modelo": "13AT",
-      "estrutura": "13AT",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN011518",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN011524",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN011486",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN011241",
-      "cliente": "ENEL RJ",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN011217",
-      "cliente": "ENEL RJ",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-13"
+      "data": "2026-11-20"
     },
     {
       "pedido": "EN013590",
@@ -2011,7 +704,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-13"
+      "data": "2026-11-18"
     },
     {
       "pedido": "EN013596",
@@ -2020,7 +713,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-13"
+      "data": "2026-11-18"
     },
     {
       "pedido": "EN013599",
@@ -2029,367 +722,43 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-13"
+      "data": "2026-11-19"
     },
     {
-      "pedido": "EN012327",
-      "cliente": "EQUATORIAL MARANHÃO",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
+      "pedido": "EN013268",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-17"
+      "data": "2026-11-19"
     },
     {
-      "pedido": "EN012637",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
+      "pedido": "EN013328",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-20"
+      "data": "2026-11-16"
     },
     {
-      "pedido": "EN012639",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
+      "pedido": "EN013380",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-20"
+      "data": "2026-11-19"
     },
     {
-      "pedido": "EN013307",
-      "cliente": "PREFEITURA MUNICIPAL DE UNIÃO DA VITÓRIA",
-      "produto": "SKYCITY 13 LDI - ISOLAÇÃO 69kV",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
+      "pedido": "EN013378",
+      "cliente": "LOCALIZA - LIGHT",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
       "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013036",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012547",
-      "cliente": "EPR INFRAESTRUTURA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012572",
-      "cliente": "EPR INFRAESTRUTURA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012136",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012138",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012140",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012174",
-      "cliente": "ELEKTRO",
-      "produto": "SKYCITY 13,5 AT",
-      "modelo": "13AT",
-      "estrutura": "13AT",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013046",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN012162",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 13,5 AT",
-      "modelo": "13AT",
-      "estrutura": "13AT",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011476",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011480",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011482",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011484",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011488",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011716",
-      "cliente": "DIBRACAM (ENEL RJ)",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011247",
-      "cliente": "ENEL RJ",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011428",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011430",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011434",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011436",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN011442",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013385",
-      "cliente": "MUNICIPIO DE AMAMBAI",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013447",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013449",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013509",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013556",
-      "cliente": "LIDER VEÍCULOS (POLICIA MILITAR/MG)",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013558",
-      "cliente": "LIDER VEÍCULOS (POLICIA MILITAR/MG)",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013593",
-      "cliente": "LOCALIZA - CONSTRUTORA GONÇALO",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-20"
-    },
-    {
-      "pedido": "EN013042",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN012142",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN012132",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN013044",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN012146",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN012134",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN012144",
-      "cliente": "CPFL",
-      "produto": "SKYCITY 10 HDOC",
-      "modelo": "10HDOC",
-      "estrutura": "10HDOC",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN012031",
-      "cliente": "LM FROTAS - CONSOLIS SOLUCOES INTELIGENTES LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "11/2026",
-      "data": "2026-11-27"
+      "data": "2026-11-16"
     },
     {
       "pedido": "EN013146",
@@ -2398,83 +767,155 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "11/2026",
-      "data": "2026-11-27"
+      "data": "2026-11-23"
     },
     {
-      "pedido": "EN011432",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
+      "pedido": "EN012150",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
       "mes": "11/2026",
-      "data": "2026-11-27"
+      "data": "2026-11-24"
     },
     {
-      "pedido": "EN011444",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN011438",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN013435",
+      "pedido": "EN012963",
       "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN012965",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-26"
+    },
+    {
+      "pedido": "EN013104",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "SKYCITY 13 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "13LDDI",
+      "estrutura": "13-69kv",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN013107",
+      "cliente": "VAMOS - ELINSA",
+      "produto": "SKYCITY 13 LDDI - ISOLAÇÃO 69kV",
+      "modelo": "13LDDI",
+      "estrutura": "13-69kv",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN013090",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN012156",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN013092",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN012160",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN013096",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN013098",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN012033",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "11/2026",
+      "data": "2026-11-27"
+    },
+    {
+      "pedido": "EN013593",
+      "cliente": "LOCALIZA - CONSTRUTORA GONÇALO",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-27"
+    },
+    {
+      "pedido": "EN013100",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-25"
+    },
+    {
+      "pedido": "EN013102",
+      "cliente": "ENERGISA MATO GROSSO",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-25"
+    },
+    {
+      "pedido": "EN013110",
+      "cliente": "VAMOS - ELINSA",
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "11/2026",
-      "data": "2026-11-27"
+      "data": "2026-11-23"
     },
     {
-      "pedido": "EN013581",
-      "cliente": "LOCALIZA - CONSTRUTORA GONÇALO",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN013587",
-      "cliente": "LOCALIZA - CONSTRUTORA GONÇALO",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN013640",
-      "cliente": "INDUSTRIA E COMERCIO SANTO ANTONIO LTDA",
-      "produto": "GUINDASTE NEXT NX 30.5T 5H 2M",
-      "modelo": "30-T",
-      "estrutura": "30-T",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN013641",
-      "cliente": "COMPEL CONSTRUCOES MONTAGENS E PROJETOS ELETRICOS LTDA",
-      "produto": "SKYCITY 15 LDDI",
-      "modelo": "15LDDI",
-      "estrutura": "15LDDI",
-      "mes": "11/2026",
-      "data": "2026-11-27"
-    },
-    {
-      "pedido": "EN013643",
-      "cliente": "DIGITAL NET",
+      "pedido": "EN013385",
+      "cliente": "MUNICIPIO DE AMAMBAI",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "estrutura": "10S",
@@ -2482,8 +923,8 @@
       "data": "2026-11-27"
     },
     {
-      "pedido": "EN013645",
-      "cliente": "PREFEITURA DE TAUBATÉ",
+      "pedido": "EN013556",
+      "cliente": "LIDER VEÍCULOS (POLICIA MILITAR/MG)",
       "produto": "SKYCITY 10 S",
       "modelo": "10S",
       "estrutura": "10S",
@@ -2491,25 +932,331 @@
       "data": "2026-11-27"
     },
     {
-      "pedido": "EN013647",
-      "cliente": "TRADE PROVIDERS CONSULTORIA E IMPORTACAO LTDA",
+      "pedido": "EN011428",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN011430",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN011434",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN011436",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-24"
+    },
+    {
+      "pedido": "EN011442",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-23"
+    },
+    {
+      "pedido": "EN012547",
+      "cliente": "EPR INFRAESTRUTURA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-27"
+    },
+    {
+      "pedido": "EN012572",
+      "cliente": "EPR INFRAESTRUTURA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-27"
+    },
+    {
+      "pedido": "EN012172",
+      "cliente": "ELEKTRO",
       "produto": "SKYCITY 13,5 AT",
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "11/2026",
-      "data": "2026-11-27"
+      "data": "2026-11-30"
     },
     {
-      "pedido": "EN013649",
-      "cliente": "KCINCO CAMINHÕES E ÔNIBUS LTDA",
-      "produto": "SKYCITY 10 L",
-      "modelo": "10L",
-      "estrutura": "10L",
+      "pedido": "EN010981",
+      "cliente": "LACTEC",
+      "produto": "SKYCITY 13 AT COM LAVADOR",
+      "modelo": "13AT",
+      "estrutura": "13AT",
       "mes": "11/2026",
-      "data": "2026-11-27"
+      "data": "2026-11-30"
     },
     {
-      "pedido": "EN012148",
+      "pedido": "EN013783",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013784",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013785",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN011486",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN011241",
+      "cliente": "ENEL RJ",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN011217",
+      "cliente": "ENEL RJ",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013778",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013779",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013780",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013781",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013782",
+      "cliente": "ESTOQUE - NEXT",
+      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
+      "modelo": "21T",
+      "estrutura": "21T",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN013558",
+      "cliente": "LIDER VEÍCULOS (POLICIA MILITAR/MG)",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN011476",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN011480",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN011482",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "11/2026",
+      "data": "2026-11-30"
+    },
+    {
+      "pedido": "EN012807",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012154",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012543",
+      "cliente": "ENERGISA RONDONIA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012545",
+      "cliente": "ENERGISA RONDONIA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012158",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011512",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011518",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011524",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012126",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012128",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012130",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN013307",
+      "cliente": "PREFEITURA MUNICIPAL DE UNIÃO DA VITÓRIA",
+      "produto": "SKYCITY 13 LDI - ISOLAÇÃO 69kV",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012136",
       "cliente": "CPFL",
       "produto": "SKYCITY 10 HDOC",
       "modelo": "10HDOC",
@@ -2518,16 +1265,79 @@
       "data": "2026-12-04"
     },
     {
-      "pedido": "EN013048",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
+      "pedido": "EN012138",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
       "mes": "12/2026",
       "data": "2026-12-04"
     },
     {
-      "pedido": "EN013437",
+      "pedido": "EN012140",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013581",
+      "cliente": "LOCALIZA - CONSTRUTORA GONÇALO",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013587",
+      "cliente": "LOCALIZA - CONSTRUTORA GONÇALO",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013447",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN013449",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN013509",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012031",
+      "cliente": "LM FROTAS - CONSOLIS SOLUCOES INTELIGENTES LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013435",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
@@ -2536,13 +1346,166 @@
       "data": "2026-12-04"
     },
     {
-      "pedido": "EN013451",
-      "cliente": "ENEL SP",
+      "pedido": "EN013641",
+      "cliente": "COMPEL CONSTRUCOES MONTAGENS E PROJETOS ELETRICOS LTDA",
+      "produto": "SKYCITY 15 LDDI",
+      "modelo": "15LDDI",
+      "estrutura": "15LDDI",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013643",
+      "cliente": "DIGITAL NET",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013645",
+      "cliente": "PREFEITURA DE TAUBATÉ",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013647",
+      "cliente": "TRADE PROVIDERS CONSULTORIA E IMPORTACAO LTDA",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "estrutura": "13AT",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013649",
+      "cliente": "KCINCO CAMINHÕES E ÔNIBUS LTDA",
+      "produto": "SKYCITY 10 L",
+      "modelo": "10L",
+      "estrutura": "10L",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN011432",
+      "cliente": "ENEL RJ",
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
       "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN011444",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN011438",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN013640",
+      "cliente": "INDUSTRIA E COMERCIO SANTO ANTONIO LTDA",
+      "produto": "GUINDASTE NEXT NX 30.5T 5H 2M",
+      "modelo": "30-T",
+      "estrutura": "30-T",
+      "mes": "12/2026",
+      "data": "2026-12-04"
+    },
+    {
+      "pedido": "EN012174",
+      "cliente": "ELEKTRO",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "estrutura": "13AT",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011484",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011488",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011716",
+      "cliente": "DIBRACAM (ENEL RJ)",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN011247",
+      "cliente": "ENEL RJ",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "12/2026",
+      "data": "2026-12-01"
+    },
+    {
+      "pedido": "EN012142",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-07"
+    },
+    {
+      "pedido": "EN012132",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-07"
+    },
+    {
+      "pedido": "EN012134",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-07"
+    },
+    {
+      "pedido": "EN012162",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 13,5 AT",
+      "modelo": "13AT",
+      "estrutura": "13AT",
+      "mes": "12/2026",
+      "data": "2026-12-07"
     },
     {
       "pedido": "EN013602",
@@ -2551,7 +1514,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-04"
+      "data": "2026-12-07"
     },
     {
       "pedido": "EN013620",
@@ -2560,7 +1523,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-04"
+      "data": "2026-12-07"
     },
     {
       "pedido": "EN013623",
@@ -2569,7 +1532,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-04"
+      "data": "2026-12-07"
     },
     {
       "pedido": "EN013626",
@@ -2578,7 +1541,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-04"
+      "data": "2026-12-07"
     },
     {
       "pedido": "EN013629",
@@ -2587,7 +1550,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-04"
+      "data": "2026-12-07"
     },
     {
       "pedido": "EN013632",
@@ -2596,232 +1559,52 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-04"
+      "data": "2026-12-07"
     },
     {
-      "pedido": "EN013040",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN009504",
-      "cliente": "LACTEC",
-      "produto": "SKYCITY 13 AT COM LAVADOR",
-      "modelo": "13AT",
-      "estrutura": "13AT",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN012541",
-      "cliente": "ENERGISA SERGIPE",
-      "produto": "SKYCITY 13 LDI - ISOLAÇÃO 69kV",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN013149",
-      "cliente": "ELENG ENGENHARIA LTDA",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011835",
-      "cliente": "DIBRACAM (ENEL RJ)",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011202",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 15 LDDI",
-      "modelo": "15LDDI",
-      "estrutura": "15LDDI",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011326",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011456",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011462",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011464",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011466",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011468",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011470",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011474",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011472",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011478",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011490",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011211",
-      "cliente": "ENEL RJ",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011244",
-      "cliente": "ENEL RJ",
-      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
-      "modelo": "guin-16T",
-      "estrutura": "guin-16T",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011426",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN011446",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-11"
-    },
-    {
-      "pedido": "EN013439",
+      "pedido": "EN013437",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-07"
     },
     {
-      "pedido": "EN013441",
+      "pedido": "EN013451",
       "cliente": "ENEL SP",
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-07"
     },
     {
-      "pedido": "EN013443",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
+      "pedido": "EN012148",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
     },
     {
-      "pedido": "EN013445",
-      "cliente": "ENEL SP",
-      "produto": "SKYCITY 13 LDI",
-      "modelo": "13LDI",
-      "estrutura": "13ldi-46kv",
+      "pedido": "EN012146",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN012144",
+      "cliente": "CPFL",
+      "produto": "SKYCITY 10 HDOC",
+      "modelo": "10HDOC",
+      "estrutura": "10HDOC",
+      "mes": "12/2026",
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN013605",
@@ -2830,7 +1613,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN013608",
@@ -2839,7 +1622,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN013611",
@@ -2848,7 +1631,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN013614",
@@ -2857,7 +1640,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN013617",
@@ -2866,7 +1649,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN013635",
@@ -2875,7 +1658,223 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-11"
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN009504",
+      "cliente": "LACTEC",
+      "produto": "SKYCITY 13 AT COM LAVADOR",
+      "modelo": "13AT",
+      "estrutura": "13AT",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN013149",
+      "cliente": "ELENG ENGENHARIA LTDA",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011211",
+      "cliente": "ENEL RJ",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011244",
+      "cliente": "ENEL RJ",
+      "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
+      "modelo": "guin-16T",
+      "estrutura": "guin-16T",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011426",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011446",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011835",
+      "cliente": "DIBRACAM (ENEL RJ)",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011202",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 15 LDDI",
+      "modelo": "15LDDI",
+      "estrutura": "15LDDI",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011326",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011456",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011462",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011464",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011466",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011468",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011470",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011474",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011472",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011478",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN011490",
+      "cliente": "ENEL RJ",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN012541",
+      "cliente": "ENERGISA SERGIPE",
+      "produto": "SKYCITY 13 LDI - ISOLAÇÃO 69kV",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN013439",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN013441",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN013443",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
+    },
+    {
+      "pedido": "EN013445",
+      "cliente": "ENEL SP",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "12/2026",
+      "data": "2026-12-14"
     },
     {
       "pedido": "EN011205",
@@ -2884,7 +1883,7 @@
       "modelo": "15LDDI",
       "estrutura": "15LDDI",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011208",
@@ -2893,7 +1892,7 @@
       "modelo": "15LDDI",
       "estrutura": "15LDDI",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN010949",
@@ -2902,7 +1901,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011448",
@@ -2911,7 +1910,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN010953",
@@ -2920,7 +1919,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN010951",
@@ -2929,7 +1928,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN010955",
@@ -2938,7 +1937,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011450",
@@ -2947,7 +1946,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011452",
@@ -2956,7 +1955,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011454",
@@ -2965,7 +1964,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011458",
@@ -2974,7 +1973,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011460",
@@ -2983,7 +1982,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
     },
     {
       "pedido": "EN011492",
@@ -2992,7 +1991,70 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-18"
+      "data": "2026-12-21"
+    },
+    {
+      "pedido": "EN013038",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN013036",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN013046",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN013042",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN013044",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN013048",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN013040",
+      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
+      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
+      "modelo": "7T",
+      "estrutura": "7T",
+      "mes": "12/2026",
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN012011",
@@ -3001,43 +2063,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
-    },
-    {
-      "pedido": "EN011510",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "12/2026",
-      "data": "2026-12-31"
-    },
-    {
-      "pedido": "EN011112",
-      "cliente": "ENEL CE",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "12/2026",
-      "data": "2026-12-31"
-    },
-    {
-      "pedido": "EN011110",
-      "cliente": "ENEL CE",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "12/2026",
-      "data": "2026-12-31"
-    },
-    {
-      "pedido": "EN011522",
-      "cliente": "ENEL RJ",
-      "produto": "SKYCITY 10 S",
-      "modelo": "10S",
-      "estrutura": "10S",
-      "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013387",
@@ -3046,7 +2072,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013389",
@@ -3055,7 +2081,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013391",
@@ -3064,7 +2090,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013393",
@@ -3073,7 +2099,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013395",
@@ -3082,7 +2108,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013397",
@@ -3091,7 +2117,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013399",
@@ -3100,7 +2126,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013401",
@@ -3109,7 +2135,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013403",
@@ -3118,7 +2144,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013405",
@@ -3127,7 +2153,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013407",
@@ -3136,7 +2162,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013409",
@@ -3145,7 +2171,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013411",
@@ -3154,7 +2180,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013413",
@@ -3163,7 +2189,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013415",
@@ -3172,7 +2198,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013417",
@@ -3181,7 +2207,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013419",
@@ -3190,7 +2216,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013421",
@@ -3199,7 +2225,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013423",
@@ -3208,7 +2234,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013425",
@@ -3217,7 +2243,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013427",
@@ -3226,7 +2252,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013429",
@@ -3235,7 +2261,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013431",
@@ -3244,7 +2270,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013433",
@@ -3253,7 +2279,7 @@
       "modelo": "13AT",
       "estrutura": "13AT",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013453",
@@ -3262,7 +2288,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013455",
@@ -3271,7 +2297,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013457",
@@ -3280,7 +2306,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013459",
@@ -3289,7 +2315,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013461",
@@ -3298,7 +2324,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013463",
@@ -3307,7 +2333,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013465",
@@ -3316,7 +2342,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013467",
@@ -3325,7 +2351,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013469",
@@ -3334,7 +2360,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013471",
@@ -3343,7 +2369,7 @@
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013473",
@@ -3352,7 +2378,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013475",
@@ -3361,7 +2387,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013477",
@@ -3370,7 +2396,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013479",
@@ -3379,7 +2405,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013481",
@@ -3388,7 +2414,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013483",
@@ -3397,7 +2423,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013485",
@@ -3406,7 +2432,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013487",
@@ -3415,7 +2441,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013489",
@@ -3424,7 +2450,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013491",
@@ -3433,7 +2459,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013493",
@@ -3442,7 +2468,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013495",
@@ -3451,7 +2477,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013497",
@@ -3460,7 +2486,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013499",
@@ -3469,7 +2495,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013501",
@@ -3478,7 +2504,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013503",
@@ -3487,7 +2513,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013505",
@@ -3496,7 +2522,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013507",
@@ -3505,7 +2531,7 @@
       "modelo": "guin-25T",
       "estrutura": "guin-25T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013535",
@@ -3514,7 +2540,7 @@
       "modelo": "18LDDI",
       "estrutura": "18lddi",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013537",
@@ -3523,7 +2549,7 @@
       "modelo": "18LDDI",
       "estrutura": "18lddi",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013539",
@@ -3532,7 +2558,7 @@
       "modelo": "18LDDI",
       "estrutura": "18lddi",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013541",
@@ -3541,7 +2567,7 @@
       "modelo": "18LDDI",
       "estrutura": "18lddi",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013543",
@@ -3550,7 +2576,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013545",
@@ -3559,7 +2585,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013547",
@@ -3568,7 +2594,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013549",
@@ -3577,7 +2603,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     },
     {
       "pedido": "EN013551",
@@ -3586,7 +2612,7 @@
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
       "mes": "12/2026",
-      "data": "2026-12-31"
+      "data": "2026-12-30"
     }
   ]
 }
