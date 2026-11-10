@@ -827,11 +827,14 @@ body {
   }
 
   .login-visual {
-    display: none;
+    display: block;
+    min-height: 39vh;
+    height: 39vh;
+    max-height: 390px;
   }
 
   .login-panel {
-    min-height: 100vh;
+    min-height: 61vh;
     padding: 30px 22px;
   }
 }
@@ -848,6 +851,98 @@ body {
   .user-badge {
     display: none;
   }
+}
+
+/* ==========================================================
+   TEMA NATALINO PCP — cenário animado do login e do dashboard
+   ========================================================== */
+.christmas-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 36px; padding: 0 11px; border: 1px solid rgba(246,204,114,.55);
+  border-radius: 999px; color: #fff0cb; background: rgba(5,20,37,.64);
+  cursor: pointer; font: 700 11px "DM Sans", sans-serif; letter-spacing: .025em;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15); backdrop-filter: blur(8px);
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.christmas-toggle:hover { background: rgba(246,204,114,.2); border-color: #f6cc72; transform: translateY(-1px); }
+.christmas-toggle > span:first-child { color: #f6cc72; font-size: 15px; line-height: 1; }
+.login-christmas-toggle { position: absolute; z-index: 8; left: 24px; bottom: 22px; }
+.login-christmas-sky, .login-christmas-snow, .login-christmas-garland,
+.login-christmas-copy, .login-christmas-crane, .login-holiday-tree { display: none; }
+.christmas-theme .login-visual { background: #07182d; }
+.christmas-theme .login-christmas-sky { display: block; position: absolute; z-index: 0; inset: 0; overflow: hidden; background: radial-gradient(ellipse at 75% 20%, rgba(76,126,165,.32), transparent 35%), radial-gradient(ellipse at 35% 52%, rgba(32,90,128,.26), transparent 44%), linear-gradient(180deg,#07182d 0%,#0d2c49 57%,#12293a 80%,#091522 100%); }
+.christmas-theme .login-christmas-sky::before { content: ""; position: absolute; left: 0; right: 0; bottom: 21%; height: 26%; background: repeating-linear-gradient(90deg, transparent 0 5%, rgba(3,16,27,.78) 5% 13%, transparent 13% 16%), linear-gradient(180deg, transparent, rgba(3,15,25,.72)); clip-path: polygon(0 40%,7% 24%,14% 42%,22% 15%,30% 40%,39% 25%,47% 45%,56% 14%,65% 42%,74% 24%,83% 39%,92% 12%,100% 36%,100% 100%,0 100%); }
+.christmas-theme .login-christmas-sky::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 20%; border-top: 1px solid rgba(227,239,248,.32); background: linear-gradient(180deg,#253846,#0a1723 72%); }
+.christmas-theme .login-visual-overlay { z-index: 1; background: linear-gradient(90deg,rgba(3,14,26,.22),rgba(3,14,26,.02) 62%,rgba(3,14,26,.22)); }
+.christmas-theme .login-christmas-copy { position: absolute; z-index: 4; top: 15%; left: 7%; display: flex; flex-direction: column; align-items: flex-start; text-shadow: 0 4px 22px rgba(0,0,0,.4); }
+.login-holiday-brand { margin-bottom: clamp(42px,10vh,112px); color: #fff; font-size: 16px; font-weight: 900; letter-spacing: .17em; }
+.login-holiday-brand small { display: block; margin-top: 3px; color: #b9d0e4; font-size: 8px; letter-spacing: .23em; }
+.login-holiday-eyebrow { color: #b8dbf6; font-size: 10px; font-weight: 800; letter-spacing: .17em; }
+.login-christmas-copy strong { margin-top: 12px; color: #fff; font-size: clamp(55px,6.2vw,88px); font-weight: 780; letter-spacing: -.065em; line-height: .88; }
+.login-christmas-copy em { color: #f6cc72; font-style: normal; }
+.login-holiday-caption { margin-top: 24px; color: #d5e3f0; font-size: 12px; letter-spacing: .035em; }
+.christmas-theme .login-christmas-crane { position: absolute; z-index: 3; right: 2%; bottom: 7%; display: block; width: min(61%,620px); aspect-ratio: 340 / 380; filter: drop-shadow(0 18px 20px rgba(0,0,0,.34)); }
+.login-christmas-crane svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.login-crane-lower { transform-box: fill-box; transform-origin: 92px 250px; animation: loginRaiseLower 4.2s ease-in-out infinite; }
+.login-crane-upper { transform-box: fill-box; transform-origin: 92px 250px; animation: loginRaiseUpper 4.2s ease-in-out infinite; }
+.login-crane-bucket { transform-box: fill-box; transform-origin: center; animation: loginBucketSway 4.2s ease-in-out infinite; }
+@keyframes loginRaiseLower { 0%,100% { transform: rotate(0deg); } 45%,55% { transform: rotate(-52deg); } }
+@keyframes loginRaiseUpper { 0%,100% { transform: rotate(0deg); } 45%,55% { transform: rotate(-38deg); } }
+@keyframes loginBucketSway { 0%,100% { transform: rotate(0deg); } 45%,55% { transform: rotate(4deg); } }
+.christmas-theme .login-christmas-snow { display: block; position: absolute; z-index: 5; inset: -220px 0 0; pointer-events: none; opacity: .62; background-image: radial-gradient(2px 2px at 28px 42px,#fff 98%,transparent),radial-gradient(1.5px 1.5px at 130px 160px,rgba(255,255,255,.8) 98%,transparent),radial-gradient(2px 2px at 240px 84px,rgba(220,240,255,.85) 98%,transparent),radial-gradient(1px 1px at 360px 230px,#fff 98%,transparent),radial-gradient(2px 2px at 470px 36px,#fff 98%,transparent),radial-gradient(1.5px 1.5px at 610px 130px,rgba(255,255,255,.8) 98%,transparent); background-size: 680px 300px; animation: loginSnowfall 18s linear infinite; }
+@keyframes loginSnowfall { to { background-position: 0 600px; } }
+.christmas-theme .login-christmas-garland { display: block; position: absolute; z-index: 6; top: 0; left: 0; width: 100%; height: 66px; pointer-events: none; }
+.login-christmas-garland svg { width: 100%; height: 100%; overflow: visible; }
+.login-christmas-garland circle { filter: drop-shadow(0 0 6px currentColor); animation: loginBulbGlow 2.4s ease-in-out infinite alternate; }
+.login-christmas-garland circle:nth-of-type(3n) { animation-delay: .7s; }
+@keyframes loginBulbGlow { from { opacity:.65; } to { opacity:1; } }
+.christmas-theme .login-holiday-tree { position: absolute; z-index: 2; display: block; bottom: 17%; width: 70px; height: 135px; color: #ffdf8c; text-align: center; font-size: 19px; text-shadow: 0 0 9px #ffe49a; }
+.christmas-theme .login-holiday-tree::before { content: ""; position: absolute; z-index: -1; inset: 8px 0 0; background: #14503f; clip-path: polygon(50% 0,68% 27%,62% 27%,83% 55%,72% 55%,100% 86%,0 86%,28% 55%,17% 55%,38% 27%,32% 27%); border-bottom: 12px solid #654a36; }
+.login-holiday-tree-a { left: 44%; }
+.login-holiday-tree-b { right: 1%; transform: scale(1.2); }
+.christmas-theme .login-panel { background: radial-gradient(circle at 80% 10%,rgba(56,122,95,.22),transparent 32%),linear-gradient(145deg,#10273a 0%,#071321 75%); }
+.christmas-theme .login-kicker { color: #9dd8b5; }
+.christmas-theme .login-form .input:focus { outline-color: rgba(120,210,155,.35); border-color: #55b77a; }
+.christmas-theme .login-submit { border-color: #218253; background: #218253; }
+.christmas-theme .login-submit:hover { background: #2e9c66; }
+.topbar-holiday-snow, .topbar-holiday-lights { display: none; }
+.christmas-theme .topbar-holiday-snow { display: block; position: absolute; z-index: 1; inset: -100px 0 0; opacity: .5; pointer-events: none; background-image: radial-gradient(2px 2px at 28px 42px,#fff 98%,transparent),radial-gradient(1px 1px at 130px 100px,#fff 98%,transparent),radial-gradient(2px 2px at 240px 84px,rgba(230,245,255,.9) 98%,transparent),radial-gradient(1px 1px at 360px 32px,#fff 98%,transparent); background-size: 480px 180px; animation: loginSnowfall 17s linear infinite; }
+.christmas-theme .topbar-holiday-lights { display: block; position: absolute; z-index: 2; top: -2px; left: 0; width: 100%; height: 55px; pointer-events: none; }
+.topbar-holiday-lights svg { width: 100%; height: 100%; overflow: visible; }
+.topbar-holiday-lights path { fill: none; stroke: rgba(20,28,34,.9); stroke-width: 2; }
+.topbar-holiday-lights circle { fill: #ffe49a; stroke: rgba(255,255,255,.35); stroke-width: 1; filter: drop-shadow(0 0 5px #ffd66d); animation: loginBulbGlow 2s ease-in-out infinite alternate; }
+.topbar-holiday-lights circle:nth-of-type(3n) { fill: #ff776b; filter: drop-shadow(0 0 5px #ff6151); animation-delay: .6s; }
+.topbar-holiday-lights circle:nth-of-type(3n + 1) { fill: #8ce0b0; filter: drop-shadow(0 0 5px #57d990); animation-delay: 1s; }
+.topbar .christmas-toggle { border-color: rgba(246,204,114,.58); background: rgba(5,22,39,.55); color: #fff0cb; }
+.topbar .christmas-toggle > span:first-child { color: #f6cc72; }
+body.dark-theme.christmas-theme .topbar-holiday-snow { opacity: .66; }
+@media (max-width: 900px) {
+  .login-christmas-copy { left: 5%; }
+  .login-holiday-brand { margin-bottom: 5vh; }
+  .login-christmas-copy strong { font-size: clamp(48px,8vw,70px); }
+  .christmas-theme .login-christmas-crane { right: -2%; bottom: -8%; width: 47%; }
+  .christmas-theme .login-holiday-tree-a { left: 46%; bottom: 12%; transform: scale(.72); }
+  .christmas-theme .login-holiday-tree-b { bottom: 10%; transform: scale(.82); }
+  .dashboard-christmas-toggle .christmas-toggle-label { display: none; }
+  .dashboard-christmas-toggle { width: 38px; min-width: 38px; padding: 0; }
+}
+@media (max-width: 520px) {
+  .login-visual { min-height: 37vh; height: 37vh; }
+  .christmas-theme .login-christmas-copy { top: 19%; left: 5%; }
+  .login-holiday-brand { margin-bottom: 2vh; font-size: 12px; }
+  .login-holiday-brand small { font-size: 7px; }
+  .login-holiday-eyebrow { font-size: 8px; }
+  .christmas-theme .login-christmas-copy strong { margin-top: 8px; font-size: clamp(36px,11vw,49px); }
+  .login-holiday-caption { margin-top: 13px; font-size: 9px; }
+  .christmas-theme .login-christmas-crane { right: -4%; bottom: -1%; width: 44%; }
+  .christmas-theme .login-holiday-tree-a { left: 45%; bottom: 6%; transform: scale(.53); }
+  .christmas-theme .login-holiday-tree-b { right: -4%; bottom: 5%; transform: scale(.62); }
+  .login-christmas-toggle { left: 12px; bottom: 9px; min-height: 30px; padding: 0 9px; font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .christmas-theme .login-christmas-crane *, .christmas-theme .login-christmas-snow,
+  .christmas-theme .topbar-holiday-snow, .login-christmas-garland circle,
+  .topbar-holiday-lights circle { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 
 
@@ -1939,6 +2034,7 @@ html, body { width:100%; max-width:100%; min-width:320px; overflow-x:hidden; }
   .login-card { width:min(100%,420px); }
   .login-card h1 { font-size:28px; }
   .login-intro { margin-bottom:22px; }
+  body.christmas-theme .login-panel { min-height:auto; padding-top:24px; padding-bottom:30px; }
 }
 
 @media (max-width: 380px) {

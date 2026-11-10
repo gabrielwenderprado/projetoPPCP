@@ -1,6 +1,6 @@
-const CACHE_NAME = 'dashboard-estoque-v18-calfer-unico';
+const CACHE_NAME = 'dashboard-estoque-v19-tema-natalino';
 const APP_FILES = [
-  './', './index.html', './assets/app.js', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
+  './', './index.html', './assets/app.js?v=20261110-christmas-theme-v21', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
   './data/explosao.json', './data/mapa-produtivo.json', './data/plano-mes.json', './data/programacao-modelos.json', './data/chaparias.json',
   './data/cabines.json', './data/pinos.json', './data/cilindros.json',

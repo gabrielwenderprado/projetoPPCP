@@ -17,6 +17,7 @@ const EN_PV_STORAGE_KEY = 'pcm-en-pv-reviews-v1';
 const EN_PV_PREVIEWS_STORAGE_KEY = 'pcm-en-pv-previews-v1';
 let pdfJsPromise = null;
 const THEME_STORAGE_KEY = 'pcm-dashboard-theme';
+const CHRISTMAS_THEME_STORAGE_KEY = 'pcm-christmas-theme-v1';
 
 // Aplica o tema escolhido e alterna automaticamente a imagem do cabeçalho via CSS.
 function applyTheme(theme) {
@@ -37,6 +38,31 @@ function loadThemePreference() {
   let saved = 'light';
   try { saved = localStorage.getItem(THEME_STORAGE_KEY) || 'light'; } catch (error) { /* mantém tema claro */ }
   applyTheme(saved === 'dark' ? 'dark' : 'light');
+}
+
+// Tema natalino temporário: vem ligado por padrão e pode ser alternado no login ou no dashboard.
+function applyChristmasTheme(enabled) {
+  const active = Boolean(enabled);
+  document.body.classList.toggle('christmas-theme', active);
+  document.querySelectorAll('.christmas-toggle').forEach(button => {
+    const label = button.querySelector('.christmas-toggle-label');
+    if (label) label.textContent = active ? 'Natal ativado' : 'Natal desativado';
+    button.setAttribute('aria-label', active ? 'Desativar tema natalino' : 'Ativar tema natalino');
+    button.title = active ? 'Desativar tema natalino' : 'Ativar tema natalino';
+    button.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+}
+
+function loadChristmasThemePreference() {
+  let saved = 'on';
+  try { saved = localStorage.getItem(CHRISTMAS_THEME_STORAGE_KEY) || 'on'; } catch (error) { /* usa a decoração sazonal como padrão */ }
+  applyChristmasTheme(saved !== 'off');
+}
+
+function toggleChristmasTheme() {
+  const enabled = !document.body.classList.contains('christmas-theme');
+  try { localStorage.setItem(CHRISTMAS_THEME_STORAGE_KEY, enabled ? 'on' : 'off'); } catch (error) { /* mantém apenas durante a sessão */ }
+  applyChristmasTheme(enabled);
 }
 // Guarda os filtros selecionados pelo usuário para manter a navegação consistente.
 let productionMapQuery = '';
@@ -2919,8 +2945,11 @@ $('#theme-toggle').onclick = () => {
   try { localStorage.setItem(THEME_STORAGE_KEY, nextTheme); } catch (error) { /* mantém a sessão atual */ }
   applyTheme(nextTheme);
 };
+$('#login-christmas-toggle').onclick = toggleChristmasTheme;
+$('#dashboard-christmas-toggle').onclick = toggleChristmasTheme;
 $('#logout-button').onclick = () => showLogin('Sessão terminada.');
 loadThemePreference();
+loadChristmasThemePreference();
 PRODUCTION_DISMISSED_ITEMS = loadProductionDismissedItems();
 loadPurchaseProcess();
 loadCalferTransactions();

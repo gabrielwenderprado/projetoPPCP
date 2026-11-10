@@ -60,7 +60,7 @@ Ao clicar em um código de material, o dashboard mostra estoque, segurança, con
 | `assets/styles.css` | Cores, layout, responsividade e estilos dos componentes |
 | `assets/app.js` | Login, filtros, cálculos, tabelas, detalhes e navegação |
 | `assets/exceljs.min.js` | Biblioteca local para exportação Excel `.xlsx` com estilos, sem dependência externa |
-| `assets/login-pcp.png` | Imagem usada na tela de login |
+| `assets/login-pcp.png` | Imagem original usada no login quando o tema natalino está desativado |
 | `NEXT - Logo_edited.avif` | Logo exibido na barra lateral |
 | `data/explosao.json` | Dados convertidos da planilha Excel |
 | `data/consumiveis.json` | Dados convertidos da planilha de Consumíveis |
@@ -101,3 +101,7 @@ A leitura usa PDF.js carregado pelo navegador. O arquivo `scripts/testes_en_pv.j
 ```bash
 node scripts/testes_en_pv.js
 ```
+
+## Tema natalino sazonal
+
+O tema natalino fica ligado por padrão nesta versão. Na tela de login, a ilustração mostra um caminhão Next com o braço do guindaste levantando e o cesto oscilando, além de neve, luzes e gorro natalino. O mesmo tema acrescenta neve e luzes ao cabeçalho do dashboard. Use o botão **Natal ativado/desativado** na tela de login ou no cabeçalho para alternar a decoração; a preferência fica guardada neste navegador e a imagem original de login continua disponível quando o tema for desligado. A animação respeita a preferência de movimento reduzido do dispositivo.

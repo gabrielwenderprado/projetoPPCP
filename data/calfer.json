@@ -1,6 +1,6 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
-  "generatedAt": "2026-11-09",
+  "generatedAt": "2026-11-10",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -115,7 +115,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 15106,
+          "nextStock": 4194,
           "quantityPerMachine": 13,
           "calferStock": 223,
           "row": 18
@@ -233,7 +233,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRA 1/2\" MÉDIA M10 X 21 X 28 DIN 125 A",
-          "nextStock": 15106,
+          "nextStock": 4194,
           "quantityPerMachine": 5,
           "calferStock": 0,
           "row": 34
@@ -249,7 +249,7 @@
         {
           "code": "01.02.02.0000000006",
           "description": "ARRA ALLEN MÉDIA M30 X 56 X 48 DIN 125 A",
-          "nextStock": 1682,
+          "nextStock": 1269,
           "quantityPerMachine": 1,
           "calferStock": 0,
           "row": 36
@@ -391,7 +391,7 @@
         {
           "code": "01.02.02.0000000006",
           "description": "ARRUELA LISA MEDIA M30 X 56 X 4,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 1682,
+          "nextStock": 1269,
           "quantityPerMachine": 1,
           "calferStock": -2,
           "row": 55
@@ -399,7 +399,7 @@
         {
           "code": "01.02.02.0000000010",
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 15106,
+          "nextStock": 4194,
           "quantityPerMachine": 5,
           "calferStock": -10,
           "row": 56
@@ -638,7 +638,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 15106,
+      "nextStock": 4194,
       "calferStock": -10
     },
     {
@@ -770,7 +770,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 1682,
+      "nextStock": 1269,
       "calferStock": -2
     },
     {

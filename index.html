@@ -22,6 +22,36 @@
   <section class="login-screen" id="login-screen">
     <!-- Área visual da tela de acesso. -->
     <div class="login-visual" aria-label="Planejamento e Controle da Produção">
+      <div class="login-christmas-sky" aria-hidden="true"></div>
+      <div class="login-christmas-snow" aria-hidden="true"></div>
+      <div class="login-christmas-garland" aria-hidden="true">
+        <svg viewBox="0 0 1200 78" preserveAspectRatio="none">
+          <path d="M-10 2 C220 67 390 68 600 15 S970 -16 1210 38" fill="none" stroke="#101b24" stroke-width="3"/>
+          <circle cx="50" cy="18" r="6" fill="#ff776b"/><circle cx="135" cy="39" r="6" fill="#ffe49a"/><circle cx="220" cy="53" r="6" fill="#8ce0b0"/><circle cx="305" cy="61" r="6" fill="#ff776b"/><circle cx="395" cy="57" r="6" fill="#ffe49a"/><circle cx="485" cy="39" r="6" fill="#8ce0b0"/><circle cx="580" cy="19" r="6" fill="#ff776b"/><circle cx="680" cy="-1" r="6" fill="#ffe49a"/><circle cx="785" cy="-8" r="6" fill="#8ce0b0"/><circle cx="890" cy="-7" r="6" fill="#ff776b"/><circle cx="995" cy="4" r="6" fill="#ffe49a"/><circle cx="1100" cy="21" r="6" fill="#8ce0b0"/>
+        </svg>
+      </div>
+      <div class="login-christmas-copy">
+        <span class="login-holiday-brand">NEXT <small>IMPLEMENTOS</small></span>
+        <span class="login-holiday-eyebrow">PCP · NEXT IMPLEMENTOS</span>
+        <strong>Boas<br><em>Festas!</em></strong>
+        <span class="login-holiday-caption">Planejamento que move sonhos.</span>
+      </div>
+      <div class="login-holiday-tree login-holiday-tree-a" aria-hidden="true">✦</div>
+      <div class="login-holiday-tree login-holiday-tree-b" aria-hidden="true">✦</div>
+      <div class="login-christmas-crane" aria-label="Guindaste com cesto elevatório em movimento">
+        <svg viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="O braço do guindaste sobe e o cesto balança suavemente">
+          <defs><linearGradient id="login-arm-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".27"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient></defs>
+          <g><rect x="30" y="255" width="220" height="55" rx="6" fill="#e9eef2"/><rect x="30" y="255" width="220" height="14" rx="4" fill="#d92724"/><rect x="235" y="215" width="55" height="95" rx="6" fill="#f2f5f7"/><rect x="235" y="215" width="55" height="14" rx="4" fill="#10151b"/><circle cx="70" cy="312" r="16" fill="#15191d"/><circle cx="70" cy="312" r="6" fill="#68727a"/><circle cx="215" cy="312" r="16" fill="#15191d"/><circle cx="215" cy="312" r="6" fill="#68727a"/><path d="M240 220h35l7 30h-42z" fill="#a9c9d8"/><text x="140" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-style="italic" font-size="19" fill="#10151b">NEXT</text><polygon points="86,279 100,279 91,289" fill="#d92724"/></g>
+          <g><rect x="38" y="308" width="6" height="34" fill="#555"/><polygon points="30,342 52,342 41,356" fill="#f5821f"/><rect x="150" y="308" width="6" height="34" fill="#555"/><polygon points="142,342 164,342 153,356" fill="#f5821f"/></g>
+          <rect x="72" y="238" width="40" height="20" rx="3" fill="#161616"/><circle cx="92" cy="250" r="9" fill="#3a3a3a" stroke="#111" stroke-width="2"/>
+          <g class="login-crane-lower"><rect x="86" y="118" width="14" height="140" rx="6" fill="#f5821f" stroke="#b85c0f" stroke-width="1.5"/><rect x="86" y="118" width="14" height="140" rx="6" fill="url(#login-arm-shine)"/>
+            <g class="login-crane-upper" style="transform-origin:92px 128px"><rect x="86" y="6" width="12" height="128" rx="5" fill="#f2f2f2" stroke="#aeb7bd" stroke-width="1.5"/><path d="M89 48q8 7 6 14t-6 14t6 14t-6 14t6 14" fill="none" stroke="#1d704d" stroke-width="2"/><circle cx="93" cy="55" r="2.3" fill="#f6cc72"/><circle cx="91" cy="69" r="2.3" fill="#d92724"/><circle cx="94" cy="83" r="2.3" fill="#f6cc72"/><circle cx="91" cy="97" r="2.3" fill="#d92724"/><circle cx="94" cy="111" r="2.3" fill="#f6cc72"/>
+              <g class="login-crane-bucket" style="transform-origin:92px 8px"><path d="M76 -25 92 -41l16 16-5 2H81z" fill="#c92d2b" stroke="#8e2020" stroke-width="1.4"/><path d="M76 -25h32" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="92" cy="-41" r="4.5" fill="#fff"/><rect x="66" y="-24" width="52" height="40" rx="6" fill="#eceff1" stroke="#9aa0a5" stroke-width="2"/><rect x="66" y="-24" width="52" height="10" rx="4" fill="#161616"/><rect x="80" y="-8" width="24" height="4" fill="#b8bcbf"/><circle cx="73" cy="-1" r="2" fill="#d92724"/><circle cx="111" cy="-1" r="2" fill="#3f9a6a"/></g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <button class="christmas-toggle login-christmas-toggle" id="login-christmas-toggle" type="button" aria-label="Desativar tema natalino"><span aria-hidden="true">❄</span><span class="christmas-toggle-label">Natal ativado</span></button>
       <!-- Camada usada para melhorar o contraste da imagem. -->
       <div class="login-visual-overlay"></div>
       <!-- Marca exibida sobre a imagem de referência. -->
@@ -104,6 +134,8 @@
           <img class="topbar-banner-image topbar-banner-day" src="assets/header-pcp-dia.png" alt="" />
           <img class="topbar-banner-image topbar-banner-night" src="assets/header-pcp-noite.png" alt="" />
           <div class="topbar-banner-shade"></div>
+          <div class="topbar-holiday-snow" aria-hidden="true"></div>
+          <div class="topbar-holiday-lights" aria-hidden="true"><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M-10 2 C220 58 390 60 600 15 S970 -12 1210 34"/><circle cx="50" cy="18" r="5"/><circle cx="150" cy="39" r="5"/><circle cx="250" cy="54" r="5"/><circle cx="350" cy="57" r="5"/><circle cx="450" cy="48" r="5"/><circle cx="550" cy="27" r="5"/><circle cx="650" cy="6" r="5"/><circle cx="750" cy="-4" r="5"/><circle cx="850" cy="-5" r="5"/><circle cx="950" cy="2" r="5"/><circle cx="1050" cy="17" r="5"/><circle cx="1150" cy="33" r="5"/></svg></div>
         </div>
         <div class="topbar-content">
           <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button>
@@ -114,6 +146,7 @@
           <div class="top-actions">
             <span class="user-badge" id="current-user-label"></span>
             <span class="updated" id="updated-at">Atualizando...</span>
+            <button class="christmas-toggle dashboard-christmas-toggle" id="dashboard-christmas-toggle" type="button" aria-label="Desativar tema natalino"><span aria-hidden="true">❄</span><span class="christmas-toggle-label">Natal ativado</span></button>
             <button class="theme-toggle" id="theme-toggle" type="button" title="Alternar tema" aria-label="Alternar tema"><span class="theme-toggle-icon">☾</span><span class="theme-toggle-label">Escuro</span></button>
             <button class="icon-button" id="refresh-data" title="Recarregar dados" aria-label="Recarregar dados">↻</button>
             <button class="logout-button" id="logout-button" type="button">Sair</button>
@@ -127,6 +160,6 @@
 
   <!-- Carrega a lógica de autenticação, dados, filtros e telas. -->
   <script src="assets/exceljs.min.js?v=4.4.0"></script>
-  <script src="assets/app.js?v=20261109-release-critical-export-v20"></script>
+  <script src="assets/app.js?v=20261110-christmas-theme-v21"></script>
 </body>
 </html>
