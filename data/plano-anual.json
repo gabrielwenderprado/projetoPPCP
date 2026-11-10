@@ -1,5 +1,5 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
   "sourceSheet": "planoAnual",
   "generatedAt": "2026-11-10",
   "columns": {
@@ -43,19 +43,11 @@
       "11/2026": 20,
       "12/2026": 23
     },
-    "guin-25T": {
-      "12/2026": 18
-    },
+    "guin-25T": {},
     "guin-45": {},
-    "21T": {
-      "11/2026": 9
-    },
-    "30-T": {
-      "12/2026": 1
-    },
-    "7T": {
-      "12/2026": 7
-    }
+    "21T": {},
+    "30-T": {},
+    "7T": {}
   },
   "products": {
     "SKYCITY 13 LDI": 66,
@@ -63,17 +55,13 @@
     "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M": 43,
     "SKYCITY 10 S - TORRE ALTA": 1,
     "SKYCITY 10 L": 39,
-    "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M": 9,
     "SKYCITY 10 HDOC": 18,
     "SKYCITY 13 LDDI - ISOLAÇÃO 69kV": 2,
     "SKYCITY 13,5 AT": 28,
     "SKYCITY 13 AT COM LAVADOR": 2,
     "SKYCITY 13 LDI - ISOLAÇÃO 69kV": 2,
     "SKYCITY 15 LDDI": 4,
-    "GUINDASTE NEXT NX 30.5T 5H 2M": 1,
     "SKYCITY 13 LDI COM LAVADOR": 1,
-    "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M": 7,
-    "GUINDASTE NEXT NX 25.5T 4H 3M": 18,
     "SKYCITY 18 LDDI - ISOLAÇÃO 69kV": 4
   },
   "unmatchedCraneProducts": [
@@ -100,6 +88,18 @@
     {
       "produto": "GUINDASTE NEXT NX 65.5T 6H 3M",
       "quantidade": 1
+    },
+    {
+      "produto": "guindaste 21",
+      "quantidade": 9
+    },
+    {
+      "produto": "guindaste 30T",
+      "quantidade": 1
+    },
+    {
+      "produto": "guindaste 7,5",
+      "quantidade": 7
     }
   ],
   "rows": [
@@ -381,15 +381,6 @@
       "estrutura": "10L",
       "mes": "11/2026",
       "data": "2026-11-13"
-    },
-    {
-      "pedido": "EN013560",
-      "cliente": "CERIM (Cooperativa de Eletrificação e Desenvolvimento da Região de Itu e Mairinque",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-12"
     },
     {
       "pedido": "EN013281",
@@ -1013,33 +1004,6 @@
       "data": "2026-11-30"
     },
     {
-      "pedido": "EN013783",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013784",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013785",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
       "pedido": "EN011486",
       "cliente": "ENEL RJ",
       "produto": "SKYCITY 13 LDI",
@@ -1063,51 +1027,6 @@
       "produto": "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M",
       "modelo": "guin-16T",
       "estrutura": "guin-16T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013778",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013779",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013780",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013781",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
-      "mes": "11/2026",
-      "data": "2026-11-30"
-    },
-    {
-      "pedido": "EN013782",
-      "cliente": "ESTOQUE - NEXT",
-      "produto": "GUINDASTE NEXT NX 21.5T TRAVE 4H 3M",
-      "modelo": "21T",
-      "estrutura": "21T",
       "mes": "11/2026",
       "data": "2026-11-30"
     },
@@ -1414,15 +1333,6 @@
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-04"
-    },
-    {
-      "pedido": "EN013640",
-      "cliente": "INDUSTRIA E COMERCIO SANTO ANTONIO LTDA",
-      "produto": "GUINDASTE NEXT NX 30.5T 5H 2M",
-      "modelo": "30-T",
-      "estrutura": "30-T",
       "mes": "12/2026",
       "data": "2026-12-04"
     },
@@ -1994,69 +1904,6 @@
       "data": "2026-12-21"
     },
     {
-      "pedido": "EN013038",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013036",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013046",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013042",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013044",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013048",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013040",
-      "cliente": "CORPUS SANEAMENTO E OBRAS LTDA",
-      "produto": "GUINDASTE NEXT NX 7.5T TRAVE 2H 2M",
-      "modelo": "7T",
-      "estrutura": "7T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
       "pedido": "EN012011",
       "cliente": "NEXT IMPLEMENTOS (JAC)",
       "produto": "SKYCITY 13 LDI",
@@ -2368,168 +2215,6 @@
       "produto": "SKYCITY 13 LDI",
       "modelo": "13LDI",
       "estrutura": "13ldi-46kv",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013473",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013475",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013477",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013479",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013481",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013483",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013485",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013487",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013489",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013491",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013493",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013495",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013497",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013499",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013501",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013503",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013505",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
-      "mes": "12/2026",
-      "data": "2026-12-30"
-    },
-    {
-      "pedido": "EN013507",
-      "cliente": "ENEL SP",
-      "produto": "GUINDASTE NEXT NX 25.5T 4H 3M",
-      "modelo": "guin-25T",
-      "estrutura": "guin-25T",
       "mes": "12/2026",
       "data": "2026-12-30"
     },

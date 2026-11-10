@@ -1,5 +1,5 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
   "generatedAt": "2026-11-10",
   "items": [
     {
@@ -166839,16 +166839,16 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
+        "DEM 10/2026": 180,
+        "DEM 11/2026": 200,
+        "DEM 12/2026": 20,
         "DEM 01/2026": 0,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
+        "DEM 10/2026": -180,
+        "DEM 11/2026": -200,
         "DEM 12/2026": 108,
         "DEM 01/2026": 0
       },
@@ -236965,6 +236965,14 @@
         "stock": 0,
         "demand": 0,
         "_shifted_quantity": "8"
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEIRA ZINCADO BRANCO ASME B18.2.1",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0,
+        "_shifted_quantity": "20"
       }
     ],
     "13-69kv": [
@@ -238393,6 +238401,13 @@
         "code": "01.13.01.0000000010",
         "description": "CINTA 25MM OP 60 X 0,22MT (CINTA LIMITADORA DA PORTA 25X220 DOBRA DE 60MM)",
         "quantity": 8,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEI",
+        "quantity": 20,
         "stock": 0,
         "demand": 0
       }
@@ -239993,6 +240008,13 @@
         "quantity": 8,
         "stock": 0,
         "demand": 300
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEI",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "15LDDI": [
@@ -241556,6 +241578,13 @@
         "quantity": 8,
         "stock": 0,
         "demand": 300
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEI",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "18lddi": [
@@ -243069,14 +243098,14 @@
         "description": "BORRACHA DE APOIO DO BOJO \"MANGUEIRA INDL LONADA 4 X 400 MM\"",
         "quantity": 1,
         "stock": 0,
-        "demand": 0
+        "demand": 200
       },
       {
         "code": "02.02.03.0000000054",
         "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 18 LDDI",
         "quantity": 1,
         "stock": 9,
-        "demand": 0
+        "demand": 2
       },
       {
         "code": "02.02.05.0000000091",
@@ -243090,7 +243119,7 @@
         "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 18.5 - 4 ESTABILIZADORES",
         "quantity": 1,
         "stock": 11,
-        "demand": 0
+        "demand": 2
       },
       {
         "code": "01.01.05.0000000009",
@@ -243117,7 +243146,7 @@
         "code": "01.02.08.0000000001",
         "description": "CHAPA PARA GRAMPO 5/8\" X 92MM (145 X 38.10 X 12.70)",
         "quantity": 10,
-        "stock": 0,
+        "stock": 2700,
         "demand": 0
       },
       {
@@ -243126,6 +243155,13 @@
         "quantity": 8,
         "stock": 0,
         "demand": 300
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEI",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "guin-16T": [
@@ -266201,6 +266237,13 @@
         "quantity": 8,
         "stock": 0,
         "demand": 0
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEI",
+        "quantity": 20,
+        "stock": 0,
+        "demand": 0
       }
     ],
     "10HDOC": [
@@ -267468,6 +267511,13 @@
         "code": "01.13.01.0000000010",
         "description": "CINTA 25MM OP 60 X 0,22MT (CINTA LIMITADORA DA PORTA 25X220 DOBRA DE 60MM)",
         "quantity": 8,
+        "stock": 0,
+        "demand": 0
+      },
+      {
+        "code": "01.02.01.0000000339",
+        "description": "PARAFUSO SEXTAVADO 3/8 X 1.1/2\" UNC-16 GR.5 ROSCA INTEI",
+        "quantity": 20,
         "stock": 0,
         "demand": 0
       }

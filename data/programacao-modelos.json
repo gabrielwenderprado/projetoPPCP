@@ -1,5 +1,5 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-04.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
   "sourceSheet": "Programacao",
   "generatedAt": "2026-11-10",
   "columns": "AA:AF",
@@ -1982,7 +1982,7 @@
     {
       "name": "10L",
       "column": 28,
-      "total": 2318.702,
+      "total": 2358.702,
       "days": [
         {
           "row": 10,
@@ -2639,6 +2639,10 @@
         {
           "row": 4096,
           "quantity": 6
+        },
+        {
+          "row": 4135,
+          "quantity": 20
         },
         {
           "row": 4350,
@@ -4135,6 +4139,10 @@
         {
           "row": 6462,
           "quantity": 8
+        },
+        {
+          "row": 6463,
+          "quantity": 20
         }
       ]
     },
