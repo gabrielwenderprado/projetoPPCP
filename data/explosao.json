@@ -242932,20 +242932,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.02.0000086053",
-        "description": "CJ PARAFUSADO BASE 25.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000085123",
-        "description": "CALÇO DO BERÇO DA LANÇA - NYLON",
-        "quantity": 4,
-        "stock": 167,
-        "demand": 0
-      },
-      {
         "code": "01.02.01.0000000278",
         "description": "PARAFUSO ALLEN SEM CABEÇA SEXTAVADO INTERNO M12 X 1,75 X 35MM CLASSE 8.8 ROSCA INTEIRA GEOMET DIN 913/916",
         "quantity": 12,
@@ -242957,13 +242943,6 @@
         "description": "CILINDRO HIDRAULICO DA CAMISA GIRO 25-05-101 (MS03815)",
         "quantity": 4,
         "stock": 58,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085577",
-        "description": "CJ CILINDRO DA CAMISA GIRO MS03815",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -243058,34 +243037,6 @@
         "demand": 0
       },
       {
-        "code": "02.03.02.0000085142",
-        "description": "BUCHA CREMALHEIRA - 25-017-004",
-        "quantity": 4,
-        "stock": 197,
-        "demand": 0
-      },
-      {
-        "code": "02.03.05.0000000014",
-        "description": "CREMALHEIRA EM AÇO TREFILADO -  Ø76,2 × 835 MM - NX21.505T",
-        "quantity": 2,
-        "stock": 87,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085140",
-        "description": "BUCHA INFERIOR - 25-017-003",
-        "quantity": 1,
-        "stock": 56,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085139",
-        "description": "BUCHA SUPERIOR GIRO - 25-017-002",
-        "quantity": 1,
-        "stock": 86,
-        "demand": 0
-      },
-      {
         "code": "02.03.04.0000085002",
         "description": "ANEL DE TECAST SUPERIOR - 25-17-001",
         "quantity": 1,
@@ -243118,27 +243069,6 @@
         "description": "PORCA SEXTAVADA COMUM M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 934",
         "quantity": 1,
         "stock": 8395,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000088687",
-        "description": "SUPORTE DE APOIO E TRAVAMENTO DE MANGUEIRAS COM 400 MM - 21/25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090902",
-        "description": "SUPORTE DE FIXAÇAO APOIO DE MANGUEIRAS GUINDASTE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086835",
-        "description": "SUPORTE DE APOIO DE TRAVAMENTO DE MANGUEIRAS",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -243184,13 +243114,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.02.0000086054",
-        "description": "CJ PARAFUSADO DA TORRE 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.01.01.0000090617",
         "description": "ARRUELA INFERIOR EIXO 162 X 198 X 3,00 MM - 25-01-055",
         "quantity": 1,
@@ -243212,31 +243135,10 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000088292",
-        "description": "CAPA DE PROTEÇÃO SOLDADA DO GUINDASTE 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000095122",
-        "description": "CAPA DE PROTEÇÃO DO 25T",
-        "quantity": 1,
-        "stock": 10,
-        "demand": 0
-      },
-      {
         "code": "02.01.01.0000091962",
         "description": "TUBO DE APOIO - 00.06.0000000001",
         "quantity": 1,
         "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.03.0000000069",
-        "description": "BARRA REDONDA LAMINADA 3/8\"(9,52MM) X 6000MM - ASTM A36",
-        "quantity": 0.0897,
-        "stock": 588.702,
         "demand": 0
       },
       {
@@ -243251,13 +243153,6 @@
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
         "quantity": 2,
         "stock": 388,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000088624",
-        "description": "CJ SOLDADO DO PINO DA COLUNA DO 25T",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -243286,34 +243181,6 @@
         "description": "CILINDRO HIDRAULICO ( ELEVAÇÃO 25.505 TRAVE )",
         "quantity": 1,
         "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086055",
-        "description": "CJ. PARAFUSADO BA - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091060",
-        "description": "TUBO SUPERIOR BRAÇO ANTERIOR - (21-015-023) 16,00 X 12,00 X 1465 MM",
-        "quantity": 4,
-        "stock": 80,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000088110",
-        "description": "CJ PINO BRAÇO ANTERIOR - 25T",
-        "quantity": 4,
-        "stock": 40,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000088111",
-        "description": "CJ SOLDADO DO PINO DO CILINDRO DE INCLINAÇÃO",
-        "quantity": 1,
-        "stock": 10,
         "demand": 0
       },
       {
@@ -243373,27 +243240,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.02.0000086038",
-        "description": "CJ. PARAFUSADO LANÇA 3 - 25.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000085304",
-        "description": "PLACA ANTI-CONTACTO GUIN.30.505T LANÇA 3",
-        "quantity": 2,
-        "stock": 22,
-        "demand": 0
-      },
-      {
-        "code": "02.01.03.0000085303",
-        "description": "TCAST DA LANÇA 3",
-        "quantity": 2,
-        "stock": 4,
-        "demand": 0
-      },
-      {
         "code": "01.02.01.0000000271",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 16MM CLASSE 8.8  DIN 912",
         "quantity": 4,
@@ -243405,34 +243251,6 @@
         "description": "ARRUELA MOEDA 23,5 MM X 2,00 MM",
         "quantity": 4,
         "stock": 5000,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086044",
-        "description": "CJ. PARAFUSADO LANÇA 5 - 25.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085655",
-        "description": "CJ. PINO LANÇA MANUAL 3 45T - P.L1.45T.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087024",
-        "description": "CJ. SOLDADO PINO LANÇA MANUAL 3 45T - P.L1.45T.003",
-        "quantity": 1,
-        "stock": 46,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086050",
-        "description": "CJ. PARAFUSADO LANÇA 2 - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -243779,31 +243597,10 @@
         "demand": 0
       },
       {
-        "code": "02.01.01.0000090359",
-        "description": "PERFIL \"L\" 80 X 43,75 X 38,75 X 4,75 - CAE-25-01-004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.01.04.0000000053",
         "description": "SUPORTE ALAVANCAS 5 VIAS (DR5XA2055017)",
         "quantity": 1,
         "stock": 43,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094489",
-        "description": "SUPORTE BOMBA MANUAL COM ENGATE FERRAMENTA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091134",
-        "description": "SUPORTE DE FIXAÇAO CENTRAL ELETRONICA",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -243849,45 +243646,10 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000087884",
-        "description": "CJ SOLDADO DO SUPORTE DA TRAVESSA DIREITA  ELECTRÓNICO - CAE 25-00-008",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094521",
-        "description": "SUP. DA TRAVESSA DO COMANDO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.15.02.0000000045",
         "description": "MANOMETRO HORIZONTAL DIAMETRO EXTERNO 63 MM COM FLANGE - 300 KGF/CM² X 4400 PSI LOGO NEXT",
         "quantity": 1,
         "stock": 128,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093637",
-        "description": "SUPORTE ENGATE RAPIDO GUINDASTE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000088170",
-        "description": "CJ PROTETOR DE ALAV. SAPATAS SISTEMA ELETRONICO - 00.03.02.02.0000000003 5+2 SUP.",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000095243",
-        "description": "BARRA DO ARCO PROTEÇÃO COMANDO PRINCIPAL - 00.02.01.01.0000000008",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -243901,13 +243663,6 @@
         "code": "02.02.01.0000087872",
         "description": "CJ PROTETOR DE ALAV. SAPATAS SISTEMA ELETRONICO - 00.03.02.02.0000000003 6+1 SUP.",
         "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094475",
-        "description": "BARRA DO ARCO PROTEÇÃO COMANDO PRINCIPAL - 00.02.01.01.0000000008",
-        "quantity": 2,
         "stock": 0,
         "demand": 0
       },
@@ -243947,1091 +243702,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.01.0000087889",
-        "description": "CJ SOLDADO NOVA BASE 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086834",
-        "description": "CJ SOLDADO DAS SAPATAS DA BASE - 21-01-051",
-        "quantity": 1,
-        "stock": 8,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090661",
-        "description": "VIGA BASE B - 21-01-004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090658",
-        "description": "VIGA BASE A - 21-01-005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090691",
-        "description": "BASE - 21-01-0001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090909",
-        "description": "HASTE - 00.02.01.01.0000000002",
-        "quantity": 6,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086840",
-        "description": "CJ SOLDADO CAIXA GUINDASTE ESQUERDA 21,5",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090679",
-        "description": "REFORÇO - 21-01-029",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090759",
-        "description": "APOIO BSE - 30-01-009",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086841",
-        "description": "CJ SOLDADO CAIXA GUINDASTE DIREITA 21,5",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.16.0000000099",
-        "description": "MANCAL FUNDIDO NX 21/23/25",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090686",
-        "description": "FECHAMENTO BASE - 21-01-012",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090688",
-        "description": "FECHAMENTO BASE - 21-01-018",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090682",
-        "description": "REFORÇO MÃO FRANCESA - 21-01-016",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090942",
-        "description": "REFORÇO MÃO FRANCESA - 21-01-034",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090681",
-        "description": "REFORÇO MÃO FRANCESA - 21-01-025",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090870",
-        "description": "REFORÇO - 21-01-063",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090685",
-        "description": "REFORÇO MÃO FRANCESA - 21-01-015",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090684",
-        "description": "REFORÇO MÃO FRANCESA - 21-01-014",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090678",
-        "description": "FECHAMENTO INFERIOR BASE - 21-01-013",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090752",
-        "description": "REFORÇO - 21-01-0003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090873",
-        "description": "REFORÇO - 21-01-060",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090721",
-        "description": "FECHAMENTO INFERIOR BASE - 21-01-0002",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086845",
-        "description": "CJ SOLDADO CAIXA GUINDASTE FRONTAL 21,5",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085126",
-        "description": "BUJAO ROSCA ARA GRAXEIRA - 01.12.03.00000014",
-        "quantity": 1,
-        "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090672",
-        "description": "SUPORTE E REFORÇO - 21-01-009",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090872",
-        "description": "REFORÇO - 21-01-061",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094531",
-        "description": "TRAVA BP - 45.23.01.043",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094536",
-        "description": "REFORÇO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085153",
-        "description": "BUCHA - 02.01.01.0000097272",
-        "quantity": 2,
-        "stock": 100,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090922",
-        "description": "SUPORTE COMANDO - 02.01.01.0000097273",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090871",
-        "description": "REFORÇO - 21-01-062",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085154",
-        "description": "BUCHA - 01.12.01.00000009",
-        "quantity": 4,
-        "stock": 347,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090670",
-        "description": "REFORÇO BASE - 21-01-036",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087995",
-        "description": "CJ SOLDADO DA TORRE DO 30.505T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093099",
-        "description": "VIGA DIR. COLUNA - 30-02-010",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085078",
-        "description": "MINI MANCAL FRESADO COLUNA - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085079",
-        "description": "MINI MANCAL COLUNA - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085089",
-        "description": "MANCAL COLUNA SUPERIOR - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093112",
-        "description": "FECHAMENTO EIXO - 30-02-003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093208",
-        "description": "VIGA DIR. COLUNA - 30-02-010",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087996",
-        "description": "BRAÇO ANTERIOR 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092805",
-        "description": "VIGA DIR. BA - 30-03-002",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092815",
-        "description": "REFORÇO INTERNO INFERIOR BA - 30-03-013",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.02.11.0000000062",
-        "description": "ABRAÇADEIRA SERIE DUPLA PARA TUBO 16MM - DIN 3015",
-        "quantity": 4,
-        "stock": 1004,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085080",
-        "description": "MINI MANCAL BA 1 - 25.5 T",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085081",
-        "description": "MINI MANCAL BA INF. - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085082",
-        "description": "MINI MANCAL BA LANÇA - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085083",
-        "description": "MINI MANCAL FRESADO BA COLUNA - 25.5 T",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085084",
-        "description": "MINI MANCAL FRESADO BA ELEVAÇÃO - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085085",
-        "description": "MINI MANCAL FRESADO BA COLUNA - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092807",
-        "description": "VIGA ESQ. BA - 30-03-003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092808",
-        "description": "REFORÇO INTERNO BA - 30-03-006",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092809",
-        "description": "FECHAMENTO INTERNO BA - 30-03-005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092810",
-        "description": "REFORÇO SUPERIOR BA - 30-03-004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092811",
-        "description": "REFORÇO DIREITO BA - 30-03-007-NX",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092812",
-        "description": "REFORÇO ESQ. BA - 30-03-007-NX",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092813",
-        "description": "REFORÇO INTERNO LATERAL - 30-03-012",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090582",
-        "description": "SUPORTE DE IÇAMENTO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087916",
-        "description": "BRAÇO POSTERIOR DA LANÇA 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093229",
-        "description": "CORPO DA LANÇA POSTERIOR",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090676",
-        "description": "SUPORTE DIÇAMENTO - 15-03-013",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086806",
-        "description": "CJ SOLDADO SUPORTE GUINCHO CABO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090675",
-        "description": "SUPORTE GUINCHO CABO - 45.23.40.024",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.01.0000085067",
-        "description": "PINO APOIO LANCA - 45.23.40.200",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090804",
-        "description": "REFORÇO - 21.23.40.015",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094657",
-        "description": "REFORÇO LATERAL DO BRAÇO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094658",
-        "description": "REFORÇO LATERAL DO BRAÇO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085086",
-        "description": "MANCAL LANÇA POSTERIOR - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085087",
-        "description": "MINI MANCAL FRESADO BP - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085088",
-        "description": "MINI MANCAL BP - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093238",
-        "description": "REFORÇO DA LANÇA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093248",
-        "description": "FLANGE DA LANÇA POSTERIOR",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085098",
-        "description": "PASTILHA 15 X 22 - 01.12.01.00000002",
-        "quantity": 2,
-        "stock": 1054,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085158",
-        "description": "BUCHA INTERNA - 15-00-008",
-        "quantity": 6,
-        "stock": 352,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087990",
-        "description": "CJ. SOLDADO LANÇA 1 - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093291",
-        "description": "CORPO DA LANÇA 1",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093293",
-        "description": "FLANGE DA LANÇA 1",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093306",
-        "description": "REFORÇO LATERAL DO SUPORTE DO CILINDRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093308",
-        "description": "REFORÇO LATERAL DO SUPORTE DO CILINDRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093294",
-        "description": "FECHAMENTO TRASEIRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094765",
-        "description": "SUPORTE DO CILINDRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090599",
-        "description": "CALÇO INFERIOR VIGAS LANÇAS - 45.23.41.007",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087497",
-        "description": "CJ. SOLDADO LANÇA 2 - 30T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093320",
-        "description": "CORPO DA LANÇA 2",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093321",
-        "description": "FLANGE DA LANÇA 2",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093322",
-        "description": "FECHAMENTO TRASEIRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094758",
-        "description": "REFORÇO LATERAL DO SUPORTE DO CILINDRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094759",
-        "description": "REFORÇO LATERAL DO SUPORTE DO CILINDRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094774",
-        "description": "SUPORTE DO CILINDRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087932",
-        "description": "CJ SOLDADO DA LANÇA 3 - 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093954",
-        "description": "CORPO DA LANÇA 3 - 30.43.23.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093957",
-        "description": "FLANGE DA LANÇA 3 - 30.43.23.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094659",
-        "description": "REFORÇO LATERAL DA LANÇA 3 - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094664",
-        "description": "REFORÇO LATERAL DA LANÇA 3 - 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087901",
-        "description": "CJ SOLDADO DA LANÇA 4 - 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.03.0000000094",
-        "description": "BARRA REDONDA LAMINADA 1.3/8\"(34,93MM) X 6000MM - SAE 4340",
-        "quantity": 0.0897,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094579",
-        "description": "FLANGE DA LANÇA 4 - 30.44.23.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094581",
-        "description": "REFORÇO DO SUP. DO CILINDRO DA LANÇA 4 - 30.44.23.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094582",
-        "description": "REFORÇO LATERAL DO SUP. DO CILINDRO - 30.44.23.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093822",
-        "description": "CORPO DA LANÇA 4 - 30.44.23.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087939",
-        "description": "CJ SOLDADO DA LANÇA 5 - 25T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093858",
-        "description": "FECHAMENTO TRASEIRO - 30.45.23.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094673",
-        "description": "FLANGE DA LANÇA 5 - 25.5",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000094697",
-        "description": "CORPO LANÇA 5 - 25.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093871",
-        "description": "RECORTE - 30.45.23.006",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087685",
-        "description": "CJ SOLDADO DA LANÇA 6 - 30.46.23.000",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093866",
-        "description": "CORPO DA LANÇA 6 - 30.46.23.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093867",
-        "description": "FLANGE DO CORPO DA LANÇA 6 - 30.46.23.002",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093868",
-        "description": "FECHAMENTO ANTERIOR DO BRAÇO 6 - 30.46.23.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085198",
-        "description": "REGULADOR LATERAL ROSCADO",
-        "quantity": 2,
-        "stock": 170,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087686",
-        "description": "CJ SOLDADO DA LANÇA 7 - 30.47.23.000",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093879",
-        "description": "FECHAMENTO FRONTAL - 30.47.23.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093882",
-        "description": "FECHAMENTOS - 30.47.23.006",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093876",
-        "description": "VIGA DA LANÇA - 30.47.23.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093877",
-        "description": "VIGA DA LANÇA - 30.47.23.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093881",
-        "description": "FECHAMENTO ANTERIOR DA LANÇA 7 - 30.47.23.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086829",
-        "description": "CJ BRAÇO DE SAPATA (DIR/ESQ)",
-        "quantity": 2,
-        "stock": 8,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090882",
-        "description": "VIGA EXTENSIVO DIREITO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090880",
-        "description": "VIGA EXTENSIVO ESQUERDO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090874",
-        "description": "SUPORTE CILINDRO BRAÇO EXTENSIVO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085033",
-        "description": "MANCAL DA PATOLA 21.505 T - 21505-01USI - 01.12.01.00000011",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090875",
-        "description": "REFORÇO SUPERIOR BRAÇO EXTENSIVO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090866",
-        "description": "REFORÇO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090865",
-        "description": "CALÇO LATERAL AJUSTE BRAÇO EXTENSIVO",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086824",
-        "description": "CJ SOLDADO PINHAO COM FLANGE - NX25.5T | NX30.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.05.0000085024",
-        "description": "PINHÃO DO 25.5 - 30.5 T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085542",
-        "description": "CJ MONTAGEM DO RESERVATORIO DE OLEO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.06.0000000030",
-        "description": "RESERVATORIO DE OLEO DE 170 LITROS",
-        "quantity": 1,
-        "stock": 23,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090755",
-        "description": "BASE TANQUE - 25-016-002",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000412",
-        "description": "ADAPTADOR RETO MACHO  BSP 1.1/4\" -11  ORIENTAVEL P/SOLDA",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.01.0000000408",
-        "description": "UNIAO SOLDA AÇO M20 X 1,50MM - USA 12-S",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.02.03.0000000040",
-        "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 2,
-        "stock": 160,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090845",
-        "description": "QUEBRA ONDA - 30-016-007",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090835",
-        "description": "FECHAMENTO SUPERIOR TANQUE - 30-016-001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090842",
-        "description": "FECHAMENTO LATERAL TANQUE VISOR - 30-016-004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086803",
-        "description": "TUBO SUCÇÃO INTERNO CX. ÓLEO HIDRÁULICO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090789",
-        "description": "TUBO INDUSTRIAL 1.1/2\" x 60 - 15-05-103",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.04.0000000096",
-        "description": "TUBO REDONDO INDUSTRIAL 1.1/2\"(38,10MM) X 3,18 X 6000MM - NBR 6591",
-        "quantity": 0.1288,
-        "stock": 1725.25,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090787",
-        "description": "TUBO INDUSTRIAL 1.1/2\" x 100 - 15-05-103",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085148",
-        "description": "PONTA DE ROSCA 1.1/4\" NPT x 50 mm",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086805",
-        "description": "TORRE BOCAL- 15-05-108",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090797",
-        "description": "FLANGE DO BOCAL - C12-012-009",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090795",
-        "description": "TUBO INDUSTRIAL REDONDO 4\" X 100MM X 2,25MM",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.04.0000000203",
-        "description": "TUBO INDUSTRIAL REDONDO AÇO SAE - ESP. 2,00MM (#14) 101,60MM (4\") X 2,00MM (#14) X 6000MM",
-        "quantity": 0.6337,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090757",
-        "description": "SUPORTE FIXAÇÃO TANQUE - 25-016-005",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.04.0000085003",
-        "description": "FLANGE FILTRO HIDRÁULICO - 25-016-006",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090841",
-        "description": "FECHAMENTO LATERAL - 30-016-003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.08.0000000025",
-        "description": "BOCAL DE ABASTECIMENTO HIDRAULICO GRANDE COM 6 PARAFUSOS DE FIXAÇAO",
-        "quantity": 1,
-        "stock": 196,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085543",
-        "description": "CJ. MONTADO FILTRO DE RETORNO 1 POL 80L",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086810",
-        "description": "FLANGE PARAFUSADA FILTRO DE RETORNO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085150",
-        "description": "PONTA DE ROSCA 1\" NPT X 50MM",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090826",
-        "description": "FLANGE SOLDADA FILTRO RETORNO - 15-03-053",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085544",
-        "description": "\"FILTRO DE RETORNO CABEÇOTE ALUMINIO 1\"\" 80 LTS + MEDIDOR SATURAÇÃO\"",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.08.0000000035",
-        "description": "FILTRO DE RETORNO CABEÇOTE ALUMINIO 1\" 80 LTS - BR8010PH / BRA8EN010P2N",
-        "quantity": 1,
-        "stock": 75,
-        "demand": 0
-      },
-      {
         "code": "01.15.02.0000000109",
         "description": "MANOMETRO DE SATURAÇAO INDICADOR VISUAL - ESCALA 0-4 BAR (60 PSI) 1/8\" NPT",
         "quantity": 1,
@@ -245060,31 +243730,10 @@
         "demand": 0
       },
       {
-        "code": "02.02.02.0000085691",
-        "description": "CJ. SUPORTE MANGUEIRAS GUINDASTE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091904",
-        "description": "SUPORTE MANGUEIRAS GUINDASTE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.02.01.0000000218",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 20MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
         "quantity": 2,
         "stock": 5136,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085570",
-        "description": "CJ CILINDRO DA PATOLA MS03816",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -245134,13 +243783,6 @@
         "description": "CILINDRO HIDRAULICO EXTENSAO DE SAPATA 25-20-00 (MS03820)",
         "quantity": 2,
         "stock": 20,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000086177",
-        "description": "CJ PARAF. DE FIXAÇÃO DO GUINDASTE 30/25",
-        "quantity": 4,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -245256,13 +243898,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000238",
-        "description": "KIT KANBAN - GUINDASTE NX25.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.02.11.0000000037",
         "description": "ABRAÇADEIRA NYLON K55L 390MM X 7,6MM - PRETO",
         "quantity": 20,
@@ -245375,13 +244010,6 @@
         "demand": 0
       },
       {
-        "code": "01.04.03.0000000066",
-        "description": "BARRA REDONDA LAMINADA 1.1/4\"(31,75MM) X 6000MM - SAE 1020",
-        "quantity": 0.2381,
-        "stock": 2013.71,
-        "demand": 0
-      },
-      {
         "code": "01.02.03.0000000103",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 1\"(25,40MM) UNF-12 FIOS (14 UNS) IFI 100 ZINCADO BRANCO DIN 982",
         "quantity": 2,
@@ -245461,13 +244089,6 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000157",
-        "description": "KIT DE COMPRADOS - GUINDASTE NX45.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "01.02.11.0000000051",
         "description": "ABRAÇADEIRA MANGOTE 43 A 51MM FITA 20MM AÇO CARBONO",
         "quantity": 2,
@@ -245505,126 +244126,126 @@
       {
         "code": "01.02.01.0000000266",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 65MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 1600,
         "demand": 0
       },
       {
         "code": "01.02.07.0000000005",
         "description": "PINO QUEBRA DEDO 1/4\" X 2\" COM CABO DE AÇO",
-        "quantity": 3,
+        "quantity": 2,
         "stock": 609,
         "demand": 0
       },
       {
         "code": "01.09.04.0000000022",
         "description": "PLACA DE ALUMINIO GRAVADO 120 X 80MM - PLACA NUMERO DE SERIE GUINDASTE",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 103,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000099",
         "description": "PORCA SEXTAVADA (PA) M20 X 1,5MM - PA-12-S",
-        "quantity": 6,
+        "quantity": 2,
         "stock": 4045,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000040",
         "description": "ARRUELA DE PRESSAO M12 X 21,10 X 2,35MM ZINCADO BRANCO DIN 127",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 4700,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000101",
         "description": "PORCA SEXTAVADA (PA) M24 X 1,5MM - PA-16-S",
-        "quantity": 2,
+        "quantity": 6,
         "stock": 5479,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000296",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 1.1/2\"UNF-12 (12 FIOS) ZINCADO BRANCO DIN 982",
-        "quantity": 5,
+        "quantity": 12,
         "stock": 574,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000091",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 8,
+        "quantity": 4,
         "stock": 3800,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000001",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 20,
+        "quantity": 4,
         "stock": 3246,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000059",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M16 X 2,00MM CLASSE 10 ZINCADO BRANCO DIN 982",
-        "quantity": 20,
+        "quantity": 2,
         "stock": 18198,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000026",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 2,
+        "quantity": 8,
         "stock": 2000,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000036",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 982",
-        "quantity": 2,
+        "quantity": 18,
         "stock": 178,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000003",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA 3/4\"(19,05MM) UNF-16MM GRAU 5 IFI 100 ZINCADO BRANCO DIN 985",
-        "quantity": 2,
+        "quantity": 5,
         "stock": 1128,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000005",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 985",
-        "quantity": 12,
+        "quantity": 8,
         "stock": 1596,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000054",
         "description": "PORCA SEXTAVADA COMUM M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 28,
+        "quantity": 4,
         "stock": 8395,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000095",
         "description": "PORCA SEXTAVADA COMUM M3 X 0,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 3,
+        "quantity": 20,
         "stock": 1327,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000092",
         "description": "PORCA SEXTAVADA FLANGEADA  M8 X 1,50MM CLASSE 8.8  DIN 6923",
-        "quantity": 20,
+        "quantity": 4,
         "stock": 7046,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000379",
         "description": "TAMPAO DKO OTA 16-S - STEPER",
-        "quantity": 2,
+        "quantity": 20,
         "stock": 62,
         "demand": 0
       },
@@ -245638,21 +244259,21 @@
       {
         "code": "01.02.11.0000000064",
         "description": "ABRAÇADEIRA ROSCA SEM FIM 102 A 121 - FITA 9MM",
-        "quantity": 5,
+        "quantity": 2,
         "stock": 284,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000020",
         "description": "ARRUELA DE PRESSAO MEDIA M16 X 27,40 X 3,35MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 8,
+        "quantity": 4,
         "stock": 1942,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000010",
         "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 16,
+        "quantity": 2,
         "stock": 4194,
         "demand": 0
       },
@@ -245666,105 +244287,105 @@
       {
         "code": "01.01.01.0000000393",
         "description": "BUJAO MACHO SEXTAVADO EXTERNO OTA-12 S - DIN 2353",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 208,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000372",
         "description": "BUJAO PARA TUBO 12 - OBA 12-S",
-        "quantity": 4,
+        "quantity": 12,
         "stock": 448,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000082",
         "description": "CILINDRO HIDRAULICO DA SAPATA TRASEIRA - 15.0379.000",
-        "quantity": 2,
+        "quantity": 28,
         "stock": 96,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000080",
         "description": "CILINDRO HIDRAULICO EXTENSIVO TRASEIRO - 25.0132.000",
-        "quantity": 2,
+        "quantity": 3,
         "stock": 42,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000391",
         "description": "CONEXAO 90° MACHO ORIENTAVEL M20 X 1,50 - JOA 12 X 3/4 UNF-S",
-        "quantity": 2,
+        "quantity": 28,
         "stock": 130,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000392",
         "description": "CONEXAO 90° MACHO ORIENTAVEL M24 X 1,50 - JOA 16 X 3/4 UNF-S",
-        "quantity": 1,
+        "quantity": 20,
         "stock": 78,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000257",
         "description": "CONEXAO 90º FEMEA GIRATORIA - MJLA 12-S M20 X 1.5",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 696,
         "demand": 0
       },
       {
         "code": "01.02.11.0000000067",
         "description": "ABRAÇADEIRA SERIE DUPLA PARA TUBO 18MM - DIN 3015",
-        "quantity": 6,
+        "quantity": 12,
         "stock": 193,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000342",
         "description": "CONEXAO 90º FEMEA GIRATORIA - MJLA 20 - S",
-        "quantity": 1,
+        "quantity": 20,
         "stock": 302,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000341",
         "description": "CONEXAO MACHO RETO 1\" NPT TUBO 20 M30 X 2,0 - UMA 20 X 1\" NPT - S",
-        "quantity": 2,
+        "quantity": 18,
         "stock": 378,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000343",
         "description": "CONEXAO MACHO RETO 1.1/16\" UNF TUBO 20 M30 X 2,0 - UMA 20 X 1.1/16\" UNF - S",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 345,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000329",
         "description": "CONEXAO MACHO RETO - UMA 06X1/8 M12 X 1.5 - NPT-L",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 788,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000332",
         "description": "CONEXAO MACHO RETO 3/4\" UNF TUBO 16 - UMA 16 X 3/4\" UNF - S",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 526,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000388",
         "description": "ANEL ELASTICO PARA EIXO EXTERNO 200MM - DIN 471",
-        "quantity": 1,
+        "quantity": 16,
         "stock": 143,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000357",
         "description": "CONEXAO MACHO RETO 3/4\" UNF TUBO 16 - UMA 16 X 3/4\" UNF - S (+50MM LONGO)",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 254,
         "demand": 0
       },
@@ -245778,21 +244399,21 @@
       {
         "code": "01.01.01.0000000370",
         "description": "CONEXAO MACHO RETO 7/8\" UNF TUBO 12 - UMA 12 X 7/8\" UNF -S (FURO FINO 2MM)",
-        "quantity": 2,
+        "quantity": 8,
         "stock": 160,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000331",
         "description": "CONEXAO MACHO RETO 7/8\" UNF TUBO 16 - UMA 16 X 7/8\" UNF -S",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 676,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000387",
         "description": "CONEXAO MACHO RETO 7/8\" UNF TUBO 16 - UMA 16 X 7/8\" UNF -S (+50MM LONGO)",
-        "quantity": 8,
+        "quantity": 4,
         "stock": 1333,
         "demand": 0
       },
@@ -245813,7 +244434,7 @@
       {
         "code": "01.01.01.0000000261",
         "description": "CONEXAO MACHO RETO 9/16\" UNF TUBO 12 - UMA 12 X 9/16\" UNF - S",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 239,
         "demand": 0
       },
@@ -245827,28 +244448,28 @@
       {
         "code": "01.01.01.0000000334",
         "description": "CONEXAO TEE MACHO IGUAL M20 X 1,5 TUBO 12 - TIA 12 - S",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 858,
         "demand": 0
       },
       {
         "code": "01.11.05.0000000055",
         "description": "RADIO CONTROLE REMOTO GUINDASTE NR12 G4 5FN - TECNNIC",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 10,
         "demand": 0
       },
       {
         "code": "01.06.06.0000000005",
         "description": "COXIM DE BORRACHA TB16",
-        "quantity": 5,
+        "quantity": 1,
         "stock": 270,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000390",
         "description": "ESPIGAO MACHO 1.5/16\" UNF-S X 1.1/2\"",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 182,
         "demand": 0
       },
@@ -245862,7 +244483,7 @@
       {
         "code": "01.01.14.0000000025",
         "description": "BICO GRAXEIRO RETO 1/8\" NPT",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 1204,
         "demand": 0
       },
@@ -245883,7 +244504,7 @@
       {
         "code": "01.13.05.0000000032",
         "description": "MANILHA CURVA ALLOY PPC (MFA) - 9,5 TON",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 22,
         "demand": 0
       },
@@ -245911,35 +244532,35 @@
       {
         "code": "01.02.01.0000000293",
         "description": "PARAFUSO ALLEN CABEÇA CHATA CONICA SEXTAVADO INTERNO M10 X 1,50 X 16MM ROSCA INTEIRA CLASSE 8.8 ZINCADO BRANCO DIN 7991",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000294",
         "description": "PARAFUSO ALLEN CABEÇA CHATA CONICA SEXTAVADO INTERNO M12 X 1,75 X 16MM ROSCA INTEIRA CLASSE 8.8 ZINCADO BRANCO DIN 7991",
-        "quantity": 10,
+        "quantity": 2,
         "stock": 2970,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000287",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 40MM CLASSE 8 ROSCA INTEIRA GEOMET DIN 912",
-        "quantity": 40,
+        "quantity": 2,
         "stock": 4976,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000288",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M3 X 0,50 X 12MM ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 3,
+        "quantity": 1,
         "stock": 5200,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000265",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M5 X 0,80 X 16MM CLASSE 12.9 ROSCA INTEIRA OXIDADO DIN 912",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 5791,
         "demand": 0
       },
@@ -245953,708 +244574,176 @@
       {
         "code": "01.02.01.0000000276",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M6 X 1,00 X 65MM CLASSE 8.8 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN 9",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 3518,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085127",
         "description": "ARRUELA BRAÇO SAPATAS",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 342,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000275",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 20MM CLASSE 8.8 ROSCA INTEIRA AÇO GEOMET DIN 912",
-        "quantity": 4,
+        "quantity": 8,
         "stock": 2000,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000104",
         "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 8,
+        "quantity": 2,
         "stock": 4951,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000059",
         "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 8,
+        "quantity": 2,
         "stock": 5648,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000267",
         "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 35MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 2544,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000074",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 985",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 1000,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000016",
         "description": "ARRUELA LISA MEDIA M12 X 24 X 2,50MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 3855,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000015",
         "description": "ARRUELA LISA MEDIA M16 X 30 X 3,00MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 20,
+        "quantity": 1,
         "stock": 84700,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 2,
+        "quantity": 5,
         "stock": 6000,
         "demand": 0
       },
       {
         "code": "01.02.11.0000000062",
         "description": "ABRAÇADEIRA SERIE DUPLA PARA TUBO 16MM - DIN 3015",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 1004,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000255",
         "description": "CONEXAO MACHO RETO - UMA 12X3/4 M20 X 1.5 - UNF-S",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 4954,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000360",
         "description": "CONEXAO MACHO RETO - UMA 12X3/4 - UNF-S (+50MM LONGO)",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 3735,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000333",
         "description": "CONEXAO MACHO RETO 3/8\" BSP TUBO 12 - UMA 12 X 3/8\"  BSP - S",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 2218,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000365",
         "description": "CONEXAO MACHO ROSCA 7/8\" UNF-S COM ANEL O RING - MAMA 16 X 7/8\" UNF-S",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 399,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000292",
         "description": "PARAF. ALLEN COM CAB. ROSCA PARCIAL 12.9 DIN 912 M16 X 2,0 X 45 MM - ZINCADO BRANCO",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 8940,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000272",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 12MM CLASSE 8.8 ROSCA INTEIRA DIN 912",
-        "quantity": 14,
+        "quantity": 1,
         "stock": 5300,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000271",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 16MM CLASSE 8.8  DIN 912",
-        "quantity": 18,
+        "quantity": 1,
         "stock": 10381,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000278",
         "description": "PARAFUSO ALLEN SEM CABEÇA SEXTAVADO INTERNO M12 X 1,75 X 35MM CLASSE 8.8 ROSCA INTEIRA GEOMET DIN 913/916",
-        "quantity": 20,
+        "quantity": 2,
         "stock": 15744,
         "demand": 0
       },
       {
         "code": "02.01.01.0000090334",
         "description": "ARRUELA MOEDA 23,5 MM X 2,00 MM",
-        "quantity": 28,
+        "quantity": 8,
         "stock": 5000,
-        "demand": 0
-      },
-      {
-        "code": "02.02.09.0000000150",
-        "description": "KIT DE SOLDADOS - GUINDASTE NX45T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090922",
-        "description": "SUPORTE COMANDO - 02.01.01.0000097273",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085153",
         "description": "BUCHA - 02.01.01.0000097272",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 100,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085154",
         "description": "BUCHA - 01.12.01.00000009",
-        "quantity": 4,
+        "quantity": 10,
         "stock": 347,
         "demand": 0
       },
       {
         "code": "02.01.01.0000090864",
         "description": "TRAVA BP - 45.23.01.043",
-        "quantity": 1,
+        "quantity": 40,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.03.02.0000085158",
         "description": "BUCHA INTERNA - 15-00-008",
-        "quantity": 12,
+        "quantity": 3,
         "stock": 352,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091345",
-        "description": "REFORÇO INF. GUIN. 45T - 45.23.01.027",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091349",
-        "description": "REFORÇO INFERIOR DA BASE DO GUINDASTE - 45.23.01.026",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091398",
-        "description": "ALÇA DE FIXAÇÃO DO CILINDRO - 45.23.01.041",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091383",
-        "description": "PEÇA DE SUPORTE DAS LANÇAS - 45.23.01.012",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091391",
-        "description": "REFORÇO INTERNO - 45.23.01.016",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091388",
-        "description": "FECHAMENTO INTERNO DO RESERVATÓRIO -  45.23.01.018",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091414",
-        "description": "guia do mancal interno - 45.23.01.015",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091356",
-        "description": "FECHAMENTO INFERIOR RESERVATÓRIO - 45.23.01.023",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.01.16.0000000096",
-        "description": "MANCAL FUNDIDO NX45.505T (379-1/NX45)",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090909",
-        "description": "HASTE - 00.02.01.01.0000000002",
-        "quantity": 13,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091357",
-        "description": "FECHAMENTO LATERAL DO RESERVATÓRIO - 45.23.01.009",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087003",
-        "description": "CONJ. SOLDADO LANÇA 5 - 45.23.45.000.5H",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091482",
-        "description": "VIGA LANÇA MANUAL L5 - 45.23.45.001.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091496",
-        "description": "REFORÇO TRAVA MANUAL - 45.23.45.011",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091490",
-        "description": "REFORÇO FRONTAL L5 - 45.23.45.003.5H",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091494",
-        "description": "REFORÇO TRAVA MANUAL - 45.23.45.011",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091487",
-        "description": "SUPORTE CILINDRO L5 - 45.23.45.003.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091488",
-        "description": "REFORÇO FRONTAL SUPORTE CILINDRO  - 45.23.45.012.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091492",
-        "description": "REFORÇO INFERIOR DO SUPORTE DO CILINDRO  - 45.23.45.010.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091491",
-        "description": "REFORÇO SUPERIOR DO SUPORTE DO CILINDRO  - 45.23.45.008.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085199",
-        "description": "BUCHA DE FECHAMENTO - Ø25mm",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086976",
-        "description": "CONJ SOLDADO LANÇA MANUAL L7 - 45.23.47.000.5H",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091447",
-        "description": "VIGA ESQ.LANÇA 8 - 45.23.47.001.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091449",
-        "description": "VIGA DIR. LANÇA 8 - 45.23.47.008-5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091452",
-        "description": "REFORÇO FRONTAL L7 - 45.23.47.002.5H",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000068",
         "description": "MANGUEIRA CRISTAL 7/8\" X 2,00MM - ROLO DE 50 METROS",
         "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091451",
-        "description": "REFORÇO DE TRAVA MANUAL - 45.23.47.003.5H",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091460",
-        "description": "FECHAMENTO TRASEIRO LANÇA 7 - 45.23.47.005.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086978",
-        "description": "CONJ SOLDADO LANÇA MANUAL L6 - 45.23.46.000.5H",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091469",
-        "description": "VIGA LANÇA MANUAL L6 - 45.23.46.010",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091471",
-        "description": "REFORÇO FRONTAL L6 - 45.23.46.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091470",
-        "description": "REFORÇO TRAVA MANUAL - 45.23.46.002",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091473",
-        "description": "FECHAMENTO TRASEIRO L6 - 45.23.46.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091474",
-        "description": "CALÇO SUPERIOR L6 - 45.23.46.005",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086969",
-        "description": "CONJ SOLDADO LANÇA MANUAL L8 - 45.23.48.000",
-        "quantity": 1,
-        "stock": 9,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091409",
-        "description": "VIGA ESQ.LANÇA 8 - 45.23.48.001.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091429",
-        "description": "VIGA DIR. LANÇA 8 - 45.23.48.002.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091416",
-        "description": "SUPORTE GANCHO - 45.23.48.004.5H",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091421",
-        "description": "GANCHO - 45.23.47.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091422",
-        "description": "REFORÇO GANCHO - 45.23.48.005.5H",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091420",
-        "description": "FECHAMENTO FRONTAL - 45.23.48.006.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091424",
-        "description": "FECHAMENTO TRASEIRO LANÇA 8 - 45.23.48.007.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.04.0000085015",
-        "description": "FLANGE DE SUP. DO PINHAO 45T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.05.0000085028",
-        "description": "PINHÃO USINADO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.03.0000000195",
-        "description": "BARRA DE AÇO Ø241,35 X 785 MM - AÇO SAE 4140",
-        "quantity": 259.9,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090893",
-        "description": "ROSCA M10 x 1,5 x 90 mm",
-        "quantity": 4,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085016",
-        "description": "MANCAL COLUNA SUPERIOR - 45.23.02.200",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085018",
-        "description": "MINI MANCAL FRESDADO COLUNA - 45.23.02.018",
-        "quantity": 1,
-        "stock": 1,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085017",
-        "description": "MINI MANCAL COLUNA - 45.23.02.019",
-        "quantity": 1,
         "stock": 2,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091177",
-        "description": "VIGA COLUNA ESQ. - 45.23.02.010",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091175",
-        "description": "VIGA COLUNA DIR. - 45.23.02.011",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091182",
-        "description": "FECHAMENTO EIXO - 45.23.02.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091185",
-        "description": "FECHAMENTO COLUNA - 45.23.02.007",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091176",
-        "description": "REFORÇO SUP. COLUNA - 45.23.02.009",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091179",
-        "description": "REFORÇO COLUNA LATERAL - 45.23.02.012",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091163",
-        "description": "REFORÇO COLUNA LATERAL - 45.23.02.012",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091178",
-        "description": "REFORÇO COLUNA - 45.23.02.008",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085185",
-        "description": "BUCHA GUIA - 45.23.01.201",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091254",
-        "description": "FECHAMENTO DE CANTO - 45.23.01.034",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086994",
-        "description": "BRAÇO POSTERIOR 45T - 45.23.40.000 - SOLDA",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085050",
-        "description": "MINI MANCAL BP - 45.23.40.203",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091573",
-        "description": "FECHAMENTO BA - 45.23.40.006",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091574",
-        "description": "REFORÇO INTERNO BP - 45.23.40.003",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091576",
-        "description": "FECHAMENTO BA SUPERIOR - 45.23.40.007",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091577",
-        "description": "REFORÇO BA - 45.23.40.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091578",
-        "description": "SUPORTE CILINDRO - 45.23.40.015",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091580",
-        "description": "REFORÇO B BP - 45.23.40.017",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091583",
-        "description": "REFORÇO A BP - 45.23.40.012",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091586",
-        "description": "REFORÇO SUPORTE GUINCHO CABO - 45.23.40.025",
-        "quantity": 6,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091588",
-        "description": "REFORÇO - 45.23.40.027",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091598",
-        "description": "SUPORTE GUINCHO CABO - 45.23.40.024",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085049",
-        "description": "MINI MANCAL FRESADO BP - 45.23.40.202",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090804",
-        "description": "REFORÇO - 21.23.40.015",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090676",
-        "description": "SUPORTE DIÇAMENTO - 15-03-013",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085051",
-        "description": "REGULADOR LATERAL SOLDADO",
-        "quantity": 6,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -246662,328 +244751,6 @@
         "description": "PINO APOIO LANCA - 45.23.40.200",
         "quantity": 1,
         "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085047",
-        "description": "MANCAL BRAÇO POSTERIOR - 45.23.40.201",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091555",
-        "description": "VIGA BRAÇO POSTERIOR - 45.23.40.016",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091562",
-        "description": "REFORÇO BA - 45.23.40.004",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091567",
-        "description": "REFORÇO - 45.23.40.010",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091569",
-        "description": "REFORÇO INTERIOR BP - 45.23.40.008",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091571",
-        "description": "CAPA SUPERIOR BP - 45.23.40.009",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085098",
-        "description": "PASTILHA 15 X 22 - 01.12.01.00000002",
-        "quantity": 2,
-        "stock": 1054,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086964",
-        "description": "BRAÇO ANTERIOR 45T - 45.23.03.000",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091413",
-        "description": "VIGA DIR. BA - 45.23.03.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091512",
-        "description": "REFORÇO LATERAL BA - 45.23.03.003.N ESPELHO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092686",
-        "description": "REFORÇO BA INTERNO - 45.23.03.007",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085048",
-        "description": "MINI MANCAL COLUNA - 45.23.03.201",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085054",
-        "description": "MINI MANCAL FRESADO COLUNA - 45.23.03.200",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000093488",
-        "description": "REFORÇO INTERNO BRAÇO BA",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091428",
-        "description": "VIGA ESQ. BA - 45-30-03-001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091441",
-        "description": "REFORÇO INTERNO BA - 45.23.03.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091472",
-        "description": "FECHAMENTO INTERNO BA - 45.23.30.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091475",
-        "description": "REFORÇO SUPERIOR BA - 45.23.03.006",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091489",
-        "description": "SUPORTE IÇAMENTO - 45.23.03.005",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085045",
-        "description": "MINI MANCAL FRESADO BA - 45.23.03.102",
-        "quantity": 3,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.03.0000085046",
-        "description": "MINI MANCAL BA - 45.23.03.103",
-        "quantity": 3,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091506",
-        "description": "REFORÇO LATERAL BA - 45.23.03.002.N",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087028",
-        "description": "CONJ SOLDADO LANÇA 1 - 45.23.41.000",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091648",
-        "description": "VIGA LANÇA 1 - 45.23.41.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091656",
-        "description": "REFORÇO LATERAL SUPORTE CILINDRO L1  - 45.23.41.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091667",
-        "description": "FECHAMENTO TRASEIRO L1 - 45.23.41.006",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091653",
-        "description": "SUPORTE DO CILINDRO L1  - 45.23.41.002",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091662",
-        "description": "REFORÇO LATERAL ESQ SUPORTE CILINDRO L1",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091655",
-        "description": "REFORÇO FRONTAL L1 - 45.23.41.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090599",
-        "description": "CALÇO INFERIOR VIGAS LANÇAS - 45.23.41.007",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087014",
-        "description": "CONJ SOLDADO LANÇA 2 - 45.23.42.000",
-        "quantity": 1,
-        "stock": 13,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091625",
-        "description": "FECHAMENTO TRASEIRO L2 - 45.23.42.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091623",
-        "description": "REFORÇO FRONTAL L2 - 45.23.42.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091603",
-        "description": "REFORÇO LATERAL SUPORTE CILINDRO - 45.23.42.003",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091599",
-        "description": "VIGA LANÇA 2 - 45.23.42.001",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091619",
-        "description": "FLANGE DE PONTA DE LANÇA - 45.23.43.005",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091620",
-        "description": "FECHAMENTO INTERNO DA LANÇA - 45.23.43.006",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091629",
-        "description": "REFORÇO FRONTAL DA LANÇA SUP. - 45.23.43.004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085159",
-        "description": "BUCHA DE FECHAMENTO - 15-04-112",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.05.0000085018",
-        "description": "TUBO USINADO - RGL.010",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091521",
-        "description": "SUPORTE INF. DO FIXADOR DO CILINDRO - 45.23.44.010.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091533",
-        "description": "REFORÇO SUP. LANÇA 1 - 45.23.44.015.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091505",
-        "description": "FECHAMENTO TRASEIRA DA LANÇA - 45.23.44.006.4H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085160",
-        "description": "BUCHA SOLDADA - RGL.0019",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.03.0000000094",
-        "description": "BARRA REDONDA LAMINADA 1.3/8\"(34,93MM) X 6000MM - SAE 4340",
-        "quantity": 0.0897,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.05.0000000086",
-        "description": "KIT MANGUEIRAS HIDRAULICAS - NX45.5T TRAVE 5H 3M ELETRONICO",
-        "quantity": 1,
-        "stock": 22,
         "demand": 0
       },
       {
@@ -247003,14 +244770,14 @@
       {
         "code": "01.01.03.0000000542",
         "description": "MANGUEIRA 2T 1/2\" X 3950 MM - TC 90° (M24 X 1/2 X TB 16) X TRM (M24 X 1/2 X TB 16) - 2 AZUL",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 9,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000534",
         "description": "MANGUEIRA 2T 1/2\" X 900 MM - TC 90° (M24 X 1/2 X TB 16 + LONGO) X TRM (M24 X 1/2 X TB 16) - 1 AZUL",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 1,
         "demand": 0
       },
@@ -247038,7 +244805,7 @@
       {
         "code": "01.01.03.0000000545",
         "description": "MANGUEIRA 2T 1/4\" X 1320 MM - TRF (M20 X 1/4\" TB 12) X TC 90° (M12 X 1/4\" TB 6)",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 3,
         "demand": 0
       },
@@ -247059,7 +244826,7 @@
       {
         "code": "01.01.03.0000000533",
         "description": "MANGUEIRA R4 1.1/4\" X 2500 MM COM ABRAÇADEIRA BELLOSA 43-51",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 0,
         "demand": 0
       },
@@ -247094,21 +244861,21 @@
       {
         "code": "01.01.03.0000000564",
         "description": "MANGUEIRA 2T 3/8\" X 1550 MM - TC 90° (M20 X 3/8\" X TB 12) X TRF (M20 X 3/8\" X TB 12) - 1 VERMELHO",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 1,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000565",
         "description": "MANGUEIRA 2T 3/8\" X 1700 MM - TRF (M20 X 3/8\" X TB 12) X TRF (M20 X 3/8\" X TB 12) - 2 VERMELHO",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 16,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000566",
         "description": "MANGUEIRA 2T 3/8\" X 4700 MM - TC 90° (M20 X 3/8\" X TB 12) X TRF (M20 X 3/8\" X TB 12) - 1 AMARELO",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 1,
         "demand": 0
       },
@@ -247122,7 +244889,7 @@
       {
         "code": "01.01.03.0000000568",
         "description": "MANGUEIRA 2T 1/2\" X 1270 MM - TRF (M24 X 1/2\" X TB 16) X TC 90° (M24 X 1/2\" X TB 16) - BRANCO / VERMELHO",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 3,
         "demand": 0
       },
@@ -247178,21 +244945,21 @@
       {
         "code": "01.01.03.0000000440",
         "description": "CAPA PROTEÇAO TEXTIL 80MM X 1200MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 155,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000527",
         "description": "CAPA PROTEÇAO TEXTIL 80MM X 1300MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 2,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000442",
         "description": "CAPA PROTEÇAO TEXTIL 80MM X 600MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 210,
         "demand": 0
       },
@@ -247234,14 +245001,14 @@
       {
         "code": "01.01.03.0000000529",
         "description": "CAPA PROTEÇAO TEXTIL 80MM X 2100MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 2,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000531",
         "description": "CAPA PROTEÇAO TEXTIL 80MM X 500MM",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 2,
         "demand": 0
       },
@@ -247255,7 +245022,7 @@
       {
         "code": "01.01.03.0000000536",
         "description": "MANGUEIRA 1T 5/8\" X 670 MM - TRF (M24 X 5/8\" TB 16) X TC 90° (M30 X 5/8\" X TB 20) - VERMELHO / AZUL",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 6,
         "demand": 0
       },
@@ -247276,14 +245043,14 @@
       {
         "code": "01.01.03.0000000539",
         "description": "MANGUEIRA 2T 1/2\" X 4750 MM - TC 90° (M24 X 1/2 X TB 16) X TRF (M24 X 1/2 X TB 16) - 1 VERMELHO",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 8,
         "demand": 0
       },
       {
         "code": "01.01.03.0000000540",
         "description": "MANGUEIRA 2T 1/2\" X 4800 MM - TC 90° (M24 X 1/2 + LONGO X TB 16) X TRF (M24 X 1/2 X TB 16) - 2 VERMELHO",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 1,
         "demand": 0
       },
@@ -247295,100 +245062,37 @@
         "demand": 0
       },
       {
-        "code": "02.02.09.0000000160",
-        "description": "KIT DE COMANDO - GUINDASTE NX45.5T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085661",
-        "description": "CONJUNTO COMANDO ELETRONICO 45T",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086882",
-        "description": "SUPORTE DE COMANDO PRINCIPAL ELETRONICO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
         "code": "02.01.01.0000091630",
         "description": "HASTE DE ACIONAMENTO COMANDO ELETRONICO 45T",
-        "quantity": 5,
+        "quantity": 1,
         "stock": 212,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000129",
         "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 65MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 11400,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000050",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 500,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000113",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 24,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086703",
-        "description": "SUPORTE DA TRAVESSA ELETRONICO - CAE 25-00-008",
-        "quantity": 1,
-        "stock": 4,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090359",
-        "description": "PERFIL \"L\" 80 X 43,75 X 38,75 X 4,75 - CAE-25-01-004",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086879",
-        "description": "SUPORT AUXILIAR ELETRONICO PARA COMANDO 4 E 5 VIAS",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091075",
-        "description": "SUPORTE ALAVANCO CARONA ELETRONICO - 00.01.002",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090366",
-        "description": "REFORÇO SUPERIOR SUPORTE",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091095",
-        "description": "SUPORTE BOTÃO DE EMERGÊNCIA COMANDO AUXILIAR ELETRONICO - 00.01.004",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000218",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 20MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 5136,
         "demand": 0
       },
@@ -247402,22 +245106,15 @@
       {
         "code": "02.01.01.0000091124",
         "description": "BARRA DO ARCO PROTEÇAO COMANDO SAPATA ELETRONICO",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.04.03.0000000070",
         "description": "BARRA REDONDA LAMINADA 1/2\"(12,70MM) X 6000MM - ASTM A36",
-        "quantity": 0.4968,
-        "stock": 1801.258,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091134",
-        "description": "SUPORTE DE FIXAÇAO CENTRAL ELETRONICA",
         "quantity": 1,
-        "stock": 0,
+        "stock": 1801.258,
         "demand": 0
       },
       {
@@ -247439,13 +245136,6 @@
         "description": "CONEXAO MACHO RETO - UMA 12X1/4 M20 X 1.5 - BSP-S",
         "quantity": 1,
         "stock": 843,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091070",
-        "description": "BARRA DO ARCO PROTEÇÃO COMANDO PRINCIPAL - 00.02.01.01.0000000008",
-        "quantity": 2,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -247479,28 +245169,28 @@
       {
         "code": "01.02.01.0000000106",
         "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 40MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 5373,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000029",
         "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 388,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000155",
         "description": "ENGATE RAPIDO MACHO FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 258,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000156",
         "description": "ENGATE RAPIDO FEMEA FACE PLANA 3/8\" X 3/8\" NPT - ISO 16028",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 259,
         "demand": 0
       },
@@ -247514,14 +245204,14 @@
       {
         "code": "01.12.05.0000000002",
         "description": "PROTEÇAO PVC PARA ENGATE RAPIDO FEMEA 3/8\" NPT FEMEA (ACOPLADOR) - COR LARANJA",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 621,
         "demand": 0
       },
       {
         "code": "01.12.05.0000000003",
         "description": "PROTEÇAO PVC PARA ENGATE RAPIDO MACHO 3/8\" NPT (PINO)  PVC - COR LARANJA",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 727,
         "demand": 0
       },
@@ -247535,7 +245225,7 @@
       {
         "code": "01.02.01.0000000079",
         "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 60MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 7504,
         "demand": 0
       },
@@ -247556,14 +245246,14 @@
       {
         "code": "02.01.03.0000085123",
         "description": "CALÇO DO BERÇO DA LANÇA - NYLON",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 167,
         "demand": 0
       },
       {
         "code": "02.03.03.0000085011",
         "description": "MANCAL GIRO TECAST TM Ø140 X Ø95 - 455-05-008",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 84,
         "demand": 0
       },
@@ -247591,28 +245281,21 @@
       {
         "code": "01.01.10.0000000073",
         "description": "CILINDRO HIDRAULICO DO GIRO - 15.0382.000",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 64,
-        "demand": 0
-      },
-      {
-        "code": "02.03.05.0000000016",
-        "description": "CREMALHEIRA EM AÇO TREFILADO – Ø76,2 × 835 MM - NX30.505T",
-        "quantity": 2,
-        "stock": 22,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000062",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 40MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-        "quantity": 40,
+        "quantity": 1,
         "stock": 12612,
         "demand": 0
       },
       {
         "code": "02.02.02.0000085479",
         "description": "PARAFUSO + GRAXEIRA",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 800,
         "demand": 0
       },
@@ -247633,28 +245316,28 @@
       {
         "code": "01.02.01.0000000199",
         "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 20MM CLASSE 10.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN",
-        "quantity": 8,
+        "quantity": 1,
         "stock": 3344,
         "demand": 0
       },
       {
         "code": "01.02.01.0000000279",
         "description": "PARAFUSO ALLEN CABEÇA CHATA CONICA SEXTAVADO INTERNO M8 X 1,25 X 16MM ROSCA INTEIRA CLASSE 8.8 ZINCADO BRANCO DIN 7991",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 4488,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000002",
         "description": "ARRUELA DE PRESSAO PESADA M12 X 1/2\" X 3,84MM ZINCADO BRANCO ASA B-27.1",
-        "quantity": 12,
+        "quantity": 1,
         "stock": 3800,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085110",
         "description": "TARUGO 25 X 18 MM",
-        "quantity": 12,
+        "quantity": 1,
         "stock": 1872,
         "demand": 0
       },
@@ -247668,21 +245351,21 @@
       {
         "code": "01.02.02.0000000066",
         "description": "ARRUELA COM TRAVA ARANHA MB 14 - ZINCADA BRANCA",
-        "quantity": 5,
+        "quantity": 1,
         "stock": 287,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000105",
         "description": "PORCA DE FIXAÇAO KM 14 ZINCADA BRANCA",
-        "quantity": 5,
+        "quantity": 1,
         "stock": 2,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000076",
         "description": "CILINDRO HIDRAULICO DA SAPATA DIANTEIRA - 15.0383.000",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 33,
         "demand": 0
       },
@@ -247694,72 +245377,37 @@
         "demand": 0
       },
       {
-        "code": "02.01.01.0000091257",
-        "description": "TUBO - 45-74-030",
-        "quantity": 1,
-        "stock": 18,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000091258",
-        "description": "TUBO - 45-74-031",
-        "quantity": 1,
-        "stock": 27,
-        "demand": 0
-      },
-      {
         "code": "01.01.01.0000000353",
         "description": "ANILHA B3 TUBO 12 - AA-12-S",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 2336,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000024",
         "description": "PORCA SEXTAVADA COMUM M20 X 2,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 6,
+        "quantity": 1,
         "stock": 2410,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092466",
-        "description": "TUBO HID. GIRO BASE",
-        "quantity": 1,
-        "stock": 3,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000092474",
-        "description": "TUBO HID. GIRO BASE",
-        "quantity": 1,
-        "stock": 3,
         "demand": 0
       },
       {
         "code": "01.01.02.0000000100",
         "description": "VALVULA RETENÇAO PILOTADA DUPLA NIPEL M20X1,5 - 3/4 - 16 UNF",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 103,
         "demand": 0
       },
       {
         "code": "02.01.01.0000094397",
         "description": "ANEL MASTRO - 455-08-014",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000094398",
         "description": "TAMPA INFERIOR EIXO MASTRO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000087104",
-        "description": "CONJUNTO DE PROTEÇÃO COLUNA NEXT 45T",
-        "quantity": 1,
+        "quantity": 24,
         "stock": 0,
         "demand": 0
       },
@@ -247771,37 +245419,16 @@
         "demand": 0
       },
       {
-        "code": "02.01.01.0000091952",
-        "description": "BARRA DE ACABAMENTO PROTEÇÃO - 21.02.105",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.03.0000000145",
-        "description": "BARRA REDONDA TREFILADA 3/8\"(9,53MM) X 6000MM - SAE 1020",
-        "quantity": 0.115,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085120",
-        "description": "BUCHA TECAST Ø95 X Ø70 - 455-06-018",
-        "quantity": 2,
-        "stock": 158,
-        "demand": 0
-      },
-      {
         "code": "02.03.01.0000085157",
         "description": "PINO CILINDRO EXTENSÃO SAPATA 45T",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091265",
         "description": "TUBO - 45-74-039",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 111,
         "demand": 0
       },
@@ -247822,35 +245449,35 @@
       {
         "code": "01.02.01.0000000259",
         "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 60MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-        "quantity": 2,
+        "quantity": 0.4968,
         "stock": 15307,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085156",
         "description": "PLACA INFERIOR LANÇA BP - 45.23.48.050",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 30,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000034",
         "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 4,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.06.01.0000000019",
         "description": "BARRA NYLON NITANYL BRANCO 25 X 3000MM",
-        "quantity": 0.0126,
+        "quantity": 10,
         "stock": 1,
         "demand": 0
       },
       {
         "code": "02.02.02.0000085654",
         "description": "Pino Lança B 45T (P.L2.45T.002)",
-        "quantity": 1,
+        "quantity": 3,
         "stock": 0,
         "demand": 0
       },
@@ -247871,28 +245498,28 @@
       {
         "code": "01.01.10.0000000072",
         "description": "CILINDRO HIDRAULICO (LANÇA 1) - 25.0127.000",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 16,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000077",
         "description": "CILINDRO HIDRAULICO (LANÇA 2) - 25.0128.000",
-        "quantity": 1,
+        "quantity": 0.5957,
         "stock": 6,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091900",
         "description": "ARRUELA CILINDRO LANÇA 45T-A(  ARRUELA 1.1/2\") - 45-40-016",
-        "quantity": 5,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000078",
         "description": "CILINDRO HIDRAULICO (LANÇA 3) - 25.0129.000",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 30,
         "demand": 0
       },
@@ -247911,58 +245538,51 @@
         "demand": 0
       },
       {
-        "code": "02.01.03.0000085158",
-        "description": "PLACA INFERIOR LANÇA 2 - 45.23.48.052",
-        "quantity": 2,
-        "stock": 28,
-        "demand": 0
-      },
-      {
         "code": "01.02.01.0000000270",
         "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M8 X 1,25 X 12 MM CLASSE 8.8  DIN 912",
-        "quantity": 4,
+        "quantity": 16,
         "stock": 2900,
         "demand": 0
       },
       {
         "code": "02.01.01.0000089560",
         "description": "TUBO LATERAL LANÇA P/ FERRAMENTA - 12 X 16 (16-13-517-T.G.E.M)",
-        "quantity": 2,
+        "quantity": 8,
         "stock": 1232,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091232",
         "description": "TUBO LANÇA 1 - 45.015.000-23",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 30,
         "demand": 0
       },
       {
         "code": "01.01.02.0000000095",
         "description": "VALVULA DE CONTRABALANÇO DUPLA 3/4-16 UNF - HBS (B079361.06.00)",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 114,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000364",
         "description": "ANILHA B4 TUBO 16 COM BORRACHA - AA-B4-16-S",
-        "quantity": 18,
+        "quantity": 1,
         "stock": 1557,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091237",
         "description": "TUBO - 45.015.022-23",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 38,
         "demand": 0
       },
       {
         "code": "01.01.02.0000000092",
         "description": "VALVULA DE SEQUENCIA COMPENSADA 7/8\" UNF - ABA SG3093",
-        "quantity": 4,
+        "quantity": 2,
         "stock": 78,
         "demand": 0
       },
@@ -247976,14 +245596,14 @@
       {
         "code": "02.01.01.0000091239",
         "description": "TUBO LANÇA 3 - 45.015.024-23",
-        "quantity": 1,
+        "quantity": 6,
         "stock": 28,
         "demand": 0
       },
       {
         "code": "02.02.02.0000085651",
         "description": "CONJ PARAFUSADO LANÇA 2 45T - 45.23.42.000",
-        "quantity": 1,
+        "quantity": 28,
         "stock": 0,
         "demand": 0
       },
@@ -247997,56 +245617,56 @@
       {
         "code": "02.01.01.0000091235",
         "description": "TUBO LANÇA - 45.015.007-23",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 21,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091233",
         "description": "TUBO LANÇA - 45.015.005-23",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 45,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091240",
         "description": "TUBO LANÇA 5 - 45.015.027-23",
-        "quantity": 1,
+        "quantity": 5,
         "stock": 26,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091234",
         "description": "TUBO LANÇA - 45.015.006-23",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 24,
         "demand": 0
       },
       {
         "code": "01.06.06.0000000004",
         "description": "COXIM DE BORRACHA TB12",
-        "quantity": 5,
+        "quantity": 4,
         "stock": 862,
         "demand": 0
       },
       {
         "code": "01.02.11.0000000058",
         "description": "ABRACADEIRA FLEXIL ACO CARBONO 089 X 108 MM",
-        "quantity": 5,
+        "quantity": 8,
         "stock": 523,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085159",
         "description": "PLACA INFERIOR LANÇA 3 - 45.23.48.053",
-        "quantity": 2,
+        "quantity": 60,
         "stock": 28,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085153",
         "description": "PLACA SUPERIOR L3 - 45.23.48.63",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 30,
         "demand": 0
       },
@@ -248060,225 +245680,127 @@
       {
         "code": "01.02.01.0000000006",
         "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M8 X 1,25 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 7991",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 8138,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085203",
         "description": "TARUGO NYLON 25 x 10 mm",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 54,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085204",
         "description": "TARUGO NYLON 18 x 10 mm",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 14,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085152",
         "description": "PLACA SUPERIOR LANÇA 4 - 45.23.48.64",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 30,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085160",
         "description": "PLACA INFERIOR LANÇA 4 - 45.23.48.054",
-        "quantity": 2,
+        "quantity": 4,
         "stock": 29,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085642",
-        "description": "CONJ. PARAFUSADO LANÇA5 - 45.23.45.000.5H",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091446",
         "description": "CALÇO INTERNO SUPERIOR LANÇA MANUAL 5 - 45.23.45.011.5H",
-        "quantity": 1,
+        "quantity": 40,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091575",
         "description": "CALÇO DE LANÇA MANUAL L5 - 45.23.45.010",
-        "quantity": 2,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085603",
-        "description": "CONJ LANÇA MANUAL L7 - 45.23.47.000.5H",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.03.0000085111",
         "description": "TARUGO 18 X 14MM",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 280,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091048",
         "description": "ARRUELA MOEDA 18,5 X 2,00 MM",
-        "quantity": 2,
+        "quantity": 1,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091444",
         "description": "CALÇO INTERNO INFERIOR LANÇA MANUAL 7 - 45.23.47.005.5H",
-        "quantity": 2,
+        "quantity": 8,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000091445",
         "description": "CALÇO INTERNO SUPERIOR LANÇA MANUAL 6 - 45.23.47.004.5H",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.02.0000085606",
-        "description": "CONJ LANÇA MANUAL L6 - 45.23.46.000.5H",
-        "quantity": 1,
+        "quantity": 8,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.06.0000000031",
         "description": "RESERVATORIO DE OLEO DE 200 LITROS",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 27,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000412",
         "description": "ADAPTADOR RETO MACHO  BSP 1.1/4\" -11  ORIENTAVEL P/SOLDA",
-        "quantity": 1,
+        "quantity": 12,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000406",
         "description": "TUBO CURVO (COTOVELO) 90° 1.3/4\" - AÇO CARBONO",
-        "quantity": 1,
+        "quantity": 12,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000408",
         "description": "UNIAO SOLDA AÇO M20 X 1,50MM - USA 12-S",
-        "quantity": 1,
+        "quantity": 12,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.03.0000000040",
         "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
-        "quantity": 2,
+        "quantity": 12,
         "stock": 160,
         "demand": 0
       },
       {
         "code": "02.02.01.0000086805",
         "description": "TORRE BOCAL- 15-05-108",
-        "quantity": 1,
+        "quantity": 12,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "02.01.01.0000090797",
         "description": "FLANGE DO BOCAL - C12-012-009",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 15,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090795",
-        "description": "TUBO INDUSTRIAL REDONDO 4\" X 100MM X 2,25MM",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.04.0000000203",
-        "description": "TUBO INDUSTRIAL REDONDO AÇO SAE - ESP. 2,00MM (#14) 101,60MM (4\") X 2,00MM (#14) X 6000MM",
-        "quantity": 0.6337,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.04.0000085003",
-        "description": "FLANGE FILTRO HIDRÁULICO - 25-016-006",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086803",
-        "description": "TUBO SUCÇÃO INTERNO CX. ÓLEO HIDRÁULICO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090789",
-        "description": "TUBO INDUSTRIAL 1.1/2\" x 60 - 15-05-103",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.04.0000000096",
-        "description": "TUBO REDONDO INDUSTRIAL 1.1/2\"(38,10MM) X 3,18 X 6000MM - NBR 6591",
-        "quantity": 0.1288,
-        "stock": 1725.25,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090787",
-        "description": "TUBO INDUSTRIAL 1.1/2\" x 100 - 15-05-103",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085148",
-        "description": "PONTA DE ROSCA 1.1/4\" NPT x 50 mm",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.02.01.0000086810",
-        "description": "FLANGE PARAFUSADA FILTRO DE RETORNO",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085150",
-        "description": "PONTA DE ROSCA 1\" NPT X 50MM",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.01.01.0000090826",
-        "description": "FLANGE SOLDADA FILTRO RETORNO - 15-03-053",
-        "quantity": 1,
-        "stock": 0,
         "demand": 0
       },
       {
@@ -248298,7 +245820,7 @@
       {
         "code": "01.15.02.0000000109",
         "description": "MANOMETRO DE SATURAÇAO INDICADOR VISUAL - ESCALA 0-4 BAR (60 PSI) 1/8\" NPT",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 272,
         "demand": 0
       },
@@ -248319,21 +245841,21 @@
       {
         "code": "02.01.01.0000091904",
         "description": "SUPORTE MANGUEIRAS GUINDASTE",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000074",
         "description": "CILINDRO HIDRAULICO DE ELEVAÇAO - 15.0380.000",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 14,
         "demand": 0
       },
       {
         "code": "01.01.10.0000000075",
         "description": "CILINDRO HIDRAULICO DE INCLINAÇAO - 15.0381.000",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 14,
         "demand": 0
       },
@@ -248354,21 +245876,21 @@
       {
         "code": "01.01.02.0000000093",
         "description": "VALVULA DE BLOQUEIO DUPLA 3/4-16 UNF - HBS (B059353.02.00)",
-        "quantity": 1,
+        "quantity": 2,
         "stock": 321,
         "demand": 0
       },
       {
         "code": "01.01.01.0000000409",
         "description": "CONEXAO MACHO RETA IGUAL M20 X 1,5 - UDA 12-S",
-        "quantity": 1,
+        "quantity": 0.115,
         "stock": 0,
         "demand": 0
       },
       {
         "code": "01.02.02.0000000071",
         "description": "ARRUELA COM TRAVA ARANHA MB 13 - ZINCADA BRANCA",
-        "quantity": 1,
+        "quantity": 4,
         "stock": 87,
         "demand": 0
       }
@@ -267227,27 +264749,6 @@
         "demand": 0
       },
       {
-        "code": "02.01.01.0000090795",
-        "description": "TUBO INDUSTRIAL REDONDO 4\" X 100MM X 2,25MM",
-        "quantity": 1,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "01.04.04.0000000203",
-        "description": "TUBO INDUSTRIAL REDONDO AÇO SAE - ESP. 2,00MM (#14) 101,60MM (4\") X 2,00MM (#14) X 6000MM",
-        "quantity": 0.6337,
-        "stock": 0,
-        "demand": 0
-      },
-      {
-        "code": "02.03.04.0000085003",
-        "description": "FLANGE FILTRO HIDRÁULICO - 25-016-006",
-        "quantity": 1,
-        "stock": 15,
-        "demand": 0
-      },
-      {
         "code": "01.01.08.0000000025",
         "description": "BOCAL DE ABASTECIMENTO HIDRAULICO GRANDE COM 6 PARAFUSOS DE FIXAÇAO",
         "quantity": 1,
@@ -267441,13 +264942,6 @@
         "description": "BUCHA - 01.12.01.00000009",
         "quantity": 4,
         "stock": 347,
-        "demand": 0
-      },
-      {
-        "code": "02.03.02.0000085198",
-        "description": "REGULADOR LATERAL ROSCADO",
-        "quantity": 8,
-        "stock": 170,
         "demand": 0
       },
       {
