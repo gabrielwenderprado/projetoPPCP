@@ -7,7 +7,7 @@
     {
       "name": "guindaste 45",
       "column": 27,
-      "total": 1297.2075,
+      "total": 2457.2075,
       "days": [
         {
           "row": 18,
@@ -83,7 +83,7 @@
         },
         {
           "row": 279,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 311,
@@ -1023,7 +1023,7 @@
         },
         {
           "row": 5709,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 5711,
@@ -1115,7 +1115,7 @@
         },
         {
           "row": 5880,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 5883,
@@ -1239,7 +1239,7 @@
         },
         {
           "row": 6192,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 6195,
@@ -1263,7 +1263,7 @@
         },
         {
           "row": 6200,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 6205,
@@ -1303,7 +1303,7 @@
         },
         {
           "row": 6245,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 6253,
@@ -1347,7 +1347,7 @@
         },
         {
           "row": 6305,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 6306,
@@ -1423,7 +1423,7 @@
         },
         {
           "row": 6432,
-          "quantity": 5
+          "quantity": 150
         },
         {
           "row": 6434,
@@ -1442,7 +1442,7 @@
     {
       "name": "10L",
       "column": 28,
-      "total": 2358.702,
+      "total": 3526.702,
       "days": [
         {
           "row": 10,
@@ -1486,7 +1486,7 @@
         },
         {
           "row": 279,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 366,
@@ -2266,7 +2266,7 @@
         },
         {
           "row": 5709,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 5710,
@@ -2686,7 +2686,7 @@
         },
         {
           "row": 5880,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 5881,
@@ -3074,7 +3074,7 @@
         },
         {
           "row": 6192,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 6193,
@@ -3102,7 +3102,7 @@
         },
         {
           "row": 6200,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 6203,
@@ -3214,7 +3214,7 @@
         },
         {
           "row": 6245,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 6246,
@@ -3362,7 +3362,7 @@
         },
         {
           "row": 6305,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 6307,
@@ -3546,7 +3546,7 @@
         },
         {
           "row": 6432,
-          "quantity": 4
+          "quantity": 150
         },
         {
           "row": 6433,
@@ -3609,7 +3609,7 @@
     {
       "name": "30T",
       "column": 29,
-      "total": 921.9649,
+      "total": 2073.9648,
       "days": [
         {
           "row": 24,
@@ -3689,7 +3689,7 @@
         },
         {
           "row": 279,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 303,
@@ -4185,7 +4185,7 @@
         },
         {
           "row": 5709,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 5711,
@@ -4253,7 +4253,7 @@
         },
         {
           "row": 5880,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 5887,
@@ -4349,7 +4349,7 @@
         },
         {
           "row": 6192,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 6196,
@@ -4365,7 +4365,7 @@
         },
         {
           "row": 6200,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 6205,
@@ -4409,7 +4409,7 @@
         },
         {
           "row": 6245,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 6255,
@@ -4433,7 +4433,7 @@
         },
         {
           "row": 6305,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 6306,
@@ -4493,7 +4493,7 @@
         },
         {
           "row": 6432,
-          "quantity": 6
+          "quantity": 150
         },
         {
           "row": 6436,
@@ -4504,7 +4504,7 @@
     {
       "name": "guindaste 12",
       "column": 32,
-      "total": 1259.2168,
+      "total": 2011.2168,
       "days": [
         {
           "row": 18,
@@ -4548,7 +4548,7 @@
         },
         {
           "row": 279,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 303,
@@ -5640,7 +5640,7 @@
         },
         {
           "row": 5709,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 5711,
@@ -5716,7 +5716,7 @@
         },
         {
           "row": 5880,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 5887,
@@ -5820,7 +5820,7 @@
         },
         {
           "row": 6192,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 6195,
@@ -5840,7 +5840,7 @@
         },
         {
           "row": 6200,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 6205,
@@ -5880,7 +5880,7 @@
         },
         {
           "row": 6245,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 6255,
@@ -5912,7 +5912,7 @@
         },
         {
           "row": 6305,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 6306,
@@ -5988,7 +5988,7 @@
         },
         {
           "row": 6432,
-          "quantity": 6
+          "quantity": 100
         },
         {
           "row": 6434,

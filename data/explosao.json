@@ -11280,17 +11280,17 @@
         "PED 01/2027": 0
       },
       "demands": {
-        "DEM 10/2026": 36,
-        "DEM 11/2026": 40,
-        "DEM 12/2026": 4,
+        "DEM 10/2026": 1350,
+        "DEM 11/2026": 1500,
+        "DEM 12/2026": 150,
         "DEM 01/2026": 0,
         "DEM 02/2026": 0,
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 5964,
-        "DEM 11/2026": 25960,
-        "DEM 12/2026": 9996,
+        "DEM 10/2026": 4650,
+        "DEM 11/2026": 24500,
+        "DEM 12/2026": 9850,
         "DEM 01/2026": 0
       },
       "obtention": [
@@ -232771,7 +232771,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 100,
         "stock": 6000,
         "demand": 0
       },
@@ -233817,10 +233817,10 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0,
-        "_shifted_quantity": "4"
+        "_shifted_quantity": "150"
       },
       {
         "code": "01.02.01.0000000075",
@@ -235455,7 +235455,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -238525,7 +238525,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 2,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -240074,7 +240074,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 2,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -241721,7 +241721,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 6,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -243081,7 +243081,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -244637,7 +244637,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 5,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -260937,7 +260937,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -262227,7 +262227,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 4,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -264429,7 +264429,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 6,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
@@ -265243,7 +265243,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 2,
+        "quantity": 100,
         "stock": 6000,
         "demand": 0
       },
@@ -267478,7 +267478,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 6,
+        "quantity": 100,
         "stock": 6000,
         "demand": 0
       },
@@ -269405,7 +269405,7 @@
       {
         "code": "01.02.02.0000000012",
         "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
-        "quantity": 2,
+        "quantity": 150,
         "stock": 6000,
         "demand": 0
       },
