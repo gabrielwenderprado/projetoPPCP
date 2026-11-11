@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-11-10",
+  "generatedAt": "2026-11-11",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 6000,
+      "stock": 3500,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 0,
+      "stock": 1600,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -73,7 +73,7 @@
       "code": "01.02.01.0000000059",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 5648,
+      "stock": 5248,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 4194,
+      "stock": 2194,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -208,7 +208,7 @@
       "code": "01.02.03.0000000029",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 388,
+      "stock": 188,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 9700,
+      "stock": 9300,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 500,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -778,7 +778,7 @@
       "code": "01.12.07.0000000005",
       "description": "PEGA MAO - PLASTICO",
       "unit": "UN",
-      "stock": 550,
+      "stock": 650,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -853,7 +853,7 @@
       "code": "02.01.03.0000085221",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LATERAL",
       "unit": "UN",
-      "stock": 0,
+      "stock": 10,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -2053,7 +2053,7 @@
       "code": "02.01.03.0000085192",
       "description": "FORRO PORTA DIREITA",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2068,7 +2068,7 @@
       "code": "02.01.03.0000085195",
       "description": "FORRO PORTA ESQUERDA",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2323,7 +2323,7 @@
       "code": "02.01.03.0000085222",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LE FR",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2953,7 +2953,7 @@
       "code": "02.01.03.0000085315",
       "description": "FORRO TETO CABINE 6L WC",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2968,7 +2968,7 @@
       "code": "02.01.03.0000085316",
       "description": "FORRO TETO 2 CABINE 6L WC",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2983,7 +2983,7 @@
       "code": "02.01.03.0000085317",
       "description": "FORRO TETO BANHEIRO CABINE 6L WC",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -4033,7 +4033,7 @@
       "code": "02.01.03.0000085223",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL DIREITO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4048,7 +4048,7 @@
       "code": "02.01.03.0000085224",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL ESQUERDO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4063,7 +4063,7 @@
       "code": "02.01.03.0000085225",
       "description": "PISO DE BORRACHA PADRÃO MOEDA BANHEIRO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4078,7 +4078,7 @@
       "code": "02.01.03.0000085227",
       "description": "FORRO PORTA BANHEIRO",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,

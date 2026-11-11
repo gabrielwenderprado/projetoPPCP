@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
   "sourceSheet": "Programacao",
-  "generatedAt": "2026-11-10",
+  "generatedAt": "2026-11-11",
   "columns": "AA:AF",
   "models": [
     {
@@ -1442,7 +1442,7 @@
     {
       "name": "10L",
       "column": 28,
-      "total": 3526.702,
+      "total": 3528.702,
       "days": [
         {
           "row": 10,
@@ -1747,6 +1747,10 @@
         {
           "row": 1302,
           "quantity": 10
+        },
+        {
+          "row": 1316,
+          "quantity": 2
         },
         {
           "row": 1318,
@@ -3609,7 +3613,7 @@
     {
       "name": "30T",
       "column": 29,
-      "total": 2073.9648,
+      "total": 2075.9648,
       "days": [
         {
           "row": 24,
@@ -3873,6 +3877,10 @@
         },
         {
           "row": 1531,
+          "quantity": 2
+        },
+        {
+          "row": 1556,
           "quantity": 2
         },
         {
