@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-12.11.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-11-11",
+  "generatedAt": "2026-11-12",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -482,7 +482,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 1319,
+      "stock": 1309,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3290,7 +3290,7 @@
       "code": "01.02.01.0000000240",
       "description": "PINO DE CENTRO 3/8\"(9,52MM) X 1,50 X 3\"(76,20MM) CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 800,
+      "stock": 1256,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 233,
+      "stock": 231,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7502,7 +7502,7 @@
       "code": "02.03.01.0000085110",
       "description": "PINO SUPERIOR NIVELAMENTO",
       "unit": "UN",
-      "stock": 36,
+      "stock": 31,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,

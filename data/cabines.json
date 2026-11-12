@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-10.11.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-12.11.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-11-11",
+  "generatedAt": "2026-11-12",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -43,7 +43,7 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 3500,
+      "stock": 1500,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
@@ -88,7 +88,7 @@
       "code": "01.02.02.0000000010",
       "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 2194,
+      "stock": 1264,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -298,7 +298,7 @@
       "code": "01.02.05.0000000016",
       "description": "REBITE ROSCADO CABEÇA PLANA M8 X 18,5MM BICROMATIZADO",
       "unit": "UN",
-      "stock": 5000,
+      "stock": 4800,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 10,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 0,
+      "stock": 6000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 14255.3914,
+      "stock": 30280.3914,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1693,7 +1693,7 @@
       "code": "01.15.04.0000000077",
       "description": "KIT PORTEIRO ELETRONICO",
       "unit": "UN",
-      "stock": 40,
+      "stock": 110,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
