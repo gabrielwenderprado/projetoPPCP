@@ -1037,7 +1037,7 @@ body.dark-theme .progressive-table .data-table td:last-child { background: #0d20
 body.dark-theme .progressive-table .data-table thead th:last-child { background: #102a45; }
 body.dark-theme .progressive-table .data-table tbody tr:hover td:last-child { background: #153858; }
 body.dark-theme .simulation-section-label > span { background: #153858; color: #a9d9fa; }
-body.dark-theme .sim-model-option { background: #e7f3ff;; border-color: #294763; color: #dce8f5; }
+body.dark-theme .sim-model-option { background: #102a45; border-color: #294763; color: #dce8f5; }
 body.dark-theme .sim-model-option:hover { background: #153858; }
 body.dark-theme .sim-model-option:has(input[type="checkbox"]:checked) { background: #16476a; border-color: #4d9bd4; }
 body.dark-theme .sim-model-check i { background: #0a1a2d; border-color: #55718d; }

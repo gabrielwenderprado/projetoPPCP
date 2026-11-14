@@ -1,9 +1,9 @@
-const CACHE_NAME = 'dashboard-estoque-v19-tema-natalino';
+const CACHE_NAME = 'dashboard-estoque-v20-niguri-plano-anual';
 const APP_FILES = [
-  './', './index.html', './assets/app.js?v=20261110-christmas-theme-v21', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
+  './', './index.html', './assets/app.js?v=20261114-plan-anual-niguri-v22', './assets/styles.css', './assets/pdf.min.mjs', './assets/pdf.worker.min.mjs',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
   './data/explosao.json', './data/mapa-produtivo.json', './data/plano-mes.json', './data/programacao-modelos.json', './data/chaparias.json',
-  './data/cabines.json', './data/pinos.json', './data/cilindros.json',
+  './data/cabines.json', './data/pinos.json', './data/cilindros.json', './data/plano-anual.json',
   './data/historico-estoque.json', './data/consumiveis.json'
 ];
 self.addEventListener('install', event => {

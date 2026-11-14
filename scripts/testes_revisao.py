@@ -146,9 +146,9 @@ check(98, "parser lê todas as colunas e modelos reconhecidos", len(plano.get("p
 annual = json.loads((ROOT / "data/plano-anual.json").read_text(encoding="utf-8"))
 niguri_plan = js[js.find("function modelNiguriPlanEntries") : js.find("function modelNiguriRows")]
 check(99, "Plano Anual preserva data diária e estrutura de cada EN", bool(annual.get("rows")) and all(re.fullmatch(r"\d{4}-\d{2}-\d{2}", row.get("data", "")) and row.get("estrutura") for row in annual["rows"]))
-check(100, "Plano Anual inclui guindastes com estrutura compatível", all(any(row.get("estrutura") == model for row in annual.get("rows", [])) for model in ("guin-16T", "guin-25T", "guin-45", "21T", "30-T", "7T")))
-check(101, "Plano Anual lista produtos de guindaste sem estrutura compatível", bool(annual.get("unmatchedCraneProducts")))
-check(102, "NIGURI usa Plano Mês e mapeia modelos para estrutura", "DATA?.planMonth?.models" in niguri_plan and "DATA?.planAnnual?.rows" not in niguri_plan and "modelNiguriStructureName(entry.modelo) === structureName" in niguri_plan)
+check(100, "Plano Anual inclui guindastes com estrutura compatível", all(any(row.get("estrutura") == model for row in annual.get("rows", [])) for model in ("guin-16T", "guin-25T", "21T", "30-T", "7T")))
+check(101, "Plano Anual sinaliza variante 45.5T sem BOM exacta", any("45.5T TRAVE 4H 3M" in entry.get("produto", "") for entry in annual.get("unmatchedCraneProducts", [])) and "modelNiguriUnmatchedCraneProducts(model)" in js)
+check(102, "NIGURI usa ENs e datas do Plano Anual, mapeadas por estrutura", "DATA?.planAnnual?.rows" in niguri_plan and "DATA?.planMonth?.models" not in niguri_plan and "modelNiguriStructureName(plannedStructure) === structureName" in niguri_plan)
 check(103, "parser PLANO MES reconhece colunas e linhas acrescentadas", run([sys.executable, "-B", "scripts/testes_plano_mes_dinamico.py"]))
 check(104, "testes de integração do NIGURI por data e guindaste passam", run(["node", "scripts/testes_model_niguri_v9.js"]))
 check(105, "teste de integração de demanda PLANO MES no Estoque passa", run(["node", "scripts/testes_demanda_plano_mes.js"]))
