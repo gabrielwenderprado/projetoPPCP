@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-13.11.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-11-13",
+  "generatedAt": "2026-11-14",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 1200,
+      "stock": 800,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -208,7 +208,7 @@
       "code": "01.02.03.0000000029",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 188,
+      "stock": 688,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 30,
@@ -283,7 +283,7 @@
       "code": "01.02.03.0000000040",
       "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 160,
+      "stock": 2160,
       "modelNeeds": {
         "4 LUGAR": 12,
         "6 LUGAR": 16,
@@ -853,7 +853,7 @@
       "code": "02.01.03.0000085221",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LATERAL",
       "unit": "UN",
-      "stock": 10,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -928,7 +928,7 @@
       "code": "01.15.02.0000000126",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 520X550",
       "unit": "UN",
-      "stock": 67,
+      "stock": 87,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -943,7 +943,7 @@
       "code": "01.15.02.0000000152",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 550X250",
       "unit": "UN",
-      "stock": 44,
+      "stock": 64,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
@@ -1633,7 +1633,7 @@
       "code": "01.15.02.0000000125",
       "description": "JANELA CORREDIÇA PU PRETA COM MOLDURA COLADA 1300X365",
       "unit": "UN",
-      "stock": 34,
+      "stock": 44,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2053,7 +2053,7 @@
       "code": "02.01.03.0000085192",
       "description": "FORRO PORTA DIREITA",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2068,7 +2068,7 @@
       "code": "02.01.03.0000085195",
       "description": "FORRO PORTA ESQUERDA",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2323,7 +2323,7 @@
       "code": "02.01.03.0000085222",
       "description": "PISO DE BORRACHA PADRÃO MOEDA LE FR",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2428,7 +2428,7 @@
       "code": "01.15.02.0000000143",
       "description": "ASSENTO DO BANCO PARA 2 LUGARES",
       "unit": "UN",
-      "stock": 27,
+      "stock": 15,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2443,7 +2443,7 @@
       "code": "01.15.02.0000000144",
       "description": "ENCOSTO DO BANCO PARA 2 LUGARES",
       "unit": "UN",
-      "stock": 27,
+      "stock": 15,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2953,7 +2953,7 @@
       "code": "02.01.03.0000085315",
       "description": "FORRO TETO CABINE 6L WC",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2968,7 +2968,7 @@
       "code": "02.01.03.0000085316",
       "description": "FORRO TETO 2 CABINE 6L WC",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2983,7 +2983,7 @@
       "code": "02.01.03.0000085317",
       "description": "FORRO TETO BANHEIRO CABINE 6L WC",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -4033,7 +4033,7 @@
       "code": "02.01.03.0000085223",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL DIREITO",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4048,7 +4048,7 @@
       "code": "02.01.03.0000085224",
       "description": "PISO DE BORRACHA PADRÃO MOEDA CENTRAL ESQUERDO",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4063,7 +4063,7 @@
       "code": "02.01.03.0000085225",
       "description": "PISO DE BORRACHA PADRÃO MOEDA BANHEIRO",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
@@ -4078,7 +4078,7 @@
       "code": "02.01.03.0000085227",
       "description": "FORRO PORTA BANHEIRO",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,

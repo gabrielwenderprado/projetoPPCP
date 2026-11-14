@@ -1,7 +1,7 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-13.11.xlsm",
   "sourceSheet": "planoAnual",
-  "generatedAt": "2026-11-13",
+  "generatedAt": "2026-11-14",
   "columns": {
     "model": "C",
     "date": "D"
@@ -17,6 +17,9 @@
       "11/2026": 2
     },
     "10S": {
+      "01/2027": 32,
+      "02/2027": 32,
+      "03/2027": 32,
       "11/2026": 24,
       "12/2026": 11
     },
@@ -29,6 +32,9 @@
       "12/2026": 1
     },
     "13LDI": {
+      "01/2027": 54,
+      "02/2027": 54,
+      "03/2027": 54,
       "11/2026": 17,
       "12/2026": 52
     },
@@ -50,8 +56,8 @@
     "7T": {}
   },
   "products": {
-    "SKYCITY 13 LDI": 66,
-    "SKYCITY 10 S": 34,
+    "SKYCITY 13 LDI": 228,
+    "SKYCITY 10 S": 130,
     "GUINDASTE NEXT NX 16.5T TRAVE 3H 2M": 43,
     "SKYCITY 10 S - TORRE ALTA": 1,
     "SKYCITY 10 L": 39,
@@ -2298,6 +2304,2328 @@
       "estrutura": "guin-16T",
       "mes": "12/2026",
       "data": "2026-12-30"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-18"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "01/2027",
+      "data": "2027-01-25"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "02/2027",
+      "data": "2027-02-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00000",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 10 S",
+      "modelo": "10S",
+      "estrutura": "10S",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-08"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
+    },
+    {
+      "pedido": "EN00001",
+      "cliente": "ESTOQUE 2027",
+      "produto": "SKYCITY 13 LDI",
+      "modelo": "13LDI",
+      "estrutura": "13ldi-46kv",
+      "mes": "03/2027",
+      "data": "2027-03-15"
     }
   ]
 }
