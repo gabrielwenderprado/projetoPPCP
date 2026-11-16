@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-13.11.xlsm",
-  "generatedAt": "2026-11-14",
+  "sourceFile": "Cópia de EXPLOSAO-16.11.2026.xlsm",
+  "generatedAt": "2026-11-16",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -289,7 +289,7 @@
         {
           "code": "04.02.01.0000000107",
           "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
-          "nextStock": 911,
+          "nextStock": 791,
           "quantityPerMachine": 1.5,
           "calferStock": 0,
           "row": 41
@@ -816,7 +816,7 @@
       "models": [
         "13LDI"
       ],
-      "nextStock": 911,
+      "nextStock": 791,
       "calferStock": 0
     },
     {
