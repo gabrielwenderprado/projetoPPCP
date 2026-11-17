@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-16.11.2026.xlsm",
-  "generatedAt": "2026-11-16",
+  "sourceFile": "Cópia de EXPLOSAO-17.11.2026.xlsm",
+  "generatedAt": "2026-11-17",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -15,7 +15,7 @@
           "description": "FIBRA DO BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYRITZ 10L",
           "nextStock": 12,
           "quantityPerMachine": 1,
-          "calferStock": 9,
+          "calferStock": 15,
           "row": 4
         },
         {
@@ -23,7 +23,7 @@
           "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
           "nextStock": 67,
           "quantityPerMachine": 1,
-          "calferStock": 25,
+          "calferStock": 0,
           "row": 5
         },
         {
@@ -31,7 +31,7 @@
           "description": "PINO DA ARTICULAÇAO DO CILINDRO COM BRAÇO SUPERIOR SKYRITZ 10L",
           "nextStock": 14,
           "quantityPerMachine": 1,
-          "calferStock": 32,
+          "calferStock": 26,
           "row": 6
         },
         {
@@ -39,15 +39,15 @@
           "description": "PINO DE ARTICULAÇAO DO BRAÇO INFERIOR COM O SUPERIOR",
           "nextStock": 38,
           "quantityPerMachine": 1,
-          "calferStock": 16,
+          "calferStock": 4,
           "row": 7
         },
         {
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
-          "nextStock": 87,
+          "nextStock": 82,
           "quantityPerMachine": 1,
-          "calferStock": 10,
+          "calferStock": 2,
           "row": 8
         },
         {
@@ -55,7 +55,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE 30 X 34 X 30MM",
           "nextStock": 0,
           "quantityPerMachine": 12,
-          "calferStock": 130,
+          "calferStock": 76,
           "row": 9
         }
       ]
@@ -69,7 +69,7 @@
           "description": "TUBO FIBRA BRAÇO SUPERIOR SKYCITY 10",
           "nextStock": 12,
           "quantityPerMachine": 1,
-          "calferStock": 8,
+          "calferStock": 34,
           "row": 12
         },
         {
@@ -77,7 +77,7 @@
           "description": "TUBO SEÇÃO QUADRADA PULTRUDADO",
           "nextStock": 15,
           "quantityPerMachine": 1,
-          "calferStock": 14,
+          "calferStock": 0,
           "row": 13
         },
         {
@@ -85,7 +85,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "nextStock": 1728,
           "quantityPerMachine": 16,
-          "calferStock": 432,
+          "calferStock": 800,
           "row": 14
         },
         {
@@ -93,7 +93,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
           "nextStock": 409,
           "quantityPerMachine": 8,
-          "calferStock": 416,
+          "calferStock": 437,
           "row": 15
         },
         {
@@ -101,7 +101,7 @@
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
           "nextStock": 1599,
           "quantityPerMachine": 13,
-          "calferStock": -77,
+          "calferStock": 20,
           "row": 16
         },
         {
@@ -109,7 +109,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 25MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
           "nextStock": 3055,
           "quantityPerMachine": 13,
-          "calferStock": 501,
+          "calferStock": 550,
           "row": 17
         },
         {
@@ -117,7 +117,7 @@
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
           "nextStock": 0,
           "quantityPerMachine": 13,
-          "calferStock": 223,
+          "calferStock": 0,
           "row": 18
         },
         {
@@ -125,15 +125,15 @@
           "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M24 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
           "nextStock": 2883,
           "quantityPerMachine": 1,
-          "calferStock": 377,
+          "calferStock": 65,
           "row": 19
         },
         {
           "code": "01.02.02.0000000027",
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 3538,
+          "nextStock": 1825,
           "quantityPerMachine": 1,
-          "calferStock": 971,
+          "calferStock": 70,
           "row": 20
         },
         {
@@ -141,7 +141,7 @@
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
           "nextStock": 82,
           "quantityPerMachine": 1,
-          "calferStock": 16,
+          "calferStock": 13,
           "row": 21
         },
         {
@@ -149,7 +149,7 @@
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
           "nextStock": 237,
           "quantityPerMachine": 2,
-          "calferStock": 42,
+          "calferStock": 7,
           "row": 22
         },
         {
@@ -157,7 +157,7 @@
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
           "nextStock": 297,
           "quantityPerMachine": 2,
-          "calferStock": 32,
+          "calferStock": 38,
           "row": 23
         },
         {
@@ -165,7 +165,7 @@
           "description": "PINO BASTAO TENSOR E ARTICULACAO",
           "nextStock": 156,
           "quantityPerMachine": 2,
-          "calferStock": 32,
+          "calferStock": 6,
           "row": 24
         },
         {
@@ -173,7 +173,7 @@
           "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
           "nextStock": 192,
           "quantityPerMachine": 2,
-          "calferStock": 32,
+          "calferStock": 21,
           "row": 25
         },
         {
@@ -181,7 +181,7 @@
           "description": "PINO DA ARTICULACAO DO BRACO INFERIOR COM TORRE",
           "nextStock": 53,
           "quantityPerMachine": 1,
-          "calferStock": 42,
+          "calferStock": 30,
           "row": 26
         }
       ]
@@ -203,7 +203,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
           "nextStock": 2644,
           "quantityPerMachine": 6,
-          "calferStock": 600,
+          "calferStock": 450,
           "row": 30
         },
         {
@@ -211,7 +211,7 @@
           "description": "PINO FIX. CRUZETA EXTERNA - AS",
           "nextStock": 341,
           "quantityPerMachine": 2,
-          "calferStock": 70,
+          "calferStock": 130,
           "row": 31
         },
         {
@@ -219,7 +219,7 @@
           "description": "PINO FIX. CRUZETA INTERNA - AS",
           "nextStock": 264,
           "quantityPerMachine": 1,
-          "calferStock": 12,
+          "calferStock": 10,
           "row": 32
         },
         {
@@ -227,7 +227,7 @@
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
           "nextStock": 364,
           "quantityPerMachine": 1,
-          "calferStock": 40,
+          "calferStock": 58,
           "row": 33
         },
         {
@@ -243,7 +243,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 30MM",
           "nextStock": 5682,
           "quantityPerMachine": 5,
-          "calferStock": 1000,
+          "calferStock": 1500,
           "row": 35
         },
         {
@@ -251,7 +251,7 @@
           "description": "ARRA ALLEN MÉDIA M30 X 56 X 48 DIN 125 A",
           "nextStock": 1269,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 80,
           "row": 36
         },
         {
@@ -259,7 +259,7 @@
           "description": "PO SX AT ALTA M30 X 2,00 CL. 8.8 DIN 982",
           "nextStock": 3590,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 50,
           "row": 37
         },
         {
@@ -267,7 +267,7 @@
           "description": "CILINDRO HIDRÁULICO SUPERIOR SKYRIZ 13/L/D/LDI",
           "nextStock": 228,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 75,
           "row": 38
         },
         {
@@ -275,7 +275,7 @@
           "description": "FIBRA DO BRAÇO INFERIOR ISOLADO DO EQUIPAMENTO SKYRIZ 13LDI",
           "nextStock": 0,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 26,
           "row": 39
         },
         {
@@ -283,15 +283,15 @@
           "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYRIZ 13",
           "nextStock": 11,
           "quantityPerMachine": 1,
-          "calferStock": 10,
+          "calferStock": 22,
           "row": 40
         },
         {
           "code": "04.02.01.0000000107",
           "description": "ADESIVO PU 55 PARA-BRISA SACHE 600ML",
-          "nextStock": 791,
+          "nextStock": 779,
           "quantityPerMachine": 1.5,
-          "calferStock": 0,
+          "calferStock": 58,
           "row": 41
         },
         {
@@ -299,7 +299,7 @@
           "description": "PINO ENGRENAGEM DE APOIO - AS",
           "nextStock": 658,
           "quantityPerMachine": 1,
-          "calferStock": 16,
+          "calferStock": 10,
           "row": 42
         },
         {
@@ -307,7 +307,7 @@
           "description": "ENGRENAGEM ARTICULAÇÃO LANÇAS",
           "nextStock": 174,
           "quantityPerMachine": 1,
-          "calferStock": 50,
+          "calferStock": 88,
           "row": 43
         },
         {
@@ -315,7 +315,7 @@
           "description": "ENGRENAGEM APOIO",
           "nextStock": 1360,
           "quantityPerMachine": 2,
-          "calferStock": 200,
+          "calferStock": 164,
           "row": 44
         },
         {
@@ -323,7 +323,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILÍNDRICA SEXTAVADO INTERNO M10 X 1,5 X 20MM",
           "nextStock": 3344,
           "quantityPerMachine": 1,
-          "calferStock": 0,
+          "calferStock": 200,
           "row": 45
         },
         {
@@ -331,7 +331,7 @@
           "description": "PINO ARTICULAÇÃO LANÇAS - AS",
           "nextStock": 273,
           "quantityPerMachine": 1,
-          "calferStock": 13,
+          "calferStock": 14,
           "row": 46
         },
         {
@@ -339,7 +339,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 30 X 34 X 20 - QSM-3034-20",
           "nextStock": 1298,
           "quantityPerMachine": 2,
-          "calferStock": 0,
+          "calferStock": 100,
           "row": 47
         },
         {
@@ -347,7 +347,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 40 X 44 X 20 - QSM-4044-20",
           "nextStock": 3006,
           "quantityPerMachine": 2,
-          "calferStock": 0,
+          "calferStock": 140,
           "row": 48
         },
         {
@@ -355,7 +355,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE SEM FLANGE 25,4 X 28 X 12,7 - GS1-1618-08",
           "nextStock": 1520,
           "quantityPerMachine": 1,
-          "calferStock": 150,
+          "calferStock": 164,
           "row": 49
         }
       ]
@@ -369,7 +369,7 @@
           "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M24 X 2,0MM CLASSE 8 ZINCADO BRANCO DIN 982",
           "nextStock": 1535,
           "quantityPerMachine": 2,
-          "calferStock": -4,
+          "calferStock": 65,
           "row": 52
         },
         {
@@ -377,15 +377,15 @@
           "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M30 X 2,0MM CLASSE 8 ZINCADO BRANCO DIN 985",
           "nextStock": 3590,
           "quantityPerMachine": 1,
-          "calferStock": -2,
+          "calferStock": 80,
           "row": 53
         },
         {
           "code": "01.02.02.0000000027",
           "description": "ARRUELA LISA MEDIA M24 X 44 X 4,00MM ZINCADO BRANCO DIN 125 A",
-          "nextStock": 3538,
+          "nextStock": 1825,
           "quantityPerMachine": 3,
-          "calferStock": 94,
+          "calferStock": 70,
           "row": 54
         },
         {
@@ -393,7 +393,7 @@
           "description": "ARRUELA LISA MEDIA M30 X 56 X 4,00MM ZINCADO BRANCO DIN 125 A",
           "nextStock": 1269,
           "quantityPerMachine": 1,
-          "calferStock": -2,
+          "calferStock": 50,
           "row": 55
         },
         {
@@ -401,7 +401,7 @@
           "description": "ARRUELA LISA MEDIA M10 X 21 X 2,00MM ZINCADO BRANCO DIN 125 A",
           "nextStock": 0,
           "quantityPerMachine": 5,
-          "calferStock": -10,
+          "calferStock": 0,
           "row": 56
         },
         {
@@ -409,7 +409,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
           "nextStock": 5682,
           "quantityPerMachine": 5,
-          "calferStock": 990,
+          "calferStock": 1500,
           "row": 57
         },
         {
@@ -417,7 +417,7 @@
           "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 20MM CLASSE 10.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN",
           "nextStock": 3344,
           "quantityPerMachine": 1,
-          "calferStock": 298,
+          "calferStock": 200,
           "row": 58
         },
         {
@@ -425,7 +425,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
           "nextStock": 1728,
           "quantityPerMachine": 10,
-          "calferStock": 780,
+          "calferStock": 800,
           "row": 59
         },
         {
@@ -433,7 +433,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
           "nextStock": 2644,
           "quantityPerMachine": 6,
-          "calferStock": 588,
+          "calferStock": 450,
           "row": 60
         },
         {
@@ -441,7 +441,7 @@
           "description": "ENGRENAGEM ARTICULAÇÃO LANÇAS",
           "nextStock": 174,
           "quantityPerMachine": 1,
-          "calferStock": -2,
+          "calferStock": 88,
           "row": 61
         },
         {
@@ -449,7 +449,7 @@
           "description": "PINO ARTICULAÇÃO BRAÇO INF. - AS",
           "nextStock": 364,
           "quantityPerMachine": 1,
-          "calferStock": 38,
+          "calferStock": 58,
           "row": 62
         },
         {
@@ -465,7 +465,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE LISA 30 X 34 X 20",
           "nextStock": 1298,
           "quantityPerMachine": 2,
-          "calferStock": -4,
+          "calferStock": 100,
           "row": 64
         },
         {
@@ -473,7 +473,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE LISA 40 X 44 X 20",
           "nextStock": 3006,
           "quantityPerMachine": 2,
-          "calferStock": -4,
+          "calferStock": 140,
           "row": 65
         },
         {
@@ -481,7 +481,7 @@
           "description": "BUCHA AUTOLUBRIFICANTE LISA 25,4 X 28 X 12,7",
           "nextStock": 1520,
           "quantityPerMachine": 1,
-          "calferStock": 148,
+          "calferStock": 164,
           "row": 66
         },
         {
@@ -489,7 +489,7 @@
           "description": "PINO FIX. CRUZETA EXTERNA - AS",
           "nextStock": 1,
           "quantityPerMachine": 2,
-          "calferStock": -4,
+          "calferStock": 0,
           "row": 67
         },
         {
@@ -497,15 +497,15 @@
           "description": "PINO ARTIC. LANÇAS - AS",
           "nextStock": 1,
           "quantityPerMachine": 1,
-          "calferStock": -2,
+          "calferStock": 0,
           "row": 68
         },
         {
           "code": "01.01.10.0000000014",
           "description": "CILINDRO HIDRAULICO SUPERIOR 10HDOC",
-          "nextStock": 2,
+          "nextStock": 5,
           "quantityPerMachine": 1,
-          "calferStock": -2,
+          "calferStock": 0,
           "row": 69
         },
         {
@@ -513,7 +513,7 @@
           "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYCITY 10 HDOC",
           "nextStock": 0,
           "quantityPerMachine": 1,
-          "calferStock": -2,
+          "calferStock": 0,
           "row": 70
         }
       ]
@@ -527,7 +527,7 @@
         "10L"
       ],
       "nextStock": 12,
-      "calferStock": 9
+      "calferStock": 15
     },
     {
       "code": "01.01.10.0000074195",
@@ -536,7 +536,7 @@
         "10L"
       ],
       "nextStock": 67,
-      "calferStock": 25
+      "calferStock": 0
     },
     {
       "code": "02.03.01.0000069406",
@@ -545,7 +545,7 @@
         "10L"
       ],
       "nextStock": 14,
-      "calferStock": 32
+      "calferStock": 26
     },
     {
       "code": "02.03.01.0000069418",
@@ -554,7 +554,7 @@
         "10L"
       ],
       "nextStock": 38,
-      "calferStock": 16
+      "calferStock": 4
     },
     {
       "code": "02.03.01.0000069405",
@@ -562,8 +562,8 @@
       "models": [
         "10L"
       ],
-      "nextStock": 87,
-      "calferStock": 10
+      "nextStock": 82,
+      "calferStock": 2
     },
     {
       "code": "01.01.14.0000071344",
@@ -572,7 +572,7 @@
         "10L"
       ],
       "nextStock": 0,
-      "calferStock": 130
+      "calferStock": 76
     },
     {
       "code": "02.01.03.0000085070",
@@ -581,7 +581,7 @@
         "10S"
       ],
       "nextStock": 12,
-      "calferStock": 8
+      "calferStock": 34
     },
     {
       "code": "02.01.03.0000071287",
@@ -590,7 +590,7 @@
         "10S"
       ],
       "nextStock": 15,
-      "calferStock": 14
+      "calferStock": 0
     },
     {
       "code": "01.01.14.0000000036",
@@ -601,7 +601,7 @@
         "10HDOC"
       ],
       "nextStock": 1728,
-      "calferStock": 780
+      "calferStock": 800
     },
     {
       "code": "01.01.14.0000000046",
@@ -610,7 +610,7 @@
         "10S"
       ],
       "nextStock": 409,
-      "calferStock": 416
+      "calferStock": 437
     },
     {
       "code": "02.03.01.0000069578",
@@ -619,7 +619,7 @@
         "10S"
       ],
       "nextStock": 1599,
-      "calferStock": -77
+      "calferStock": 20
     },
     {
       "code": "01.02.01.0000000208",
@@ -628,7 +628,7 @@
         "10S"
       ],
       "nextStock": 3055,
-      "calferStock": 501
+      "calferStock": 550
     },
     {
       "code": "01.02.02.0000000010",
@@ -639,7 +639,7 @@
         "10HDOC"
       ],
       "nextStock": 0,
-      "calferStock": -10
+      "calferStock": 0
     },
     {
       "code": "01.02.03.0000000044",
@@ -648,7 +648,7 @@
         "10S"
       ],
       "nextStock": 2883,
-      "calferStock": 377
+      "calferStock": 65
     },
     {
       "code": "01.02.02.0000000027",
@@ -657,8 +657,8 @@
         "10S",
         "10HDOC"
       ],
-      "nextStock": 3538,
-      "calferStock": 94
+      "nextStock": 1825,
+      "calferStock": 70
     },
     {
       "code": "02.03.01.0000085012",
@@ -667,7 +667,7 @@
         "10S"
       ],
       "nextStock": 82,
-      "calferStock": 16
+      "calferStock": 13
     },
     {
       "code": "02.03.01.0000084348",
@@ -676,7 +676,7 @@
         "10S"
       ],
       "nextStock": 237,
-      "calferStock": 42
+      "calferStock": 7
     },
     {
       "code": "02.03.01.0000084349",
@@ -685,7 +685,7 @@
         "10S"
       ],
       "nextStock": 297,
-      "calferStock": 32
+      "calferStock": 38
     },
     {
       "code": "02.03.01.0000084356",
@@ -694,7 +694,7 @@
         "10S"
       ],
       "nextStock": 156,
-      "calferStock": 32
+      "calferStock": 6
     },
     {
       "code": "02.03.01.0000084355",
@@ -703,7 +703,7 @@
         "10S"
       ],
       "nextStock": 192,
-      "calferStock": 32
+      "calferStock": 21
     },
     {
       "code": "02.03.01.0000084354",
@@ -712,7 +712,7 @@
         "10S"
       ],
       "nextStock": 53,
-      "calferStock": 42
+      "calferStock": 30
     },
     {
       "code": "01.01.14.0000000048",
@@ -722,7 +722,7 @@
         "10HDOC"
       ],
       "nextStock": 2644,
-      "calferStock": 588
+      "calferStock": 450
     },
     {
       "code": "02.02.01.0000083441",
@@ -731,7 +731,7 @@
         "13LDI"
       ],
       "nextStock": 341,
-      "calferStock": 70
+      "calferStock": 130
     },
     {
       "code": "02.02.01.0000086368",
@@ -751,7 +751,7 @@
         "10HDOC"
       ],
       "nextStock": 364,
-      "calferStock": 38
+      "calferStock": 58
     },
     {
       "code": "01.02.01.0000000144",
@@ -761,7 +761,7 @@
         "10HDOC"
       ],
       "nextStock": 5682,
-      "calferStock": 990
+      "calferStock": 1500
     },
     {
       "code": "01.02.02.0000000006",
@@ -771,7 +771,7 @@
         "10HDOC"
       ],
       "nextStock": 1269,
-      "calferStock": -2
+      "calferStock": 50
     },
     {
       "code": "01.02.03.0000000047",
@@ -781,7 +781,7 @@
         "10HDOC"
       ],
       "nextStock": 3590,
-      "calferStock": -2
+      "calferStock": 80
     },
     {
       "code": "01.01.10.0000084360",
@@ -790,7 +790,7 @@
         "13LDI"
       ],
       "nextStock": 228,
-      "calferStock": 0
+      "calferStock": 75
     },
     {
       "code": "02.01.03.0000066939",
@@ -799,7 +799,7 @@
         "13LDI"
       ],
       "nextStock": 0,
-      "calferStock": 0
+      "calferStock": 26
     },
     {
       "code": "02.01.03.0000082542",
@@ -808,7 +808,7 @@
         "13LDI"
       ],
       "nextStock": 11,
-      "calferStock": 10
+      "calferStock": 22
     },
     {
       "code": "04.02.01.0000000107",
@@ -816,8 +816,8 @@
       "models": [
         "13LDI"
       ],
-      "nextStock": 791,
-      "calferStock": 0
+      "nextStock": 779,
+      "calferStock": 58
     },
     {
       "code": "02.02.01.0000085283",
@@ -826,7 +826,7 @@
         "13LDI"
       ],
       "nextStock": 658,
-      "calferStock": 16
+      "calferStock": 10
     },
     {
       "code": "02.03.02.0000083460",
@@ -836,7 +836,7 @@
         "10HDOC"
       ],
       "nextStock": 174,
-      "calferStock": -2
+      "calferStock": 88
     },
     {
       "code": "02.03.03.0000083484",
@@ -845,7 +845,7 @@
         "13LDI"
       ],
       "nextStock": 1360,
-      "calferStock": 200
+      "calferStock": 164
     },
     {
       "code": "01.02.01.0000000199",
@@ -855,7 +855,7 @@
         "10HDOC"
       ],
       "nextStock": 3344,
-      "calferStock": 298
+      "calferStock": 200
     },
     {
       "code": "02.02.01.0000086369",
@@ -864,7 +864,7 @@
         "13LDI"
       ],
       "nextStock": 273,
-      "calferStock": 13
+      "calferStock": 14
     },
     {
       "code": "01.01.14.0000000050",
@@ -874,7 +874,7 @@
         "10HDOC"
       ],
       "nextStock": 1298,
-      "calferStock": -4
+      "calferStock": 100
     },
     {
       "code": "01.01.14.0000000051",
@@ -884,7 +884,7 @@
         "10HDOC"
       ],
       "nextStock": 3006,
-      "calferStock": -4
+      "calferStock": 140
     },
     {
       "code": "01.01.14.0000000052",
@@ -894,7 +894,7 @@
         "10HDOC"
       ],
       "nextStock": 1520,
-      "calferStock": 148
+      "calferStock": 164
     },
     {
       "code": "01.02.03.0000000042",
@@ -903,7 +903,7 @@
         "10HDOC"
       ],
       "nextStock": 1535,
-      "calferStock": -4
+      "calferStock": 65
     },
     {
       "code": "02.02.01.0000088251",
@@ -912,7 +912,7 @@
         "10HDOC"
       ],
       "nextStock": 1,
-      "calferStock": -4
+      "calferStock": 0
     },
     {
       "code": "02.02.01.0000088247",
@@ -921,7 +921,7 @@
         "10HDOC"
       ],
       "nextStock": 1,
-      "calferStock": -2
+      "calferStock": 0
     },
     {
       "code": "01.01.10.0000000014",
@@ -929,8 +929,8 @@
       "models": [
         "10HDOC"
       ],
-      "nextStock": 2,
-      "calferStock": -2
+      "nextStock": 5,
+      "calferStock": 0
     },
     {
       "code": "02.01.03.0000085379",
@@ -939,7 +939,7 @@
         "10HDOC"
       ],
       "nextStock": 0,
-      "calferStock": -2
+      "calferStock": 0
     }
   ],
   "meta": {
