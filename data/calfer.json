@@ -1,6 +1,6 @@
 {
   "sourceFile": "Cópia de EXPLOSAO-17.11.2026.xlsm",
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-18",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -45,7 +45,7 @@
         {
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
-          "nextStock": 82,
+          "nextStock": 79,
           "quantityPerMachine": 1,
           "calferStock": 2,
           "row": 8
@@ -99,7 +99,7 @@
         {
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-          "nextStock": 1599,
+          "nextStock": 1499,
           "quantityPerMachine": 13,
           "calferStock": 20,
           "row": 16
@@ -562,7 +562,7 @@
       "models": [
         "10L"
       ],
-      "nextStock": 82,
+      "nextStock": 79,
       "calferStock": 2
     },
     {
@@ -618,7 +618,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 1599,
+      "nextStock": 1499,
       "calferStock": 20
     },
     {
