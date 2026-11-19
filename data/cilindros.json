@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-17.11.2026.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-19.11.2026.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-11-18",
+  "generatedAt": "2026-11-19",
   "models": [
     "18LDDI",
     "13",
@@ -16,7 +16,7 @@
       "code": "01.01.10.0000018380",
       "description": "CILINDRO HIDRAULICO SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 627,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 2,
@@ -34,7 +34,7 @@
       "code": "01.01.10.0000079502",
       "description": "CILINDRO HIDRAULICO ESTABILIZADOR SKYCITY 13AT / 15",
       "unit": "UN",
-      "stock": 52,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -52,7 +52,7 @@
       "code": "01.01.10.0000087165",
       "description": "CILINDRO HIDRAULICO ESTABILIZADOR SKYCITY 18",
       "unit": "UN",
-      "stock": 12,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 4,
         "13": 0,
@@ -70,7 +70,7 @@
       "code": "01.01.10.0000071234",
       "description": "CILINDRO HIDRAULICO SAPATA SKYCITY",
       "unit": "UN",
-      "stock": 309,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -88,7 +88,7 @@
       "code": "01.01.10.0000083472",
       "description": "CILINDRO HIDRAULICO SUPERIOR 15LDDI",
       "unit": "UN",
-      "stock": 20,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -106,7 +106,7 @@
       "code": "01.01.10.0000000014",
       "description": "CILINDRO HIDRAULICO SUPERIOR 10HDOC",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -124,7 +124,7 @@
       "code": "01.01.10.0000074194",
       "description": "CILINDRO HIDRAULICO INFERIOR 10L",
       "unit": "UN",
-      "stock": 72,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -142,7 +142,7 @@
       "code": "01.01.10.0000074195",
       "description": "CILINDRO HIDRAULICO SUPERIOR 10L",
       "unit": "UN",
-      "stock": 67,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -160,7 +160,7 @@
       "code": "01.01.10.0000078125",
       "description": "CILINDRO HIDRAULICO EXTENSIVO SKYCITY 13AT",
       "unit": "UN",
-      "stock": 34,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -178,7 +178,7 @@
       "code": "01.01.10.0000078126",
       "description": "CILINDRO HIDRAULICO INFERIOR SKYCITY 13AT",
       "unit": "UN",
-      "stock": 27,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -196,7 +196,7 @@
       "code": "01.01.10.0000078127",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYCITY 13AT",
       "unit": "UN",
-      "stock": 28,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -214,7 +214,7 @@
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 63,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -232,7 +232,7 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 104,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -250,7 +250,7 @@
       "code": "01.01.10.0000083471",
       "description": "CILINDRO HIDRAULICO INFERIOR 15LDDI",
       "unit": "UN",
-      "stock": 14,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -268,7 +268,7 @@
       "code": "01.01.10.0000083972",
       "description": "CILINDRO HIDRAULICO NIVELAMENTO MESTRE SKYCITY 13AT",
       "unit": "UN",
-      "stock": 34,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -286,7 +286,7 @@
       "code": "01.01.10.0000083973",
       "description": "CILINDRO HIDRAULICO NIVELAMENTO ESCRAVO SKYCITY 13AT",
       "unit": "UN",
-      "stock": 36,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -304,7 +304,7 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 89,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -322,7 +322,7 @@
       "code": "01.01.10.0000084360",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYRITZ 13L/LD/LDI",
       "unit": "UN",
-      "stock": 228,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 1,
@@ -340,7 +340,7 @@
       "code": "01.01.10.0000084361",
       "description": "CILINDRO HIDRAULICO INFERIOR SKYRITZ 13L/LD/LDI",
       "unit": "UN",
-      "stock": 366,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 1,
@@ -358,7 +358,7 @@
       "code": "01.01.10.0000085184",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY 15",
       "unit": "UN",
-      "stock": 11,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 1,
         "13": 0,
@@ -376,7 +376,7 @@
       "code": "01.01.10.0000085209",
       "description": "CILINDRO HIDRAULICO SUPERIOR SKYCITY 18",
       "unit": "UN",
-      "stock": 5,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 1,
         "13": 0,
@@ -394,7 +394,7 @@
       "code": "01.01.10.0000085210",
       "description": "CILINDRO HIDRAULICO INFERIOR SKYCITY 18",
       "unit": "UN",
-      "stock": 3,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 1,
         "13": 0,
@@ -412,7 +412,7 @@
       "code": "01.01.10.0000085416",
       "description": "CILINDRO HIDRAULICO INFERIOR 10HDOC",
       "unit": "UN",
-      "stock": 16,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -430,7 +430,7 @@
       "code": "01.01.10.0000088643",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY 10HDOC",
       "unit": "UN",
-      "stock": 13,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
