@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-19.11.2026.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-23.11.2026.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-23",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -58,7 +58,7 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 0,
+      "stock": 5000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
@@ -73,7 +73,7 @@
       "code": "01.02.01.0000000059",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 30MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 5248,
+      "stock": 5948,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 58,
@@ -118,7 +118,7 @@
       "code": "01.02.01.0000000024",
       "description": "PARAFUSO SEXTAVADO AUTO PERFURANTE 1/4 X 1\" (6,35X1,75X25MM) ROSCA INTEIRA ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 4000,
+      "stock": 3600,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 45,
@@ -238,7 +238,7 @@
       "code": "01.06.03.0000000009",
       "description": "GUARNIÇAO DA PORTA (1 BULBO/BAIXA)",
       "unit": "UN",
-      "stock": 10100,
+      "stock": 9900,
       "modelNeeds": {
         "4 LUGAR": 15,
         "6 LUGAR": 10,
@@ -418,7 +418,7 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 57817.3338,
+      "stock": 56376.3338,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
@@ -478,7 +478,7 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 0,
+      "stock": 60000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
@@ -598,7 +598,7 @@
       "code": "01.02.03.0000000050",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M6 X 1,00MM CLASSE 5 ZINCADO BRANCO DIN 985",
       "unit": "UN",
-      "stock": 3600,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 6,
@@ -1168,7 +1168,7 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 29983.3914,
+      "stock": 28542.3914,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
@@ -1183,7 +1183,7 @@
       "code": "01.04.01.0000000019",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 24393.684,
+      "stock": 22405.684,
       "modelNeeds": {
         "4 LUGAR": 1.8147,
         "6 LUGAR": 1.8147,
@@ -1618,7 +1618,7 @@
       "code": "01.15.02.0000000113",
       "description": "CLIMATIZADOR DE CABINE 24V",
       "unit": "UN",
-      "stock": 48,
+      "stock": 47,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
@@ -2428,7 +2428,7 @@
       "code": "01.15.02.0000000143",
       "description": "ASSENTO DO BANCO PARA 2 LUGARES",
       "unit": "UN",
-      "stock": 15,
+      "stock": 37,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -2443,7 +2443,7 @@
       "code": "01.15.02.0000000144",
       "description": "ENCOSTO DO BANCO PARA 2 LUGARES",
       "unit": "UN",
-      "stock": 15,
+      "stock": 37,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 1,
@@ -3133,7 +3133,7 @@
       "code": "01.02.09.0000000001",
       "description": "GONZO SEM ABA PASSANTE 5/8\" - AÇO",
       "unit": "UN",
-      "stock": 1074,
+      "stock": 574,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
