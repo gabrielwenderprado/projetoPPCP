@@ -1,69 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-24.11.2026.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-24.11.2026 (1).xlsm",
   "generatedAt": "2026-11-24",
   "items": [
-    {
-      "code": "04.02.03.0000000019",
-      "description": "BICO DE CORTE PARA MAÇARICO - GLP 1503 -  Nº 06",
-      "analyst": "PEDRO",
-      "family": "CONSUMIVEL",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 93,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 9,
-        "PED 09/2026": 8,
-        "PED 10/2026": 40,
-        "PED 11/2026": 80,
-        "PED 12/2026": 40,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 133,
-        "DEM 11/2026": 173,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 9
-      },
-      "obtention": [
-        {
-          "request": "0000017510",
-          "quantity": 2,
-          "plannedDate": "2026-09-11",
-          "status": "AP",
-          "purchaseOrder": ""
-        },
-        {
-          "request": "0000017883",
-          "quantity": 40,
-          "plannedDate": "2026-12-01",
-          "status": "AP",
-          "purchaseOrder": "0006361/26"
-        },
-        {
-          "request": "0000017227",
-          "quantity": 9,
-          "plannedDate": "2026-08-24",
-          "status": "AP",
-          "purchaseOrder": "0005348/26"
-        }
-      ]
-    },
     {
       "code": "02.01.02.0000086970",
       "description": "\"CANTONEIRA PERFIL \"\"L\"\" 801 x 35,1 x 3,00 mm\"",
@@ -225,171 +163,6 @@
       "obtention": []
     },
     {
-      "code": "01.02.11.0000000053",
-      "description": "ABRAÇADEIRA AÇO INOX 30CM",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.02.11.0000000052",
-      "description": "ABRAÇADEIRA CHASSIS DE METAL - IM00803 S",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 3050,
-      "stockValue": 0,
-      "safety": 1500,
-      "orders": {
-        "PED 06/2026": 2700,
-        "PED 07/2026": 2700,
-        "PED 08/2026": 1100,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 800,
-        "PED 12/2026": 800,
-        "PED 01/2027": 800,
-        "PED 02/2027": 800,
-        "PED 03/2027": 800
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 800,
-        "DEM 12/2026": 1797,
-        "DEM 01/2026": 1900
-      },
-      "obtention": [
-        {
-          "request": "0000019036",
-          "quantity": 800,
-          "plannedDate": "2027-03-01",
-          "status": "AG",
-          "purchaseOrder": ""
-        },
-        {
-          "request": "0000019036",
-          "quantity": 800,
-          "plannedDate": "2027-01-04",
-          "status": "AG",
-          "purchaseOrder": ""
-        },
-        {
-          "request": "0000019036",
-          "quantity": 800,
-          "plannedDate": "2026-12-01",
-          "status": "AG",
-          "purchaseOrder": ""
-        },
-        {
-          "request": "0000014814",
-          "quantity": 550,
-          "plannedDate": "2026-06-26",
-          "status": "AP",
-          "purchaseOrder": "0001941/26"
-        },
-        {
-          "request": "0000014814",
-          "quantity": 550,
-          "plannedDate": "2026-07-27",
-          "status": "AP",
-          "purchaseOrder": "0001941/26"
-        },
-        {
-          "request": "0000014814",
-          "quantity": 550,
-          "plannedDate": "2026-07-01",
-          "status": "AP",
-          "purchaseOrder": "0001941/26"
-        },
-        {
-          "request": "0000014192",
-          "quantity": 250,
-          "plannedDate": "2026-06-01",
-          "status": "AP",
-          "purchaseOrder": "0001358/26"
-        },
-        {
-          "request": "0000014192",
-          "quantity": 250,
-          "plannedDate": "2026-06-20",
-          "status": "AP",
-          "purchaseOrder": "0001358/26"
-        },
-        {
-          "request": "0000014814",
-          "quantity": 550,
-          "plannedDate": "2026-06-01",
-          "status": "AP",
-          "purchaseOrder": "0001941/26"
-        },
-        {
-          "request": "0000015534",
-          "quantity": 1100,
-          "plannedDate": "2026-07-01",
-          "status": "AP",
-          "purchaseOrder": "0002890/26"
-        },
-        {
-          "request": "0000015534",
-          "quantity": 1100,
-          "plannedDate": "2026-08-02",
-          "status": "AP",
-          "purchaseOrder": "0002890/26"
-        },
-        {
-          "request": "0000015534",
-          "quantity": 1100,
-          "plannedDate": "2026-06-01",
-          "status": "AP",
-          "purchaseOrder": "0002891/26"
-        }
-      ]
-    },
-    {
       "code": "01.02.11.0000000060",
       "description": "ABRAÇADEIRA DE ENCAIXE PARA TUBO DE 20MM",
       "analyst": "PEDRO",
@@ -426,256 +199,6 @@
         "DEM 11/2026": 225,
         "DEM 12/2026": 800,
         "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "02.01.01.0000066999",
-      "description": "ABRAÇADEIRA DE FECHAMENTO BRAÇO SUPERIOR DO EQUIPAMENTO SKYCITY",
-      "analyst": "KELEN",
-      "family": "PEÇA",
-      "obtentionType": "Comprado",
-      "lastMovement": "2026-01-06",
-      "unit": "UN",
-      "stock": 754,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 45,
-        "PED 07/2026": 45,
-        "PED 08/2026": 0,
-        "PED 09/2026": 50,
-        "PED 10/2026": 6,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 50,
-        "DEM 11/2026": 50,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 50,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 710,
-        "DEM 11/2026": 704,
-        "DEM 12/2026": 478,
-        "DEM 01/2026": -50
-      },
-      "obtention": [
-        {
-          "request": "0000017703",
-          "quantity": 4,
-          "plannedDate": "2026-10-30",
-          "status": "AP",
-          "purchaseOrder": "0006161/26"
-        },
-        {
-          "request": "0000017707",
-          "quantity": 2,
-          "plannedDate": "2026-10-30",
-          "status": "AP",
-          "purchaseOrder": "0006151/26"
-        },
-        {
-          "request": "0000013920",
-          "quantity": 20,
-          "plannedDate": "2026-07-03",
-          "status": "AP",
-          "purchaseOrder": "0001826/26"
-        },
-        {
-          "request": "0000013922",
-          "quantity": 5,
-          "plannedDate": "2026-06-03",
-          "status": "AP",
-          "purchaseOrder": "0001852/26"
-        },
-        {
-          "request": "0000013920",
-          "quantity": 20,
-          "plannedDate": "2026-06-05",
-          "status": "AP",
-          "purchaseOrder": "0001826/26"
-        },
-        {
-          "request": "0000014065",
-          "quantity": 20,
-          "plannedDate": "2026-06-05",
-          "status": "AP",
-          "purchaseOrder": "0002038/26"
-        },
-        {
-          "request": "0000014065",
-          "quantity": 20,
-          "plannedDate": "2026-07-03",
-          "status": "AP",
-          "purchaseOrder": "0002038/26"
-        }
-      ]
-    },
-    {
-      "code": "01.02.11.0000000077",
-      "description": "ABRAÇADEIRA DE NYLON PARA LACRE (FITA HELLERMANN) 2,5 X 100 - CINZA",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.02.11.0000000079",
-      "description": "ABRAÇADEIRA DE NYLON PARA LACRE (FITA HELLERMANN) 2,5 X 100 - ROXA",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 900,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 900,
-        "DEM 11/2026": 900,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.02.11.0000000044",
-      "description": "ABRAÇADEIRA EM NYLON 7.60 X 380MM F40L",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.02.11.0000000054",
-      "description": "ABRAÇADEIRA MANGOTE 25 A 30MM FITA 20MM AÇO CARBONO ZINCADO BRANCO",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 2998,
-      "stockMax": 112,
-      "stockValue": 12808.955,
-      "safety": 56,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 100,
-        "DEM 11/2026": 100,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 100,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 2898,
-        "DEM 11/2026": 2898,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": -100
       },
       "obtention": []
     },
@@ -880,46 +403,6 @@
       "obtention": []
     },
     {
-      "code": "01.02.11.0000000046",
-      "description": "ABRAÇADEIRA ROSCA SEM FIM - 22 A 32MM FITA 14.9",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
       "code": "01.02.11.0000000058",
       "description": "ABRACADEIRA FLEXIL ACO CARBONO 089 X 108 MM",
       "analyst": "BRUNO",
@@ -1023,90 +506,10 @@
       ]
     },
     {
-      "code": "01.02.11.0000000040",
-      "description": "ABRAÇADEIRA ROSCA SEM FIM 16 - 19MM (5/8 - 3/4\") FITA 9MM",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 73,
-      "stockMax": 11,
-      "stockValue": 68.2331,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 73,
-        "DEM 11/2026": 73,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
       "code": "02.03.02.0000085102",
       "description": "APOIO TANQUE",
       "analyst": "BRUNO",
       "family": "USINAGEM",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.02.11.0000000041",
-      "description": "ABRAÇADEIRA RSF 14MM 1 1/4 X 3/4 ( 32 A 44MM )",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
       "unit": "UN",
@@ -1524,9 +927,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 74,
-      "stockMax": 0,
+      "stockMax": 200,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 25,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -1564,9 +967,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 193,
-      "stockMax": 0,
+      "stockMax": 200,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 25,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -1604,9 +1007,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 0,
-      "stockMax": 0,
+      "stockMax": 200,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 25,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -1644,9 +1047,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 0,
-      "stockMax": 0,
+      "stockMax": 200,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 25,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -1815,9 +1218,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 85,
-      "stockMax": 10,
+      "stockMax": 50,
       "stockValue": 1274.15,
-      "safety": 0,
+      "safety": 5,
       "orders": {
         "PED 06/2026": 40,
         "PED 07/2026": 40,
@@ -1948,7 +1351,7 @@
       "stock": 530,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 150,
         "PED 07/2026": 150,
@@ -2024,7 +1427,7 @@
       "stock": 430,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 150,
         "PED 07/2026": 150,
@@ -2086,7 +1489,7 @@
       "stock": 369,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -2155,7 +1558,7 @@
       "stock": 750,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 200,
         "PED 07/2026": 200,
@@ -2231,7 +1634,7 @@
       "stock": 471,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -3320,7 +2723,7 @@
       "stock": 0,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 30,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -3478,134 +2881,6 @@
       "obtention": []
     },
     {
-      "code": "01.09.03.0000000092",
-      "description": "ADESIVO ATENÇAO SESSAO ISOLADA 150 X 150MM",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.09.03.0000000100",
-      "description": "ADESIVO COMANDOS CONTROLE LAVADOR LACTEC DE 115 X 21MM",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 3,
-        "PED 07/2026": 3,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 3,
-        "DEM 01/2026": 0
-      },
-      "obtention": [
-        {
-          "request": "0000015590",
-          "quantity": 3,
-          "plannedDate": "2026-06-08",
-          "status": "AP",
-          "purchaseOrder": "0002925/26"
-        }
-      ]
-    },
-    {
-      "code": "01.09.03.0000000010",
-      "description": "ADESIVO DE SINALIZAÇAO EM VINIL LAMINADO 50 X 30CM",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
       "code": "01.02.10.0000000051",
       "description": "ADESIVO DUPLA FACE BR 251619 - 19MM X 20M",
       "analyst": "PEDRO",
@@ -3614,9 +2889,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 222,
-      "stockMax": 0,
+      "stockMax": 300,
       "stockValue": 19209.66,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 40,
         "PED 07/2026": 40,
@@ -4356,101 +3631,21 @@
       "obtention": []
     },
     {
-      "code": "04.02.01.0000000057",
-      "description": "ADESIVO PARA JUNTA MOTOR D/G/A - 75G",
-      "analyst": "PEDRO",
-      "family": "CONSUMIVEL",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.09.03.0000000095",
-      "description": "ADESIVO POLICARBONATO CRISTAL 200 X 116MM - ATENÇAO USO MANGUEIRA",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 8,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 8,
-        "DEM 11/2026": 8,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "04.02.01.0000000058",
+      "code": "04.02.01.0000000107",
       "description": "ADESIVO PU 55 PARA-BRISAS SACHE 600ML",
       "analyst": "PEDRO",
       "family": "CONSUMIVEL",
       "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
+      "lastMovement": "2026-02-04",
       "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
+      "stock": 735,
+      "stockMax": 2000,
+      "stockValue": 21748.65,
+      "safety": 500,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
-        "PED 08/2026": 0,
+        "PED 08/2026": 800,
         "PED 09/2026": 0,
         "PED 10/2026": 0,
         "PED 11/2026": 0,
@@ -4468,212 +3663,27 @@
         "DEM 03/2027": 0
       },
       "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
+        "DEM 10/2026": 735,
+        "DEM 11/2026": 735,
         "DEM 12/2026": 0,
-        "DEM 01/2026": 0
+        "DEM 01/2026": 800
       },
-      "obtention": []
-    },
-    {
-      "code": "01.02.10.0000000031",
-      "description": "ADESIVO PU POXPUR BI COMPONENTE 4,6KG",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.09.03.0000000091",
-      "description": "ADESIVO SETA COMP. 200 X ALT. 40MM",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.02.10.0000000032",
-      "description": "ADESIVO VEDANTE SEMI SECATIVO 100G",
-      "analyst": "PEDRO",
-      "family": "FIXADOR",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.09.03.0000000098",
-      "description": "ADESIVO VINIL EM IMPRESSAO DIGITAL - 1000 X 700MM",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.09.03.0000000084",
-      "description": "ADESIVO VINIL IMPRESSAO DIGITAL 75 X 55MM - ESGOTO",
-      "analyst": "PEDRO",
-      "family": "IDENTIFICAÇÃO",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 126,
-      "stockMax": 0,
-      "stockValue": 126,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 126,
-        "DEM 11/2026": 126,
-        "DEM 12/2026": 3000,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
+      "obtention": [
+        {
+          "request": "0000015534",
+          "quantity": 400,
+          "plannedDate": "2026-08-02",
+          "status": "AP",
+          "purchaseOrder": ""
+        },
+        {
+          "request": "0000015534",
+          "quantity": 400,
+          "plannedDate": "2026-08-20",
+          "status": "AP",
+          "purchaseOrder": ""
+        }
+      ]
     },
     {
       "code": "01.11.05.0000000029",
@@ -4868,9 +3878,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 1232,
-      "stockMax": 0,
+      "stockMax": 150,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -4895,46 +3905,6 @@
         "DEM 10/2026": 1232,
         "DEM 11/2026": 1232,
         "DEM 12/2026": 1232,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
-      "code": "01.11.01.0000000007",
-      "description": "CABO DE COMANDO",
-      "analyst": "PEDRO",
-      "family": "ELETRICA",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "MT",
-      "stock": 20,
-      "stockMax": 0,
-      "stockValue": 7343.4,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 20,
-        "DEM 11/2026": 20,
-        "DEM 12/2026": 20,
         "DEM 01/2026": 0
       },
       "obtention": []
@@ -5112,7 +4082,7 @@
     {
       "code": "01.01.09.0000000031",
       "description": "ANEL ANTI EXTRUSAO 189.87 X 203.85 X 4.50MM",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -5152,7 +4122,7 @@
     {
       "code": "01.01.09.0000000046",
       "description": "ANEL ANTI EXTRUSAO 41,83 X 47,83 X 3,00MM (8-223)",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -5192,7 +4162,7 @@
     {
       "code": "01.01.09.0000000044",
       "description": "ANEL ANTI EXTRUSAO 45,01 X 51,01 X 3,00MM (8-224)",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -5232,7 +4202,7 @@
     {
       "code": "01.01.09.0000000039",
       "description": "ANEL ANTI EXTRUSAO 54,53 X 60,53 X 3,00MM (8-227)",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -5278,9 +4248,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 107,
-      "stockMax": 0,
+      "stockMax": 1200,
       "stockValue": 203.3,
-      "safety": 0,
+      "safety": 600,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -6156,7 +5126,7 @@
     {
       "code": "01.01.01.0000000459",
       "description": "ANEL ELASTICO PARA EIXO EXTERNO 130MM - DIN 471",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -6244,7 +5214,7 @@
     {
       "code": "01.01.01.0000000355",
       "description": "ANEL ELASTICO PARA EIXO EXTERNO 145MM - DIN 471",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -6284,7 +5254,7 @@
     {
       "code": "01.01.01.0000000371",
       "description": "ANEL ELASTICO PARA EIXO EXTERNO 160MM - DIN 471",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -6339,7 +5309,7 @@
     {
       "code": "01.01.01.0000000402",
       "description": "ANEL ELASTICO PARA EIXO EXTERNO 18MM - DIN 471",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -6379,7 +5349,7 @@
     {
       "code": "01.01.01.0000000388",
       "description": "ANEL ELASTICO PARA EIXO EXTERNO 200MM - DIN 471",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -6419,7 +5389,7 @@
     {
       "code": "01.01.01.0000000376",
       "description": "ANEL ELASTICO PARA EIXO EXTERNO 25MM - DIN 471",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -9739,7 +8709,7 @@
       "description": "CILINDRO HIDRO. DA LANÇA 1 DO GUIN. 7.5T - 075-07-000",
       "analyst": "GABRIEL",
       "family": "HIDRAULICA",
-      "obtentionType": "Comprado",
+      "obtentionType": "#REF!",
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 10,
@@ -11248,7 +10218,7 @@
     {
       "code": "01.01.01.0000000353",
       "description": "ANILHA B3 TUBO 12 - AA-12-S",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -11317,7 +10287,7 @@
     {
       "code": "01.01.01.0000000352",
       "description": "ANILHA B3 TUBO 16 - AA-16-S",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -11357,7 +10327,7 @@
     {
       "code": "01.01.01.0000000361",
       "description": "ANILHA B4 TUBO 12 COM BORRACHA - AA-B4-12-S",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -11397,7 +10367,7 @@
     {
       "code": "01.01.01.0000000364",
       "description": "ANILHA B4 TUBO 16 COM BORRACHA - AA-B4-16-S",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -20443,7 +19413,7 @@
       "stock": 347,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -20519,7 +19489,7 @@
       "stock": 34,
       "stockMax": 0,
       "stockValue": 11220,
-      "safety": 0,
+      "safety": 10,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -22017,7 +20987,7 @@
       "stock": 164,
       "stockMax": 0,
       "stockValue": 7309.48,
-      "safety": 119,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 84,
         "PED 07/2026": 84,
@@ -23431,7 +22401,7 @@
       "stock": 101,
       "stockMax": 0,
       "stockValue": 29795,
-      "safety": 33,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -27522,7 +26492,7 @@
     {
       "code": "02.03.01.0000085044",
       "description": "PINO A",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -28080,7 +27050,7 @@
     {
       "code": "02.03.01.0000085045",
       "description": "PINO B",
-      "analyst": "GABRIEL",
+      "analyst": "KELEN",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "lastMovement": "00:00:00",
@@ -36289,46 +35259,6 @@
       "obtention": []
     },
     {
-      "code": "01.01.02.0000000090",
-      "description": "VALVULA CONTRABALANCO DUPLA FLANGEADA",
-      "analyst": "GABRIEL",
-      "family": "HIDRAULICA",
-      "obtentionType": "Comprado",
-      "lastMovement": "00:00:00",
-      "unit": "UN",
-      "stock": 0,
-      "stockMax": 0,
-      "stockValue": 0,
-      "safety": 0,
-      "orders": {
-        "PED 06/2026": 0,
-        "PED 07/2026": 0,
-        "PED 08/2026": 0,
-        "PED 09/2026": 0,
-        "PED 10/2026": 0,
-        "PED 11/2026": 0,
-        "PED 12/2026": 0,
-        "PED 01/2027": 0,
-        "PED 02/2027": 0,
-        "PED 03/2027": 0
-      },
-      "demands": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0,
-        "DEM 02/2026": 0,
-        "DEM 03/2027": 0
-      },
-      "colocarSC": {
-        "DEM 10/2026": 0,
-        "DEM 11/2026": 0,
-        "DEM 12/2026": 0,
-        "DEM 01/2026": 0
-      },
-      "obtention": []
-    },
-    {
       "code": "01.01.02.0000000082",
       "description": "VALVULA CONTRABALANCO DUPLA FLANGEADA  (SKYCITY)",
       "analyst": "GABRIEL",
@@ -36339,7 +35269,7 @@
       "stock": 329,
       "stockMax": 0,
       "stockValue": 85540,
-      "safety": 0,
+      "safety": 80,
       "orders": {
         "PED 06/2026": 40,
         "PED 07/2026": 40,
@@ -39195,7 +38125,7 @@
       "stock": 448,
       "stockMax": 0,
       "stockValue": 1720.7232,
-      "safety": 0,
+      "safety": 40,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -40423,7 +39353,7 @@
       "stock": 5373,
       "stockMax": 0,
       "stockValue": 4269.9231,
-      "safety": 1000,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -43506,7 +42436,7 @@
       "stock": 676,
       "stockMax": 0,
       "stockValue": 4034.2328,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -43718,7 +42648,7 @@
       "stock": 164,
       "stockMax": 0,
       "stockValue": 633.3024,
-      "safety": 33,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 200,
         "PED 07/2026": 200,
@@ -44695,7 +43625,7 @@
       "stock": 254,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -45160,7 +44090,7 @@
       "stock": 267,
       "stockMax": 0,
       "stockValue": 18710.559,
-      "safety": 100,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 100,
         "PED 07/2026": 100,
@@ -48476,7 +47406,7 @@
       "description": "CAPA DE PROTEÇÃO COLUNA NEXT 21T - 21.02.011",
       "analyst": "KELEN",
       "family": "PEÇA",
-      "obtentionType": "Comprado",
+      "obtentionType": "#REF!",
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 0,
@@ -49921,9 +48851,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 4688,
-      "stockMax": 0,
+      "stockMax": 10000,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 400,
       "orders": {
         "PED 06/2026": 1000,
         "PED 07/2026": 1000,
@@ -50071,9 +49001,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 8138,
-      "stockMax": 1000,
+      "stockMax": 10000,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 1000,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -50304,7 +49234,7 @@
       "stock": 5300,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 1000,
       "orders": {
         "PED 06/2026": 500,
         "PED 07/2026": 500,
@@ -50455,7 +49385,7 @@
       "stock": 10981,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 2700,
         "PED 07/2026": 2700,
@@ -50593,7 +49523,7 @@
       "stock": 14744,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 2200,
         "PED 07/2026": 2200,
@@ -51135,7 +50065,7 @@
       "stock": 14358,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 500,
         "PED 07/2026": 500,
@@ -51763,7 +50693,7 @@
       "stock": 10800,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -51843,7 +50773,7 @@
       "stock": 6136,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 300,
+      "safety": 1000,
       "orders": {
         "PED 06/2026": 2000,
         "PED 07/2026": 2000,
@@ -52084,7 +51014,7 @@
       "stock": 14476,
       "stockMax": 0,
       "stockValue": 4470.9126,
-      "safety": 1200,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 3500,
         "PED 07/2026": 3500,
@@ -52282,7 +51212,7 @@
       "stock": 7504,
       "stockMax": 0,
       "stockValue": 5839.6128,
-      "safety": 1700,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -77563,7 +76493,7 @@
       "stock": 1247,
       "stockMax": 0,
       "stockValue": 18849.4442,
-      "safety": 0,
+      "safety": 500,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -78000,7 +76930,7 @@
       "stock": 596,
       "stockMax": 0,
       "stockValue": 4276.8364,
-      "safety": 51,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -79532,7 +78462,7 @@
       "stock": 743,
       "stockMax": 0,
       "stockValue": 2961.1522,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -79572,7 +78502,7 @@
       "stock": 3471,
       "stockMax": 0,
       "stockValue": 3583.8075,
-      "safety": 0,
+      "safety": 500,
       "orders": {
         "PED 06/2026": 100,
         "PED 07/2026": 100,
@@ -79627,7 +78557,7 @@
       "stock": 4754,
       "stockMax": 0,
       "stockValue": 21597.422,
-      "safety": 33,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 50,
         "PED 07/2026": 50,
@@ -79743,7 +78673,7 @@
       "stock": 368,
       "stockMax": 0,
       "stockValue": 5437.2,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -81273,7 +80203,7 @@
       "stock": 2148,
       "stockMax": 0,
       "stockValue": 12124.6008,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 400,
         "PED 07/2026": 400,
@@ -82235,7 +81165,7 @@
       "stock": 1333,
       "stockMax": 0,
       "stockValue": 21883.5182,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -82275,7 +81205,7 @@
       "stock": 1654,
       "stockMax": 0,
       "stockValue": 14106.0563,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -87488,7 +86418,7 @@
       "stock": 858,
       "stockMax": 0,
       "stockValue": 7432.5966,
-      "safety": 0,
+      "safety": 100,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -92871,7 +91801,7 @@
       "lastMovement": "00:00:00",
       "unit": "KG",
       "stock": 0.5,
-      "stockMax": 0,
+      "stockMax": 200,
       "stockValue": 0,
       "safety": 30,
       "orders": {
@@ -93258,7 +92188,7 @@
       "stock": 60,
       "stockMax": 0,
       "stockValue": 180,
-      "safety": 50,
+      "safety": 100,
       "orders": {
         "PED 06/2026": 50,
         "PED 07/2026": 50,
@@ -101243,7 +100173,7 @@
       "stock": 268,
       "stockMax": 0,
       "stockValue": 27914.076,
-      "safety": 78,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 100,
         "PED 07/2026": 100,
@@ -103083,9 +102013,9 @@
       "lastMovement": "00:00:00",
       "unit": "UN",
       "stock": 0,
-      "stockMax": 0,
+      "stockMax": 2000,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -117301,7 +116231,7 @@
       "stock": 162,
       "stockMax": 0,
       "stockValue": 27540,
-      "safety": 80,
+      "safety": 150,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -148726,7 +147656,7 @@
       "stock": 944,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 200,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -153540,7 +152470,7 @@
       "stock": 5602,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 1000,
       "orders": {
         "PED 06/2026": 500,
         "PED 07/2026": 500,
@@ -157373,7 +156303,7 @@
       "stock": 6948,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 1000,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 800,
         "PED 07/2026": 800,
@@ -157456,7 +156386,7 @@
       "stock": 0,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -157496,7 +156426,7 @@
       "stock": 0,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 2000,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -205285,7 +204215,7 @@
       "stock": 285,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -205325,7 +204255,7 @@
       "stock": 96,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -205380,7 +204310,7 @@
       "stock": 53,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -205428,7 +204358,7 @@
       "stock": 96,
       "stockMax": 0,
       "stockValue": 17952,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 15,
         "PED 07/2026": 15,
@@ -205497,7 +204427,7 @@
       "stock": 226,
       "stockMax": 0,
       "stockValue": 23619.26,
-      "safety": 0,
+      "safety": 100,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -220019,7 +218949,7 @@
       "stock": 197,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 100,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -220059,7 +218989,7 @@
       "stock": 2212,
       "stockMax": 0,
       "stockValue": 6414.8,
-      "safety": 0,
+      "safety": 300,
       "orders": {
         "PED 06/2026": 1000,
         "PED 07/2026": 1000,
@@ -243096,7 +242026,7 @@
       "stock": 41,
       "stockMax": 0,
       "stockValue": 897.0226,
-      "safety": 0,
+      "safety": 100,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -244450,7 +243380,7 @@
       "stock": 86,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 50,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -271876,6 +270806,68 @@
           "purchaseOrder": "0004866/26"
         }
       ]
+    },
+    {
+      "code": "04.02.03.0000000019",
+      "description": "BICO DE CORTE PARA MAÇARICO - GLP 1503 - Nº 06",
+      "analyst": "PEDRO",
+      "family": "CONSUMIVEL",
+      "obtentionType": "Comprado",
+      "lastMovement": "00:00:00",
+      "unit": "UN",
+      "stock": 93,
+      "stockMax": 100,
+      "stockValue": 0,
+      "safety": 5,
+      "orders": {
+        "PED 06/2026": 0,
+        "PED 07/2026": 0,
+        "PED 08/2026": 9,
+        "PED 09/2026": 8,
+        "PED 10/2026": 40,
+        "PED 11/2026": 80,
+        "PED 12/2026": 40,
+        "PED 01/2027": 0,
+        "PED 02/2027": 0,
+        "PED 03/2027": 0
+      },
+      "demands": {
+        "DEM 10/2026": 0,
+        "DEM 11/2026": 0,
+        "DEM 12/2026": 0,
+        "DEM 01/2026": 0,
+        "DEM 02/2026": 0,
+        "DEM 03/2027": 0
+      },
+      "colocarSC": {
+        "DEM 10/2026": 133,
+        "DEM 11/2026": 173,
+        "DEM 12/2026": 1128,
+        "DEM 01/2026": 9
+      },
+      "obtention": [
+        {
+          "request": "0000017510",
+          "quantity": 2,
+          "plannedDate": "2026-09-11",
+          "status": "AP",
+          "purchaseOrder": ""
+        },
+        {
+          "request": "0000017883",
+          "quantity": 40,
+          "plannedDate": "2026-12-01",
+          "status": "AP",
+          "purchaseOrder": "0006361/26"
+        },
+        {
+          "request": "0000017227",
+          "quantity": 9,
+          "plannedDate": "2026-08-24",
+          "status": "AP",
+          "purchaseOrder": "0005348/26"
+        }
+      ]
     }
   ],
   "models": {
@@ -273844,9 +272836,9 @@
       },
       {
         "code": "02.01.01.0000066999",
-        "description": "ABRAÇADEIRA DE FECHAMENTO BRAÇO SUPERIOR DO EQUIPAMENTO SKYCITY",
+        "description": "ABRAÇADEIRA DE FECHAMENTO BRAÇO SUPERIOR DO EQUIPAMENTO SKYRITZ",
         "quantity": 1,
-        "stock": 754,
+        "stock": 0,
         "demand": 0,
         "_shifted_quantity": "1"
       },
@@ -312183,8 +311175,7 @@
     "BRUNO",
     "GABRIEL",
     "KELEN",
-    "PEDRO",
-    "gabriel"
+    "PEDRO"
   ],
   "families": [
     "ACESSORIOS",
@@ -312263,12 +311254,12 @@
       "familia",
       "cilindros",
       "TODASEXPLOSAO",
+      "10S",
       "datamovimento",
       "estoque segurança",
       "13ldi-46kv",
       "semanal",
       "replica-helio-base",
-      "10S",
       "13-69kv",
       "13AT",
       "15LDDI",
