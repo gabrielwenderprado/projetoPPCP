@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-24.11.2026 (1).xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-25.11.2026.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-11-24",
+  "generatedAt": "2026-11-25",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -716,7 +716,7 @@
       "code": "02.02.01.0000085285",
       "description": "PINO ENGRENAGEM DE APOIO - AS",
       "unit": "UN",
-      "stock": 434,
+      "stock": 419,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1535,7 +1535,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 365,
+      "stock": 350,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -1886,7 +1886,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 233,
+      "stock": 229,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2003,7 +2003,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 260,
+      "stock": 256,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2120,7 +2120,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 128,
+      "stock": 124,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2705,7 +2705,7 @@
       "code": "02.02.01.0000080813",
       "description": "PINO BASCULAMENTO - AS",
       "unit": "UN",
-      "stock": 327,
+      "stock": 324,
       "modelNeeds": {
         "18LDDI": 1,
         "13LDDI": 1,
@@ -2822,7 +2822,7 @@
       "code": "02.02.01.0000083442",
       "description": "PINO ARTICULAÇAO BRAÇO INF. - AS",
       "unit": "UN",
-      "stock": 361,
+      "stock": 356,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3407,7 +3407,7 @@
       "code": "01.02.07.0000000014",
       "description": "PINO QUEBRA DEDO 3/8\" X 1.3/4\"",
       "unit": "UN",
-      "stock": 1211,
+      "stock": 1206,
       "modelNeeds": {
         "18LDDI": 1,
         "13LDI": 1,
@@ -4109,7 +4109,7 @@
       "code": "02.02.01.0000083443",
       "description": "PINO FIX. CILINDRO BASE - AS",
       "unit": "UN",
-      "stock": 323,
+      "stock": 315,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4226,7 +4226,7 @@
       "code": "02.02.01.0000083444",
       "description": "PINO ARTICULAÇAO BASE - AS",
       "unit": "UN",
-      "stock": 454,
+      "stock": 449,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4343,7 +4343,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 52,
+      "stock": 50,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4694,7 +4694,7 @@
       "code": "02.03.01.0000071336",
       "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
       "unit": "UN",
-      "stock": 186,
+      "stock": 184,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4928,7 +4928,7 @@
       "code": "02.03.01.0000083452",
       "description": "PINO FIXAÇAO CESTO",
       "unit": "UN",
-      "stock": 293,
+      "stock": 291,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5162,7 +5162,7 @@
       "code": "02.03.01.0000085011",
       "description": "PINO ARTICULAÇAO CAÇAMBA",
       "unit": "UN",
-      "stock": 189,
+      "stock": 187,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 195,
+      "stock": 188,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7268,7 +7268,7 @@
       "code": "02.03.01.0000085021",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 25,
+      "stock": 23,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -7385,7 +7385,7 @@
       "code": "02.03.01.0000085022",
       "description": "PINO FIXACAO CILINDRO NIVELAMENTO",
       "unit": "UN",
-      "stock": 25,
+      "stock": 23,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 0,
@@ -7502,7 +7502,7 @@
       "code": "02.03.01.0000085110",
       "description": "PINO SUPERIOR NIVELAMENTO",
       "unit": "UN",
-      "stock": 28,
+      "stock": 26,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 1,

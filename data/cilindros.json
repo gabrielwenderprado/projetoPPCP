@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-24.11.2026 (1).xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-25.11.2026.xlsm",
   "sourceSheet": "cilindros",
-  "generatedAt": "2026-11-24",
+  "generatedAt": "2026-11-25",
   "models": [
     "18LDDI",
     "13",
@@ -16,7 +16,7 @@
       "code": "01.01.10.0000018380",
       "description": "CILINDRO HIDRAULICO SAPATA SKYRITZ",
       "unit": "UN",
-      "stock": 615,
+      "stock": 594,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 2,
@@ -214,7 +214,7 @@
       "code": "01.01.10.0000083466",
       "description": "CILINDRO SUPERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 56,
+      "stock": 54,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -232,7 +232,7 @@
       "code": "01.01.10.0000083467",
       "description": "CILINDRO INFERIOR - SKYCITY 10",
       "unit": "UN",
-      "stock": 96,
+      "stock": 94,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -304,7 +304,7 @@
       "code": "01.01.10.0000084041",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY",
       "unit": "UN",
-      "stock": 80,
+      "stock": 78,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
@@ -430,7 +430,7 @@
       "code": "01.01.10.0000088643",
       "description": "CILINDRO HIDRAULICO BASCULAMENTO SKYCITY 10HDOC",
       "unit": "UN",
-      "stock": 13,
+      "stock": 8,
       "modelNeeds": {
         "18LDDI": 0,
         "13": 0,
