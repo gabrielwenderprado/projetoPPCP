@@ -906,7 +906,7 @@
     {
       "code": "02.03.02.0000069579",
       "description": "ARRUELA PARA O EIXO DA CESTA SKYCITY",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -17301,7 +17301,7 @@
     {
       "code": "01.02.02.0000000022",
       "description": "ARRUELA DE PRESSAO M10 X 18,10 X 2,05MM ZINCADO BRANCO DIN 127",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -17551,7 +17551,7 @@
     {
       "code": "01.02.02.0000000040",
       "description": "ARRUELA DE PRESSAO M12 X 21,10 X 2,35MM ZINCADO BRANCO DIN 127",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -17746,7 +17746,7 @@
     {
       "code": "01.02.02.0000000053",
       "description": "ARRUELA DE PRESSAO M8 X 14,80 X 1,90 ZINCADO BRANCO DIN 127",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -19758,7 +19758,7 @@
     {
       "code": "01.02.02.0000000020",
       "description": "ARRUELA DE PRESSAO MEDIA M16 X 27,40 X 3,35MM ZINCADO BRANCO ASA B-27.1",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -21973,7 +21973,7 @@
     {
       "code": "02.02.01.0000074572",
       "description": "BRAÇO SUPERIOR ISOLADO DO EQUIPAMENTO SKYCITY 10L COM REFORÇO PARA BASCULAMENTO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -24702,7 +24702,7 @@
     {
       "code": "02.03.02.0000085211",
       "description": "BUCHA ALAVANCA Ø38 X 56",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -25142,7 +25142,7 @@
     {
       "code": "02.03.02.0000072559",
       "description": "BUCHA ALUM. ARTIC. ALAVANCA COMANDO 38 X 13 X 72",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -25238,7 +25238,7 @@
     {
       "code": "02.03.02.0000080794",
       "description": "BUCHA APOIO PINO CESTO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -25495,7 +25495,7 @@
     {
       "code": "02.02.01.0000082261",
       "description": "PINO ARTIC. LANÇAS - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -29646,7 +29646,7 @@
     {
       "code": "01.02.02.0000000011",
       "description": "ARRUELA LISA MEDIA M4 X 8,64 X 0,90MM ZINCADO BRANCO DIN 125 A",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -29694,7 +29694,7 @@
     {
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -36511,7 +36511,7 @@
     {
       "code": "01.02.01.0000000294",
       "description": "PARAFUSO ALLEN CABEÇA CHATA CONICA SEXTAVADO INTERNO M12 X 1,75 X 16MM ROSCA INTEIRA CLASSE 8.8 ZINCADO BRANCO DIN 7991",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -36607,7 +36607,7 @@
     {
       "code": "01.02.01.0000000288",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M3 X 0,50 X 12MM ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -36655,7 +36655,7 @@
     {
       "code": "01.02.01.0000000265",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M5 X 0,80 X 16MM CLASSE 12.9 ROSCA INTEIRA OXIDADO DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -36703,7 +36703,7 @@
     {
       "code": "01.02.06.0000000008",
       "description": "CABEÇA DO VARAO DIREITO",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -36807,7 +36807,7 @@
     {
       "code": "01.02.06.0000000009",
       "description": "CABEÇA DO VARAO ESQUERDO",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -36903,7 +36903,7 @@
     {
       "code": "01.02.01.0000000267",
       "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 35MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -42466,7 +42466,7 @@
     {
       "code": "01.02.01.0000000144",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -45554,7 +45554,7 @@
     {
       "code": "01.02.01.0000000052",
       "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 50MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -45650,7 +45650,7 @@
     {
       "code": "01.02.06.0000000005",
       "description": "MAÇANETA EXTERNA PORTA COM MIOLO PRETO FUSCA/KOMBI ATE 1996",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -45698,7 +45698,7 @@
     {
       "code": "01.02.01.0000000289",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M10 X 1,50 X 35MM CLASSE 8 ROSCA INTEIRA GEOMET DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -45761,7 +45761,7 @@
     {
       "code": "01.02.03.0000000122",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 1.1/4\"UNF-12 (12 FIOS) ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -46087,7 +46087,7 @@
     {
       "code": "01.01.03.0000000478",
       "description": "MANGUEIRA R4 1.1/4\" (SUCÇAO) X 40M",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "HIDRAULICA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -47015,7 +47015,7 @@
     {
       "code": "01.02.01.0000000270",
       "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M8 X 1,25 X 12 MM CLASSE 8.8  DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -47159,7 +47159,7 @@
     {
       "code": "01.02.01.0000000062",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 40MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -47707,7 +47707,7 @@
     {
       "code": "01.02.01.0000000111",
       "description": "PARAFUSO PHILLIPS MAQUINA CHATA M4 X 0,70 X 40MM ROSCA INTEIRA BICROMATIZADO ISO 898-1",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48168,7 +48168,7 @@
     {
       "code": "01.02.01.0000000071",
       "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 12MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48216,7 +48216,7 @@
     {
       "code": "01.02.01.0000000072",
       "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48264,7 +48264,7 @@
     {
       "code": "01.02.01.0000000086",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 16MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48312,7 +48312,7 @@
     {
       "code": "01.02.01.0000000115",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 20MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48360,7 +48360,7 @@
     {
       "code": "01.02.01.0000000096",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48533,7 +48533,7 @@
     {
       "code": "01.02.01.0000000274",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 16 CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -48996,7 +48996,7 @@
     {
       "code": "01.02.01.0000000266",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 65MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -50278,7 +50278,7 @@
     {
       "code": "01.02.03.0000000017",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 1/4\"(6,35MM) UNC IFI GRAU 5 100 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -50362,7 +50362,7 @@
     {
       "code": "01.02.03.0000000091",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -50425,7 +50425,7 @@
     {
       "code": "01.02.03.0000000001",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M12 X 1,75MM CLASSE 8 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -50647,7 +50647,7 @@
     {
       "code": "01.02.03.0000000026",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -51351,7 +51351,7 @@
     {
       "code": "01.02.03.0000000068",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M22 X 2,50MM CLASSE 8 ZINCADO BRANCO DIN 985",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -51455,7 +51455,7 @@
     {
       "code": "01.02.03.0000000030",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M4 X 0,70MM CLASSE 5 ZINCADO BRANCO DIN 985",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -51503,7 +51503,7 @@
     {
       "code": "01.02.03.0000000031",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M5 X 0,80MM CLASSE 5 ZINCADO BRANCO DIN 934",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -52100,7 +52100,7 @@
     {
       "code": "01.02.01.0000000009",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -52543,7 +52543,7 @@
     {
       "code": "01.02.03.0000003250",
       "description": "PORCA SEXTAVADA COMUM M16 X 2,00MM CLASSE 8 DIN 934",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -52950,7 +52950,7 @@
     {
       "code": "01.02.03.0000000038",
       "description": "PORCA SEXTAVADA COMUM M6 X 1,00MM CLASSE 8 ZINCADO BRANCO DIN 934",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -53094,7 +53094,7 @@
     {
       "code": "01.02.06.0000000025",
       "description": "CORRENTE SEM FIM N°7 1,2 X 6,5 X 23MM ZIN ( PEQUENA)",
-      "analyst": "KELEN",
+      "analyst": "BRUNO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "MT",
@@ -53420,7 +53420,7 @@
     {
       "code": "01.02.01.0000000055",
       "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 60 MM - GALVANIZACAO ELETROLITICA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -55973,7 +55973,7 @@
     {
       "code": "01.02.01.0000000238",
       "description": "PARAFUSO ALLEN CABEÇA ABAULADA M5 X 0,80 X 20MM CLASSE 8.8  ROSCA INTEIRA ZINCADO BRANCO ISO 7380",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -66141,7 +66141,7 @@
     {
       "code": "02.03.03.0000080811",
       "description": "CHAVETA DIN 6885 A - 10 X 8",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -66189,7 +66189,7 @@
     {
       "code": "02.03.03.0000080810",
       "description": "CHAVETA DIN 6885 AB - 10 X 8",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86536,7 +86536,7 @@
     {
       "code": "01.02.01.0000000033",
       "description": "PARAFUSO PHILLIPS MAQUINA CHATA M6 X 1,00 X 50MM ROSCA INTEIRA BICROMATIZADO ISO 898-1",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86584,7 +86584,7 @@
     {
       "code": "01.02.01.0000000037",
       "description": "PARAFUSO FRANCES 1/4 X 1.1/4\" UNC-20 ROSCA INTEIRA ZINCADO BRANCO ASME B18.5",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86632,7 +86632,7 @@
     {
       "code": "01.02.01.0000000039",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M12 X 1,75 X 40MM CLASSE 12.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86680,7 +86680,7 @@
     {
       "code": "01.02.01.0000000040",
       "description": "PARAFUSO PHILLIPS MAQUINA CABEÇA CHATA FENDA COM CHAVE M4 X 0,70 X 20 ROSCA INTEIRA BICROMATIZADO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86736,7 +86736,7 @@
     {
       "code": "01.02.01.0000000067",
       "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 80 MM - POLIDO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86784,7 +86784,7 @@
     {
       "code": "01.02.01.0000000068",
       "description": "PARAFUSO SEXTAVADO M22 X 2,50 X 130MM CLASSE 8.8 ROSCA PARCIAL POLIDO DIN 931",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86832,7 +86832,7 @@
     {
       "code": "01.02.01.0000000074",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 45MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86880,7 +86880,7 @@
     {
       "code": "01.02.01.0000000088",
       "description": "PARAFUSO SEXTAVADO M14 X 2,00 X 35MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86928,7 +86928,7 @@
     {
       "code": "01.02.01.0000000094",
       "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M8 X 1,25 X 20MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 7991",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -86976,7 +86976,7 @@
     {
       "code": "01.02.03.0000000022",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE BAIXA M30 X 2,00MM CLASSE 8 ZINCADO BRANCO DIN 985",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -87024,7 +87024,7 @@
     {
       "code": "01.02.04.0000000002",
       "description": "DOBRADIÇA PARA CARRETA BASCULANTE - SP170",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -87072,7 +87072,7 @@
     {
       "code": "01.02.04.0000000004",
       "description": "DOBRADIÇA PP 50 X 59MM PINO DE AÇO 6.20MM",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95046,7 +95046,7 @@
     {
       "code": "01.02.01.0000000011",
       "description": "PARAFUSO ALLEN CABEÇA CILINDRICA SEXTAVADO INTERNO M8 X 1,25 X 30MM CLASSE 12.9 ROSCA INTEIRA ZINCADO BRANCO DIN 912",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95094,7 +95094,7 @@
     {
       "code": "01.02.01.0000000012",
       "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M8 X 1,25 X 35MM CLASSE 12.9 ROSCA PARCIAL ENEGRECIDO DE TEMPERA DIN 7991",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95142,7 +95142,7 @@
     {
       "code": "01.02.01.0000000022",
       "description": "PARAFUSO ALLEN SEM CABEÇA SEXTAVADO INTERNO M5 X 0,80 X 30MM CLASSE 12.9 ROSCA INTEIRA ENEGRECIDO DE TEMPERA DIN 913/916",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95246,7 +95246,7 @@
     {
       "code": "01.02.01.0000000049",
       "description": "PARAFUSO SEXTAVADO 3/8 X 1\" UNC-16 GR.5 ROSCA INTEIRA ZINCADO BRANCO ASME B18.2.1",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95294,7 +95294,7 @@
     {
       "code": "01.02.01.0000000056",
       "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 70 MM - ZINCADO BRANCO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95342,7 +95342,7 @@
     {
       "code": "01.02.01.0000000061",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 80MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95390,7 +95390,7 @@
     {
       "code": "01.02.01.0000000065",
       "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 60MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95438,7 +95438,7 @@
     {
       "code": "01.02.01.0000000066",
       "description": "PARAF. CAB. SEXT. ROSCA TOTAL 8.8 DIN 933 M16 X 2,0 X 75 MM - ZINCADO BRANCO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95486,7 +95486,7 @@
     {
       "code": "01.02.01.0000000073",
       "description": "PARAFUSO SEXTAVADO M5 X 0,80 X 25MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95534,7 +95534,7 @@
     {
       "code": "01.02.01.0000000075",
       "description": "PARAFUSO SEXTAVADO M6 X 1,00 X 50MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95582,7 +95582,7 @@
     {
       "code": "01.02.01.0000000078",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 55MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95638,7 +95638,7 @@
     {
       "code": "01.02.01.0000000080",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 80MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95813,7 +95813,7 @@
     {
       "code": "01.02.01.0000000083",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 90MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95861,7 +95861,7 @@
     {
       "code": "01.02.01.0000000090",
       "description": "PARAFUSO SEXTAVADO M12 X 1,75 X 110MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95909,7 +95909,7 @@
     {
       "code": "01.02.01.0000000091",
       "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 130 MM - ZINCADO BRANCO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -95957,7 +95957,7 @@
     {
       "code": "01.02.03.0000000002",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 3/4\"(19,05MM) UNC-10 GRAU 5 IFI ZINCADO BRANCO 100 DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -96005,7 +96005,7 @@
     {
       "code": "01.02.03.0000000004",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 5/8\" 11-UNC ZINCADO BRANCO IFI 100 DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -96053,7 +96053,7 @@
     {
       "code": "01.02.03.0000000006",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA 1/2\"(12,70MM) UNC-13MM GRAU 5 IFI 100 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -96149,7 +96149,7 @@
     {
       "code": "01.02.03.0000000012",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M12 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -96245,7 +96245,7 @@
     {
       "code": "01.02.03.0000000015",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M24 X 3,00MM CLASSE 8 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -96529,7 +96529,7 @@
     {
       "code": "01.02.03.0000000033",
       "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 5 ZINCADO BRANCO DIN 934",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -100957,14 +100957,14 @@
     {
       "code": "01.02.14.0000000001",
       "description": "MOLA PARA TRAVAMENTO DO EIXO DA CAÇAMBA (PINO MORTO)",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
       "stock": 305,
       "stockMax": 0,
       "stockValue": 0,
-      "safety": 0,
+      "safety": 100,
       "orders": {
         "PED 06/2026": 0,
         "PED 07/2026": 0,
@@ -123262,7 +123262,7 @@
     {
       "code": "02.02.05.0000000077",
       "description": "KIT DE MANGUEIRAS DA LANÇA TELESCÓPICA SKYCITY 13.5 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -142526,7 +142526,7 @@
     {
       "code": "02.03.03.0000068158",
       "description": "MANCAL DO EIXO DA CESTA DO EQUIPAMENTO SKYCITY",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -142622,7 +142622,7 @@
     {
       "code": "02.03.02.0000074704",
       "description": "MANCAL DO EIXO DA CESTA SKYCITY 10L / 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -147300,7 +147300,7 @@
     {
       "code": "01.02.03.0000000063",
       "description": "PORCA SEXTAVADA FLANGEADA DUPLA 7/8\"-14FPP CLASSE 10 ENEGRECIDO DE TEMPERA",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -147348,7 +147348,7 @@
     {
       "code": "01.02.01.0000000169",
       "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIN 931 M16 X 2,0 X 90 MM - POLIDO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -148980,7 +148980,7 @@
     {
       "code": "01.09.03.0000000024",
       "description": "ADESIVO EM VINIL – CARROCERIA SKYCITY",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -149028,7 +149028,7 @@
     {
       "code": "01.09.03.0000000025",
       "description": "ADESIVO EM VINIL - CARROCERIA SKYCITY 10L",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -149076,7 +149076,7 @@
     {
       "code": "01.09.03.0000000026",
       "description": "ADESIVO EM VINIL – CARROCERIA SKYCITY 13AT",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -149124,7 +149124,7 @@
     {
       "code": "01.09.03.0000000027",
       "description": "ADESIVO EM VINIL - CARROCERIA SKYCITY 13LD",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -149220,7 +149220,7 @@
     {
       "code": "01.09.03.0000000028",
       "description": "ADESIVO EM VINIL - CARROCERIA SKYCITY 13LDDI",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -149268,7 +149268,7 @@
     {
       "code": "01.09.03.0000000029",
       "description": "ADESIVO EM VINIL - CARROCERIA SKYCITY 13LDI",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -149316,7 +149316,7 @@
     {
       "code": "01.09.03.0000000030",
       "description": "ADESIVO EM VINIL – CARROCERIA SKYCITY 15LDDI",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -150870,7 +150870,7 @@
     {
       "code": "01.15.04.0000000035",
       "description": "FECHADURA TETRA CHAVE LONGA PARA COFRE",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "ACESSORIOS",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -151062,7 +151062,7 @@
     {
       "code": "01.02.11.0000000056",
       "description": "FIXADOR AUTOADESIVO 28 X 28MM - BRANCO OU PRETO",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -177238,7 +177238,7 @@
     {
       "code": "01.02.01.0000000253",
       "description": "PARAF. CAB. SEXT. ROSCA PARCIAL 10.9 DIM 931 M16 X 2,0 X 55 MM - ZINCADO BRANCO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -177774,7 +177774,7 @@
     {
       "code": "01.02.01.0000000254",
       "description": "PARAFUSO SEXTAVADO M10 X 1,50 X 50MM CLASSE 10.9 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -178188,7 +178188,7 @@
     {
       "code": "01.02.03.0000000089",
       "description": "PORCA SEXTAVADA AUTO TRAVANTE ALTA M12 X 1,75MM CLASSE 10 ZINCADO BRANCO DIN 982",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -180092,7 +180092,7 @@
     {
       "code": "01.02.03.0000000093",
       "description": "PORCA SEXTAVADA COMUM M24 X 2,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -190236,7 +190236,7 @@
     {
       "code": "01.02.02.0000000067",
       "description": "ARRUELA DE PRESSAO M14 X 24,40 X 2,9MM ZINCADO BRANCO DIN 127",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -190332,7 +190332,7 @@
     {
       "code": "01.02.01.0000000297",
       "description": "PARAFUSO PHILLIPS ATARRAXANTE PANELA 4,8 X 19MM ROSCA INTEIRA ZINCADO BRANCO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -200659,7 +200659,7 @@
     {
       "code": "01.02.01.0000000308",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 45MM CLASSE 5.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -200859,7 +200859,7 @@
     {
       "code": "01.02.01.0000000309",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 70MM CLASSE 8.8 ROSCA PARCIAL ZINCADO BRANCO DIN 931",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -203258,7 +203258,7 @@
     {
       "code": "01.09.03.0000000085",
       "description": "ADESIVO VINIL IMPRESSAO DIGITAL 75 X 55MM - AGUA",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -206142,7 +206142,7 @@
     {
       "code": "01.02.01.0000000316",
       "description": "PARAFUSO ALLEN CABEÇA CHATA SEXTAVADO INTERNO M10 X 1,5 X 30MM ROSCA INTEIRA CLASSE 10.9 ZINCADO BRANCO DIN 7991",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "FIXADOR",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -224457,7 +224457,7 @@
     {
       "code": "02.02.01.0000083443",
       "description": "PINO FIX. CILINDRO BASE - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -224561,7 +224561,7 @@
     {
       "code": "02.03.02.0000083461",
       "description": "ENGRENAGEM CESTO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -225286,7 +225286,7 @@
     {
       "code": "01.15.04.0000000083",
       "description": "ESTEIRA PORTA CABOS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "ACESSORIOS",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -225662,7 +225662,7 @@
     {
       "code": "02.03.02.0000082244",
       "description": "ENGRENAGEM CESTO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -232377,7 +232377,7 @@
     {
       "code": "02.02.02.0000078118",
       "description": "BASTÃO TENSOR INFERIOR - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -232475,7 +232475,7 @@
     {
       "code": "02.02.01.0000087682",
       "description": "FIXAÇAO HASTE CILINDRO EXTENSIVO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -232566,7 +232566,7 @@
     {
       "code": "02.01.03.0000078177",
       "description": "PLACA DESLIZE TRASEIRA BRAÇO INTERNO 13AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -232614,7 +232614,7 @@
     {
       "code": "02.01.03.0000085357",
       "description": "DESLIZE APOIO CILINDRO EXTENSIVO 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -233150,7 +233150,7 @@
     {
       "code": "02.01.03.0000085367",
       "description": "CALHA SUPORTE MANGUEIRAS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -233213,7 +233213,7 @@
     {
       "code": "02.01.03.0000085369",
       "description": "CALHA SUPORTE MANGUEIRAS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -233261,7 +233261,7 @@
     {
       "code": "02.02.03.0000000020",
       "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 13 AT - 2 ESTABILIZADORES 46KV",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -233317,7 +233317,7 @@
     {
       "code": "02.02.05.0000000014",
       "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 10L / 10HDOC / 13L / 13LD / 13LDI / 13LDDI - 4 ESTABILIZADORES",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -233380,7 +233380,7 @@
     {
       "code": "02.02.05.0000000078",
       "description": "KIT INFERIOR DE MANGUEIRAS (LANÇAS) SKYCITY 13.5 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -233492,7 +233492,7 @@
     {
       "code": "02.01.03.0000085110",
       "description": "TARUGO 25 X 18 MM",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -238558,7 +238558,7 @@
     {
       "code": "02.01.01.0000078378",
       "description": "CHAPA BASE ESCADA MARGIRUS",
-      "analyst": "KELEN",
+      "analyst": "BRUNO",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -238973,7 +238973,7 @@
     {
       "code": "02.02.01.0000085001",
       "description": "BRAÇO INFERIOR",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -239469,7 +239469,7 @@
     {
       "code": "02.02.03.0000000035",
       "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 10S",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -239517,7 +239517,7 @@
     {
       "code": "02.02.05.0000000048",
       "description": "KIT SUPERIOR DE MANGUEIRAS SKYCITY 10S",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -239565,7 +239565,7 @@
     {
       "code": "02.02.05.0000000049",
       "description": "KIT MANGUEIRAS INFERIORES - 10 SKYCITY - 2 ESTABILIZADORES",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -293409,7 +293409,7 @@
     {
       "code": "03.06.01.0000000012",
       "description": "CESTA AEREA SKYCITY 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "MONTAGEM CESTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -293457,7 +293457,7 @@
     {
       "code": "02.02.09.0000000010",
       "description": "KIT AVULSOS CESTA AEREA SKYRITZ 13 L / LD / LDI / LDDI",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -293553,7 +293553,7 @@
     {
       "code": "02.01.01.0000095867",
       "description": "ABRAÇADEIRA TAMPA BRAÇO SUPERIOR",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -293601,7 +293601,7 @@
     {
       "code": "02.02.03.0000075103",
       "description": "BASTAO DE NIVELAMENTO FABRICADO EM FIBRA DE 2300 MM 10 L",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -293793,7 +293793,7 @@
     {
       "code": "02.02.02.0000086134",
       "description": "LANÇA SUPERIOR 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -293889,7 +293889,7 @@
     {
       "code": "02.02.01.0000088370",
       "description": "TAMPA BRAÇO SUPERIOR 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -293973,7 +293973,7 @@
     {
       "code": "02.02.01.0000088379",
       "description": "FIXAÇAO CILINDRO BASCULAMENTO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "CJ",
@@ -294021,7 +294021,7 @@
     {
       "code": "02.02.01.0000088257",
       "description": "BASTAO AÇO NIVELAMENTO COMPR. 1700 MM - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294069,7 +294069,7 @@
     {
       "code": "02.02.01.0000088256",
       "description": "BASTAO AÇO NIVELAMENTO COMPR. 600 MM - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294117,7 +294117,7 @@
     {
       "code": "02.02.02.0000086207",
       "description": "LANÇA INFERIOR 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -294165,7 +294165,7 @@
     {
       "code": "02.02.01.0000088376",
       "description": "ENGRENAGEM ARTIC. BASE/ LANÇA SKYCITY 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "CJ",
@@ -294221,7 +294221,7 @@
     {
       "code": "02.02.09.0000000217",
       "description": "KIT ACABAMENTO - SKYCITY 10 HDOC",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294269,7 +294269,7 @@
     {
       "code": "02.02.01.0000088251",
       "description": "PINO FIX. CRUZETA EXTERNA - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -294317,7 +294317,7 @@
     {
       "code": "02.02.01.0000088247",
       "description": "PINO ARTIC. LANÇAS - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294413,7 +294413,7 @@
     {
       "code": "01.09.03.0000000002",
       "description": "KIT ADESIVO 10HDOC 78 ADESIVOS VINIL BRANCO 3M",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "IDENTIFICAÇÃO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294461,7 +294461,7 @@
     {
       "code": "03.06.01.0000000063",
       "description": "CESTA AEREA SKYCITY 13,5 AT 4 ESTABILIZADORES SEM FERRAMENTA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "SUB CONJUNTOS",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294509,7 +294509,7 @@
     {
       "code": "02.02.09.0000000124",
       "description": "KIT TORRE CESTA AEREA SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294557,7 +294557,7 @@
     {
       "code": "02.01.03.0000085406",
       "description": "INDICADOR POSIÇÃO TORRE",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294605,7 +294605,7 @@
     {
       "code": "02.01.03.0000085407",
       "description": "INDICADOR POSIÇÃO TORRE",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294653,7 +294653,7 @@
     {
       "code": "02.02.09.0000000007",
       "description": "KIT RESERVATORIO HIDRAULICO CESTA AEREA SKYCITY 13 L / LD / LDI / LDDI",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294701,7 +294701,7 @@
     {
       "code": "02.02.09.0000000116",
       "description": "KIT AVULSOS CESTA AEREA SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294749,7 +294749,7 @@
     {
       "code": "02.02.09.0000000117",
       "description": "KIT KANBAN - SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -294986,7 +294986,7 @@
     {
       "code": "02.02.09.0000000120",
       "description": "KIT PRE - MONTAGEM TERCEIRO CESTA AEREA SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295034,7 +295034,7 @@
     {
       "code": "02.01.03.0000085206",
       "description": "FIBRA BRAÇO SUPERIOR ISOLADO SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295125,7 +295125,7 @@
     {
       "code": "02.02.09.0000000005",
       "description": "KIT JUNTA ROTATIVA CESTA AEREA SKYCITY 13 L / LD / LDI / LDDI",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295173,7 +295173,7 @@
     {
       "code": "02.02.09.0000000085",
       "description": "KIT MONTAGEM TOMADA DE FORCA CESTAS AEREAS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295221,7 +295221,7 @@
     {
       "code": "02.02.09.0000000125",
       "description": "KIT COMANDO SUPERIOR CESTA AEREA SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295269,7 +295269,7 @@
     {
       "code": "02.02.01.0000087400",
       "description": "SUPORTE COMANDO 13AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295346,7 +295346,7 @@
     {
       "code": "02.02.01.0000087601",
       "description": "FIXAÇAO VALVULA EMERGENCIA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295430,7 +295430,7 @@
     {
       "code": "02.01.01.0000093027",
       "description": "FIXACAO COMANDO 1 VIA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295563,7 +295563,7 @@
     {
       "code": "02.02.09.0000000059",
       "description": "KIT ENSAIOS CESTAS AEREAS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295611,7 +295611,7 @@
     {
       "code": "07.02.03.0000000005",
       "description": "ENSAIO ELETRICO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "TOMADO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295674,7 +295674,7 @@
     {
       "code": "07.02.03.0000000012",
       "description": "ENSAIO ELETRICO DO LINER CESTO AEREO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "TOMADO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295730,7 +295730,7 @@
     {
       "code": "02.02.09.0000000123",
       "description": "KIT HIDRAULICO CARROCERIA CESTA AEREA SKYCITY 13 AT - 4 ESTABILIZADORES SEM FERRAMENTA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295778,7 +295778,7 @@
     {
       "code": "02.02.09.0000000127",
       "description": "KIT LANCAS CESTA AEREA SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295874,7 +295874,7 @@
     {
       "code": "02.02.02.0000086088",
       "description": "BRAÇO INFERIOR 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -295958,7 +295958,7 @@
     {
       "code": "02.02.02.0000086070",
       "description": "BRAÇO SUPERIOR 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296042,7 +296042,7 @@
     {
       "code": "02.02.02.0000086021",
       "description": "BRAÇO EXTENSIVO 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296119,7 +296119,7 @@
     {
       "code": "02.02.01.0000088017",
       "description": "SUPORTE BASCULAMENTO CAÇAMBA - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296217,7 +296217,7 @@
     {
       "code": "02.02.01.0000087329",
       "description": "FIXACAO SUPORTE COMANDO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "#REF!",
       "unit": "UN",
@@ -296301,7 +296301,7 @@
     {
       "code": "02.01.03.0000085243",
       "description": "CAÇAMBA DE FIBRA (BOJO) - COM CANELETA FIXACAO COMANDO",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296371,7 +296371,7 @@
     {
       "code": "02.01.01.0000092890",
       "description": "FIXAÇAO CINTO",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296448,7 +296448,7 @@
     {
       "code": "02.01.01.0000094556",
       "description": "FIXAÇAO ESTEIRA",
-      "analyst": "KELEN",
+      "analyst": "PEDRO",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296539,7 +296539,7 @@
     {
       "code": "02.01.03.0000085207",
       "description": "PLACA DESLIZE SUPERIOR TRASEIRA BRAÇO INTERNO 13AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296587,7 +296587,7 @@
     {
       "code": "02.01.03.0000085363",
       "description": "PLACA DESLIZE INFERIOR",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296698,7 +296698,7 @@
     {
       "code": "02.01.01.0000094022",
       "description": "ARRUELA CALÇO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296796,7 +296796,7 @@
     {
       "code": "02.01.01.0000085257",
       "description": "TRAVA PINO Ø16",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -296844,7 +296844,7 @@
     {
       "code": "02.01.01.0000091910",
       "description": "TRAVA DO PINO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296900,7 +296900,7 @@
     {
       "code": "02.01.01.0000085255",
       "description": "TRAVA DO PINO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -296948,7 +296948,7 @@
     {
       "code": "02.02.09.0000000129",
       "description": "KIT ACABAMENTO - SKYCITY 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -296996,7 +296996,7 @@
     {
       "code": "02.01.03.0000085239",
       "description": "PROTECAO COMANDO SUPERIOR 13 AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -297059,7 +297059,7 @@
     {
       "code": "02.01.03.0000085241",
       "description": "PROTECAO ENGATE RAPIDO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297115,7 +297115,7 @@
     {
       "code": "02.01.03.0000085242",
       "description": "PROTECAO VALVULA SELETORA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297178,7 +297178,7 @@
     {
       "code": "02.01.03.0000085359",
       "description": "PROTECAO VALVULA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297234,7 +297234,7 @@
     {
       "code": "02.01.03.0000085365",
       "description": "FECHAMENTO TRASEIRO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297297,7 +297297,7 @@
     {
       "code": "02.01.03.0000085368",
       "description": "TAMPA FECHAMENTO BRACO INTERNO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297360,7 +297360,7 @@
     {
       "code": "02.01.03.0000085370",
       "description": "PROTECAO ATUADOR ROTATIVO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297423,7 +297423,7 @@
     {
       "code": "02.01.03.0000085381",
       "description": "PROTECAO BATOQUE REGULADOR",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297493,7 +297493,7 @@
     {
       "code": "02.02.09.0000000118",
       "description": "KIT LANCAS CESTA AEREA SKYCITY 13 AT GARRA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "USINAGEM",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297541,7 +297541,7 @@
     {
       "code": "02.02.03.0000078565",
       "description": "BASE LANÇA SUPERIOR - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297604,7 +297604,7 @@
     {
       "code": "02.01.03.0000078185",
       "description": "PLACA DESLIZE INFERIOR BRAÇO INTERNO 13AT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -297652,7 +297652,7 @@
     {
       "code": "02.01.01.0000078207",
       "description": "CALHA SUPORTE MANGUEIRAS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297700,7 +297700,7 @@
     {
       "code": "02.01.01.0000078564",
       "description": "CALHA SUPORTE MANGUEIRAS DIANT",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297748,7 +297748,7 @@
     {
       "code": "02.01.01.0000086570",
       "description": "PROTECAO COMANDO TORRE",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297796,7 +297796,7 @@
     {
       "code": "02.01.01.0000086566",
       "description": "PROTECAO VALVULA CILINDRO EXTENSIVO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297844,7 +297844,7 @@
     {
       "code": "02.02.01.0000086477",
       "description": "PROTECAO SUPORTE GARRA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297892,7 +297892,7 @@
     {
       "code": "02.01.01.0000086564",
       "description": "PROTECAO VALVULA CILINDRO NIVELAMENTO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -297940,7 +297940,7 @@
     {
       "code": "03.06.01.0000000067",
       "description": "CESTA AEREA SKYCITY 15,5 LDDI - BASCULAMENTO MANUAL COM FERRAMENTA",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "SUB CONJUNTOS",
       "obtentionType": "Fabricado",
       "unit": "UN",
@@ -298086,7 +298086,7 @@
     {
       "code": "02.02.02.0000085320",
       "description": "LANÇA INFERIOR SKYCITY 15 - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298134,7 +298134,7 @@
     {
       "code": "02.02.01.0000087867",
       "description": "PINO FIX. CRUZETA INTERNA - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298190,7 +298190,7 @@
     {
       "code": "02.02.01.0000087868",
       "description": "PINO ARTIC. LANÇAS - AS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298246,7 +298246,7 @@
     {
       "code": "05.01.01.0000000102",
       "description": "CABO FLEXIVEL 750V 1 X 1,5MM² - VERMELHO",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PREDIAL",
       "obtentionType": "Comprado",
       "unit": "MT",
@@ -298498,7 +298498,7 @@
     {
       "code": "02.02.03.0000000043",
       "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 15 LDDI BASCULAMENTO HIDRAULICO - 4 ESTABILIZADORES 69KV",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298546,7 +298546,7 @@
     {
       "code": "02.02.03.0000000015",
       "description": "KIT DE ADESIVOS POLICARBONATO SKYCITY 15 LDDI BASCULAMENTO MANUAL - 4 ESTABILIZADORES 69KV",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298594,7 +298594,7 @@
     {
       "code": "02.02.05.0000000012",
       "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI) SKYCITY 15 - 4 ESTABILIZADORES",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298642,7 +298642,7 @@
     {
       "code": "02.02.05.0000000011",
       "description": "KIT SUPERIOR DE MANGUEIRAS SKYCITY 15",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298690,7 +298690,7 @@
     {
       "code": "02.01.01.0000067307",
       "description": "CHAPA FURADA DE FIXAÇAO DA BORRACHA DO BRAÇO SUPERIOR E INFERIOR DO EQUIPAMENTO SKYCITY",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "PEÇA",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298738,7 +298738,7 @@
     {
       "code": "02.02.05.0000000113",
       "description": "KIT INFERIOR DE MANGUEIRAS (CHASSI)  SKYCITY 13.5 AT - 2 ESTABILIZADORES DIANTEIROS",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
@@ -298808,7 +298808,7 @@
     {
       "code": "02.02.01.0000069402",
       "description": "pino de articulaçao do braço com a torre",
-      "analyst": "KELEN",
+      "analyst": "GABRIEL",
       "family": "CONJUNTO",
       "obtentionType": "Comprado",
       "unit": "UN",
