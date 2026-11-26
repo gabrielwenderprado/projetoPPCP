@@ -1,7 +1,7 @@
 {
   "sourceFile": "planejamento_produtivo.xlsx",
   "sourceSheet": "Planilha1",
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-25",
   "records": [
     {
       "en": "EN013160",
@@ -105542,8 +105542,8 @@
   ],
   "summary": {
     "totalENs": 1552,
-    "activeENs": 556,
-    "excludedFromNiguri": 996,
+    "activeENs": 502,
+    "excludedFromNiguri": 1050,
     "byStatus": {
       "ENTREGUE": 996,
       "VITRINE": 54,
@@ -105578,9 +105578,10 @@
     },
     "excludedStatuses": [
       "ENTREGUE",
+      "VITRINE",
       "VITRINI"
     ],
-    "stageRule": "Status preenchido = etapa concluída"
+    "stageRule": "Status preenchido = etapa concluída; sem falta quando todas as etapas estão concluídas"
   },
   "stageColumns": [
     {

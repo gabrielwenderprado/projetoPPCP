@@ -35,7 +35,7 @@ class TestCilindrosSnapshot(unittest.TestCase):
 
     def test_snapshot_models_are_non_empty(self):
         self.assertGreaterEqual(len(CYLINDER_JSON["models"]), 1)
-        self.assertEqual(CYLINDER_JSON["models"], ["18LDDI", "13", "13AT", "10S"])
+        self.assertEqual(CYLINDER_JSON["models"], ["18LDDI", "13", "13AT", "10S", "10HDOC", "10L", "15LDDI"])
 
     def test_snapshot_items_is_list(self):
         self.assertIsInstance(CYLINDER_JSON["items"], list)
@@ -122,9 +122,9 @@ class TestCilindrosInterface(unittest.TestCase):
         self.assertIn("cylinders-stock-filter", JS)
         self.assertIn("selectedStockFilter", JS)
 
-    def test_cylinder_last_movement_is_rendered(self):
-        self.assertIn("Última movimentação", JS)
-        self.assertIn("item.lastMovement", JS)
+    def test_cylinder_table_does_not_render_last_movement(self):
+        self.assertNotIn("Última movimentação", JS)
+        self.assertNotIn("item.lastMovement", JS)
 
     def test_cylinder_need_and_balance_are_rendered(self):
         self.assertIn("modelNeeds", JS)
@@ -137,8 +137,14 @@ class TestCilindrosInterface(unittest.TestCase):
 
 
 class TestExplosaoRegression(unittest.TestCase):
-    def test_generic_table_has_last_movement_column(self):
-        self.assertIn("<th>Última movimentação</th>", JS)
+    def test_generic_table_has_local_minimum_and_below_minimum_flag(self):
+        self.assertIn("Estoque mínimo (local)", JS)
+        self.assertIn("Abaixo do mínimo", JS)
+        self.assertIn("data-stock-minimum", JS)
+
+    def test_generic_table_does_not_have_last_movement_column(self):
+        self.assertNotIn("Última movimentação", JS)
+        self.assertNotIn("lastMovement", JS)
 
     def test_generic_table_has_procurement_column(self):
         self.assertIn("<th>Processo de compra</th>", JS)
@@ -146,7 +152,7 @@ class TestExplosaoRegression(unittest.TestCase):
     def test_zero_stock_follow_up_logic_remains(self):
         self.assertIn("hasOrderInMonth", JS)
         self.assertIn("Follow-up", JS)
-        self.assertIn("stock <= 0", JS)
+        self.assertIn("available <= 0", JS)
 
     def test_global_stock_filter_remains(self):
         self.assertIn("stock-filter", JS)

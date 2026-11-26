@@ -87,7 +87,6 @@ def extrair(origem: Path, destino: Path) -> None:
                 'unit': text(ws.cell(row, block['unit']).value) or 'UN',
                 'stock': 0,
                 'modelNeeds': {model: 0 for model in model_order},
-                'lastMovement': 'não tem',
             })
             if not item['description'] and description:
                 item['description'] = description

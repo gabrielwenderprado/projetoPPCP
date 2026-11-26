@@ -22,9 +22,9 @@ Cada etapa possui uma coluna planejada e uma coluna `Status`. Se o `Status` esti
 
 ## Regra do NIGURI
 
-O NIGURI cruza as ENs do `plano-anual.json` com o `mapa-produtivo.json`. ENs com status normalizado **ENTREGUE** ou **VITRINI** são mantidas visíveis no mapa, mas não entram no consumo projetado do NIGURI.
+A indicação de itens faltantes no Mapa Produtivo considera a estrutura do modelo e o saldo acumulado de materiais EN por EN. ENs com status normalizado **ENTREGUE**, **VITRINE** ou **VITRINI** ficam sem itens faltantes; ENs com todas as etapas produtivas concluídas — incluindo Montagem Final, Máquina e Integração — também não exibem faltas. Para as demais, o consumo segue a data prevista do Plano Anual, com fallback para a data final do mapa ou semana/ano, e os pedidos previstos são lançados no mês correspondente antes do consumo. Assim, a falta pode surgir nas últimas unidades de uma semana ou período, sem atribuir a mesma quantidade de estoque a cada EN.
 
-As demais ENs continuam compondo a demanda dos modelos.
+A consulta do NIGURI continua disponível modelo a modelo e também em **Todos os modelos**, quando materiais repetidos são consolidados e o consumo das estruturas é somado na semana das ENs do Plano Anual.
 
 ## Atualização por arrastar e soltar no Windows
 

@@ -62,6 +62,16 @@ def model_and_structure_for_product(product: object) -> tuple[str | None, str | 
         return '30-T', '30-T'
     if 'GUINDASTE' in name and 'NX 7.5T' in name:
         return '7T', '7T'
+    # A planilha também contém rótulos abreviados sem a marca NX e uma
+    # variante ortográfica recorrente de "guindaste".
+    if name in {'GUINDASTE 21', 'GUINDASTE NX 21'}:
+        return '21T', '21T'
+    if name in {'GUINDASTE 30T', 'GUINDASTE 30'}:
+        return '30-T', '30-T'
+    if name in {'GUINDASTE 7,5', 'GUINDASTE 7.5'}:
+        return '7T', '7T'
+    if name in {'GUINDATE 25', 'GUINDASTE 25'}:
+        return 'guin-25T', 'guin-25T'
     return None, None
 
 

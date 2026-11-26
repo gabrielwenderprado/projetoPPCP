@@ -68,6 +68,33 @@ const plan7 = modelNiguriPlanEntries('7T')[0];
 assert(plan7.rows.length === 7, 'NIGURI 7T deve encontrar as sete ENs do Plano Anual');
 assert(modelNiguriTimeline('7T').allSlots.some(slot => slot.label === 'S53' && slot.quantity === 7), 'as sete ENs 7T devem entrar na semana exacta S53');
 
+// No modo agregado, a tabela pode expor todos os códigos sem repetir a procura BOM × EN × material.
+const aggregateStarted = process.hrtime.bigint();
+const aggregateTimeline = modelNiguriTimeline('Todos os modelos');
+const aggregateRows = modelNiguriRows('Todos os modelos').rows;
+const aggregateElapsedMs = Number(process.hrtime.bigint() - aggregateStarted) / 1e6;
+assert(aggregateRows.length > 250, 'o modo Todos os modelos deve disponibilizar mais de 250 materiais');
+const aggregateCache = modelNiguriRows._cache;
+modelNiguriRows('Todos os modelos', 'all', 'não existente', 'all');
+assert(modelNiguriRows._cache === aggregateCache, 'busca e filtros devem reutilizar a projeção já calculada');
+const aggregateWithConsumption = aggregateRows.filter(row => row.totalNeed > 0).slice(0, 20);
+for (const row of aggregateWithConsumption) {
+  let expectedTotal = 0;
+  for (const slot of aggregateTimeline.calculationSlots) {
+    let expectedWeek = 0;
+    for (const planned of slot.plannedEntries) {
+      const structure = modelNiguriStructureName(planned.estrutura || planned.modelo);
+      const component = (DATA.models[structure] || []).find(entry => String(entry.code || '').trim() === String(row.code));
+      expectedWeek += n(component?.quantity);
+    }
+    expectedTotal += expectedWeek;
+    const displayed = row.balances.find(cell => cell.key === slot.key);
+    if (displayed) assert(displayed.consumption === expectedWeek, `demanda semanal agregada deve coincidir para ${row.code} em ${slot.key}`);
+  }
+  assert(row.totalNeed === expectedTotal, `necessidade acumulada deve coincidir para ${row.code}`);
+}
+console.log(`NIGURI_AGGREGATE_PERF rows=${aggregateRows.length} weeks=${aggregateTimeline.calculationSlots.length} sample_checks=${aggregateWithConsumption.length} compute_ms=${aggregateElapsedMs.toFixed(1)} cache_reused=true`);
+
 // Smoke test com datas exactas e recebimentos mensais e datados.
 const now = new Date();
 const currentDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;

@@ -41,7 +41,7 @@ def extrair(origem: Path, destino: Path) -> None:
         desc = text(ws.cell(row, desc_col).value)
         stock = compact(number(ws.cell(row, stock_col).value))
         minimum = compact(number(ws.cell(row, min_col).value))
-        item = items.setdefault(code, {'code': code, 'description': desc, 'unit': 'UN', 'stock': stock, 'minimum': minimum, 'modelNeeds': {'CHAPARIAS': 0}, 'lastMovement': 'não tem'})
+        item = items.setdefault(code, {'code': code, 'description': desc, 'unit': 'UN', 'stock': stock, 'minimum': minimum, 'modelNeeds': {'CHAPARIAS': 0}})
         if not item['description'] and desc: item['description'] = desc
         if stock or not item['stock']: item['stock'] = stock
         if minimum or not item['minimum']: item['minimum'] = minimum

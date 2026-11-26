@@ -117,9 +117,9 @@ check(71, "Visão geral remove os cartões redundantes", "executive-summary-grid
 check(72, "Follow-up aparece abaixo do Processo de compra", "data-view=\"purchaseProcess\"" in html and "data-view=\"followup\"" in html and html.index('data-view="purchaseProcess"') < html.index('data-view="followup"'))
 check(73, "gráfico normaliza totais acima de 100 mil", "function orderGraphValue" in js and "total / 10" in js)
 check(74, "adição não recarrega nenhuma tabela filtrada", "addToPurchaseProcess(item, kind, { refresh: false })" in js and "refresh: view !== 'simulation'" not in js and "preserva filtros" in js)
-check(75, "conversor identifica a coluna movimentação", "movement_i = idx_any" in converter and "lastMovement" in converter)
-check(76, "tabelas exibem última movimentação", "Última movimentação" in js and "movementDate(item.lastMovement)" in js)
-check(77, "ausência de movimentação mostra não tem", "return 'não tem'" in js and "or 'nao tem'" in converter)
+check(75, "conversor não carrega movimentação obsoleta", "lastMovement" not in converter)
+check(76, "tabelas não exibem última movimentação", "Última movimentação" not in js and "movementDate" not in js)
+check(77, "estoque tem configuração local e alerta abaixo do mínimo", "pcm-stock-minimums-v1" in js and "Abaixo do mínimo" in js and "Estoque mínimo (local)" in js)
 check(78, "tabelas usam carregamento progressivo", "TABLE_CHUNK_SIZE = 250" in js and "bindProgressiveTables" in js)
 check(79, "linhas adicionais são inseridas em blocos", "insertAdjacentHTML('beforeend'" in js and "end - start" in js)
 check(80, "botão de carregar mais existe", "table-more-btn" in js and "Carregar mais" in js)
@@ -141,7 +141,7 @@ check(93, "menu de Pedidos e Modelos fundido em Estoque/NIGURI", 'data-view="ord
 check(94, "NIGURI lista as estruturas da aba Modelo", "Object.keys(DATA?.models || {}).sort" in js and "DATA?.planAnnual?.models" not in js[js.find("function modelNiguriView") : js.find("function pinsSimulationView")])
 check(95, "procura de estoque calculada pelas estruturas e Plano Mês", "function syncPlanMonthDemands" in js and "planModelStructureRows(modelEntry.modelo)" in js and "syncPlanMonthDemands();" in js)
 check(96, "aliases de guindastes e mapeamento ausente visível", "guindaste16" in js and "guindaste75" in js and "planMonthUnmatchedModels" in js)
-check(97, "pedido e demanda mensal mostrados na mesma tabela", 'id="stock-plan-month"' in js and "orderQuantityForPeriod(item, stockPeriod)" in js and "Demanda PLANO MES" in js)
+check(97, "pedido do mês e demanda total do PLANO MES mostrados na mesma tabela", 'id="stock-plan-month"' in js and "orderQuantityForPeriod(item, stockPeriod)" in js and "Demanda total PLANO MES" in js and "const periodDemand = includeDemand ? totalDemand : undefined" in js)
 check(98, "parser lê todas as colunas e modelos reconhecidos", len(plano.get("periods", [])) == len(plano.get("months", [])) and len(plano.get("models", [])) >= 21)
 annual = json.loads((ROOT / "data/plano-anual.json").read_text(encoding="utf-8"))
 niguri_plan = js[js.find("function modelNiguriPlanEntries") : js.find("function modelNiguriRows")]
@@ -160,6 +160,11 @@ check(109, "exportação mantém todas as ENs e marca as sem crítico", "const e
 check(110, "Excel local para exportação XLSX está empacotado", (ROOT / "assets/exceljs.min.js").is_file() and 'assets/exceljs.min.js' in html and 'assets/EXCELJS-LICENSE.txt' in str((ROOT / "assets/EXCELJS-LICENSE.txt")))
 check(111, "teste integrado de carros a liberar por semana passa", run(["node", "scripts/testes_carros_liberar_semanal.js"]))
 check(112, "CSS móvel cobre navegação, controles e lista de liberação", "@media (max-width: 760px)" in css and ".release-mobile-list { display:grid" in css and ".topbar-content { display:grid" in css)
+check(113, "controle removido não está na navegação ou no código ativo", "EN/PV" not in html and "en-pv" not in js and "EN_PV" not in js)
+check(114, "NIGURI oferece consulta conjunta e seleção individual", 'value="Todos os modelos"' in js and "model === 'Todos os modelos'" in js and "modelNiguriStructureRows(model)" in js)
+check(115, "NIGURI consolida materiais repetidos e indexa consumo conjunto por semana", "current.quantity += n(entry.quantity)" in js and "weeklyNeeds.set(slot.key, needs)" in js and "slot.plannedEntries.forEach" in js)
+check(116, "Mapa exclui três estados e etapas concluídas", all(status in js for status in ("ENTREGUE", "VITRINE", "VITRINI")) and "productionMapStagesComplete(row)" in js)
+check(117, "Mapa consome os saldos EN por EN", "productionMapMissingItems(row)" in js and "balances.set(entry.code, balanceWithOrder)" in js)
 
 print(f"\nResultado: {passed} verificações aprovadas; {len(failed)} falhas.")
 if failed:

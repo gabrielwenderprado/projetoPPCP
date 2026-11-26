@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-25.11.2026.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-26.11.2026.xlsm",
   "sourceSheet": "PinosAnual",
-  "generatedAt": "2026-11-25",
+  "generatedAt": "2026-11-26",
   "models": [
     "18LDDI",
     "15LDDI",
@@ -131,7 +131,7 @@
       "code": "01.02.08.0000000046",
       "description": "CONTRAPINO 1/8\" X 1.1/4\" ZINCADO BRANCO DIN 94",
       "unit": "UN",
-      "stock": 810,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 8,
@@ -482,7 +482,7 @@
       "code": "02.03.01.0000069578",
       "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
       "unit": "UN",
-      "stock": 1099,
+      "stock": 899,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1535,7 +1535,7 @@
       "code": "02.03.01.0000085007",
       "description": "PINO ARTICULAÇAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 350,
+      "stock": 344,
       "modelNeeds": {
         "18LDDI": 1,
         "15LDDI": 1,
@@ -1652,7 +1652,7 @@
       "code": "02.03.01.0000085106",
       "description": "PINO ROSCADO DO DESLIZE",
       "unit": "UN",
-      "stock": 142,
+      "stock": 137,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -1886,7 +1886,7 @@
       "code": "02.03.01.0000084349",
       "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
       "unit": "UN",
-      "stock": 229,
+      "stock": 213,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2003,7 +2003,7 @@
       "code": "02.03.01.0000084350",
       "description": "PINO CILINDRO BRACO SUPERIOR",
       "unit": "UN",
-      "stock": 256,
+      "stock": 244,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2120,7 +2120,7 @@
       "code": "02.03.01.0000084355",
       "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
       "unit": "UN",
-      "stock": 124,
+      "stock": 112,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -2354,7 +2354,7 @@
       "code": "02.03.01.0000085017",
       "description": "PINO INFERIOR DO ESTABILIZADOR",
       "unit": "UN",
-      "stock": 747,
+      "stock": 697,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3524,7 +3524,7 @@
       "code": "02.02.01.0000078132",
       "description": "PINO FRONTAL ARTICULAÇÃO - AS",
       "unit": "UN",
-      "stock": 15,
+      "stock": 0,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3641,7 +3641,7 @@
       "code": "02.02.01.0000078136",
       "description": "PINO ARTICULAÇÃO CAÇAMBA - AS",
       "unit": "UN",
-      "stock": 8,
+      "stock": 6,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -3758,7 +3758,7 @@
       "code": "02.02.01.0000078138",
       "description": "PINO ARTICULAÇÃO TORRE - AS",
       "unit": "UN",
-      "stock": 21,
+      "stock": 19,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4343,7 +4343,7 @@
       "code": "02.02.01.0000085339",
       "description": "CONJUNTO PINO TOMBAMENTO CESTO",
       "unit": "UN",
-      "stock": 50,
+      "stock": 42,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -4694,7 +4694,7 @@
       "code": "02.03.01.0000071336",
       "description": "PINO PARA ARTICULAÇAO PONTEIRA DO CILINDRO",
       "unit": "UN",
-      "stock": 184,
+      "stock": 178,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5162,7 +5162,7 @@
       "code": "02.03.01.0000085011",
       "description": "PINO ARTICULAÇAO CAÇAMBA",
       "unit": "UN",
-      "stock": 187,
+      "stock": 181,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5396,7 +5396,7 @@
       "code": "02.03.01.0000085016",
       "description": "PINO SUPERIOR ESTABILIZADOR",
       "unit": "UN",
-      "stock": 408,
+      "stock": 358,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5630,7 +5630,7 @@
       "code": "02.02.01.0000078129",
       "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
       "unit": "UN",
-      "stock": 44,
+      "stock": 43,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5747,7 +5747,7 @@
       "code": "02.02.01.0000078131",
       "description": "PINO BRAÇO INFERIOR - AS",
       "unit": "UN",
-      "stock": 40,
+      "stock": 39,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5864,7 +5864,7 @@
       "code": "02.02.01.0000078133",
       "description": "PINO BRAÇO SUPERIOR / LINK - AS",
       "unit": "UN",
-      "stock": 23,
+      "stock": 22,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -5981,7 +5981,7 @@
       "code": "02.02.01.0000078134",
       "description": "PINO TRASEIRO ARTICULAÇÃO - AS",
       "unit": "UN",
-      "stock": 29,
+      "stock": 28,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -6098,7 +6098,7 @@
       "code": "02.02.01.0000078135",
       "description": "PINO BASE EXTENSÃO - AS",
       "unit": "UN",
-      "stock": 16,
+      "stock": 15,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -6215,7 +6215,7 @@
       "code": "02.02.01.0000078137",
       "description": "PINO SUPERIOR ARTICULAÇÃO CAÇAMBA - AS",
       "unit": "UN",
-      "stock": 10,
+      "stock": 9,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -6332,7 +6332,7 @@
       "code": "02.02.01.0000078583",
       "description": "PINO CILINDRO BRAÇO SUPERIOR - AS",
       "unit": "UN",
-      "stock": 53,
+      "stock": 52,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7151,7 +7151,7 @@
       "code": "02.03.01.0000001729",
       "description": "PINO BOLA (PONTO DE ATERRAMENTO)",
       "unit": "UN",
-      "stock": 188,
+      "stock": 181,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,
@@ -7736,7 +7736,7 @@
       "code": "02.03.01.0000085115",
       "description": "PINO ARTICULACAO ALAVANCAS COMANDO",
       "unit": "UN",
-      "stock": 27,
+      "stock": 26,
       "modelNeeds": {
         "18LDDI": 0,
         "15LDDI": 0,

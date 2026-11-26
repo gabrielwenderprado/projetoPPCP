@@ -44,11 +44,11 @@ Depois de atualizar o JSON, recarregue o dashboard com `Ctrl + F5`.
 
 A visão geral mostra materiais cadastrados, valor total do estoque, solicitações de obtenção em aberto, classificação de risco e pedidos previstos por mês. Os filtros globais combinam **Carteira**, **Família** e **Tipo de obtenção**.
 
-Na área **Estoque**, selecione o mês do Plano Mês para ver, na mesma tabela, o pedido `PED` daquele mês e a demanda derivada da estrutura do produto planeado. Os separadores autónomos **Pedidos e demanda** e **Modelos** foram removidos para evitar duplicação: os pedidos continuam na tabela de Estoque e as estruturas continuam carregadas internamente para o NIGURI e as simulações.
+Na área **Estoque**, selecione o mês do Plano Mês para ver, na mesma tabela, o pedido `PED` daquele mês e a demanda derivada da estrutura do produto planeado. O estoque mínimo pode ser editado diretamente na coluna da tabela; a configuração é guardada somente no `localStorage` deste navegador/computador, e itens abaixo do limite mostram **Abaixo do mínimo**. Uma compra sugerida positiva aparece como **Comprar** e pode ser enviada ao Processo de compra. Os separadores autónomos **Pedidos e demanda** e **Modelos** foram removidos para evitar duplicação: os pedidos continuam na tabela de Estoque e as estruturas continuam carregadas internamente para o NIGURI e as simulações.
 
-O **NIGURI dos modelos** lista as estruturas carregadas das abas de modelos e associa cada EN do `planoAnual` ao modelo correspondente, usando a data prevista da coluna D para calcular o consumo na semana exacta. Sem uma EN futura datada, não inventa consumo; linhas sem data exacta são sinalizadas. Os aliases de guindaste usam a capacidade-base, desde que a configuração da BOM seja compatível. A demanda mensal exibida em Estoque continua a vir do `PLANO MES`. A lista da Visão geral **Carros a liberar** também usa as ENs e as datas do `planoAnual`; permite seleccionar uma semana e exportar um `.xlsx` formatado com todas as ENs dessa semana, modelo, cliente, semana, lista de itens críticos e previsão de pedido para os críticos. Quando uma EN não tem itens críticos, o Excel escreve **“Sem crítico”**. Itens em atenção podem continuar visíveis no painel, mas não são incluídos no ficheiro Excel. Variantes sem BOM compatível — como guindaste 35,5 sem estrutura 35 e o 45,5T 4H/3M quando a BOM disponível é 45,5T 5H/3M — são sinalizadas e não recebem consumo inventado. As áreas **Pinos por modelo** e **Cilindros por modelo** mantêm os seus cálculos especializados.
+O **NIGURI dos modelos** permite consultar uma estrutura por vez ou **Todos os modelos**. Na consulta conjunta, os códigos repetidos são consolidados e a demanda semanal é somada pelas estruturas e ENs correspondentes. Cada EN do `planoAnual` usa a data prevista da coluna D para calcular o consumo na semana exacta. Sem uma EN futura datada, não inventa consumo; linhas sem data exacta são sinalizadas. Os aliases de guindaste usam a capacidade-base, desde que a configuração da BOM seja compatível. A demanda mensal exibida em Estoque continua a vir do `PLANO MES`. A lista da Visão geral **Carros a liberar** também usa as ENs e as datas do `planoAnual`; permite seleccionar uma semana e exportar um `.xlsx` formatado com todas as ENs dessa semana, modelo, cliente, semana, lista de itens críticos e previsão de pedido para os críticos. Quando uma EN não tem itens críticos, o Excel escreve **“Sem crítico”**. Itens em atenção podem continuar visíveis no painel, mas não são incluídos no ficheiro Excel. Variantes sem BOM compatível — como guindaste 35,5 sem estrutura 35 e o 45,5T 4H/3M quando a BOM disponível é 45,5T 5H/3M — são sinalizadas e não recebem consumo inventado. As áreas **Pinos por modelo** e **Cilindros por modelo** mantêm os seus cálculos especializados.
 
-A página **Evolução do estoque** mostra barras mensais para o valor total do estoque e uma tabela com os valores exactos de cada mês.
+A página **Evolução do estoque** mostra barras mensais para o valor total do estoque e uma tabela com os valores exactos de cada mês. O **Mapa produtivo** calcula faltas por consumo acumulado EN a EN; ENs com etapas concluídas e estados Vitrine/Entregue ficam sem indicação de falta, e pedidos do mês são considerados no saldo.
 
 Ao clicar em um código de material, o dashboard mostra estoque, segurança, consumo mensal, pedidos e quantidade sugerida para compra. O cartão de **Follow-up** abre a relação de pedidos de meses anteriores que precisam ser verificados com o time de compras.
 
@@ -85,22 +85,6 @@ Ao clicar em um código de material, o dashboard mostra estoque, segurança, con
 ## Observação sobre segurança
 
 O login desta cópia é uma camada simples no navegador. Os utilizadores e senhas ficam dentro de `assets/app.js`. Isso é útil para controlar o acesso informal da equipa, mas não equivale a uma autenticação segura de servidor. Não utilize esta proteção como única barreira para informação altamente confidencial.
-
-## Controle de ENs / PVs
-
-A área **Controle de ENs / PVs** usa as linhas já existentes em `data/plano-anual.json` e não exige novas colunas no Excel para começar.
-
-Fluxo: anexe o PDF do PV e execute a leitura. O sistema identifica todas as ENs no documento e vincula automaticamente cada uma que existir no plano anual. Se nenhuma EN do PDF estiver no plano, exibe **Nenhuma EN encontrada — verificar plano**; se uma EN ainda não tiver vínculo, a tabela mostra **PV ainda não gerado**. O sistema também identifica o veículo/chassi, o produto e o PV. O modelo do produto é tratado separadamente do chassi: `CESTO AÉREO SKYCITY 10 L` vira `10L`. O texto vermelho dentro da seção de produto é comparado com a estrutura do modelo identificado.
-
-Divergências de modelo, EN ausente no PDF, modelo não identificado ou item crítico não encontrado na estrutura impedem a conclusão. A primeira página do PDF é convertida em uma miniatura real e exibida nos detalhes, junto com as informações extraídas. O checklist e os campos PV/SC/responsável ficam salvos no `localStorage` do navegador. PDFs escaneados sem camada de texto entram em **Confirmação necessária** e não podem ser liberados automaticamente.
-
-Ao clicar em uma EN, o sistema abre a janela de **Itens críticos da estrutura**. Ela calcula os componentes cujo estoque é menor que a necessidade do modelo, mostra pedidos por mês e quantidade, estoque, necessidade e saldo, e permite baixar um arquivo Excel com código, descrição, pedidos e estoque.
-
-A leitura usa PDF.js carregado pelo navegador. O arquivo `scripts/testes_en_pv.js` possui a regressão automatizada da funcionalidade:
-
-```bash
-node scripts/testes_en_pv.js
-```
 
 ## Tema natalino sazonal
 

@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-25.11.2026.xlsm",
+  "sourceFile": "Cópia de EXPLOSAO-26.11.2026.xlsm",
   "sourceSheet": "cabines",
-  "generatedAt": "2026-11-25",
+  "generatedAt": "2026-11-26",
   "models": [
     "4 LUGAR",
     "6 LUGAR",
@@ -13,14 +13,13 @@
       "code": "01.04.01.0000000027",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 2,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 58776.38,
+      "stock": 31707.38,
       "modelNeeds": {
         "4 LUGAR": 232.4746,
         "6 LUGAR": 332.31,
         "8 LUGAR": 308.4838,
         "6 LUGAR C/ BANHEIRO": 382.138
       },
-      "lastMovement": "não tem",
       "totalNeed": 1255.4064,
       "modelCount": 4
     },
@@ -28,14 +27,13 @@
       "code": "01.04.01.0000000147",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,00 X 1500 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 19781.8,
+      "stock": 14694.8,
       "modelNeeds": {
         "4 LUGAR": 109.5973,
         "6 LUGAR": 109.5973,
         "8 LUGAR": 136.6649,
         "6 LUGAR C/ BANHEIRO": 109.5973
       },
-      "lastMovement": "não tem",
       "totalNeed": 465.4568,
       "modelCount": 4
     },
@@ -43,14 +41,13 @@
       "code": "01.02.02.0000000012",
       "description": "ARRUELA LISA MEDIA M8 X 17 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 11000,
+      "stock": 9000,
       "modelNeeds": {
         "4 LUGAR": 16,
         "6 LUGAR": 60,
         "8 LUGAR": 89,
         "6 LUGAR C/ BANHEIRO": 8
       },
-      "lastMovement": "não tem",
       "totalNeed": 173,
       "modelCount": 4
     },
@@ -58,14 +55,13 @@
       "code": "01.02.01.0000000113",
       "description": "PARAFUSO SEXTAVADO M8 X 1,25 X 25MM CLASSE 8.8 ROSCA INTEIRA ZINCADO BRANCO DIN 933",
       "unit": "UN",
-      "stock": 9200,
+      "stock": 9000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 52,
         "8 LUGAR": 66,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 118,
       "modelCount": 2
     },
@@ -80,7 +76,6 @@
         "8 LUGAR": 58,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 116,
       "modelCount": 2
     },
@@ -95,7 +90,6 @@
         "8 LUGAR": 58,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 116,
       "modelCount": 2
     },
@@ -103,14 +97,13 @@
       "code": "01.04.01.0000000029",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 3000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 82955.7096,
+      "stock": 44708.7096,
       "modelNeeds": {
         "4 LUGAR": 24.035,
         "6 LUGAR": 50.0091,
         "8 LUGAR": 0.5876,
         "6 LUGAR C/ BANHEIRO": 40.5239
       },
-      "lastMovement": "não tem",
       "totalNeed": 115.1556,
       "modelCount": 4
     },
@@ -118,14 +111,13 @@
       "code": "01.02.01.0000000024",
       "description": "PARAFUSO SEXTAVADO AUTO PERFURANTE 1/4 X 1\" (6,35X1,75X25MM) ROSCA INTEIRA ZINCADO BRANCO",
       "unit": "UN",
-      "stock": 3600,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 45,
         "8 LUGAR": 45,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 90,
       "modelCount": 2
     },
@@ -133,14 +125,13 @@
       "code": "01.02.03.0000000034",
       "description": "PORCA SEXTAVADA COMUM M8 X 1,25MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 4000,
+      "stock": 3000,
       "modelNeeds": {
         "4 LUGAR": 24,
         "6 LUGAR": 18,
         "8 LUGAR": 24,
         "6 LUGAR C/ BANHEIRO": 20
       },
-      "lastMovement": "não tem",
       "totalNeed": 86,
       "modelCount": 4
     },
@@ -155,7 +146,6 @@
         "8 LUGAR": 24.1546,
         "6 LUGAR C/ BANHEIRO": 17.6583
       },
-      "lastMovement": "não tem",
       "totalNeed": 74.251,
       "modelCount": 4
     },
@@ -170,7 +160,6 @@
         "8 LUGAR": 12.213,
         "6 LUGAR C/ BANHEIRO": 19.3453
       },
-      "lastMovement": "não tem",
       "totalNeed": 64.0571,
       "modelCount": 4
     },
@@ -185,7 +174,6 @@
         "8 LUGAR": 30,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 60,
       "modelCount": 2
     },
@@ -200,7 +188,6 @@
         "8 LUGAR": 30,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 60,
       "modelCount": 2
     },
@@ -215,7 +202,6 @@
         "8 LUGAR": 30,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 60,
       "modelCount": 2
     },
@@ -230,7 +216,6 @@
         "8 LUGAR": 33,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 53,
       "modelCount": 2
     },
@@ -245,7 +230,6 @@
         "8 LUGAR": 10,
         "6 LUGAR C/ BANHEIRO": 15
       },
-      "lastMovement": "não tem",
       "totalNeed": 50,
       "modelCount": 4
     },
@@ -260,7 +244,6 @@
         "8 LUGAR": 24,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 48,
       "modelCount": 2
     },
@@ -275,7 +258,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 18
       },
-      "lastMovement": "não tem",
       "totalNeed": 48,
       "modelCount": 3
     },
@@ -283,14 +265,13 @@
       "code": "01.02.03.0000000040",
       "description": "PORCA SEXTAVADA COMUM M10 X 1,50MM CLASSE 8 ZINCADO BRANCO DIN 934",
       "unit": "UN",
-      "stock": 2660,
+      "stock": 2160,
       "modelNeeds": {
         "4 LUGAR": 12,
         "6 LUGAR": 16,
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 14
       },
-      "lastMovement": "não tem",
       "totalNeed": 46,
       "modelCount": 4
     },
@@ -305,7 +286,6 @@
         "8 LUGAR": 21,
         "6 LUGAR C/ BANHEIRO": 14
       },
-      "lastMovement": "não tem",
       "totalNeed": 45,
       "modelCount": 3
     },
@@ -320,7 +300,6 @@
         "8 LUGAR": 22,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 44,
       "modelCount": 2
     },
@@ -335,7 +314,6 @@
         "8 LUGAR": 14,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 36,
       "modelCount": 4
     },
@@ -350,7 +328,6 @@
         "8 LUGAR": 12,
         "6 LUGAR C/ BANHEIRO": 6
       },
-      "lastMovement": "não tem",
       "totalNeed": 28,
       "modelCount": 4
     },
@@ -365,7 +342,6 @@
         "8 LUGAR": 9.2092,
         "6 LUGAR C/ BANHEIRO": 9.2092
       },
-      "lastMovement": "não tem",
       "totalNeed": 27.6276,
       "modelCount": 3
     },
@@ -380,7 +356,6 @@
         "8 LUGAR": 8,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 24,
       "modelCount": 4
     },
@@ -395,7 +370,6 @@
         "8 LUGAR": 8,
         "6 LUGAR C/ BANHEIRO": 6
       },
-      "lastMovement": "não tem",
       "totalNeed": 24,
       "modelCount": 4
     },
@@ -410,7 +384,6 @@
         "8 LUGAR": 8,
         "6 LUGAR C/ BANHEIRO": 6
       },
-      "lastMovement": "não tem",
       "totalNeed": 24,
       "modelCount": 4
     },
@@ -418,14 +391,13 @@
       "code": "01.04.01.0000000033",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 4,25 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 56376.3338,
+      "stock": 18138.3338,
       "modelNeeds": {
         "4 LUGAR": 11.7357,
         "6 LUGAR": 0.4853,
         "8 LUGAR": 6.425,
         "6 LUGAR C/ BANHEIRO": 0.4393
       },
-      "lastMovement": "não tem",
       "totalNeed": 19.0853,
       "modelCount": 4
     },
@@ -440,7 +412,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 6
       },
-      "lastMovement": "não tem",
       "totalNeed": 18,
       "modelCount": 4
     },
@@ -455,7 +426,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 6
       },
-      "lastMovement": "não tem",
       "totalNeed": 18,
       "modelCount": 4
     },
@@ -470,7 +440,6 @@
         "8 LUGAR": 5,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 17,
       "modelCount": 3
     },
@@ -478,14 +447,13 @@
       "code": "01.02.02.0000000014",
       "description": "ARRUELA LISA MEDIA M6 X 12,50 X 1,60MM ZINCADO BRANCO DIN 125 A",
       "unit": "UN",
-      "stock": 86000,
+      "stock": 78000,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 8,
         "8 LUGAR": 8,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 16,
       "modelCount": 2
     },
@@ -500,7 +468,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 16,
       "modelCount": 4
     },
@@ -515,7 +482,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 6
       },
-      "lastMovement": "não tem",
       "totalNeed": 16,
       "modelCount": 4
     },
@@ -523,14 +489,13 @@
       "code": "01.04.01.0000000036",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 6,35 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 59989.867,
+      "stock": 34791.867,
       "modelNeeds": {
         "4 LUGAR": 3.6456,
         "6 LUGAR": 5.2395,
         "8 LUGAR": 0.7705,
         "6 LUGAR C/ BANHEIRO": 5.2395
       },
-      "lastMovement": "não tem",
       "totalNeed": 14.8951,
       "modelCount": 4
     },
@@ -545,7 +510,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 13,
       "modelCount": 3
     },
@@ -560,7 +524,6 @@
         "8 LUGAR": 6,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 2
     },
@@ -575,7 +538,6 @@
         "8 LUGAR": 6,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 2
     },
@@ -590,7 +552,6 @@
         "8 LUGAR": 6,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 2
     },
@@ -605,7 +566,6 @@
         "8 LUGAR": 6,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 2
     },
@@ -620,7 +580,6 @@
         "8 LUGAR": 3,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 4
     },
@@ -635,7 +594,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 4
     },
@@ -650,7 +608,6 @@
         "8 LUGAR": 3,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 4
     },
@@ -665,7 +622,6 @@
         "8 LUGAR": 12,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 1
     },
@@ -680,7 +636,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 3
     },
@@ -695,7 +650,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 12,
       "modelCount": 3
     },
@@ -710,7 +664,6 @@
         "8 LUGAR": 8,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 11,
       "modelCount": 2
     },
@@ -725,7 +678,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 10,
       "modelCount": 4
     },
@@ -740,7 +692,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 5
       },
-      "lastMovement": "não tem",
       "totalNeed": 10,
       "modelCount": 2
     },
@@ -755,7 +706,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 10,
       "modelCount": 3
     },
@@ -770,7 +720,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -785,7 +734,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -800,7 +748,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -815,7 +762,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -830,7 +776,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -845,7 +790,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -860,7 +804,6 @@
         "8 LUGAR": 3,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 9,
       "modelCount": 4
     },
@@ -875,7 +818,6 @@
         "8 LUGAR": 1.9389,
         "6 LUGAR C/ BANHEIRO": 2.53
       },
-      "lastMovement": "não tem",
       "totalNeed": 8.3375,
       "modelCount": 4
     },
@@ -890,7 +832,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -898,14 +839,13 @@
       "code": "01.02.07.0000000021",
       "description": "ANEL ELASTICO AÇO CARBONO EIXO E-10",
       "unit": "UN",
-      "stock": 1743,
+      "stock": 1543,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -920,7 +860,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -935,7 +874,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -950,7 +888,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -965,7 +902,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -980,7 +916,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -995,7 +930,6 @@
         "8 LUGAR": 5,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 2
     },
@@ -1010,7 +944,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1025,7 +958,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1040,7 +972,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1055,7 +986,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1070,7 +1000,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1085,7 +1014,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 3
     },
@@ -1100,7 +1028,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 2
     },
@@ -1115,7 +1042,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 4
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 2
     },
@@ -1130,7 +1056,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1145,7 +1070,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1153,14 +1077,13 @@
       "code": "02.03.02.0000085107",
       "description": "BUCHA DE ABERTURA DA PORTA DA CABINE",
       "unit": "UN",
-      "stock": 1288,
+      "stock": 1188,
       "modelNeeds": {
         "4 LUGAR": 2,
         "6 LUGAR": 2,
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 8,
       "modelCount": 4
     },
@@ -1168,14 +1091,13 @@
       "code": "01.04.01.0000000111",
       "description": "CHAPA DE AÇO LAMINADO A FRIO - 1,50 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 28542.3914,
+      "stock": 12717.3914,
       "modelNeeds": {
         "4 LUGAR": 0.0161,
         "6 LUGAR": 0.0161,
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 7.5866
       },
-      "lastMovement": "não tem",
       "totalNeed": 7.6188,
       "modelCount": 3
     },
@@ -1183,14 +1105,13 @@
       "code": "01.04.01.0000000019",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE XADREZ - 2,65 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 22405.684,
+      "stock": 1678.684,
       "modelNeeds": {
         "4 LUGAR": 1.8147,
         "6 LUGAR": 1.8147,
         "8 LUGAR": 1.8147,
         "6 LUGAR C/ BANHEIRO": 1.8147
       },
-      "lastMovement": "não tem",
       "totalNeed": 7.2588,
       "modelCount": 4
     },
@@ -1205,7 +1126,6 @@
         "8 LUGAR": 7,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 7,
       "modelCount": 1
     },
@@ -1220,7 +1140,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 7,
       "modelCount": 3
     },
@@ -1235,7 +1154,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 7,
       "modelCount": 3
     },
@@ -1250,7 +1168,6 @@
         "8 LUGAR": 2.7278,
         "6 LUGAR C/ BANHEIRO": 1.296
       },
-      "lastMovement": "não tem",
       "totalNeed": 6.6158,
       "modelCount": 4
     },
@@ -1265,7 +1182,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1280,7 +1196,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 4
     },
@@ -1295,7 +1210,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1310,7 +1224,6 @@
         "8 LUGAR": 6,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 1
     },
@@ -1325,7 +1238,6 @@
         "8 LUGAR": 6,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 1
     },
@@ -1340,7 +1252,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1355,7 +1266,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1370,7 +1280,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 2
     },
@@ -1385,7 +1294,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1400,7 +1308,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1415,7 +1322,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1430,7 +1336,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1445,7 +1350,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1460,7 +1364,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1475,7 +1378,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 3
     },
@@ -1490,7 +1392,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 2
     },
@@ -1505,7 +1406,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 6,
       "modelCount": 2
     },
@@ -1520,7 +1420,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 5,
       "modelCount": 4
     },
@@ -1535,7 +1434,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 5,
       "modelCount": 4
     },
@@ -1550,7 +1448,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 5,
       "modelCount": 4
     },
@@ -1565,7 +1462,6 @@
         "8 LUGAR": 5,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 5,
       "modelCount": 1
     },
@@ -1580,7 +1476,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 5,
       "modelCount": 4
     },
@@ -1588,14 +1483,13 @@
       "code": "01.04.01.0000000031",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 3,75 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 32220.615,
+      "stock": 15154.615,
       "modelNeeds": {
         "4 LUGAR": 1.4076,
         "6 LUGAR": 1.334,
         "8 LUGAR": 0.7704,
         "6 LUGAR C/ BANHEIRO": 1.334
       },
-      "lastMovement": "não tem",
       "totalNeed": 4.846,
       "modelCount": 4
     },
@@ -1610,7 +1504,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1625,7 +1518,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1640,7 +1532,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1655,7 +1546,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1670,7 +1560,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1685,7 +1574,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1700,7 +1588,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1715,7 +1602,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1730,7 +1616,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1745,7 +1630,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1760,7 +1644,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1775,7 +1658,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1790,7 +1672,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1805,7 +1686,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1820,7 +1700,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 2
     },
@@ -1835,7 +1714,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1850,7 +1728,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1865,7 +1742,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1880,7 +1756,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1895,7 +1770,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1910,7 +1784,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1925,7 +1798,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1940,7 +1812,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -1955,7 +1826,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 2
     },
@@ -1970,7 +1840,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -1985,7 +1854,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -2000,7 +1868,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -2015,7 +1882,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 2
     },
@@ -2030,7 +1896,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 2
     },
@@ -2045,7 +1910,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 2
     },
@@ -2060,7 +1924,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -2075,7 +1938,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -2090,7 +1952,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -2105,7 +1966,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -2120,7 +1980,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 2
     },
@@ -2135,7 +1994,6 @@
         "8 LUGAR": 4,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 1
     },
@@ -2143,14 +2001,13 @@
       "code": "02.03.01.0000085043",
       "description": "PINO DA ABERTURA A PORTA DA CABINE",
       "unit": "UN",
-      "stock": 820,
+      "stock": 720,
       "modelNeeds": {
         "4 LUGAR": 1,
         "6 LUGAR": 1,
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 4,
       "modelCount": 4
     },
@@ -2158,14 +2015,13 @@
       "code": "01.04.01.0000000156",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 2,65 X 1200 X 6000MM - ASTM A36 / CIVIL 300",
       "unit": "UN",
-      "stock": 6516,
+      "stock": 0,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3.0636
       },
-      "lastMovement": "não tem",
       "totalNeed": 3.0636,
       "modelCount": 1
     },
@@ -2180,7 +2036,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2195,7 +2050,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2210,7 +2064,6 @@
         "8 LUGAR": 3,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 1
     },
@@ -2225,7 +2078,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2240,7 +2092,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2255,7 +2106,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2270,7 +2120,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2285,7 +2134,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2300,7 +2148,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2315,7 +2162,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 2
     },
@@ -2330,7 +2176,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2345,7 +2190,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 1
     },
@@ -2360,7 +2204,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2375,7 +2218,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2390,7 +2232,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2405,7 +2246,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 3
     },
@@ -2420,7 +2260,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 3
       },
-      "lastMovement": "não tem",
       "totalNeed": 3,
       "modelCount": 1
     },
@@ -2435,7 +2274,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2450,7 +2288,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2465,7 +2302,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2480,7 +2316,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2495,7 +2330,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2510,7 +2344,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2525,7 +2358,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2540,7 +2372,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2555,7 +2386,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2570,7 +2400,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2585,7 +2414,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2600,7 +2428,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2615,7 +2442,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2630,7 +2456,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2645,7 +2470,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2660,7 +2484,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2675,7 +2498,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2690,7 +2512,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2705,7 +2526,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2720,7 +2540,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2735,7 +2554,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2750,7 +2568,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2765,7 +2582,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2780,7 +2596,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2795,7 +2610,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2810,7 +2624,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 2
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2825,7 +2638,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2840,7 +2652,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2855,7 +2666,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2870,7 +2680,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2885,7 +2694,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2900,7 +2708,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2915,7 +2722,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2930,7 +2736,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2945,7 +2750,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -2960,7 +2764,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2975,7 +2778,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -2990,7 +2792,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -3005,7 +2806,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -3020,7 +2820,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -3035,7 +2834,6 @@
         "8 LUGAR": 2,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 1
     },
@@ -3050,7 +2848,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -3065,7 +2862,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -3080,7 +2876,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 2,
       "modelCount": 2
     },
@@ -3088,14 +2883,13 @@
       "code": "01.04.01.0000000037",
       "description": "CHAPA DE AÇO LAMINADO A QUENTE - 8,00 X 1200 X 3000MM - ASTM A36",
       "unit": "UN",
-      "stock": 10430.68,
+      "stock": 7908.68,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
         "8 LUGAR": 1.9056,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1.9056,
       "modelCount": 1
     },
@@ -3110,7 +2904,6 @@
         "8 LUGAR": 0.6,
         "6 LUGAR C/ BANHEIRO": 0.6
       },
-      "lastMovement": "não tem",
       "totalNeed": 1.8,
       "modelCount": 3
     },
@@ -3125,7 +2918,6 @@
         "8 LUGAR": 1.0454,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1.0454,
       "modelCount": 1
     },
@@ -3140,7 +2932,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3155,7 +2946,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3163,14 +2953,13 @@
       "code": "01.15.02.0000000140",
       "description": "PIA LAVATORIO PORTATIL CAMPING COM RESERVATORIO",
       "unit": "UN",
-      "stock": 45,
+      "stock": 58,
       "modelNeeds": {
         "4 LUGAR": 0,
         "6 LUGAR": 0,
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3185,7 +2974,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3200,7 +2988,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3215,7 +3002,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3230,7 +3016,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3245,7 +3030,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3260,7 +3044,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3275,7 +3058,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3290,7 +3072,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3305,7 +3086,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3320,7 +3100,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3335,7 +3114,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3350,7 +3128,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3365,7 +3142,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3380,7 +3156,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3395,7 +3170,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3410,7 +3184,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3425,7 +3198,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3440,7 +3212,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3455,7 +3226,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3470,7 +3240,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3485,7 +3254,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3500,7 +3268,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3515,7 +3282,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3530,7 +3296,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3545,7 +3310,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3560,7 +3324,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3575,7 +3338,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3590,7 +3352,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3605,7 +3366,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3620,7 +3380,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3635,7 +3394,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3650,7 +3408,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3665,7 +3422,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3680,7 +3436,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3695,7 +3450,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3710,7 +3464,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3725,7 +3478,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3740,7 +3492,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3755,7 +3506,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3770,7 +3520,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3785,7 +3534,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3800,7 +3548,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3815,7 +3562,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3830,7 +3576,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3845,7 +3590,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3860,7 +3604,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3875,7 +3618,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3890,7 +3632,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3905,7 +3646,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3920,7 +3660,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3935,7 +3674,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3950,7 +3688,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3965,7 +3702,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3980,7 +3716,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -3995,7 +3730,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4010,7 +3744,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4025,7 +3758,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4040,7 +3772,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4055,7 +3786,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4070,7 +3800,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4085,7 +3814,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4100,7 +3828,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4115,7 +3842,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4130,7 +3856,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4145,7 +3870,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4160,7 +3884,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4175,7 +3898,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4190,7 +3912,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4205,7 +3926,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4220,7 +3940,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4235,7 +3954,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4250,7 +3968,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4265,7 +3982,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4280,7 +3996,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4295,7 +4010,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4310,7 +4024,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4325,7 +4038,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4340,7 +4052,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4355,7 +4066,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4370,7 +4080,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4385,7 +4094,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4400,7 +4108,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4415,7 +4122,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4430,7 +4136,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4445,7 +4150,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4460,7 +4164,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4475,7 +4178,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4490,7 +4192,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4505,7 +4206,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4520,7 +4220,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4535,7 +4234,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4550,7 +4248,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4565,7 +4262,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4580,7 +4276,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4595,7 +4290,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4610,7 +4304,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4625,7 +4318,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4640,7 +4332,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 1
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4655,7 +4346,6 @@
         "8 LUGAR": 1,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4670,7 +4360,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4685,7 +4374,6 @@
         "8 LUGAR": 0,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 1,
       "modelCount": 1
     },
@@ -4700,7 +4388,6 @@
         "8 LUGAR": 0.3,
         "6 LUGAR C/ BANHEIRO": 0
       },
-      "lastMovement": "não tem",
       "totalNeed": 0.6,
       "modelCount": 2
     },
@@ -4715,7 +4402,6 @@
         "8 LUGAR": 0.0817,
         "6 LUGAR C/ BANHEIRO": 0.0817
       },
-      "lastMovement": "não tem",
       "totalNeed": 0.3268,
       "modelCount": 4
     },
@@ -4730,7 +4416,6 @@
         "8 LUGAR": 0.1,
         "6 LUGAR C/ BANHEIRO": 0.1
       },
-      "lastMovement": "não tem",
       "totalNeed": 0.3,
       "modelCount": 3
     },
@@ -4745,7 +4430,6 @@
         "8 LUGAR": 0.0471,
         "6 LUGAR C/ BANHEIRO": 0.0471
       },
-      "lastMovement": "não tem",
       "totalNeed": 0.1884,
       "modelCount": 4
     }

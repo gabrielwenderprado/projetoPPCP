@@ -1,0 +1,10 @@
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve(__dirname, '..');
+const js = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
+const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const css = fs.readFileSync(path.join(root, 'assets/styles.css'), 'utf8');
+assert(!/enPV|EN_PV|en-pv|Controle de ENs \/ PVs/.test(js + html + css), 'O controle removido não deve permanecer ativo ou estilizado');
+assert(!/Última movimentação|lastMovement|movementDate/.test(js + html + css), 'A coluna de movimentação não deve permanecer no projeto ativo');
+console.log('REMOVED_FEATURES_OK');

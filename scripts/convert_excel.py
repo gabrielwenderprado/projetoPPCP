@@ -105,7 +105,6 @@ stock_value_i = idx_any('valor de estoque', 'valor estoque')
 safety_i = idx_any('estoq.segurança', 'estoque segurança')
 family_i = idx_any('familia', 'família')
 obtention_i = idx_any('Tipo de obtenção', 'Tipo obtenção', 'Tipo de obtencao')
-movement_i = idx_any('movimentação', 'movimentacao')
 if analyst_i < 0:
     raise RuntimeError('A coluna analista é obrigatória na aba Programacao')
 
@@ -183,11 +182,6 @@ for row in rows(ws, min(ws.max_row, 30000), 60):
         analyst = ''
     family = text(row[family_i]) if 0 <= family_i < len(row) else ''
     obtention_type = text(row[obtention_i]) if 0 <= obtention_i < len(row) else ''
-    movement_value = row[movement_i] if 0 <= movement_i < len(row) else None
-    if isinstance(movement_value, (datetime, date)):
-        last_movement = movement_value.strftime('%Y-%m-%d')
-    else:
-        last_movement = text(movement_value) or 'nao tem'
     orders = {label: compact_number(num(row[index])) for index, label in order_cols if index < len(row)}
     demands = {label: compact_number(num(row[index])) for index, label in demand_cols if index < len(row)}
     colocar_sc = {label: compact_number(num(row[index])) for index, label in sc_cols if label and index < len(row)}
@@ -198,7 +192,6 @@ for row in rows(ws, min(ws.max_row, 30000), 60):
         'analyst': analyst,
         'family': family,
         'obtentionType': obtention_type,
-        'lastMovement': last_movement,
         'unit': stock.get(code, {}).get('unit', 'UN'),
         'stock': stock_value,
         'stockMax': compact_number(num(row[stock_max_i])) if 0 <= stock_max_i < len(row) else 0,

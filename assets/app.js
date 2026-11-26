@@ -7,15 +7,6 @@ let analyst = 'all';
 let family = 'all';
 let obtentionType = 'all';
 let stockFilter = 'all';
-let selectedEN = '';
-let enPvQuery = '';
-let enPvFocusENs = new Set();
-let EN_PV_REVIEWS = {};
-let EN_PV_PREVIEWS = {};
-let EN_PV_IMPORT_RESULT = null;
-const EN_PV_STORAGE_KEY = 'pcm-en-pv-reviews-v1';
-const EN_PV_PREVIEWS_STORAGE_KEY = 'pcm-en-pv-previews-v1';
-let pdfJsPromise = null;
 const THEME_STORAGE_KEY = 'pcm-dashboard-theme';
 const CHRISTMAS_THEME_STORAGE_KEY = 'pcm-christmas-theme-v1';
 
@@ -114,6 +105,16 @@ const SPECIALIZED_PAGE_SIZE = 100;
 const specializedLimits = { pins: SPECIALIZED_PAGE_SIZE, cylinders: SPECIALIZED_PAGE_SIZE, cabins: SPECIALIZED_PAGE_SIZE, sheetMetal: SPECIALIZED_PAGE_SIZE };
 const specializedCounts = { pins: 0, cylinders: 0, cabins: 0 };
 const PURCHASE_STORAGE_KEY = 'pcm-processo-compra';
+const STOCK_MINIMUMS_STORAGE_KEY = 'pcm-stock-minimums-v1';
+let STOCK_MINIMUMS = {};
+function loadStockMinimums() {
+  try { const saved = JSON.parse(localStorage.getItem(STOCK_MINIMUMS_STORAGE_KEY) || '{}'); return saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {}; } catch (error) { return {}; }
+}
+function saveStockMinimums() { try { localStorage.setItem(STOCK_MINIMUMS_STORAGE_KEY, JSON.stringify(STOCK_MINIMUMS)); } catch (error) { console.warn('Não foi possível guardar os mínimos neste computador.', error); } }
+function configuredMinimum(item) { const key = String(item?.code || '').trim(); return Object.prototype.hasOwnProperty.call(STOCK_MINIMUMS, key) ? Math.max(0, n(STOCK_MINIMUMS[key])) : Math.max(0, n(item?.safety)); }
+function isBelowMinimum(item) { return n(item?.stock) < configuredMinimum(item); }
+function setConfiguredMinimum(code, value) { const key = String(code || '').trim(); if (!key) return; if (value === '' || value === null || value === undefined) delete STOCK_MINIMUMS[key]; else { const parsed = Number(value); if (Number.isFinite(parsed) && parsed >= 0) STOCK_MINIMUMS[key] = parsed; } saveStockMinimums(); }
+function bindStockMinimumInputs() { document.querySelectorAll('[data-stock-minimum]').forEach(input => { input.onchange = () => { setConfiguredMinimum(input.dataset.stockMinimum, input.value); updateStockMinimumRow(input); }; }); }
 // Lista local dos avisos enviados pela produção. Cada navegador mantém o seu histórico offline.
 let PRODUCTION_ALERTS = [];
 let ALERTS_ENDPOINT = '';
@@ -225,7 +226,7 @@ function alertOrders(item) {
 // Usa a mesma lógica de cobertura para explicar a compra sugerida no alerta.
 function alertSnapshot(item) {
   const stock = n(item?.stock);
-  const safety = n(item?.safety);
+  const safety = configuredMinimum(item);
   const demand = alertDemand(item);
   const orders = alertOrders(item);
   return {
@@ -238,7 +239,6 @@ function alertSnapshot(item) {
     family: item?.family || '—',
     obtentionType: item?.obtentionType || '—',
     unit: item?.unit || 'UN',
-    lastMovement: item?.lastMovement || 'não tem'
   };
 }
 
@@ -344,12 +344,6 @@ const $ = selector => document.querySelector(selector);
 const n = value => Number(value) || 0;
 const fmt = value => n(value).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 const money = value => n(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 2 });
-function movementDate(value) {
-  const raw = String(value ?? '').trim();
-  if (!raw || raw.toLowerCase() === 'nao tem' || raw.toLowerCase() === 'não tem') return 'não tem';
-  const match = raw.match(/^(\d{4})-(\d{2})-(\d{2})/);
-  return match ? `${match[3]}/${match[2]}/${match[1]}` : raw;
-}
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
 }[char]));
@@ -432,38 +426,6 @@ function loadPurchaseProcess() {
   }
 }
 
-function loadENPVReviews() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(EN_PV_STORAGE_KEY) || '{}');
-    EN_PV_REVIEWS = saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
-    Object.keys(EN_PV_REVIEWS).forEach(en => {
-      if (EN_PV_REVIEWS[en]?.analysis) EN_PV_REVIEWS[en].analysis = compactPVAnalysis(EN_PV_REVIEWS[en].analysis);
-    });
-    try { localStorage.setItem(EN_PV_STORAGE_KEY, JSON.stringify(EN_PV_REVIEWS)); } catch (error) { /* dados ainda podem ser usados nesta sessão */ }
-  } catch (error) {
-    EN_PV_REVIEWS = {};
-  }
-}
-
-function saveENPVReviews() {
-  try { localStorage.setItem(EN_PV_STORAGE_KEY, JSON.stringify(EN_PV_REVIEWS)); } catch (error) { console.warn('Não foi possível guardar as análises EN/PV.', error); }
-}
-
-function loadENPVPreviews() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(EN_PV_PREVIEWS_STORAGE_KEY) || '{}');
-    EN_PV_PREVIEWS = saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
-  } catch (error) { EN_PV_PREVIEWS = {}; }
-}
-
-function saveENPVPreviews() {
-  try { localStorage.setItem(EN_PV_PREVIEWS_STORAGE_KEY, JSON.stringify(EN_PV_PREVIEWS)); } catch (error) { console.warn('Não foi possível guardar as miniaturas dos PVs.', error); }
-}
-function compactPVAnalysis(analysis) {
-  if (!analysis || typeof analysis !== 'object') return analysis;
-  return { fileName: analysis.fileName || '', pageCount: analysis.pageCount || 0, productLine: analysis.productLine || '', chassisLine: analysis.chassisLine || '', ens: Array.isArray(analysis.ens) ? analysis.ens : [], pv: analysis.pv || '', model: analysis.model || '', criticalItems: Array.isArray(analysis.criticalItems) ? analysis.criticalItems : [], previewKey: analysis.previewKey || '', analysisMode: analysis.analysisMode || '', status: analysis.status || 'manual', redLineCount: analysis.redLineCount || 0, analyzedAt: analysis.analyzedAt || '' };
-}
-
 // Gera um ficheiro .xls simples que abre diretamente no Microsoft Excel.
 function exportPurchaseProcess() {
   if (!PURCHASE_PROCESS.length) return;
@@ -497,7 +459,7 @@ function totalDemand(item) {
 
 function requiredQuantity(item, demand) {
   const selectedDemand = demand !== undefined && demand !== null && demand !== '' ? n(demand) : totalDemand(item);
-  return selectedDemand > 0 ? selectedDemand : n(item?.safety);
+  return selectedDemand + configuredMinimum(item);
 }
 
 // Classifica o material pela cobertura da demanda, e não apenas pelo estoque de segurança.
@@ -546,11 +508,11 @@ function hasFollowUpOrder(item, demand) {
 
 // Define a decisão operacional no mês de referência sem ocultar o risco físico.
 function procurementDecision(item, demand, demandLabel = '') {
-  const [riskLabel] = risk(item, demand);
   const followUp = hasFollowUpOrder(item, demandLabel || demand);
+  const suggested = suggestedPurchase(item, demand, demandLabel);
+  if (suggested > 0) return { label: 'Comprar', color: 'red', canBuy: true, hasOrder: false };
   if (followUp) return { label: 'Follow-up', color: 'amber', canBuy: false, hasOrder: true };
-  if (riskLabel === 'Regular') return { label: 'Não comprar', color: 'green', canBuy: false, hasOrder: false };
-  return { label: 'Comprar', color: 'red', canBuy: true, hasOrder: false };
+  return { label: 'Não comprar', color: 'green', canBuy: false, hasOrder: false };
 }
 
 function procurementAction(item, demand, demandLabel = '') {
@@ -591,15 +553,14 @@ function followUpItems(items = scopedItems()) {
     .filter(item => hasOpenOrder(item));
 }
 
-// Calcula a compra sugerida; pedido no mês ou atraso gera Follow-up e não compra.
+// Calcula a necessidade bruta de compra; a decisão operacional aplica prioridade à sugestão positiva.
 function suggestedPurchase(item, demand, demandLabel = '') {
-  if (hasFollowUpOrder(item, demandLabel || demand)) return 0;
   const totalDemand = demand !== undefined && demand !== null && demand !== ''
     ? n(demand)
     : demandLabel
       ? n(item.demands?.[demandLabel])
       : Object.values(item.demands || {}).reduce((sum, value) => sum + n(value), 0);
-  return Math.max(0, totalDemand + n(item.safety) - n(item.stock));
+  return Math.max(0, totalDemand + configuredMinimum(item) - n(item.stock));
 }
 
 
@@ -703,10 +664,13 @@ function filterBar() {
 
 function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabel = '', includeDemand = false, stockPeriod = '') {
   return items.slice(offset, offset + limit).map(item => {
-    const periodDemand = includeDemand ? n(item.demands?.[`DEM ${stockPeriod}`]) : undefined;
-    const [label, color] = risk(item, showDemand ? item.need : periodDemand);
-    const orders = includeDemand ? orderQuantityForPeriod(item, stockPeriod) : Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
     const totalDemand = Object.values(item.demands || {}).reduce((sum, value) => sum + n(value), 0);
+    const periodDemand = includeDemand ? totalDemand : undefined;
+    const [riskLabel, riskColor] = risk(item, showDemand ? item.need : periodDemand);
+    const decision = procurementDecision(item, showDemand ? item.need : periodDemand, includeDemand ? `DEM ${stockPeriod}` : (showDemand ? demandLabel : ''));
+    const label = decision.label === 'Comprar' ? 'Comprar' : riskLabel;
+    const color = decision.label === 'Comprar' ? 'red' : riskColor;
+    const orders = includeDemand ? orderQuantityForPeriod(item, stockPeriod) : Object.values(item.orders || {}).reduce((sum, value) => sum + n(value), 0);
     const demand = showDemand
       ? `<td>${fmt(item.need || 0)} ${esc(item.unit)}</td><td class="${n(item.balance) < 0 ? 'danger' : ''}">${fmt(item.balance || 0)}</td>`
       : '';
@@ -717,23 +681,43 @@ function itemRows(items, limit = 200, showDemand = false, offset = 0, demandLabe
       <td>${esc(item.analyst || '—')}</td>
       <td>${fmt(item.stock)} ${esc(item.unit)}</td>
       <td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td>
-      <td>${fmt(item.safety)}</td>
+      <td><input class="input stock-minimum-input" type="number" min="0" step="any" value="${esc(n(configuredMinimum(item)))}" data-stock-minimum="${esc(item.code)}" aria-label="Estoque mínimo de ${esc(item.code)}" /></td>
       ${obtainingType}
-      <td class="movement-date">${esc(movementDate(item.lastMovement))}</td>
-      ${stockDemand}${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span></td><td>${procurementAction(item, showDemand ? item.need : periodDemand, includeDemand ? `DEM ${stockPeriod}` : (showDemand ? demandLabel : ''))}</td>
+      ${stockDemand}${demand}<td>${fmt(orders)}</td><td><span class="status ${color}">${label}</span>${isBelowMinimum(item) ? '<small class="below-minimum-flag">Abaixo do mínimo</small>' : ''}</td><td>${procurementAction(item, showDemand ? item.need : periodDemand, includeDemand ? `DEM ${stockPeriod}` : (showDemand ? demandLabel : ''))}</td>
     </tr>`;
   }).join('');
 }
 
+function updateStockMinimumRow(input) {
+  const row = input?.closest('tr');
+  const container = input?.closest('[data-progressive-table]');
+  const dataset = container ? TABLE_DATASETS.get(container.dataset.progressiveTable) : null;
+  const code = String(input?.dataset?.stockMinimum || '').trim();
+  const item = dataset?.items.find(entry => String(entry.code || '').trim() === code);
+  if (!row || !item || !dataset) return false;
+  const holder = document.createElement('tbody');
+  holder.innerHTML = itemRows([item], 1, dataset.showDemand, 0, dataset.demandLabel, dataset.includeDemand, dataset.stockPeriod);
+  const freshRow = holder.firstElementChild;
+  if (!freshRow || freshRow.cells.length !== row.cells.length) return false;
+  // Manter intactos o botão do código (o clique pode estar em curso) e o input editado.
+  const statusIndex = row.cells.length - 2;
+  const purchaseIndex = row.cells.length - 1;
+  row.cells[statusIndex].innerHTML = freshRow.cells[statusIndex].innerHTML;
+  row.cells[purchaseIndex].innerHTML = freshRow.cells[purchaseIndex].innerHTML;
+  input.value = configuredMinimum(item);
+  bindPurchaseButtons();
+  return true;
+}
+
 function table(items, limit = TABLE_CHUNK_SIZE, showDemand = false, demandLabel = '', includeDemand = false, stockPeriod = '') {
-  const columns = 9 + (showDemand ? 2 : 0) + (includeDemand ? 2 : 0);
+  const columns = 8 + (showDemand ? 2 : 0) + (includeDemand ? 2 : 0);
   const id = `progressive-table-${++TABLE_SEQUENCE}`;
   const initialLimit = Math.min(Math.max(Number(limit) || TABLE_CHUNK_SIZE, 50), TABLE_CHUNK_SIZE);
   TABLE_DATASETS.set(id, { items, showDemand, demandLabel, includeDemand, stockPeriod, cursor: initialLimit });
   const rows = itemRows(items, initialLimit, showDemand, 0, demandLabel, includeDemand, stockPeriod);
   const more = items.length > initialLimit ? `<div class="table-load-more"><span>Mostrando ${fmt(initialLimit)} de ${fmt(items.length)} itens</span><button class="secondary-btn table-more-btn" data-table-id="${id}">Carregar mais</button></div>` : `<div class="table-load-more"><span>${fmt(items.length)} itens carregados</span></div>`;
   return `<div class="progressive-table" data-progressive-table="${id}"><div class="table-wrap"><table class="data-table"><thead><tr>
-    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Segurança</th>${includeDemand ? '<th>Tipo de obtenção</th>' : ''}<th>Última movimentação</th>${includeDemand ? `<th>Demanda PLANO MES · ${esc(stockPeriod)}</th>` : ''}
+    <th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Estoque mínimo (local)</th>${includeDemand ? '<th>Tipo de obtenção</th>' : ''}${includeDemand ? '<th>Demanda total PLANO MES</th>' : ''}
     ${showDemand ? '<th>Demanda</th><th>Saldo</th>' : ''}<th>${includeDemand ? `Pedido · ${esc(stockPeriod)}` : 'Pedidos'}</th><th>Situação</th><th>Processo de compra</th>
   </tr></thead><tbody>${rows || `<tr><td colspan="${columns}" class="empty">Nenhum item encontrado.</td></tr>`}</tbody></table></div>${more}</div>`;
 }
@@ -759,6 +743,7 @@ function bindProgressiveTables() {
         else button.remove();
         bindMaterialButtons();
         bindPurchaseButtons();
+        bindStockMinimumInputs();
       }, 0);
     };
   });
@@ -911,7 +896,7 @@ function openMaterialDetail(code) {
   overlay.className = 'detail-overlay';
   overlay.innerHTML = `<section class="material-detail" role="dialog" aria-modal="true" aria-label="Detalhe do material">
     <div class="material-detail-header"><div><span class="eyebrow">Detalhe do material</span><h2>${esc(item.code)}</h2><p>${esc(item.description)}</p></div><button class="icon-btn" id="close-material-detail" aria-label="Fechar">×</button></div>
-    <div class="detail-metrics"><div><span>Estoque atual</span><b>${fmt(item.stock)} ${esc(item.unit)}</b></div><div><span>Estoque máximo</span><b>${fmt(item.stockMax || 0)} ${esc(item.unit)}</b></div><div><span>Segurança</span><b>${fmt(item.safety)} ${esc(item.unit)}</b></div><div><span>Compra sugerida</span><b class="detail-danger">${fmt(purchase)} ${esc(item.unit)}</b></div><div><span>Analista</span><b>${esc(item.analyst || '—')}</b></div></div>
+    <div class="detail-metrics"><div><span>Estoque atual</span><b>${fmt(item.stock)} ${esc(item.unit)}</b></div><div><span>Estoque máximo</span><b>${fmt(item.stockMax || 0)} ${esc(item.unit)}</b></div><div><span>Segurança</span><b>${fmt(configuredMinimum(item))} ${esc(item.unit)}</b></div><div><span>Compra sugerida</span><b class="detail-danger">${fmt(purchase)} ${esc(item.unit)}</b></div><div><span>Analista</span><b>${esc(item.analyst || '—')}</b></div></div>
     <div class="detail-grid"><div class="detail-section"><h3>Consumo nos meses</h3>${demands.length ? `<div class="detail-list">${demands.map(([month, value]) => `<div><span>${esc(month.replace('DEM ', ''))}</span><b>${fmt(value)} ${esc(item.unit)}</b></div>`).join('')}</div>` : '<p class="empty">Sem consumo mensal registado.</p>'}</div><div class="detail-section"><h3>Pedidos futuros e em aberto</h3>${orders.length ? `<div class="detail-list">${orders.map(order => `<div class="${order.overdue ? 'detail-overdue' : ''}"><span>${esc(order.month.replace('PED ', ''))}${order.overdue ? ' · FOLLOW-UP' : ''}</span><b>${fmt(order.quantity)} ${esc(item.unit)}</b></div>`).join('')}</div>` : '<p class="empty">Sem pedidos em aberto.</p>'}</div></div>
     <div class="detail-footer"><span>${esc(item.family || '—')} · ${esc(item.obtentionType || '—')}</span><button class="secondary-btn" id="close-material-detail-bottom">Fechar detalhe</button></div>
   </section>`;
@@ -935,14 +920,14 @@ function openPinPlanDetail(code, model = 'Todos os modelos') {
 }
 
 function followUpRows(items) {
-  return items.map(item => `<tr><td><button class="material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${esc(item.analyst || '—')}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td>${item.overdueOrders.map(order => `<span class="overdue-tag">${esc(order.month.replace('PED ', ''))}: ${fmt(order.quantity)} ${esc(item.unit)}</span>`).join(' ')}</td><td><span class="status red">Follow-up necessário</span></td></tr>`).join('');
+  return items.map(item => `<tr><td><button class="material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${esc(item.analyst || '—')}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.stockMax || 0)} ${esc(item.unit)}</td><td>${item.overdueOrders.map(order => `<span class="overdue-tag">${esc(order.month.replace('PED ', ''))}: ${fmt(order.quantity)} ${esc(item.unit)}</span>`).join(' ')}</td><td><span class="status red">Follow-up necessário</span></td></tr>`).join('');
 }
 
 // Renderiza a tela com pedidos de meses anteriores que precisam de acompanhamento.
 function followUpView() {
   const items = followUpItems();
   const rows = followUpRows(items);
-  return `${filterBar()}<div class="view-title"><div><h2>Pedidos atrasados para acompanhamento</h2><p>Pedidos abertos em meses anteriores ao mês atual. Confirme o status com o time de compras.</p></div><button class="secondary-btn" id="back-to-overview">← Voltar à visão geral</button></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(items.length)}</b><span>Itens para acompanhamento</span></div><div class="summary-box"><b>${esc(currentMonthDate().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }))}</b><span>Mês de referência</span></div></div><div class="panel"><div class="panel-header"><h3>Lista de pedidos atrasados</h3><span>${fmt(items.length)} itens</span></div><div class="panel-body"><div class="toolbar"><input class="input" id="follow-up-search" placeholder="Pesquisar código, descrição ou analista" /></div><div id="follow-up-table"><div class="table-wrap"><table class="data-table"><thead><tr><th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Última movimentação</th><th>Pedido em atraso</th><th>Situação</th></tr></thead><tbody>${rows || '<tr><td colspan="7" class="empty">Nenhum pedido de mês anterior encontrado.</td></tr>'}</tbody></table></div></div></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Pedidos atrasados para acompanhamento</h2><p>Pedidos abertos em meses anteriores ao mês atual. Confirme o status com o time de compras.</p></div><button class="secondary-btn" id="back-to-overview">← Voltar à visão geral</button></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(items.length)}</b><span>Itens para acompanhamento</span></div><div class="summary-box"><b>${esc(currentMonthDate().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }))}</b><span>Mês de referência</span></div></div><div class="panel"><div class="panel-header"><h3>Lista de pedidos atrasados</h3><span>${fmt(items.length)} itens</span></div><div class="panel-body"><div class="toolbar"><input class="input" id="follow-up-search" placeholder="Pesquisar código, descrição ou analista" /></div><div id="follow-up-table"><div class="table-wrap"><table class="data-table"><thead><tr><th>Material</th><th>Analista</th><th>Estoque</th><th>Estoque máximo</th><th>Pedido em atraso</th><th>Situação</th></tr></thead><tbody>${rows || '<tr><td colspan="7" class="empty">Nenhum pedido de mês anterior encontrado.</td></tr>'}</tbody></table></div></div></div></div>`;
 }
 
 // Formata o valor máximo do eixo vertical sem sobrecarregar o gráfico.
@@ -1124,7 +1109,7 @@ function programacaoAlertPanel() {
 }
 function productionStatusExcluded(value) {
   const status = String(value || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-  return status === 'ENTREGUE' || status === 'VITRINI';
+  return status === 'ENTREGUE' || status === 'VITRINI' || status === 'VITRINE';
 }
 function productionRecordByEN(en) {
   const key = String(en || '').trim().toUpperCase();
@@ -1148,7 +1133,7 @@ function productionMapDate(value) {
   return Number.isNaN(date.getTime()) ? null : date;
 }
 function productionMapLate(row) {
-  const finalDate = productionMapDate(row.finalDate);
+  const finalDate = productionMapDate(productionMapScheduleDate(row));
   return !!finalDate && finalDate < new Date() && !productionStatusExcluded(row.productionStatus);
 }
 function productionMapWeekNumber(value) {
@@ -1192,20 +1177,69 @@ function productionMapOrderForMonth(item, row) {
   });
   return fallback ? { key: fallback, quantity: n(orders[fallback]) } : { key: candidates[0] || '', quantity: 0 };
 }
+function productionMapStagesComplete(row) {
+  const stages = Array.isArray(row?.stages) ? row.stages : [];
+  const requiredNames = ['montagem final', 'maquina', 'integracao'];
+  if (!stages.length || !stages.every(stage => stage.completed === true)) return false;
+  return requiredNames.every(name => stages.some(stage => String(stage.name || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(name) && stage.completed === true));
+}
+function productionMapPlanRow(row) {
+  const en = String(row?.en || '').trim().toUpperCase();
+  return (DATA?.planAnnual?.rows || []).find(item => String(item.pedido || '').trim().toUpperCase() === en) || null;
+}
+function productionMapIsoWeekDate(week, year) {
+  const weekNo = productionMapWeekNumber(week);
+  if (!weekNo || !year) return null;
+  const jan4 = new Date(Date.UTC(Number(year), 0, 4));
+  const monday = new Date(jan4);
+  monday.setUTCDate(jan4.getUTCDate() - ((jan4.getUTCDay() + 6) % 7) + (weekNo - 1) * 7);
+  return monday.toISOString().slice(0, 10);
+}
+function productionMapScheduleDate(row) {
+  const plan = productionMapPlanRow(row);
+  const planDate = String(plan?.data || '').slice(0, 10);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(planDate)) return planDate;
+  const finalDate = String(row?.finalDate || row?.date || '').slice(0, 10);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(finalDate)) return finalDate;
+  const annualYear = String(plan?.mes || '').match(/(20\d{2})/)?.[1];
+  const fallbackYear = annualYear || String(new Date().getFullYear());
+  return productionMapIsoWeekDate(row?.week, fallbackYear);
+}
 function productionMapMissingItems(row) {
-  const structuralModel = productionMapModelForEN(row);
-  const structure = DATA?.models?.[structuralModel] || [];
-  return structure.filter(component => component?.code && component.code !== 'Descrição').map(component => {
-    const item = itemByCode(component.code) || { code: component.code, description: component.description || '', stock: 0, orders: {}, unit: 'UN' };
-    const required = n(component.quantity);
-    const stock = n(item.stock);
-    const orderInfo = productionMapOrderForMonth(item, row);
-    const orderMonth = orderInfo.key || 'pedidos abertos';
-    const order = orderInfo.quantity;
-    const balanceNow = stock - required;
-    const balanceWithOrder = stock + order - required;
-    return { ...item, required, stock, order, orderMonth, balanceNow, balanceWithOrder, covered: balanceWithOrder >= 0, missing: balanceNow < 0 };
-  }).filter(item => item.missing && !isProductionItemDismissed(row.en, item.code)).sort((a, b) => a.balanceWithOrder - b.balanceWithOrder);
+  if (!row || productionStatusExcluded(row.productionStatusNormalized || row.productionStatus) || productionMapStagesComplete(row)) return [];
+  const schedule = (PRODUCTION_MAP.records || []).filter(candidate => !productionStatusExcluded(candidate.productionStatusNormalized || candidate.productionStatus) && !productionMapStagesComplete(candidate));
+  schedule.sort((a, b) => {
+    const da = productionMapScheduleDate(a) || '9999-12-31'; const db = productionMapScheduleDate(b) || '9999-12-31';
+    return da.localeCompare(db) || String(a.week || '').localeCompare(String(b.week || ''), 'pt-BR') || String(a.en || '').localeCompare(String(b.en || ''));
+  });
+  const targetEN = String(row.en || '').trim().toUpperCase();
+  const targetStructure = DATA?.models?.[productionMapModelForEN(row)] || [];
+  const targetCodes = new Set(targetStructure.map(component => String(component?.code || '').trim()).filter(Boolean));
+  const balances = new Map(); const seenReceipts = new Set(); let targetMissing = [];
+  schedule.forEach(candidate => {
+    const model = productionMapModelForEN(candidate);
+    const components = DATA?.models?.[model] || [];
+    const needs = new Map();
+    components.forEach(component => { const code = String(component?.code || '').trim(); if (code) needs.set(code, n(needs.get(code)) + n(component.quantity)); });
+    const date = productionMapScheduleDate(candidate) || '';
+    const period = date ? `${date.slice(5,7)}/${date.slice(0,4)}` : `S${productionMapWeekNumber(candidate.week) || ''}/${new Date().getFullYear()}`;
+    const currentNeeds = [];
+    needs.forEach((required, code) => {
+      if (!targetCodes.has(code)) return;
+      const item = itemByCode(code) || { code, description: components.find(component => String(component.code) === code)?.description || '', stock: 0, orders: {}, unit: 'UN' };
+      if (!balances.has(code)) balances.set(code, n(item.stock));
+      const receiptKey = `${code}::${period}`;
+      let order = 0; let orderMonth = 'pedidos abertos';
+      if (!seenReceipts.has(receiptKey)) { const info = productionMapOrderForMonth(item, { ...candidate, finalDate: date, month: date ? Number(date.slice(5,7)) : candidate.month }); order = info.quantity; orderMonth = info.key || orderMonth; balances.set(code, balances.get(code) + order); seenReceipts.add(receiptKey); }
+      currentNeeds.push({ item, code, required, order, orderMonth, before: balances.get(code), period });
+    });
+    currentNeeds.forEach(entry => {
+      const balanceWithOrder = entry.before - entry.required;
+      if (String(candidate.en || '').trim().toUpperCase() === targetEN && entry.before < entry.required) targetMissing.push({ ...entry.item, required: entry.required, stock: n(entry.item.stock), order: entry.order, orderMonth: entry.orderMonth, balanceNow: n(entry.item.stock) - entry.required, balanceWithOrder, covered: balanceWithOrder >= 0, missing: true });
+      balances.set(entry.code, balanceWithOrder);
+    });
+  });
+  return targetMissing.filter(item => !isProductionItemDismissed(row.en, item.code)).sort((a,b) => a.balanceWithOrder-b.balanceWithOrder);
 }
 function openProductionMapDetail(en) {
   const row = productionRecordByEN(en);
@@ -1215,7 +1249,7 @@ function openProductionMapDetail(en) {
   const dismissedForEN = Object.values(PRODUCTION_DISMISSED_ITEMS).filter(item => item.en === String(row.en || '').trim().toUpperCase());
   const covered = missing.filter(item => item.covered).length;
   const uncovered = missing.length - covered;
-  const finalDate = productionMapDate(row.finalDate);
+  const finalDate = productionMapDate(productionMapScheduleDate(row));
   const late = productionMapLate(row);
   const stages = row.stages || [];
   const overlay = document.createElement('div');
@@ -1247,7 +1281,7 @@ function productionMapView() {
   const records = (PRODUCTION_MAP.records || []).filter(row => {
     const textMatch = !productionMapQuery || `${row.en} ${row.pv || ''} ${row.client || ''} ${row.model || ''}`.toLowerCase().includes(productionMapQuery.toLowerCase());
     const statusMatch = productionMapStatus === 'all' || String(row.productionStatus || '') === productionMapStatus;
-    const rowDate = productionMapDate(row.finalDate);
+    const rowDate = productionMapDate(productionMapScheduleDate(row));
     const dateMatch = (!startDate || (rowDate && rowDate >= startDate)) && (!endDate || (rowDate && rowDate <= endDate));
     const rowWeek = productionMapWeekNumber(row.week);
     const weekMatch = (!weekStartNumber || (rowWeek !== null && rowWeek >= weekStartNumber)) && (!weekEndNumber || (rowWeek !== null && rowWeek <= weekEndNumber));
@@ -1255,10 +1289,10 @@ function productionMapView() {
   });
   const summary = PRODUCTION_MAP.summary || {};
   const statusCounts = records.reduce((counts, row) => { const key = String(row.productionStatus || 'SEM STATUS'); counts[key] = (counts[key] || 0) + 1; return counts; }, {});
-  const deliveredCount = statusCounts.ENTREGUE || 0;
+  const deliveredCount = (statusCounts.ENTREGUE || 0) + (statusCounts.VITRINE || 0) + (statusCounts.VITRINI || 0);
   const lateCount = records.filter(productionMapLate).length;
   const pendingCount = (statusCounts.ARRANJO || 0) + (statusCounts.COMERCIAL || 0);
-  const rows = records.slice(0, 250).map(row => `<tr class="production-map-row" data-production-row-text="${esc(`${row.en || ''} ${row.pv || ''} ${row.client || ''} ${row.model || ''}`.toLowerCase())}"><td><button class="material-code production-en-btn" data-production-en="${esc(row.en)}">${esc(row.en)}</button><div class="desc">${esc(row.pv || 'PV não informado')} · ${esc(row.pl || 'PL não informado')}</div></td><td><strong>${esc(row.client || '—')}</strong><div class="desc">${esc(row.model || '—')}</div></td><td><div class="production-stage-dots">${productionMapStages(row)}</div></td><td><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></td><td>${esc(row.finalDate || '—')}</td><td>${esc(row.week || '—')}</td></tr>`).join('');
+  const rows = records.slice(0, 250).map(row => `<tr class="production-map-row" data-production-row-text="${esc(`${row.en || ''} ${row.pv || ''} ${row.client || ''} ${row.model || ''}`.toLowerCase())}"><td><button class="material-code production-en-btn" data-production-en="${esc(row.en)}">${esc(row.en)}</button><div class="desc">${esc(row.pv || 'PV não informado')} · ${esc(row.pl || 'PL não informado')}</div></td><td><strong>${esc(row.client || '—')}</strong><div class="desc">${esc(row.model || '—')}</div></td><td><div class="production-stage-dots">${productionMapStages(row)}</div></td><td><span class="${productionMapStatusClass(row.productionStatus)}">${esc(row.productionStatus || 'SEM STATUS')}</span></td><td>${esc(productionMapScheduleDate(row) || '—')}</td><td>${esc(row.week || '—')}</td></tr>`).join('');
   return `<div class="view-title production-map-heading"><div><span class="eyebrow">Planejamento produtivo integrado</span><h2>Mapa produtivo</h2><p>Programação por EN, etapas concluídas, prazo final e status do carro.</p></div><div class="date-pill">${fmt(summary.totalENs || records.length)} ENs · fonte: ${esc(PRODUCTION_MAP.sourceFile || 'planejamento produtivo')}</div></div><div class="production-map-metrics"><div class="metric"><span>Total de ENs</span><b>${fmt(summary.totalENs || 0)}</b></div><div class="metric green"><span>Em produção</span><b>${fmt(statusCounts['EM PRODUÇÃO'] || 0)}</b></div><div class="metric blue"><span>Em projeto</span><b>${fmt(statusCounts.PROJETO || 0)}</b></div><div class="metric amber"><span>Arranjo</span><b>${fmt(statusCounts.ARRANJO || 0)}</b></div><div class="metric purple"><span>Comercial</span><b>${fmt(statusCounts.COMERCIAL || 0)}</b></div><div class="metric gray"><span>Entregues</span><b>${fmt(deliveredCount)}</b><small>visíveis no mapa</small></div><div class="metric red"><span>Atrasados</span><b>${fmt(lateCount)}</b><small>prazo final vencido</small></div><div class="metric amber"><span>Arranjo/Comercial</span><b>${fmt(pendingCount)}</b><small>com pendência</small></div></div><div class="panel production-map-panel"><div class="toolbar production-map-filters"><input class="input" id="production-map-search" value="${esc(productionMapQuery)}" placeholder="Pesquisar EN, PV, cliente ou modelo" /><select class="select" id="production-map-status"><option value="all">Todos os status</option>${Object.keys(statusCounts).map(status => `<option value="${esc(status)}" ${productionMapStatus === status ? 'selected' : ''}>${esc(status)}</option>`).join('')}</select><label class="production-map-filter-field">Data inicial<input class="input" id="production-map-date-start" type="date" value="${esc(productionMapDateStart)}" /></label><label class="production-map-filter-field">Data final<input class="input" id="production-map-date-end" type="date" value="${esc(productionMapDateEnd)}" /></label><label class="production-map-filter-field">Semana inicial<select class="select" id="production-map-week-start"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekStart === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><label class="production-map-filter-field">Semana final<select class="select" id="production-map-week-end"><option value="all">Todas</option>${productionMapWeekOptions().map(week => `<option value="${esc(week)}" ${productionMapWeekEnd === week ? 'selected' : ''}>${esc(week)}</option>`).join('')}</select></label><button class="secondary-btn production-map-clear" id="production-map-clear-filters">Limpar filtros</button><span class="production-map-count" id="production-map-count">${fmt(records.length)} registros encontrados</span></div><div class="table-wrap"><table class="data-table production-map-table"><thead><tr><th>EN / PV</th><th>Cliente / modelo</th><th>Etapas produtivas</th><th>Status</th><th>Data final</th><th>Semana</th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="empty">Nenhuma EN encontrada.</td></tr>'}</tbody></table></div><div class="production-map-legend"><span><i class="production-stage-dot done"></i> etapa concluída</span><span><i class="production-stage-dot pending"></i> etapa pendente</span><span>Clique na EN para ver etapas, itens faltantes, pedidos e cobertura da data.</span></div></div>`;
 }
 function overview() {
@@ -1275,7 +1309,7 @@ function stockView() {
   stockPlanMonth = selected;
   const unmatched = DATA.planMonthUnmatchedModels || [];
   const warning = unmatched.length ? `<p class="history-note stock-plan-warning">Sem estrutura correspondente no Excel; não foi possível calcular demanda para: ${unmatched.map(esc).join(', ')}.</p>` : '';
-  return `${filterBar()}<div class="view-title"><div><h2>Estoque</h2><p>Pedidos do mês e demanda calculada pelas estruturas × produção da aba PLANO MES.</p></div></div><div class="panel"><div class="panel-body"><div class="toolbar"><label class="filter-label" for="stock-plan-month">Mês do plano:</label><select class="select" id="stock-plan-month">${periods.map(period => `<option value="${esc(period.key)}" ${period.key === selected ? 'selected' : ''}>${esc(period.key)}</option>`).join('')}</select><input class="input" id="stock-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="stock-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div>${warning}<div id="stock-table">${table(scopedItems(), 250, false, '', true, selected)}</div></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Estoque</h2><p>Demanda total acumulada pelas estruturas × produção da aba PLANO MES; selecione o mês dos pedidos em aberto.</p></div></div><div class="panel"><div class="panel-body"><div class="toolbar"><label class="filter-label" for="stock-plan-month">Mês dos pedidos:</label><select class="select" id="stock-plan-month">${periods.map(period => `<option value="${esc(period.key)}" ${period.key === selected ? 'selected' : ''}>${esc(period.key)}</option>`).join('')}</select><input class="input" id="stock-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="stock-risk"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regular</option></select></div>${warning}<div id="stock-table">${table(scopedItems(), 250, false, '', true, selected)}</div></div></div>`;
 }
 
 function ordersItemsForMonth(base, month) {
@@ -1293,7 +1327,7 @@ function excessMonthPairs() {
 }
 
 function excessRows(rows) {
-  return rows.map(row => `<tr class="excess-row"><td><button class="material-code excess-code" data-excess-code="${esc(row.code)}" data-excess-month="${esc(row.orderMonth)}">${esc(row.code)}</button><div class="desc">${esc(row.description)}</div></td><td>${fmt(row.stock)} ${esc(row.unit)}</td><td class="movement-date">${esc(movementDate(row.lastMovement))}</td><td>${fmt(row.demand)} ${esc(row.unit)}</td><td>${fmt(row.order)} ${esc(row.unit)}</td><td class="danger-text">${fmt(row.excess)} ${esc(row.unit)}</td><td>${esc(row.label)}</td><td><span class="status amber">Follow-up</span></td></tr>`).join('');
+  return rows.map(row => `<tr class="excess-row"><td><button class="material-code excess-code" data-excess-code="${esc(row.code)}" data-excess-month="${esc(row.orderMonth)}">${esc(row.code)}</button><div class="desc">${esc(row.description)}</div></td><td>${fmt(row.stock)} ${esc(row.unit)}</td><td>${fmt(row.demand)} ${esc(row.unit)}</td><td>${fmt(row.order)} ${esc(row.unit)}</td><td class="danger-text">${fmt(row.excess)} ${esc(row.unit)}</td><td>${esc(row.label)}</td><td><span class="status amber">Follow-up</span></td></tr>`).join('');
 }
 
 function openExcessDetail(code, selectedMonth = '') {
@@ -1324,7 +1358,7 @@ function excessView() {
     if (order > demand && order > 0) rows.push({ ...item, orderMonth: pair.orderMonth, label: pair.label, demand, order, excess: order - demand });
   }));
   rows.sort((a, b) => b.excess - a.excess);
-  return `${filterBar()}<div class="view-title"><div><h2>Pedidos em excesso</h2><p>Comparação exata entre pedido e demanda do próprio mês.</p></div><div class="date-pill">Follow-up com Compras</div></div><div class="toolbar"><label class="filter-label">Mês:</label><select class="select" id="excess-month"><option value="all">Todos os meses</option>${excessMonthPairs().map(pair => `<option value="${esc(pair.orderMonth)}" ${excessMonth === pair.orderMonth ? 'selected' : ''}>${esc(pair.label)}</option>`).join('')} </select><input class="input" id="excess-search" placeholder="Pesquisar código ou descrição" /></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(rows.length)}</b><span>Excessos mensais</span></div><div class="summary-box"><b>${fmt(new Set(rows.map(row => row.code)).size)}</b><span>Materiais para verificar</span></div><div class="summary-box"><b>${fmt(rows.reduce((sum, row) => sum + row.excess, 0))}</b><span>Unidades em excesso</span></div></div><div class="panel"><div class="panel-header"><h3>Pedidos acima da demanda do mês</h3><span>Clique no código para abrir os próximos meses</span></div><div class="table-wrap"><table class="data-table excess-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Demanda</th><th>Pedido</th><th>Excesso</th><th>Mês</th><th>Follow-up</th></tr></thead><tbody id="excess-table-body">${excessRows(rows) || '<tr><td colspan="8" class="empty">Nenhum pedido acima da demanda mensal.</td></tr>'}</tbody></table></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Pedidos em excesso</h2><p>Comparação exata entre pedido e demanda do próprio mês.</p></div><div class="date-pill">Follow-up com Compras</div></div><div class="toolbar"><label class="filter-label">Mês:</label><select class="select" id="excess-month"><option value="all">Todos os meses</option>${excessMonthPairs().map(pair => `<option value="${esc(pair.orderMonth)}" ${excessMonth === pair.orderMonth ? 'selected' : ''}>${esc(pair.label)}</option>`).join('')} </select><input class="input" id="excess-search" placeholder="Pesquisar código ou descrição" /></div><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(rows.length)}</b><span>Excessos mensais</span></div><div class="summary-box"><b>${fmt(new Set(rows.map(row => row.code)).size)}</b><span>Materiais para verificar</span></div><div class="summary-box"><b>${fmt(rows.reduce((sum, row) => sum + row.excess, 0))}</b><span>Unidades em excesso</span></div></div><div class="panel"><div class="panel-header"><h3>Pedidos acima da demanda do mês</h3><span>Clique no código para abrir os próximos meses</span></div><div class="table-wrap"><table class="data-table excess-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Demanda</th><th>Pedido</th><th>Excesso</th><th>Mês</th><th>Follow-up</th></tr></thead><tbody id="excess-table-body">${excessRows(rows) || '<tr><td colspan="8" class="empty">Nenhum pedido acima da demanda mensal.</td></tr>'}</tbody></table></div></div>`;
 }
 
 function simulation() {
@@ -1377,7 +1411,7 @@ function weeklySimulationRows(rows, demandLabel = '') {
     const alreadyAdded = isInPurchaseProcess(row, 'explosion');
     const canAdd = decision.canBuy && suggested > 0 && !alreadyAdded;
     const addLabel = alreadyAdded ? 'Adicionado' : canAdd ? '+' : '—';
-    return `<tr><td><button class="material-code simulation-code" data-sim-code="${esc(row.code)}" title="Ver em quais modelos este código é utilizado">${esc(row.code)}</button><div class="desc" title="${esc(row.description)}">${esc(row.description)}</div></td><td>${fmt(row.need)} ${esc(row.unit || 'UN')}</td><td>${fmt(row.stock)} ${esc(row.unit || 'UN')}</td><td class="movement-date">${esc(movementDate(row.lastMovement))}</td><td class="${row.balance < 0 ? 'danger-text' : ''}">${fmt(row.balance)} ${esc(row.unit || 'UN')}</td><td><span class="status ${row.simRisk === 'Crítico' ? 'red' : row.simRisk === 'Em atenção' ? 'amber' : 'green'}">${esc(row.simRisk)}</span></td><td><span class="status ${orderState.color}">${esc(orderState.label)}${orderState.hasOrder ? ` · ${fmt(orderState.total)} ${esc(row.unit || 'UN')}` : ''}</span>${simulationOrderMonths(row)}</td><td>${row.models.map(model => `<span class="model-chip">${esc(model.name)} · ${fmt(model.need)}</span>`).join('')}</td><td><span class="status ${decision.color}">${decision.label}</span>${canAdd ? `<button class="purchase-add-btn simulation-purchase-btn" data-sim-purchase-code="${esc(row.code)}" title="Adicionar ${fmt(suggested)} ${esc(row.unit || 'UN')} ao Processo de compra" aria-label="Adicionar ao Processo de compra">+</button>` : ''}</td></tr>`;
+    return `<tr><td><button class="material-code simulation-code" data-sim-code="${esc(row.code)}" title="Ver em quais modelos este código é utilizado">${esc(row.code)}</button><div class="desc" title="${esc(row.description)}">${esc(row.description)}</div></td><td>${fmt(row.need)} ${esc(row.unit || 'UN')}</td><td>${fmt(row.stock)} ${esc(row.unit || 'UN')}</td><td class="${row.balance < 0 ? 'danger-text' : ''}">${fmt(row.balance)} ${esc(row.unit || 'UN')}</td><td><span class="status ${row.simRisk === 'Crítico' ? 'red' : row.simRisk === 'Em atenção' ? 'amber' : 'green'}">${esc(row.simRisk)}</span></td><td><span class="status ${orderState.color}">${esc(orderState.label)}${orderState.hasOrder ? ` · ${fmt(orderState.total)} ${esc(row.unit || 'UN')}` : ''}</span>${simulationOrderMonths(row)}</td><td>${row.models.map(model => `<span class="model-chip">${esc(model.name)} · ${fmt(model.need)}</span>`).join('')}</td><td><span class="status ${decision.color}">${decision.label}</span>${canAdd ? `<button class="purchase-add-btn simulation-purchase-btn" data-sim-purchase-code="${esc(row.code)}" title="Adicionar ${fmt(suggested)} ${esc(row.unit || 'UN')} ao Processo de compra" aria-label="Adicionar ao Processo de compra">+</button>` : ''}</td></tr>`;
   }).join('');
 }
 
@@ -1452,7 +1486,7 @@ function runWeeklySimulation() {
     if (count) count.textContent = `${fmt(visibleRows.length)} de ${fmt(rows.length)} códigos`;
     bindSimulationActions(visibleRows);
   };
-  result.innerHTML = `<div class="panel-header"><div><h3>Resultado · ${startLabel} a ${endLabel}</h3><span>${selections.map(selection => `${esc(selection.name)} · ${fmt(selection.cars)} carro${selection.cars === 1 ? '' : 's'}`).join(' · ')}</span></div><span id="sim-filter-count">${fmt(rows.length)} códigos</span></div><div class="panel-body"><div class="summary-strip"><div class="summary-box"><b class="danger">${counts['Crítico']}</b><span>Críticos</span></div><div class="summary-box"><b style="color:#a36a08">${counts['Em atenção']}</b><span>Em atenção</span></div><div class="summary-box"><b style="color:#19784f">${counts.Regular}</b><span>Regulares</span></div><div class="summary-box"><b>${fmt(rows.reduce((sum, row) => sum + row.need, 0))}</b><span>Necessidade total</span></div></div><div class="simulation-filters"><label class="filter-label simulation-search-label" for="simulation-search">Pesquisar código ou descrição</label><input class="input simulation-search-input" id="simulation-search" type="search" placeholder="Digite o código ou a descrição..." autocomplete="off" /><label class="filter-label" for="simulation-risk-filter">Situação</label><select class="select" id="simulation-risk-filter"><option value="all">Todas as situações</option><option value="Regular">Regular</option><option value="Em atenção">Em atenção</option><option value="Crítico">Crítico</option></select><label class="filter-label" for="simulation-order-filter">Pedidos</label><select class="select" id="simulation-order-filter"><option value="all">Todos os pedidos</option><option value="sem-pedido">Sem pedido</option><option value="com-pedido">Com pedido</option><option value="pedido-atrasado">Com pedido em atraso</option></select></div><div class="table-wrap simulation-full-width"><table class="data-table weekly-simulation-table"><thead><tr><th>Código / descrição</th><th>Necessidade</th><th>Estoque</th><th>Última movimentação</th><th>Saldo</th><th>Risco</th><th>Pedidos por mês</th><th>Modelos que utilizam</th><th>Decisão</th></tr></thead><tbody id="sim-weekly-tbody"></tbody></table></div></div>`;
+  result.innerHTML = `<div class="panel-header"><div><h3>Resultado · ${startLabel} a ${endLabel}</h3><span>${selections.map(selection => `${esc(selection.name)} · ${fmt(selection.cars)} carro${selection.cars === 1 ? '' : 's'}`).join(' · ')}</span></div><span id="sim-filter-count">${fmt(rows.length)} códigos</span></div><div class="panel-body"><div class="summary-strip"><div class="summary-box"><b class="danger">${counts['Crítico']}</b><span>Críticos</span></div><div class="summary-box"><b style="color:#a36a08">${counts['Em atenção']}</b><span>Em atenção</span></div><div class="summary-box"><b style="color:#19784f">${counts.Regular}</b><span>Regulares</span></div><div class="summary-box"><b>${fmt(rows.reduce((sum, row) => sum + row.need, 0))}</b><span>Necessidade total</span></div></div><div class="simulation-filters"><label class="filter-label simulation-search-label" for="simulation-search">Pesquisar código ou descrição</label><input class="input simulation-search-input" id="simulation-search" type="search" placeholder="Digite o código ou a descrição..." autocomplete="off" /><label class="filter-label" for="simulation-risk-filter">Situação</label><select class="select" id="simulation-risk-filter"><option value="all">Todas as situações</option><option value="Regular">Regular</option><option value="Em atenção">Em atenção</option><option value="Crítico">Crítico</option></select><label class="filter-label" for="simulation-order-filter">Pedidos</label><select class="select" id="simulation-order-filter"><option value="all">Todos os pedidos</option><option value="sem-pedido">Sem pedido</option><option value="com-pedido">Com pedido</option><option value="pedido-atrasado">Com pedido em atraso</option></select></div><div class="table-wrap simulation-full-width"><table class="data-table weekly-simulation-table"><thead><tr><th>Código / descrição</th><th>Necessidade</th><th>Estoque</th><th>Saldo</th><th>Risco</th><th>Pedidos por mês</th><th>Modelos que utilizam</th><th>Decisão</th></tr></thead><tbody id="sim-weekly-tbody"></tbody></table></div></div>`;
   $('#simulation-search').oninput = event => { simulationSearch = event.target.value; renderSimulationRows(); };
   $('#simulation-risk-filter').onchange = event => { riskFilter = event.target.value; renderSimulationRows(); };
   $('#simulation-order-filter').onchange = event => { orderFilter = event.target.value; renderSimulationRows(); };
@@ -1511,7 +1545,7 @@ function consumableRows(items) {
     const state = consumableDecision(item);
     const hasOrder = consumableHasOrder(item);
     const overdue = consumableHasOverdueOrder(item);
-          return `<tr><td><button class="material-code consumable-code" data-code="${esc(item.code)}" title="Abrir detalhe do consumível">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td>${fmt(item.purchaseQty)}</td><td>${fmt(item.minStock)}</td><td>${fmt(item.maxStock)}</td><td>${esc(item.stockStatus || '—')}</td><td>${esc(item.maxStatus || '—')}</td><td>${hasOrder ? 'Sim' : 'Não'}</td><td>${overdue ? '<span class="status red">Follow-up</span>' : '<span class="status green">Sem atraso</span>'}</td><td><span class="status ${state.color}">${state.label}</span></td><td>${purchaseAction(item, 'consumable')}</td></tr>`;
+          return `<tr><td><button class="material-code consumable-code" data-code="${esc(item.code)}" title="Abrir detalhe do consumível">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)}</td><td>${fmt(item.purchaseQty)}</td><td>${fmt(item.minStock)}</td><td>${fmt(item.maxStock)}</td><td>${esc(item.stockStatus || '—')}</td><td>${esc(item.maxStatus || '—')}</td><td>${hasOrder ? 'Sim' : 'Não'}</td><td>${overdue ? '<span class="status red">Follow-up</span>' : '<span class="status green">Sem atraso</span>'}</td><td><span class="status ${state.color}">${state.label}</span></td><td>${purchaseAction(item, 'consumable')}</td></tr>`;
 
   }).join('');
 }
@@ -1526,7 +1560,7 @@ function consumablesFilteredItems() {
 
 function consumablesView() {
   const items = consumablesFilteredItems();
-  return `${filterBar()}<div class="view-title"><div><h2>Consumíveis</h2><p>Controle itens específicos, quantidade de compra, estoque mínimo e máximo.</p></div><div class="date-pill">Base: ${esc(CONSUMABLES.sourceFile || 'consumiveis')}</div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(items.length)}</b><span>Consumíveis cadastrados</span></div><div class="summary-box"><b class="danger">${fmt(items.filter(item => consumableDecision(item).label === 'Comprar').length)}</b><span>Itens para comprar</span></div><div class="summary-box"><b>${fmt(items.filter(item => consumableDecision(item).label === 'Follow-up' || consumableHasOverdueOrder(item)).length)}</b><span>Itens em Follow-up</span></div></div><div class="panel"><div class="panel-body"><div class="toolbar"><input class="input" id="consumables-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="consumables-stock-status"><option value="all">Status do estoque: todos</option><option value="OK">OK</option><option value="Comprar">Comprar</option></select><select class="select" id="consumables-max-status"><option value="all">Status do máximo: todos</option><option value="ok">Dentro do máximo</option><option value="above">Acima do máximo</option></select><select class="select" id="consumables-followup"><option value="all">Pedidos: todos (${fmt(items.length)})</option><option value="order">Com pedido (${fmt(items.filter(consumableHasOrder).length)})</option><option value="overdue">Com atraso / follow-up (${fmt(items.filter(consumableHasOverdueOrder).length)})</option><option value="none">Sem pedido (${fmt(items.filter(item => !consumableHasOrder(item)).length)})</option></select></div><div class="table-wrap"><table class="data-table consumables-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Qtd. compra</th><th>Mínimo</th><th>Máximo</th><th>Status M</th><th>Status N</th><th>Pedido</th><th>Follow-up</th><th>Decisão</th><th>Processo de compra</th></tr></thead><tbody id="consumables-table-body">${consumableRows(items)}</tbody></table></div></div></div>`;
+  return `${filterBar()}<div class="view-title"><div><h2>Consumíveis</h2><p>Controle itens específicos, quantidade de compra, estoque mínimo e máximo.</p></div><div class="date-pill">Base: ${esc(CONSUMABLES.sourceFile || 'consumiveis')}</div></div><div class="summary-strip"><div class="summary-box"><b>${fmt(items.length)}</b><span>Consumíveis cadastrados</span></div><div class="summary-box"><b class="danger">${fmt(items.filter(item => consumableDecision(item).label === 'Comprar').length)}</b><span>Itens para comprar</span></div><div class="summary-box"><b>${fmt(items.filter(item => consumableDecision(item).label === 'Follow-up' || consumableHasOverdueOrder(item)).length)}</b><span>Itens em Follow-up</span></div></div><div class="panel"><div class="panel-body"><div class="toolbar"><input class="input" id="consumables-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="consumables-stock-status"><option value="all">Status do estoque: todos</option><option value="OK">OK</option><option value="Comprar">Comprar</option></select><select class="select" id="consumables-max-status"><option value="all">Status do máximo: todos</option><option value="ok">Dentro do máximo</option><option value="above">Acima do máximo</option></select><select class="select" id="consumables-followup"><option value="all">Pedidos: todos (${fmt(items.length)})</option><option value="order">Com pedido (${fmt(items.filter(consumableHasOrder).length)})</option><option value="overdue">Com atraso / follow-up (${fmt(items.filter(consumableHasOverdueOrder).length)})</option><option value="none">Sem pedido (${fmt(items.filter(item => !consumableHasOrder(item)).length)})</option></select></div><div class="table-wrap"><table class="data-table consumables-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Qtd. compra</th><th>Mínimo</th><th>Máximo</th><th>Status M</th><th>Status N</th><th>Pedido</th><th>Follow-up</th><th>Decisão</th><th>Processo de compra</th></tr></thead><tbody id="consumables-table-body">${consumableRows(items)}</tbody></table></div></div></div>`;
 }
 
 // Mostra os itens escolhidos e permite exportar o conjunto para Excel.
@@ -1572,7 +1606,7 @@ function pinSimulationRows(items, model, cars, query = '', statusFilter = 'all',
   });
   specializedCounts['pins'] = rows.length;
   const visibleRows = rows.slice(0, specializedLimits['pins']);
-  return visibleRows.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td class="specialized-order-cell" title="${esc(specializedOrderInfo(item).months || 'Sem pedidos em aberto')}">${esc(specializedOrderInfo(item).label)}</td><td>${fmt(item.unitNeed)} ${esc(item.unit || 'UN')}</td><td>${fmt(cars)}</td><td><strong>${fmt(item.required)} ${esc(item.unit || 'UN')}</strong></td><td class="${item.balance < 0 ? 'danger-text' : ''}">${fmt(item.balance)} ${esc(item.unit || 'UN')}</td><td><span class="status ${item.color}">${item.status}</span></td></tr>`).join('');
+  return visibleRows.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td class="specialized-order-cell" title="${esc(specializedOrderInfo(item).months || 'Sem pedidos em aberto')}">${esc(specializedOrderInfo(item).label)}</td><td>${fmt(item.unitNeed)} ${esc(item.unit || 'UN')}</td><td>${fmt(cars)}</td><td><strong>${fmt(item.required)} ${esc(item.unit || 'UN')}</strong></td><td class="${item.balance < 0 ? 'danger-text' : ''}">${fmt(item.balance)} ${esc(item.unit || 'UN')}</td><td><span class="status ${item.color}">${item.status}</span></td></tr>`).join('');
 }
 
 function matchesStockFilterValue(item, selectedFilter) {
@@ -1610,7 +1644,7 @@ function annualRowIsExcluded(row) {
   const mapRecords = typeof PRODUCTION_MAP !== 'undefined' ? (PRODUCTION_MAP.records || []) : [];
   const found = mapRecords.find(item => String(item.en || '').trim().toUpperCase() === String(row?.pedido || '').trim().toUpperCase());
   const status = String(found?.productionStatusNormalized || found?.productionStatus || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-  return status === 'ENTREGUE' || status === 'VITRINI';
+  return status === 'ENTREGUE' || status === 'VITRINI' || status === 'VITRINE';
 }
 function activeAnnualQuantities(model) {
   const annual = DATA?.planAnnual?.models || {};
@@ -1923,24 +1957,33 @@ function syncPlanMonthDemands() {
   });
 }
 function modelNiguriStructureRows(model) {
-  const structureName = modelNiguriStructureName(model);
   const base = new Map((DATA?.items || []).map(item => [String(item.code), item]));
-  return (DATA?.models?.[structureName] || []).map(entry => {
+  const sourceRows = model === 'Todos os modelos'
+    ? Object.values(DATA?.models || {}).flat()
+    : (DATA?.models?.[modelNiguriStructureName(model)] || []);
+  const grouped = new Map();
+  sourceRows.forEach(entry => {
+    const code = String(entry.code || '').trim();
+    if (!code || !/^\d{2}(?:\.\d{2}){2}\.\d{10}$/.test(code) || n(entry.quantity) <= 0) return;
+    const current = grouped.get(code) || { ...entry, code, quantity: 0 };
+    current.quantity += n(entry.quantity);
+    grouped.set(code, current);
+  });
+  return [...grouped.values()].map(entry => {
     const code = String(entry.code || '').trim();
     if (!/^\d{2}(?:\.\d{2}){2}\.\d{10}$/.test(code)) return null;
     const source = base.get(code) || {};
     const quantity = n(entry.quantity);
     if (quantity <= 0) return null;
-    return { ...source, code, description: source.description || entry.description || code, quantity, unit: source.unit || 'UN', stock: n(source.stock ?? entry.stock), analyst: source.analyst || 'Não informado', safety: n(source.safety), orders: source.orders || {}, lastMovement: source.lastMovement || 'não tem' };
+    return { ...source, code, description: source.description || entry.description || code, quantity, unit: source.unit || 'UN', stock: n(source.stock ?? entry.stock), analyst: source.analyst || 'Não informado', safety: n(source.safety), orders: source.orders || {} };
   }).filter(Boolean);
 }
 function modelNiguriPlanEntries(model) {
   const structureName = modelNiguriStructureName(model);
   const annualRows = DATA?.planAnnual?.rows || [];
-  const matched = annualRows.filter(entry => {
-    const plannedStructure = entry.estrutura || entry.modelo;
-    return structureName && modelNiguriStructureName(plannedStructure) === structureName;
-  });
+  const matched = model === 'Todos os modelos'
+    ? annualRows.filter(entry => modelNiguriStructureName(entry.estrutura || entry.modelo))
+    : annualRows.filter(entry => { const plannedStructure = entry.estrutura || entry.modelo; return structureName && modelNiguriStructureName(plannedStructure) === structureName; });
   const datedRows = matched.filter(entry => {
     const date = String(entry.data || '').slice(0, 10);
     return /^\d{4}-\d{2}-\d{2}$/.test(date) && Boolean(pinsNiguriWeekKey(date));
@@ -1949,6 +1992,7 @@ function modelNiguriPlanEntries(model) {
   return [{ modelo: structureName || model, rows: datedRows, undatedRows, allRows: matched }];
 }
 function modelNiguriUnmatchedCraneProducts(model) {
+  if (model === 'Todos os modelos') return (DATA?.planAnnual?.unmatchedCraneProducts || []).filter(entry => /GUINDASTE/i.test(String(entry.produto || '')) && !/CARROCERIA/i.test(String(entry.produto || '')));
   const structureName = modelNiguriStructureName(model);
   const baseByStructure = { 'guin-16T': 16, 'guin-25T': 25, 'guin-45': 45, '21T': 21, '30-T': 30, '12-T': 12, '7T': 7 };
   const base = baseByStructure[structureName];
@@ -1959,7 +2003,8 @@ function modelNiguriUnmatchedCraneProducts(model) {
   });
 }
 function modelNiguriOrders(item, slot, timelineSlots = []) {
-  const source = itemByCode(item.code) || item;
+  // modelNiguriStructureRows já devolve a linha enriquecida com stock/pedidos/recebimentos; evitar pesquisa linear no stock para cada semana.
+  const source = item;
   const obtention = Array.isArray(source.obtention) ? source.obtention : [];
   const monthKeys = slot.monthKeys || [`${slot.month}/${slot.year}`];
   let total = 0;
@@ -2019,23 +2064,124 @@ function modelNiguriTimeline(model) {
   const calcDate = startDate && currentDate && startDate > currentDate ? currentDate : startDate;
   const calculationSlots = allSlots.filter(slot => { const date = pinsNiguriWeekDate(slot.key); return date && calcDate && date >= calcDate; });
   const slots = allSlots.filter(slot => { const date = pinsNiguriWeekDate(slot.key); return date && startDate && date >= startDate; });
-  return { slots, allSlots, calculationSlots, startKey, currentKey, model, structureName: modelNiguriStructureName(model), undatedRows: plan.undatedRows || [], planRows: plan.rows || [] };
+  return { slots, allSlots, calculationSlots, startKey, currentKey, model, structureName: model === 'Todos os modelos' ? 'Todos os modelos' : modelNiguriStructureName(model), undatedRows: plan.undatedRows || [], planRows: plan.rows || [] };
 }
 function modelNiguriRows(model, analyst = 'all', query = '', statusFilter = 'all') {
-  const timeline = modelNiguriTimeline(model);
-  const visible = new Set(timeline.slots.map(slot => slot.key));
-  const rows = modelNiguriStructureRows(model).map(item => {
-    let balance = n(item.stock); const balances = []; let totalNeed = 0;
-    timeline.calculationSlots.forEach(slot => { const consumption = item.quantity * slot.quantity; const receipt = modelNiguriOrders(item, slot, timeline.calculationSlots); balance = balance - consumption + receipt; if (visible.has(slot.key)) { totalNeed += consumption; balances.push({ ...slot, consumption, receipts: receipt, balance }); } });
-    const firstShortage = balances.find(slot => slot.balance < 0);
-    const status = firstShortage ? 'Crítico' : balances.some(slot => slot.balance <= n(item.safety)) ? 'Em atenção' : totalNeed > 0 ? 'Regular' : 'Regular';
-    return { ...item, totalNeed, balances, firstShortage, status };
-  }).filter(item => (analyst === 'all' || item.analyst === analyst) && `${item.code} ${item.description}`.toLowerCase().includes(String(query).trim().toLowerCase()) && (statusFilter === 'all' || item.status === statusFilter));
+  const startKey = modelNiguriStartWeek || '';
+  const cached = modelNiguriRows._cache;
+  let timeline;
+  let calculatedRows;
+  if (cached && cached.data === DATA && cached.model === model && cached.startKey === startKey) {
+    ({ timeline, rows: calculatedRows } = cached);
+  } else {
+    timeline = modelNiguriTimeline(model);
+    const visible = new Set(timeline.slots.map(slot => slot.key));
+    const weeklyNeeds = new Map();
+    if (model === 'Todos os modelos') {
+      const needsByStructure = new Map();
+      timeline.calculationSlots.forEach(slot => {
+        const needs = new Map();
+        slot.plannedEntries.forEach(planned => {
+          const structure = modelNiguriStructureName(planned.estrutura || planned.modelo);
+          if (!needsByStructure.has(structure)) {
+            const components = new Map();
+            (DATA?.models?.[structure] || []).forEach(entry => {
+              const code = String(entry.code || '').trim();
+              if (code && !components.has(code)) components.set(code, n(entry.quantity));
+            });
+            needsByStructure.set(structure, components);
+          }
+          needsByStructure.get(structure).forEach((quantity, code) => {
+            needs.set(code, (needs.get(code) || 0) + quantity);
+          });
+        });
+        weeklyNeeds.set(slot.key, needs);
+      });
+    }
+    calculatedRows = modelNiguriStructureRows(model).map(item => {
+      let balance = n(item.stock);
+      const balances = [];
+      let totalNeed = 0;
+      timeline.calculationSlots.forEach(slot => {
+        const consumption = model === 'Todos os modelos'
+          ? (weeklyNeeds.get(slot.key)?.get(String(item.code)) || 0)
+          : item.quantity * slot.quantity;
+        const receipt = modelNiguriOrders(item, slot, timeline.calculationSlots);
+        balance = balance - consumption + receipt;
+        if (visible.has(slot.key)) {
+          totalNeed += consumption;
+          balances.push({ ...slot, consumption, receipts: receipt, balance });
+        }
+      });
+      const firstShortage = balances.find(slot => slot.balance < 0);
+      const status = firstShortage ? 'Crítico' : balances.some(slot => slot.balance <= n(item.safety)) ? 'Em atenção' : 'Regular';
+      return { ...item, totalNeed, balances, firstShortage, status };
+    });
+    modelNiguriRows._cache = { data: DATA, model, startKey, timeline, rows: calculatedRows };
+  }
+  const needle = String(query).trim().toLowerCase();
+  const rows = calculatedRows.filter(item =>
+    (analyst === 'all' || item.analyst === analyst) &&
+    `${item.code} ${item.description}`.toLowerCase().includes(needle) &&
+    (statusFilter === 'all' || item.status === statusFilter)
+  );
   return { rows, timeline };
+}
+const MODEL_NIGURI_PAGE_SIZE = 200;
+let modelNiguriVisibleLimit = MODEL_NIGURI_PAGE_SIZE;
+function modelNiguriPage(rows, limit = modelNiguriVisibleLimit) {
+  return rows.slice(0, Math.max(0, Number(limit) || 0));
+}
+function advanceModelNiguriPage(total) {
+  modelNiguriVisibleLimit = Math.min(total, modelNiguriVisibleLimit + MODEL_NIGURI_PAGE_SIZE);
+}
+function modelNiguriLoadMoreMarkup(total, visible) {
+  if (!total) return '<div class="table-footer model-niguri-load-more" id="model-niguri-load-more"><span>Nenhum material corresponde aos filtros.</span></div>';
+  return visible < total
+    ? `<div class="table-footer model-niguri-load-more" id="model-niguri-load-more"><button class="secondary-btn" id="model-niguri-load-more-btn">Carregar mais (${fmt(Math.min(MODEL_NIGURI_PAGE_SIZE, total - visible))})</button><span>Mostrando ${fmt(visible)} de ${fmt(total)} materiais</span></div>`
+    : `<div class="table-footer model-niguri-load-more" id="model-niguri-load-more"><span>Todos os ${fmt(total)} materiais carregados</span></div>`;
+}
+function bindModelNiguriLoadMore() {
+  const button = $('#model-niguri-load-more-btn');
+  if (button) button.onclick = () => {
+    const rows = modelNiguriRows(modelNiguriModel, modelNiguriAnalyst, $('#model-niguri-search')?.value || '', $('#model-niguri-status')?.value || 'all').rows;
+    const start = Math.min(modelNiguriVisibleLimit, rows.length);
+    advanceModelNiguriPage(rows.length);
+    const end = modelNiguriVisibleLimit;
+    const tbody = document.querySelector('.pins-niguri-table tbody');
+    if (tbody) {
+      if (start === 0) tbody.innerHTML = '';
+      tbody.insertAdjacentHTML('beforeend', rows.slice(start, end).map(modelNiguriRowMarkup).join(''));
+    }
+    const footer = $('#model-niguri-load-more');
+    if (footer) footer.outerHTML = modelNiguriLoadMoreMarkup(rows.length, Math.min(end, rows.length));
+    bindMaterialButtons();
+    bindModelNiguriLoadMore();
+  };
+}
+function refreshModelNiguriTable() {
+  const current = modelNiguriView();
+  const temp = document.createElement('div');
+  temp.innerHTML = current;
+  const oldBody = document.querySelector('.pins-niguri-table tbody');
+  const newBody = temp.querySelector('.pins-niguri-table tbody');
+  if (oldBody && newBody) oldBody.innerHTML = newBody.innerHTML;
+  const oldFooter = document.querySelector('#model-niguri-load-more');
+  const newFooter = temp.querySelector('#model-niguri-load-more');
+  if (oldFooter && newFooter) oldFooter.outerHTML = newFooter.outerHTML;
+  bindMaterialButtons();
+  bindModelNiguriLoadMore();
+}
+function modelNiguriRowMarkup(item) {
+  const cells = item.balances.map(cell => {
+    const color = cell.balance < 0 ? 'danger' : cell.receipts > 0 ? 'receipt' : cell.balance <= n(item.safety) ? 'attention' : 'good';
+    return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`;
+  }).join('');
+  return `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${esc(item.analyst)}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.quantity)} ${esc(item.unit)}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit)}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${cells}</tr>`;
 }
 function modelNiguriView() {
   const models = Object.keys(DATA?.models || {}).sort((a, b) => a.localeCompare(b));
-  const model = models.includes(modelNiguriModel) ? modelNiguriModel : (models[0] || '');
+  const model = modelNiguriModel === 'Todos os modelos' ? modelNiguriModel : (models.includes(modelNiguriModel) ? modelNiguriModel : (models[0] || ''));
   modelNiguriModel = model;
   const analysts = [...new Set((DATA?.items || []).map(item => item.analyst).filter(Boolean))].sort();
   const query = $('#model-niguri-search')?.value || ''; const status = $('#model-niguri-status')?.value || 'all';
@@ -2045,16 +2191,16 @@ function modelNiguriView() {
   const craneWarning = unmatchedCraneProducts.length ? `<div class="history-note stock-plan-warning">O PLANO ANUAL tem produto(s) deste porte sem correspondência exacta com a estrutura carregada: ${unmatchedCraneProducts.map(entry => `${esc(entry.produto)} (${fmt(entry.quantidade)})`).join('; ')}. Não foram incluídos no consumo; confirme se a configuração do guindaste usa esta BOM.</div>` : '';
   const scheduleNote = timeline.allSlots.some(slot => n(slot.quantity) > 0) ? '' : '<div class="history-note stock-plan-warning">Não há ENs com data prevista actual ou futura no PLANO ANUAL para esta estrutura. A estrutura continua disponível, mas não haverá consumo projectado.</div>';
   const headers = timeline.slots.map(slot => `<th title="${esc(slot.month)}/${esc(slot.year)} · ${fmt(slot.quantity)} EN(s) do PLANO ANUAL">${esc(slot.label)}<small>${esc(slot.month)}/${esc(slot.year)}</small></th>`).join('');
-  const body = rows.slice(0, 250).map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${esc(item.analyst)}</td><td>${fmt(item.stock)} ${esc(item.unit)}</td><td>${fmt(item.quantity)} ${esc(item.unit)}</td><td><strong>${fmt(item.totalNeed)} ${esc(item.unit)}</strong></td><td>${item.firstShortage ? `<span class="status red">${esc(item.firstShortage.label)}</span>` : '<span class="status green">Sem falta</span>'}</td>${item.balances.map(cell => { const color = cell.balance < 0 ? 'danger' : cell.receipts > 0 ? 'receipt' : cell.balance <= n(item.safety) ? 'attention' : 'good'; return `<td class="niguri-cell ${color}" title="Consumo: ${fmt(cell.consumption)} · Recebimento: ${fmt(cell.receipts)}">${fmt(cell.balance)}</td>`; }).join('')}</tr>`).join('');
+  const visibleRows = modelNiguriPage(rows); const body = visibleRows.map(modelNiguriRowMarkup).join('');
   const options = timeline.allSlots.map(slot => `<option value="${esc(slot.key)}" ${slot.key === timeline.startKey ? 'selected' : ''}>${esc(slot.label)} · ${esc(slot.month)}/${esc(slot.year)}</option>`).join('') || '<option value="">Sem semanas no plano actual</option>';
-  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · estrutura completa</span><h2>NIGURI dos modelos</h2><p>Estruturas das abas de modelos com consumo semanal pela data prevista de cada EN na aba PLANO ANUAL.</p></div><div class="date-pill">Estrutura: ${esc(timeline.structureName || 'não encontrada')}</div></div>${planWarning}${craneWarning}${scheduleNote}<div class="panel pins-niguri-controls"><label>Modelo<select class="select" id="model-niguri-model">${models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="model-niguri-start-week">${options}</select></label><label>Analista<select class="select" id="model-niguri-analyst"><option value="all">Todos os analistas</option>${analysts.map(entry => `<option value="${esc(entry)}" ${entry === analyst ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="model-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="model-niguri-status"><option value="all">Todas</option><option value="Crítico">Críticos</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Regra:</strong> cada linha/EN do PLANO ANUAL conta como um veículo planeado, e o consumo da sua estrutura entra na semana ISO correspondente à data prevista da coluna D. Os recebimentos previstos continuam a ser lançados no saldo acumulado.</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Itens da estrutura · ${esc(model)}</h3><span>${fmt(rows.length)} itens encontrados · ${fmt(timeline.slots.length)} semanas projectadas</span></div><span class="pins-legend"><i></i> Verde: saldo · amarelo: recebimento/limite · vermelho: falta</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Analista</th><th>Estoque</th><th>Qtd./modelo</th><th>Necessidade no período</th><th>Primeira falta</th>${headers}</tr></thead><tbody>${body || '<tr><td colspan="8" class="empty">Nenhum item corresponde aos filtros.</td></tr>'}</tbody></table></div></div></div>`;
+  return `<div class="pins-page pins-niguri-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado · estrutura completa</span><h2>NIGURI dos modelos</h2><p>Estruturas das abas de modelos com consumo semanal pela data prevista de cada EN na aba PLANO ANUAL.</p></div><div class="date-pill">Estrutura: ${esc(timeline.structureName || 'não encontrada')}</div></div>${planWarning}${craneWarning}${scheduleNote}<div class="panel pins-niguri-controls"><label>Modelo<select class="select" id="model-niguri-model"><option value="Todos os modelos" ${model === 'Todos os modelos' ? 'selected' : ''}>Todos os modelos</option>${models.map(entry => `<option value="${esc(entry)}" ${entry === model ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Semana inicial<select class="select" id="model-niguri-start-week">${options}</select></label><label>Analista<select class="select" id="model-niguri-analyst"><option value="all">Todos os analistas</option>${analysts.map(entry => `<option value="${esc(entry)}" ${entry === analyst ? 'selected' : ''}>${esc(entry)}</option>`).join('')}</select></label><label>Pesquisar<input class="input" id="model-niguri-search" placeholder="Código ou descrição" /></label><label>Situação<select class="select" id="model-niguri-status"><option value="all">Todas</option><option value="Crítico">Críticos</option><option value="Em atenção">Atenção</option><option value="Regular">Regulares</option></select></label></div><div class="pins-niguri-note"><strong>Regra:</strong> cada linha/EN do PLANO ANUAL conta como um veículo planeado, e o consumo da sua estrutura entra na semana ISO correspondente à data prevista da coluna D. Os recebimentos previstos continuam a ser lançados no saldo acumulado.</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Itens da estrutura · ${esc(model)}</h3><span>${fmt(rows.length)} materiais consolidados · ${fmt(timeline.slots.length)} semanas projectadas</span></div><span class="pins-legend"><i></i> Verde: saldo · amarelo: recebimento/limite · vermelho: falta</span></div><div class="table-wrap pins-niguri-table-wrap"><table class="data-table pins-table pins-niguri-table"><thead><tr><th>Código / descrição</th><th>Analista</th><th>Estoque</th><th>Qtd./modelo</th><th>Necessidade no período</th><th>Primeira falta</th>${headers}</tr></thead><tbody>${body || '<tr><td colspan="8" class="empty">Nenhum item corresponde aos filtros.</td></tr>'}</tbody></table></div>${modelNiguriLoadMoreMarkup(rows.length, visibleRows.length)}</div></div>`;
 }
 
 function pinsSimulationView() {
   const items = PINS.items || [];
   const models = PINS.models || [];
   const activeModel = selectedPinModel || models[0] || '';
-  return `<div class="pins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(PINS.sourceFile || 'Aba Pinos')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-pin-model="${esc(model)}"><span>Pinos</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel)} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba Pinos.</p></div><div class="pins-config-controls"><label for="pins-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="pins-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(pinCars)))}" /><button class="primary-btn" id="run-pins-simulation">Calcular necessidade</button></div></div></div><div id="pins-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento dos pinos · ${esc(activeModel)}</h3><span>${fmt(items.length)} códigos disponíveis na aba Pinos</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body"><div class="toolbar pins-toolbar"><input class="input" id="pins-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="pins-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="pins-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="pins-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="pins-load-more"></div></div></div></div>`;
+  return `<div class="pins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(PINS.sourceFile || 'Aba Pinos')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-pin-model="${esc(model)}"><span>Pinos</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel)} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba Pinos.</p></div><div class="pins-config-controls"><label for="pins-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="pins-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(pinCars)))}" /><button class="primary-btn" id="run-pins-simulation">Calcular necessidade</button></div></div></div><div id="pins-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento dos pinos · ${esc(activeModel)}</h3><span>${fmt(items.length)} códigos disponíveis na aba Pinos</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body"><div class="toolbar pins-toolbar"><input class="input" id="pins-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="pins-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="pins-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="pins-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="pins-load-more"></div></div></div></div>`;
 }
 
 function cylinderSimulationRows(items, model, cars, query = '', statusFilter = 'all', selectedStockFilter = 'all') {
@@ -2071,7 +2217,7 @@ function cylinderSimulationRows(items, model, cars, query = '', statusFilter = '
   });
   specializedCounts['cylinders'] = rows.length;
   const visibleRows = rows.slice(0, specializedLimits['cylinders']);
-  return visibleRows.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td class="specialized-order-cell" title="${esc(specializedOrderInfo(item).months || 'Sem pedidos em aberto')}">${esc(specializedOrderInfo(item).label)}</td><td>${fmt(item.unitNeed)} ${esc(item.unit || 'UN')}</td><td>${fmt(cars)}</td><td><strong>${fmt(item.required)} ${esc(item.unit || 'UN')}</strong></td><td class="${item.balance < 0 ? 'danger-text' : ''}">${fmt(item.balance)} ${esc(item.unit || 'UN')}</td><td><span class="status ${item.color}">${item.status}</span></td></tr>`).join('');
+  return visibleRows.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td class="specialized-order-cell" title="${esc(specializedOrderInfo(item).months || 'Sem pedidos em aberto')}">${esc(specializedOrderInfo(item).label)}</td><td>${fmt(item.unitNeed)} ${esc(item.unit || 'UN')}</td><td>${fmt(cars)}</td><td><strong>${fmt(item.required)} ${esc(item.unit || 'UN')}</strong></td><td class="${item.balance < 0 ? 'danger-text' : ''}">${fmt(item.balance)} ${esc(item.unit || 'UN')}</td><td><span class="status ${item.color}">${item.status}</span></td></tr>`).join('');
 }
 
 function renderCylinderSimulation() {
@@ -2099,7 +2245,7 @@ function cylindersView() {
   const models = CYLINDERS.models || [];
   const activeModel = selectedCylinderModel || models[0] || '';
   const emptyMessage = models.length ? 'Adicione códigos e necessidades na aba cilindros da Explosão e regenere os dados.' : 'Nenhum modelo foi encontrado na aba cilindros.';
-  return `<div class="pins-page cylinders-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(CYLINDERS.sourceFile || 'Aba cilindros')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-cylinder-model="${esc(model)}"><span>Cilindros</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel || 'deste modelo')} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba cilindros.</p></div><div class="pins-config-controls"><label for="cylinders-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="cylinders-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(cylinderCars)))}" /><button class="primary-btn" id="run-cylinders-simulation">Calcular necessidade</button></div></div></div><div id="cylinders-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento dos cilindros · ${esc(activeModel || '—')}</h3><span>${fmt(items.length)} códigos disponíveis na aba cilindros</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body">${items.length ? `<div class="toolbar pins-toolbar"><input class="input" id="cylinders-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="cylinders-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="cylinders-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="cylinders-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="cylinders-load-more"></div>` : `<div class="empty cylinders-empty">${emptyMessage}</div>`}</div></div></div>`;
+  return `<div class="pins-page cylinders-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(CYLINDERS.sourceFile || 'Aba cilindros')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-cylinder-model="${esc(model)}"><span>Cilindros</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel || 'deste modelo')} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba cilindros.</p></div><div class="pins-config-controls"><label for="cylinders-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="cylinders-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(cylinderCars)))}" /><button class="primary-btn" id="run-cylinders-simulation">Calcular necessidade</button></div></div></div><div id="cylinders-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento dos cilindros · ${esc(activeModel || '—')}</h3><span>${fmt(items.length)} códigos disponíveis na aba cilindros</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body">${items.length ? `<div class="toolbar pins-toolbar"><input class="input" id="cylinders-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="cylinders-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="cylinders-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="cylinders-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="cylinders-load-more"></div>` : `<div class="empty cylinders-empty">${emptyMessage}</div>`}</div></div></div>`;
 }
 
 function cabinSimulationRows(items, model, cars, query = '', statusFilter = 'all', selectedStockFilter = 'all') {
@@ -2116,7 +2262,7 @@ function cabinSimulationRows(items, model, cars, query = '', statusFilter = 'all
   });
   specializedCounts['cabins'] = rows.length;
   const visibleRows = rows.slice(0, specializedLimits['cabins']);
-  return visibleRows.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td class="movement-date">${esc(movementDate(item.lastMovement))}</td><td class="specialized-order-cell" title="${esc(specializedOrderInfo(item).months || 'Sem pedidos em aberto')}">${esc(specializedOrderInfo(item).label)}</td><td>${fmt(item.unitNeed)} ${esc(item.unit || 'UN')}</td><td>${fmt(cars)}</td><td><strong>${fmt(item.required)} ${esc(item.unit || 'UN')}</strong></td><td class="${item.balance < 0 ? 'danger-text' : ''}">${fmt(item.balance)} ${esc(item.unit || 'UN')}</td><td><span class="status ${item.color}">${item.status}</span></td></tr>`).join('');
+  return visibleRows.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}" title="Abrir detalhe do material">${esc(item.code)}</button><div class="desc" title="${esc(item.description)}">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit || 'UN')}</td><td class="specialized-order-cell" title="${esc(specializedOrderInfo(item).months || 'Sem pedidos em aberto')}">${esc(specializedOrderInfo(item).label)}</td><td>${fmt(item.unitNeed)} ${esc(item.unit || 'UN')}</td><td>${fmt(cars)}</td><td><strong>${fmt(item.required)} ${esc(item.unit || 'UN')}</strong></td><td class="${item.balance < 0 ? 'danger-text' : ''}">${fmt(item.balance)} ${esc(item.unit || 'UN')}</td><td><span class="status ${item.color}">${item.status}</span></td></tr>`).join('');
 }
 
 function renderCabinSimulation() {
@@ -2144,7 +2290,7 @@ function cabinsView() {
   const models = CABINS.models || [];
   const activeModel = selectedCabinModel || models[0] || '';
   const emptyMessage = models.length ? 'Adicione códigos e necessidades na aba cabines da Explosão e regenere os dados.' : 'Nenhum modelo foi encontrado na aba cabines.';
-  return `<div class="pins-page cabins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(CABINS.sourceFile || 'Aba cabines')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-cabin-model="${esc(model)}"><span>Cabines</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel || 'deste modelo')} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba cabines.</p></div><div class="pins-config-controls"><label for="cabins-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="cabins-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(cabinCars)))}" /><button class="primary-btn" id="run-cabins-simulation">Calcular necessidade</button></div></div></div><div id="cabins-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento das cabines · ${esc(activeModel || '—')}</h3><span>${fmt(items.length)} códigos disponíveis na aba cabines</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body">${items.length ? `<div class="toolbar pins-toolbar"><input class="input" id="cabins-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="cabins-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="cabins-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="cabins-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="cabins-load-more"></div>` : `<div class="empty cabins-empty">${emptyMessage}</div>`}</div></div></div>`;
+  return `<div class="pins-page cabins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2></h2><p></p></div><div class="date-pill">${esc(CABINS.sourceFile || 'Aba cabines')}</div></div><div class="pins-model-strip">${models.map(model => `<button class="pins-model-card${model === activeModel ? ' selected' : ''}" data-cabin-model="${esc(model)}"><span>Cabines</span><strong>${esc(model)}</strong><small>${model === activeModel ? 'modelo selecionado' : 'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-config-panel"><div class="pins-config-copy"><span class="eyebrow">Configuração da produção</span><h3>Quantas máquinas ${esc(activeModel || 'deste modelo')} serão produzidas?</h3><p>A quantidade planejada multiplica a necessidade unitária informada na aba cabines.</p></div><div class="pins-config-controls"><label for="cabins-cars">Quantidade de máquinas</label><div class="pins-cars-control"><input class="input" id="cabins-cars" type="number" min="1" step="1" value="${fmt(Math.max(1, n(cabinCars)))}" /><button class="primary-btn" id="run-cabins-simulation">Calcular necessidade</button></div></div></div><div id="cabins-result" class="panel pins-result-panel"></div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento das cabines · ${esc(activeModel || '—')}</h3><span>${fmt(items.length)} códigos disponíveis na aba cabines</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o plano</span></div><div class="panel-body">${items.length ? `<div class="toolbar pins-toolbar"><input class="input" id="cabins-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="cabins-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="cabins-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Pedido em aberto</th><th>Necessidade / máquina</th><th>Máquinas</th><th>Necessidade calculada</th><th>Saldo</th><th>Situação</th></tr></thead><tbody id="cabins-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="cabins-load-more"></div>` : `<div class="empty cabins-empty">${emptyMessage}</div>`}</div></div></div>`;
 }
 
 function sheetMetalStatus(item, cars = 1) {
@@ -2160,12 +2306,12 @@ function exportCriticalItems(items, filename = 'itens-criticos.xls') {
 function sheetMetalRows(items, model, cars, query='', statusFilter='all', stockFilter='all') {
   const rows = items.map(item => { const required=n(item.minimum)*Math.max(1,cars); const [status,color]=sheetMetalStatus(item,cars); return {...item,required,status,color,balance:n(item.stock)-required}; }).filter(item => item.modelNeeds?.[model] !== undefined).filter(item => `${item.code} ${item.description}`.toLowerCase().includes(query.trim().toLowerCase())).filter(item => statusFilter==='all'||item.status===statusFilter).filter(item => stockFilter==='all'||(stockFilter==='zero'&&n(item.stock)===0)||(stockFilter==='positive'&&n(item.stock)>0));
   specializedCounts.sheetMetal=rows.length; const visible=rows.slice(0,specializedLimits.sheetMetal);
-  return visible.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit||'UN')}</td><td>${esc(movementDate(item.lastMovement))}</td><td>${specializedOrderInfo(item).label}</td><td>${fmt(item.minimum)}</td><td>${fmt(cars)}</td><td>${fmt(item.required)}</td><td class="${item.balance<0?'danger-text':''}">${fmt(item.balance)}</td><td><span class="status ${item.color}">${item.status}</span></td><td>${purchaseAction(item,'explosion',item.required,'Chaparias')}</td></tr>`).join('');
+  return visible.map(item => `<tr><td><button class="material-code specialized-material-code" data-code="${esc(item.code)}">${esc(item.code)}</button><div class="desc">${esc(item.description)}</div></td><td>${fmt(item.stock)} ${esc(item.unit||'UN')}</td><td>${specializedOrderInfo(item).label}</td><td>${fmt(item.minimum)}</td><td>${fmt(cars)}</td><td>${fmt(item.required)}</td><td class="${item.balance<0?'danger-text':''}">${fmt(item.balance)}</td><td><span class="status ${item.color}">${item.status}</span></td><td>${purchaseAction(item,'explosion',item.required,'Chaparias')}</td></tr>`).join('');
 }
 function renderSheetMetalSimulation() {
   const model=selectedSheetMetalModel||SHEET_METAL.models[0]||'CHAPARIAS'; const cars=Math.max(1,sheetMetalCars); const query=$('#sheet-metal-search')?.value||''; const status=$('#sheet-metal-coverage')?.value||'all'; const stock=$('#sheet-metal-stock-filter')?.value||'all'; const body=$('#sheet-metal-table-body'); if(body) body.innerHTML=sheetMetalRows(SHEET_METAL.items||[],model,cars,query,status,stock)||'<tr><td colspan="10" class="empty">Nenhuma chaparia corresponde aos filtros.</td></tr>'; setSpecializedLoadMore('sheetMetal',specializedCounts.sheetMetal,Math.min(specializedCounts.sheetMetal,specializedLimits.sheetMetal),renderSheetMetalSimulation); bindMaterialButtons(); bindPurchaseButtons();
 }
-function sheetMetalView() { const items=SHEET_METAL.items||[]; const models=SHEET_METAL.models||['CHAPARIAS']; const active=selectedSheetMetalModel||models[0]; return `<div class="pins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2>Chaparias</h2><p>Dados lidos diretamente da aba chaparias da Explosão.</p></div><div class="date-pill">${esc(SHEET_METAL.sourceFile||'Aba chaparias')}</div></div><div class="pins-model-strip">${models.map(m=>`<button class="pins-model-card${m===active?' selected':''}" data-sheet-metal-model="${esc(m)}"><span>Chaparias</span><strong>${esc(m)}</strong><small>${m===active?'modelo selecionado':'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento das chaparias</h3><span>${fmt(items.length)} códigos disponíveis na aba chaparias</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o mínimo</span></div><div class="panel-body">${items.length?`<div class="toolbar pins-toolbar"><input class="input" id="sheet-metal-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="sheet-metal-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="sheet-metal-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedido em aberto</th><th>Mínimo</th><th>Quantidade</th><th>Necessidade</th><th>Saldo</th><th>Situação</th><th>Compras</th></tr></thead><tbody id="sheet-metal-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="sheetMetal-load-more"></div>`:'<div class="empty">Nenhuma chaparia encontrada.</div>'}</div></div></div>`; }
+function sheetMetalView() { const items=SHEET_METAL.items||[]; const models=SHEET_METAL.models||['CHAPARIAS']; const active=selectedSheetMetalModel||models[0]; return `<div class="pins-page"><div class="view-title pins-heading"><div><span class="eyebrow">Planejamento especializado</span><h2>Chaparias</h2><p>Dados lidos diretamente da aba chaparias da Explosão.</p></div><div class="date-pill">${esc(SHEET_METAL.sourceFile||'Aba chaparias')}</div></div><div class="pins-model-strip">${models.map(m=>`<button class="pins-model-card${m===active?' selected':''}" data-sheet-metal-model="${esc(m)}"><span>Chaparias</span><strong>${esc(m)}</strong><small>${m===active?'modelo selecionado':'selecionar modelo'}</small></button>`).join('')}</div><div class="panel pins-panel"><div class="panel-header"><div><h3>Detalhamento das chaparias</h3><span>${fmt(items.length)} códigos disponíveis na aba chaparias</span></div><span class="pins-legend"><i></i> Estoque insuficiente para o mínimo</span></div><div class="panel-body">${items.length?`<div class="toolbar pins-toolbar"><input class="input" id="sheet-metal-search" placeholder="Pesquisar código ou descrição" /><select class="select" id="sheet-metal-coverage"><option value="all">Todas as situações</option><option value="Crítico">Críticos</option><option value="Em atenção">Em atenção</option><option value="Regular">Regulares</option></select><select class="select" id="sheet-metal-stock-filter"><option value="all">Estoque: todos</option><option value="zero">Estoque igual a zero</option><option value="positive">Estoque maior que zero</option></select></div><div class="table-wrap pins-table-wrap"><table class="data-table pins-table pins-simulation-table"><thead><tr><th>Código / descrição</th><th>Estoque</th><th>Pedido em aberto</th><th>Mínimo</th><th>Quantidade</th><th>Necessidade</th><th>Saldo</th><th>Situação</th><th>Compras</th></tr></thead><tbody id="sheet-metal-table-body"></tbody></table></div><div class="table-footer specialized-load-more" id="sheetMetal-load-more"></div>`:'<div class="empty">Nenhuma chaparia encontrada.</div>'}</div></div></div>`; }
 function productionAlertStatusClass(status) {
   if (status === 'Resolvido') return 'green';
   if (status === 'Em análise') return 'amber';
@@ -2178,7 +2324,7 @@ function productionAlertDate(value) {
 }
 
 function productionAlertRows(items) {
-  return items.map(alert => `<tr><td><span class="status ${productionAlertStatusClass(alert.status)}">${esc(alert.status)}</span></td><td><b class="alert-title">ALERTA DA PRODUÇÃO</b><div class="desc">${esc(alert.message)}</div></td><td>${esc(alert.leader || '—')}</td><td>${esc(alert.line || '—')}</td><td><button class="material-code production-alert-code" data-alert-id="${esc(alert.id)}">${esc(alert.code || '—')}</button><div class="desc" title="${esc(alert.description)}">${esc(alert.description || 'Descrição não informada')}</div></td><td>${fmt(alert.stock)} ${esc(alert.unit || 'UN')}</td><td class="movement-date">${esc(movementDate(alert.lastMovement))}</td><td>${fmt(alert.orders)} ${esc(alert.unit || 'UN')}</td><td class="danger-text">${fmt(alert.suggestedPurchase)} ${esc(alert.unit || 'UN')}</td><td>${esc(alert.analyst || '—')}</td><td><button class="secondary-btn alert-detail-btn" data-alert-id="${esc(alert.id)}">Ver material</button><button class="primary-btn alert-status-btn" data-alert-id="${esc(alert.id)}">${alert.status === 'Novo' ? 'Iniciar análise' : alert.status === 'Em análise' ? 'Marcar resolvido' : 'Atualizar estado'}</button></td></tr>`).join('');
+  return items.map(alert => `<tr><td><span class="status ${productionAlertStatusClass(alert.status)}">${esc(alert.status)}</span></td><td><b class="alert-title">ALERTA DA PRODUÇÃO</b><div class="desc">${esc(alert.message)}</div></td><td>${esc(alert.leader || '—')}</td><td>${esc(alert.line || '—')}</td><td><button class="material-code production-alert-code" data-alert-id="${esc(alert.id)}">${esc(alert.code || '—')}</button><div class="desc" title="${esc(alert.description)}">${esc(alert.description || 'Descrição não informada')}</div></td><td>${fmt(alert.stock)} ${esc(alert.unit || 'UN')}</td><td>${fmt(alert.orders)} ${esc(alert.unit || 'UN')}</td><td class="danger-text">${fmt(alert.suggestedPurchase)} ${esc(alert.unit || 'UN')}</td><td>${esc(alert.analyst || '—')}</td><td><button class="secondary-btn alert-detail-btn" data-alert-id="${esc(alert.id)}">Ver material</button><button class="primary-btn alert-status-btn" data-alert-id="${esc(alert.id)}">${alert.status === 'Novo' ? 'Iniciar análise' : alert.status === 'Em análise' ? 'Marcar resolvido' : 'Atualizar estado'}</button></td></tr>`).join('');
 }
 
 function productionAlertsView() {
@@ -2196,7 +2342,7 @@ function productionAlertsView() {
   const open = all.filter(alert => !['Resolvido', 'Cancelado'].includes(alert.status));
   const critical = all.filter(alert => n(alert.suggestedPurchase) > 0 && !['Resolvido', 'Cancelado'].includes(alert.status));
   const resolvedToday = all.filter(alert => alert.status === 'Resolvido' && new Date(alert.updatedAt || alert.createdAt).toDateString() === new Date().toDateString());
-  return `<div class="view-title production-alert-heading"><div><h2>Alertas da produção</h2><p>Avisos enviados pelos líderes da produção.</p></div><button class="primary-btn" id="new-production-alert">＋ Enviar aviso</button></div><div class="summary-strip alert-metrics"><div class="summary-box"><b>${fmt(open.filter(alert => alert.status === 'Novo').length)}</b><span>Novos</span></div><div class="summary-box"><b>${fmt(open.filter(alert => alert.status === 'Em análise').length)}</b><span>Em análise</span></div><div class="summary-box"><b class="danger">${fmt(critical.length)}</b><span>Críticos</span></div><div class="summary-box"><b class="success">${fmt(resolvedToday.length)}</b><span>Resolvidos hoje</span></div></div><div class="panel alert-filter-panel"><div class="toolbar"><select class="select" id="production-alert-leader"><option value="all">Todos os líderes</option>${leaders.map(value => `<option value="${esc(value)}" ${selectedLeader === value ? 'selected' : ''}>${esc(value)}</option>`).join('')}</select><select class="select" id="production-alert-line"><option value="all">Todas as linhas</option>${lines.map(value => `<option value="${esc(value)}" ${selectedLine === value ? 'selected' : ''}>${esc(value)}</option>`).join('')}</select><select class="select" id="production-alert-status"><option value="all">Todos os estados</option>${['Novo', 'Em análise', 'Resolvido', 'Cancelado'].map(value => `<option value="${value}" ${selectedStatus === value ? 'selected' : ''}>${value}</option>`).join('')}</select><select class="select" id="production-alert-stock-filter"><option value="all" ${stockFilter === 'all' ? 'selected' : ''}>Estoque: todos</option><option value="zero" ${stockFilter === 'zero' ? 'selected' : ''}>Estoque igual a zero</option><option value="positive" ${stockFilter === 'positive' ? 'selected' : ''}>Estoque maior que zero</option></select><input class="input" id="production-alert-search" value="${esc(window.productionAlertQuery || '')}" placeholder="Pesquisar código, descrição ou mensagem" /><button class="secondary-btn" id="clear-production-alert-filters">Limpar filtros</button></div></div><div class="panel"><div class="table-wrap production-alert-table-wrap"><table class="data-table production-alert-table"><thead><tr><th>Estado</th><th>Alerta</th><th>Líder</th><th>Linha</th><th>Código / descrição</th><th>Estoque</th><th>Última movimentação</th><th>Pedidos em aberto</th><th>Compra sugerida</th><th>Analista</th><th>Ações</th></tr></thead><tbody>${productionAlertRows(items) || '<tr><td colspan="11" class="empty">Nenhum alerta encontrado.</td></tr>'}</tbody></table></div><div class="table-footer">Mostrando ${items.length} de ${all.length} alerta(s).</div></div>`;
+  return `<div class="view-title production-alert-heading"><div><h2>Alertas da produção</h2><p>Avisos enviados pelos líderes da produção.</p></div><button class="primary-btn" id="new-production-alert">＋ Enviar aviso</button></div><div class="summary-strip alert-metrics"><div class="summary-box"><b>${fmt(open.filter(alert => alert.status === 'Novo').length)}</b><span>Novos</span></div><div class="summary-box"><b>${fmt(open.filter(alert => alert.status === 'Em análise').length)}</b><span>Em análise</span></div><div class="summary-box"><b class="danger">${fmt(critical.length)}</b><span>Críticos</span></div><div class="summary-box"><b class="success">${fmt(resolvedToday.length)}</b><span>Resolvidos hoje</span></div></div><div class="panel alert-filter-panel"><div class="toolbar"><select class="select" id="production-alert-leader"><option value="all">Todos os líderes</option>${leaders.map(value => `<option value="${esc(value)}" ${selectedLeader === value ? 'selected' : ''}>${esc(value)}</option>`).join('')}</select><select class="select" id="production-alert-line"><option value="all">Todas as linhas</option>${lines.map(value => `<option value="${esc(value)}" ${selectedLine === value ? 'selected' : ''}>${esc(value)}</option>`).join('')}</select><select class="select" id="production-alert-status"><option value="all">Todos os estados</option>${['Novo', 'Em análise', 'Resolvido', 'Cancelado'].map(value => `<option value="${value}" ${selectedStatus === value ? 'selected' : ''}>${value}</option>`).join('')}</select><select class="select" id="production-alert-stock-filter"><option value="all" ${stockFilter === 'all' ? 'selected' : ''}>Estoque: todos</option><option value="zero" ${stockFilter === 'zero' ? 'selected' : ''}>Estoque igual a zero</option><option value="positive" ${stockFilter === 'positive' ? 'selected' : ''}>Estoque maior que zero</option></select><input class="input" id="production-alert-search" value="${esc(window.productionAlertQuery || '')}" placeholder="Pesquisar código, descrição ou mensagem" /><button class="secondary-btn" id="clear-production-alert-filters">Limpar filtros</button></div></div><div class="panel"><div class="table-wrap production-alert-table-wrap"><table class="data-table production-alert-table"><thead><tr><th>Estado</th><th>Alerta</th><th>Líder</th><th>Linha</th><th>Código / descrição</th><th>Estoque</th><th>Pedidos em aberto</th><th>Compra sugerida</th><th>Analista</th><th>Ações</th></tr></thead><tbody>${productionAlertRows(items) || '<tr><td colspan="10" class="empty">Nenhum alerta encontrado.</td></tr>'}</tbody></table></div><div class="table-footer">Mostrando ${items.length} de ${all.length} alerta(s).</div></div>`;
 }
 
 function openProductionAlertForm() {
@@ -2234,278 +2380,12 @@ function openProductionAlertDetail(id) {
   overlay.onclick = event => { if (event.target === overlay) close(); };
 }
 
-function pvNormalize(value) {
-  return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/[^A-Z0-9]+/g, ' ').trim();
-}
-
-function pvModelKey(value) {
-  const raw = pvNormalize(value).replace(/\s+/g, '');
-  const aliases = [['13 5 AT', '13AT'], ['13 5', '13AT'], ['13,5', '13AT'], ['13 AT', '13AT'], ['10 L', '10L'], ['10 S', '10S'], ['15 LDDI', '15LDDI'], ['18 LDDI', '18LDDI'], ['13 LDDI', '13LDDI'], ['13 LDI', '13LDI']];
-  const match = aliases.find(([needle]) => raw.includes(needle.replace(/[^A-Z0-9]/g, '')));
-  if (match) return match[1];
-  return (PINS.models || Object.keys(DATA?.models || {})).find(model => raw.includes(pvNormalize(model).replace(/\s+/g, '')) || pvNormalize(model).replace(/\s+/g, '').includes(raw)) || '';
-}
-
-function pvProductModel(productText) {
-  const text = pvNormalize(productText);
-  const patterns = [
-    [/SKY ?CITY.*18 ?LDDI|18 ?LDDI/, '18LDDI'],
-    [/SKY ?CITY.*15 ?LDDI|15 ?LDDI/, '15LDDI'],
-    [/SKY ?CITY.*13 ?LDDI|13 ?LDDI/, '13LDDI'],
-    [/SKY ?CITY.*13 ?LDI|13 ?LDI/, '13LDI'],
-    [/SKY ?CITY.*13(?:[., ]5)? ?AT|13(?:[., ]5)? ?AT/, '13AT'],
-    [/SKY ?CITY.*10 ?HDOC|10 ?HDOC/, '10HDOC'],
-    [/SKY ?CITY.*10 ?S|10 ?S/, '10S'],
-    [/SKY ?CITY.*10 ?L|10 ?L/, '10L']
-  ];
-  return patterns.find(([pattern]) => pattern.test(text))?.[1] || pvModelKey(text);
-}
-
-function pvTokens(value) {
-  return new Set(pvNormalize(value).split(/\s+/).filter(token => token.length > 2));
-}
-
-function pvStructureMatch(text, model) {
-  const structure = DATA?.models?.[model] || [];
-  const target = pvTokens(text);
-  if (!target.size) return null;
-  let best = null;
-  structure.forEach(component => {
-    const candidate = pvTokens(`${component.code} ${component.description}`);
-    const overlap = [...target].filter(token => candidate.has(token)).length;
-    const score = overlap / Math.max(target.size, 1);
-    if (!best || score > best.score) best = { code: component.code, description: component.description, score };
-  });
-  return best && best.score >= 0.45 ? best : null;
-}
-
-function pvGroupTextItems(items) {
-  const groups = [];
-  items.filter(item => String(item.str || '').trim()).sort((a, b) => (b.transform?.[5] || 0) - (a.transform?.[5] || 0)).forEach(item => {
-    const y = Number(item.transform?.[5] || 0);
-    let group = groups.find(row => Math.abs(row.y - y) < 3);
-    if (!group) { group = { y, items: [] }; groups.push(group); }
-    group.items.push(item);
-  });
-  return groups.sort((a, b) => b.y - a.y).map(group => ({ text: group.items.sort((a, b) => (a.transform?.[4] || 0) - (b.transform?.[4] || 0)).map(item => item.str).join(' ').replace(/\s+/g, ' ').trim(), items: group.items }));
-}
-
-function pvRegionIsRed(canvas, item, viewport) {
-  if (!canvas || !item?.transform || !viewport) return false;
-  const point = viewport.convertToViewportPoint(Number(item.transform[4] || 0), Number(item.transform[5] || 0));
-  const scale = viewport.scale || 1;
-  const width = Math.max(12, Math.abs(Number(item.width || 20)) * scale);
-  const height = Math.max(8, Math.abs(Number(item.transform[3] || 10)) * scale * 1.4);
-  const x0 = Math.max(0, Math.floor(point[0]));
-  const y0 = Math.max(0, Math.floor(point[1] - height));
-  const x1 = Math.min(canvas.width, Math.ceil(point[0] + width));
-  const y1 = Math.min(canvas.height, Math.ceil(point[1] + 2));
-  if (x1 <= x0 || y1 <= y0) return false;
-  const pixels = canvas.getContext('2d').getImageData(x0, y0, x1 - x0, y1 - y0).data;
-  let colored = 0;
-  for (let index = 0; index < pixels.length; index += 16) {
-    const red = pixels[index]; const green = pixels[index + 1]; const blue = pixels[index + 2];
-    if (red > 145 && red > green * 1.35 && red > blue * 1.35 && green < 150) colored += 1;
-  }
-  return colored >= 2;
-}
-
-async function pvLoadPdfJs() {
-  if (!pdfJsPromise) pdfJsPromise = import('./pdf.min.mjs').then(pdfjs => {
-    pdfjs.GlobalWorkerOptions.workerSrc = './pdf.worker.min.mjs';
-    return pdfjs;
-  });
-  return pdfJsPromise;
-}
-
-async function analyzePVFile(file) {
-  const pdfjs = await pvLoadPdfJs();
-  const buffer = await file.arrayBuffer();
-  const pdf = await pdfjs.getDocument({ data: buffer }).promise;
-  const pages = []; const allLines = []; let textItemCount = 0; let redLineCount = 0; let previewDataUrl = '';
-  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
-    const page = await pdf.getPage(pageNumber);
-    const content = await page.getTextContent();
-    textItemCount += content.items.length;
-    const viewport = page.getViewport({ scale: 1.5 });
-    const canvas = document.createElement('canvas'); canvas.width = viewport.width; canvas.height = viewport.height;
-    await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
-    if (pageNumber === 1) {
-      const previewCanvas = document.createElement('canvas');
-      // Mantém uma cópia suficientemente nítida para leitura quando o usuário ampliar.
-      const previewWidth = 1400;
-      previewCanvas.width = previewWidth;
-      previewCanvas.height = Math.max(1, Math.round(previewWidth * viewport.height / viewport.width));
-      previewCanvas.getContext('2d').drawImage(canvas, 0, 0, previewCanvas.width, previewCanvas.height);
-      previewDataUrl = previewCanvas.toDataURL('image/jpeg', 0.82);
-    }
-    const lines = pvGroupTextItems(content.items).map(line => {
-      const red = line.items.some(item => pvRegionIsRed(canvas, item, viewport));
-      if (red) redLineCount += 1;
-      return { text: line.text, red, page: pageNumber };
-    });
-    pages.push({ number: pageNumber, lines }); allLines.push(...lines);
-  }
-  const text = allLines.map(line => line.text).join('\n');
-  const productLine = allLines.find(line => /SKY ?CITY|CESTO A[EÉ]REO|PRODUTO/i.test(line.text))?.text || '';
-  const chassisLine = allLines.find(line => /MARCA\s*\/?\s*MODELO|MARCA.*MODELO/i.test(line.text))?.text.replace(/.*MODELO\s*:?/i, '').trim() || '';
-  const enNumbers = [...new Set((text.match(/EN\s*\d{5,}/gi) || []).map(value => value.replace(/\s+/g, '').toUpperCase()))];
-  const pvNumber = (text.match(/\bPV\s*[-:]?\s*\d{4,}\b/i)?.[0] || '').replace(/\s+/g, '').toUpperCase();
-  const model = pvProductModel(productLine || text);
-  const productStart = allLines.findIndex(line => /PRODUTO/i.test(line.text));
-  const productEnd = allLines.findIndex((line, index) => index > productStart && /INFORMA[CÇ][OÕ]ES ADICIONAIS|INFORMACOES ADICIONAIS/i.test(line.text));
-  const criticalLines = allLines.filter((line, index) => line.red && index >= Math.max(0, productStart) && (productEnd < 0 || index < productEnd) && !/PRODUTO|PEDIDO|REVISAO|REVIS[AÃ]O|INFORMA/i.test(line.text) && line.text.length > 5);
-  const criticalItems = criticalLines.map(line => ({ text: line.text, page: line.page, match: pvStructureMatch(line.text, model) })).filter(item => item.text);
-  return { fileName: file.name, pageCount: pdf.numPages, text, productLine, chassisLine, ens: enNumbers, pv: pvNumber, model, criticalItems, previewDataUrl, analysisMode: textItemCount ? 'automatic' : 'manual', status: textItemCount && redLineCount ? 'analyzed' : 'manual', redLineCount, analyzedAt: new Date().toISOString() };
-}
-
-function enPVSourceRows() {
-  const annual = DATA?.planAnnual?.rows || [];
-  const releases = DATA?.planMonth?.liberacoes || [];
-  const byEN = new Map(releases.map(row => [String(row.en || '').toUpperCase(), row]));
-  return annual.map(row => {
-    const en = String(row.pedido || '').trim().toUpperCase();
-    const release = byEN.get(en) || {};
-    return { en, cliente: row.cliente || release.cliente || '', produto: row.produto || '', modelo: row.modelo || pvProductModel(release.modelo), mes: row.mes || '', data: release.data || '', ...EN_PV_REVIEWS[en] };
-  }).filter(row => row.en);
-}
-function enPVSavedNumber(row) {
-  const review = EN_PV_REVIEWS[row.en] || {};
-  const number = String(review.pv || review.analysis?.pv || row.pv || '').trim();
-  if (number) return number;
-  // Mesmo quando o PDF não contém um número legível, a EN foi vinculada
-  // automaticamente ao documento importado e precisa deixar de aparecer como pendente.
-  return review.linkedFromPV && review.analysis?.fileName ? 'PV vinculado' : '';
-}
-function enPVStatus(row) {
-  const review = EN_PV_REVIEWS[row.en] || row;
-  if (enPVSavedNumber(row)) return ['PV gerado', 'green'];
-  if (!review.analysis) return ['Não iniciada', 'amber'];
-  if (review.analysis.ens?.length && !review.analysis.ens.includes(row.en)) return ['EN ausente no PDF', 'red'];
-  if (!review.analysis.model) return ['Modelo do produto não identificado', 'red'];
-  if (review.analysis.model && row.modelo && pvModelKey(review.analysis.model) !== pvModelKey(row.modelo)) return ['Divergência de modelo', 'red'];
-  if ((review.analysis.criticalItems || []).some(item => !item.match)) return ['Crítica', 'red'];
-  const checklist = review.checklist || {};
-  if (review.analysis.status === 'manual') return ['Confirmação necessária', 'amber'];
-  if (['enVinculada', 'vermelhosRevisados', 'estruturaConferida', 'scResolvida', 'liberada'].every(key => checklist[key])) return ['Concluída', 'green'];
-  return ['Em análise', 'amber'];
-}
-
-function enPVUpdate(en, patch) {
-  const safePatch = { ...patch };
-  if (safePatch.analysis) safePatch.analysis = compactPVAnalysis(safePatch.analysis);
-  EN_PV_REVIEWS[en] = { ...(EN_PV_REVIEWS[en] || {}), ...safePatch, updatedAt: new Date().toISOString(), updatedBy: currentUser?.name || 'Usuário' };
-  saveENPVReviews();
-}
-
-function enPVChecklist(en, key, value) {
-  const current = EN_PV_REVIEWS[en] || {};
-  enPVUpdate(en, { checklist: { ...(current.checklist || {}), [key]: value } });
-}
-
-function criticalItemsForEN(en, vehicleCount = 1) {
-  const row = enPVSourceRows().find(item => item.en === en) || {};
-  const model = pvModelKey(row.modelo) || row.modelo || '';
-  const structure = DATA?.models?.[model] || [];
-  return structure.map(component => {
-    const item = itemByCode(component.code) || {};
-    const required = n(component.quantity) * Math.max(1, n(vehicleCount));
-    const stock = n(item.stock);
-    const orders = Object.entries(item.orders || {}).filter(([, quantity]) => n(quantity) > 0).map(([month, quantity]) => `${month.replace('PED ', '')}: ${fmt(quantity)}`).join(' | ');
-    const hasOrder = Object.values(item.orders || {}).some(quantity => n(quantity) > 0);
-    const status = availabilityStatus(stock, required, hasOrder);
-    return { code: component.code, description: component.description || item.description || '', required, stock, balance: stock - required, orders, model, en, status: status[0], critical: status[0] === 'Crítico' };
-  }).filter(item => item.critical);
-}
-
-function exportCriticalENItems(en, rows) {
-  const headers = ['EN', 'Modelo', 'Código', 'Descrição', 'Pedido (mês: quantidade)', 'Estoque', 'Necessidade', 'Saldo'];
-  const escapeCell = value => `"${String(value ?? '').replace(/"/g, '""')}"`;
-  const csv = [headers, ...rows.map(row => [row.en, row.model, row.code, row.description, row.orders || 'Sem pedido', row.stock, row.required, row.balance])].map(line => line.map(escapeCell).join(';')).join('\r\n');
-  const blob = new Blob([`\ufeff${csv}`], { type: 'text/csv;charset=utf-8' });
-  const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = `itens-criticos-${en}.xls`; link.click();
-  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
-}
-
-function openENCriticalDetail(en) {
-  const row = enPVSourceRows().find(item => item.en === en) || {};
-  const critical = criticalItemsForEN(en, 1);
-  const overlay = document.createElement('div'); overlay.className = 'detail-overlay';
-  overlay.innerHTML = `<section class="material-detail en-critical-modal" role="dialog" aria-modal="true"><div class="material-detail-header"><div><span class="eyebrow">Itens críticos da estrutura</span><h2>${esc(en)}</h2><p>Modelo ${esc(critical[0]?.model || row.modelo || 'não identificado')} · ${fmt(critical.length)} item(ns) crítico(s)</p></div><button class="icon-btn" id="close-en-critical">×</button></div><div class="panel-body"><div class="summary-strip"><div class="summary-box"><b class="danger">${fmt(critical.length)}</b><span>Itens abaixo do estoque necessário</span></div><div class="summary-box"><b>${fmt(critical.reduce((sum, item) => sum + item.required, 0))}</b><span>Necessidade estrutural</span></div><div class="summary-box"><b>${fmt(critical.reduce((sum, item) => sum + item.stock, 0))}</b><span>Estoque atual</span></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Código</th><th>Descrição</th><th>Pedido</th><th>Estoque</th><th>Necessidade</th><th>Saldo</th></tr></thead><tbody>${critical.map(item => `<tr><td>${esc(item.code)}</td><td>${esc(item.description)}</td><td>${esc(item.orders || 'Sem pedido')}</td><td>${fmt(item.stock)}</td><td>${fmt(item.required)}</td><td class="danger-text">${fmt(item.balance)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Nenhum item crítico encontrado para a estrutura deste modelo.</td></tr>'}</tbody></table></div><div class="detail-footer"><button class="secondary-btn" id="export-en-critical">Baixar itens críticos para Excel</button><button class="secondary-btn" id="close-en-critical-bottom">Fechar</button></div></div></section>`;
-  document.body.appendChild(overlay);
-  const close = () => overlay.remove(); $('#close-en-critical').onclick = close; $('#close-en-critical-bottom').onclick = close; $('#export-en-critical').onclick = () => exportCriticalENItems(en, critical); overlay.onclick = event => { if (event.target === overlay) close(); };
-}
-
-function openPVPreview(src) {
-  if (!src) return;
-  const overlay = document.createElement('div');
-  overlay.className = 'pv-preview-overlay';
-  overlay.innerHTML = `<section class="pv-preview-dialog" role="dialog" aria-modal="true" aria-label="Prévia ampliada do PV"><div class="pv-preview-toolbar"><strong>Prévia ampliada do PV</strong><button class="icon-btn" id="close-pv-preview" aria-label="Fechar">×</button></div><div class="pv-preview-canvas"><img src="${esc(src)}" alt="PV ampliado para leitura" /></div></section>`;
-  document.body.appendChild(overlay);
-  const close = () => { document.removeEventListener('keydown', onKeyDown); overlay.remove(); };
-  const onKeyDown = event => { if (event.key === 'Escape') close(); };
-  $('#close-pv-preview').onclick = close;
-  overlay.onclick = event => { if (event.target === overlay) close(); };
-  document.addEventListener('keydown', onKeyDown);
-}
-
-function enPVView() {
-  const source = enPVSourceRows();
-  const query = enPvQuery.trim().toLowerCase();
-  const rows = source.filter(row => (!enPvFocusENs.size || enPvFocusENs.has(row.en)) && (!query || `${row.en} ${row.cliente} ${row.produto} ${row.pv || ''}`.toLowerCase().includes(query)));
-  const counts = { total: source.length, done: 0, pending: 0, critical: 0 };
-  source.forEach(row => { const status = enPVStatus(row)[0]; if (status === 'Concluída') counts.done += 1; else if (status === 'Crítica' || status === 'Divergência de modelo' || status === 'EN ausente no PDF') counts.critical += 1; else counts.pending += 1; });
-  const active = rows.find(row => row.en === selectedEN) || rows[0] || source[0];
-  if (active) selectedEN = active.en;
-  const review = active ? (EN_PV_REVIEWS[active.en] || {}) : {};
-  const status = active ? enPVStatus(active) : ['—', 'amber'];
-  const table = rows.slice(0, 250).map(row => { const state = enPVStatus(row); const savedPV = enPVSavedNumber(row); const pvLabel = savedPV ? esc(savedPV) : '<span class="pv-not-generated">PV ainda não gerado</span>'; return `<tr class="en-pv-row" data-en-row-text="${esc(`${row.en} ${row.cliente} ${row.produto} ${savedPV}`.toLowerCase())}"><td><button class="material-code en-select-btn" data-en-select="${esc(row.en)}">${esc(row.en)}</button></td><td>${esc(row.produto || row.modelo || '—')}</td><td>${esc(row.mes || '—')}</td><td>${pvLabel}</td><td>${fmt(row.analysis?.criticalItems?.length || 0)}</td><td>${esc(row.sc || '—')}</td><td>${esc(row.responsavel || '—')}</td><td><span class="status ${state[1]}">${esc(state[0])}</span></td></tr>`; }).join('');
-  const analysis = review.analysis || {};
-  const checklist = review.checklist || {};
-  const criticalRows = (analysis.criticalItems || []).map(item => `<div class="en-pv-critical-row"><span>${esc(item.text)}</span><span class="status ${item.match ? 'amber' : 'red'}">${item.match ? `Encontrado · ${esc(item.match.code)}` : 'Não encontrado na estrutura'}</span></div>`).join('') || '<div class="empty compact-empty">Nenhum item vermelho confirmado ou detectado.</div>';
-  const productModel = analysis.model || active?.modelo || '—';
-  const importBanner = EN_PV_IMPORT_RESULT ? `<div class="en-pv-import ${EN_PV_IMPORT_RESULT.status === 'linked' ? 'green' : 'red'}"><b>${EN_PV_IMPORT_RESULT.status === 'linked' ? `PV ${esc(EN_PV_IMPORT_RESULT.pv || EN_PV_IMPORT_RESULT.fileName)} vinculado automaticamente` : 'Nenhuma EN encontrada no plano anual'}</b><span>ENs no PV: ${fmt(EN_PV_IMPORT_RESULT.foundENs.length)} · vinculadas: ${fmt(EN_PV_IMPORT_RESULT.matchedENs.length)}${EN_PV_IMPORT_RESULT.notInPlan.length ? ` · fora do plano: ${esc(EN_PV_IMPORT_RESULT.notInPlan.join(', '))}` : ''}</span></div>` : '';
-  const preview = analysis.previewDataUrl || (analysis.previewKey ? EN_PV_PREVIEWS[analysis.previewKey] : '');
-  return `<div class="view-title"><div><h2>Controle de ENs / PVs</h2><p>Rastreabilidade da análise por projeto: PDF, modelo estrutural, itens críticos e SC.</p></div><div class="date-pill">Plano anual · ${fmt(counts.total)} ENs</div></div>${importBanner}<div class="en-pv-metrics"><div class="metric"><span class="metric-label">ENs no plano</span><b class="metric-value">${fmt(counts.total)}</b></div><div class="metric en-pv-metric-green"><span class="metric-label">Concluídas</span><b class="metric-value">${fmt(counts.done)}</b></div><div class="metric en-pv-metric-amber"><span class="metric-label">Pendentes</span><b class="metric-value">${fmt(counts.pending)}</b></div><div class="metric en-pv-metric-red"><span class="metric-label">Críticas</span><b class="metric-value">${fmt(counts.critical)}</b></div></div><div class="en-pv-layout"><section class="panel"><div class="panel-header"><div><h3>ENs do plano anual</h3><span>Cada EN permanece rastreável pelo PV e pelo modelo do produto.</span></div><input id="en-pv-search" class="input" placeholder="Pesquisar EN, PV ou cliente" value="${esc(enPvQuery)}" /></div><div class="table-wrap"><table class="data-table en-pv-table"><thead><tr><th>EN</th><th>Produto / modelo</th><th>Mês</th><th>PV</th><th>Itens críticos</th><th>SC</th><th>Responsável</th><th>Status</th></tr></thead><tbody>${table || '<tr><td colspan="8" class="empty">Nenhuma EN encontrada.</td></tr>'}</tbody></table></div></section><section class="panel en-pv-detail"><div class="panel-header"><div><h3>${active ? `${esc(active.en)} · Detalhes da análise` : 'Selecione uma EN'}</h3><span>${active ? esc(status[0]) : '—'}</span></div></div>${active ? `<div class="en-pv-meta"><div><span>Cliente</span><b>${esc(active.cliente || '—')}</b></div><div><span>Veículo/chassi</span><b>${esc(analysis.chassisLine || 'Não informado no PDF')}</b></div><div><span>Produto no PV</span><b>${esc(analysis.productLine || active.produto || 'Aguardando PDF')}</b></div><div><span>Modelo estrutural</span><b class="model-highlight">${esc(productModel)}</b></div><div><span>Entrega</span><b>${esc(active.mes || active.data || '—')}</b></div><div><span>Arquivo PV</span><b>${esc(analysis.fileName || 'Nenhum PDF analisado')}</b></div>${preview ? `<div class="en-pv-preview"><span>Prévia do PV</span><img src="${preview}" alt="Prévia da primeira página do PV" /></div>` : ''}</div><div class="en-pv-upload"><label class="primary-btn" for="en-pv-file">Ler PDF do PV</label><input id="en-pv-file" type="file" accept="application/pdf" hidden /><small>O sistema lê todas as ENs do PV, vincula-as ao plano anual e compara itens críticos com o modelo.</small></div><div class="en-pv-fields"><label>PV<input id="en-pv-number" class="input" value="${esc(review.pv || '')}" placeholder="PV-12345" /></label><label>SC principal<input id="en-pv-sc" class="input" value="${esc(review.sc || '')}" placeholder="SC-000123" /></label><label>Responsável<input id="en-pv-owner" class="input" value="${esc(review.responsavel || currentUser?.name || '')}" /></label><button id="en-pv-save" class="primary-btn">Salvar análise</button></div><h4>Itens críticos identificados no PV</h4><div class="en-pv-critical-list">${criticalRows}</div>${analysis.status === 'manual' ? '<div class="en-pv-warning">O PDF não entregou texto/cor suficiente para uma conclusão automática. Confirme os itens vermelhos antes de liberar a EN.</div>' : ''}<h4>Checklist de liberação</h4><div class="en-pv-checklist">${[['enVinculada','EN vinculada ao PV'],['vermelhosRevisados','Itens vermelhos do PV revisados'],['estruturaConferida',`Estrutura ${esc(productModel)} conferida`],['scResolvida','SC aberta para todos os itens faltantes'],['liberada','EN liberada']].map(([key,label]) => `<label><input type="checkbox" data-en-check="${key}" ${checklist[key] ? 'checked' : ''} />${label}</label>`).join('')}</div><div class="en-pv-alert ${status[1]}">${status[0] === 'Concluída' ? 'EN liberada: checklist completo e modelo estrutural conferido.' : `Atenção: ${esc(status[0])}. A EN não deve ser liberada enquanto houver pendência.`}</div>` : '<div class="empty">Selecione uma EN para iniciar.</div>'}</section></div></div>`;
-}
-
-async function handleENPVUpload(file) {
-  if (!file) return;
-  const button = $('#en-pv-file');
-  try {
-    const analysis = await analyzePVFile(file);
-    const source = enPVSourceRows();
-    const sourceENs = new Set(source.map(row => row.en));
-    const foundENs = [...new Set(analysis.ens || [])];
-    const matchedENs = foundENs.filter(en => sourceENs.has(en));
-    const notInPlan = foundENs.filter(en => !sourceENs.has(en));
-    const previewKey = analysis.pv || analysis.fileName;
-    if (analysis.previewDataUrl) EN_PV_PREVIEWS[previewKey] = analysis.previewDataUrl;
-    saveENPVPreviews();
-    const linkedAnalysis = { ...analysis, previewKey };
-    delete linkedAnalysis.previewDataUrl;
-    matchedENs.forEach(en => enPVUpdate(en, { analysis: linkedAnalysis, pv: analysis.pv || EN_PV_REVIEWS[en]?.pv || '', linkedFromPV: true }));
-    EN_PV_IMPORT_RESULT = { fileName: file.name, pv: analysis.pv, foundENs, matchedENs, notInPlan, status: matchedENs.length ? 'linked' : 'not-found' };
-    enPvFocusENs = new Set(matchedENs);
-    enPvQuery = analysis.pv || '';
-    if (matchedENs.length) selectedEN = matchedENs[0];
-    else if (selectedEN) enPVUpdate(selectedEN, { analysis: linkedAnalysis, pv: analysis.pv || EN_PV_REVIEWS[selectedEN]?.pv || '' });
-    render();
-  } catch (error) {
-    enPVUpdate(selectedEN, { analysis: { fileName: file.name, status: 'manual', error: error.message, analyzedAt: new Date().toISOString() } });
-    render();
-    console.error('Falha ao ler PDF do PV.', error);
-  } finally {
-    if (button) button.value = '';
-  }
-}
-
 // Reconstrói o conteúdo da tela sempre que uma área ou filtro muda.
 function render() {
   if (!DATA) return;
-  const titles = { productionMap: 'Mapa produtivo', overview: 'Visão geral', stock: 'Estoque', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', enPV: 'Controle de ENs / PVs', productionAlerts: 'Aviso da produção' };
+  const titles = { productionMap: 'Mapa produtivo', overview: 'Visão geral', stock: 'Estoque', simulation: 'Simulação', history: 'Evolução do estoque', consumables: 'Consumíveis', pins: 'Pinos por modelo', modelNiguri: 'NIGURI dos modelos', cylinders: 'Cilindros por modelo', cabins: 'Cabines por modelo', sheetMetal: 'Chaparias', calfer: 'Estoque Calfer', purchaseProcess: 'Processo de compra', excess: 'Pedidos em excesso', followup: 'Acompanhamento', productionAlerts: 'Aviso da produção' };
   $('#page-title').textContent = titles[view];
-  const pages = { productionMap: productionMapView, overview, stock: stockView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, enPV: enPVView, productionAlerts: productionAlertsView };
+  const pages = { productionMap: productionMapView, overview, stock: stockView, simulation, followup: followUpView, history: stockHistoryView, consumables: consumablesView, pins: pinsView, modelNiguri: modelNiguriView, cylinders: cylindersView, cabins: cabinsView, sheetMetal: sheetMetalView, calfer: calferView, purchaseProcess: renderPurchaseProcessPage, excess: excessView, productionAlerts: productionAlertsView };
   const renderPage = pages[view];
   if (typeof renderPage !== 'function') {
     $('#app').innerHTML = '<div class="panel empty">A vista selecionada não foi encontrada. Volte à Visão geral e tente novamente.</div>';
@@ -2561,13 +2441,15 @@ function bindView() {
   bindMaterialButtons();
   bindPurchaseButtons();
   bindProgressiveTables();
+  bindStockMinimumInputs();
   if (view === 'modelNiguri') {
     const model = $('#model-niguri-model'); const week = $('#model-niguri-start-week'); const analystSelect = $('#model-niguri-analyst'); const search = $('#model-niguri-search'); const status = $('#model-niguri-status');
-    if (model) model.onchange = () => { modelNiguriModel = model.value; modelNiguriStartWeek = ''; render(); };
-    if (week) week.onchange = () => { modelNiguriStartWeek = week.value; render(); };
-    if (analystSelect) analystSelect.onchange = () => { modelNiguriAnalyst = analystSelect.value; render(); };
-    if (search) search.oninput = () => { const current = modelNiguriView(); const temp = document.createElement('div'); temp.innerHTML = current; const oldBody = document.querySelector('.pins-niguri-table tbody'); const newBody = temp.querySelector('.pins-niguri-table tbody'); if (oldBody && newBody) oldBody.innerHTML = newBody.innerHTML; bindMaterialButtons(); };
-    if (status) status.onchange = () => { const current = modelNiguriView(); const temp = document.createElement('div'); temp.innerHTML = current; const oldBody = document.querySelector('.pins-niguri-table tbody'); const newBody = temp.querySelector('.pins-niguri-table tbody'); if (oldBody && newBody) oldBody.innerHTML = newBody.innerHTML; bindMaterialButtons(); };
+    if (model) model.onchange = () => { modelNiguriModel = model.value; modelNiguriStartWeek = ''; modelNiguriVisibleLimit = MODEL_NIGURI_PAGE_SIZE; render(); };
+    if (week) week.onchange = () => { modelNiguriStartWeek = week.value; modelNiguriVisibleLimit = MODEL_NIGURI_PAGE_SIZE; render(); };
+    if (analystSelect) analystSelect.onchange = () => { modelNiguriAnalyst = analystSelect.value; modelNiguriVisibleLimit = MODEL_NIGURI_PAGE_SIZE; render(); };
+    if (search) search.oninput = () => { modelNiguriVisibleLimit = MODEL_NIGURI_PAGE_SIZE; refreshModelNiguriTable(); };
+    if (status) status.onchange = () => { modelNiguriVisibleLimit = MODEL_NIGURI_PAGE_SIZE; refreshModelNiguriTable(); };
+    bindModelNiguriLoadMore();
   }
   document.querySelectorAll('[data-go-view]').forEach(button => button.onclick = () => {
     view = button.dataset.goView;
@@ -2743,7 +2625,7 @@ function bindView() {
         const followOk = followupFilter === 'all' || (followupFilter === 'order' && hasOrder) || (followupFilter === 'overdue' && overdue) || (followupFilter === 'none' && !hasOrder);
         return text.includes(query) && stockValueOk && stockStatusOk && maxOk && followOk;
       });
-      $('#consumables-table-body').innerHTML = consumableRows(items) || '<tr><td colspan="12" class="empty">Nenhum consumível encontrado.</td></tr>';
+      $('#consumables-table-body').innerHTML = consumableRows(items) || '<tr><td colspan="11" class="empty">Nenhum consumível encontrado.</td></tr>';
       document.querySelectorAll('.consumable-code').forEach(button => button.onclick = () => openConsumableDetail(button.dataset.code));
       bindPurchaseButtons();
     };
@@ -2760,11 +2642,12 @@ function bindView() {
       const selectedRisk = $('#stock-risk').value;
       const period = monthSelect?.value || stockPlanMonth || currentPlanMonthPeriod();
       stockPlanMonth = period;
-      const items = scopedItems().filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, n(item.demands?.[`DEM ${period}`]))[0] === selectedRisk));
+      const items = scopedItems().filter(item => (!query || `${item.code} ${item.description}`.toLowerCase().includes(query)) && (selectedRisk === 'all' || risk(item, totalDemand(item))[0] === selectedRisk));
       $('#stock-table').innerHTML = table(items, 250, false, '', true, period);
       bindMaterialButtons();
       bindPurchaseButtons();
       bindProgressiveTables();
+      bindStockMinimumInputs();
     };
     $('#stock-search').oninput = filter;
     $('#stock-risk').onchange = filter;
@@ -2810,37 +2693,6 @@ function bindView() {
   if (view === 'simulation') {
     $('#run-simulation').onclick = runWeeklySimulation;
   }
-  if (view === 'enPV') {
-    const search = $('#en-pv-search');
-    if (search) search.oninput = () => {
-      enPvQuery = search.value || '';
-      const query = enPvQuery.trim().toLowerCase();
-      document.querySelectorAll('.en-pv-row').forEach(row => { row.hidden = !!query && !String(row.dataset.enRowText || '').includes(query); });
-    };
-    document.querySelectorAll('.en-pv-preview img').forEach(image => {
-      image.title = 'Clique para ampliar e ler o PV';
-      image.onclick = () => openPVPreview(image.currentSrc || image.src);
-    });
-    document.querySelectorAll('[data-en-select]').forEach(button => button.onclick = () => { selectedEN = button.dataset.enSelect || ''; render(); openENCriticalDetail(selectedEN); });
-    const fileInput = $('#en-pv-file');
-    if (fileInput) fileInput.onchange = () => handleENPVUpload(fileInput.files?.[0]);
-    const save = $('#en-pv-save');
-    if (save) save.onclick = () => {
-      if (!selectedEN) return;
-      const pv = $('#en-pv-number')?.value.trim() || '';
-      const sc = $('#en-pv-sc')?.value.trim() || '';
-      const responsavel = $('#en-pv-owner')?.value.trim() || '';
-      const linkedENs = EN_PV_IMPORT_RESULT?.matchedENs?.length ? EN_PV_IMPORT_RESULT.matchedENs : [selectedEN];
-      linkedENs.forEach(en => {
-        const current = EN_PV_REVIEWS[en] || {};
-        const analysis = current.analysis ? { ...current.analysis, pv: pv || current.analysis.pv || current.pv || '' } : { pv, status: 'manual', ens: linkedENs };
-        enPVUpdate(en, { pv, sc, responsavel, analysis, linkedFromPV: true });
-      });
-      if (EN_PV_IMPORT_RESULT) EN_PV_IMPORT_RESULT.pv = pv || EN_PV_IMPORT_RESULT.pv;
-      render();
-    };
-    document.querySelectorAll('[data-en-check]').forEach(input => input.onchange = () => enPVChecklist(selectedEN, input.dataset.enCheck, input.checked));
-  }
 }
 
 // Guarda a sessão e identifica o usuário autenticado sem decidir qual tela ficará visível.
@@ -2867,11 +2719,11 @@ function showSplashScreen() {
   $('#dashboard-shell').hidden = true;
 }
 
-// Deixa a animação visível por pelo menos dez segundos e carrega os dados em paralelo.
+// Mantém a animação visível apenas o suficiente para não piscar e carrega os dados uma vez.
 async function showSplashThenDashboard(user) {
   setAuthenticatedSession(user);
   showSplashScreen();
-  const minimumSplashTime = new Promise(resolve => setTimeout(resolve, 10000));
+  const minimumSplashTime = new Promise(resolve => setTimeout(resolve, 450));
   await Promise.all([minimumSplashTime, load()]);
   $('#splash-screen').hidden = true;
   $('#dashboard-shell').hidden = false;
@@ -2927,8 +2779,6 @@ Nossa equipe de analistas está realizando um duplo check das informações, bus
 Caso identifique alguma informação incorreta, agradecemos pela compreensão e colaboração. Estamos trabalhando continuamente para aprimorar o sistema.
 
 Obrigado!.`);
-    setAuthenticatedView(user);
-    load();
     showSplashThenDashboard(user);
   };
 }
@@ -2963,12 +2813,11 @@ async function load() {
     DATA.programacaoModels = programacaoResponse.ok ? await programacaoResponse.json() : { models: [] };
     CALFER = calferResponse.ok ? await calferResponse.json() : { nextModels: [], calferModels: [], items: [], transactions: [] };
     loadCalferTransactions();
-    const itemByCodeMap = new Map((DATA.items || []).map(item => [String(item.code), item]));
-    CONSUMABLES.items = (CONSUMABLES.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
-    PINS.items = (PINS.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
-    CYLINDERS.items = (CYLINDERS.items || []).map(item => ({ ...item, lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
-    SHEET_METAL.items = (SHEET_METAL.items || []).map(item => ({ ...item, unit: item.unit || 'UN', lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
-    CABINS.items = (CABINS.items || []).map(item => ({ ...item, unit: item.unit || 'UN', lastMovement: item.lastMovement || itemByCodeMap.get(String(item.code))?.lastMovement || 'não tem' }));
+    CONSUMABLES.items = (CONSUMABLES.items || []).map(item => ({ ...item }));
+    PINS.items = (PINS.items || []).map(item => ({ ...item }));
+    CYLINDERS.items = (CYLINDERS.items || []).map(item => ({ ...item }));
+    SHEET_METAL.items = (SHEET_METAL.items || []).map(item => ({ ...item, unit: item.unit || 'UN' }));
+    CABINS.items = (CABINS.items || []).map(item => ({ ...item, unit: item.unit || 'UN' }));
     syncPlanMonthDemands();
     $('#source-file').textContent = DATA.sourceFile;
     $('#updated-at').textContent = `Base carregada · ${DATA.generatedAt}`;
@@ -2999,9 +2848,8 @@ loadThemePreference();
 loadChristmasThemePreference();
 PRODUCTION_DISMISSED_ITEMS = loadProductionDismissedItems();
 loadPurchaseProcess();
+STOCK_MINIMUMS = loadStockMinimums();
 loadCalferTransactions();
-loadENPVReviews();
-loadENPVPreviews();
 void loadProductionAlerts();
 if (alertsSyncTimer) clearInterval(alertsSyncTimer);
 alertsSyncTimer = setInterval(() => { if (document.visibilityState !== 'hidden') void syncProductionAlerts(); }, 20000);

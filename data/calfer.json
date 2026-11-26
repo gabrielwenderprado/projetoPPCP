@@ -1,6 +1,6 @@
 {
-  "sourceFile": "Cópia de EXPLOSAO-25.11.2026.xlsm",
-  "generatedAt": "2026-11-25",
+  "sourceFile": "Cópia de EXPLOSAO-26.11.2026.xlsm",
+  "generatedAt": "2026-11-26",
   "sourceSheets": {
     "calfer": "calfer"
   },
@@ -45,7 +45,7 @@
         {
           "code": "02.03.01.0000069405",
           "description": "PINO DE ARTICULAÇAO DO CILINDRO SKYRITZ 10L",
-          "nextStock": 53,
+          "nextStock": 65,
           "quantityPerMachine": 1,
           "calferStock": 2,
           "row": 8
@@ -83,7 +83,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "nextStock": 1180,
+          "nextStock": 1156,
           "quantityPerMachine": 16,
           "calferStock": 800,
           "row": 14
@@ -91,7 +91,7 @@
         {
           "code": "01.01.14.0000000046",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 20 X 23 X 21,5",
-          "nextStock": 101,
+          "nextStock": 73,
           "quantityPerMachine": 8,
           "calferStock": 437,
           "row": 15
@@ -99,7 +99,7 @@
         {
           "code": "02.03.01.0000069578",
           "description": "PINO OLHAL COM FURO DE 10 MM POR 65 MM",
-          "nextStock": 1099,
+          "nextStock": 899,
           "quantityPerMachine": 13,
           "calferStock": 20,
           "row": 16
@@ -155,7 +155,7 @@
         {
           "code": "02.03.01.0000084349",
           "description": "PINO BASTAO TENSOR SUPERIOR E ARTICULACAO",
-          "nextStock": 229,
+          "nextStock": 213,
           "quantityPerMachine": 2,
           "calferStock": 38,
           "row": 23
@@ -171,7 +171,7 @@
         {
           "code": "02.03.01.0000084355",
           "description": "PINO DA  ARTICULACAO DO CILINDRO DA TORRE",
-          "nextStock": 124,
+          "nextStock": 112,
           "quantityPerMachine": 2,
           "calferStock": 21,
           "row": 25
@@ -193,7 +193,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37 - QFM-3034-37",
-          "nextStock": 1180,
+          "nextStock": 1156,
           "quantityPerMachine": 10,
           "calferStock": 800,
           "row": 29
@@ -201,7 +201,7 @@
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE 40 X 44 X 30 MM",
-          "nextStock": 2628,
+          "nextStock": 2624,
           "quantityPerMachine": 6,
           "calferStock": 450,
           "row": 30
@@ -423,7 +423,7 @@
         {
           "code": "01.01.14.0000000036",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 30 X 34 X 37",
-          "nextStock": 1180,
+          "nextStock": 1156,
           "quantityPerMachine": 10,
           "calferStock": 800,
           "row": 59
@@ -431,7 +431,7 @@
         {
           "code": "01.01.14.0000000048",
           "description": "BUCHA AUTOLUBRIFICANTE COM FLANGE 40 X 44 X 30",
-          "nextStock": 2628,
+          "nextStock": 2624,
           "quantityPerMachine": 6,
           "calferStock": 450,
           "row": 60
@@ -503,7 +503,7 @@
         {
           "code": "01.01.10.0000000014",
           "description": "CILINDRO HIDRAULICO SUPERIOR 10HDOC",
-          "nextStock": 4,
+          "nextStock": 7,
           "quantityPerMachine": 1,
           "calferStock": 0,
           "row": 69
@@ -562,7 +562,7 @@
       "models": [
         "10L"
       ],
-      "nextStock": 53,
+      "nextStock": 65,
       "calferStock": 2
     },
     {
@@ -600,7 +600,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 1180,
+      "nextStock": 1156,
       "calferStock": 800
     },
     {
@@ -609,7 +609,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 101,
+      "nextStock": 73,
       "calferStock": 437
     },
     {
@@ -618,7 +618,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 1099,
+      "nextStock": 899,
       "calferStock": 20
     },
     {
@@ -684,7 +684,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 229,
+      "nextStock": 213,
       "calferStock": 38
     },
     {
@@ -702,7 +702,7 @@
       "models": [
         "10S"
       ],
-      "nextStock": 124,
+      "nextStock": 112,
       "calferStock": 21
     },
     {
@@ -721,7 +721,7 @@
         "13LDI",
         "10HDOC"
       ],
-      "nextStock": 2628,
+      "nextStock": 2624,
       "calferStock": 450
     },
     {
@@ -929,7 +929,7 @@
       "models": [
         "10HDOC"
       ],
-      "nextStock": 4,
+      "nextStock": 7,
       "calferStock": 0
     },
     {

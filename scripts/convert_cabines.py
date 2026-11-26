@@ -87,7 +87,6 @@ def extrair(origem: Path, destino: Path) -> None:
                 'unit': 'UN',
                 'stock': 0,
                 'modelNeeds': {model: 0 for model in model_order},
-                'lastMovement': 'não tem',
             })
             if not item['description'] and description:
                 item['description'] = description
