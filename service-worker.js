@@ -1,6 +1,6 @@
-const CACHE_NAME = 'dashboard-estoque-v22-performance';
+const CACHE_NAME = 'dashboard-estoque-v24-niguri-pin-consumption-fix';
 const APP_FILES = [
-  './', './index.html', './assets/app.js?v=20261126-performance-v24', './assets/styles.css',
+  './', './index.html', './assets/app.js?v=20261126-performance-v26', './assets/styles.css',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
   './data/explosao.json', './data/mapa-produtivo.json', './data/plano-mes.json', './data/programacao-modelos.json', './data/chaparias.json',
   './data/cabines.json', './data/pinos.json', './data/cilindros.json', './data/plano-anual.json',

@@ -10,9 +10,9 @@ explosion = json.loads((ROOT / 'data' / 'explosao.json').read_text(encoding='utf
 items_by_code = {str(item['code']): item for item in explosion['items']}
 
 assert pins['items'] and pins['models']
-assert set(plan['months']) >= {'10', '11', '12'}
+assert '03/2027' in plan['months']
 assert annual['sourceSheet'].lower() == 'planoanual'
-assert annual['columns'] == {'model': 'C', 'month': 'D'}
+assert annual['columns'] == {'model': 'C', 'date': 'D'}
 assert sum(annual['models'].get('10S', {}).values()) > 0
 
 def norm(value):
@@ -32,7 +32,7 @@ def plan_models(model):
 
 def slots(model):
     entries = plan_models(model)
-    selected = [m for m in plan['months'] if int(m) >= date.today().month]
+    selected = [m for m in plan['months'] if date(int(m.split('/')[1]), int(m.split('/')[0]), 1) >= date.today().replace(day=1)]
     return [(m, sum(float(e.get('quantidades', {}).get(m, 0) or 0) for e in entries)) for m in selected]
 
 def simulate(item, model):
@@ -48,7 +48,7 @@ def simulate(item, model):
     receipts = 0
     for month, machines in slots(model):
         consumption = unit * machines
-        receipt = float(source.get('orders', {}).get(f'PED {month}/{date.today().year}', 0) or 0)
+        receipt = float(source.get('orders', {}).get(f'PED {month}', 0) or 0)
         balance = balance - consumption + receipt
         total += consumption
         receipts += receipt

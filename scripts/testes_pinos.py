@@ -62,7 +62,7 @@ check(30, "simulação preserva a pesquisa e o filtro", "renderPinSimulation" in
 check(31, "tabela tem cabeçalho fixo", ".pins-table thead th" in css and "position: sticky" in css)
 check(32, "área possui cartões de modelos", ".pins-model-card" in css and "pins-model-strip" in js)
 check(33, "área possui regras responsivas", "@media (max-width: 760px)" in css and ".pins-toolbar" in css)
-check(34, "outras vistas principais continuam no mapa", all(name in js for name in ["overview", "stockView", "ordersView", "modelsView", "simulation", "consumablesView", "renderPurchaseProcessPage"]))
+check(34, "navegação actual mantém o mapa, sem vistas Pedidos/Modelos removidas", all(name in js for name in ["overview", "stockView", "simulation", "consumablesView", "renderPurchaseProcessPage"]) and 'data-view="orders"' not in html and 'data-view="models"' not in html)
 check(35, "dados principais continuam sendo carregados", "fetch('data/explosao.json')" in js)
 check(36, "conversor principal continua gerando o Plano Mês", "extrair_plano_mes(SOURCE, PLANO_OUTPUT)" in main_converter)
 check(37, "snapshot principal contém itens", len(explosion.get("items", [])) > 0)

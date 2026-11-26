@@ -15,6 +15,10 @@ function assert(condition, message) { total += 1; if (!condition) throw new Erro
 const baseTimeline = pinsNiguriTimeline('10L', '');
 assert(baseTimeline.allSlots.length >= 10, 'linha do tempo deve conter semanas de outubro a dezembro');
 assert(baseTimeline.slots[0].key === baseTimeline.currentKey, 'padrão inicia na semana atual');
+const currentMonth = baseTimeline.allSlots[0]?.month;
+const receiptMonthSlot = baseTimeline.allSlots.find(slot => slot.month !== currentMonth);
+if (!receiptMonthSlot) throw new Error('A linha do tempo deve incluir um mês futuro para testar recebimentos mensais');
+const receiptMonthKey = `PED ${receiptMonthSlot.month}/${receiptMonthSlot.year}`;
 const optionKeys = baseTimeline.allSlots.map(slot => slot.key);
 for (const key of optionKeys) {
   const timeline = pinsNiguriTimeline('10L', key);
@@ -27,19 +31,20 @@ for (let scenario = 0; scenario < 1800; scenario += 1) {
   const stock = scenario % 61;
   const receipt = scenario % 121;
   const code = `TEST-${scenario}`;
-  PINS.items = [{ code, description: 'PINO TESTE', unit: 'UN', stock, safety: 0, modelNeeds: { '10L': 1 }, orders: { 'PED 10/2026': receipt } }];
+  PINS.items = [{ code, description: 'PINO TESTE', unit: 'UN', stock, safety: 0, modelNeeds: { '10L': 1 }, orders: { [receiptMonthKey]: receipt } }];
   pinsNiguriStartWeek = baseTimeline.allSlots[0].key;
   const rowsResult = pinsNiguriRows('10L');
   assert(rowsResult.rows.length === 1, 'item sintético deve aparecer');
   const row = rowsResult.rows[0];
-  const monthlyConsumption = rowsResult.timeline.allSlots.filter(slot => slot.month === '10').reduce((sum, slot) => sum + slot.quantity, 0);
+  const projectedMonth = rowsResult.timeline.allSlots[0]?.month;
+  const monthlyConsumption = rowsResult.timeline.allSlots.filter(slot => slot.month === projectedMonth).reduce((sum, slot) => sum + slot.quantity, 0);
   const receiptTotal = row.balances.reduce((sum, cell) => sum + cell.receipts, 0);
   assert(receiptTotal === receipt, `recebimento deve entrar uma única vez: ${receiptTotal} != ${receipt}`);
-  assert(row.balances[0].balance === stock - row.balances[0].consumption + receipt, 'recebimento deve ser aplicado na primeira semana');
+  assert(row.balances[0].balance === stock - row.balances[0].consumption + row.balances[0].receipts, 'saldo da primeira semana deve incluir apenas o recebimento nela previsto');
   const expectedEnd = stock - row.totalNeed + receiptTotal;
   assert(row.balances[row.balances.length - 1].balance === expectedEnd, 'saldo final precisa obedecer estoque - consumo + recebimentos');
   assert(row.totalNeed === row.balances.reduce((sum, cell) => sum + cell.consumption, 0), 'necessidade total deve somar os consumos semanais');
-  assert(monthlyConsumption > 0, 'mês com demanda deve distribuir consumo');
+  assert(monthlyConsumption > 0, 'mês projectado com demanda deve distribuir consumo');
   const firstReceiptCell = row.balances.find(cell => cell.receipts > 0);
   assert(!receipt || firstReceiptCell, 'pedido positivo deve aparecer na linha do tempo');
   if (receipt) assert(firstReceiptCell.receipts === receipt, 'quantidade do recebimento deve ser preservada');

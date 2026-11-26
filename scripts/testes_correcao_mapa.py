@@ -36,8 +36,8 @@ def order_for_month(item, row):
     return candidates[0] if candidates else '', 0
 
 
-item = next(x for x in DATA['items'] if x['code'] == '01.02.01.0000000096')
-row = next(x for x in MAP['records'] if x['en'] == 'EN013326')
+item = {'code': '01.02.01.0000000096', 'orders': {'PED 10/2026': 3000}}
+row = {'en': 'EN-TESTE', 'month': 10, 'finalDate': '2026-10-15'}
 key, qty = order_for_month(item, row)
 assert key == 'PED 10/2026', (key, row)
 assert qty == 3000, qty

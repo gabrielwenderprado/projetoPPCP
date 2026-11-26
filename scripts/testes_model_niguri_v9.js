@@ -54,6 +54,14 @@ const week21Last = timeline21.allSlots.find(slot => slot.label === 'S49' && slot
 assert(week21First?.quantity === 1, 'a EN 21T de 12/11/2026 deve entrar na S46');
 assert(week21Last?.quantity === 8, 'as oito ENs 21T de 30/11/2026 devem entrar na S49');
 assert(timeline21.allSlots.reduce((sum, slot) => sum + slot.quantity, 0) === 9, 'as nove ENs do guindaste 21 devem ser contabilizadas exactamente uma vez');
+modelNiguriStartWeek = week21Last.key;
+const exactWeekTimeline21 = modelNiguriTimeline('21T');
+assert(exactWeekTimeline21.slots.length === 1 && exactWeekTimeline21.slots[0].key === week21Last.key, 'filtro exacto S49 deve mostrar somente essa semana');
+const exactWeekRows21 = modelNiguriRows('21T').rows;
+assert(exactWeekRows21.every(item => item.balances.length === 1 && item.totalNeed === item.balances[0].consumption), 'necessidade e saldo apresentados devem corresponder somente à semana seleccionada');
+assert(modelNiguriRows('21T').timeline.calculationSlots.at(-1)?.key === week21Last.key, 'saldo da semana exacta deve acumular até S49, sem projectar semanas posteriores');
+modelNiguriStartWeek = 'all';
+modelNiguriRows._cache = null;
 const expected21 = 9 * modelNiguriStructureRows('21T').reduce((sum, item) => sum + item.quantity, 0);
 const actual21 = modelNiguriRows('21T').rows.reduce((sum, item) => sum + item.totalNeed, 0);
 assert(actual21 === expected21, 'a necessidade de materiais do 21T deve ser a estrutura por nove ENs, sem rateio mensal');

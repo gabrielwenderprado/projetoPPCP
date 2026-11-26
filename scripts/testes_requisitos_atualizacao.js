@@ -52,10 +52,10 @@ assert.strictEqual(purchaseResult.noShortageWithOrder.label, 'Follow-up');
 assert(purchaseResult.action.includes('Comprar') && purchaseResult.action.includes('<button>'));
 
 // Testa a projeção real EN a EN: uma EN na semana 48 é atendida; das cinco na semana 50, faltam somente as duas últimas.
-const mapCode = section('function productionStatusExcluded', 'function openProductionMapDetail');
+const mapCode = section('function isPurchasedMaterial', 'function matchesGlobalFilters') + section('function productionStatusExcluded', 'function openProductionMapDetail');
 const materialCode = '12.34.56.1234567890';
 let mapContext;
-mapContext = { n: value => Number(value) || 0, DATA: { models: { '10S': [{ code: materialCode, description: 'Componente de teste', quantity: 1 }] }, items: [{ code: materialCode, description: 'Componente de teste', stock: 4, orders: {}, unit: 'UN' }], planAnnual: { rows: [] } }, PRODUCTION_MAP: { records: [] }, PRODUCTION_DISMISSED_ITEMS: {}, itemByCode: code => mapContext.DATA.items.find(item => item.code === code), isProductionItemDismissed: () => false };
+mapContext = { n: value => Number(value) || 0, DATA: { models: { '10S': [{ code: materialCode, description: 'Componente de teste', quantity: 1 }] }, items: [{ code: materialCode, description: 'Componente de teste', stock: 4, orders: {}, unit: 'UN', obtentionType: 'Comprado' }], planAnnual: { rows: [] } }, PRODUCTION_MAP: { records: [] }, PRODUCTION_DISMISSED_ITEMS: {}, itemByCode: code => mapContext.DATA.items.find(item => item.code === code), isProductionItemDismissed: () => false };
 vm.createContext(mapContext);
 const dates = ['2026-11-23', '2026-12-07', '2026-12-08', '2026-12-09', '2026-12-10', '2026-12-11'];
 const rows = dates.map((date, index) => ({ en: `EN-${index + 1}`, model: '10S', week: index === 0 ? '48' : '50', month: index === 0 ? 11 : 12, finalDate: '', productionStatus: 'EM PRODUÇÃO', productionStatusNormalized: 'EM PRODUCAO', stages: [] }));

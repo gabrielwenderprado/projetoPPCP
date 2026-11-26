@@ -15,6 +15,7 @@ const get = (start, end) => {
 const snippets = [
   get('function annualWeekInfo', 'function productionStatusExcluded'),
   get('function pinsNiguriNormalize', 'function planMonthModelQuantity'),
+  get('function isPurchasedMaterial', 'function matchesGlobalFilters'),
   get('function modelNiguriStructureRows', 'function modelNiguriPlanEntries'),
   get('function pinsNiguriMonthSlots', 'function pinsNiguriOrders'),
   get('async function exportReleaseWeekXlsx', 'function programacaoAlertPanel')
@@ -61,6 +62,19 @@ assert(rows.every(row => row.week.key === chosen.key), 'todas as linhas pertence
 assert(rows.every(row => row.en && row.model && row.client), 'cada linha deve incluir EN, modelo e cliente');
 assert(rows.every(row => Array.isArray(row.criticalItems) && Array.isArray(row.attentionItems)), 'cada EN deve incluir listas separadas de criticidade');
 assert(rows.every(row => ['Crítico', 'Em atenção'].every(status => [...row.criticalItems, ...row.attentionItems].every(item => item.code && item.description))), 'itens de risco devem conter código e descrição');
+assert(rows.every(row => [...row.criticalItems, ...row.attentionItems].every(item => item.obtentionType === 'Comprado')), 'listas críticas e de atenção só podem incluir materiais classificados como Comprado no Estoque');
+const fixtureRow = rows.find(row => api.modelNiguriStructureName(row.model));
+const fixtureStructure = api.modelNiguriStructureName(fixtureRow.model);
+const boughtCode = '99.99.99.9999999999';
+const madeCode = '99.99.99.9999999998';
+for (const [code, obtentionType, analyst] of [[boughtCode, 'Comprado', 'ANA TESTE'], [madeCode, 'Fabricado', 'FABRICAÇÃO']]) {
+  DATA.items.push({ code, description: `Teste ${obtentionType}`, stock: 0, safety: 0, unit: 'UN', analyst, obtentionType, orders: {}, demands: {} });
+  DATA.models[fixtureStructure].push({ code, description: `Teste ${obtentionType}`, quantity: 1 });
+}
+const fixtureItems = api.releaseRowsForWeek(chosen.key).find(row => row.model === fixtureRow.model);
+const fixtureRiskItems = [...fixtureItems.criticalItems, ...fixtureItems.attentionItems];
+assert(fixtureRiskItems.some(item => item.code === boughtCode && item.analyst === 'ANA TESTE'), 'material comprado em risco deve permanecer e conservar o analista');
+assert(!fixtureRiskItems.some(item => item.code === madeCode), 'material Fabricado em risco deve ser excluído das duas listas');
 const byWeek = api.releaseRowsForWeek(options[0].key);
 assert(byWeek.every(row => row.week.key === options[0].key), 'filtro de outra semana não deve misturar ENs');
 context.releaseWeekFilter = chosen.key;
@@ -71,5 +85,7 @@ assert(source.includes("workbook.addWorksheet('Carros a liberar'") && source.inc
 const exportFunction = source.slice(source.indexOf('async function exportReleaseWeekXlsx'), source.indexOf('function programacaoAlertPanel'));
 assert(exportFunction.includes('const exportRows = rows') && exportFunction.includes("|| 'Sem crítico'") && exportFunction.includes("'Itens críticos'") && !exportFunction.includes('Itens em atenção'), 'XLSX deve manter todas as ENs, marcar as sem crítico e omitir itens em atenção');
 assert(exportFunction.includes("'Previsão de pedido'") && exportFunction.includes("sheet.autoFilter") && exportFunction.includes("sheet.pageSetup"), 'XLSX crítico deve manter previsão, filtros e formatação de impressão');
+assert(source.includes("Analista: ${item.analyst || 'Não informado'}") && exportFunction.includes('row.criticalItems.map(releaseItemText)'), 'cada item crítico exportado deve incluir o nome do analista responsável');
+assert(source.includes('components.filter(isPurchasedMaterial).forEach(item => {'), 'itens críticos e em atenção da Visão Geral devem filtrar a classificação Comprado');
 assert(html.includes('Exportar semana (.xlsx)'), 'o botão deve deixar claro que exporta a semana filtrada');
-console.log(`CARROS_LIBERAR_SEMANAL_OK checks=${checks} weeks=${options.length} rows=${rows.length}`);
+console.log(`CARROS_LIBERAR_SEMANAL_OK checks=${checks} weeks=${options.length} rows=${rows.length} bought-only=true`);
